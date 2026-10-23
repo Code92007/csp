@@ -1,0 +1,12 @@
+[
+  {
+    "input": "# Hello\n\nHello, world!\n",
+    "output": "<h1>Hello</h1>\n<p>Hello, world!</p>\n",
+    "exact_output": true
+  },
+  {
+    "input": "# Heading\n\n## Sub-heading\n\nParagraphs are separated\nby a blank line.\n\nText attributes _italic_.\n\nBullet list:\n\n* apples\n* oranges\n* pears\n\nA [link](http://example.com).\n",
+    "output": "<h1>Heading</h1>\n<h2>Sub-heading</h2>\n<p>Paragraphs are separated\nby a blank line.</p>\n<p>Text attributes <em>italic</em>.</p>\n<p>Bullet list:</p>\n<ul>\n<li>apples</li>\n<li>oranges</li>\n<li>pears</li>\n</ul>\n<p>A <a href=\"http://example.com\">link</a>.</p>\n",
+    "exact_output": true
+  }
+]

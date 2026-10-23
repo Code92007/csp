@@ -1,0 +1,12 @@
+[
+  {
+    "input": "3 3\nFoo Bar\nFoo Barz\nbar barzz1\n001b01c1d1a\n11\n1 1\n3 3 ABCD\n3 0 H898007 HHIJK\n2 0 H898007 EFGH\n1 4\n2 0 DDDD EEEE\n2 5 GGGG\n1 4\n1 6\n2 0 HHHH IIII\n1 4\n",
+    "output": "Foo: Bar\nbar: ABCD\nabcd: HIJK\nabcd: EFGH\nabcd: EFGH\nDDDD: EEEE\nabcd: GGGG\nabcd: GGGG\nabcd: EFGH\nHHH: IIII\nHHH: IIII\n",
+    "exact_output": true
+  },
+  {
+    "input": "1 1\nName Old\n01a1b\n6\n1 1\n2 0 HHI H4006\n1 2\n2 2 New\n1 2\n3 0 H0007 HHH\n",
+    "output": "Name: Old\nHI: ab\nHI: ab\nHI: New\nHI: New\na: HH\n",
+    "exact_output": true
+  }
+]

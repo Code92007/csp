@@ -1,0 +1,52 @@
+{
+  "201403": {
+    "seconds": 0.009,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  },
+  "201512": {
+    "seconds": 0.066,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  },
+  "201809": {
+    "seconds": 3.957,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  },
+  "201912": {
+    "seconds": 0.573,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  },
+  "202305": {
+    "seconds": 0.243,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  },
+  "202312": {
+    "seconds": 0.164,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  },
+  "202406": {
+    "seconds": 4.729,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  },
+  "202509": {
+    "seconds": 1.634,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  },
+  "202112": {
+    "seconds": 1.711,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  },
+  "201604": {
+    "seconds": 0.05,
+    "exit_code": 0,
+    "note": "生成器见 stress_fifth.py；仅检查完成运行，不替代正确性评测"
+  }
+}

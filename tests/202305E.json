@@ -1,0 +1,10 @@
+[
+  {
+    "input": "6 au\naqua\nglass\nhug\nshiny\nsparkling\nyouth",
+    "output": "3\n14\n14\n14\n26\n14"
+  },
+  {
+    "input": "7 i\nnonstop\nperfect\nrocket\nthrilling\ntrain\ntrapper\ntripper",
+    "output": "16\n16\n11\n-1\n16\n22\n11"
+  }
+]

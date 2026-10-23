@@ -1,0 +1,10 @@
+[
+  {
+    "input": "6\n2 o2 o3\n3 c1o1 c1o2 o2\n2 n2o4 n1o2\n4 cu1 h1n1o3 cu1n2o6 h2o1\n4 al2s3o12 n1h5o1 al1o3h3 n2h8s1o4\n4 c1o1 c1o2 o2 h2o1\n",
+    "output": "Y\nY\nY\nN\nY\nY\n"
+  },
+  {
+    "input": "4\n2 h2 h3\n2 h1 o1\n3 c1o1 c1o2 o2\n4 c1o1 c1o2 o2 he1\n",
+    "output": "Y\nN\nY\nY\n"
+  }
+]

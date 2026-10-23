@@ -1,0 +1,12 @@
+[
+  {
+    "input": "Hello\n1\n5\nHelloWorld\nHiHiHelloHiHi\nGrepIsAGreatTool\nHELLO\nHELLOisNOTHello\n",
+    "output": "HelloWorld\nHiHiHelloHiHi\nHELLOisNOTHello\n",
+    "exact_output": true
+  },
+  {
+    "input": "Ab\n0\n4\nxxaByy\nAB\nxyz\nCab\n",
+    "output": "xxaByy\nAB\nCab\n",
+    "exact_output": true
+  }
+]

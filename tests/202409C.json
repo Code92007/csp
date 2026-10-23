@@ -1,0 +1,22 @@
+[
+  {
+    "input": "7\nbbb\na\n1\n2\n3\n4\n5\ndummy\n@@ -1,4 +1,5 @@\n-a\n+b\n 1\n+c\n 2\n 3\n@@ -6,2 +6,2 @@\n-4\n+6\n 5\n",
+    "output": "bbb\nb\n1\nc\n2\n3\n6\n5\n",
+    "exact_output": true
+  },
+  {
+    "input": "7\nbbb\na\n1\n2\n3\n4\n5\ndummy\n",
+    "output": "Patch is damaged.\n",
+    "exact_output": true
+  },
+  {
+    "input": "8\nbbb\na\n1\n2\n3\n4\n5\n6\ndummy\n@@ -1,4 +1,5 @@\n-a\n+b\n 1\n+c\n 2\n 3\n@@ -6,2 +6,2 @@\n-4\n+6\n 5\n 6\n",
+    "output": "Patch is damaged.\n",
+    "exact_output": true
+  },
+  {
+    "input": "8\nbbb\na\n1\n2\n3\n4\n5\n6\ndummy\n@@ -1,4 +1,5 @@\n-a\n+b\n 1\n+c\n 2\n 3\n@@ -6,2 +6,2 @@\n-4\n+6\n 5\n# 6\n",
+    "output": "bbb\nb\n1\nc\n2\n3\n6\n5\n6\n",
+    "exact_output": true
+  }
+]

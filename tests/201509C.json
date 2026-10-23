@@ -1,0 +1,7 @@
+[
+  {
+    "input": "11 2\n<!DOCTYPE html>\n<html>\n  <head>\n    <title>User {{ name }}</title>\n  </head>\n  <body>\n    <h1>{{ name }}</h1>\n    <p>Email: <a href= \"mailto:{{ email }}\">{{ email }}</a></p>\n    <p>Address: {{ address }}</p>\n  </body>\n</html>\nname \"David Beckham\"\nemail \"david@beckham.com\"\n",
+    "output": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>User David Beckham</title>\n  </head>\n  <body>\n    <h1>David Beckham</h1>\n    <p>Email: <a href= \"mailto:david@beckham.com\">david@beckham.com</a></p>\n    <p>Address: </p>\n  </body>\n</html>\n",
+    "exact_output": true
+  }
+]

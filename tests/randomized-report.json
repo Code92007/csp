@@ -1,0 +1,12 @@
+{
+  "seed": 20261023,
+  "randomized_cases": {
+    "A": 101,
+    "B": 120,
+    "C": 100,
+    "D": 240,
+    "E": 140
+  },
+  "total": 701,
+  "official_judge": "not_submitted"
+}

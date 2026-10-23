@@ -1,0 +1,6 @@
+[
+  {
+    "input": "#Hello World#\n6\n#HH#\n#e #\n# r#\n#re#\n#oa#\n#ao#\n3\n1 2 3\n",
+    "output": "#H llarWaeld#\n#HrlloeWo ld#\n#Hella Warld#\n"
+  }
+]

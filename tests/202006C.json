@@ -1,0 +1,10 @@
+[
+  {
+    "input": "10\nCSP\n\nCSP is\na real realrealrealrealreal \n     competition.\n\n   \nCome   and   join   us\n\n",
+    "output": "10\n"
+  },
+  {
+    "input": "10\n* CSP\n    \n*   CSP is\n  * a real  \n     competition.\n* \n  * Come!   and   join.\n*Tel:\n* 12345\n* \n",
+    "output": "14\n"
+  }
+]

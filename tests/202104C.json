@@ -1,0 +1,10 @@
+[
+  {
+    "input": "4 5 10 5 dhcp\n16\n1 a * DIS 0 0\n2 a dhcp REQ 1 0\n3 b a DIS 0 0\n4 b * DIS 3 0\n5 b * REQ 2 12\n6 b dhcp REQ 2 12\n7 c * DIS 0 11\n8 c dhcp REQ 3 11\n9 d * DIS 0 0\n10 d dhcp REQ 4 20\n11 a dhcp REQ 1 20\n12 c dhcp REQ 3 20\n13 e * DIS 0 0\n14 e dhcp REQ 2 0\n15 b dhcp REQ 2 25\n16 b * DIS 0 0\n",
+    "output": "dhcp a OFR 1 6\ndhcp a ACK 1 7\ndhcp b OFR 2 9\ndhcp b ACK 2 12\ndhcp c OFR 3 12\ndhcp c ACK 3 13\ndhcp d OFR 4 14\ndhcp d ACK 4 20\ndhcp a ACK 1 20\ndhcp c ACK 3 20\ndhcp e OFR 2 18\ndhcp e ACK 2 19\ndhcp b NAK 2 0\n"
+  },
+  {
+    "input": "4 70 100 50 dhcp\n6\n5 a * OFR 2 100\n10 b * DIS 0 70\n15 b dhcp2 REQ 4 60\n20 c * DIS 0 70\n70 d * DIS 0 120\n75 d dhcp REQ 1 125\n",
+    "output": "dhcp b OFR 1 70\ndhcp c OFR 1 70\ndhcp d OFR 1 120\ndhcp d ACK 1 125\n"
+  }
+]

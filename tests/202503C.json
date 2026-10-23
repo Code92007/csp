@@ -1,0 +1,10 @@
+[
+  {
+    "input": "6\n1 a hello\n1 b world\n2 c $a $b\n3 c\n1 a hi\n3 c\n",
+    "output": "10\n7\n"
+  },
+  {
+    "input": "5\n1 var value\n3 var\n3 val\n1 var $var $val $var\n3 var\n",
+    "output": "5\n0\n10\n"
+  }
+]

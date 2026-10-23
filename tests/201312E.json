@@ -1,0 +1,10 @@
+[
+  {
+    "input": "2 3\nS+T\n.#.\n",
+    "output": "2\n"
+  },
+  {
+    "input": "1 3\nS.T\n",
+    "output": "I'm stuck!\n"
+  }
+]

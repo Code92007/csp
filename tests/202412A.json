@@ -1,0 +1,6 @@
+[
+  {
+    "input": "3 2\n1 1 ffrrbbll\n3 3 frbl\n",
+    "output": "1 1\n2 2\n"
+  }
+]

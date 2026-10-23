@@ -1,0 +1,21 @@
+[
+  {
+    "input": "4\n1 3\n3 4\n4 2\n",
+    "output": "1 2 3 4\n"
+  },
+  {
+    "name": "single_vertex",
+    "input": "1\n",
+    "output": "1\n"
+  },
+  {
+    "name": "restricted_vs_bonus",
+    "input": "6\n1 2\n1 5\n1 6\n2 4\n3 6\n",
+    "output": "1 2 4 5 6 3\n"
+  },
+  {
+    "name": "empty_delayed_region",
+    "input": "4\n2 3\n1 2\n1 4\n",
+    "output": "1 2 3 4\n"
+  }
+]

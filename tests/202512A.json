@@ -1,0 +1,10 @@
+[
+  {
+    "input": "5 3\n1 2 3 0 4\n1 3\n2 3 4\n2 3 5\n2 1 2\n2 1 2\n2 3 5\n",
+    "output": "wrong\nwrong\ncorrect\n"
+  },
+  {
+    "input": "4 3\n1 2 3 7\n1 1\n2 1 2\n2 1 4\n1 2\n1 3\n2 1 4\n",
+    "output": "correct\nwrong\ncorrect\n"
+  }
+]

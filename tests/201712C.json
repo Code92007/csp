@@ -1,0 +1,6 @@
+[
+  {
+    "input": "3 201711170032 201711222352\n0 7 * * 1,3-5 get_up\n30 23 * * Sat,Sun go_to_bed\n15 12,18 * * * have_dinner",
+    "output": "201711170700 get_up\n201711171215 have_dinner\n201711171815 have_dinner\n201711181215 have_dinner\n201711181815 have_dinner\n201711182330 go_to_bed\n201711191215 have_dinner\n201711191815 have_dinner\n201711192330 go_to_bed\n201711200700 get_up\n201711201215 have_dinner\n201711201815 have_dinner\n201711211215 have_dinner\n201711211815 have_dinner\n201711220700 get_up\n201711221215 have_dinner\n201711221815 have_dinner"
+  }
+]

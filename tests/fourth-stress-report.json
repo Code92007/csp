@@ -1,0 +1,20 @@
+[
+  {
+    "problem": "202512D",
+    "seconds": 0.128,
+    "returncode": 0,
+    "output": "474588597"
+  },
+  {
+    "problem": "202006D",
+    "seconds": 0.013,
+    "returncode": 0,
+    "output": "0"
+  },
+  {
+    "problem": "202109D",
+    "seconds": 0.04,
+    "returncode": 0,
+    "output": "27.338932780249"
+  }
+]

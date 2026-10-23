@@ -1,0 +1,6 @@
+[
+  {
+    "input": "4 8\ncut 15\ncute 10\nbut 6\nexecute 3\n",
+    "output": "b\nc\ne\nt\nu\nx\nut\ncut\n"
+  }
+]

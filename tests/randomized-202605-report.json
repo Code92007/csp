@@ -1,0 +1,13 @@
+{
+  "seed": 20261023,
+  "cases": {
+    "A": 1,
+    "B": 100,
+    "C": 90,
+    "D": 110,
+    "E_exhaustive_operations": 24
+  },
+  "total": 325,
+  "official_judge": "not_submitted",
+  "E_validation_scope": "24 small exhaustive-operation cases; full solver in 202605/E.cpp"
+}

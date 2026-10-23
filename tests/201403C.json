@@ -1,0 +1,10 @@
+[
+  {
+    "input": "albw:x\n4\nls -a -l -a documents -b\nls\nls -w 10 -x -w 15\nls -a -b -c -d -e -l\n",
+    "output": "Case 1: -a -l\nCase 2:\nCase 3: -w 15 -x\nCase 4: -a -b\n"
+  },
+  {
+    "input": "ab:c\n4\ntool -c -b -a -a\nrun -b one -b two -c\ncmd -a file -c\napp -b\n",
+    "output": "Case 1: -a -b -a -c\nCase 2: -b two -c\nCase 3: -a\nCase 4:\n"
+  }
+]

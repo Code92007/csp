@@ -1,0 +1,18 @@
+[
+  {
+    "input": "3 2\nThe tHe thE\nthe THE\n",
+    "output": "1\n1\n"
+  },
+  {
+    "input": "9 7\nPar les soirs bleus dete jirai dans les sentiers\nPICOTE PAR LES BLES FOULER LHERBE MENUE\n",
+    "output": "2\n13\n"
+  },
+  {
+    "input": "15 15\nThou that art now the worlds fresh ornament And only herald to the gaudy spring\nShall I compare thee to a summers day Thou art more lovely and more temperate\n",
+    "output": "4\n24\n"
+  },
+  {
+    "input": "4 3\nLab lab Code Go\nLAB Rust code\n",
+    "output": "2\n4\n"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "input": "3 15\nagva\nagvagva\ngvagva\n",
+    "output": "11\n"
+  }
+]
