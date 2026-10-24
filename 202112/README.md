@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "贡献法", "区间计数", "双指针", "分段函数", "区间统计", "编码", "多项式", "模运算", "模拟", "线段树", "离散化", "懒标记", "点分治", "树状数组", "离线统计", "树上路径"]
 status: "published"
-problems: [{"id": "A", "title": "序列查询", "tags": ["贡献法", "区间计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16059"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce928a67df0b81749c05d"}}, {"id": "B", "title": "序列查询新解", "tags": ["双指针", "分段函数", "区间统计"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；150 组独立随机对拍通过；数梦 OJ 已提交，结果待核验。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16060"}], "oj": {"status": "submitted", "score": null, "record": "https://oj.shumeng.tech/record/6adce92aa67df0b81749c061"}}, {"id": "C", "title": "登机牌条码", "tags": ["编码", "多项式", "模运算", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 已提交，结果待核验。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16061"}], "oj": {"status": "submitted", "score": null, "record": "https://oj.shumeng.tech/record/6adce92ba67df0b81749c065"}}, {"id": "D", "title": "磁盘文件操作", "tags": ["线段树", "离散化", "懒标记"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16062"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce92da67df0b81749c06b"}}, {"id": "E", "title": "极差路径", "tags": ["点分治", "树状数组", "离线统计", "树上路径"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；数梦 OJ 56 分 Time Exceeded（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16063"}], "oj": {"status": "failed", "score": 56, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6adce96da67df0b81749c18a"}}]
+problems: [{"id": "A", "title": "序列查询", "tags": ["贡献法", "区间计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16059"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce928a67df0b81749c05d"}}, {"id": "B", "title": "序列查询新解", "tags": ["双指针", "分段函数", "区间统计"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；150 组独立随机对拍通过；曙梦 OJ 已提交，结果待核验。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16060"}], "oj": {"status": "submitted", "score": null, "record": "https://oj.shumeng.tech/record/6adce92aa67df0b81749c061"}}, {"id": "C", "title": "登机牌条码", "tags": ["编码", "多项式", "模运算", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 已提交，结果待核验。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16061"}], "oj": {"status": "submitted", "score": null, "record": "https://oj.shumeng.tech/record/6adce92ba67df0b81749c065"}}, {"id": "D", "title": "磁盘文件操作", "tags": ["线段树", "离散化", "懒标记"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16062"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce92da67df0b81749c06b"}}, {"id": "E", "title": "极差路径", "tags": ["点分治", "树状数组", "离线统计", "树上路径"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 56 分 Time Exceeded（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16063"}], "oj": {"status": "failed", "score": 56, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6adce96da67df0b81749c18a"}}]
 ---
 
 # CSP 202112 五题题解
@@ -21,7 +21,7 @@ problems: [{"id": "A", "title": "序列查询", "tags": ["贡献法", "区间计
 
 标签：`贡献法` · `区间计数`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -29,7 +29,7 @@ problems: [{"id": "A", "title": "序列查询", "tags": ["贡献法", "区间计
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16059)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112A)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112A)。
 
 ### 题解
 
@@ -63,7 +63,7 @@ int main() {
 
 标签：`双指针` · `分段函数` · `区间统计`
 
-状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；150 组独立随机对拍通过；数梦 OJ 已提交，结果待核验。
+状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；150 组独立随机对拍通过；曙梦 OJ 已提交，结果待核验。
 
 ### 题意
 
@@ -71,7 +71,7 @@ A[0]=0<A[1]<…<A[n]<N，f(x) 是不超过 x 的 A 元素的最大下标，g(x)=
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16060)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112B)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112B)。
 
 ### 题解
 
@@ -118,7 +118,7 @@ int main() {
 
 标签：`编码` · `多项式` · `模运算` · `模拟`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 已提交，结果待核验。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 已提交，结果待核验。
 
 ### 题意
 
@@ -126,7 +126,7 @@ int main() {
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16061)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112C)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112C)。
 
 ### 题解
 
@@ -212,7 +212,7 @@ int main() {
 
 标签：`线段树` · `离散化` · `懒标记`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -220,7 +220,7 @@ int main() {
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16062)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112D)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112D)。
 
 ### 题解
 
@@ -388,7 +388,7 @@ int main() {
 
 标签：`点分治` · `树状数组` · `离线统计` · `树上路径`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；数梦 OJ 56 分 Time Exceeded（复刻评测）。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 56 分 Time Exceeded（复刻评测）。
 
 ### 题意
 
@@ -396,7 +396,7 @@ int main() {
 
 来源：[公开题面与样例](https://www.luogu.com.cn/problem/P16063)
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112E)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202112E)。
 
 ### 题解
 

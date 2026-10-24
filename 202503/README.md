@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "枚举", "求和", "动态规划", "完全背包", "表达式解析", "记忆化搜索", "依赖图", "数论", "gcd", "状态压缩", "动态树", "Link-Cut Tree", "树形动态规划"]
 status: "published"
-problems: [{"id": "A", "title": "数值积分", "tags": ["枚举", "求和"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b9a67df0b81749b958"}}, {"id": "B", "title": "机器人饲养指南", "tags": ["动态规划", "完全背包"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bba67df0b81749b972"}}, {"id": "C", "title": "模板展开", "tags": ["表达式解析", "记忆化搜索", "依赖图"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bda67df0b81749b97b"}}, {"id": "D", "title": "集体锻炼", "tags": ["数论", "gcd", "状态压缩"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；130 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bea67df0b81749b983"}}, {"id": "E", "title": "收费标准评估", "tags": ["动态树", "Link-Cut Tree", "树形动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c0a67df0b81749b987"}}]
+problems: [{"id": "A", "title": "数值积分", "tags": ["枚举", "求和"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b9a67df0b81749b958"}}, {"id": "B", "title": "机器人饲养指南", "tags": ["动态规划", "完全背包"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bba67df0b81749b972"}}, {"id": "C", "title": "模板展开", "tags": ["表达式解析", "记忆化搜索", "依赖图"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bda67df0b81749b97b"}}, {"id": "D", "title": "集体锻炼", "tags": ["数论", "gcd", "状态压缩"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；130 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bea67df0b81749b983"}}, {"id": "E", "title": "收费标准评估", "tags": ["动态树", "Link-Cut Tree", "树形动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c0a67df0b81749b987"}}]
 ---
 
 # CSP 202503 五题题解
@@ -21,7 +21,7 @@ problems: [{"id": "A", "title": "数值积分", "tags": ["枚举", "求和"], "s
 
 标签：`枚举` · `求和`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -29,7 +29,7 @@ problems: [{"id": "A", "title": "数值积分", "tags": ["枚举", "求和"], "s
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503A/)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503A)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503A)。
 
 ### 题解
 
@@ -61,7 +61,7 @@ int main() {
 
 标签：`动态规划` · `完全背包`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -69,7 +69,7 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503B/)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503B)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503B)。
 
 ### 题解
 
@@ -105,7 +105,7 @@ int main() {
 
 标签：`表达式解析` · `记忆化搜索` · `依赖图`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -113,7 +113,7 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503C/)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503C)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503C)。
 
 ### 题解
 
@@ -220,7 +220,7 @@ int main() {
 
 标签：`数论` · `gcd` · `状态压缩`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；130 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；130 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -228,7 +228,7 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503D/)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503D)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503D)。
 
 ### 题解
 
@@ -284,7 +284,7 @@ int main() {
 
 标签：`动态树` · `Link-Cut Tree` · `树形动态规划`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -292,7 +292,7 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503E/)
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503E)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503E)。
 
 ### 题解
 

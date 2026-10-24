@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "局部极值", "数组扫描", "碰撞检测", "网格模拟", "栈", "路径解析", "字符串", "BFS", "时间状态", "网格", "状态压缩", "连通性DP", "Steiner树", "轮廓线DP"]
 status: "published"
-problems: [{"id": "A", "title": "折点计数", "tags": ["局部极值", "数组扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604A/"}]}, {"id": "B", "title": "俄罗斯方块", "tags": ["碰撞检测", "网格模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604B/"}]}, {"id": "C", "title": "路径解析", "tags": ["栈", "路径解析", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604C/"}]}, {"id": "D", "title": "游戏", "tags": ["BFS", "时间状态", "网格"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604D/"}]}, {"id": "E", "title": "网络连接", "tags": ["状态压缩", "连通性DP", "Steiner树", "轮廓线DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604E/"}]}]
+problems: [{"id": "A", "title": "折点计数", "tags": ["局部极值", "数组扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604A/"}]}, {"id": "B", "title": "俄罗斯方块", "tags": ["碰撞检测", "网格模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604B/"}]}, {"id": "C", "title": "路径解析", "tags": ["栈", "路径解析", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604C/"}]}, {"id": "D", "title": "游戏", "tags": ["BFS", "时间状态", "网格"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604D/"}]}, {"id": "E", "title": "网络连接", "tags": ["状态压缩", "连通性DP", "Steiner树", "轮廓线DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604E/"}]}]
 ---
 
 # CSP 201604 五题题解
@@ -29,7 +29,7 @@ problems: [{"id": "A", "title": "折点计数", "tags": ["局部极值", "数组
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604A/)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604A)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604A)。
 
 ### 题解
 
@@ -73,7 +73,7 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604B/)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604B)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604B)。
 
 ### 题解
 
@@ -142,7 +142,7 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604C/)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604C)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604C)。
 
 ### 题解
 
@@ -210,7 +210,7 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604D/)。
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604D)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604D)。
 
 ### 题解
 
@@ -286,7 +286,7 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604E/)
 
-原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604E)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604E)。
 
 ### 题解
 

@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "数学", "精度", "查表", "模拟", "动态规划", "01背包", "队列", "调度", "状态机", "图论", "二分图", "带权并查集", "区间", "构造", "树", "点分治", "动态查询", "位运算", "哈希表"]
 status: "published"
-problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "精度", "查表", "模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "已通过 C++17 编译、101 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609A"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6c2a67df0b81749b341"}}, {"id": "B", "title": "流程规划（其二）", "tags": ["动态规划", "01背包", "精度"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "已通过 C++17 编译、120 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609B"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e0a67df0b81749b3d9"}}, {"id": "C", "title": "轮转调度", "tags": ["模拟", "队列", "调度", "状态机"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "已通过 C++17 编译、100 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609C"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e2a67df0b81749b3e7"}}, {"id": "D", "title": "数字分组", "tags": ["图论", "二分图", "带权并查集", "区间", "构造"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "已通过 C++17 编译、240 组本地对拍（输出由独立检查器验证）；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609D"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e4a67df0b81749b40a"}}, {"id": "E", "title": "奇", "tags": ["树", "点分治", "动态查询", "位运算", "哈希表"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "已通过 C++17 编译、140 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609E"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce90ea67df0b81749bfe2"}}]
+problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "精度", "查表", "模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "已通过 C++17 编译、101 组本地对拍及复刻样例；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609A"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6c2a67df0b81749b341"}}, {"id": "B", "title": "流程规划（其二）", "tags": ["动态规划", "01背包", "精度"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "已通过 C++17 编译、120 组本地对拍及复刻样例；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609B"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e0a67df0b81749b3d9"}}, {"id": "C", "title": "轮转调度", "tags": ["模拟", "队列", "调度", "状态机"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "已通过 C++17 编译、100 组本地对拍及复刻样例；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609C"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e2a67df0b81749b3e7"}}, {"id": "D", "title": "数字分组", "tags": ["图论", "二分图", "带权并查集", "区间", "构造"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "已通过 C++17 编译、240 组本地对拍（输出由独立检查器验证）；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609D"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e4a67df0b81749b40a"}}, {"id": "E", "title": "奇", "tags": ["树", "点分治", "动态查询", "位运算", "哈希表"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "已通过 C++17 编译、140 组本地对拍及复刻样例；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609E"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce90ea67df0b81749bfe2"}}]
 ---
 
 # CSP 202609 五题题解
@@ -21,7 +21,7 @@ problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "
 
 标签：`数学` · `精度` · `查表` · `模拟`
 
-状态：**已实现**。已通过 C++17 编译、101 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。已通过 C++17 编译、101 组本地对拍及复刻样例；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -29,7 +29,7 @@ problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "
 
 给定时间上限 $m$，计算 $z=(m-\mu)/\sigma$，再从一张递增表中选择与 $z$ 横坐标距离最近的表项。若恰好等距，选择横坐标较小的表项。输出这一项在输入中的函数值，保留原来的三位小数格式。所有输入实数都是三位小数，且保证 $z$ 在表内。输入依次为 `n m k`、$n$ 个均值、$n$ 个标准差、$k$ 个横坐标及 $k$ 个函数值；$n,m\le100$，$k\le20$。
 
-来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609A)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609A)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 
@@ -110,13 +110,13 @@ int main() {
 
 标签：`动态规划` · `01背包` · `精度`
 
-状态：**已实现**。已通过 C++17 编译、120 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。已通过 C++17 编译、120 组本地对拍及复刻样例；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 从 $n$ 个可选环节中各选或不选一次。选中集合 $S$ 的收益是 $\sum\mu_i$，总标准差是 $\sqrt{\sum\sigma_i^2}$。非空集合需满足 $m/\sqrt{\sum\sigma_i^2}\ge q$；也允许选择空集合，收益为 0。求最大收益。这里 $n\le100$，每个整数收益 $\mu_i\le100$，标准差保留一位小数，$q$ 保留三位小数。输入依次为 `n m q`、$n$ 个收益、$n$ 个标准差；输出一个最大收益整数。
 
-来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609B)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609B)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 
@@ -204,7 +204,7 @@ int main() {
 
 标签：`模拟` · `队列` · `调度` · `状态机`
 
-状态：**已实现**。已通过 C++17 编译、100 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。已通过 C++17 编译、100 组本地对拍及复刻样例；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -214,7 +214,7 @@ int main() {
 
 题目规模为 $n,m\le100$，任务工作量和 CPU 时间片均不超过 100。输入先给 `n m T`，接着给 $m$ 个 CPU 的时间片长度；每个任务一行 `工作量 偏好CPU数 偏好CPU编号列表`。CPU 和任务编号均从 1 开始，按任务顺序输出 $n$ 个答案。
 
-来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609C)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609C)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 
@@ -305,7 +305,7 @@ int main() {
 
 标签：`图论` · `二分图` · `带权并查集` · `区间` · `构造`
 
-状态：**已实现**。已通过 C++17 编译、240 组本地对拍（输出由独立检查器验证）；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。已通过 C++17 编译、240 组本地对拍（输出由独立检查器验证）；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -313,7 +313,7 @@ int main() {
 
 输入给出 `n k op`，随后是 $n$ 个互不相同的正整数。输出最少组数，再对每组输出其大小与成员，允许任意最优合法划分。
 
-来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609D)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609D)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 
@@ -450,7 +450,7 @@ int main() {
 
 标签：`树` · `点分治` · `动态查询` · `位运算` · `哈希表`
 
-状态：**已实现**。已通过 C++17 编译、140 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。
+状态：**已实现**。已通过 C++17 编译、140 组本地对拍及复刻样例；曙梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -458,7 +458,7 @@ int main() {
 
 先输出初始答案，每次翻转一个点的灯后再次输出。规模为 $n,q\le10^5$、颜色数 $m\le40$、$k\le4$。输入依次为 `n m k q`、长度为 $n$ 的灯状态 01 字符串、$n$ 个颜色、$n-1$ 条带权边和 $q$ 个待翻转点编号；点与颜色编号从 1 开始。边权不超过 $10^6$。输出初始及每次开关后的答案，共 $q+1$ 行。
 
-来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609E)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609E)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 

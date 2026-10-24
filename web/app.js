@@ -18,7 +18,7 @@ function ojBadge(problem){
   const oj=problem.oj;if(!oj?.record)return '';
   const verified=oj.status==='accepted'&&oj.score===100;
   const label=verified?'OJ 已验证':oj.status==='failed'?`OJ ${oj.score} 分`:'OJ 待核验';
-  const detail=verified?'数梦 OJ 100 分 Accepted':oj.status==='failed'?`数梦 OJ ${oj.score} 分 ${oj.verdict}`:'数梦 OJ 已提交，结果待核验';
+  const detail=verified?'曙梦 OJ 100 分 Accepted':oj.status==='failed'?`曙梦 OJ ${oj.score} 分 ${oj.verdict}`:'曙梦 OJ 已提交，结果待核验';
   return `<a class="oj-badge ${verified?'verified':oj.status==='failed'?'failed':'pending'}" href="${esc(oj.record)}" target="_blank" rel="noopener noreferrer" title="${esc(detail)}" aria-label="${esc(detail)}">${esc(label)}</a>`;
 }
 function stateParams(){return Object.fromEntries(route.searchParams);}
