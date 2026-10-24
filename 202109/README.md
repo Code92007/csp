@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "贪心", "前缀最大值", "差分", "阈值枚举", "模拟", "循环数组", "浮点数", "事件延迟", "概率DP", "状态压缩", "期望", "动态树", "LCT", "倍增", "历史版本"]
 status: "published"
-problems: [{"id":"A","title":"数组推导","tags":["贪心","前缀最大值"],"status":"implemented","code":"A.cpp","anchor":"problem-a","validation":"C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。","sources":[{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16026"}],"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490510"}},{"id":"B","title":"非零段划分","tags":["差分","阈值枚举"],"status":"implemented","code":"B.cpp","anchor":"problem-b","validation":"C++17 编译通过；4 个保存样例/回归用例通过；150 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。","sources":[{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16027"}],"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490539"}},{"id":"C","title":"脉冲神经网络","tags":["模拟","循环数组","浮点数","事件延迟"],"status":"implemented","code":"C.cpp","anchor":"problem-c","validation":"C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。","sources":[{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16028"}]},{"id":"D","title":"收集卡牌","tags":["概率DP","状态压缩","期望"],"status":"implemented","code":"D.cpp","anchor":"problem-d","validation":"C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202109D"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16029"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce96fa67df0b81749c194"}},{"id":"E","title":"箱根山岳险天下","tags":["动态树","LCT","倍增","历史版本"],"status":"implemented","code":"E.cpp","anchor":"problem-e","validation":"C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。","sources":[{"label":"公开题面与样例","url":"https://www.luogu.com.cn/problem/P16030"}]}]
+problems: [{"id":"A","title":"数组推导","tags":["贪心","前缀最大值"],"status":"implemented","code":"A.cpp","anchor":"problem-a","validation":"C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。","sources":[{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16026"}],"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490510"}},{"id":"B","title":"非零段划分","tags":["差分","阈值枚举"],"status":"implemented","code":"B.cpp","anchor":"problem-b","validation":"C++17 编译通过；4 个保存样例/回归用例通过；150 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。","sources":[{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16027"}],"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490539"}},{"id":"C","title":"脉冲神经网络","tags":["模拟","循环数组","浮点数","事件延迟"],"status":"implemented","code":"C.cpp","anchor":"problem-c","validation":"C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。","sources":[{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16028"}],"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490605"}},{"id":"D","title":"收集卡牌","tags":["概率DP","状态压缩","期望"],"status":"implemented","code":"D.cpp","anchor":"problem-d","validation":"C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202109D"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16029"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce96fa67df0b81749c194"}},{"id":"E","title":"箱根山岳险天下","tags":["动态树","LCT","倍增","历史版本"],"status":"implemented","code":"E.cpp","anchor":"problem-e","validation":"C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。","sources":[{"label":"公开题面与样例","url":"https://www.luogu.com.cn/problem/P16030"}],"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490619"}}]
 ---
 
 # CSP 202109 五题题解
@@ -118,7 +118,7 @@ int main() {
 
 标签：`模拟` · `循环数组` · `浮点数` · `事件延迟`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490605)。
 
 ### 题意
 
@@ -294,7 +294,7 @@ int main() {
 
 标签：`动态树` · `LCT` · `倍增` · `历史版本`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490619)。
 
 ### 题意
 
