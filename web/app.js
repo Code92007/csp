@@ -14,6 +14,7 @@ function tag(tag, path='/problems', active=false, count) {
 }
 function toast(text) {$('#toast').textContent=text;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),1800);}
 function status(problem){return problem.status==='implemented'?'已实现':problem.status==='partial'?'部分分实现':'待编写';}
+function verifiedFullScore(problem){return [problem.oj,problem.luogu].some(result=>result?.status==='accepted'&&result.score===100);}
 function ojBadge(problem){
   return [['曙梦',problem.oj],['洛谷',problem.luogu]].map(([site,oj])=>{
     if(!oj?.record)return '';
@@ -29,7 +30,7 @@ function filtersChanged(){
   params.q=$('#query').value.trim();params.year=$('#year').value;params.status=$('#status').value;
   const hash=url(route.pathname,params);history.replaceState(null,'',hash);route=new URL('https://csp.local'+hash.slice(1));renderResults();
 }
-function hero(title,description){const s=data.stats;return `<section class="hero"><div><div class="eyebrow">THE CSP NOTEBOOK / 200+</div><h1>${title}</h1><p class="desc">${description}</p><p class="hero-note">按场次从新到旧整理 · 每天 2–3 小时 · 先稳住前两题</p></div><div class="hero-stats"><div class="stat"><strong>${s.contests}</strong><span>年月题组</span></div><div class="stat"><strong>${s.complete_contests}</strong><span>完整场次文章</span></div><div class="stat"><strong>${s.implemented}</strong><span>已实现题目</span></div><div class="stat"><strong>${s.problems-s.implemented}</strong><span>待补全题目</span></div></div></section>`;}
+function hero(title,description){const s=data.stats,verified=data.articles.flatMap(article=>article.problems).filter(verifiedFullScore).length;return `<section class="hero"><div><div class="eyebrow">THE CSP NOTEBOOK / 200+</div><h1>${title}</h1><p class="desc">${description}</p><p class="hero-note">按场次从新到旧整理 · 每天 2–3 小时 · 先稳住前两题</p></div><div class="hero-stats"><div class="stat"><strong>${s.contests}</strong><span>年月题组</span></div><div class="stat"><strong>${s.complete_contests}</strong><span>完整场次文章</span></div><div class="stat"><strong>${s.implemented}</strong><span>已实现题目</span></div><div class="stat"><strong>${s.problems-s.implemented}</strong><span>待补全题目</span></div><div class="stat"><strong>${verified}</strong><span>已验证满分题目</span></div><div class="stat"><strong>${s.problems-verified}</strong><span>未验证或未满分</span></div></div></section>`;}
 function sidebar(mode){
   const tags=Object.entries(data.tags).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'zh-CN'));
   const years=[...new Set(data.articles.map(a=>a.contest.slice(0,4)))];

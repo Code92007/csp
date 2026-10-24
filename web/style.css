@@ -11,4 +11,7 @@
 .oj-badge.pending{color:#586571;background:#edf0f1}
 .oj-badge.failed{color:#9b572f;background:#f8ece4}
 .oj-badge:hover{filter:brightness(.92)}
+.hero-stats{grid-template-columns:repeat(2,124px)}
+.hero-stats .stat span{display:block;font-size:10px;line-height:1.45;white-space:nowrap}
+@media(max-width:760px){.hero-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 10px}.hero-stats .stat{min-width:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
