@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "累加", "平移变换", "前缀积", "前缀和", "旋转变换", "自动微分", "表达式", "栈", "有序集合", "几何", "模拟", "动态树", "树的直径", "动态规划"]
 status: "published"
-problems: [{"id":"A","title":"坐标变换（其一）","tags":["累加","平移变换"],"status":"implemented","code":"A.cpp","anchor":"problem-a","validation":"C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309A"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16054"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"}},{"id":"B","title":"坐标变换（其二）","tags":["前缀积","前缀和","旋转变换"],"status":"implemented","code":"B.cpp","anchor":"problem-b","validation":"C++17 编译通过；2 个保存样例/回归用例通过；101 组独立随机与压力对拍通过；曙梦 OJ 旧版 80 分 Wrong Answer（复刻评测）；洛谷民间数据 100 分 Accepted。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309B"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16055"}],"oj":{"status":"failed","score":80,"verdict":"Wrong Answer","record":"https://oj.shumeng.tech/record/6adce8caa67df0b81749be0c"},"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490746"}},{"id":"C","title":"梯度求解","tags":["自动微分","表达式","栈"],"status":"implemented","code":"C.cpp","anchor":"problem-c","validation":"C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309C"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16056"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"}},{"id":"D","title":"阴阳龙","tags":["有序集合","几何","模拟"],"status":"implemented","code":"D.cpp","anchor":"problem-d","validation":"C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 15 分 Time Exceeded（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309D"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16057"}],"oj":{"status":"failed","score":15,"verdict":"Time Exceeded","record":"https://oj.shumeng.tech/record/6adce8cda67df0b81749be44"}},{"id":"E","title":"阻击","tags":["动态树","树的直径","动态规划"],"status":"implemented","code":"E.cpp","anchor":"problem-e","validation":"C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309E"},{"label":"公开题面与样例","url":"https://www.luogu.com.cn/problem/P16058"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"}}]
+problems: [{"id":"A","title":"坐标变换（其一）","tags":["累加","平移变换"],"status":"implemented","code":"A.cpp","anchor":"problem-a","validation":"C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309A"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16054"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"}},{"id":"B","title":"坐标变换（其二）","tags":["前缀积","前缀和","旋转变换"],"status":"implemented","code":"B.cpp","anchor":"problem-b","validation":"C++17 编译通过；2 个保存样例/回归用例通过；101 组独立随机与压力对拍通过；曙梦 OJ 旧版 80 分 Wrong Answer（复刻评测）；洛谷民间数据 100 分 Accepted。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309B"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16055"}],"oj":{"status":"failed","score":80,"verdict":"Wrong Answer","record":"https://oj.shumeng.tech/record/6adce8caa67df0b81749be0c"},"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490746"}},{"id":"C","title":"梯度求解","tags":["自动微分","表达式","栈"],"status":"implemented","code":"C.cpp","anchor":"problem-c","validation":"C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309C"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16056"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"}},{"id":"D","title":"阴阳龙","tags":["有序集合","几何","模拟"],"status":"implemented","code":"D.cpp","anchor":"problem-d","validation":"C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 旧版 15 分 Time Exceeded（复刻评测）；洛谷旧版 85 分 Time Exceeded；当前优化版待复交。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309D"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16057"}],"oj":{"status":"failed","score":15,"verdict":"Time Exceeded","record":"https://oj.shumeng.tech/record/6adce8cda67df0b81749be44"},"luogu":{"status":"failed","score":85,"verdict":"Time Exceeded","record":"https://www.luogu.com.cn/record/305490766"}},{"id":"E","title":"阻击","tags":["动态树","树的直径","动态规划"],"status":"implemented","code":"E.cpp","anchor":"problem-e","validation":"C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309E"},{"label":"公开题面与样例","url":"https://www.luogu.com.cn/problem/P16058"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"}}]
 ---
 
 # CSP 202309 五题题解
@@ -218,7 +218,7 @@ int main() {
 
 标签：`有序集合` · `几何` · `模拟`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 15 分 Time Exceeded（复刻评测）。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；[曙梦 OJ 旧版 15 分 Time Exceeded](https://oj.shumeng.tech/record/6adce8cda67df0b81749be44)（复刻评测）；[洛谷旧版 85 分 Time Exceeded](https://www.luogu.com.cn/record/305490766)；当前优化版待复交。
 
 ### 题意
 
@@ -232,9 +232,9 @@ int main() {
 
 八条射线其实来自四条直线：水平、竖直、斜率 1、斜率 -1。分别建立四个有序集合，键写作 $(y,x)$、$(x,y)$、$(x-y,x)$、$(x+y,x)$。第一维区分直线，第二维给出线上顺序。
 
-每次事件在四个集合中各找严格前驱和严格后继；检查第一维相同，便得到八个方向的最近员工。用严格比较排除与中心重合的员工。最近距离还需不大于 $\min(u-1,n-u,v-1,m-v)$，因为题目要求八个位置都在边界内，不能只检查有员工的那个方向。
+每次事件在四个集合中各做一次 `upper_bound`，得到严格后继，并从它的前一项得到前驱；若前一项恰好是中心员工，则再往前一步。检查第一维相同，便得到八个方向的最近员工。最近距离还需不大于 $\min(u-1,n-u,v-1,m-v)$，因为题目要求八个位置都在边界内，不能只检查有员工的那个方向。
 
-得到 $k$ 后，查八个候选坐标上的员工编号。先从四个集合中删除全部需要移动的员工，再计算新方向并全部插入。若边删边插，新位置可能覆盖另一名尚未移动的员工，因此必须分成两步。另用坐标到编号的哈希表定位员工。
+得到 $k$ 后，查八个候选坐标上的员工编号。先从四个集合中删除全部需要移动的员工，再计算新方向并全部插入。若边删边插，新位置可能覆盖另一名尚未移动的员工，因此必须分成两步。另用坐标到编号的哈希表定位员工；旋转整圈不改变任何位置，可以直接跳过。每次移动人数至多八，用固定长度数组保存，避免在事件循环中反复分配内存。
 
 有序集合的邻点就是各射线最近点，取最小值得到题目定义的 $k$；四集合始终同步保存所有员工，轮转又同时应用，所以按事件归纳可知最终位置正确。时间 $O((p+q)\log p)$，空间 $O(p)$；异或前的 $ix_i+y_i$ 用 64 位。
 
@@ -293,6 +293,9 @@ int main() {
         i64 u, v;
         int t;
         cin >> u >> v >> t;
+        t %= 8;
+        if (t == 0)
+            continue;
         i64 boundary = min({u - 1, n - u, v - 1, m - v}), distance = boundary + 1;
         auto k = keys(u, v);
         for (int j = 0; j < 4; ++j) {
@@ -300,24 +303,31 @@ int main() {
             auto after = lines[j].upper_bound(k[j]);
             if (after != lines[j].end() && after->first == line)
                 distance = min(distance, after->second - coordinate);
-            auto before = lines[j].lower_bound(k[j]);
-            if (before != lines[j].begin()) {
+            if (after != lines[j].begin()) {
+                auto before = after;
                 --before;
+                if (*before == k[j]) {
+                    if (before == lines[j].begin())
+                        continue;
+                    --before;
+                }
                 if (before->first == line)
                     distance = min(distance, coordinate - before->second);
             }
         }
         if (distance > boundary)
             continue;
-        vector<pair<int, int>> moved;
+        array<pair<int, int>, 8> moved;
+        int movedCount = 0;
         for (int d = 0; d < 8; ++d) {
             auto it = who.find(code(u + distance * dx[d], v + distance * dy[d]));
             if (it != who.end())
-                moved.push_back({it->second, (d + t) % 8});
+                moved[movedCount++] = {it->second, (d + t) % 8};
         }
-        for (auto [id, d] : moved)
-            erase(id);
-        for (auto [id, d] : moved) {
+        for (int i = 0; i < movedCount; ++i)
+            erase(moved[i].first);
+        for (int i = 0; i < movedCount; ++i) {
+            auto [id, d] = moved[i];
             position[id] = {u + distance * dx[d], v + distance * dy[d]};
             insert(id);
         }

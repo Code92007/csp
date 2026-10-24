@@ -48,6 +48,9 @@ int main() {
         i64 u, v;
         int t;
         cin >> u >> v >> t;
+        t %= 8;
+        if (t == 0)
+            continue;
         i64 boundary = min({u - 1, n - u, v - 1, m - v}), distance = boundary + 1;
         auto k = keys(u, v);
         for (int j = 0; j < 4; ++j) {
@@ -55,24 +58,31 @@ int main() {
             auto after = lines[j].upper_bound(k[j]);
             if (after != lines[j].end() && after->first == line)
                 distance = min(distance, after->second - coordinate);
-            auto before = lines[j].lower_bound(k[j]);
-            if (before != lines[j].begin()) {
+            if (after != lines[j].begin()) {
+                auto before = after;
                 --before;
+                if (*before == k[j]) {
+                    if (before == lines[j].begin())
+                        continue;
+                    --before;
+                }
                 if (before->first == line)
                     distance = min(distance, coordinate - before->second);
             }
         }
         if (distance > boundary)
             continue;
-        vector<pair<int, int>> moved;
+        array<pair<int, int>, 8> moved;
+        int movedCount = 0;
         for (int d = 0; d < 8; ++d) {
             auto it = who.find(code(u + distance * dx[d], v + distance * dy[d]));
             if (it != who.end())
-                moved.push_back({it->second, (d + t) % 8});
+                moved[movedCount++] = {it->second, (d + t) % 8};
         }
-        for (auto [id, d] : moved)
-            erase(id);
-        for (auto [id, d] : moved) {
+        for (int i = 0; i < movedCount; ++i)
+            erase(moved[i].first);
+        for (int i = 0; i < movedCount; ++i) {
+            auto [id, d] = moved[i];
             position[id] = {u + distance * dx[d], v + distance * dy[d]};
             insert(id);
         }
