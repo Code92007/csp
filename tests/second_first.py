@@ -87,7 +87,7 @@ for _ in range(100):
   rows.append(f'{n} {k}');out.append(answer)
  case('202312B','10\n'+'\n'.join(rows),'\n'.join(map(str,out)))
 for _ in range(100):
- n=40;ops=[(1,rng.choice([.5,1,2])) if i%2 else (2,round(rng.random()*6.2,3)) for i in range(n)];qs=[];out=[]
+ n=40;ops=[(1,rng.choice([.5,1,2])) if i%2 else (2,round(rng.random()*6.2,6)) for i in range(n)];qs=[];out=[]
  for j in range(10):
   l=rng.randrange(n);r=rng.randrange(l,n);x=rng.randrange(-1000000,1000001);y=rng.randrange(-1000000,1000001);qs.append(f'{l+1} {r+1} {x} {y}')
   for typ,v in ops[l:r+1]:
