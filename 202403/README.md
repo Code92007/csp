@@ -3,10 +3,10 @@ title: "CSP 202403 五题题解"
 contest: "202403"
 contest_month: "2024-03"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "计数", "时间戳", "集合", "哈希", "大小写转换", "字符串解析", "线性代数", "高斯消元", "模运算", "模拟", "双向链表", "优先队列", "树", "链表", "DFS序", "树状数组"]
 status: "published"
-problems: [{"id": "A", "title": "词频统计", "tags": ["计数", "时间戳"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403A/"}]}, {"id": "B", "title": "相似度计算", "tags": ["集合", "哈希", "大小写转换"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；4 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403B/"}]}, {"id": "C", "title": "化学方程式配平", "tags": ["字符串解析", "线性代数", "高斯消元", "模运算"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403C/"}]}, {"id": "D", "title": "十滴水", "tags": ["模拟", "双向链表", "优先队列"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403D/"}]}, {"id": "E", "title": "文件夹合并", "tags": ["树", "链表", "DFS序", "树状数组"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403E/"}]}]
+problems: [{"id": "A", "title": "词频统计", "tags": ["计数", "时间戳"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce824a67df0b81749bba4"}}, {"id": "B", "title": "相似度计算", "tags": ["集合", "哈希", "大小写转换"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；4 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce826a67df0b81749bbbe"}}, {"id": "C", "title": "化学方程式配平", "tags": ["字符串解析", "线性代数", "高斯消元", "模运算"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce828a67df0b81749bbd1"}}, {"id": "D", "title": "十滴水", "tags": ["模拟", "双向链表", "优先队列"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce829a67df0b81749bbe8"}}, {"id": "E", "title": "文件夹合并", "tags": ["树", "链表", "DFS序", "树状数组"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce82ba67df0b81749bbfa"}}]
 ---
 
 # CSP 202403 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "词频统计", "tags": ["计数", "时间戳"],
 
 标签：`计数` · `时间戳`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 n篇文章由1…m的单词编号表示。对每个词输出出现的文章数和总出现次数，同篇多次出现只贡献一个文章数。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202403A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202403A)。
 
 ### 题解
 
@@ -71,13 +73,15 @@ int main() {
 
 标签：`集合` · `哈希` · `大小写转换`
 
-状态：**已实现**。C++17 编译通过；4 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；4 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 两篇文章各由一列英文单词组成。忽略大小写、各自去重后，输出两个单词集合的交集大小和并集大小。存档加强范围每篇可达 $5\times10^5$ 个单词。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202403B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202403B)。
 
 ### 题解
 
@@ -128,13 +132,15 @@ int main() {
 
 标签：`字符串解析` · `线性代数` · `高斯消元` · `模运算`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 输入若干组物质化学式，每种物质由小写元素名及其原子数组成，不含括号，数字 1 不省略。判断把物质系数当作未知数得到的齐次线性方程组是否存在非零解，输出 Y/N。允许某些系数为零，不要求全部为正。每组物质和元素均不超过 40 种，原子数不超过 50。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202403C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202403C)。
 
 ### 题解
 
@@ -252,13 +258,15 @@ int main() {
 
 标签：`模拟` · `双向链表` · `优先队列`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 一维格子中最初有 $m$ 个位置含 1 到 4 滴水。每次向一个当前有水的位置加一滴；水量达到 5 的格子会爆开、清空，并让左右最近的有水格子各加一滴。多个位置待爆时，始终先爆最左边的，包括连锁反应中新产生的位置。每次操作后输出剩余有水格子数。输入 `c m n`、$m$ 个 `位置 水量`、$n$ 个操作位置；$c\le10^9,m\le3\times10^5,n\le4m$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202403D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202403D)。
 
 ### 题解
 
@@ -333,13 +341,15 @@ int main() {
 
 标签：`树` · `链表` · `DFS序` · `树状数组`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 根为 1 的文件夹树，每个文件夹有自己的数据量。合并 `1 x` 删除 $x$ 当前的所有直接子文件夹，将它们的数据加给 $x$，其子文件夹提升为 $x$ 的直接子文件夹；输出新子文件夹数和 $x$ 的数据量。访问 `2 z` 输出从根到 $z$ 的存活文件夹数。操作目标保证仍存活。输入 `n m`、2 到 $n$ 的父亲、各点数据量、操作；$n\le5\times10^5$，$m\le3n$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202403E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202403E)。
 
 ### 题解
 

@@ -3,10 +3,10 @@ title: "CSP 201503 五题题解"
 contest: "201503"
 contest_month: "2015-03"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "矩阵旋转", "坐标映射", "频率统计", "自定义排序", "日期计算", "枚举", "树的直径", "BFS", "点分治", "倍增", "贪心", "树上查询"]
 status: "published"
-problems: [{"id": "A", "title": "图像旋转", "tags": ["矩阵旋转", "坐标映射"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503A/"}]}, {"id": "B", "title": "数字排序", "tags": ["频率统计", "自定义排序"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503B/"}]}, {"id": "C", "title": "节日", "tags": ["日期计算", "枚举"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503C/"}]}, {"id": "D", "title": "网络延时", "tags": ["树的直径", "BFS"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503D/"}]}, {"id": "E", "title": "最小花费", "tags": ["点分治", "倍增", "贪心", "树上查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503E/"}]}]
+problems: [{"id": "A", "title": "图像旋转", "tags": ["矩阵旋转", "坐标映射"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503A/"}]}, {"id": "B", "title": "数字排序", "tags": ["频率统计", "自定义排序"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503B/"}]}, {"id": "C", "title": "节日", "tags": ["日期计算", "枚举"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503C/"}]}, {"id": "D", "title": "网络延时", "tags": ["树的直径", "BFS"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503D/"}]}, {"id": "E", "title": "最小花费", "tags": ["点分治", "倍增", "贪心", "树上查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503E/"}]}]
 ---
 
 # CSP 201503 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "图像旋转", "tags": ["矩阵旋转", "坐标
 把n×m矩阵逆时针旋转90度，输出m×n结果。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201503A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201503A)。
 
 ### 题解
 
@@ -77,6 +79,8 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201503B/)。
 
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201503B)。
+
 ### 题解
 
 用map统计频次，再构造二元组 `(-次数,数值)` 放入数组，按默认字典序排序。第一关键字的负号把降序变成升序，第二关键字自然使同频率的小数先输出。
@@ -125,6 +129,8 @@ int main() {
 求 y1 到 y2 各年 a 月第 b 个星期 c 的日期，不存在则输出 none。星期一至日用 1—7，年份范围 1850—2050；已知 1850-01-01 是星期二。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201503C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201503C)。
 
 ### 题解
 
@@ -177,6 +183,8 @@ int main() {
 有 n 台交换机和 m 台终端电脑。交换机 2 到 n 各连到一个编号更小的父交换机，每台电脑再连到一台交换机，整个网络是一棵树。求任意两台设备之间最多要经过多少条连接。$n,m\le10^4$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201503D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201503D)。
 
 ### 题解
 
@@ -239,6 +247,8 @@ int main() {
 树上城市的食物价格不同，沿边每走一单位长度消耗一单位食物。可以在经过的城市提前购买任意数量的食物，但不能绕路。对每个有向起终点对 $(s,t)$，求沿唯一简单路径旅行的最低费用。输入 `n m`、价格、带长度的树边以及查询；$n,m\le10^5$。方向不能忽略，同一路径反向旅行的费用通常不同。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201503E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201503E)。
 
 ### 题解
 

@@ -3,10 +3,10 @@ title: "CSP 202006 五题题解"
 contest: "202006"
 contest_month: "2020-06"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "直线两侧", "符号判断", "双指针", "稀疏向量", "状态机", "字符串", "模拟", "KMP", "矩阵快速幂", "递推", "最大权闭合子图", "最小割", "二次函数"]
 status: "published"
-problems: [{"id": "A", "title": "线性分类器", "tags": ["直线两侧", "符号判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006A/"}]}, {"id": "B", "title": "稀疏向量", "tags": ["双指针", "稀疏向量"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006B/"}]}, {"id": "C", "title": "Markdown 渲染器", "tags": ["状态机", "字符串", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006C/"}]}, {"id": "D", "title": "1246", "tags": ["字符串", "KMP", "矩阵快速幂", "递推"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006D/"}]}, {"id": "E", "title": "乔乔和牛牛逛超市", "tags": ["最大权闭合子图", "最小割", "二次函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006E/"}]}]
+problems: [{"id": "A", "title": "线性分类器", "tags": ["直线两侧", "符号判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1574ace1cba9a1bce6"}}, {"id": "B", "title": "稀疏向量", "tags": ["双指针", "稀疏向量"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1774ace1cba9a1bd0b"}}, {"id": "C", "title": "Markdown 渲染器", "tags": ["状态机", "字符串", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006C/"}]}, {"id": "D", "title": "1246", "tags": ["字符串", "KMP", "矩阵快速幂", "递推"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006D/"}]}, {"id": "E", "title": "乔乔和牛牛逛超市", "tags": ["最大权闭合子图", "最小割", "二次函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006E/"}]}]
 ---
 
 # CSP 202006 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "线性分类器", "tags": ["直线两侧", "符
 
 标签：`直线两侧` · `符号判断`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 给带A/B标签的平面点，对每条θ0+θ1x+θ2y=0直线判断两类是否各自完全位于不同侧。两类均存在，输入保证没有点在线上。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202006A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202006A)。
 
 ### 题解
 
@@ -78,13 +80,15 @@ int main() {
 
 标签：`双指针` · `稀疏向量`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 两个 n 维向量只给出非零项，且各自按下标递增排列。n 可达$10^9$，每个向量非零项至多$5\times10^5$。求内积。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202006B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202006B)。
 
 ### 题解
 
@@ -141,6 +145,8 @@ int main() {
 在宽 w 的终端渲染简化 Markdown，输出占用行数。空白行分隔块；普通段落各行去首尾空格后用一个空格连接；`* ` 开头启动列表项，后续以两个空格开头的非空白行可接续该项。列表正文宽度为 w-3，每项至少占一行。换行后丢弃剩余文本开头连续空格，块之间留一空行。输入可达 20 MiB。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202006C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202006C)。
 
 ### 题解
 
@@ -251,6 +257,8 @@ int main() {
 从字符串 `1` 开始，每秒同时把 1 换成 2、2 换成 4、4 换成 16、6 换成 64。给定秒数 $n\le10^9$ 和仅含这四种数字的模式串 S（长度至多 $10^5$），求第 n 秒字符串中 S 的出现次数，允许重叠，答案模 $998244353$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202006D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202006D)。
 
 ### 题解
 
@@ -410,6 +418,8 @@ int main() {
 每种商品可以不买，或购买整数数量 $x_i\in[L_i,R_i]$，开心程度为二次函数 $a_ix_i^2+b_ix_i+c_i$。限制 1：买商品 $y$ 就必须买商品 $x$；限制 2：商品 $y$ 买到其端点数量 $L_y$ 或 $R_y$ 时，必须买商品 $x$。求最大总开心程度。输入 `n m`、各商品 `L R a b c`、限制 `z x y`；$n\le10^4,m\le10^5$，且内部区间非空。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202006E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202006E)。
 
 ### 题解
 

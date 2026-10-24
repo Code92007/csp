@@ -3,10 +3,10 @@ title: "CSP 202509 五题题解"
 contest: "202509"
 contest_month: "2025-09"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "几何判断", "定点数", "计数", "矩阵枚举", "差分", "区间并集", "字符串解析", "Huffman", "双端队列", "模拟", "树", "LCA", "可持久化线段树", "mex", "动态规划", "离散凸性", "优先队列", "拉格朗日优化"]
 status: "published"
-problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点数", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/"}]}, {"id": "B", "title": "水印检查", "tags": ["矩阵枚举", "差分", "区间并集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/"}]}, {"id": "C", "title": "HTTP 头信息", "tags": ["字符串解析", "Huffman", "双端队列", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/"}]}, {"id": "D", "title": "造题计划（上）", "tags": ["树", "LCA", "可持久化线段树", "mex"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/"}]}, {"id": "E", "title": "造题计划（下）", "tags": ["动态规划", "离散凸性", "优先队列", "拉格朗日优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/"}]}]
+problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点数", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce736a67df0b81749b65c"}}, {"id": "B", "title": "水印检查", "tags": ["矩阵枚举", "差分", "区间并集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce738a67df0b81749b678"}}, {"id": "C", "title": "HTTP 头信息", "tags": ["字符串解析", "Huffman", "双端队列", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce739a67df0b81749b685"}}, {"id": "D", "title": "造题计划（上）", "tags": ["树", "LCA", "可持久化线段树", "mex"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a"}}, {"id": "E", "title": "造题计划（下）", "tags": ["动态规划", "离散凸性", "优先队列", "拉格朗日优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1"}}]
 ---
 
 # CSP 202509 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点
 
 标签：`几何判断` · `定点数` · `计数`
 
-状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 给定正方形[-a,a]²内的n个点，统计位于半径a圆内（含边界）的点数m，输出估计值4m/n。坐标最多两位小数，n、a≤1000。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509A)。
 
 ### 题解
 
@@ -78,13 +80,15 @@ int main() {
 
 标签：`矩阵枚举` · `差分` · `区间并集`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 对 n×n 灰度图选阈值 k，灰度≥k 为白，否则黑。求所有使某个 5×9 子矩阵恰好呈现题定 CSP 图案的 k，范围 0≤k<L，n≤200、L≤65536。图案固定、不旋转、不翻转。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509B)。
 
 ### 题解
 
@@ -143,13 +147,15 @@ int main() {
 
 标签：`字符串解析` · `Huffman` · `双端队列` · `模拟`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 模拟简化 HPACK。静态表有 S 项，动态表最多 D 项，新项插在动态表最前面，超限删除末项。指令 1 引用完整条目；2 指定字段名和字段值并加入动态表；3 只输出、不加入。字段名可直接给出或按表索引引用。普通字符串原样输出，HH 开头去掉一个 H；单个 H 开头表示十六进制 Huffman 数据，末字节是补零位数。输出 `key: value`。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509C)。
 
 ### 题解
 
@@ -259,13 +265,15 @@ int main() {
 
 标签：`树` · `LCA` · `可持久化线段树` · `mex`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 给定一棵 $n$ 个点的树，每个点有一个权值，所有权值恰为 $0,1,\ldots,n-1$ 的排列。每次询问两点之间简单路径上的权值集合的 mex，即最小未出现的非负整数。输入 $n,m$、点权、$n-1$ 条边和 $m$ 对查询端点；每个查询输出一个整数。$n,m\le2\times10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509D)。
 
 ### 题解
 
@@ -380,13 +388,15 @@ int main() {
 
 标签：`动态规划` · `离散凸性` · `优先队列` · `拉格朗日优化`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 共 $n$ 天，第 $i$ 天上午至多造一题、费用 $a_i$，下午至多验一题、费用 $b_i$。验题之前必须已经造好，同一天上午造的题可以下午验。给定预算 $m$，求最多完成的题数。输入 `n m`，然后两行费用。$n\le5\times10^5$，费用在 $[1,10^9]$，预算不超过 $10^{18}$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509E)。
 
 ### 题解
 

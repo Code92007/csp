@@ -3,10 +3,10 @@ title: "CSP 201509 五题题解"
 contest: "201509"
 contest_month: "2015-09"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "连续段", "线性扫描", "日期计算", "模拟", "字符串扫描", "模板替换", "哈希表", "图论", "强连通分量", "Kosaraju", "AC自动机", "矩阵快速幂", "最大加代数"]
 status: "published"
-problems: [{"id": "A", "title": "数列分段", "tags": ["连续段", "线性扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509A/"}]}, {"id": "B", "title": "日期计算", "tags": ["日期计算", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509B/"}]}, {"id": "C", "title": "模板生成系统", "tags": ["字符串扫描", "模板替换", "哈希表"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509C/"}]}, {"id": "D", "title": "高速公路", "tags": ["图论", "强连通分量", "Kosaraju"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509D/"}]}, {"id": "E", "title": "最佳文章", "tags": ["AC自动机", "矩阵快速幂", "最大加代数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509E/"}]}]
+problems: [{"id": "A", "title": "数列分段", "tags": ["连续段", "线性扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509A/"}]}, {"id": "B", "title": "日期计算", "tags": ["日期计算", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509B/"}]}, {"id": "C", "title": "模板生成系统", "tags": ["字符串扫描", "模板替换", "哈希表"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509C/"}]}, {"id": "D", "title": "高速公路", "tags": ["图论", "强连通分量", "Kosaraju"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509D/"}]}, {"id": "E", "title": "最佳文章", "tags": ["AC自动机", "矩阵快速幂", "最大加代数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509E/"}]}]
 ---
 
 # CSP 201509 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "数列分段", "tags": ["连续段", "线性扫
 把数列划成若干连续相同值的极大段，求段数。同一个数在不同位置被其他值隔开时属于不同段。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201509A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201509A)。
 
 ### 题解
 
@@ -70,6 +72,8 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201509B/)。
 
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201509B)。
+
 ### 题解
 
 按闰年规则设置二月为28或29天，从一月开始：若d大于当前月天数，则减去该月天数并进入下月，否则当前月和剩余d就是答案。
@@ -111,6 +115,8 @@ int main() {
 把模板中的合法标记 `{{ VAR }}` 替换成变量值。变量名区分大小写，未定义变量变为空串；变量值可能包含同样的标记，但不再递归替换。保留其余字符及每一行的格式。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201509C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201509C)。
 
 ### 题解
 
@@ -176,6 +182,8 @@ int main() {
 给定 n 个城市、m 条单向公路，若两城市能互相到达，则组成一对便利城市。无序点对只计一次，求总数。$n\le10^4,m\le10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201509D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201509D)。
 
 ### 题解
 
@@ -261,6 +269,8 @@ int main() {
 选定 $n$ 个不同的小写单词。一篇长度为 $m$ 的文章的重要度为这些单词出现次数之和，允许重叠和包含。求所有长度为 $m$ 的字符串中的最大重要度。输入 `n m` 和各单词，单词总长度不超过 100，$m\le10^{15}$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201509E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201509E)。
 
 ### 题解
 

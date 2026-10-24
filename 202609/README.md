@@ -3,10 +3,10 @@ title: "CSP 202609 五题题解"
 contest: "202609"
 contest_month: "2026-09"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "数学", "精度", "查表", "模拟", "动态规划", "01背包", "队列", "调度", "状态机", "图论", "二分图", "带权并查集", "区间", "构造", "树", "点分治", "动态查询", "位运算", "哈希表"]
 status: "published"
-problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "精度", "查表", "模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "已通过 C++17 编译、101 组本地对拍及复刻样例；尚未提交正式评测。", "sources": [{"label": "原题链接（当前 502）", "url": "https://oj.shumeng.tech/p/CSP202609A"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}]}, {"id": "B", "title": "流程规划（其二）", "tags": ["动态规划", "01背包", "精度"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "已通过 C++17 编译、120 组本地对拍及复刻样例；尚未提交正式评测。", "sources": [{"label": "原题链接（当前 502）", "url": "https://oj.shumeng.tech/p/CSP202609B"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}]}, {"id": "C", "title": "轮转调度", "tags": ["模拟", "队列", "调度", "状态机"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "已通过 C++17 编译、100 组本地对拍及复刻样例；尚未提交正式评测。", "sources": [{"label": "原题链接（当前 502）", "url": "https://oj.shumeng.tech/p/CSP202609C"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}]}, {"id": "D", "title": "数字分组", "tags": ["图论", "二分图", "带权并查集", "区间", "构造"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "已通过 C++17 编译、240 组本地对拍（输出由独立检查器验证）；尚未提交正式评测。", "sources": [{"label": "原题链接（当前 502）", "url": "https://oj.shumeng.tech/p/CSP202609D"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}]}, {"id": "E", "title": "奇", "tags": ["树", "点分治", "动态查询", "位运算", "哈希表"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "已通过 C++17 编译、140 组本地对拍及复刻样例；尚未提交正式评测。", "sources": [{"label": "原题链接（当前 502）", "url": "https://oj.shumeng.tech/p/CSP202609E"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}]}]
+problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "精度", "查表", "模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "已通过 C++17 编译、101 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609A"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6c2a67df0b81749b341"}}, {"id": "B", "title": "流程规划（其二）", "tags": ["动态规划", "01背包", "精度"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "已通过 C++17 编译、120 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609B"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e0a67df0b81749b3d9"}}, {"id": "C", "title": "轮转调度", "tags": ["模拟", "队列", "调度", "状态机"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "已通过 C++17 编译、100 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609C"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e2a67df0b81749b3e7"}}, {"id": "D", "title": "数字分组", "tags": ["图论", "二分图", "带权并查集", "区间", "构造"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "已通过 C++17 编译、240 组本地对拍（输出由独立检查器验证）；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609D"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e4a67df0b81749b40a"}}, {"id": "E", "title": "奇", "tags": ["树", "点分治", "动态查询", "位运算", "哈希表"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "已通过 C++17 编译、140 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609E"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce90ea67df0b81749bfe2"}}]
 ---
 
 # CSP 202609 五题题解
@@ -21,7 +21,7 @@ problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "
 
 标签：`数学` · `精度` · `查表` · `模拟`
 
-状态：**已实现**。已通过 C++17 编译、101 组本地对拍及复刻样例；尚未提交正式评测。
+状态：**已实现**。已通过 C++17 编译、101 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -29,7 +29,7 @@ problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "
 
 给定时间上限 $m$，计算 $z=(m-\mu)/\sigma$，再从一张递增表中选择与 $z$ 横坐标距离最近的表项。若恰好等距，选择横坐标较小的表项。输出这一项在输入中的函数值，保留原来的三位小数格式。所有输入实数都是三位小数，且保证 $z$ 在表内。输入依次为 `n m k`、$n$ 个均值、$n$ 个标准差、$k$ 个横坐标及 $k$ 个函数值；$n,m\le100$，$k\le20$。
 
-来源：[原题链接（当前 502）](https://oj.shumeng.tech/p/CSP202609A)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609A)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 
@@ -110,13 +110,13 @@ int main() {
 
 标签：`动态规划` · `01背包` · `精度`
 
-状态：**已实现**。已通过 C++17 编译、120 组本地对拍及复刻样例；尚未提交正式评测。
+状态：**已实现**。已通过 C++17 编译、120 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 从 $n$ 个可选环节中各选或不选一次。选中集合 $S$ 的收益是 $\sum\mu_i$，总标准差是 $\sqrt{\sum\sigma_i^2}$。非空集合需满足 $m/\sqrt{\sum\sigma_i^2}\ge q$；也允许选择空集合，收益为 0。求最大收益。这里 $n\le100$，每个整数收益 $\mu_i\le100$，标准差保留一位小数，$q$ 保留三位小数。输入依次为 `n m q`、$n$ 个收益、$n$ 个标准差；输出一个最大收益整数。
 
-来源：[原题链接（当前 502）](https://oj.shumeng.tech/p/CSP202609B)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609B)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 
@@ -204,7 +204,7 @@ int main() {
 
 标签：`模拟` · `队列` · `调度` · `状态机`
 
-状态：**已实现**。已通过 C++17 编译、100 组本地对拍及复刻样例；尚未提交正式评测。
+状态：**已实现**。已通过 C++17 编译、100 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -214,7 +214,7 @@ int main() {
 
 题目规模为 $n,m\le100$，任务工作量和 CPU 时间片均不超过 100。输入先给 `n m T`，接着给 $m$ 个 CPU 的时间片长度；每个任务一行 `工作量 偏好CPU数 偏好CPU编号列表`。CPU 和任务编号均从 1 开始，按任务顺序输出 $n$ 个答案。
 
-来源：[原题链接（当前 502）](https://oj.shumeng.tech/p/CSP202609C)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609C)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 
@@ -305,7 +305,7 @@ int main() {
 
 标签：`图论` · `二分图` · `带权并查集` · `区间` · `构造`
 
-状态：**已实现**。已通过 C++17 编译、240 组本地对拍（输出由独立检查器验证）；尚未提交正式评测。
+状态：**已实现**。已通过 C++17 编译、240 组本地对拍（输出由独立检查器验证）；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -313,7 +313,7 @@ int main() {
 
 输入给出 `n k op`，随后是 $n$ 个互不相同的正整数。输出最少组数，再对每组输出其大小与成员，允许任意最优合法划分。
 
-来源：[原题链接（当前 502）](https://oj.shumeng.tech/p/CSP202609D)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609D)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 
@@ -450,7 +450,7 @@ int main() {
 
 标签：`树` · `点分治` · `动态查询` · `位运算` · `哈希表`
 
-状态：**已实现**。已通过 C++17 编译、140 组本地对拍及复刻样例；尚未提交正式评测。
+状态：**已实现**。已通过 C++17 编译、140 组本地对拍及复刻样例；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -458,7 +458,7 @@ int main() {
 
 先输出初始答案，每次翻转一个点的灯后再次输出。规模为 $n,q\le10^5$、颜色数 $m\le40$、$k\le4$。输入依次为 `n m k q`、长度为 $n$ 的灯状态 01 字符串、$n$ 个颜色、$n-1$ 条带权边和 $q$ 个待翻转点编号；点与颜色编号从 1 开始。边权不超过 $10^6$。输出初始及每次开关后的答案，共 $q+1$ 行。
 
-来源：[原题链接（当前 502）](https://oj.shumeng.tech/p/CSP202609E)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
+来源：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202609E)；[公开复刻题面（独立编写）](https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json)
 
 ### 题解
 
@@ -485,11 +485,11 @@ $$mask(u,c)\oplus mask(v,c)\oplus bit(c).$$
 - 原来灭灯：先查询已有亮点中的伙伴数，答案加上它，再额外加 1 计入 $\{u,u\}$，最后把 $u$ 加入全部相关计数表。
 - 原来亮灯：先查询，此时结果已经包含自身，答案减去查询值，再从各表删除 $u$。
 
-初始状态从全灭开始，依次加入初始亮灯节点。答案使用 `long long`。代码预先登记所有可能出现的哈希键，开关时仅修改计数，避免反复分配节点。
+初始状态从全灭开始，依次加入初始亮灯节点。答案使用 `long long`。代码预先登记所有可能出现的哈希键，使用连续数组开放寻址保存计数；开关时仅修改计数，避免反复分配节点。
 
 **为什么不重不漏？** 对两个不同端点，点分治过程中第一次把它们分开的重心，恰好是唯一将这个点对计入“总表减同分支表”的层。更高层被同分支减掉，更低层不会同时包含两端；自身点对仅在以自身为重心的层保留。因此查询恰好计数一次。距离与掩码条件又分别准确表达两项限制。
 
-**复杂度。** 预处理约 $O(n\log n)$，每次开关期望 $O(m\log n)$；含初始化，总时间期望 $O((n+q)m\log n)$。计数表和祖先记录空间 $O(n\log n)$。哈希表的常数较大，应使用优化编译并关注峰值内存。
+**复杂度。** 预处理约 $O(n\log n)$，每次开关期望 $O(m\log n)$；含初始化，总时间期望 $O((n+q)m\log n)$。计数表和祖先记录空间 $O(n\log n)$。查询数量仍随颜色数线性增长，应关注极限数据的运行时间。
 
 ### 代码
 
@@ -500,7 +500,6 @@ $$mask(u,c)\oplus mask(v,c)\oplus bit(c).$$
 #include <cstdint>
 #include <iostream>
 #include <string>
-#include <unordered_map>
 #include <vector>
 using namespace std;
 using Mask = uint64_t;
@@ -514,7 +513,35 @@ struct Hash {
         return x ^ (x >> 31);
     }
 };
-using Counter = unordered_map<Mask, int, Hash>;
+class Counter {
+    static constexpr Mask empty = ~Mask(0);
+    vector<Mask> keys;
+    vector<int> values;
+    size_t capacityMask = 0;
+
+    size_t slot(Mask key) const {
+        size_t i = Hash{}(key) & capacityMask;
+        while (keys[i] != empty && keys[i] != key) i = (i + 1) & capacityMask;
+        return i;
+    }
+public:
+    void reserve(size_t expected) {
+        size_t capacity = 2;
+        while (capacity < expected * 2) capacity <<= 1;
+        keys.assign(capacity, empty);
+        values.assign(capacity, 0);
+        capacityMask = capacity - 1;
+    }
+    void emplace(Mask key, int value) {
+        size_t i = slot(key);
+        if (keys[i] == empty) { keys[i] = key; values[i] = value; }
+    }
+    int get(Mask key) const {
+        size_t i = slot(key);
+        return keys[i] == key ? values[i] : 0;
+    }
+    void add(Mask key, int delta) { values[slot(key)] += delta; }
+};
 struct Edge { int to, weight; };
 struct Record { Mask mask; int centre, branch, distance; };
 struct Visit { int node, parent, distance; Mask mask; };
@@ -559,7 +586,6 @@ class Solver {
         vector<int> nodes;
         int centre = centroid(start, nodes);
         removed[centre] = true;
-        all[centre].max_load_factor(0.7f);
         all[centre].reserve(nodes.size());
         ancestors[centre].push_back({bit[centre], centre, -1, 0});
         all[centre].emplace(bit[centre] << 2, 0);
@@ -575,7 +601,6 @@ class Solver {
                     visits.push_back({next.to, cur.node, (cur.distance + next.weight) % modulus, cur.mask ^ bit[next.to]});
                 }
             }
-            branch[id].max_load_factor(0.7f);
             branch[id].reserve(visits.size());
             for (const auto& cur : visits) {
                 ancestors[cur.node].push_back({cur.mask, centre, id, cur.distance});
@@ -588,10 +613,6 @@ class Solver {
             if (!removed[edge.to]) decompose(edge.to);
     }
 
-    static int lookup(const Counter& counter, Mask key) {
-        auto it = counter.find(key);
-        return it == counter.end() ? 0 : it->second;
-    }
 public:
     Solver(int count, int k) : n(count), modulus(k), tree(n), bit(n), removed(n), parent(n), subtree(n), ancestors(n), all(n) {
         branch.reserve(n);
@@ -614,8 +635,8 @@ public:
             int required = (modulus - r.distance) % modulus;
             for (Mask oddColour : colours) {
                 Mask key = ((base ^ oddColour) << 2) | Mask(required);
-                result += lookup(all[r.centre], key);
-                if (r.branch != -1) result -= lookup(branch[r.branch], key);
+                result += all[r.centre].get(key);
+                if (r.branch != -1) result -= branch[r.branch].get(key);
             }
         }
         return result;
@@ -623,8 +644,8 @@ public:
     void change(int node, int delta) {
         for (const auto& r : ancestors[node]) {
             Mask key = (r.mask << 2) | Mask(r.distance);
-            all[r.centre].find(key)->second += delta;
-            if (r.branch != -1) branch[r.branch].find(key)->second += delta;
+            all[r.centre].add(key, delta);
+            if (r.branch != -1) branch[r.branch].add(key, delta);
         }
     }
 };
@@ -660,4 +681,3 @@ int main() {
     }
 }
 ```
-

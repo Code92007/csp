@@ -3,10 +3,10 @@ title: "CSP 201703 五题题解"
 contest: "201703"
 contest_month: "2017-03"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "顺序模拟", "分组", "数组", "模拟", "Markdown", "字符串解析", "递归", "并查集", "排序", "最小瓶颈路径", "最小割", "网格图", "动态规划"]
 status: "published"
-problems: [{"id": "A", "title": "分蛋糕", "tags": ["顺序模拟", "分组"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703A/"}]}, {"id": "B", "title": "学生排队", "tags": ["数组", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703B/"}]}, {"id": "C", "title": "Markdown", "tags": ["Markdown", "字符串解析", "递归"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703C/"}]}, {"id": "D", "title": "地铁修建", "tags": ["并查集", "排序", "最小瓶颈路径"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703D/"}]}, {"id": "E", "title": "引水入城", "tags": ["最小割", "网格图", "动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；4 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703E/"}]}]
+problems: [{"id": "A", "title": "分蛋糕", "tags": ["顺序模拟", "分组"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703A/"}]}, {"id": "B", "title": "学生排队", "tags": ["数组", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703B/"}]}, {"id": "C", "title": "Markdown", "tags": ["Markdown", "字符串解析", "递归"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703C/"}]}, {"id": "D", "title": "地铁修建", "tags": ["并查集", "排序", "最小瓶颈路径"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703D/"}]}, {"id": "E", "title": "引水入城", "tags": ["最小割", "网格图", "动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；4 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703E/"}]}]
 ---
 
 # CSP 201703 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "分蛋糕", "tags": ["顺序模拟", "分组"],
 按编号依次分整块蛋糕给朋友，当前朋友累计重量达到k就换下一个；蛋糕全部分完时即便最后一人不足k，也算分到。求人数。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201703A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201703A)。
 
 ### 题解
 
@@ -74,6 +76,8 @@ int main() {
 学生初始按学号1…n排队。每次指定学号p，向后移动q个位置（q<0为向前），输入保证合法。输出最终学号顺序，n、操作数≤1000。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201703B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201703B)。
 
 ### 题解
 
@@ -125,6 +129,8 @@ int main() {
 把题目规定的简化 Markdown 转成 HTML：支持段落、1—6 级标题、单层无序列表，以及强调和超链接。两种行内格式可相互嵌套，各自不超过一层。输入块之间有空行，输出删除块间空行，保留段落内部换行。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201703C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201703C)。
 
 ### 题解
 
@@ -219,6 +225,8 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201703D/)。
 
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201703D)。
+
 ### 题解
 
 一条线路的所有隧道同时开工，所以完工时间是边权的最大值，不是边权之和。给定天数 T，问题等价于只允许使用权值不超过 T 的边时，1 与 n 是否连通。
@@ -291,6 +299,8 @@ int main() {
 $n\times m$ 的管网中，第一行是水源，最后一行是城市。竖直向下有容量限制，向上容量无限；中间各行的水平边双向都有给定容量。求最大引水量。输入 `n m A B Q X0`，按 $X_{i+1}=(AX_i+B)\bmod Q$ 生成竖边容量，再生成横边容量，均按题面行优先顺序。$n,m\le5000$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201703E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201703E)。
 
 ### 题解
 

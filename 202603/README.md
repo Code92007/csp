@@ -3,10 +3,10 @@ title: "CSP 202603 五题题解"
 contest: "202603"
 contest_month: "2026-03"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "位运算", "计数", "0/1背包", "分数背包", "贪心", "模拟", "内存分配", "有序集合", "数位", "线段树", "懒标记", "树链剖分", "树状数组", "随机化", "在线查询"]
 status: "published"
-problems: [{"id": "A", "title": "平衡数", "tags": ["位运算", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603A/"}]}, {"id": "B", "title": "机器人项目管理", "tags": ["0/1背包", "分数背包", "贪心"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603B/"}]}, {"id": "C", "title": "进程通信", "tags": ["模拟", "内存分配", "有序集合"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603C/"}]}, {"id": "D", "title": "异或", "tags": ["数位", "线段树", "懒标记"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603D/"}]}, {"id": "E", "title": "旅游计划 - Easy Ver.", "tags": ["树链剖分", "树状数组", "随机化", "在线查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603E/"}]}]
+problems: [{"id": "A", "title": "平衡数", "tags": ["位运算", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce724a67df0b81749b544"}}, {"id": "B", "title": "机器人项目管理", "tags": ["0/1背包", "分数背包", "贪心"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce726a67df0b81749b54b"}}, {"id": "C", "title": "进程通信", "tags": ["模拟", "内存分配", "有序集合"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce727a67df0b81749b550"}}, {"id": "D", "title": "异或", "tags": ["数位", "线段树", "懒标记"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce729a67df0b81749b56b"}}, {"id": "E", "title": "旅游计划 - Easy Ver.", "tags": ["树链剖分", "树状数组", "随机化", "在线查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72ba67df0b81749b59e"}}]
 ---
 
 # CSP 202603 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "平衡数", "tags": ["位运算", "计数"], "s
 
 标签：`位运算` · `计数`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 统计给定正整数中，二进制有效位里0和1数量相同的数。最高位之前的补零不计，数值≤$10^9$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202603A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202603A)。
 
 ### 题解
 
@@ -65,13 +67,15 @@ int main() {
 
 标签：`0/1背包` · `分数背包` · `贪心`
 
-状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 n 个任务的初始总耗时为各自 t 之和。普通任务消耗 a 杯咖啡才可缩短 b，不能部分购买；灵活任务可购买任意实数杯，按比例缩短，至多购买 a 杯。预算 m≤1000，n≤200，求最短总时间。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202603B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202603B)。
 
 ### 题解
 
@@ -136,13 +140,15 @@ int main() {
 
 标签：`模拟` · `内存分配` · `有序集合`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 有 n 个进程与从地址 0 开始的无限空闲内存。`new p L` 建立长度 L 的队列：选择能容纳它的最短连续空闲段，同长取最左段，并从左端分配，输出起点。`send p` 向该进程所有队列各写一个对象，首次写起点，此后循环写下一个地址，输出本次写入地址之和。`delete p i` 删除第 i 个队列，释放内存并让后面的接口编号减一。$n\le100,q\le8000,L\le5\times10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202603C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202603C)。
 
 ### 题解
 
@@ -248,7 +254,7 @@ int main() {
 
 标签：`数位` · `线段树` · `懒标记`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
@@ -257,6 +263,8 @@ int main() {
 输入 $n,m,k$、长度为 $n$ 的数组，随后执行 $m$ 次操作：`1 l r v` 将区间内所有元素与 $v$ 做 $\oplus_k$；`2 l r` 输出区间内所有 $f(a_i)$ 的 $\oplus_k$。$n\le5\times10^5,m\le10^4$，$11\le k\le10^9$ 且为奇数，数值不超过 $10^{12}$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202603D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202603D)。
 
 ### 题解
 
@@ -400,13 +408,15 @@ int main() {
 
 标签：`树链剖分` · `树状数组` · `随机化` · `在线查询`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 树上的每条边最初都未翻修。一辆车在两个维修站之间最多经过一条未修边；起点出发时轮胎完好，到站后才能修复。给定固定的 $m$ 条旅游计划，支持把一条边修好，以及查询可行计划数。输入依次是 `n X`、树边、维修站数和编号、计划数和端点、事件数和事件。`1 u v` 的端点要异或 `X*lastans` 解码，`2` 输出答案。$n,m\le10^5$，站点数 $k\le20$，事件数 $q\le2\times10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202603E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202603E)。
 
 ### 题解
 

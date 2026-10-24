@@ -3,10 +3,10 @@ title: "CSP 201712 五题题解"
 contest: "201712"
 contest_month: "2017-12"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "排序", "相邻元素", "队列", "循环模拟", "日期计算", "字符串解析", "枚举", "最短路", "Floyd", "分层图", "Dijkstra", "树形DP", "李超线段树", "启发式合并", "斜率优化"]
 status: "published"
-problems: [{"id": "A", "title": "最小差值", "tags": ["排序", "相邻元素"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.cnblogs.com/wydxry/p/10730131.html"}]}, {"id": "B", "title": "游戏", "tags": ["队列", "循环模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；270 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://blog.51cto.com/u_15346485/3677111"}]}, {"id": "C", "title": "Crontab", "tags": ["日期计算", "字符串解析", "枚举", "排序"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.cnblogs.com/imane/p/15095778.html"}]}, {"id": "D", "title": "行车路线", "tags": ["最短路", "Floyd", "分层图", "Dijkstra"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.dreamwings.cn/ccf201712-4/5213.html"}]}, {"id": "E", "title": "商路", "tags": ["树形DP", "李超线段树", "启发式合并", "斜率优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "题面转录与转移式核对", "url": "https://bigrandall.io/u/randall/blog/20-chun-xiao-xue-qi-cheng-xu-she-ji-shi-yan-bao-gao#2-ccf-201712-5-商路"}]}]
+problems: [{"id": "A", "title": "最小差值", "tags": ["排序", "相邻元素"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.cnblogs.com/wydxry/p/10730131.html"}]}, {"id": "B", "title": "游戏", "tags": ["队列", "循环模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；270 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201712B"}, {"label": "公开题面存档", "url": "https://blog.51cto.com/u_15346485/3677111"}]}, {"id": "C", "title": "Crontab", "tags": ["日期计算", "字符串解析", "枚举", "排序"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.cnblogs.com/imane/p/15095778.html"}]}, {"id": "D", "title": "行车路线", "tags": ["最短路", "Floyd", "分层图", "Dijkstra"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.dreamwings.cn/ccf201712-4/5213.html"}]}, {"id": "E", "title": "商路", "tags": ["树形DP", "李超线段树", "启发式合并", "斜率优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "题面转录与转移式核对", "url": "https://bigrandall.io/u/randall/blog/20-chun-xiao-xue-qi-cheng-xu-she-ji-shi-yan-bao-gao#2-ccf-201712-5-商路"}]}]
 ---
 
 # CSP 201712 五题题解
@@ -72,6 +72,8 @@ int main() {
 n个小朋友围成一圈，从1号开始连续报1、2、3…，报数为k的倍数或个位为k者退出，求最后剩余编号。n≤1000，1≤k≤9。
 
 来源：[公开题面存档](https://blog.51cto.com/u_15346485/3677111)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201712B)。
 
 ### 题解
 

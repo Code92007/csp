@@ -3,10 +3,10 @@ title: "CSP 202104 五题题解"
 contest: "202104"
 contest_month: "2021-04"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "计数数组", "直方图", "二维前缀和", "矩形查询", "状态机", "优先队列", "有序集合", "模拟", "动态规划", "因数", "计数", "最短路", "中国剩余定理", "扩展欧几里得", "周期"]
 status: "published"
-problems: [{"id": "A", "title": "灰度直方图", "tags": ["计数数组", "直方图"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104A/"}]}, {"id": "B", "title": "邻域均值", "tags": ["二维前缀和", "矩形查询"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104B/"}]}, {"id": "C", "title": "DHCP 服务器", "tags": ["状态机", "优先队列", "有序集合", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104C/"}]}, {"id": "D", "title": "校门外的树", "tags": ["动态规划", "因数", "计数"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104D/"}]}, {"id": "E", "title": "疫苗运输", "tags": ["最短路", "中国剩余定理", "扩展欧几里得", "周期"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104E/"}]}]
+problems: [{"id": "A", "title": "灰度直方图", "tags": ["计数数组", "直方图"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce971a67df0b81749c1a2"}}, {"id": "B", "title": "邻域均值", "tags": ["二维前缀和", "矩形查询"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce972a67df0b81749c1b8"}}, {"id": "C", "title": "DHCP 服务器", "tags": ["状态机", "优先队列", "有序集合", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1074ace1cba9a1bca0"}}, {"id": "D", "title": "校门外的树", "tags": ["动态规划", "因数", "计数"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1274ace1cba9a1bca8"}}, {"id": "E", "title": "疫苗运输", "tags": ["最短路", "中国剩余定理", "扩展欧几里得", "周期"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 95 分 Time Exceeded（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104E/"}], "oj": {"status": "failed", "score": 95, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6adceb1474ace1cba9a1bccd"}}]
 ---
 
 # CSP 202104 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "灰度直方图", "tags": ["计数数组", "直
 
 标签：`计数数组` · `直方图`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 给n×m灰度矩阵，每个像素值在0…L-1，按灰度顺序输出各值出现次数。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202104A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202104A)。
 
 ### 题解
 
@@ -67,13 +69,15 @@ int main() {
 
 标签：`二维前缀和` · `矩形查询`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 对n×n灰度图中的每个像素，取行列距离均不超过r且位于图内的邻域，统计平均灰度≤t的位置数，n≤600。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202104B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202104B)。
 
 ### 题解
 
@@ -120,13 +124,15 @@ int main() {
 
 标签：`状态机` · `优先队列` · `有序集合` · `模拟`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 模拟具有 N 个地址的 DHCP 服务器。地址有未分配、待分配、占用、过期四种状态；处理 DIS/REQ 报文时按题目优先级选择地址、确认或拒绝，并限制租约长度。待分配到期清除所有者，占用到期保留所有者。N、报文数不超过 $10^4$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202104C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202104C)。
 
 ### 题解
 
@@ -250,13 +256,15 @@ int main() {
 
 标签：`动态规划` · `因数` · `计数`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 数轴上障碍物坐标为递增的 $a_1,\ldots,a_n$。选择一些障碍物作为分段端点，每一段至少种一棵树，树和两端点构成整数公差的等差数列，任何树不能落在障碍物上。两种方案仅当种树坐标集合不同时才算不同。求方案数模 $10^9+7$。$n\le1000,a_i\le10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202104D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202104D)。
 
 ### 题解
 
@@ -313,13 +321,15 @@ int main() {
 
 标签：`最短路` · `中国剩余定理` · `扩展欧几里得` · `周期`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 95 分 Time Exceeded（复刻评测）。
 
 ### 题意
 
 每条循环线路有一辆车，从时刻 0 起按固定方向不断运行。疫苗可以在站点 1 等待车辆，但运输途中只能在两车同一时刻到达同一站点时换乘，不能卸货留站等待。求从站点 1 把疫苗送到其他站点的最早时刻，无解输出 `inf`。输入 `n m`；每条线路给出站点数以及依次的“站点、到下一站耗时”。$n,m\le500$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202104E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202104E)。
 
 ### 题解
 

@@ -3,10 +3,10 @@ title: "CSP 202303 五题题解"
 contest: "202303"
 contest_month: "2023-03"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "矩形相交", "几何", "二分答案", "单调性", "递归下降", "位集", "倒排索引", "离散化", "线段树", "区间赋值", "分治", "树状数组", "区间计数"]
 status: "published"
-problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16694"}]}, {"id": "B", "title": "垦田计划", "tags": ["二分答案", "单调性"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16695"}]}, {"id": "C", "title": "LDAP", "tags": ["递归下降", "位集", "倒排索引"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16696"}]}, {"id": "D", "title": "星际网络 II", "tags": ["离散化", "线段树", "区间赋值"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16697"}]}, {"id": "E", "title": "施肥", "tags": ["分治", "线段树", "树状数组", "区间计数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16698"}]}]
+problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16694"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce918a67df0b81749c020"}}, {"id": "B", "title": "垦田计划", "tags": ["二分答案", "单调性"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16695"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a"}}, {"id": "C", "title": "LDAP", "tags": ["递归下降", "位集", "倒排索引"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 70 分 Time Exceeded（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16696"}], "oj": {"status": "failed", "score": 70, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6adce91ba67df0b81749c02e"}}, {"id": "D", "title": "星际网络 II", "tags": ["离散化", "线段树", "区间赋值"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16697"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91da67df0b81749c032"}}, {"id": "E", "title": "施肥", "tags": ["分治", "线段树", "树状数组", "区间计数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16698"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91ea67df0b81749c036"}}]
 ---
 
 # CSP 202303 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何
 
 标签：`矩形相交` · `几何`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 已有若干内部互不相交的轴对齐田地，求它们落在目标矩形[0,a]×[0,b]内的总面积。坐标可为负。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16694)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202303A)。
 
 ### 题解
 
@@ -62,13 +64,15 @@ int main() {
 
 标签：`二分答案` · `单调性`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 n 块田同时开垦，第 i 块原耗时 t[i]，每缩短一天花 c[i] 资源，最短均为 k 天。共有 m 资源，求总完成时间的最小值。n、t[i]、c[i]≤$10^5$。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16695)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202303B)。
 
 ### 题解
 
@@ -120,13 +124,15 @@ int main() {
 
 标签：`递归下降` · `位集` · `倒排索引`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 70 分 Time Exceeded（复刻评测）。
 
 ### 题意
 
 每个用户有唯一 DN 及若干整数属性。表达式 `a:b` 匹配具有属性 a 且值等于 b 的用户，`a~b` 匹配具有该属性且值不等于 b 的用户；`&(E1)(E2)`、`|(E1)(E2)` 表示交和并。每次输出匹配 DN 的升序列表，可以为空行。用户至多 2500，查询至多 500，表达式长度至多 2000。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16696)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202303C)。
 
 ### 题解
 
@@ -232,13 +238,15 @@ int main() {
 
 标签：`离散化` · `线段树` · `区间赋值`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 管理最多 512 位二进制的地址，输入采用固定长度十六进制、每四位以冒号分隔。`1 id l r` 申请闭区间：不能含其他用户的地址，且必须至少有一个尚未分配地址，成功则全部归 id 并输出 YES，否则 NO。`2 s` 查询地址主人，未分配为 0；`3 l r` 查询是否整段都属于同一用户，是则输出编号，否则 0。操作数 $q\le5\times10^4$。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16697)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202303D)。
 
 ### 题解
 
@@ -376,13 +384,15 @@ int main() {
 
 标签：`分治` · `线段树` · `树状数组` · `区间计数`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 $n$ 块田地排成一行，每辆车只能完整覆盖给定闭区间 $[l_i,r_i]$，不能截断。统计多少个 $L<R$，使得能选择若干辆车，恰好覆盖 $[L,R]$，允许重叠，但不能漏田或覆盖范围外的田。输入 `n m` 以及 $m$ 个区间，$n,m\le2\times10^5$。注意田地是离散的：$[1,2]$ 与 $[3,4]$ 可以直接拼成 $[1,4]$。
 
 来源：[公开题面与样例](https://www.luogu.com.cn/problem/P16698)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202303E)。
 
 ### 题解
 

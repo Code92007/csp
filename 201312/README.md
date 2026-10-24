@@ -3,10 +3,10 @@ title: "CSP 201312 五题题解"
 contest: "201312"
 contest_month: "2013-12"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "频率统计", "同分规则", "字符串", "校验码", "单调栈", "直方图", "最大矩形", "状态压缩", "计数DP", "图论", "BFS", "反向图", "网格"]
 status: "published"
-problems: [{"id": "A", "title": "出现次数最多的数", "tags": ["频率统计", "同分规则"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312A/"}]}, {"id": "B", "title": "ISBN 号码", "tags": ["字符串", "校验码"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；4 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312B/"}]}, {"id": "C", "title": "最大的矩形", "tags": ["单调栈", "直方图", "最大矩形"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312C/"}]}, {"id": "D", "title": "有趣的数", "tags": ["状态压缩", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；9 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312D/"}]}, {"id": "E", "title": "I’m stuck!", "tags": ["图论", "BFS", "反向图", "网格"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312E/"}]}]
+problems: [{"id": "A", "title": "出现次数最多的数", "tags": ["频率统计", "同分规则"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312A/"}]}, {"id": "B", "title": "ISBN 号码", "tags": ["字符串", "校验码"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；4 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312B/"}]}, {"id": "C", "title": "最大的矩形", "tags": ["单调栈", "直方图", "最大矩形"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312C/"}]}, {"id": "D", "title": "有趣的数", "tags": ["状态压缩", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；9 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312D/"}]}, {"id": "E", "title": "I’m stuck!", "tags": ["图论", "BFS", "反向图", "网格"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312E/"}]}]
 ---
 
 # CSP 201312 五题题解
@@ -30,6 +30,8 @@ problems: [{"id": "A", "title": "出现次数最多的数", "tags": ["频率统�
 找出出现次数最多的整数；若并列，输出其中最小的数。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201312A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201312A)。
 
 ### 题解
 
@@ -78,6 +80,8 @@ ISBN格式为x-xxx-xxxxx-x。前9位数字按位置权重1…9相乘求和模11�
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201312B/)。
 
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201312B)。
+
 ### 题解
 
 扫描末位之前的字符，遇到数字才乘当前权重并递增，连字符直接跳过。求余后转换为0…9或X，与末位比较；不符时仅替换末位，原有分隔符保留。
@@ -123,6 +127,8 @@ int main() {
 给定 n 个宽 1、高为 h 的相邻柱子，求直方图中轴对齐矩形的最大面积。采用可覆盖存档加强范围 $n\le10^5,h\le10^9$ 的做法。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201312C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201312C)。
 
 ### 题解
 
@@ -176,6 +182,8 @@ int main() {
 统计恰有 n 位的十进制数：只使用 0、1、2、3，四种数字均至少出现一次；所有 0 在所有 1 前面，所有 2 在所有 3 前面，首位不为 0。答案模 $10^9+7$，$n\le1000$。原 CSP 输入一个 n；公开存档将输入改为 T 组，下面代码同时支持这两种输入形式。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201312D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201312D)。
 
 ### 题解
 
@@ -249,6 +257,8 @@ int main() {
 字符网格中，`#` 不可通行；`+`、`S`、`T` 可以向四个方向离开；`-` 只能向左右离开，`|` 只能向上下离开，`.` 只能向下离开。先判断能否从 S 到达 T；若不能，输出 `I’m stuck!`（代码中为 ASCII 单引号）。否则统计从 S 能到达、但从该格无法到达 T 的格子数。输入行列数和网格。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201312E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201312E)。
 
 ### 题解
 

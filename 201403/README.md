@@ -3,10 +3,10 @@ title: "CSP 201403 五题题解"
 contest: "201403"
 contest_month: "2014-03"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "集合", "相反数", "层次顺序", "模拟", "字符串解析", "状态机", "有序映射", "分层BFS", "最短路", "几何判定", "动态规划", "资源调度", "状态压缩"]
 status: "published"
-problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/"}]}, {"id": "B", "title": "窗口", "tags": ["层次顺序", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403B/"}]}, {"id": "C", "title": "命令行选项", "tags": ["字符串解析", "状态机", "有序映射"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/"}]}, {"id": "D", "title": "无线网络", "tags": ["分层BFS", "最短路", "几何判定"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；50 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403D/"}]}, {"id": "E", "title": "任务调度", "tags": ["动态规划", "资源调度", "状态压缩"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403E/"}]}]
+problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/"}]}, {"id": "B", "title": "窗口", "tags": ["层次顺序", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403B/"}]}, {"id": "C", "title": "命令行选项", "tags": ["字符串解析", "状态机", "有序映射"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/"}]}, {"id": "D", "title": "无线网络", "tags": ["分层BFS", "最短路", "几何判定"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；50 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403D/"}]}, {"id": "E", "title": "任务调度", "tags": ["动态规划", "资源调度", "状态压缩"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403E/"}]}]
 ---
 
 # CSP 201403 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "s
 给若干非零、互不相同的整数，统计同时存在a和-a的无序数对个数。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403A)。
 
 ### 题解
 
@@ -73,6 +75,8 @@ int main() {
 窗口按从底到顶给出。每次点击选中包含该点的最顶层窗口并把它移到顶层，其他窗口相对顺序不变；边界也算窗口内，无窗口则输出IGNORED。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403B)。
 
 ### 题解
 
@@ -135,6 +139,8 @@ int main() {
 依据格式字符串解析命令行选项。字母后有冒号表示该选项必须带下一个词作为参数；否则无参数。遇到非法选项或无法取得必需参数时停止。重复无参选项只输出一次，带参选项保留最后一次完整出现的参数，按字母排序输出。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403C)。
 
 ### 题解
 
@@ -203,6 +209,8 @@ int main() {
 已有 n 个路由器，另有 m 个候选安装位置，最多新增 k 个。两位置欧氏距离不超过 r 时可以通讯。求已有路由器 1 到 2 最少经过多少个中转路由器，原网络保证连通。$n,m\le100$，坐标绝对值不超过 $10^8$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403D)。
 
 ### 题解
 
@@ -275,6 +283,8 @@ int main() {
 有两个 CPU 和一个 GPU，$n\le40$ 个互不依赖的任务。任务 $i$ 可选单 CPU、双 CPU、单 CPU 加 GPU、双 CPU 加 GPU，耗时分别为 $a_i,b_i,c_i,d_i$，均在 1 至 10 之间。执行期间独占使用的设备，不能中断。求最短总完成时间。输入任务数及各任务四种耗时。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403E)。
 
 ### 题解
 

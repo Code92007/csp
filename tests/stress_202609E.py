@@ -22,7 +22,7 @@ with path.open() as inp,outpath.open('w') as out:
 lines=sum(1 for _ in outpath.open())
 rss=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss
 if platform.system()!='Darwin':rss*=1024
-report={'case':f'{n}-node chain, 40 colours, k=4, all initially on, {q} toggles','returncode':result.returncode,'seconds':round(elapsed,3),'output_lines':lines,'peak_rss_bytes':rss,'machine_specific':True,'official_judge':'not_submitted','stderr':result.stderr,'validation':'Process completion and output-line count only; large answers not independently checked.'}
+report={'case':f'{n}-node chain, 40 colours, k=4, all initially on, {q} toggles','returncode':result.returncode,'seconds':round(elapsed,3),'output_lines':lines,'peak_rss_bytes':rss,'machine_specific':True,'official_judge':'not_applicable_to_local_stress','stderr':result.stderr,'validation':'Process completion and output-line count only; large answers not independently checked.'}
 (root/'tests'/'stress-202609E-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 assert result.returncode==0 and lines==q+1,report
 print(json.dumps(report,ensure_ascii=False))

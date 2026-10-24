@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iomanip>
 #include <iostream>
+#include <string>
 #include <vector>
 using namespace std;
 int main() {
@@ -8,24 +9,27 @@ int main() {
     cin.tie(nullptr);
     int n, m;
     cin >> n >> m;
-    vector<long double> scale(n + 1, 1), angle(n + 1);
+    vector<long double> scale(n + 1, 1);
+    vector<long long> angleMillis(n + 1);
+    const long double turn = 2 * acosl(-1.0L);
     for (int i = 1; i <= n; i++) {
         int type;
-        long double value;
+        string value;
         cin >> type >> value;
         scale[i] = scale[i - 1];
-        angle[i] = angle[i - 1];
+        angleMillis[i] = angleMillis[i - 1];
         if (type == 1)
-            scale[i] *= value;
+            scale[i] *= stold(value);
         else
-            angle[i] += value;
+            angleMillis[i] += llround(stold(value) * 1000);
     }
-    cout << fixed << setprecision(8);
+    cout << fixed << setprecision(10);
     while (m--) {
         int i, j;
         long double x, y;
         cin >> i >> j >> x >> y;
-        long double s = scale[j] / scale[i - 1], a = angle[j] - angle[i - 1];
+        long double s = scale[j] / scale[i - 1];
+        long double a = fmodl((angleMillis[j] - angleMillis[i - 1]) / 1000.0L, turn);
         cout << s * (x * cosl(a) - y * sinl(a)) << ' ' << s * (x * sinl(a) + y * cosl(a)) << '\n';
     }
 }

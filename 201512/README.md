@@ -3,10 +3,10 @@ title: "CSP 201512 五题题解"
 contest: "201512"
 contest_month: "2015-12"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "数位分解", "网格扫描", "同时更新", "BFS", "连通块", "网格模拟", "欧拉路径", "Hierholzer", "字典序", "线性代数", "GF(2)", "线性基", "多项式", "bitset"]
 status: "published"
-problems: [{"id": "A", "title": "数位之和", "tags": ["数位分解"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512A/"}]}, {"id": "B", "title": "消除类游戏", "tags": ["网格扫描", "同时更新"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512B/"}]}, {"id": "C", "title": "画图", "tags": ["BFS", "连通块", "网格模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512C/"}]}, {"id": "D", "title": "送货", "tags": ["欧拉路径", "Hierholzer", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512D/"}]}, {"id": "E", "title": "矩阵", "tags": ["线性代数", "GF(2)", "线性基", "多项式", "bitset"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512E/"}]}]
+problems: [{"id": "A", "title": "数位之和", "tags": ["数位分解"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512A/"}]}, {"id": "B", "title": "消除类游戏", "tags": ["网格扫描", "同时更新"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512B/"}]}, {"id": "C", "title": "画图", "tags": ["BFS", "连通块", "网格模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512C/"}]}, {"id": "D", "title": "送货", "tags": ["欧拉路径", "Hierholzer", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512D/"}]}, {"id": "E", "title": "矩阵", "tags": ["线性代数", "GF(2)", "线性基", "多项式", "bitset"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512E/"}]}]
 ---
 
 # CSP 201512 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "数位之和", "tags": ["数位分解"], "statu
 给0≤n≤$10^9$的十进制整数，求各位数字之和。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201512A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201512A)。
 
 ### 题解
 
@@ -66,6 +68,8 @@ int main() {
 棋盘中任一行或列有连续至少三个同色棋子时，这些棋子同时消除为0。只执行一次消除，求结果，行列数≤30。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201512B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201512B)。
 
 ### 题解
 
@@ -122,6 +126,8 @@ int main() {
 在初始全为点号的画布上依序画水平／竖直线段、填充连通区域。横线用 -，竖线用 |，交叉用 +；填充沿上下左右传播，只有线段和画布边界阻挡，原有其他字母不阻挡。坐标原点在左下，宽高至多 100。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201512C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201512C)。
 
 ### 题解
 
@@ -212,6 +218,8 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201512D/)。
 
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201512D)。
+
 ### 题解
 
 先检查无向欧拉路径的度数条件：奇度点必须为 0 个，或恰好 2 个且起点 1 是其中之一。仅有度数条件还不够，最后还需确认全部边都被遍历。
@@ -292,6 +300,8 @@ int main() {
 给定 $m\times m$ 的 01 矩阵 $A$ 和 01 列向量 $b$。加法为异或、乘法为与，即在 $GF(2)$ 上运算。对至多 100 个 $k\le10^9$，输出 $A^kb$；$m\le1000$。输入矩阵和向量均是没有空格的 01 串，$k=0$ 时输出原向量。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201512E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201512E)。
 
 ### 题解
 

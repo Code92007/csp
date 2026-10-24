@@ -3,10 +3,10 @@ title: "CSP 201412 五题题解"
 contest: "201412"
 contest_month: "2014-12"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "在线计数", "矩阵遍历", "对角线", "前缀和", "排序", "整数精度", "模拟", "最小生成树", "Kruskal", "并查集", "费用流", "时间展开图", "周期调度"]
 status: "published"
-problems: [{"id": "A", "title": "门禁系统", "tags": ["在线计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412A/"}]}, {"id": "B", "title": "Z 字形扫描", "tags": ["矩阵遍历", "对角线"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412B/"}]}, {"id": "C", "title": "集合竞价", "tags": ["前缀和", "排序", "整数精度", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412C/"}]}, {"id": "D", "title": "最优灌溉", "tags": ["最小生成树", "Kruskal", "并查集"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412D/"}]}, {"id": "E", "title": "货物调度", "tags": ["费用流", "时间展开图", "周期调度"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412E/"}]}]
+problems: [{"id": "A", "title": "门禁系统", "tags": ["在线计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412A/"}]}, {"id": "B", "title": "Z 字形扫描", "tags": ["矩阵遍历", "对角线"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412B/"}]}, {"id": "C", "title": "集合竞价", "tags": ["前缀和", "排序", "整数精度", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412C/"}]}, {"id": "D", "title": "最优灌溉", "tags": ["最小生成树", "Kruskal", "并查集"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412D/"}]}, {"id": "E", "title": "货物调度", "tags": ["费用流", "时间展开图", "周期调度"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412E/"}]}]
 ---
 
 # CSP 201412 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "门禁系统", "tags": ["在线计数"], "statu
 按时间给出读者来访编号，输出每条记录中的读者截至该次是第几次出现。编号在1…n。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201412A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201412A)。
 
 ### 题解
 
@@ -71,6 +73,8 @@ int main() {
 对n×n矩阵从左上角开始按Z字形扫描，输出全部元素。相邻斜对角线上的方向交替，n≤500。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201412B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201412B)。
 
 ### 题解
 
@@ -124,6 +128,8 @@ int main() {
 记录买单、卖单及按输入行号撤单。对一个委托候选价，买量是报价不低于它的有效买单之和，卖量是报价不高于它的有效卖单之和，成交量取两者较小值。选最大成交量，同分选最高价。记录不超过 5000，单笔股数可达 $10^8$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201412C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201412C)。
 
 ### 题解
 
@@ -213,6 +219,8 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201412D/)。
 
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201412D)。
+
 ### 题解
 
 所有田地都能从水井获得水，当且仅当选择的边使整张图连通。由于费用为正，环上可以删去一条边而保持连通，所以最优方案可以是一棵生成树。
@@ -280,6 +288,8 @@ int main() {
 每座城市在一周七天分别生产、消耗一定量货物。城市间道路可当天运输任意数量，单位运费已知；每城仓库有容量限制和单位每夜保管费。要求每周按同一流程循环，求最低每周费用。输入 `n m`，每城一行七日产量、七日需求、仓库容量和费用，随后道路。$n\le100,m\le500$，题面保证可行。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201412E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201412E)。
 
 ### 题解
 

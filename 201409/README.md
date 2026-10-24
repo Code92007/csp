@@ -3,10 +3,10 @@ title: "CSP 201409 五题题解"
 contest: "201409"
 contest_month: "2014-09"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "集合", "计数", "网格覆盖", "面积并", "字符串匹配", "大小写转换", "多源BFS", "最短路", "网格", "轮廓线DP", "状态压缩", "矩阵快速幂"]
 status: "published"
-problems: [{"id": "A", "title": "相邻数对", "tags": ["集合", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409A/"}]}, {"id": "B", "title": "画图", "tags": ["网格覆盖", "面积并"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409B/"}]}, {"id": "C", "title": "字符串匹配", "tags": ["字符串匹配", "大小写转换"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409C/"}]}, {"id": "D", "title": "最优配餐", "tags": ["多源BFS", "最短路", "网格"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409D/"}]}, {"id": "E", "title": "拼图", "tags": ["轮廓线DP", "状态压缩", "矩阵快速幂"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409E/"}]}]
+problems: [{"id": "A", "title": "相邻数对", "tags": ["集合", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201409A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409A/"}]}, {"id": "B", "title": "画图", "tags": ["网格覆盖", "面积并"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201409B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409B/"}]}, {"id": "C", "title": "字符串匹配", "tags": ["字符串匹配", "大小写转换"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201409C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409C/"}]}, {"id": "D", "title": "最优配餐", "tags": ["多源BFS", "最短路", "网格"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201409D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409D/"}]}, {"id": "E", "title": "拼图", "tags": ["轮廓线DP", "状态压缩", "矩阵快速幂"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201409E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201409E/"}]}]
 ---
 
 # CSP 201409 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "相邻数对", "tags": ["集合", "计数"], "s
 给n个互不相同的非负整数，求值恰好相差1的无序数对数量。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201409A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201409A)。
 
 ### 题解
 
@@ -72,6 +74,8 @@ int main() {
 在整数坐标纸上涂若干轴对齐矩形，重叠部分只计一次，求总涂色面积。坐标范围0…100，矩形数≤100。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201409B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201409B)。
 
 ### 题解
 
@@ -118,6 +122,8 @@ int main() {
 给定模式串、大小写敏感开关和 n 个字符串，按原顺序输出含有模式串的字符串。开关为 0 时忽略大小写，为 1 时严格区分。每串长度至多 100。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201409C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201409C)。
 
 ### 题解
 
@@ -169,6 +175,8 @@ int main() {
 n×n 网格中有若干餐厅、若干客户与不可经过的位置。每家餐厅供餐量无限，配送一份餐每走一格花费 1。客户可位于同一坐标，保证可送达。输入 n,m,k,d，依次是餐厅位置、客户位置和订餐量、障碍位置。求最低总费用，$n\le1000$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201409D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201409D)。
 
 ### 题解
 
@@ -245,6 +253,8 @@ int main() {
 用由 3 个单位格组成的 L 形拼图铺满 $n\times m$ 的矩形。拼图可以旋转，不能重叠或越界，求方案数模 $10^9+7$。输入 `n m`，$n\le10^{15},m\le7$。每个 L 形是一个 $2\times2$ 方块去掉一个角。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201409E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201409E)。
 
 ### 题解
 

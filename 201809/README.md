@@ -3,10 +3,10 @@ title: "CSP 201809 五题题解"
 contest: "201809"
 contest_month: "2018-09"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "数组", "同时更新", "双指针", "区间交集", "树", "祖先关系", "字符串", "贪心", "记忆化搜索", "动态规划", "字典序", "线性递推", "多项式", "NTT", "生成函数"]
 status: "published"
-problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/"}]}, {"id": "B", "title": "买菜", "tags": ["双指针", "区间交集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/"}]}, {"id": "C", "title": "元素选择器", "tags": ["树", "祖先关系", "字符串", "贪心"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/"}]}, {"id": "D", "title": "再卖菜", "tags": ["记忆化搜索", "动态规划", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/"}]}, {"id": "E", "title": "线性递推式", "tags": ["线性递推", "多项式", "NTT", "生成函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/"}]}]
+problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/"}]}, {"id": "B", "title": "买菜", "tags": ["双指针", "区间交集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/"}]}, {"id": "C", "title": "元素选择器", "tags": ["树", "祖先关系", "字符串", "贪心"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/"}]}, {"id": "D", "title": "再卖菜", "tags": ["记忆化搜索", "动态规划", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/"}]}, {"id": "E", "title": "线性递推式", "tags": ["线性递推", "多项式", "NTT", "生成函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/"}]}]
 ---
 
 # CSP 201809 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "s
 第二天每家菜店价格为自己及相邻店第一天价格的平均值并向下取整；两端只有一个邻居。求全部新价格。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809A)。
 
 ### 题解
 
@@ -75,6 +77,8 @@ int main() {
 两人各有n个有序且互不相交的装车时间区间，求同时装车的总时长。区间[s,t]的时长是t-s，端点接触时没有正长度交集。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809B)。
 
 ### 题解
 
@@ -125,6 +129,8 @@ int main() {
 用每层两个点号的缩进描述元素树，元素含大小写不敏感的标签及可选大小写敏感 id。查询是单个选择器或以空格相连的后代选择器链，输出最后一个选择器匹配且祖先链满足前面条件的行号。n≤100，查询数≤10。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809C)。
 
 ### 题解
 
@@ -224,6 +230,8 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/)。
 
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809D)。
+
 ### 题解
 
 已知相邻原价 x、y 后，由中间商店平均值 b 可知下一项只能是 $3b-x-y$、$3b+1-x-y$、$3b+2-x-y$。因此状态只需记录当前位置与前两个原价，无需记录整个前缀。
@@ -299,6 +307,8 @@ int main() {
 给定 $a_0=1$，对 $n>0$ 有 $a_n=\sum_{i=1}^{\min(n,m)}k_i a_{n-i}$，所有计算模 $998244353$。输入 `m l r` 和 $m$ 个系数，输出 $a_l$ 至 $a_r$。$m\le10^5,l\le10^{12},r-l\le3\times10^5$，不能逐项算到 $l$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809E)。
 
 ### 题解
 

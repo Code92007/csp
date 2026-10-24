@@ -3,10 +3,10 @@ title: "CSP 202512 五题题解"
 contest: "202512"
 contest_month: "2025-12"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "集合比较", "异或", "哈希冲突", "位运算", "枚举", "预处理", "模拟", "逆向操作", "坐标变换", "数论", "线性筛", "积性函数", "容斥", "Trie", "图染色", "可合并数据结构"]
 status: "published"
-problems: [{"id": "A", "title": "集合", "tags": ["集合比较", "异或", "哈希冲突"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512A/"}]}, {"id": "B", "title": "数字变换", "tags": ["位运算", "枚举", "预处理"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；30 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512B/"}]}, {"id": "C", "title": "图片解码", "tags": ["模拟", "逆向操作", "坐标变换"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512C/"}]}, {"id": "D", "title": "C 形阵", "tags": ["数论", "线性筛", "积性函数", "容斥"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512D/"}]}, {"id": "E", "title": "数据抢修", "tags": ["Trie", "图染色", "可合并数据结构"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512E/"}]}]
+problems: [{"id": "A", "title": "集合", "tags": ["集合比较", "异或", "哈希冲突"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72ea67df0b81749b5e6"}}, {"id": "B", "title": "数字变换", "tags": ["位运算", "枚举", "预处理"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；30 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72fa67df0b81749b607"}}, {"id": "C", "title": "图片解码", "tags": ["模拟", "逆向操作", "坐标变换"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce731a67df0b81749b611"}}, {"id": "D", "title": "C 形阵", "tags": ["数论", "线性筛", "积性函数", "容斥"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；160 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce733a67df0b81749b625"}}, {"id": "E", "title": "数据抢修", "tags": ["Trie", "图染色", "可合并数据结构"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce734a67df0b81749b63c"}}]
 ---
 
 # CSP 202512 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "集合", "tags": ["集合比较", "异或", "�
 
 标签：`集合比较` · `异或` · `哈希冲突`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 集合S的摘要为对应a[i]的异或和，小C用摘要相等判断集合相等。对每对已升序且无重复的S、T，判断这一结论是否正确。输入先给全部S，再给全部T。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202512A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202512A)。
 
 ### 题解
 
@@ -81,13 +83,15 @@ int main() {
 
 标签：`位运算` · `枚举` · `预处理`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；30 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；30 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 将九位数拆为三个三位数 (a,b,c)，一轮密钥 k 变换为 $(b,c\oplus f(b,k),a\oplus f(c,k))$，其中 $f(x,k)=((x^2+k^2)\bmod8)\oplus k$。给定至多 1000 轮密钥及至多 $5\times10^5$ 个最终值，恢复初始值。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202512B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202512B)。
 
 ### 题解
 
@@ -139,13 +143,15 @@ int main() {
 
 标签：`模拟` · `逆向操作` · `坐标变换`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 原图先在右下方补问号成 Z×Z 方图，再执行两类加密：局部至多 10×10 正方形顺时针旋转 d 度，随后全图逆时针旋转 r 次；或对至多 10×10 矩形上下／左右翻转。给出最终图和全部操作密钥，恢复原图并输出行列数及内容。$Z\le400,t\le5\times10^4$。密钥首数为 t，每个操作再占六个整数。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202512C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202512C)。
 
 ### 题解
 
@@ -240,13 +246,15 @@ int main() {
 
 标签：`数论` · `线性筛` · `积性函数` · `容斥`
 
-状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；160 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 正整数七元组 $(A,B,C,D,E,F,G)$ 满足 $AC=B^2$、$EG=F^2$、$ABC=CDE=EFG$。大小为 $B$，价值为 $D$。给定 `op n`：`op=0` 时求大小不超过 $n$ 的全部阵的价值之和；`op=1` 时只统计七个位置中恰有六种数值的阵。答案模 $998244353$，$n\le10^7$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202512D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202512D)。
 
 ### 题解
 
@@ -365,13 +373,15 @@ int main() {
 
 标签：`Trie` · `图染色` · `可合并数据结构`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 每个数据包是允许重复元素的多重集。把它分成若干非空子包，要求同一子包内任意两个不同元素的权值异或至少为 $W$，最少分包数就是维修代价。维护插入、把包 $v$ 并入包 $u$ 并注销 $v$、查询全部活跃包代价之和。空包代价为零。第一行 `n W`；每包一行元素数和元素；随后操作数及 `1 u x`、`2 u v`、`3`。初始元素总数与操作数均不超过 $5\times10^5$，权值不超过 $10^9$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202512E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202512E)。
 
 ### 题解
 

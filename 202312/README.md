@@ -3,10 +3,10 @@ title: "CSP 202312 五题题解"
 contest: "202312"
 contest_month: "2023-12"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "暴力枚举", "多维比较", "质因数分解", "试除法", "树", "DFS序", "决策树", "前缀和", "根号分块", "栈", "矩阵乘法", "状态压缩", "折半搜索", "位集", "图论"]
 status: "published"
-problems: [{"id": "A", "title": "仓库规划", "tags": ["暴力枚举", "多维比较"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312A/"}]}, {"id": "B", "title": "因子化简", "tags": ["质因数分解", "试除法"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312B/"}]}, {"id": "C", "title": "树上搜索", "tags": ["树", "DFS序", "决策树", "前缀和"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312C/"}]}, {"id": "D", "title": "宝藏", "tags": ["根号分块", "栈", "矩阵乘法"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；110 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312D/"}]}, {"id": "E", "title": "彩色路径", "tags": ["状态压缩", "折半搜索", "位集", "图论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312E/"}]}]
+problems: [{"id": "A", "title": "仓库规划", "tags": ["暴力枚举", "多维比较"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c0a67df0b81749bd8f"}}, {"id": "B", "title": "因子化简", "tags": ["质因数分解", "试除法"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c2a67df0b81749bd93"}}, {"id": "C", "title": "树上搜索", "tags": ["树", "DFS序", "决策树", "前缀和"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c3a67df0b81749bdb0"}}, {"id": "D", "title": "宝藏", "tags": ["根号分块", "栈", "矩阵乘法"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；110 组独立随机对拍通过；数梦 OJ 85 分 Time Exceeded（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312D/"}], "oj": {"status": "failed", "score": 85, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6adce8c5a67df0b81749bdca"}}, {"id": "E", "title": "彩色路径", "tags": ["状态压缩", "折半搜索", "位集", "图论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c7a67df0b81749bdda"}}]
 ---
 
 # CSP 202312 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "仓库规划", "tags": ["暴力枚举", "多维
 
 标签：`暴力枚举` · `多维比较`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 仓库j若每一维坐标都严格大于仓库i，便可作为i的上级。多个候选取最小编号，没有则输出0。n≤1000、维度≤10。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202312A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202312A)。
 
 ### 题解
 
@@ -77,13 +79,15 @@ int main() {
 
 标签：`质因数分解` · `试除法`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 分解正整数 n 的质因子，指数小于阈值 k 的整个质数幂删去，其他保留；无项剩余输出1。n≤$10^{10}$，查询数≤10。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202312B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202312B)。
 
 ### 题解
 
@@ -131,13 +135,15 @@ int main() {
 
 标签：`树` · `DFS序` · `决策树` · `前缀和`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 类别形成根为 1 的带正权树。每次在剩余类别中选一个点，使其子树内剩余权重与子树外权重之差绝对值最小，同分选编号小者；根据目标是否在该子树，保留对应一侧，直到只剩一个类别。给定 m 个目标，输出各自提问序列。$n\le2000,m\le100$，父节点编号不一定小于子节点。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202312C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202312C)。
 
 ### 题解
 
@@ -243,13 +249,15 @@ int main() {
 
 标签：`根号分块` · `栈` · `矩阵乘法`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；110 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；110 组独立随机对拍通过；数梦 OJ 85 分 Time Exceeded（复刻评测）。
 
 ### 题意
 
 维护 $n$ 条矩阵双端队列指令：1 表示头插一个 $2\times2$ 矩阵，2 表示尾插，3 表示删除最近插入的矩阵（空队列忽略）。支持修改某一条指令，以及从空队列执行区间 $[l,r]$ 的指令后，输出队列内矩阵从头到尾的乘积，元素模 $998244353$。空队列乘积为单位矩阵。$n,m\le10^5$。修改格式为 `1 i 新指令`，查询为 `2 l r`。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202312D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202312D)。
 
 ### 题解
 
@@ -394,13 +402,15 @@ int main() {
 
 标签：`状态压缩` · `折半搜索` · `位集` · `图论`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 有向图的点带颜色，求从 0 到 $n-1$ 的最长路径，要求路径各点颜色不同，点数不超过 $l$。$n\le100,m\le5000,l\le9,k\le30$，边权为正。输入第一行 `n m l k`，第二行颜色，随后三行分别给全部边的起点、终点、权值。保证存在合法路线，且起终点颜色不在其他点上出现。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202312E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202312E)。
 
 ### 题解
 

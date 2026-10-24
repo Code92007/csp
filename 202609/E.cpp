@@ -2,7 +2,6 @@
 #include <cstdint>
 #include <iostream>
 #include <string>
-#include <unordered_map>
 #include <vector>
 using namespace std;
 using Mask = uint64_t;
@@ -16,7 +15,35 @@ struct Hash {
         return x ^ (x >> 31);
     }
 };
-using Counter = unordered_map<Mask, int, Hash>;
+class Counter {
+    static constexpr Mask empty = ~Mask(0);
+    vector<Mask> keys;
+    vector<int> values;
+    size_t capacityMask = 0;
+
+    size_t slot(Mask key) const {
+        size_t i = Hash{}(key) & capacityMask;
+        while (keys[i] != empty && keys[i] != key) i = (i + 1) & capacityMask;
+        return i;
+    }
+public:
+    void reserve(size_t expected) {
+        size_t capacity = 2;
+        while (capacity < expected * 2) capacity <<= 1;
+        keys.assign(capacity, empty);
+        values.assign(capacity, 0);
+        capacityMask = capacity - 1;
+    }
+    void emplace(Mask key, int value) {
+        size_t i = slot(key);
+        if (keys[i] == empty) { keys[i] = key; values[i] = value; }
+    }
+    int get(Mask key) const {
+        size_t i = slot(key);
+        return keys[i] == key ? values[i] : 0;
+    }
+    void add(Mask key, int delta) { values[slot(key)] += delta; }
+};
 struct Edge { int to, weight; };
 struct Record { Mask mask; int centre, branch, distance; };
 struct Visit { int node, parent, distance; Mask mask; };
@@ -61,7 +88,6 @@ class Solver {
         vector<int> nodes;
         int centre = centroid(start, nodes);
         removed[centre] = true;
-        all[centre].max_load_factor(0.7f);
         all[centre].reserve(nodes.size());
         ancestors[centre].push_back({bit[centre], centre, -1, 0});
         all[centre].emplace(bit[centre] << 2, 0);
@@ -77,7 +103,6 @@ class Solver {
                     visits.push_back({next.to, cur.node, (cur.distance + next.weight) % modulus, cur.mask ^ bit[next.to]});
                 }
             }
-            branch[id].max_load_factor(0.7f);
             branch[id].reserve(visits.size());
             for (const auto& cur : visits) {
                 ancestors[cur.node].push_back({cur.mask, centre, id, cur.distance});
@@ -90,10 +115,6 @@ class Solver {
             if (!removed[edge.to]) decompose(edge.to);
     }
 
-    static int lookup(const Counter& counter, Mask key) {
-        auto it = counter.find(key);
-        return it == counter.end() ? 0 : it->second;
-    }
 public:
     Solver(int count, int k) : n(count), modulus(k), tree(n), bit(n), removed(n), parent(n), subtree(n), ancestors(n), all(n) {
         branch.reserve(n);
@@ -116,8 +137,8 @@ public:
             int required = (modulus - r.distance) % modulus;
             for (Mask oddColour : colours) {
                 Mask key = ((base ^ oddColour) << 2) | Mask(required);
-                result += lookup(all[r.centre], key);
-                if (r.branch != -1) result -= lookup(branch[r.branch], key);
+                result += all[r.centre].get(key);
+                if (r.branch != -1) result -= branch[r.branch].get(key);
             }
         }
         return result;
@@ -125,8 +146,8 @@ public:
     void change(int node, int delta) {
         for (const auto& r : ancestors[node]) {
             Mask key = (r.mask << 2) | Mask(r.distance);
-            all[r.centre].find(key)->second += delta;
-            if (r.branch != -1) branch[r.branch].find(key)->second += delta;
+            all[r.centre].add(key, delta);
+            if (r.branch != -1) branch[r.branch].add(key, delta);
         }
     }
 };

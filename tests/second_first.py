@@ -87,7 +87,7 @@ for _ in range(100):
   rows.append(f'{n} {k}');out.append(answer)
  case('202312B','10\n'+'\n'.join(rows),'\n'.join(map(str,out)))
 for _ in range(100):
- n=40;ops=[(1,rng.choice([.5,1,2])) if i%2 else (2,rng.random()*6.2) for i in range(n)];qs=[];out=[]
+ n=40;ops=[(1,rng.choice([.5,1,2])) if i%2 else (2,round(rng.random()*6.2,3)) for i in range(n)];qs=[];out=[]
  for j in range(10):
   l=rng.randrange(n);r=rng.randrange(l,n);x=rng.randrange(-1000000,1000001);y=rng.randrange(-1000000,1000001);qs.append(f'{l+1} {r+1} {x} {y}')
   for typ,v in ops[l:r+1]:
@@ -95,6 +95,13 @@ for _ in range(100):
    else:x,y=x*math.cos(v)-y*math.sin(v),x*math.sin(v)+y*math.cos(v)
   out.append(f'{x} {y}')
  case('202309B','40 10\n'+'\n'.join(f'{t} {v}' for t,v in ops)+'\n'+'\n'.join(qs),'\n'.join(out),.00001)
+n=100000
+queries=[(1,n,1000000,-1000000),(n//2+1,n,-1000000,1000000)]
+answers=[]
+for left,right,x,y in queries:
+ angle=math.remainder((right-left+1)*6.283,2*math.pi)
+ answers.append(f'{x*math.cos(angle)-y*math.sin(angle)} {x*math.sin(angle)+y*math.cos(angle)}')
+case('202309B',f'{n} {len(queries)}\n'+'2 6.283\n'*n+'\n'.join(f'{l} {r} {x} {y}' for l,r,x,y in queries),'\n'.join(answers),.01)
 for _ in range(100):
  n=rng.randrange(1,12);d=rng.randrange(1,6);Q,K,V=[[[rng.randrange(-1000,1001) for j in range(d)] for i in range(n)] for t in range(3)];w=[rng.randrange(-1000,1001) for i in range(n)];large=[[sum(Q[i][a]*K[j][a] for a in range(d))*w[i] for j in range(n)] for i in range(n)];out=[[sum(large[i][j]*V[j][b] for j in range(n)) for b in range(d)] for i in range(n)];case('202305B',f'{n} {d}\n'+'\n'.join(' '.join(map(str,r)) for M in [Q,K,V] for r in M)+'\n'+' '.join(map(str,w)),'\n'.join(' '.join(map(str,r)) for r in out))
 for _ in range(100):

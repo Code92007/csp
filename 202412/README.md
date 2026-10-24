@@ -3,10 +3,10 @@ title: "CSP 202412 五题题解"
 contest: "202412"
 contest_month: "2024-12"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "模拟", "边界判断", "前缀和", "前后缀最大值", "LRU", "链表", "哈希表", "BFS", "并查集", "区间遍历", "贪心", "单调栈"]
 status: "published"
-problems: [{"id": "A", "title": "移动", "tags": ["模拟", "边界判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412A/"}]}, {"id": "B", "title": "梦境巡查", "tags": ["前缀和", "前后缀最大值"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412B/"}]}, {"id": "C", "title": "缓存模拟", "tags": ["LRU", "链表", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412C/"}]}, {"id": "D", "title": "跳房子", "tags": ["BFS", "并查集", "区间遍历"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412D/"}]}, {"id": "E", "title": "梦魔", "tags": ["贪心", "单调栈", "前缀和"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412E/"}]}]
+problems: [{"id": "A", "title": "移动", "tags": ["模拟", "边界判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c2a67df0b81749b98e"}}, {"id": "B", "title": "梦境巡查", "tags": ["前缀和", "前后缀最大值"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c3a67df0b81749b994"}}, {"id": "C", "title": "缓存模拟", "tags": ["LRU", "链表", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c5a67df0b81749b99a"}}, {"id": "D", "title": "跳房子", "tags": ["BFS", "并查集", "区间遍历"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c6a67df0b81749b99e"}}, {"id": "E", "title": "梦魔", "tags": ["贪心", "单调栈", "前缀和"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c9a67df0b81749b9c2"}}]
 ---
 
 # CSP 202412 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "移动", "tags": ["模拟", "边界判断"], "s
 
 标签：`模拟` · `边界判断`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 机器人在1…n的方格场地执行f/b/l/r指令：分别使y加1、y减1、x减1、x加1。目标出界时本次不移动。对各独立起点和指令串输出终点。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202412A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202412A)。
 
 ### 题解
 
@@ -76,13 +78,15 @@ int main() {
 
 标签：`前缀和` · `前后缀最大值`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 依次经过 0…n 再返回起点，离开 i 消耗 a[i]，到达 i≥1 获得 b[i]。对每个 i，独立假设该地补给取消，求完成全程所需最小初始能量，n≤$10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202412B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202412B)。
 
 ### 题解
 
@@ -134,13 +138,15 @@ int main() {
 
 标签：`LRU` · `链表` · `哈希表` · `模拟`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 模拟 n 路、N 组缓存，块 a 只能进入组 $(a\div n)\bmod N$。读写命中均更新 LRU；未命中先载入，若满则淘汰最久未访问的块，脏块须先写回内存。输入处理器读写操作，输出实际内存读写操作，0 为读、1 为写。$nN\le65536,q\le10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202412C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202412C)。
 
 ### 题解
 
@@ -202,13 +208,15 @@ int main() {
 
 标签：`BFS` · `并查集` · `区间遍历`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 共有 $n$ 个格子，从 1 出发。在格子 $i$ 可以先跳到任意 $j\in[i+1,\min(n,i+k_i)]$，随后立即后退 $a_j$ 格，最终站在 $j-a_j$。求到达 $n$ 的最少跳数，不可达输出 -1。输入依次为 $n$、数组 $a$、数组 $k$；$n\le10^5$，$0\le a_i<i$，$a_n=0$，$k_i\le10^9$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202412D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202412D)。
 
 ### 题解
 
@@ -281,13 +289,15 @@ int main() {
 
 标签：`贪心` · `单调栈` · `前缀和`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 一列梦魔有防御力 $a_i$ 和击杀收益 $b_i>0$。从相邻两只之间出发，每次只能攻击当前左右最近的一只；攻击力至少等于防御力才能击杀，之后增加对应收益。求每个起始间隙所需最小初始攻击力，并异或全部结果。每次询问给若干点的新 $a,b$，修改都基于原始数组，询问之间不累积。$n\le2\times10^6$，$q\le20$，修改总数不超过 $5\times10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202412E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202412E)。
 
 ### 题解
 

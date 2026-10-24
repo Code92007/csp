@@ -3,10 +3,10 @@ title: "CSP 201604 五题题解"
 contest: "201604"
 contest_month: "2016-04"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "局部极值", "数组扫描", "碰撞检测", "网格模拟", "栈", "路径解析", "字符串", "BFS", "时间状态", "网格", "状态压缩", "连通性DP", "Steiner树", "轮廓线DP"]
 status: "published"
-problems: [{"id": "A", "title": "折点计数", "tags": ["局部极值", "数组扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604A/"}]}, {"id": "B", "title": "俄罗斯方块", "tags": ["碰撞检测", "网格模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604B/"}]}, {"id": "C", "title": "路径解析", "tags": ["栈", "路径解析", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604C/"}]}, {"id": "D", "title": "游戏", "tags": ["BFS", "时间状态", "网格"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604D/"}]}, {"id": "E", "title": "网络连接", "tags": ["状态压缩", "连通性DP", "Steiner树", "轮廓线DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604E/"}]}]
+problems: [{"id": "A", "title": "折点计数", "tags": ["局部极值", "数组扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604A/"}]}, {"id": "B", "title": "俄罗斯方块", "tags": ["碰撞检测", "网格模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604B/"}]}, {"id": "C", "title": "路径解析", "tags": ["栈", "路径解析", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604C/"}]}, {"id": "D", "title": "游戏", "tags": ["BFS", "时间状态", "网格"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604D/"}]}, {"id": "E", "title": "网络连接", "tags": ["状态压缩", "连通性DP", "Steiner树", "轮廓线DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604E/"}]}]
 ---
 
 # CSP 201604 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "折点计数", "tags": ["局部极值", "数组
 相邻销售量保证不同，统计从增长变减少或从减少变增长的折点。首尾没有两侧邻居，不是折点。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604A)。
 
 ### 题解
 
@@ -70,6 +72,8 @@ int main() {
 给15×10棋盘、4×4新板块图案及图案左边所在列，模拟板块竖直下落到首次碰撞前的位置。只放置板块，不消行；图案内可能有空白边。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604B)。
 
 ### 题解
 
@@ -138,6 +142,8 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604C/)。
 
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604C)。
+
 ### 题解
 
 把路径看成由斜杠分隔的目录名，使用向量模拟栈。绝对路径从空栈开始，相对路径先放入当前目录的各部分。空片段或 . 跳过，.. 在非空时弹栈，其他字符串入栈。最后为每个栈元素前加斜杠，空栈输出 /。
@@ -203,6 +209,8 @@ int main() {
 从 n×m 网格左上角走到右下角，每秒必须向上下左右之一移动一格，不能原地等待。部分格子在闭区间 [a,b] 时刻危险，进入时不能处于危险期。输入 n,m,t，随后每个危险格子的行、列、a、b。$n,m\le100$，危险结束时刻不超过 100，保证可达。求最早到达时刻。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604D)。
 
 ### 题解
 
@@ -277,6 +285,8 @@ int main() {
 有 $n$ 台设备，其中一些是必须连通的用户设备，可以选择部分其他设备辅助连接。候选边 $(u,v)$ 满足 $|u-v|\le p$，有非负费用，求连接所有用户设备的最小费用。输入多组数据，每组为 `n m p`、终端标记 01 串、各候选边。$n\le500,p\le6$，终端至少两个。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201604E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201604E)。
 
 ### 题解
 

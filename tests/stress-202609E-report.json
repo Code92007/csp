@@ -1,11 +1,11 @@
 {
   "case": "100000-node chain, 40 colours, k=4, all initially on, 100000 toggles",
   "returncode": 0,
-  "seconds": 4.831,
+  "seconds": 2.588,
   "output_lines": 100001,
-  "peak_rss_bytes": 217235456,
+  "peak_rss_bytes": 182665216,
   "machine_specific": true,
-  "official_judge": "not_submitted",
+  "official_judge": "not_applicable_to_local_stress",
   "stderr": "",
   "validation": "Process completion and output-line count only; large answers not independently checked."
 }

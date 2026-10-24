@@ -3,10 +3,10 @@ title: "CSP 202506 五题题解"
 contest: "202506"
 contest_month: "2025-06"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "整数运算", "坐标映射", "BFS", "网格最短路", "位运算", "进制转换", "哈希表", "模拟", "字符串", "自动机", "矩阵快速幂", "计数DP", "圆方树", "虚树", "LCA", "图论"]
 status: "published"
-problems: [{"id": "A", "title": "正态分布", "tags": ["整数运算", "坐标映射"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506A/"}]}, {"id": "B", "title": "机器人复健指南", "tags": ["BFS", "网格最短路"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506B/"}]}, {"id": "C", "title": "消息解码", "tags": ["位运算", "进制转换", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506C/"}]}, {"id": "D", "title": "月票发行", "tags": ["字符串", "自动机", "矩阵快速幂", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；71 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506D/"}]}, {"id": "E", "title": "博物馆", "tags": ["圆方树", "虚树", "LCA", "图论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506E/"}]}]
+problems: [{"id": "A", "title": "正态分布", "tags": ["整数运算", "坐标映射"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b2a67df0b81749b8ec"}}, {"id": "B", "title": "机器人复健指南", "tags": ["BFS", "网格最短路"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b3a67df0b81749b902"}}, {"id": "C", "title": "消息解码", "tags": ["位运算", "进制转换", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b5a67df0b81749b914"}}, {"id": "D", "title": "月票发行", "tags": ["字符串", "自动机", "矩阵快速幂", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；71 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b6a67df0b81749b92b"}}, {"id": "E", "title": "博物馆", "tags": ["圆方树", "虚树", "LCA", "图论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b8a67df0b81749b940"}}]
 ---
 
 # CSP 202506 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "正态分布", "tags": ["整数运算", "坐标
 
 标签：`整数运算` · `坐标映射`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 把正态分布查询标准化为z=(n-μ)/σ，输出其在标准表的行列号。行按0.0、0.1…排列，列按百分位0…9排列，均从1编号；σ是100的因子。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202506A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202506A)。
 
 ### 题解
 
@@ -60,13 +62,15 @@ int main() {
 
 标签：`BFS` · `网格最短路`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 机器人在 n×n 场地内按马步移动，即 (±1,±2) 或 (±2,±1)。从给定格子出发，求不超过 k 步可到达的不同格子数，包括起点。n、k≤100。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202506B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202506B)。
 
 ### 题解
 
@@ -118,13 +122,15 @@ int main() {
 
 标签：`位运算` · `进制转换` · `哈希表` · `模拟`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 将 72 位消息解码。简单消息依次含 1 位类型、28 位接收方、28 位发送方、15 位位置；代号值小于 $2^{25}$ 时是 25 位散列，否则减去 $2^{25}$ 得典型代号的混合进制短编码。复杂消息含类型、58 位完整代号、12 位另一方散列及一位方向。散列推断前加 #，找不到输出 ###，位置 0 不输出。只能使用此前消息直接给出的代号；冲突取最近消息，同条消息优先发送方。消息数至多 $10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202506C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202506C)。
 
 ### 题解
 
@@ -266,13 +272,15 @@ int main() {
 
 标签：`字符串` · `自动机` · `矩阵快速幂` · `计数DP`
 
-状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；71 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；71 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 长度为 $n$ 的字符串有 $m$ 个固定位置是 `#`，其他位置可填任意小写字母。统计存在一处 `ccf`，且其右边存在一处 `cspark` 的字符串数量，模 $998244353$。输入 $n,m$ 和递增的井号位置；$n\le10^9,m\le10^6$。模式不能跨过井号，但前后两种模式可以位于不同的自由段。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202506D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202506D)。
 
 ### 题解
 
@@ -407,13 +415,15 @@ int main() {
 
 标签：`圆方树` · `虚树` · `LCA` · `图论`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 连通无向图有 $n$ 个路口，每份攻略指定一组不同的博物馆路口。对于每个被封闭路口 $x$，可以自由选择住宿路口，收益是删去 $x$ 后某个连通块中的最大博物馆数。每份攻略输出所有 $x$ 的收益之和。输入 `n m q`、全部边、每份攻略的点数和点表。$n,q\le10^5$，$m\le2\times10^5$，全部攻略点数之和不超过 $3\times10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202506E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202506E)。
 
 ### 题解
 

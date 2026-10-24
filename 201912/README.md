@@ -3,10 +3,10 @@ title: "CSP 201912 五题题解"
 contest: "201912"
 contest_month: "2019-12"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "数位判断", "循环模拟", "集合", "坐标枚举", "递归下降", "哈希计数", "化学式", "图论", "BFS", "事件模拟", "有序映射", "线段树", "有限群", "状态压缩", "数论"]
 status: "published"
-problems: [{"id": "A", "title": "报数", "tags": ["数位判断", "循环模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912A/"}]}, {"id": "B", "title": "回收站选址", "tags": ["集合", "坐标枚举"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912B/"}]}, {"id": "C", "title": "化学方程式", "tags": ["递归下降", "哈希计数", "化学式"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912C/"}]}, {"id": "D", "title": "区块链", "tags": ["图论", "BFS", "事件模拟", "有序映射"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912D/"}]}, {"id": "E", "title": "魔数", "tags": ["线段树", "有限群", "状态压缩", "数论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912E/"}]}]
+problems: [{"id": "A", "title": "报数", "tags": ["数位判断", "循环模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912A/"}]}, {"id": "B", "title": "回收站选址", "tags": ["集合", "坐标枚举"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912B/"}]}, {"id": "C", "title": "化学方程式", "tags": ["递归下降", "哈希计数", "化学式"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912C/"}]}, {"id": "D", "title": "区块链", "tags": ["图论", "BFS", "事件模拟", "有序映射"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912D/"}]}, {"id": "E", "title": "魔数", "tags": ["线段树", "有限群", "状态压缩", "数论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912E/"}]}]
 ---
 
 # CSP 201912 五题题解
@@ -28,6 +28,8 @@ problems: [{"id": "A", "title": "报数", "tags": ["数位判断", "循环模拟
 四人从1起轮流报数，7的倍数或十进制含7的数跳过；累计实际报出n个数后停止，输出每个人跳过次数。跳过仍消耗该人的轮次。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201912A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201912A)。
 
 ### 题解
 
@@ -80,6 +82,8 @@ int main() {
 n个互异垃圾点中，只有本点及上下左右四邻都存在垃圾才可建回收站，得分为四个对角邻居中有垃圾的数量。输出得分0到4的选址数，n≤1000、坐标可为负。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201912B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201912B)。
 
 ### 题解
 
@@ -134,6 +138,8 @@ int main() {
 判断合法化学方程式左右两侧每种元素的原子总数是否相同。支持系数、元素下标、多层括号及加号；省略系数表示 1。表达式长度不超过 1000，每侧任一元素总数不超过 $10^9$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201912C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201912C)。
 
 ### 题解
 
@@ -229,6 +235,8 @@ int main() {
 网络节点维护从创世块 0 开始的链。收到更长链就替换，等长时选末块编号更小的链；本地产生块则接在当前链尾。主链更新后发送给邻居，每条边传输耗时 t。同一时刻先接收再产生，查询排在该时刻全部产生操作之后。输入每行 `节点 时刻 新块编号` 表示产生，两个数表示查询；输出链长及从 0 起的编号序列。$n\le500,k\le3\times10^4$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201912D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201912D)。
 
 ### 题解
 
@@ -357,6 +365,8 @@ int main() {
 初始序列为 $A_i=i$。每次给出区间 $[l,r]$，先输出 $\sum f(A_i)$，其中 $f(x)=(x\bmod P)\bmod2019$，$P=2009731336725594113$；再令区间内所有数乘上题面五个常数中的 $U_{sum\bmod5}$。$n\le10^6,q\le10^5$。只需维护模 $P$ 的值，但不能把两个取模交换。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201912E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201912E)。
 
 ### 题解
 

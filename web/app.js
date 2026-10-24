@@ -14,6 +14,13 @@ function tag(tag, path='/problems', active=false, count) {
 }
 function toast(text) {$('#toast').textContent=text;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),1800);}
 function status(problem){return problem.status==='implemented'?'已实现':problem.status==='partial'?'部分分实现':'待编写';}
+function ojBadge(problem){
+  const oj=problem.oj;if(!oj?.record)return '';
+  const verified=oj.status==='accepted'&&oj.score===100;
+  const label=verified?'OJ 已验证':oj.status==='failed'?`OJ ${oj.score} 分`:'OJ 待核验';
+  const detail=verified?'数梦 OJ 100 分 Accepted':oj.status==='failed'?`数梦 OJ ${oj.score} 分 ${oj.verdict}`:'数梦 OJ 已提交，结果待核验';
+  return `<a class="oj-badge ${verified?'verified':oj.status==='failed'?'failed':'pending'}" href="${esc(oj.record)}" target="_blank" rel="noopener noreferrer" title="${esc(detail)}" aria-label="${esc(detail)}">${esc(label)}</a>`;
+}
 function stateParams(){return Object.fromEntries(route.searchParams);}
 function filtersChanged(){
   const params=stateParams();
@@ -45,7 +52,7 @@ function renderResults(){
   else results=data.articles.filter(a=>filterArticle(a)&&(!selected||a.tags.includes(selected))&&(!q||a.search.includes(q))&&(!state||(state==='implemented'?a.ready===5:a.ready<5)));
   const heading=`<div class="result-heading"><span>${selected?'标签「'+esc(selected)+'」 · ':''}${results.length} ${problemMode?'道题目':'个题组'}</span><span class="rule"></span><span>新 → 旧</span>${q||year||selected||state?`<a class="clear" href="${url(route.pathname)}">清除筛选</a>`:''}</div>`;
   if(!results.length){$('#results').innerHTML=heading+'<div class="empty"><strong>没有找到相关内容</strong>试试其他标签、年份，或清除筛选。</div>';return;}
-  $('#results').innerHTML=heading+(problemMode?`<div class="problem-list">${results.map(({a,problem})=>`<article class="problem-row"><div class="problem-id">${a.contest}<br>${problem.id} / 100</div><div><span class="question-state">${status(problem)}</span><a class="question-link" href="${url('/contest/'+a.contest,{problem:problem.id})}">${esc(problem.title)}</a><div class="tags">${problem.tags.map(t=>tag(t)).join('')}</div></div></article>`).join('')}</div>`:`<div class="post-list">${results.map(a=>`<article class="post-card"><div class="date-stamp"><strong>${a.contest.slice(4)}</strong><small>${a.contest.slice(0,4)}</small></div><div><div class="post-meta"><span>${a.contest==='201312'?'第 0 次练习题组':'CSP 认证题组'}</span><span>·</span><span class="badge${a.ready===5?' ready':''}">${a.ready===5?'五题已实现':'草稿 '+a.ready+'/5'}</span></div><h2><a href="${url('/contest/'+a.contest)}">${a.contest.slice(0,4)} 年 ${Number(a.contest.slice(4))} 月 · 五题题解</a></h2><div class="problem-preview">${a.problems.map(p=>`<a href="${url('/contest/'+a.contest,{problem:p.id})}"><b>${p.id}</b>${esc(p.title)}</a>`).join('')}</div><div class="tags">${a.tags.filter(t=>t!=='CSP').slice(0,7).map(t=>tag(t)).join('')}${a.tags.length>8?`<a class="tag" href="${url('/contest/'+a.contest)}">+${a.tags.length-8}</a>`:''}</div></div></article>`).join('')}</div>`);
+  $('#results').innerHTML=heading+(problemMode?`<div class="problem-list">${results.map(({a,problem})=>`<article class="problem-row"><div class="problem-id">${a.contest}<br>${problem.id} / 100</div><div><div class="problem-heading"><a class="question-link" href="${url('/contest/'+a.contest,{problem:problem.id})}">${esc(problem.title)}</a>${ojBadge(problem)}<span class="question-state">${status(problem)}</span></div><div class="tags">${problem.tags.map(t=>tag(t)).join('')}</div></div></article>`).join('')}</div>`:`<div class="post-list">${results.map(a=>`<article class="post-card"><div class="date-stamp"><strong>${a.contest.slice(4)}</strong><small>${a.contest.slice(0,4)}</small></div><div><div class="post-meta"><span>${a.contest==='201312'?'第 0 次练习题组':'CSP 认证题组'}</span><span>·</span><span class="badge${a.ready===5?' ready':''}">${a.ready===5?'五题已实现':'草稿 '+a.ready+'/5'}</span></div><h2><a href="${url('/contest/'+a.contest)}">${a.contest.slice(0,4)} 年 ${Number(a.contest.slice(4))} 月 · 五题题解</a></h2><div class="problem-preview">${a.problems.map(p=>`<a href="${url('/contest/'+a.contest,{problem:p.id})}"><b>${p.id}</b>${esc(p.title)}</a>`).join('')}</div><div class="tags">${a.tags.filter(t=>t!=='CSP').slice(0,7).map(t=>tag(t)).join('')}${a.tags.length>8?`<a class="tag" href="${url('/contest/'+a.contest)}">+${a.tags.length-8}</a>`:''}</div></div></article>`).join('')}</div>`);
 }
 function tagMap(){
   const entries=Object.entries(data.tags).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'zh-CN'));

@@ -3,10 +3,10 @@ title: "CSP 202206 五题题解"
 contest: "202206"
 contest_month: "2022-06"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "均值", "方差", "浮点数", "稀疏坐标", "枚举", "矩阵匹配", "权限系统", "位集", "哈希表", "模拟", "有序集合", "几何", "线段树", "矩阵", "仿射变换", "计算几何"]
 status: "published"
-problems: [{"id": "A", "title": "归一化处理", "tags": ["均值", "方差", "浮点数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206A/"}]}, {"id": "B", "title": "寻宝！大冒险！", "tags": ["稀疏坐标", "枚举", "矩阵匹配"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206B/"}]}, {"id": "C", "title": "角色授权", "tags": ["权限系统", "位集", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206C/"}]}, {"id": "D", "title": "光线追踪", "tags": ["模拟", "有序集合", "几何"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206D/"}]}, {"id": "E", "title": "PS 无限版", "tags": ["线段树", "矩阵", "仿射变换", "计算几何"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206E/"}]}]
+problems: [{"id": "A", "title": "归一化处理", "tags": ["均值", "方差", "浮点数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce920a67df0b81749c03a"}}, {"id": "B", "title": "寻宝！大冒险！", "tags": ["稀疏坐标", "枚举", "矩阵匹配"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce921a67df0b81749c040"}}, {"id": "C", "title": "角色授权", "tags": ["权限系统", "位集", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce923a67df0b81749c046"}}, {"id": "D", "title": "光线追踪", "tags": ["模拟", "有序集合", "几何"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce925a67df0b81749c04d"}}, {"id": "E", "title": "PS 无限版", "tags": ["线段树", "矩阵", "仿射变换", "计算几何"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 30 分 Time Exceeded（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206E/"}], "oj": {"status": "failed", "score": 30, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6adce927a67df0b81749c056"}}]
 ---
 
 # CSP 202206 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "归一化处理", "tags": ["均值", "方差", 
 
 标签：`均值` · `方差` · `浮点数`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 给n个整数，计算均值μ、总体方差D，再依次输出(a[i]-μ)/√D。题目保证D≥1。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202206A/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202206A)。
 
 ### 题解
 
@@ -72,13 +74,15 @@ int main() {
 
 标签：`稀疏坐标` · `枚举` · `矩阵匹配`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 巨大地图中只有 n≤1000 棵树，藏宝图为(S+1)²的01图，S≤50，左下角一定有树。求可与藏宝图完全一致且不越界的位置数；读入藏宝图时第一行对应第一坐标 S，最后一行对应0。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202206B/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202206B)。
 
 ### 题解
 
@@ -139,13 +143,15 @@ int main() {
 
 标签：`权限系统` · `位集` · `哈希表` · `模拟`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 角色规定允许的操作、资源种类、资源名称；操作与种类中的 * 表示全部，名称列表为空表示全部。角色可授予用户或用户组。查询给出用户、所属组和待访问资源，判断是否存在一个与用户关联且同时允许全部三项的角色。角色、关联规则至多 500，查询至多 5000。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202206C/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202206C)。
 
 ### 题解
 
@@ -237,13 +243,15 @@ int main() {
 
 标签：`模拟` · `有序集合` · `几何`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 动态插入、删除与坐标轴成 45° 的反射线段；线段端点不反射，折损系数为 $a\in[0.2,0.8]$。查询从整数点沿右、上、左、下（编号 0、1、2、3）发射强度 $I$ 的光线，单位时间走单位距离，经过 $t$ 后的位置与向下取整的强度。到达镜面恰好用完时间时仍需折损；强度小于 1 输出 `0 0 0`。删除编号是插入发生的操作序号。$m\le10^5$，全部插入线段的横向长度之和不超过 $3\times10^5$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202206D/)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202206D)。
 
 ### 题解
 
@@ -356,13 +364,15 @@ int main() {
 
 标签：`线段树` · `矩阵` · `仿射变换` · `计算几何`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 30 分 Time Exceeded（复刻评测）。
 
 ### 题意
 
 维护按编号排列的平面点，支持区间平移、绕给定点旋转、绕给定点缩放、关于直线对称、投影到直线，查询区间重心或到指定点的距离平方和。输入 `n q`、各点坐标，再输入操作；操作 1–7 的参数顺序见原题。角度均为弧度，直线表示为 $y=(\tan\theta)x+y_0$。$n\le5\times10^5,q\le2\times10^4$，答案允许绝对或相对误差 $10^{-3}$。
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202206E/)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202206E)。
 
 ### 题解
 

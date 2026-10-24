@@ -3,10 +3,10 @@ title: "CSP 202305 五题题解"
 contest: "202305"
 contest_month: "2023-05"
 date: "2026-10-23"
-updated: "2026-10-24"
+updated: "2026-10-25"
 tags: ["CSP", "字符串", "频率统计", "矩阵乘法", "结合律", "复杂度优化", "字节解析", "解压缩", "位运算", "图论", "树形DP", "变量消元", "枚举", "状态压缩", "最短路", "Dijkstra", "SOS DP"]
 status: "published"
-problems: [{"id": "A", "title": "重复局面", "tags": ["字符串", "频率统计"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16667"}]}, {"id": "B", "title": "矩阵运算", "tags": ["矩阵乘法", "结合律", "复杂度优化"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16668"}]}, {"id": "C", "title": "解压缩", "tags": ["字节解析", "解压缩", "位运算"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16669"}]}, {"id": "D", "title": "电力网络", "tags": ["图论", "树形DP", "变量消元", "枚举"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16670"}]}, {"id": "E", "title": "闪耀巡航", "tags": ["状态压缩", "最短路", "Dijkstra", "SOS DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16671"}]}]
+problems: [{"id": "A", "title": "重复局面", "tags": ["字符串", "频率统计"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16667"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d0a67df0b81749be5a"}}, {"id": "B", "title": "矩阵运算", "tags": ["矩阵乘法", "结合律", "复杂度优化"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16668"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d2a67df0b81749be67"}}, {"id": "C", "title": "解压缩", "tags": ["字节解析", "解压缩", "位运算"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16669"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d4a67df0b81749be76"}}, {"id": "D", "title": "电力网络", "tags": ["图论", "树形DP", "变量消元", "枚举"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16670"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d5a67df0b81749be85"}}, {"id": "E", "title": "闪耀巡航", "tags": ["状态压缩", "最短路", "Dijkstra", "SOS DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "数梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16671"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d7a67df0b81749be8f"}}]
 ---
 
 # CSP 202305 五题题解
@@ -21,13 +21,15 @@ problems: [{"id": "A", "title": "重复局面", "tags": ["字符串", "频率统
 
 标签：`字符串` · `频率统计`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 按时间给出若干8×8棋盘局面，两个棋盘所有字符相同才算同一局面，输出每个局面是第几次出现。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16667)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202305A)。
 
 ### 题解
 
@@ -65,13 +67,15 @@ int main() {
 
 标签：`矩阵乘法` · `结合律` · `复杂度优化`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 Q、K、V 为 n×d 矩阵，W 是给每行乘权重的向量，计算 $(W\cdot(QK^T))V$。n≤10000、d≤20，元素绝对值≤1000，输出整数矩阵。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16668)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202305B)。
 
 ### 题解
 
@@ -126,13 +130,15 @@ int main() {
 
 标签：`字节解析` · `解压缩` · `位运算`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 输入 Snappy 风格压缩字节流的十六进制表示。开头以低 7 位、低位组在前的变长整数表示原始长度，随后是字面量片段或向前引用片段。按题目格式解压，输出小写十六进制，每行最多 8 字节。压缩与解压长度均不超过约 2 MiB，输入保证合法。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16669)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202305C)。
 
 ### 题解
 
@@ -217,13 +223,15 @@ int main() {
 
 标签：`图论` · `树形DP` · `变量消元` · `枚举`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。
+状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 有 $N$ 个城镇，每个城镇从 $K$ 个地址中选一个建设变电站；每个地址有建设成本。还需建设给定的 $M$ 条无向边，每条边给出 $K\times K$ 成本矩阵，费用取决于两端选址。求点成本与边成本总和的最小值。城镇编号从 0 开始。题目分别保证小图、树、单环图、删去某一点后为树的特定图，或者度数大于 2 的点不超过 6 个；$N\le10^4,K\le10$。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16670)。
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202305D)。
 
 ### 题解
 
@@ -454,13 +462,15 @@ int main() {
 
 标签：`状态压缩` · `最短路` · `Dijkstra` · `SOS DP`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，未获正式评测确认**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；数梦 OJ 100 分 Accepted（复刻评测）。
 
 ### 题意
 
 给定若干小写字母串，每个串表示一条固定巡航线路：从首字符对应城市出发，在末字符城市结束，中间经过其余城市，长度为字符串长度减一。另给至多 10 个不同目标字母。对每条线路，要求先完整乘坐它，再接若干条线路，最后回到该线路起点，并经过全部目标城市，求最短总长度，无解输出 -1。输入线路数、目标字母串，以及每条线路的字符串。
 
 来源：[公开题面与样例](https://www.luogu.com.cn/problem/P16671)
+
+原站练习：[数梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202305E)。
 
 ### 题解
 
