@@ -72,17 +72,19 @@ int main() {
                 answer[s] = min(answer[s], t);
             }
         for (int v = 0; v < m; ++v)
-            if (!used[v]) {
+            if (!used[v] && dist[v] > dist[u]) {
                 ll g = gcd(period[u], period[v]), mod = period[v] / g;
                 ll inv = mod == 1 ? 0 : inverse(period[u] / g, mod);
-                I cycle = I(period[u]) * mod;
+                ll cycle = period[u] * mod;
                 for (int s = 0; s < n; ++s)
                     if (offset[u][s] >= 0 && offset[v][s] >= 0) {
                         ll difference = offset[v][s] - offset[u][s];
                         if (difference % g)
                             continue;
-                        I factor = mod == 1 ? 0 : (I(difference / g) * inv % mod + mod) % mod;
-                        I time = (offset[u][s] + I(period[u]) * factor) % cycle;
+                        ll factor = mod == 1 ? 0 : ((difference / g * inv % mod) + mod) % mod;
+                        I time = offset[u][s] + period[u] * factor;
+                        if (time >= dist[v])
+                            continue;
                         if (time < dist[u])
                             time += (dist[u] - time + cycle - 1) / cycle * cycle;
                         dist[v] = min(dist[v], time);

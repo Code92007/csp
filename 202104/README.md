@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "计数数组", "直方图", "二维前缀和", "矩形查询", "状态机", "优先队列", "有序集合", "模拟", "动态规划", "因数", "计数", "最短路", "中国剩余定理", "扩展欧几里得", "周期"]
 status: "published"
-problems: [{"id": "A", "title": "灰度直方图", "tags": ["计数数组", "直方图"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce971a67df0b81749c1a2"}}, {"id": "B", "title": "邻域均值", "tags": ["二维前缀和", "矩形查询"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce972a67df0b81749c1b8"}}, {"id": "C", "title": "DHCP 服务器", "tags": ["状态机", "优先队列", "有序集合", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1074ace1cba9a1bca0"}}, {"id": "D", "title": "校门外的树", "tags": ["动态规划", "因数", "计数"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1274ace1cba9a1bca8"}}, {"id": "E", "title": "疫苗运输", "tags": ["最短路", "中国剩余定理", "扩展欧几里得", "周期"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 95 分 Time Exceeded（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104E/"}], "oj": {"status": "failed", "score": 95, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6adceb1474ace1cba9a1bccd"}}]
+problems: [{"id":"A","title":"灰度直方图","tags":["计数数组","直方图"],"status":"implemented","code":"A.cpp","anchor":"problem-a","validation":"C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202104A"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202104A/"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce971a67df0b81749c1a2"}},{"id":"B","title":"邻域均值","tags":["二维前缀和","矩形查询"],"status":"implemented","code":"B.cpp","anchor":"problem-b","validation":"C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202104B"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202104B/"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce972a67df0b81749c1b8"}},{"id":"C","title":"DHCP 服务器","tags":["状态机","优先队列","有序集合","模拟"],"status":"implemented","code":"C.cpp","anchor":"problem-c","validation":"C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202104C"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202104C/"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adceb1074ace1cba9a1bca0"}},{"id":"D","title":"校门外的树","tags":["动态规划","因数","计数"],"status":"implemented","code":"D.cpp","anchor":"problem-d","validation":"C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202104D"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202104D/"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adceb1274ace1cba9a1bca8"}},{"id":"E","title":"疫苗运输","tags":["最短路","中国剩余定理","扩展欧几里得","周期"],"status":"implemented","code":"E.cpp","anchor":"problem-e","validation":"C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍、100 组新旧实现差分通过；曙梦 OJ 95 分 Time Exceeded（复刻评测）；洛谷民间数据旧版 95 分 Time Exceeded。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202104E"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202104E/"},{"label":"洛谷民间题面（可提交）","url":"https://www.luogu.com.cn/problem/P16040"}],"oj":{"status":"failed","score":95,"verdict":"Time Exceeded","record":"https://oj.shumeng.tech/record/6adceb1474ace1cba9a1bccd"},"luogu":{"status":"failed","score":95,"verdict":"Time Exceeded","record":"https://www.luogu.com.cn/record/305496224"}}]
 ---
 
 # CSP 202104 五题题解
@@ -321,7 +321,7 @@ int main() {
 
 标签：`最短路` · `中国剩余定理` · `扩展欧几里得` · `周期`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 95 分 Time Exceeded（复刻评测）。
+状态：**完整实现，洛谷尚未满分**。C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍、100 组新旧实现差分通过；[曙梦 OJ 旧版 95 分 Time Exceeded](https://oj.shumeng.tech/record/6adceb1474ace1cba9a1bccd)（复刻评测）；[洛谷民间数据旧版 95 分 Time Exceeded](https://www.luogu.com.cn/record/305496224)。
 
 ### 题意
 
@@ -329,7 +329,7 @@ int main() {
 
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202104E/)
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202104E)。
+原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202104E)；[洛谷民间题面（可提交）](https://www.luogu.com.cn/problem/P16040)。
 
 ### 题解
 
@@ -343,7 +343,7 @@ $$t\equiv a_{u,s}\pmod{P_u},\qquad t\equiv a_{v,s}\pmod{P_v}.$$
 
 **为何可以 Dijkstra？** 更晚登上同一条车不可能获得更早的换乘时刻；这是一张满足 FIFO 性质的时间依赖图，因此最早未确定线路可以安全定型。每次定型线路 $u$，也用它更新全部途经站的最早到达时间。
 
-**复杂度与数值范围。** 扫描式 Dijkstra 为 $O(m^2n+m^2\log P)$，空间 $O(mn)$。周期乘积和等待后的绝对时间可能大，使用 `__int128` 完成 CRT 与时间运算并自行输出十进制，不能在取模前先做可能溢出的 64 位乘法。
+**复杂度与数值范围。** 扫描式 Dijkstra 为 $O(m^2n+m^2\log P)$，空间 $O(mn)$。若 $dist[v]\le dist[u]$，从 $u$ 出发的换乘不可能改善 $v$，可以跳过。题目给出 $n,m\le500$、每段时间不超过 $10^6$，单条线路周期不超过 $5\times10^8$，两条线路的最小公倍数小于 $2.5\times10^{17}$，因此 CRT 的模数、乘积和最小非负解可用 64 位整数；多次换乘后的绝对时间仍用 `__int128` 保存并自行输出十进制。
 
 ### 代码
 
@@ -424,17 +424,19 @@ int main() {
                 answer[s] = min(answer[s], t);
             }
         for (int v = 0; v < m; ++v)
-            if (!used[v]) {
+            if (!used[v] && dist[v] > dist[u]) {
                 ll g = gcd(period[u], period[v]), mod = period[v] / g;
                 ll inv = mod == 1 ? 0 : inverse(period[u] / g, mod);
-                I cycle = I(period[u]) * mod;
+                ll cycle = period[u] * mod;
                 for (int s = 0; s < n; ++s)
                     if (offset[u][s] >= 0 && offset[v][s] >= 0) {
                         ll difference = offset[v][s] - offset[u][s];
                         if (difference % g)
                             continue;
-                        I factor = mod == 1 ? 0 : (I(difference / g) * inv % mod + mod) % mod;
-                        I time = (offset[u][s] + I(period[u]) * factor) % cycle;
+                        ll factor = mod == 1 ? 0 : ((difference / g * inv % mod) + mod) % mod;
+                        I time = offset[u][s] + period[u] * factor;
+                        if (time >= dist[v])
+                            continue;
                         if (time < dist[u])
                             time += (dist[u] - time + cycle - 1) / cycle * cycle;
                         dist[v] = min(dist[v], time);
