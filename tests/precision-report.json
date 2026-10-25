@@ -216,8 +216,8 @@
     "final_observed_at": "2026-10-25T15:14:15.675Z",
     "source_sha256": "6a128e8d781e9fde0cb77ad2fa22862e21d8b03b9afeb979f5fad8c2c84f0bfc",
     "record_source_matches_current_file": true,
-    "maximum_time_ms": 280,
-    "total_time_ms": 1220,
-    "memory_mib": 5.2
+    "maximum_time_ms": 283,
+    "memory_mib": 5.2,
+    "total_time_display": "1.22s"
   }
 }

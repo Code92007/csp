@@ -463,6 +463,36 @@
       "sha256": "6a128e8d781e9fde0cb77ad2fa22862e21d8b03b9afeb979f5fad8c2c84f0bfc",
       "submission_method": "Root visible browser: current source file upload; user completed CAPTCHA and submission; record source DOM text matches local file exactly",
       "source_file": "/private/tmp/csp-validation-20261025/202309/B.cpp"
+    },
+    {
+      "id": "202309C",
+      "title": "梯度求解",
+      "pid": "P16056",
+      "problem_url": "https://www.luogu.com.cn/problem/P16056",
+      "record": "https://www.luogu.com.cn/record/305836471",
+      "submitted_at": "2026-10-25 23:17:19+08:00",
+      "clicked_at": "2026-10-25T15:17:17.132Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T15:20:11.633Z",
+      "sha256": "4f46c6f4886a14d0390fc781dfbf15d9ce6abc98426c177a272efd4e7ec99fb2",
+      "submission_method": "Normal code editor paste; exact clipboard comparison",
+      "source_file": "/private/tmp/csp-validation-20261025/202309/C.cpp"
+    },
+    {
+      "id": "202309D",
+      "title": "阴阳龙",
+      "pid": "P16057",
+      "problem_url": "https://www.luogu.com.cn/problem/P16057",
+      "record": "https://www.luogu.com.cn/record/305837114",
+      "submitted_at": "2026-10-25 23:22:44+08:00",
+      "clicked_at": "2026-10-25T15:22:43.525Z",
+      "score": 30,
+      "verdict": "Unaccepted (Wrong Answer on 14/20 tests)",
+      "final_observed_at": "2026-10-25T15:22:53.433Z",
+      "sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a",
+      "submission_method": "Normal code editor paste; exact clipboard comparison",
+      "source_file": "/private/tmp/csp-validation-20261025/202309/D.cpp"
     }
   ]
 }

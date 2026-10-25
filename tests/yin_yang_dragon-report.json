@@ -92,7 +92,7 @@
       "speedup": 5.9252406371960875
     }
   ],
-  "online_status": "Shumeng 100 Accepted; Luogu current source awaiting recheck",
+  "online_status": "Shumeng 100 Accepted; current source Luogu 30 Unaccepted, correctness investigation in progress",
   "status": "passed",
   "online_validation": {
     "record": "https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b",
@@ -101,5 +101,30 @@
     "sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a",
     "time": "21:00:03",
     "final_observed_at": "2026-10-25T13:00:32.202Z"
+  },
+  "luogu_validation": {
+    "record": "https://www.luogu.com.cn/record/305837114",
+    "score": 30,
+    "verdict": "Unaccepted",
+    "submitted_at": "2026-10-25 23:22:44+08:00",
+    "final_observed_at": "2026-10-25T15:22:53.433Z",
+    "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a",
+    "record_source_matches_current_file": true,
+    "wrong_answer_test_points": [
+      1,
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      16,
+      18,
+      19,
+      20
+    ]
   }
 }
