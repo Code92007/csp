@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-25",
+  "minimum_interval_seconds_per_platform": 120,
+  "shumeng": [
+    {
+      "pid": "CSP202312D",
+      "title": "宝藏",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202312D",
+      "previous_oj": {
+        "status": "failed",
+        "score": 85,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce8c5a67df0b81749bdca"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490650",
+      "sha256": "b9dac51f4128d412d8797ca5102466c3a040e8c3431df66c0cef4bca8c940ae7",
+      "status": "failed",
+      "record": "https://oj.shumeng.tech/record/6addc9ec74ace1cba9a21d5a",
+      "time": "17:20:44",
+      "score": 85,
+      "verdict": "Time Exceeded"
+    },
+    {
+      "pid": "CSP202309D",
+      "title": "阴阳龙",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202309D",
+      "previous_oj": {
+        "status": "failed",
+        "score": 15,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce8cda67df0b81749be44"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490899",
+      "sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553",
+      "status": "failed",
+      "score": 15,
+      "verdict": "Time Exceeded",
+      "time": "17:23:19",
+      "record": "https://oj.shumeng.tech/record/6addca8774ace1cba9a21e22"
+    },
+    {
+      "pid": "CSP202303C",
+      "title": "LDAP",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202303C",
+      "previous_oj": {
+        "status": "failed",
+        "score": 70,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce91ba67df0b81749c02e"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490926",
+      "sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9",
+      "status": "failed",
+      "score": 70,
+      "verdict": "Time Exceeded",
+      "time": "17:25:25",
+      "record": "https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46"
+    },
+    {
+      "pid": "CSP202206E",
+      "title": "PS 无限版",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202206E",
+      "previous_oj": {
+        "status": "failed",
+        "score": 30,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce927a67df0b81749c056"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490960",
+      "sha256": "cf492760608f922b71d0100c83502a913c3365af4f0d2e666c6024dee9fee905",
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "time": "17:27:47",
+      "record": "https://oj.shumeng.tech/record/6addcb9374ace1cba9a21e80"
+    },
+    {
+      "pid": "CSP202112E",
+      "title": "极差路径",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202112E",
+      "previous_oj": {
+        "status": "failed",
+        "score": 56,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce96da67df0b81749c18a"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305494838",
+      "sha256": "fe2c351c465816e460e5a40eacc8102efc31798009081865a5b98656cff8aa70",
+      "status": "failed",
+      "score": 56,
+      "verdict": "Time Exceeded",
+      "time": "17:32:28",
+      "record": "https://oj.shumeng.tech/record/6addccac74ace1cba9a21f0f"
+    },
+    {
+      "pid": "CSP202109A",
+      "title": "数组推导",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202109A",
+      "previous_oj": {
+        "status": "unavailable",
+        "reason": "隐藏题，当前账号无权查看"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490510",
+      "sha256": "0ce481e4e4cd71ba9f5e878cb713599064bd1fb55c739c22e5428e317fb5c4b3",
+      "status": "unavailable",
+      "reason": "当前账号无权查看隐藏题（本轮已复查）"
+    },
+    {
+      "pid": "CSP202109B",
+      "title": "非零段划分",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202109B",
+      "previous_oj": {
+        "status": "unavailable",
+        "reason": "隐藏题，当前账号无权查看"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490539",
+      "sha256": "a4632a6d2cd79cc3a5aae4dea69afd077b0b8a83bd327802718a1710d9e4fd13",
+      "status": "unavailable",
+      "reason": "当前账号无权查看隐藏题（本轮已复查）"
+    },
+    {
+      "pid": "CSP202109C",
+      "title": "脉冲神经网络",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202109C",
+      "previous_oj": {
+        "status": "unavailable",
+        "reason": "隐藏题，当前账号无权查看"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490605",
+      "sha256": "32d197582123b772e708bf4ca7f0ba9f16ed9922097f0c144ccb56b054cbbb8c",
+      "status": "unavailable",
+      "reason": "当前账号无权查看隐藏题（本轮已复查）"
+    },
+    {
+      "pid": "CSP202109E",
+      "title": "箱根山岳险天下",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202109E",
+      "previous_oj": {
+        "status": "unavailable",
+        "reason": "隐藏题，当前账号无权查看"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490619",
+      "sha256": "fe82d5f7fbd183d1b8129448583afc004f930a4355cc0783676d6d91302c847d",
+      "status": "unavailable",
+      "reason": "当前账号无权查看隐藏题（本轮已复查）"
+    },
+    {
+      "pid": "CSP201403A",
+      "title": "相反数",
+      "problem_url": "https://oj.shumeng.tech/p/CSP201403A",
+      "previous_oj": {},
+      "luogu_record": "https://www.luogu.com.cn/record/305650472",
+      "sha256": "269740413c10bf630470510697040ed0b65d7b69454f456b2806f8942455b030",
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "time": "17:34:49",
+      "record": "https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70"
+    },
+    {
+      "pid": "CSP201403C",
+      "title": "命令行选项",
+      "problem_url": "https://oj.shumeng.tech/p/CSP201403C",
+      "previous_oj": {},
+      "luogu_record": "https://www.luogu.com.cn/record/305653686",
+      "sha256": "441729975e87fcc5b4706c6cb63d0c5a202463d9b7f382dfe7e30f7290ea793b",
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "time": "20:31:17",
+      "record": "https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8"
+    },
+    {
+      "pid": "CSP201403D",
+      "title": "无线网络",
+      "problem_url": "https://oj.shumeng.tech/p/CSP201403D",
+      "previous_oj": {},
+      "luogu_record": "https://www.luogu.com.cn/record/305643544",
+      "sha256": "aba51d8d53cc594a3a946db1144c35d9a239d50198a9b9186efb87c8c058b8ac",
+      "status": "awaiting_login",
+      "reason": "登录会话失效，尚未提交"
+    },
+    {
+      "pid": "CSP201312C",
+      "title": "最大的矩形",
+      "problem_url": "https://oj.shumeng.tech/p/CSP201312C",
+      "previous_oj": {},
+      "luogu_record": "https://www.luogu.com.cn/record/305657951",
+      "sha256": "a4c57208b2ba6ed54326a0002e455c660500b1319c5a4f0d3c191b6121ef19ab",
+      "status": "awaiting_login",
+      "reason": "登录会话失效，尚未提交"
+    },
+    {
+      "pid": "CSP202312D",
+      "title": "宝藏",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202312D",
+      "previous_oj": {
+        "status": "failed",
+        "score": 85,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce8c5a67df0b81749bdca"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490650",
+      "sha256": "ae452c40a94a10bde5c2b7762bc72497775a8991ed96e7f92f9e7e6bad5bc4a3",
+      "status": "accepted",
+      "record": "https://oj.shumeng.tech/record/6addcc1874ace1cba9a21ea2",
+      "time": "17:30:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "source_file": "/private/tmp/csp-202312d-work/D.cpp",
+      "note": "线段树优化版；旧版85分记录保留在前一条"
+    }
+  ],
+  "luogu": [
+    {
+      "id": "202403A",
+      "title": "词频统计",
+      "pid": "P16031",
+      "problem_url": "https://www.luogu.com.cn/problem/P16031",
+      "record": "https://www.luogu.com.cn/record/305704089",
+      "submitted_at": "2026-10-25 17:22:15+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "sha256": "996c2338843e673e4a1ec169e06de90b2bee6c94607b6958dafe8ac6d1c72584",
+      "source_file": "/private/tmp/csp-validation-20261025/202403/A.cpp"
+    },
+    {
+      "id": "202403B",
+      "title": "相似度计算",
+      "pid": "P16032",
+      "problem_url": "https://www.luogu.com.cn/problem/P16032",
+      "record": "https://www.luogu.com.cn/record/305705069",
+      "submitted_at": "2026-10-25 17:24:28+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "sha256": "30ce8de0093ddd70c25bb3cfb9525bc861dcb791c7c378067b3c45fb00a699e4",
+      "source_file": "/private/tmp/csp-validation-20261025/202403/B.cpp"
+    },
+    {
+      "id": "202403C",
+      "title": "化学方程式配平",
+      "pid": "P16033",
+      "problem_url": "https://www.luogu.com.cn/problem/P16033",
+      "record": "https://www.luogu.com.cn/record/305706100",
+      "submitted_at": "2026-10-25 17:26:43+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "sha256": "8e62d557e567c2b940d63ef864f210972ee802194bbb6648a542f6aa636361b9",
+      "source_file": "/private/tmp/csp-validation-20261025/202403/C.cpp"
+    },
+    {
+      "id": "202403D",
+      "title": "十滴水",
+      "pid": "P16034",
+      "problem_url": "https://www.luogu.com.cn/problem/P16034",
+      "record": "https://www.luogu.com.cn/record/305707098",
+      "submitted_at": "2026-10-25 17:29:06+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "sha256": "56cd351dad5356979e24157a51d0d926a323500db0a838858d44d98dfbdac5c5",
+      "source_file": "/private/tmp/csp-validation-20261025/202403/D.cpp"
+    }
+  ]
+}

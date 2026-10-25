@@ -1,0 +1,97 @@
+{
+  "problem": "CSP202312D",
+  "date": "2026-10-25",
+  "machine": "arm64",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "flags": "-std=c++17 -O2 -Wall -Wextra -Wpedantic",
+  "source_sha256": "ae452c40a94a10bde5c2b7762bc72497775a8991ed96e7f92f9e7e6bad5bc4a3",
+  "baseline_sha256": "b9dac51f4128d412d8797ca5102466c3a040e8c3431df66c0cef4bca8c940ae7",
+  "baseline_git_blob": "482d1dd591625ec1e945df1cff1b2bcac0b79b6b",
+  "peak_memory": {
+    "case": "mixed",
+    "method": "Fresh Python process, one child execution, resource.getrusage(RUSAGE_CHILDREN).ru_maxrss on macOS (bytes)",
+    "rss_bytes": 21446656,
+    "note": "One extra execution measured memory; the complete timing suite was not rerun."
+  },
+  "sample_cases": 1,
+  "independent_random_cases": 700,
+  "stress": [
+    {
+      "case": "push_queries",
+      "n": 100000,
+      "m": 100000,
+      "candidate_seconds": 0.03846816599999947,
+      "input_sha256": "3712ec77ee8e23c5cba0840694cb39c0306ca17207f723abcd9f5346aa61afa1",
+      "output_sha256": "07e6a329f6e2d5e9b525273a2302672ac9c6d4009432ba1b14128e6124dfec84",
+      "independent_queries": 4,
+      "baseline_seconds": 1.3691748749999997,
+      "speedup": 35.592413607657264
+    },
+    {
+      "case": "push_updates",
+      "n": 100000,
+      "m": 100000,
+      "candidate_seconds": 0.04087266700000036,
+      "input_sha256": "640caba3e70fcc8eb825e71b9ee02f146bc472cfeb6e5cdb5957f8d2789fe1cd",
+      "output_sha256": "a2d58e254e5c199eb842a94b2a30625c9f3597b085fa4e73884f0f5c233c9339",
+      "independent_queries": 4,
+      "baseline_seconds": 1.3783297910000005,
+      "speedup": 33.72253127010254
+    },
+    {
+      "case": "mixed",
+      "n": 100000,
+      "m": 100000,
+      "candidate_seconds": 0.12274237499999963,
+      "input_sha256": "e56403e6ffd4d0f1f1ad826f3406727331d6aa6dc3986a9939d788298a1a9dba",
+      "output_sha256": "c734524ef9c50c55989c4078979e118f800ce1a6b8704584b7f0b436bbc4d573",
+      "independent_queries": 4,
+      "baseline_seconds": 1.000573375,
+      "speedup": 8.151816966227052
+    },
+    {
+      "case": "balanced",
+      "n": 100000,
+      "m": 100000,
+      "candidate_seconds": 0.07774820800000093,
+      "input_sha256": "b7f8c5fa0812b3597bb9ccfc2e8c20989d68f009a0039ac1e77b0ab02bc39f26",
+      "output_sha256": "941d4230f930caadce39c287d406cf8dc4959073c50f8d21e3b43e0aa3937882",
+      "independent_queries": 4,
+      "baseline_seconds": 0.7260397919999999,
+      "speedup": 9.338347605387783
+    },
+    {
+      "case": "deletion_heavy",
+      "n": 100000,
+      "m": 100000,
+      "candidate_seconds": 0.03968520799999986,
+      "input_sha256": "a6145cd9d8dc6ff3f0c07ac2abd5c33bbef8701f1819cbdccf368b8cfeefdc6a",
+      "output_sha256": "775af9734c04345fcb0141041152a887cfad9ae717d762852fcbb428301a6c89",
+      "independent_queries": 4,
+      "baseline_seconds": 0.5680429160000013,
+      "speedup": 14.313719005832182
+    },
+    {
+      "case": "updates",
+      "n": 100000,
+      "m": 100000,
+      "candidate_seconds": 0.07761820800000052,
+      "input_sha256": "01b0d2a7f6ad8404724f51fdd597c255f9d9448364b85d1585522d289f8c1bc2",
+      "output_sha256": "d5b104e7b340d4cd5e1bb548e0e5ffe51ba4ced5f204268120fd4acf9a27134b",
+      "independent_queries": 1,
+      "baseline_seconds": 0.8991313749999996,
+      "speedup": 11.58402645678181
+    }
+  ],
+  "online_status": "not_submitted_by_validator",
+  "status": "passed",
+  "online_validation": {
+    "platform": "曙梦 OJ",
+    "score": 100,
+    "verdict": "Accepted",
+    "record": "https://oj.shumeng.tech/record/6addcc1874ace1cba9a21ea2",
+    "submitted_at": "2026-10-25 17:30:00+08:00",
+    "source_sha256": "ae452c40a94a10bde5c2b7762bc72497775a8991ed96e7f92f9e7e6bad5bc4a3"
+  }
+}

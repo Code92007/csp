@@ -4,9 +4,9 @@ contest: "202312"
 contest_month: "2023-12"
 date: "2026-10-23"
 updated: "2026-10-25"
-tags: ["CSP", "暴力枚举", "多维比较", "质因数分解", "试除法", "树", "DFS序", "决策树", "前缀和", "根号分块", "栈", "矩阵乘法", "状态压缩", "折半搜索", "位集", "图论"]
+tags: ["CSP", "暴力枚举", "多维比较", "质因数分解", "试除法", "树", "DFS序", "决策树", "前缀和", "线段树", "栈", "括号序列", "矩阵乘法", "状态压缩", "折半搜索", "位集", "图论"]
 status: "published"
-problems: [{"id":"A","title":"仓库规划","tags":["暴力枚举","多维比较"],"status":"implemented","code":"A.cpp","anchor":"problem-a","validation":"C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202312A"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202312A/"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8c0a67df0b81749bd8f"}},{"id":"B","title":"因子化简","tags":["质因数分解","试除法"],"status":"implemented","code":"B.cpp","anchor":"problem-b","validation":"C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202312B"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202312B/"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8c2a67df0b81749bd93"}},{"id":"C","title":"树上搜索","tags":["树","DFS序","决策树","前缀和"],"status":"implemented","code":"C.cpp","anchor":"problem-c","validation":"C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202312C"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202312C/"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8c3a67df0b81749bdb0"}},{"id":"D","title":"宝藏","tags":["根号分块","栈","矩阵乘法"],"status":"implemented","code":"D.cpp","anchor":"problem-d","validation":"C++17 编译通过；1 个保存样例/回归用例通过；110 组独立随机对拍通过；曙梦 OJ 85 分 Time Exceeded（复刻评测）。 洛谷民间数据 100 分 Accepted。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202312D"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202312D/"}],"oj":{"status":"failed","score":85,"verdict":"Time Exceeded","record":"https://oj.shumeng.tech/record/6adce8c5a67df0b81749bdca"},"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490650"}},{"id":"E","title":"彩色路径","tags":["状态压缩","折半搜索","位集","图论"],"status":"implemented","code":"E.cpp","anchor":"problem-e","validation":"C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202312E"},{"label":"公开题面存档","url":"https://pcs2.roj.ac.cn/problems/shumeng/CSP202312E/"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8c7a67df0b81749bdda"}}]
+problems: [{"id": "A", "title": "仓库规划", "tags": ["暴力枚举", "多维比较"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c0a67df0b81749bd8f"}}, {"id": "B", "title": "因子化简", "tags": ["质因数分解", "试除法"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c2a67df0b81749bd93"}}, {"id": "C", "title": "树上搜索", "tags": ["树", "DFS序", "决策树", "前缀和"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c3a67df0b81749bdb0"}}, {"id": "D", "title": "宝藏", "tags": ["线段树", "栈", "括号序列", "矩阵乘法"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例、700 组独立朴素对拍与 6 组 10 万规模压力测试通过；曙梦 OJ 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addcc1874ace1cba9a21ea2", "source_sha256": "ae452c40a94a10bde5c2b7762bc72497775a8991ed96e7f92f9e7e6bad5bc4a3"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490650", "source_sha256": "b9dac51f4128d412d8797ca5102466c3a040e8c3431df66c0cef4bca8c940ae7", "note": "上一版根号分块代码记录；本版已改为线段树，须重新复验"}}, {"id": "E", "title": "彩色路径", "tags": ["状态压缩", "折半搜索", "位集", "图论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202312E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202312E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c7a67df0b81749bdda"}}]
 ---
 
 # CSP 202312 五题题解
@@ -247,9 +247,9 @@ int main() {
 
 ## D. 宝藏
 
-标签：`根号分块` · `栈` · `矩阵乘法`
+标签：`线段树` · `栈` · `括号序列` · `矩阵乘法`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；110 组独立随机对拍通过；[曙梦 OJ 85 分 Time Exceeded](https://oj.shumeng.tech/record/6adce8c5a67df0b81749bdca)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490650)。
+状态：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例、700 组独立朴素对拍与 6 组 10 万规模压力测试通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addcc1874ace1cba9a21ea2)（民间复刻评测）。
 
 ### 题意
 
@@ -261,15 +261,73 @@ int main() {
 
 ### 题解
 
-虽然最终容器是双端队列，但删除规则按插入时间执行，因此可以先用栈决定哪些插入存活，再处理乘法顺序。
+**1. 先决定谁能留下，再决定乘法顺序**
 
-**每块指令压缩成“先删、后插”。** 从空栈扫描一块，插入压栈，删除弹栈；栈空时的删除累计为 $d$。最终保留下来的插入序列记作 $S$。这块指令作用在任意旧栈上，等价于先删除最多 $d$ 个旧元素，再整体压入 $S$。因为块内已经配对的插入与删除不会影响旧栈，未配对的删除只会作用在块外。
+虽然容器是双端队列，但删除的对象取决于插入时间。因此，我们可以先用一个普通栈记录插入指令：指令 1、2 都压栈，指令 3 弹栈。最后留在栈中的插入指令，就是没有被撤销的矩阵。
 
-对 $S$ 的每个前缀，分别预处理头插矩阵的反序乘积 `front`、尾插矩阵的顺序乘积 `back`。例如时间顺序为“头插 A、尾插 B、头插 C”，最终队列为 C、A、B，乘积为 $(CA)B$。不能交换矩阵相乘顺序，也不能假设矩阵可逆。
+对于这些存活指令，设 `front` 为所有头插矩阵按时间倒序相乘的结果，`back` 为所有尾插矩阵按时间正序相乘的结果，答案就是 `front * back`。例如依次“头插 A、尾插 B、头插 C”，队列为 `C,A,B`，答案是 `(C*A)*B`。
 
-查询时，左右边界各扫描不足一块的指令，中间完整块直接使用摘要。临时栈保存“哪个块、保留多少个存活插入”；删除时整块弹出或截短最上面一块。所有删除结束后，按块的时间顺序合并：新头积在左边相乘，新尾积在右边相乘，最终输出 `front * back`。部分保留的块直接查它的前缀积。
+矩阵乘法不能交换顺序，也不能假设输入矩阵可逆。以下做法只用乘法，不需要求逆。
 
-摘要变换与原指令对任意输入栈等价，因此逐块复合后的存活序列正确；两种矩阵积又严格对应最终队列顺序。块长 $B\approx\sqrt n$，预处理 $O(n)$，单次修改 $O(B)$，查询 $O(B+n/B)$，空间 $O(n)$。
+**2. 一段指令可以压缩成“删除若干个，再插入若干个”**
+
+在空栈上执行一段指令，记录：
+
+- `removed`：栈空时遇到多少次删除；
+- `size`：最后还剩多少次插入；
+- `all`：这些存活插入对应的 `front`、`back` 两个矩阵积。
+
+这段指令接在任意已有栈后面，等价于先删除最多 `removed` 个旧元素，再压入本段存活的插入。块内已经互相抵消的插入和删除，不会影响外部结果。
+
+现在考虑相邻两段 `L`、`R`。右段开头的删除会消去左段存活序列的末尾，因此左段留下的数量为
+
+$$k=\max(0,L.size-R.removed).$$
+
+合并后，存活序列是“左段的前 `k` 个存活插入，接上右段的全部存活插入”。于是
+
+$$size=k+R.size,$$
+
+$$removed=L.removed+\max(0,R.removed-L.size).$$
+
+例如左段留下 `A,B,C`，右段先删除 2 次、再留下 `D`，合并后留下 `A,D`。
+
+**3. 在线段树里快速取得存活序列的前缀**
+
+难点是得到“左段前 `k` 个存活插入”的矩阵积。我们用线段树维护上述摘要，每个节点再缓存两个量：
+
+- `leftSize`：合并左右儿子后，左儿子还留下多少个插入；
+- `leftPart`：这部分插入对应的两种矩阵积。
+
+若要获取某个节点存活序列的前 `count` 项：
+
+1. 若取空前缀，返回两个单位矩阵；若取全部，直接返回 `all`。
+2. 若 `count <= leftSize`，只需在左儿子中取前 `count` 项。
+3. 否则，先取已缓存的 `leftPart`，再接上右儿子存活序列的前 `count-leftSize` 项。
+
+每次递归只进入一个儿子，所以取一个存活前缀只需要 `O(log n)`。合并节点时，调用这个前缀操作得到左侧留下的部分，再与右儿子的摘要合并。
+
+合并两段乘积时也必须保留方向。若 `X` 在时间上先于 `Y`，则
+
+$$front=Y.front\times X.front,\qquad back=X.back\times Y.back.$$
+
+后发生的头插排在前面，后发生的尾插排在后面，这就是两个方向不同的原因。
+
+**4. 修改与查询**
+
+单点修改后，从对应叶子向上重新合并节点，共 `O(log n)` 层，每次合并最多花 `O(log n)`，故修改最坏为 `O(log^2 n)`。
+
+查询先把 `[l,r]` 分成线段树上的 `O(log n)` 个完整节点，然后**从右往左**处理。维护右侧还需要向左删除多少个插入，记作 `removed`：
+
+- 若当前节点的 `size <= removed`，它留下的插入被全部删掉，把剩余删除需求及当前节点自己的未配对删除继续传向左边。
+- 否则只保留当前节点存活序列的前 `size-removed` 项，取出对应乘积，接到已处理部分的前面；下一步向左传递的删除需求变成当前节点自己的 `removed`。
+
+全部处理完后，任何多余删除都作用于空队列，可以忽略。输出累计的 `front * back`。
+
+节点摘要准确描述一段指令对任意旧栈的作用；左右合并只删除左段存活序列的后缀；查询又严格按时间顺序组合最后的存活指令，所以计算结果与逐条执行相同。
+
+空间复杂度为 `O(n)`。查询与修改最坏均为 `O(log^2 n)`。自底向上建树为 `O(n)`：高度为 `h` 的节点只有 `O(n/2^h)` 个，每个合并花 `O(h)`，而 `sum(h/2^h)` 有界。实现额外使用缓冲输入输出和固定长度的查询节点数组，避免每次查询反复分配容器。
+
+旧版根号分块在曙梦 OJ 重交仍为 [85 分超时](https://oj.shumeng.tech/record/6addc9ec74ace1cba9a21d5a)，本版已获 [100 分 Accepted](https://oj.shumeng.tech/record/6addcc1874ace1cba9a21ea2)。同机 6 组上界构造较旧版快约 8–36 倍；本地耗时不等同评测机耗时。[独立对拍脚本](../tests/treasure_regressions.py)、[验证报告](../tests/treasure-report.json)。上一版洛谷满分记录保留在元数据中，本版仍需单独复验。
 
 ### 代码
 
@@ -277,121 +335,182 @@ int main() {
 
 ```cpp
 #include <algorithm>
-#include <array>
-#include <cmath>
-#include <iostream>
+#include <cstdint>
+#include <cstdio>
 #include <vector>
 using namespace std;
-constexpr long long MOD = 998244353;
+
+constexpr uint32_t MOD = 998244353;
 struct Matrix {
-    array<long long, 4> a{1, 0, 0, 1};
+    uint32_t a = 1, b = 0, c = 0, d = 1;
 };
-Matrix operator*(const Matrix &x, const Matrix &y) {
-    Matrix z;
-    for (int i = 0; i < 2; ++i)
-        for (int j = 0; j < 2; ++j)
-            z.a[i * 2 + j] = (x.a[i * 2] * y.a[j] + x.a[i * 2 + 1] * y.a[2 + j]) % MOD;
-    return z;
-}
-struct Command {
-    int type;
-    Matrix value;
-};
-struct Block {
-    int removed = 0;
-    vector<Matrix> front, back;
-};
-vector<Command> commands;
-Block summarize(int l, int r) {
-    Block result;
-    vector<int> live;
-    for (int i = l; i <= r; ++i) {
-        if (commands[i].type != 3)
-            live.push_back(i);
-        else if (live.empty())
-            ++result.removed;
-        else
-            live.pop_back();
-    }
-    result.front.push_back({});
-    result.back.push_back({});
-    for (int i : live) {
-        auto &c = commands[i];
-        result.front.push_back(c.type == 1 ? c.value * result.front.back() : result.front.back());
-        result.back.push_back(c.type == 2 ? result.back.back() * c.value : result.back.back());
-    }
-    return result;
-}
-void read(Command &c) {
-    cin >> c.type;
-    if (c.type != 3)
-        for (auto &x : c.value.a)
-            cin >> x;
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    commands.resize(n);
-    for (auto &c : commands)
-        read(c);
-    int width = max(1, int(sqrt(n))), count = (n + width - 1) / width;
-    vector<Block> blocks(count);
-    auto rebuild = [&](int b) {
-        blocks[b] = summarize(b * width, min(n - 1, (b + 1) * width - 1));
+inline Matrix multiply(const Matrix &x, const Matrix &y) {
+    return {
+        uint32_t((uint64_t(x.a) * y.a + uint64_t(x.b) * y.c) % MOD),
+        uint32_t((uint64_t(x.a) * y.b + uint64_t(x.b) * y.d) % MOD),
+        uint32_t((uint64_t(x.c) * y.a + uint64_t(x.d) * y.c) % MOD),
+        uint32_t((uint64_t(x.c) * y.b + uint64_t(x.d) * y.d) % MOD)
     };
-    for (int b = 0; b < count; ++b)
-        rebuild(b);
-    while (m--) {
-        int op;
-        cin >> op;
-        if (op == 1) {
-            int i;
-            cin >> i;
-            --i;
-            read(commands[i]);
-            rebuild(i / width);
-            continue;
+}
+struct Product {
+    Matrix front, back;
+};
+// Execute x before y: later front insertions precede all earlier ones.
+inline Product join(const Product &x, const Product &y) {
+    return {multiply(y.front, x.front), multiply(x.back, y.back)};
+}
+
+class FastIO {
+    static constexpr int SIZE = 1 << 16;
+    char input[SIZE], output[SIZE];
+    int pos = 0, length = 0, used = 0;
+    int get() {
+        if (pos == length) {
+            length = int(fread(input, 1, SIZE, stdin));
+            pos = 0;
+            if (!length) return EOF;
         }
-        int l, r;
-        cin >> l >> r;
-        --l;
-        --r;
-        vector<pair<const Block *, int>> stack;
-        auto append = [&](const Block &b) {
-            int remove = b.removed;
-            while (remove && !stack.empty()) {
-                int used = min(remove, stack.back().second);
-                remove -= used;
-                stack.back().second -= used;
-                if (stack.back().second == 0)
-                    stack.pop_back();
+        return input[pos++];
+    }
+public:
+    ~FastIO() { flush(); }
+    int read() {
+        int ch = get(), value = 0;
+        while (ch <= ' ' && ch != EOF) ch = get();
+        while (ch >= '0' && ch <= '9') {
+            value = value * 10 + ch - '0';
+            ch = get();
+        }
+        return value;
+    }
+    void flush() {
+        fwrite(output, 1, used, stdout);
+        used = 0;
+    }
+    void write(uint32_t value, char end) {
+        if (used + 12 >= SIZE) flush();
+        char digits[10];
+        int count = 0;
+        do {
+            digits[count++] = char('0' + value % 10);
+            value /= 10;
+        } while (value);
+        while (count) output[used++] = digits[--count];
+        output[used++] = end;
+    }
+};
+
+struct Node {
+    int removed = 0, size = 0, leftSize = 0;
+    Product all, leftPart;
+};
+
+class SegmentTree {
+    int base = 1;
+    vector<Node> nodes;
+
+    // First count insertions of this node's reduced chronological sequence.
+    Product prefix(int u, int count) const {
+        const Node &node = nodes[u];
+        if (count == node.size) return node.all;
+        if (!count) return {};
+        if (count <= node.leftSize) return prefix(u * 2, count);
+        return join(node.leftPart, prefix(u * 2 + 1, count - node.leftSize));
+    }
+
+    void pull(int u) {
+        Node &node = nodes[u];
+        const Node &left = nodes[u * 2], &right = nodes[u * 2 + 1];
+        node.leftSize = max(0, left.size - right.removed);
+        node.size = node.leftSize + right.size;
+        node.removed = left.removed + max(0, right.removed - left.size);
+        node.leftPart = prefix(u * 2, node.leftSize);
+        if (!node.leftSize) node.all = right.all;
+        else if (!right.size) node.all = node.leftPart;
+        else node.all = join(node.leftPart, right.all);
+    }
+
+    void setLeaf(int u, int type, const Matrix &value) {
+        Node &node = nodes[u];
+        node.removed = type == 3;
+        node.size = type != 3;
+        node.all = {};
+        if (type == 1) node.all.front = value;
+        if (type == 2) node.all.back = value;
+    }
+
+public:
+    explicit SegmentTree(int n) {
+        while (base < n) base *= 2;
+        nodes.resize(base * 2);
+    }
+    void initialize(int i, int type, const Matrix &value) {
+        setLeaf(base + i, type, value);
+    }
+    void build() {
+        for (int u = base - 1; u; --u) pull(u);
+    }
+    void update(int i, int type, const Matrix &value) {
+        int u = base + i;
+        setLeaf(u, type, value);
+        while ((u /= 2)) pull(u);
+    }
+    Matrix query(int l, int r) const {
+        // Collect the disjoint covering nodes in chronological order.
+        int leftNodes[32], rightNodes[32], nl = 0, nr = 0;
+        for (l += base, r += base + 1; l < r; l /= 2, r /= 2) {
+            if (l & 1) leftNodes[nl++] = l++;
+            if (r & 1) rightNodes[nr++] = --r;
+        }
+        int removed = 0;
+        Product answer;
+        bool nonempty = false;
+        auto consume = [&](int u) {
+            const Node &node = nodes[u];
+            if (node.size <= removed) {
+                removed += node.removed - node.size;
+            } else {
+                Product part = prefix(u, node.size - removed);
+                answer = nonempty ? join(part, answer) : part;
+                nonempty = true;
+                removed = node.removed;
             }
-            int size = int(b.front.size()) - 1;
-            if (size)
-                stack.push_back({&b, size});
         };
-        Block left, right;
-        if (l / width == r / width) {
-            left = summarize(l, r);
-            append(left);
+        // Scan backwards: later deletions remove a suffix of earlier survivors.
+        for (int i = 0; i < nr; ++i) consume(rightNodes[i]);
+        for (int i = nl - 1; i >= 0; --i) consume(leftNodes[i]);
+        return multiply(answer.front, answer.back);
+    }
+};
+
+int main() {
+    FastIO io;
+    int n = io.read(), m = io.read();
+    SegmentTree tree(n);
+    auto readMatrix = [&](int type) {
+        Matrix value;
+        if (type != 3) {
+            value.a = io.read(); value.b = io.read();
+            value.c = io.read(); value.d = io.read();
+        }
+        return value;
+    };
+    for (int i = 0; i < n; ++i) {
+        int type = io.read();
+        tree.initialize(i, type, readMatrix(type));
+    }
+    tree.build();
+    while (m--) {
+        int op = io.read();
+        if (op == 1) {
+            int i = io.read() - 1, type = io.read();
+            tree.update(i, type, readMatrix(type));
         } else {
-            left = summarize(l, (l / width + 1) * width - 1);
-            right = summarize(r / width * width, r);
-            append(left);
-            for (int b = l / width + 1; b < r / width; ++b)
-                append(blocks[b]);
-            append(right);
+            int l = io.read() - 1, r = io.read() - 1;
+            Matrix answer = tree.query(l, r);
+            io.write(answer.a, ' '); io.write(answer.b, ' ');
+            io.write(answer.c, ' '); io.write(answer.d, '\n');
         }
-        Matrix front, back;
-        for (auto [block, size] : stack) {
-            front = block->front[size] * front;
-            back = back * block->back[size];
-        }
-        Matrix answer = front * back;
-        for (int i = 0; i < 4; ++i)
-            cout << answer.a[i] << (i == 3 ? '\n' : ' ');
     }
 }
 ```

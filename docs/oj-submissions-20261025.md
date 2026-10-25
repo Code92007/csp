@@ -64,8 +64,16 @@
 | 16:50:53 | CSP201312B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc2ed74ace1cba9a219a9) |
 | 16:53:17 | CSP201312D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc37d74ace1cba9a21a93) |
 | 16:55:42 | CSP201312E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc40e74ace1cba9a21ab6) |
+| 17:20:44 | CSP202312D | 85 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addc9ec74ace1cba9a21d5a) |
+| 17:23:19 | CSP202309D | 15 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addca8774ace1cba9a21e22) |
+| 17:25:25 | CSP202303C | 70 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46) |
+| 17:27:47 | CSP202206E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addcb9374ace1cba9a21e80) |
+| 17:32:28 | CSP202112E | 56 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addccac74ace1cba9a21f0f) |
+| 17:34:49 | CSP201403A | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70) |
+| 20:31:17 | CSP201403C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8) |
+| 17:30:00 | CSP202312D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addcc1874ace1cba9a21ea2) |
 
-按上述实际提交时间排序，本轮曙梦相邻提交的最短间隔为 130 秒；未并发提交，也未使用 HTTP 脚本或 curl 提交。
+按上述实际提交时间排序，本轮曙梦相邻提交的最短间隔为 126 秒；未并发提交，也未使用 HTTP 脚本或 curl 提交。
 
 202006D 首次编译失败是辅助函数 `identity()` 与 GCC 15 / C++20 的 `std::identity` 重名；重命名为 `identity_matrix()` 后通过。
 201809E 与 202406E 的优化代码、本地独立对拍及性能说明见对应文章；重交状态以各条记录为准。
@@ -82,3 +90,5 @@
 | 15:50:35 | CSP201312C | U281824 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305657951) |
 
 本轮洛谷相邻提交的最短间隔为 343 秒；上述四题均核对账号此前无提交后，才通过浏览器提交。
+
+[两平台交叉补验记录与待提交状态](cross-platform-20261025.md)。
