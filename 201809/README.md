@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "数组", "同时更新", "双指针", "区间交集", "树", "祖先关系", "字符串", "贪心", "记忆化搜索", "动态规划", "字典序", "线性递推", "多项式", "NTT", "生成函数"]
 status: "published"
-problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/"}]}, {"id": "B", "title": "买菜", "tags": ["双指针", "区间交集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/"}]}, {"id": "C", "title": "元素选择器", "tags": ["树", "祖先关系", "字符串", "贪心"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/"}]}, {"id": "D", "title": "再卖菜", "tags": ["记忆化搜索", "动态规划", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/"}]}, {"id": "E", "title": "线性递推式", "tags": ["线性递推", "多项式", "NTT", "生成函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/"}]}]
+problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7"}}, {"id": "B", "title": "买菜", "tags": ["双指针", "区间交集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946"}}, {"id": "C", "title": "元素选择器", "tags": ["树", "祖先关系", "字符串", "贪心"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972"}}, {"id": "D", "title": "再卖菜", "tags": ["记忆化搜索", "动态规划", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0"}}, {"id": "E", "title": "线性递推式", "tags": ["线性递推", "多项式", "NTT", "生成函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17/C++20 编译通过；3 个保存样例通过；500 组直接递推独立对拍、100 组大下标差分和 5 组压力测试通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91"}}]
 ---
 
 # CSP 201809 五题题解
@@ -21,7 +21,7 @@ problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "s
 
 标签：`数组` · `同时更新`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7)（复刻评测）。
 
 ### 题意
 
@@ -70,7 +70,7 @@ int main() {
 
 标签：`双指针` · `区间交集`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946)（复刻评测）。
 
 ### 题意
 
@@ -122,7 +122,7 @@ int main() {
 
 标签：`树` · `祖先关系` · `字符串` · `贪心`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972)（复刻评测）。
 
 ### 题意
 
@@ -222,7 +222,7 @@ int main() {
 
 标签：`记忆化搜索` · `动态规划` · `字典序`
 
-状态：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0)（复刻评测）。
 
 ### 题意
 
@@ -300,7 +300,7 @@ int main() {
 
 标签：`线性递推` · `多项式` · `NTT` · `生成函数`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；3 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17/C++20 编译通过；3 个保存样例通过；500 组直接递推独立对拍、100 组大下标差分和 5 组压力测试通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91)（复刻评测）。
 
 ### 题意
 
@@ -312,21 +312,25 @@ int main() {
 
 ### 题解
 
-**第一步：用生成函数得到一段前缀。** 令 $C(x)=1-k_1x-\cdots-k_mx^m$，由递推式可得 $A(x)=\sum a_ix^i=1/C(x)$。用多项式牛顿迭代 $B_{new}=B(2-CB)\bmod x^{2t}$，每次把已知逆的长度翻倍。乘法使用模数对应的 NTT。
+**第一步：求递推序列的前缀。** 令 $C(x)=1-k_1x-\cdots-k_mx^m$，由递推式可得 $A(x)=\sum_{i\ge0}a_ix^i=1/C(x)$。使用多项式牛顿迭代 $B_{new}=B(2-CB)\bmod x^{2t}$，将逆多项式的已知长度逐次翻倍；卷积用模 $998244353$ 的 NTT 计算。
 
 **第二步：把巨大下标压回 $m$ 维。** 定义特征多项式 $P(x)=x^m-k_1x^{m-1}-\cdots-k_m$，计算
 
 $$R(x)=x^l\bmod P(x)=\sum_{j=0}^{m-1}r_jx^j.$$
 
-使用二进制快速幂，每次多项式乘法后取余。快速取余通过“逆序后求商”实现：逆序 $P$ 正好是 $C$，预处理 $1/C$ 的前 $m$ 项即可。注意取模对象是多项式 $P$，不是把次数截断到 $m$。
+从最高二进制位向最低位处理 $l$。若已处理前缀为 $s$，保持 $R=x^s\bmod P$；下一位为 $b$ 时，更新为 $R^2x^b\bmod P$。平方后用逆序多项式除法求余：逆序 $P$ 就是 $C$，所以可预先求出并复用 $1/C$ 的前缀。乘 $x$ 则只需移位，再以 $x^m=k_1x^{m-1}+\cdots+k_m$ 消去最高项，耗时 $O(m)$，无需再做通用卷积。最初次数较小时保留实际长度。
 
-由于序列满足 $P$ 对应的递推关系，对每个 $t\ge0$，都有
+**第三步：一次卷积求出整个答案区间。** 递推关系保证对每个 $t\ge0$ 都有
 
-$$a_{l+t}=\sum_{j=0}^{m-1}r_j a_{t+j}.$$
+$$a_{l+t}=\sum_{j=0}^{m-1}r_ja_{t+j}.$$
 
-因此只需要生成 $a_0$ 到 $a_{m+r-l-1}$。将 $R$ 系数逆序，与这段前缀卷积，卷积中下标 $m-1+t$ 的项就是所求答案。$m=1$ 时，$x\bmod P=k_1$，代码单独处理；零系数和 $l=0$ 也可正常工作。
+将 $R$ 逆序，与序列前缀卷积，下标 $m-1+t$ 的项就是所求值。代码若只保留了 $u$ 个系数，则相应只求出 $a_0$ 至 $a_{u+d-2}$，读取卷积下标 $u-1+t$，其中 $d=r-l+1$。$m=1$ 时直接计算等比数列；$l=0$ 与零系数也自然成立。
 
-**正确性。** 多项式除法产生的倍数部分是若干递推等式的线性组合，对任意合法位移都为零，故余式系数给出的线性组合成立；最后一次卷积恰好把所有位移一起计算。**复杂度：** 记 $d=r-l+1$，时间 $O(m\log m\log l+(m+d)\log(m+d))$，空间 $O(m+d)$。本题历史时限很紧，NTT 常数和编译优化会影响实际通过情况。
+**降低 NTT 常数。** 平方只变换一个因子，固定的除式及逆多项式缓存其频域结果。牛顿迭代从 $t$ 扩展到 $2t$ 时复用旧逆的变换，只计算误差的高半段：长度 $2t$ 的循环卷积回卷只影响舍弃的低半段，因此每步用 5 次长度 $2t$ 的 NTT 即可。正变换采用 DIF、逆变换采用 DIT，共享倒位序的频率排列，并预处理各层单位根。
+
+**正确性。** 二进制更新保持 $R=x^s\bmod P$，故最后得到 $x^l$ 的余式。多项式除法中被减去的 $P$ 的倍数对应若干递推等式的线性组合，在任意非负位移处均为零，所以余式给出的线性组合成立；最后的卷积恰好同时计算所有位移。
+
+**复杂度。** 时间 $O(m\log m\log l+(m+d)\log(m+d))$，空间 $O(m+d)$。优化前曙梦 OJ 为 [77 分超时](https://oj.shumeng.tech/record/6adda38574ace1cba9a1fa97)。本地最大随机构造从 3.715 秒降至 0.514 秒，指数多置位构造从 5.240 秒降至 0.504 秒；同机性能对比不等同于目标评测机耗时。复核入口：[优化回归脚本](../tests/optimized_regressions.py)、[验证报告](../tests/optimization-report.json)。
 
 ### 代码
 
@@ -337,54 +341,68 @@ $$a_{l+t}=\sum_{j=0}^{m-1}r_j a_{t+j}.$$
 #include <iostream>
 #include <vector>
 using namespace std;
-const int MOD = 998244353;
+constexpr int MOD = 998244353;
 using Polynomial = vector<int>;
+
 int power(int a, long long n) {
     int r = 1;
     for (; n; n >>= 1, a = 1LL * a * a % MOD)
-        if (n & 1)
-            r = 1LL * r * a % MOD;
+        if (n & 1) r = 1LL * r * a % MOD;
     return r;
 }
+int transformSize(int need) {
+    int n = 1;
+    while (n < need) n <<= 1;
+    return n;
+}
+
+// DIF forward and DIT inverse use the same bit-reversed frequency order.
+// Roots are stored once for every butterfly stage, avoiding per-block powers.
 void ntt(Polynomial &a, bool inverse) {
-    int n = a.size();
-    for (int i = 1, j = 0; i < n; ++i) {
-        int bit = n >> 1;
-        for (; j & bit; bit >>= 1)
-            j ^= bit;
-        j ^= bit;
-        if (i < j)
-            swap(a[i], a[j]);
-    }
-    for (int len = 2; len <= n; len <<= 1) {
-        int root = power(3, (MOD - 1) / len);
-        if (inverse)
-            root = power(root, MOD - 2);
-        for (int i = 0; i < n; i += len) {
-            int w = 1;
-            for (int j = 0; j < len / 2; ++j) {
-                int u = a[i + j], v = 1LL * a[i + j + len / 2] * w % MOD;
-                int x = u + v, y = u - v;
-                if (x >= MOD)
-                    x -= MOD;
-                if (y < 0)
-                    y += MOD;
-                a[i + j] = x;
-                a[i + j + len / 2] = y;
-                w = 1LL * w * root % MOD;
-            }
+    static Polynomial roots{0, 1}, inverseRoots{0, 1};
+    int n = int(a.size());
+    while (int(roots.size()) < n) {
+        int half = int(roots.size());
+        roots.resize(2 * half);
+        inverseRoots.resize(2 * half);
+        int w = power(3, (MOD - 1) / (2 * half));
+        int iw = power(w, MOD - 2);
+        roots[half] = inverseRoots[half] = 1;
+        for (int j = 1; j < half; ++j) {
+            roots[half + j] = 1LL * roots[half + j - 1] * w % MOD;
+            inverseRoots[half + j] = 1LL * inverseRoots[half + j - 1] * iw % MOD;
         }
     }
-    if (inverse) {
-        int inv = power(n, MOD - 2);
-        for (int &x : a)
-            x = 1LL * x * inv % MOD;
+    if (!inverse) {
+        for (int half = n / 2; half; half >>= 1)
+            for (int start = 0; start < n; start += 2 * half)
+                for (int j = 0; j < half; ++j) {
+                    int u = a[start + j], v = a[start + j + half];
+                    int sum = u + v, difference = u - v;
+                    if (sum >= MOD) sum -= MOD;
+                    if (difference < 0) difference += MOD;
+                    a[start + j] = sum;
+                    a[start + j + half] = 1LL * difference * roots[half + j] % MOD;
+                }
+    } else {
+        for (int half = 1; half < n; half <<= 1)
+            for (int start = 0; start < n; start += 2 * half)
+                for (int j = 0; j < half; ++j) {
+                    int u = a[start + j];
+                    int v = 1LL * a[start + j + half] * inverseRoots[half + j] % MOD;
+                    int sum = u + v, difference = u - v;
+                    if (sum >= MOD) sum -= MOD;
+                    if (difference < 0) difference += MOD;
+                    a[start + j] = sum;
+                    a[start + j + half] = difference;
+                }
+        int scale = power(n, MOD - 2);
+        for (int &x : a) x = 1LL * x * scale % MOD;
     }
 }
 Polynomial multiply(Polynomial a, Polynomial b) {
-    if (a.empty() || b.empty())
-        return {};
-    int size = a.size() + b.size() - 1;
+    if (a.empty() || b.empty()) return {};
+    int size = int(a.size() + b.size()) - 1;
     if (min(a.size(), b.size()) <= 32) {
         Polynomial c(size);
         for (int i = 0; i < int(a.size()); ++i)
@@ -392,40 +410,126 @@ Polynomial multiply(Polynomial a, Polynomial b) {
                 c[i + j] = (c[i + j] + 1LL * a[i] * b[j]) % MOD;
         return c;
     }
-    int n = 1;
-    while (n < size)
-        n <<= 1;
+    int n = transformSize(size);
     a.resize(n);
     b.resize(n);
     ntt(a, false);
     ntt(b, false);
-    for (int i = 0; i < n; ++i)
-        a[i] = 1LL * a[i] * b[i] % MOD;
+    for (int i = 0; i < n; ++i) a[i] = 1LL * a[i] * b[i] % MOD;
     ntt(a, true);
     a.resize(size);
     return a;
 }
+
 Polynomial inverse(const Polynomial &a, int size) {
     Polynomial b{power(a[0], MOD - 2)};
     while (int(b.size()) < size) {
-        int len = min(size, 2 * int(b.size()));
-        Polynomial cut(a.begin(), a.begin() + min(len, int(a.size())));
-        auto product = multiply(cut, b);
-        product.resize(len);
-        for (int &x : product)
-            x = x ? MOD - x : 0;
-        product[0] = (product[0] + 2) % MOD;
-        b = multiply(b, product);
-        b.resize(len);
+        int old = int(b.size()), n = 2 * old;
+        Polynomial fb = b, error(n);
+        fb.resize(n);
+        copy_n(a.begin(), min(n, int(a.size())), error.begin());
+        ntt(fb, false);
+        ntt(error, false);
+        for (int i = 0; i < n; ++i) error[i] = 1LL * error[i] * fb[i] % MOD;
+        ntt(error, true);
+        // Only the upper half is needed. Cyclic wraparound affects the lower half.
+        fill(error.begin(), error.begin() + old, 0);
+        ntt(error, false);
+        for (int i = 0; i < n; ++i) error[i] = 1LL * error[i] * fb[i] % MOD;
+        ntt(error, true);
+        b.resize(n);
+        for (int i = old; i < n; ++i) b[i] = error[i] ? MOD - error[i] : 0;
     }
+    b.resize(size);
     return b;
 }
+
+class Remainder {
+    int m, n;
+    Polynomial characteristic, inversePrefix, transformedP, transformedInverse;
+public:
+    explicit Remainder(const Polynomial &c)
+        : m(int(c.size()) - 1), n(transformSize(2 * m - 1)),
+          characteristic(c.rbegin(), c.rend()), inversePrefix(inverse(c, m)) {}
+
+    Polynomial square(const Polynomial &a) {
+        int size = 2 * int(a.size()) - 1;
+        Polynomial product;
+        if (int(a.size()) <= 32) {
+            product = multiply(a, a);
+        } else {
+            product = a;
+            product.resize(transformSize(size));
+            ntt(product, false);
+            for (int &x : product) x = 1LL * x * x % MOD;
+            ntt(product, true);
+            product.resize(size);
+        }
+        if (size <= m) return product;
+        int length = size - m;
+        Polynomial quotient(product.rbegin(), product.rbegin() + length);
+        if (length < m - 1 || m <= 32) {
+            Polynomial cut(inversePrefix.begin(), inversePrefix.begin() + length);
+            quotient = multiply(quotient, cut);
+            quotient.resize(length);
+            reverse(quotient.begin(), quotient.end());
+            auto removed = multiply(quotient, characteristic);
+            product.resize(m);
+            for (int i = 0; i < m; ++i) {
+                product[i] -= removed[i];
+                if (product[i] < 0) product[i] += MOD;
+            }
+        } else {
+            if (transformedP.empty()) {
+                transformedP = characteristic;
+                transformedP.resize(n);
+                transformedInverse = inversePrefix;
+                transformedInverse.resize(n);
+                ntt(transformedP, false);
+                ntt(transformedInverse, false);
+            }
+            quotient.resize(n);
+            ntt(quotient, false);
+            for (int i = 0; i < n; ++i)
+                quotient[i] = 1LL * quotient[i] * transformedInverse[i] % MOD;
+            ntt(quotient, true);
+            quotient.resize(length);
+            reverse(quotient.begin(), quotient.end());
+            quotient.resize(n);
+            ntt(quotient, false);
+            for (int i = 0; i < n; ++i)
+                quotient[i] = 1LL * quotient[i] * transformedP[i] % MOD;
+            ntt(quotient, true);
+            product.resize(m);
+            for (int i = 0; i < m; ++i) {
+                product[i] -= quotient[i];
+                if (product[i] < 0) product[i] += MOD;
+            }
+        }
+        return product;
+    }
+
+    void multiplyX(Polynomial &a) const {
+        if (int(a.size()) < m) {
+            a.insert(a.begin(), 0);
+            return;
+        }
+        int top = a.back();
+        for (int i = m - 1; i >= 0; --i) {
+            int value = i ? a[i - 1] : 0;
+            value = (value - 1LL * top * characteristic[i]) % MOD;
+            if (value < 0) value += MOD;
+            a[i] = value;
+        }
+    }
+};
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     int m;
     long long l, r;
-    cin >> m >> l >> r;
+    if (!(cin >> m >> l >> r)) return 0;
     int count = int(r - l + 1);
     Polynomial c(m + 1);
     c[0] = 1;
@@ -433,44 +537,25 @@ int main() {
         cin >> k;
         c[i] = k ? MOD - k : 0;
     }
-    Polynomial characteristic(c.rbegin(), c.rend()), reversedInverse = inverse(c, m);
-    auto remainder = [&](Polynomial a) {
-        if (int(a.size()) <= m) {
-            a.resize(m);
-            return a;
-        }
-        int length = a.size() - m;
-        Polynomial high(a.rbegin(), a.rbegin() + length),
-            inv(reversedInverse.begin(), reversedInverse.begin() + length);
-        auto quotient = multiply(high, inv);
-        quotient.resize(length);
-        reverse(quotient.begin(), quotient.end());
-        auto product = multiply(quotient, characteristic);
-        a.resize(m);
-        for (int i = 0; i < m; ++i) {
-            a[i] -= product[i];
-            if (a[i] < 0)
-                a[i] += MOD;
-        }
-        return a;
-    };
-    Polynomial result(m), base(m);
-    result[0] = 1;
-    if (m == 1)
-        base[0] = c[1] ? MOD - c[1] : 0;
-    else
-        base[1] = 1;
-    while (l) {
-        if (l & 1)
-            result = remainder(multiply(result, base));
-        l >>= 1;
-        if (l)
-            base = remainder(multiply(base, base));
+    if (m == 1) {
+        int k = c[1] ? MOD - c[1] : 0, a = power(k, l);
+        for (int i = 0; i < count; ++i, a = 1LL * a * k % MOD) cout << a << '\n';
+        return 0;
     }
-    auto prefix = inverse(c, m + count - 1);
+    Polynomial result{1};
+    if (l) {
+        Remainder reduce(c);
+        int highest = 0;
+        while ((1LL << (highest + 1)) <= l) ++highest;
+        for (int bit = highest; bit >= 0; --bit) {
+            result = reduce.square(result);
+            if ((l >> bit) & 1) reduce.multiplyX(result);
+        }
+    }
+    int used = int(result.size());
+    auto prefix = inverse(c, used + count - 1);
     reverse(result.begin(), result.end());
     auto answer = multiply(result, prefix);
-    for (int i = 0; i < count; ++i)
-        cout << answer[m - 1 + i] << '\n';
+    for (int i = 0; i < count; ++i) cout << answer[used - 1 + i] << '\n';
 }
 ```

@@ -1,13 +1,14 @@
 # 曙梦 OJ 提交与核验记录
 
-截至 2026-10-25，工程 160 题中 152 题在曙梦 OJ 分类页可见。
-已提交 93 题：83 题 100 分、8 题非满分、2 题待核验；其余 59 道可见题尚未提交。
-另有 8 题登录后提示无权查看隐藏题目，不能提交。
+截至 2026-10-25，工程 160 题中 152 题可查看；另 8 题登录后提示无权查看隐藏题目。
+已提交 115 题：109 题 100 分、6 题非满分、0 题待核验；其余 37 道可见题尚未提交。
+合并洛谷结果后，网站应显示 120 道已验证满分，40 道未验证或未满分。
 
-“已提交，待核验”只表示已生成评测记录，不表示满分。只有记录显示 100 分 Accepted 才标记“已验证”。
-本站采用自造复刻数据，评测不能等同 CCF 官方认证成绩。
+只有记录显示 100 分 Accepted 才标记“已验证满分”。曙梦 OJ 和洛谷在此均使用民间复刻数据，不能等同 CCF 官方认证成绩。
 
-[202609E 首次 50 分超时记录](https://oj.shumeng.tech/record/6adce6e6a67df0b81749b423)已由后续优化版 100 分记录替代。
+曙梦本轮使用账号 jojo（UID 6715），通过浏览器普通上传与提交，实际提交间隔至少 120 秒。洛谷使用 UID 135160，实际提交间隔至少 300 秒，只提交任一平台尚未满分且洛谷从未提交的题目。
+
+[本轮逐次提交记录](oj-submissions-20261025.md)保留优化前后的记录。下表列出每道题当前保存的曙梦状态；完整实现不等于评测满分。
 
 | 场次 | 题号 | 题名 | 曙梦 OJ 状态 |
 |---|---|---|---|
@@ -60,7 +61,7 @@
 | 202406 | B | 矩阵重塑（其二） | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce81da67df0b81749bb39) |
 | 202406 | C | 文本分词 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce81fa67df0b81749bb49) |
 | 202406 | D | 货物调度 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce821a67df0b81749bb75) |
-| 202406 | E | 哥德尔机 | [70 分 Time Exceeded](https://oj.shumeng.tech/record/6adce823a67df0b81749bb8a) |
+| 202406 | E | 哥德尔机 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b) |
 | 202403 | A | 词频统计 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce824a67df0b81749bba4) |
 | 202403 | B | 相似度计算 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce826a67df0b81749bbbe) |
 | 202403 | C | 化学方程式配平 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce828a67df0b81749bbd1) |
@@ -92,8 +93,8 @@
 | 202206 | D | 光线追踪 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce925a67df0b81749c04d) |
 | 202206 | E | PS 无限版 | [30 分 Time Exceeded](https://oj.shumeng.tech/record/6adce927a67df0b81749c056) |
 | 202112 | A | 序列查询 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce928a67df0b81749c05d) |
-| 202112 | B | 序列查询新解 | [已提交，待核验](https://oj.shumeng.tech/record/6adce92aa67df0b81749c061) |
-| 202112 | C | 登机牌条码 | [已提交，待核验](https://oj.shumeng.tech/record/6adce92ba67df0b81749c065) |
+| 202112 | B | 序列查询新解 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce92aa67df0b81749c061) |
+| 202112 | C | 登机牌条码 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce92ba67df0b81749c065) |
 | 202112 | D | 磁盘文件操作 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce92da67df0b81749c06b) |
 | 202112 | E | 极差路径 | [56 分 Time Exceeded](https://oj.shumeng.tech/record/6adce96da67df0b81749c18a) |
 | 202109 | A | 数组推导 | 隐藏题，当前账号无权查看 |
@@ -105,35 +106,35 @@
 | 202104 | B | 邻域均值 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce972a67df0b81749c1b8) |
 | 202104 | C | DHCP 服务器 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adceb1074ace1cba9a1bca0) |
 | 202104 | D | 校门外的树 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adceb1274ace1cba9a1bca8) |
-| 202104 | E | 疫苗运输 | [95 分 Time Exceeded](https://oj.shumeng.tech/record/6adceb1474ace1cba9a1bccd) |
+| 202104 | E | 疫苗运输 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6add984074ace1cba9a1f29d) |
 | 202006 | A | 线性分类器 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adceb1574ace1cba9a1bce6) |
 | 202006 | B | 稀疏向量 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adceb1774ace1cba9a1bd0b) |
-| 202006 | C | Markdown 渲染器 | 尚未提交 |
-| 202006 | D | 1246 | 尚未提交 |
-| 202006 | E | 乔乔和牛牛逛超市 | 尚未提交 |
-| 201912 | A | 报数 | 尚未提交 |
-| 201912 | B | 回收站选址 | 尚未提交 |
-| 201912 | C | 化学方程式 | 尚未提交 |
-| 201912 | D | 区块链 | 尚未提交 |
-| 201912 | E | 魔数 | 尚未提交 |
-| 201809 | A | 卖菜 | 尚未提交 |
-| 201809 | B | 买菜 | 尚未提交 |
-| 201809 | C | 元素选择器 | 尚未提交 |
-| 201809 | D | 再卖菜 | 尚未提交 |
-| 201809 | E | 线性递推式 | 尚未提交 |
+| 202006 | C | Markdown 渲染器 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6add98d374ace1cba9a1f2eb) |
+| 202006 | D | 1246 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6add9c1c74ace1cba9a1f614) |
+| 202006 | E | 乔乔和牛牛逛超市 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6add9cb974ace1cba9a1f6a9) |
+| 201912 | A | 报数 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6add9d4674ace1cba9a1f711) |
+| 201912 | B | 回收站选址 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6add9dd274ace1cba9a1f78d) |
+| 201912 | C | 化学方程式 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6add9e5474ace1cba9a1f7d3) |
+| 201912 | D | 区块链 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6add9ee174ace1cba9a1f812) |
+| 201912 | E | 魔数 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6add9fb574ace1cba9a1f846) |
+| 201809 | A | 卖菜 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7) |
+| 201809 | B | 买菜 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946) |
+| 201809 | C | 元素选择器 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972) |
+| 201809 | D | 再卖菜 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0) |
+| 201809 | E | 线性递推式 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91) |
 | 201712 | A | 最小差值 | 隐藏题，当前账号无权查看 |
-| 201712 | B | 游戏 | 尚未提交 |
+| 201712 | B | 游戏 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adda75c74ace1cba9a1fccc) |
 | 201712 | C | Crontab | 隐藏题，当前账号无权查看 |
 | 201712 | D | 行车路线 | 隐藏题，当前账号无权查看 |
 | 201712 | E | 商路 | 隐藏题，当前账号无权查看 |
-| 201703 | A | 分蛋糕 | 尚未提交 |
-| 201703 | B | 学生排队 | 尚未提交 |
-| 201703 | C | Markdown | 尚未提交 |
-| 201703 | D | 地铁修建 | 尚未提交 |
-| 201703 | E | 引水入城 | 尚未提交 |
-| 201604 | A | 折点计数 | 尚未提交 |
-| 201604 | B | 俄罗斯方块 | 尚未提交 |
-| 201604 | C | 路径解析 | 尚未提交 |
+| 201703 | A | 分蛋糕 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adda7e474ace1cba9a1fd43) |
+| 201703 | B | 学生排队 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addaaf074ace1cba9a20058) |
+| 201703 | C | Markdown | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addab8d74ace1cba9a2018a) |
+| 201703 | D | 地铁修建 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addac2c74ace1cba9a20350) |
+| 201703 | E | 引水入城 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addacc574ace1cba9a203ca) |
+| 201604 | A | 折点计数 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addad4c74ace1cba9a20424) |
+| 201604 | B | 俄罗斯方块 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addaddf74ace1cba9a20472) |
+| 201604 | C | 路径解析 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addae9574ace1cba9a2058d) |
 | 201604 | D | 游戏 | 尚未提交 |
 | 201604 | E | 网络连接 | 尚未提交 |
 | 201512 | A | 数位之和 | 尚未提交 |

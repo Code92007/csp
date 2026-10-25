@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "purpose": "Local regression and same-machine performance evidence; official acceptance must come from judge records.",
+  "historical": {
+    "date": "2026-10-25",
+    "machine": "Apple Silicon arm64; arm64-apple-darwin25.3.0",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "flags": "-std=c++17 -O2 for 201809E; -std=c++20 -O2 for 202406E",
+    "baseline_commit": "51839105bf5e9fe5096a61f842f6de9a88274497",
+    "baseline_description": "Unmodified 201809/E.cpp and 202406/E.cpp from this commit, compiled on the same machine with -O2.",
+    "validation_note": "Historical maximum outputs matched the old implementation in full; 202406E additionally checked five queries per maximum case by scanning every rectangle. Timings are historical observations, not enforced thresholds.",
+    "fingerprint_note": "SHA256 of whitespace-normalized decimal output, one value per line and a final newline. --stress reproduces the historical seeded generation schedule.",
+    "problems": {
+      "201809E": {
+        "samples": 3,
+        "direct_recurrence": 500,
+        "large_index_old_comparison": 100,
+        "benchmarks": [
+          {
+            "case": "maximum_random",
+            "m": 100000,
+            "l": 1000000000000,
+            "count": 300001,
+            "candidate_seconds": 0.514,
+            "old_seconds": 3.715,
+            "speedup": 7.22,
+            "output_sha256": "7f72630b336d8360f7622ae4d4d4e7f85f1060b2952f1fad256eaff74c6fa43d"
+          },
+          {
+            "case": "maximum_many_set_bits",
+            "m": 100000,
+            "l": 549755813887,
+            "count": 300001,
+            "candidate_seconds": 0.504,
+            "old_seconds": 5.24,
+            "speedup": 10.4,
+            "output_sha256": "77c5e68818e3a8fb63ea5aab282e01d19036144dfdcff814862cb33bc7df67e2"
+          },
+          {
+            "case": "maximum_zero_coefficients",
+            "m": 100000,
+            "l": 1000000000000,
+            "count": 300001,
+            "candidate_seconds": 0.425,
+            "old_seconds": 3.748,
+            "speedup": 8.81,
+            "output_sha256": "957127367e918f8d77e269be1154298835092b28e28a57e0169283b33ddd0416"
+          },
+          {
+            "case": "maximum_l_zero",
+            "m": 100000,
+            "l": 0,
+            "count": 300001,
+            "candidate_seconds": 0.18,
+            "old_seconds": 0.543,
+            "speedup": 3.01,
+            "output_sha256": "97ab9bc294e767a14f85430dae4798db7b27a014d5a4ec97644f3a9f3adeaeb8"
+          },
+          {
+            "case": "power_two_boundary",
+            "m": 65537,
+            "l": 549755813887,
+            "count": 300001,
+            "candidate_seconds": 0.473,
+            "old_seconds": 4.365,
+            "speedup": 9.24,
+            "output_sha256": "5ef8ec274413b6034597f760a02d525ed3eef9a077ad0162154cbb9afb527f39"
+          }
+        ],
+        "source_sha256": "a3f3c9652db4b00f5208a499e30ce6d6fd98dee1efbbb60bd446f376c67ec913"
+      },
+      "202406E": {
+        "samples": 2,
+        "independent_random": 600,
+        "benchmarks": [
+          {
+            "case": "random",
+            "n": 500000,
+            "m": 500000,
+            "candidate_seconds": 1.148,
+            "old_seconds": 4.53,
+            "speedup": 3.95,
+            "output_sha256": "9911c191691f2d9d866732048c892eb3d086c48dfe81de01b4fa8db38a0bf69d"
+          },
+          {
+            "case": "points",
+            "n": 500000,
+            "m": 500000,
+            "candidate_seconds": 1.326,
+            "old_seconds": 6.92,
+            "speedup": 5.22,
+            "output_sha256": "5982077d45095d0d8c21170b6e52f304ba98521726452e9bedf82cfac69d16ca"
+          },
+          {
+            "case": "horizontal",
+            "n": 500000,
+            "m": 500000,
+            "candidate_seconds": 0.42,
+            "old_seconds": 11.706,
+            "speedup": 27.9,
+            "output_sha256": "b8f1831cae054c696c6d7a90df83c91c4eb02a3e068e6425f52babe851f695e1"
+          },
+          {
+            "case": "vertical",
+            "n": 500000,
+            "m": 500000,
+            "candidate_seconds": 0.406,
+            "old_seconds": 4.028,
+            "speedup": 9.91,
+            "output_sha256": "3dc6f2dc8f3dc8fbadbb9341ad55e4c09296e1c250682276c275f8c0f379cf72"
+          },
+          {
+            "case": "short_intervals",
+            "n": 500000,
+            "m": 500000,
+            "candidate_seconds": 0.888,
+            "old_seconds": 5.949,
+            "speedup": 6.7,
+            "output_sha256": "1b2bb2a17c632f770fcfabf9f3101377bcf5b94dfd4928d438d8947b8faeafc1"
+          },
+          {
+            "case": "nested",
+            "n": 500000,
+            "m": 500000,
+            "candidate_seconds": 0.853,
+            "old_seconds": 4.312,
+            "speedup": 5.05,
+            "output_sha256": "2d9fa500872e13b3bcafd96b9fb0775b87647ca2fb244047d96d78e436fdd86b"
+          }
+        ],
+        "source_sha256": "b0ccdb95f4467c6ec939eacd3fd1ab68298227e10f69347b628a40464677a7d3",
+        "points_peak_rss_bytes": 274694144
+      }
+    }
+  },
+  "judge_results": {
+    "201809E": {
+      "judge": "曙梦 OJ",
+      "date": "2026-10-25",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91",
+      "maximum_time_ms": 945
+    },
+    "202406E": {
+      "judge": "曙梦 OJ",
+      "date": "2026-10-25",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b",
+      "maximum_time_ms": 4214,
+      "memory_mib": 543.8
+    }
+  },
+  "latest_run": {
+    "recorded_at_utc": "2026-10-25T07:13:45.798195+00:00",
+    "platform": "macOS-26.3.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "flags": "-std=c++17 -O2 -Wall -Wextra -Wpedantic",
+    "stress_requested": false,
+    "problems": {
+      "201809E": {
+        "source_sha256": "a3f3c9652db4b00f5208a499e30ce6d6fd98dee1efbbb60bd446f376c67ec913",
+        "samples": 3,
+        "independent_random": 500
+      },
+      "202406E": {
+        "source_sha256": "b0ccdb95f4467c6ec939eacd3fd1ab68298227e10f69347b628a40464677a7d3",
+        "samples": 2,
+        "independent_random": 600
+      }
+    },
+    "status": "passed"
+  }
+}

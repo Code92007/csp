@@ -49,7 +49,9 @@ make random
 
 本轮新增 120 题通过 11,140 组独立随机/穷举校验，分题号记录与复现方法见 [前四题验证报告](docs/validation-ad.md)。各题的编译、保存样例与对拍记录也写在文章中。第五题原有 2200 组独立随机对拍，记录见 [fifth-report.json](tests/fifth-report.json)；原有两场的 1026 组校验记录另行保留。
 
-部分复杂实现还做了最大规模构造的运行检查，见 [fifth-stress-report.json](tests/fifth-stress-report.json) 和生成脚本。比如 202406E 在本机 50 万修改、50 万查询的随机构造上约 4.7 秒，接近题面时限；不同硬件、编译器和对抗数据可能不同。**尚未提交正式评测，不能把这些记录视为官方 AC 或分数保证。** 202605E 新增 2,042 组与小规模 DP 的对拍及 7 组十万点运行检查，分别用 `make random-gather`、`make stress-gather` 复现，见 [gather-report.json](tests/gather-report.json) 与 [gather-stress-report.json](tests/gather-stress-report.json)。
+部分复杂实现还做了最大规模构造的运行检查，旧版结果保留在 [fifth-stress-report.json](tests/fifth-stress-report.json)。2026-10-25 优化了 201809E 和 202406E，均已在曙梦 OJ 取得 100 分 Accepted；代码、独立对拍和新旧性能比较见对应文章及 [优化验证报告](tests/optimization-report.json)。运行 `python3 tests/optimized_regressions.py` 可复现两题共 1100 组独立对拍，追加 `--stress` 可检查 11 组最大规模构造。性能依赖机器与数据，民间 OJ 通过也不能视为 CCF 官方成绩保证。
+
+202605E 另有 2,042 组与小规模 DP 的对拍及 7 组十万点运行检查，分别用 `make random-gather`、`make stress-gather` 复现，见 [gather-report.json](tests/gather-report.json) 与 [gather-stress-report.json](tests/gather-stress-report.json)。逐题在线评测状态以 [提交与核验记录](docs/oj-submissions.md) 为准。
 
 ## 维护与发布
 

@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "矩阵重塑", "线性下标", "数组", "矩阵变换", "模拟", "BPE", "链表", "优先队列", "字符串", "分组背包", "排序", "动态规划", "二维区间", "线段树", "扫描线", "静态查询"]
 status: "published"
-problems: [{"id": "A", "title": "矩阵重塑（其一）", "tags": ["矩阵重塑", "线性下标"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81ca67df0b81749bb2f"}}, {"id": "B", "title": "矩阵重塑（其二）", "tags": ["数组", "矩阵变换", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81da67df0b81749bb39"}}, {"id": "C", "title": "文本分词", "tags": ["BPE", "链表", "优先队列", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；130 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81fa67df0b81749bb49"}}, {"id": "D", "title": "货物调度", "tags": ["分组背包", "排序", "动态规划"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce821a67df0b81749bb75"}}, {"id": "E", "title": "哥德尔机", "tags": ["二维区间", "线段树", "扫描线", "静态查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 70 分 Time Exceeded（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406E/"}], "oj": {"status": "failed", "score": 70, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6adce823a67df0b81749bb8a"}}]
+problems: [{"id": "A", "title": "矩阵重塑（其一）", "tags": ["矩阵重塑", "线性下标"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81ca67df0b81749bb2f"}}, {"id": "B", "title": "矩阵重塑（其二）", "tags": ["数组", "矩阵变换", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81da67df0b81749bb39"}}, {"id": "C", "title": "文本分词", "tags": ["BPE", "链表", "优先队列", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；130 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81fa67df0b81749bb49"}}, {"id": "D", "title": "货物调度", "tags": ["分组背包", "排序", "动态规划"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce821a67df0b81749bb75"}}, {"id": "E", "title": "哥德尔机", "tags": ["二维区间", "线段树", "扫描线", "静态查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17/C++20 编译通过；2 个保存样例通过；600 组独立朴素对拍和 6 组 50 万规模压力测试通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b"}}]
 ---
 
 # CSP 202406 五题题解
@@ -392,7 +392,7 @@ int main() {
 
 标签：`二维区间` · `线段树` · `扫描线` · `静态查询`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 70 分 Time Exceeded（复刻评测）。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17/C++20 编译通过；2 个保存样例通过；600 组独立朴素对拍和 6 组 50 万规模压力测试通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b)（复刻评测）。
 
 ### 题意
 
@@ -404,15 +404,21 @@ int main() {
 
 ### 题解
 
-**先消去网格。** 查询答案等于所有与查询矩形有交集的学习矩形的最大权值。原因是任意格子的最终值来自覆盖它的某个矩形；反过来，两矩形只要有交点，对应修改值就能在查询区域中贡献。
+**先消去网格。** 查询答案等于所有与查询矩形有交集的学习矩形的最大权值。任意格子的最终值来自覆盖它的学习矩形；反过来，两矩形只要有交点，该学习值就能在查询区域中贡献。
 
-**一维线段树分两种清单。** 在 $x$ 轴建线段树，插入修改的 $x$ 区间。递归访问的每个节点都把修改编号放入 `allIds`；被区间完全覆盖时另放入 `coverIds` 并停止下行。两张表每个矩形各占 $O(\log n)$ 记录。查询 $x$ 区间时：完全覆盖一个节点，查询其 `all`；部分覆盖时，查询其 `cover` 并继续递归。前者处理节点内所有修改，后者处理在祖先层已经停止下行的修改。任意相交的两个 $x$ 区间必在某层被这两种情况之一捕获。
+**外层线段树只保存完全覆盖清单。** 在 $x$ 轴建线段树，将每个学习矩形的 $x$ 区间拆成 $O(\log n)$ 个互不相交的标准节点，把编号加入各节点的 `cover` 清单。先按权值降序处理矩形，各清单自然也是降序。先统计长度、求前缀和，再用连续数组存放所有清单，减少小块内存分配。
 
-**每张清单又是静态一维问题。** 忽略 $x$ 后，清单只剩带权 $y$ 区间，需要求与 $[c,d]$ 相交的区间最大权值。把各区间视为区间取最大修改，预先构造上包络。全局先按权值降序排列修改，所有清单自然继承此顺序；用有序区间集合记录已覆盖的位置，当前区间只给尚未覆盖的部分赋值，因为先覆盖的值一定更大。每个被删除的已覆盖段只会消失一次，新增分段总数与清单长度同阶。将所得分段排序，空隙补 0，建普通迭代线段树，查询先二分所在分段，再取区间最大值。短清单直接扫描，相同清单共用结果，外层使用紧凑节点编号；节点还保存权值上界，若不可能超过当前答案就停止搜索。这些优化仅减少常数，不改变最坏复杂度。
+**把一张清单变成一维上包络。** 只看各矩形的 $y$ 区间，将左端点、右端点加一离散化，形成基本半开区间。按权值降序涂色，并查集的 `next` 指针跳过已涂色位置，每段只在首次遇到时赋值，因此得到逐点最大权值。合并相邻同值段，保存断点和每段值，并建立静态区间最大值树；查询时先二分定位，再做范围最大值查询。最后一个断点保存值 0，表示所有区间结束。
 
-**正确性。** 外层清单分类恰好覆盖所有 $x$ 相交修改；内层上包络的区间最大值恰好筛选 $y$ 相交修改。两个方向同时相交等价于矩形相交，取最大得到答案。清单可能重复命中同一修改，但最大值操作不受重复影响。
+**自底向上合并 `all` 包络。** 节点的 `all` 表示停在本节点或后代的全部修改，等于本节点 `cover`、左子树 `all`、右子树 `all` 的逐点最大值。三张包络的断点均有序，三路归并即可线性合并，不必重新排序或进行有序集合插入。合并结果若与已有包络相同，直接共用；所有包络的断点与最大值树统一放入连续数组。
 
-**复杂度。** 总记录量 $O(n\log n)$，排序与包络预处理 $O(n\log^2 n)$；每个查询 $O(\log^2 n)$，空间 $O(n\log n)$。本题最大数据对常数和内存敏感，理论复杂度不能代替目标评测机上的时间验证。
+**如何查询。** 查询的 $x$ 区间完全包含当前节点时，在 `all` 上查询 $y$ 范围；部分相交时，先查本节点 `cover`，再访问相交的孩子。若包络的全局最高值已经不超过当前答案，可以跳过；两个孩子优先访问上界较大的一个。矩形相交关于 $x,y$ 对称，预先统计两个轴各自的标准节点记录数，以较少的轴作为外层，查询同步交换坐标即可。
+
+**正确性。** 任一学习矩形在外层被分成若干标准节点。它与查询的 $x$ 区间相交时，查询必定到达其某个存储节点，或完全包含该节点的祖先：前者由 `cover` 捕获，后者由 `all` 捕获。内层包络在查询 $y$ 区间的最大值，正是与该区间相交的修改最大值。两个轴同时相交等价于矩形相交；重复命中不会改变最大值。
+
+**复杂度。** 每个矩形的标准节点及其祖先共 $O(\log n)$ 个，所有清单与包络总规模 $O(n\log n)$。排序、离散化和包络构造共 $O(n\log^2 n)$，$m$ 次查询共 $O(m\log^2 n)$，空间 $O(n\log n)$。
+
+原版曙梦 OJ 为 [70 分超时](https://oj.shumeng.tech/record/6adce823a67df0b81749bb8a)。本机 50 万修改、50 万查询的随机矩形由 4.530 秒降至 1.148 秒，横线条构造由 11.706 秒降至 0.420 秒；测得点矩形构造峰值内存约 262 MiB。此处仅用于同机对比。复核入口：[优化回归脚本](../tests/optimized_regressions.py)、[验证报告](../tests/optimization-report.json)。
 
 ### 代码
 
@@ -420,165 +426,244 @@ int main() {
 
 ```cpp
 #include <algorithm>
-#include <iostream>
-#include <map>
+#include <cstdio>
 #include <numeric>
-#include <queue>
-#include <utility>
+#include <string>
 #include <vector>
 using namespace std;
-struct Rect {
-    int xl, xr, yl, yr, value;
+
+class FastInput {
+    static constexpr int SIZE = 1 << 16;
+    char buffer[SIZE];
+    int at = 0, length = 0;
+    int next() {
+        if (at == length) {
+            length = int(fread(buffer, 1, SIZE, stdin));
+            at = 0;
+            if (!length) return EOF;
+        }
+        return buffer[at++];
+    }
+public:
+    int read() {
+        int c = next();
+        while (c <= ' ' && c != EOF) c = next();
+        int x = 0;
+        while ('0' <= c && c <= '9') {
+            x = x * 10 + c - '0';
+            c = next();
+        }
+        return x;
+    }
 };
-vector<Rect> rectangles;
-// Static upper envelope of weighted closed intervals, with range maximum queries.
+struct Rectangle { int xl, xr, yl, yr, value; };
+vector<Rectangle> rectangles;
+
+// Each envelope occupies [coordinates, iterative range-maximum tree] in one arena.
+vector<int> arena;
 struct Envelope {
-    vector<int> coordinates, maximum;
-    int base = 0;
-    void build(vector<int> ids) {
-        if (ids.empty())
-            return;
-        if (ids.size() <= 8) {
-            coordinates = std::move(ids);
-            base = -1;
-            return;
-        }
-        // IDs arrive in decreasing value order. Paint only uncovered positions.
-        struct Piece {
-            int l, r, value;
-        };
-        vector<Piece> pieces;
-        map<int, int> covered;
-        for (int id : ids) {
-            auto rect = rectangles[id];
-            int l = rect.yl, r = rect.yr;
-            auto it = covered.upper_bound(l);
-            if (it != covered.begin()) {
-                auto previous = prev(it);
-                if (previous->second >= l - 1) {
-                    if (previous->second >= r)
-                        continue;
-                    it = previous;
-                }
-            }
-            int begin = l, end = r, cursor = l;
-            while (it != covered.end() && it->first <= r + 1) {
-                if (cursor < it->first && cursor <= r)
-                    pieces.push_back({cursor, min(r, it->first - 1), rect.value});
-                cursor = max(cursor, it->second + 1);
-                begin = min(begin, it->first);
-                end = max(end, it->second);
-                it = covered.erase(it);
-            }
-            if (cursor <= r)
-                pieces.push_back({cursor, r, rect.value});
-            covered.emplace(begin, end);
-        }
-        sort(pieces.begin(), pieces.end(), [](Piece a, Piece b) { return a.l < b.l; });
-        vector<int> values;
-        for (auto p : pieces) {
-            if (!coordinates.empty() && coordinates.back() == p.l)
-                values.back() = p.value;
-            else {
-                coordinates.push_back(p.l);
-                values.push_back(p.value);
-            }
-            coordinates.push_back(p.r + 1);
-            values.push_back(0);
-        }
-        base = coordinates.size();
-        maximum.assign(2 * base, 0);
-        copy(values.begin(), values.end(), maximum.begin() + base);
-        for (int i = base - 1; i; --i)
-            maximum[i] = max(maximum[2 * i], maximum[2 * i + 1]);
-    }
+    int offset = 0, size = 0;
+    int coordinate(int i) const { return arena[offset + i]; }
+    int value(int i) const { return arena[offset + 2 * size + i]; }
+    int bound() const { return size ? arena[offset + size + 1] : 0; }
     int query(int l, int r) const {
-        if (base == -1) {
-            int ans = 0;
-            for (int id : coordinates) {
-                auto a = rectangles[id];
-                if (a.yl <= r && a.yr >= l)
-                    ans = max(ans, a.value);
-            }
-            return ans;
+        if (!size || r < coordinate(0) || l >= coordinate(size - 1)) return 0;
+        auto begin = arena.begin() + offset;
+        int a = max(0, int(upper_bound(begin, begin + size, l) - begin) - 1);
+        int b = int(upper_bound(begin, begin + size, r) - begin);
+        int answer = 0, tree = offset + size;
+        for (a += size, b += size; a < b; a >>= 1, b >>= 1) {
+            if (a & 1) answer = max(answer, arena[tree + a++]);
+            if (b & 1) answer = max(answer, arena[tree + --b]);
         }
-        if (!base || r < coordinates.front())
-            return 0;
-        int a = max(
-            0,
-            int(upper_bound(coordinates.begin(), coordinates.end(), l) - coordinates.begin()) - 1);
-        int b = int(upper_bound(coordinates.begin(), coordinates.end(), r) - coordinates.begin());
-        int ans = 0;
-        for (a += base, b += base; a < b; a >>= 1, b >>= 1) {
-            if (a & 1)
-                ans = max(ans, maximum[a++]);
-            if (b & 1)
-                ans = max(ans, maximum[--b]);
-        }
-        return ans;
+        return answer;
     }
 };
-struct Node {
-    vector<int> allIds, coverIds;
-    Envelope all, cover;
-    int bound = 0;
-    bool same = false;
-};
-vector<Node> tree;
-void add(int u, int l, int r, int id) {
-    const auto &a = rectangles[id];
-    tree[u].allIds.push_back(id);
-    if (a.xl <= l && r <= a.xr) {
-        tree[u].coverIds.push_back(id);
-        return;
+struct Node { Envelope cover, all; };
+vector<Node> nodes;
+
+Envelope saveEnvelope(const vector<int> &coordinates, const vector<int> &values) {
+    int size = int(coordinates.size()), offset = int(arena.size());
+    if (!size) return {};
+    arena.resize(offset + 3 * size);
+    copy(coordinates.begin(), coordinates.end(), arena.begin() + offset);
+    copy(values.begin(), values.end(), arena.begin() + offset + 2 * size);
+    int tree = offset + size;
+    for (int i = size - 1; i; --i)
+        arena[tree + i] = max(arena[tree + 2 * i], arena[tree + 2 * i + 1]);
+    return {offset, size};
+}
+int findNext(vector<int> &next, int x) {
+    while (next[x] != x) {
+        next[x] = next[next[x]];
+        x = next[x];
     }
-    int mid = (l + r) / 2;
-    if (a.xl <= mid)
-        add(u + 1, l, mid, id);
-    if (a.xr > mid)
-        add(u + 2 * (mid - l + 1), mid + 1, r, id);
+    return x;
 }
-int query(int u, int l, int r, int a, int b, int c, int d, int known = 0) {
-    if (tree[u].bound <= known)
-        return known;
-    if (a <= l && r <= b)
-        return max(known, (tree[u].same ? tree[u].cover : tree[u].all).query(c, d));
-    int ans = tree[u].cover.query(c, d), mid = (l + r) / 2;
-    ans = max(ans, known);
-    if (a <= mid)
-        ans = max(ans, query(u + 1, l, mid, a, b, c, d, ans));
-    if (b > mid)
-        ans = max(ans, query(u + 2 * (mid - l + 1), mid + 1, r, a, b, c, d, ans));
-    return ans;
+Envelope buildCover(const vector<int> &ids, int first, int last) {
+    if (first == last) return {};
+    if (last - first == 1) {
+        const auto &a = rectangles[ids[first]];
+        return saveEnvelope({a.yl, a.yr + 1}, {a.value, 0});
+    }
+    vector<int> coordinates;
+    coordinates.reserve(2 * (last - first));
+    for (int i = first; i < last; ++i) {
+        const auto &a = rectangles[ids[i]];
+        coordinates.push_back(a.yl);
+        coordinates.push_back(a.yr + 1);
+    }
+    sort(coordinates.begin(), coordinates.end());
+    coordinates.erase(unique(coordinates.begin(), coordinates.end()), coordinates.end());
+    int size = int(coordinates.size());
+    vector<int> next(size + 1), values(size);
+    iota(next.begin(), next.end(), 0);
+    // IDs are in decreasing weight order: each elementary interval is painted once.
+    for (int i = first; i < last; ++i) {
+        const auto &a = rectangles[ids[i]];
+        int l = int(lower_bound(coordinates.begin(), coordinates.end(), a.yl) - coordinates.begin());
+        int r = int(lower_bound(coordinates.begin(), coordinates.end(), a.yr + 1) - coordinates.begin());
+        for (int p = findNext(next, l); p < r; p = findNext(next, p)) {
+            values[p] = a.value;
+            next[p] = findNext(next, p + 1);
+        }
+    }
+    int written = 0, previous = 0;
+    for (int i = 0; i < size; ++i)
+        if (values[i] != previous) {
+            previous = values[i];
+            coordinates[written] = coordinates[i];
+            values[written++] = previous;
+        }
+    coordinates.resize(written);
+    values.resize(written);
+    return saveEnvelope(coordinates, values);
 }
+
+Envelope mergeEnvelopes(Envelope a, Envelope b, Envelope c) {
+    Envelope inputs[3] = {a, b, c};
+    int nonempty = 0, single = 0;
+    for (int i = 0; i < 3; ++i) if (inputs[i].size) ++nonempty, single = i;
+    if (!nonempty) return {};
+    if (nonempty == 1) return inputs[single];
+    int at[3] = {}, current[3] = {}, previous = 0;
+    vector<int> coordinates, values;
+    int total = a.size + b.size + c.size;
+    coordinates.reserve(total);
+    values.reserve(total);
+    while (true) {
+        int x = 1000000000;
+        for (int i = 0; i < 3; ++i)
+            if (at[i] < inputs[i].size) x = min(x, inputs[i].coordinate(at[i]));
+        if (x == 1000000000) break;
+        for (int i = 0; i < 3; ++i)
+            if (at[i] < inputs[i].size && inputs[i].coordinate(at[i]) == x)
+                current[i] = inputs[i].value(at[i]++);
+        int value = max(current[0], max(current[1], current[2]));
+        if (value != previous) {
+            coordinates.push_back(x);
+            values.push_back(value);
+            previous = value;
+        }
+    }
+    // A dominating child or cover can be shared without another stored copy.
+    for (Envelope old : inputs) {
+        if (old.size != int(coordinates.size())) continue;
+        bool equal = true;
+        for (int i = 0; i < old.size && equal; ++i)
+            equal = old.coordinate(i) == coordinates[i] && old.value(i) == values[i];
+        if (equal) return old;
+    }
+    return saveEnvelope(coordinates, values);
+}
+
+int query(int node, int left, int right, int a, int b, int c, int d, int known) {
+    if (nodes[node].all.bound() <= known) return known;
+    if (a <= left && right <= b) return max(known, nodes[node].all.query(c, d));
+    if (nodes[node].cover.bound() > known) known = max(known, nodes[node].cover.query(c, d));
+    int middle = (left + right) / 2;
+    bool useLeft = a <= middle, useRight = b > middle;
+    if (useLeft && useRight) {
+        if (nodes[2 * node].all.bound() >= nodes[2 * node + 1].all.bound()) {
+            known = query(2 * node, left, middle, a, b, c, d, known);
+            known = query(2 * node + 1, middle + 1, right, a, b, c, d, known);
+        } else {
+            known = query(2 * node + 1, middle + 1, right, a, b, c, d, known);
+            known = query(2 * node, left, middle, a, b, c, d, known);
+        }
+    } else if (useLeft) {
+        known = query(2 * node, left, middle, a, b, c, d, known);
+    } else {
+        known = query(2 * node + 1, middle + 1, right, a, b, c, d, known);
+    }
+    return known;
+}
+
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
+    FastInput input;
+    int n = input.read(), m = input.read(), base = 1, height = 0;
+    if (!n) return 0;
+    while (base < n) base <<= 1, ++height;
     rectangles.resize(n);
-    tree.resize(2 * n + 2);
-    for (auto &r : rectangles)
-        cin >> r.xl >> r.xr >> r.yl >> r.yr >> r.value;
-    vector<int> order(n);
+    nodes.resize(2 * base);
+    vector<int> order(n), starts(2 * base + 1);
     iota(order.begin(), order.end(), 0);
-    sort(order.begin(), order.end(),
-         [](int a, int b) { return rectangles[a].value > rectangles[b].value; });
-    for (int i : order)
-        add(1, 1, n, i);
-    for (auto &node : tree) {
-        node.bound = node.allIds.empty() ? 0 : rectangles[node.allIds[0]].value;
-        node.same = node.allIds == node.coverIds;
-        if (!node.same)
-            node.all.build(std::move(node.allIds));
-        else
-            vector<int>().swap(node.allIds);
-        node.cover.build(std::move(node.coverIds));
+    long long xRecords = 0, yRecords = 0;
+    auto records = [base](int a, int b) {
+        int answer = 0;
+        for (int l = a + base - 1, r = b + base; l < r; l >>= 1, r >>= 1) {
+            if (l & 1) ++answer, ++l;
+            if (r & 1) ++answer, --r;
+        }
+        return answer;
+    };
+    for (auto &a : rectangles) {
+        a.xl = input.read(); a.xr = input.read();
+        a.yl = input.read(); a.yr = input.read(); a.value = input.read();
+        xRecords += records(a.xl, a.xr);
+        yRecords += records(a.yl, a.yr);
     }
+    // Either axis is valid. Use the one with fewer canonical insertion records.
+    bool swapped = yRecords < xRecords;
+    for (auto &a : rectangles) {
+        if (swapped) swap(a.xl, a.yl), swap(a.xr, a.yr);
+        for (int l = a.xl + base - 1, r = a.xr + base; l < r; l >>= 1, r >>= 1) {
+            if (l & 1) ++starts[l++ + 1];
+            if (r & 1) ++starts[--r + 1];
+        }
+    }
+    for (int i = 1; i <= 2 * base; ++i) starts[i] += starts[i - 1];
+    vector<int> ids(starts.back()), cursor = starts;
+    sort(order.begin(), order.end(), [](int a, int b) {
+        return rectangles[a].value > rectangles[b].value;
+    });
+    for (int id : order) {
+        const auto &a = rectangles[id];
+        for (int l = a.xl + base - 1, r = a.xr + base; l < r; l >>= 1, r >>= 1) {
+            if (l & 1) ids[cursor[l]++] = id, ++l;
+            if (r & 1) --r, ids[cursor[r]++] = id;
+        }
+    }
+    vector<int>().swap(cursor);
+    vector<int>().swap(order);
+    // Reserve once to avoid a large old/new-buffer peak during arena growth.
+    arena.reserve(size_t(6) * n * (height + 1));
+    for (int u = 2 * base - 1; u; --u) {
+        nodes[u].cover = buildCover(ids, starts[u], starts[u + 1]);
+        nodes[u].all = u >= base ? nodes[u].cover :
+            mergeEnvelopes(nodes[u].cover, nodes[2 * u].all, nodes[2 * u + 1].all);
+    }
+    vector<int>().swap(ids);
+    vector<int>().swap(starts);
+    vector<Rectangle>().swap(rectangles);
+    string output;
+    output.reserve(m * 8);
     while (m--) {
-        int a, b, c, d;
-        cin >> a >> b >> c >> d;
-        cout << query(1, 1, n, a, b, c, d) << '\n';
+        int a = input.read(), b = input.read(), c = input.read(), d = input.read();
+        if (swapped) swap(a, c), swap(b, d);
+        output += to_string(query(1, 1, base, a, b, c, d, 0));
+        output.push_back('\n');
     }
+    fwrite(output.data(), 1, output.size(), stdout);
 }
 ```

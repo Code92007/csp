@@ -9,7 +9,7 @@ using i64 = long long;
 constexpr i64 MOD = 998244353;
 using Matrix = array<array<i64, 5>, 5>;
 using Vector = array<i64, 5>;
-Matrix identity() {
+Matrix identity_matrix() {
     Matrix a{};
     for (int i = 0; i < 5; ++i)
         a[i][i] = 1;
@@ -104,7 +104,7 @@ int main() {
         if (history.size() == 6 && state == history.front()) {
             i64 remaining = n - time;
             int begin = int(transitions.size()) - 6;
-            Matrix cycle = identity();
+            Matrix cycle = identity_matrix();
             for (int j = begin; j < begin + 6; ++j)
                 cycle = multiply(transitions[j], cycle);
             i64 rounds = remaining / 6;

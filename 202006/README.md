@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "直线两侧", "符号判断", "双指针", "稀疏向量", "状态机", "字符串", "模拟", "KMP", "矩阵快速幂", "递推", "最大权闭合子图", "最小割", "二次函数"]
 status: "published"
-problems: [{"id": "A", "title": "线性分类器", "tags": ["直线两侧", "符号判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1574ace1cba9a1bce6"}}, {"id": "B", "title": "稀疏向量", "tags": ["双指针", "稀疏向量"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1774ace1cba9a1bd0b"}}, {"id": "C", "title": "Markdown 渲染器", "tags": ["状态机", "字符串", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006C/"}]}, {"id": "D", "title": "1246", "tags": ["字符串", "KMP", "矩阵快速幂", "递推"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006D/"}]}, {"id": "E", "title": "乔乔和牛牛逛超市", "tags": ["最大权闭合子图", "最小割", "二次函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006E/"}]}]
+problems: [{"id": "A", "title": "线性分类器", "tags": ["直线两侧", "符号判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1574ace1cba9a1bce6"}}, {"id": "B", "title": "稀疏向量", "tags": ["双指针", "稀疏向量"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1774ace1cba9a1bd0b"}}, {"id": "C", "title": "Markdown 渲染器", "tags": ["状态机", "字符串", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add98d374ace1cba9a1f2eb"}}, {"id": "D", "title": "1246", "tags": ["字符串", "KMP", "矩阵快速幂", "递推"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9c1c74ace1cba9a1f614"}}, {"id": "E", "title": "乔乔和牛牛逛超市", "tags": ["最大权闭合子图", "最小割", "二次函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9cb974ace1cba9a1f6a9"}}]
 ---
 
 # CSP 202006 五题题解
@@ -138,7 +138,7 @@ int main() {
 
 标签：`状态机` · `字符串` · `模拟`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；120 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add98d374ace1cba9a1f2eb)（复刻评测）。
 
 ### 题意
 
@@ -250,7 +250,7 @@ int main() {
 
 标签：`字符串` · `KMP` · `矩阵快速幂` · `递推`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；110 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9c1c74ace1cba9a1f614)（复刻评测）。
 
 ### 题意
 
@@ -288,7 +288,7 @@ using i64 = long long;
 constexpr i64 MOD = 998244353;
 using Matrix = array<array<i64, 5>, 5>;
 using Vector = array<i64, 5>;
-Matrix identity() {
+Matrix identity_matrix() {
     Matrix a{};
     for (int i = 0; i < 5; ++i)
         a[i][i] = 1;
@@ -383,7 +383,7 @@ int main() {
         if (history.size() == 6 && state == history.front()) {
             i64 remaining = n - time;
             int begin = int(transitions.size()) - 6;
-            Matrix cycle = identity();
+            Matrix cycle = identity_matrix();
             for (int j = begin; j < begin + 6; ++j)
                 cycle = multiply(transitions[j], cycle);
             i64 rounds = remaining / 6;
@@ -411,7 +411,7 @@ int main() {
 
 标签：`最大权闭合子图` · `最小割` · `二次函数`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9cb974ace1cba9a1f6a9)（复刻评测）。
 
 ### 题意
 
