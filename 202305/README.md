@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "字符串", "频率统计", "矩阵乘法", "结合律", "复杂度优化", "字节解析", "解压缩", "位运算", "图论", "树形DP", "变量消元", "枚举", "状态压缩", "最短路", "Dijkstra", "SOS DP"]
 status: "published"
-problems: [{"id": "A", "title": "重复局面", "tags": ["字符串", "频率统计"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16667"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d0a67df0b81749be5a"}}, {"id": "B", "title": "矩阵运算", "tags": ["矩阵乘法", "结合律", "复杂度优化"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16668"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d2a67df0b81749be67"}}, {"id": "C", "title": "解压缩", "tags": ["字节解析", "解压缩", "位运算"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16669"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d4a67df0b81749be76"}}, {"id": "D", "title": "电力网络", "tags": ["图论", "树形DP", "变量消元", "枚举"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16670"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d5a67df0b81749be85"}}, {"id": "E", "title": "闪耀巡航", "tags": ["状态压缩", "最短路", "Dijkstra", "SOS DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16671"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d7a67df0b81749be8f"}}]
+problems: [{"id": "A", "title": "重复局面", "tags": ["字符串", "频率统计"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16667"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d0a67df0b81749be5a"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305838806", "source_sha256": "ba3d4be762cf3243170222999ceb6d7dd7daaa79baca9ff90269d30011e138c8"}}, {"id": "B", "title": "矩阵运算", "tags": ["矩阵乘法", "结合律", "复杂度优化"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16668"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d2a67df0b81749be67"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305839266", "source_sha256": "6134c6c0bde54dc73bdf25dda099a587acc970cd484eb82c419496d6b379edd2"}}, {"id": "C", "title": "解压缩", "tags": ["字节解析", "解压缩", "位运算"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16669"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d4a67df0b81749be76"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305839556", "source_sha256": "6d341d5fcc167d14be201984db5b923b0919c1139cf6afe94beb0b87759d1b2f"}}, {"id": "D", "title": "电力网络", "tags": ["图论", "树形DP", "变量消元", "枚举"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；160 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16670"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d5a67df0b81749be85"}}, {"id": "E", "title": "闪耀巡航", "tags": ["状态压缩", "最短路", "Dijkstra", "SOS DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202305E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16671"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8d7a67df0b81749be8f"}}]
 ---
 
 # CSP 202305 五题题解
@@ -21,7 +21,7 @@ problems: [{"id": "A", "title": "重复局面", "tags": ["字符串", "频率统
 
 标签：`字符串` · `频率统计`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+状态：**完整实现，已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce8d0a67df0b81749be5a)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305838806)（民间复刻评测）。
 
 ### 题意
 
@@ -67,7 +67,7 @@ int main() {
 
 标签：`矩阵乘法` · `结合律` · `复杂度优化`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+状态：**完整实现，已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce8d2a67df0b81749be67)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305839266)（民间复刻评测）。
 
 ### 题意
 
@@ -130,7 +130,7 @@ int main() {
 
 标签：`字节解析` · `解压缩` · `位运算`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+状态：**完整实现，已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce8d4a67df0b81749be76)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305839556)（民间复刻评测）。
 
 ### 题意
 

@@ -1,0 +1,159 @@
+{
+  "source_sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815",
+  "status": "candidate: Shumeng 100 Accepted; Luogu awaiting user CAPTCHA; main source unchanged; root cause unresolved",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "flags": "-std=c++17 -O2 -Wall -Wextra -Wpedantic",
+  "sample_cases": 1,
+  "real_stdin_independent_random_cases": 300,
+  "comparison_source_sha256": "79d35e9c66f39264bbf3383c51ad61383fc82ca13fb553997ca37c5f1b408df2",
+  "stress": [
+    {
+      "case": "dense_full",
+      "input_sha256": "ae61dec305b57e9473a393b89ca1523c9f708f745d0e64aae66d077952c2dcbd",
+      "expected_checksum": "17444495",
+      "independent_oracle": true,
+      "oracle": "retained independent grid/ray simulation or no-movement formula",
+      "conservative_seconds": 0.9424575829999999,
+      "wide_slot_seconds": 0.45489316700000026,
+      "speedup_over_conservative": 2.071821806459448,
+      "initial_cold_comparison": {
+        "conservative_seconds": 1.488294792,
+        "wide_slot_seconds": 0.4399122910000002,
+        "speedup": 3.3831625586473995
+      },
+      "warm_recheck": {
+        "method": "three repetitions for this case only after discovering one-time startup overhead; both source executables are now explicitly warmed by the reproduction script",
+        "conservative_seconds": [
+          0.940758625,
+          0.94721575,
+          0.9424575829999999
+        ],
+        "wide_slot_seconds": [
+          0.43418783399999994,
+          0.4681660000000001,
+          0.45489316700000026
+        ]
+      }
+    },
+    {
+      "case": "checkerboard",
+      "input_sha256": "35ff85de4dca03fec0bb62664527020658ad2514c8d831023ed59a9b7c2975df",
+      "expected_checksum": "36897604",
+      "independent_oracle": true,
+      "oracle": "retained independent grid/ray simulation or no-movement formula",
+      "conservative_seconds": 0.7118081250000001,
+      "wide_slot_seconds": 0.6285457499999998,
+      "speedup_over_conservative": 1.1324682809485234
+    },
+    {
+      "case": "four_ring",
+      "input_sha256": "9c5c745d383bd8aca7778a217f01081fd16f0d5725357e5521ffe7d03201ced6",
+      "expected_checksum": "11360478996",
+      "independent_oracle": true,
+      "oracle": "retained independent grid/ray simulation or no-movement formula",
+      "conservative_seconds": 0.5736619169999999,
+      "wide_slot_seconds": 0.6195470410000006,
+      "speedup_over_conservative": 0.9259376270671259
+    },
+    {
+      "case": "one_ring",
+      "input_sha256": "a9ac9183276969aefd57ea05b86b756a1874593f1015e51c8a07c7be4080d79f",
+      "expected_checksum": "15255892964",
+      "independent_oracle": true,
+      "oracle": "retained independent grid/ray simulation or no-movement formula",
+      "conservative_seconds": 0.49140441700000004,
+      "wide_slot_seconds": 0.4680508329999995,
+      "speedup_over_conservative": 1.0498954009980377
+    },
+    {
+      "case": "sparse_static",
+      "input_sha256": "178402e2fe9245a5ec6c737557885acaf2158f5359ebc9dc49b044eede19b266",
+      "expected_checksum": "39533013483160",
+      "independent_oracle": true,
+      "oracle": "retained independent grid/ray simulation or no-movement formula",
+      "conservative_seconds": 0.7491423329999991,
+      "wide_slot_seconds": 0.767024708000001,
+      "speedup_over_conservative": 0.976686050900981
+    },
+    {
+      "case": "boundary",
+      "input_sha256": "0f6d6b6cfde794e1929d3d907d23e3f5604271ae9d98c494de42f05564387bf7",
+      "expected_checksum": "125558958282176",
+      "independent_oracle": true,
+      "oracle": "retained independent grid/ray simulation or no-movement formula",
+      "conservative_seconds": 0.5991974169999992,
+      "wide_slot_seconds": 0.513103417,
+      "speedup_over_conservative": 1.1677907360340172
+    }
+  ],
+  "full_position_validation": {
+    "cases": 10000,
+    "seed": 20231025,
+    "harness": "fourway-fuzz.cpp",
+    "implementations": [
+      "old.cpp",
+      "current.cpp",
+      "D.cpp",
+      "D-wide.cpp"
+    ],
+    "oracle": "independent employee scan and simultaneous rotation; compared every employee final coordinate, not XOR",
+    "flags": "-std=c++23 -O2"
+  },
+  "comparison_source_online_observation_from_parent": {
+    "source_sha256": "79d35e9c66f39264bbf3383c51ad61383fc82ca13fb553997ca37c5f1b408df2",
+    "url": "https://www.luogu.com.cn/record/305839060",
+    "score": 100,
+    "status": "Accepted",
+    "submit_time": "2026-10-25 23:43:28 +08:00",
+    "verification": "Root matched the displayed source to the conservative candidate exactly. Wide source has its own Shumeng record; no Luogu wide record yet."
+  },
+  "interpretation": "Clear improvement on full occupancy (2.07x median), modest benefit on checkerboard, mixed near-parity elsewhere. This is not a proven fix and no cause is inferred from the conservative candidate AC.",
+  "source_file": "tests/diagnostics/202309D-wide.cpp",
+  "online": {
+    "shumeng": {
+      "pid": "CSP202309D",
+      "title": "阴阳龙",
+      "source_file": "tests/diagnostics/202309D-wide.cpp",
+      "sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815",
+      "candidate_only": true,
+      "account": "jojo",
+      "uid": 6715,
+      "record": "https://oj.shumeng.tech/record/6ade253b74ace1cba9a24563",
+      "time": "23:50:19",
+      "clicked_at": "2026-10-25T15:50:19.749Z",
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "submission_method": "Root IAB3 normal code textarea fill with exact DOM value match, ordinary submit click after previous final+120 seconds",
+      "final_observed_at": "2026-10-25T15:52:18.501Z",
+      "screenshot": "/private/tmp/csp-dragon-wide-shumeng-100.jpg",
+      "maximum_time_ms": 1152,
+      "record_source_matches_current_file": true,
+      "memory_mib": 34.3
+    },
+    "luogu": {
+      "status": "awaiting_user_captcha",
+      "problem_url": "https://www.luogu.com.cn/problem/P16057#submit",
+      "record": null,
+      "score": null
+    }
+  },
+  "root_independent_regressions": {
+    "problem": "CSP202309D",
+    "date": "2026-10-26",
+    "machine": "arm64",
+    "platform": "macOS-26.3.1-arm64-arm-64bit",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "flags": "-std=c++17 -O2 -Wall -Wextra -Wpedantic",
+    "source_sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815",
+    "baseline_sha256": null,
+    "sample_cases": 1,
+    "independent_random_cases": 700,
+    "occupancy_masks": 255,
+    "stress": [],
+    "online_status": "not_submitted_by_validator",
+    "status": "passed"
+  }
+}
