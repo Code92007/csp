@@ -1,8 +1,8 @@
 # 曙梦 OJ 提交与核验记录
 
 截至 2026-10-25，工程 160 题中 152 题可查看；另 8 题登录后提示无权查看隐藏题目。
-已提交 115 题：109 题 100 分、6 题非满分、0 题待核验；其余 37 道可见题尚未提交。
-合并洛谷结果后，网站应显示 120 道已验证满分，40 道未验证或未满分。
+已提交 123 题：117 题 100 分、6 题非满分、0 题待核验；其余 29 道可见题尚未提交。
+合并洛谷结果后，网站应显示 131 道已验证满分，29 道未验证或未满分。
 
 只有记录显示 100 分 Accepted 才标记“已验证满分”。曙梦 OJ 和洛谷在此均使用民间复刻数据，不能等同 CCF 官方认证成绩。
 
@@ -135,14 +135,14 @@
 | 201604 | A | 折点计数 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addad4c74ace1cba9a20424) |
 | 201604 | B | 俄罗斯方块 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addaddf74ace1cba9a20472) |
 | 201604 | C | 路径解析 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addae9574ace1cba9a2058d) |
-| 201604 | D | 游戏 | 尚未提交 |
-| 201604 | E | 网络连接 | 尚未提交 |
-| 201512 | A | 数位之和 | 尚未提交 |
-| 201512 | B | 消除类游戏 | 尚未提交 |
-| 201512 | C | 画图 | 尚未提交 |
-| 201512 | D | 送货 | 尚未提交 |
-| 201512 | E | 矩阵 | 尚未提交 |
-| 201509 | A | 数列分段 | 尚未提交 |
+| 201604 | D | 游戏 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addaf1b74ace1cba9a20648) |
+| 201604 | E | 网络连接 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb00e74ace1cba9a206db) |
+| 201512 | A | 数位之和 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb0ce74ace1cba9a20733) |
+| 201512 | B | 消除类游戏 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb15174ace1cba9a207cc) |
+| 201512 | C | 画图 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb24a74ace1cba9a2083e) |
+| 201512 | D | 送货 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb32d74ace1cba9a20871) |
+| 201512 | E | 矩阵 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb3b974ace1cba9a2089c) |
+| 201509 | A | 数列分段 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb44174ace1cba9a20918) |
 | 201509 | B | 日期计算 | 尚未提交 |
 | 201509 | C | 模板生成系统 | 尚未提交 |
 | 201509 | D | 高速公路 | 尚未提交 |

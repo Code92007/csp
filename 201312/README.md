@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "频率统计", "同分规则", "字符串", "校验码", "单调栈", "直方图", "最大矩形", "状态压缩", "计数DP", "图论", "BFS", "反向图", "网格"]
 status: "published"
-problems: [{"id": "A", "title": "出现次数最多的数", "tags": ["频率统计", "同分规则"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312A/"}]}, {"id": "B", "title": "ISBN 号码", "tags": ["字符串", "校验码"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；4 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312B/"}]}, {"id": "C", "title": "最大的矩形", "tags": ["单调栈", "直方图", "最大矩形"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312C/"}]}, {"id": "D", "title": "有趣的数", "tags": ["状态压缩", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；9 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312D/"}]}, {"id": "E", "title": "I’m stuck!", "tags": ["图论", "BFS", "反向图", "网格"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312E/"}]}]
+problems: [{"id": "A", "title": "出现次数最多的数", "tags": ["频率统计", "同分规则"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312A/"}]}, {"id": "B", "title": "ISBN 号码", "tags": ["字符串", "校验码"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；4 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312B/"}]}, {"id": "C", "title": "最大的矩形", "tags": ["单调栈", "直方图", "最大矩形"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；160 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281824"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312C/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305657951"}}, {"id": "D", "title": "有趣的数", "tags": ["状态压缩", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；9 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312D/"}]}, {"id": "E", "title": "I’m stuck!", "tags": ["图论", "BFS", "反向图", "网格"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312E/"}]}]
 ---
 
 # CSP 201312 五题题解
@@ -120,7 +120,7 @@ int main() {
 
 标签：`单调栈` · `直方图` · `最大矩形`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；160 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，洛谷已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；160 组独立随机对拍通过；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305657951)。
 
 ### 题意
 
@@ -129,6 +129,8 @@ int main() {
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201312C/)。
 
 原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201312C)。
+
+洛谷练习：[同题民间复刻](https://www.luogu.com.cn/problem/U281824)。
 
 ### 题解
 

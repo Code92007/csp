@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "集合", "相反数", "层次顺序", "模拟", "字符串解析", "状态机", "有序映射", "分层BFS", "最短路", "几何判定", "动态规划", "资源调度", "状态压缩"]
 status: "published"
-problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/"}]}, {"id": "B", "title": "窗口", "tags": ["层次顺序", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403B/"}]}, {"id": "C", "title": "命令行选项", "tags": ["字符串解析", "状态机", "有序映射"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/"}]}, {"id": "D", "title": "无线网络", "tags": ["分层BFS", "最短路", "几何判定"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；50 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281240"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403D/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305643544"}}, {"id": "E", "title": "任务调度", "tags": ["动态规划", "资源调度", "状态压缩"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403E/"}]}]
+problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281236"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305650472"}}, {"id": "B", "title": "窗口", "tags": ["层次顺序", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403B/"}]}, {"id": "C", "title": "命令行选项", "tags": ["字符串解析", "状态机", "有序映射"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281238"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305653686"}}, {"id": "D", "title": "无线网络", "tags": ["分层BFS", "最短路", "几何判定"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；50 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281240"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403D/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305643544"}}, {"id": "E", "title": "任务调度", "tags": ["动态规划", "资源调度", "状态压缩"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403E/"}]}]
 ---
 
 # CSP 201403 五题题解
@@ -21,7 +21,7 @@ problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "s
 
 标签：`集合` · `相反数`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，洛谷已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305650472)。
 
 ### 题意
 
@@ -30,6 +30,8 @@ problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "s
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/)。
 
 原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403A)。
+
+洛谷练习：[同题民间复刻](https://www.luogu.com.cn/problem/U281236)。
 
 ### 题解
 
@@ -132,7 +134,7 @@ int main() {
 
 标签：`字符串解析` · `状态机` · `有序映射`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，洛谷已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305653686)。
 
 ### 题意
 
@@ -141,6 +143,8 @@ int main() {
 来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/)。
 
 原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403C)。
+
+洛谷练习：[同题民间复刻](https://www.luogu.com.cn/problem/U281238)。
 
 ### 题解
 
