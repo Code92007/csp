@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-25T23:26:44+08:00",
+  "method": "Normal Luogu problem-list browser UI: one title query per requested problem, without the CSPro tag filter; inspected visible first page. Opened the one exact-title candidate to compare its statement.",
+  "read_only": true,
+  "submission_count": 0,
+  "mappings": [],
+  "queries": [
+    {
+      "contest": "201712",
+      "id": "A",
+      "title": "最小差值",
+      "query": "最小差值",
+      "search_url": "https://www.luogu.com.cn/problem/list?type=all&keyword=%E6%9C%80%E5%B0%8F%E5%B7%AE%E5%80%BC&page=1",
+      "displayed_result_count": 972,
+      "visible_rows_checked": 50,
+      "result": "No reliable matching candidate in the inspected first page.",
+      "visible_top_examples": ["P4234 最小差值生成树", "P5146 最大差值", "P5724 求极差 / 最大跨度值 / 最大值和最小值的差"],
+      "project_statement_basis": "Given n positive integers (n<=1000), minimize the absolute difference between any two; duplicates permitted."
+    },
+    {
+      "contest": "201712",
+      "id": "C",
+      "title": "Crontab",
+      "query": "Crontab",
+      "search_url": "https://www.luogu.com.cn/problem/list?type=all&keyword=Crontab&page=1",
+      "displayed_result_count": 0,
+      "visible_rows_checked": 0,
+      "result": "No result returned by this title query."
+    },
+    {
+      "contest": "201712",
+      "id": "D",
+      "title": "行车路线",
+      "query": "行车路线",
+      "search_url": "https://www.luogu.com.cn/problem/list?type=all&keyword=%E8%A1%8C%E8%BD%A6%E8%B7%AF%E7%BA%BF&page=1",
+      "displayed_result_count": 719,
+      "visible_rows_checked": 50,
+      "result": "No reliable matching candidate in the inspected first page.",
+      "visible_top_examples": ["P1933 [NOI2010] 旅行路线", "P4568 [JLOI2011] 飞行路线", "P2233 [HNOI2002] 公交车路线"],
+      "project_statement_basis": "An undirected graph has big roads with linear fatigue and consecutive small-road segments with squared total-length fatigue; minimize fatigue from vertex 1 to n, n<=500."
+    },
+    {
+      "contest": "201712",
+      "id": "E",
+      "title": "商路",
+      "query": "商路",
+      "search_url": "https://www.luogu.com.cn/problem/list?type=all&keyword=%E5%95%86%E8%B7%AF&page=1",
+      "displayed_result_count": 1000,
+      "visible_rows_checked": 50,
+      "result": "Only exact-title visible candidate was inspected and rejected; no reliable mapping.",
+      "rejected_candidates": [
+        {
+          "pid": "P10695",
+          "problem_url": "https://www.luogu.com.cn/problem/P10695",
+          "visible_title": "[SNCPC2024] 商路",
+          "statement_read": "Markets are placed at equal subdivisions of a circle. A trade route goes to a farthest market; route segments must not intersect except at endpoints. Maximize the count of routes. Input gives circumference subdivisions and market positions; output one integer.",
+          "rejection_basis": "CSP201712E is a rooted tree with parent/s/v/f input and descendant-jump profits v_u-(f_u-dist(u,v))^2, asking for the sum of optimal profits modulo 10^18. Both data model and objective differ."
+        }
+      ]
+    },
+    {
+      "contest": "201412",
+      "id": "C",
+      "title": "集合竞价",
+      "query": "集合竞价",
+      "search_url": "https://www.luogu.com.cn/problem/list?type=all&keyword=%E9%9B%86%E5%90%88%E7%AB%9E%E4%BB%B7&page=1",
+      "displayed_result_count": 594,
+      "visible_rows_checked": 50,
+      "result": "No reliable matching candidate in the inspected first page.",
+      "visible_top_examples": ["P1621 集合", "P1978 集合", "P6301 集合"],
+      "project_statement_basis": "Read buy/sell/cancel orders to EOF, maximize min(eligible buy shares, eligible sell shares), then choose the highest opening price among ties."
+    }
+  ],
+  "limitations": [
+    "Non-empty queries use fuzzy search; only the first 50 visible results were inspected. No pagination through hundreds of unrelated candidates was attempted.",
+    "This UI search does not establish that user-created U problems or alternate titles are indexed. No claim of non-existence is made.",
+    "No guessed problem IDs, URL loops, external search-query permutations, or expansion into the remaining 104-problem list were used.",
+    "No main project, agent queue or submission-result files were modified. No login or CAPTCHA blocker was encountered."
+  ]
+}
