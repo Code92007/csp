@@ -1,0 +1,103 @@
+{
+  "problem": "CSP202303C",
+  "date": "2026-10-25",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "flags": "-std=c++17 -O2 -Wall -Wextra -Wpedantic",
+  "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb",
+  "baseline_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9",
+  "baseline_git_blob": "5043e8b75868abef753eab705cc4e38a87ea41b5",
+  "peak_memory": {
+    "case": "unique_attributes",
+    "method": "Fresh Python process, one child; resource.getrusage(RUSAGE_CHILDREN).ru_maxrss on macOS (bytes)",
+    "rss_bytes": 42500096,
+    "note": "One additional maximum-case run measured memory and reconfirmed the output hash; full suite was not rerun."
+  },
+  "samples": 1,
+  "independent_random_cases": 600,
+  "stress": [
+    {
+      "case": "dense_repeated",
+      "n": 2500,
+      "attributes_per_user": 500,
+      "m": 500,
+      "candidate_seconds": 0.07756000000000007,
+      "independent_set_oracle": true,
+      "input_sha256": "c4e9cd42c784b820d2388660ee1f68d58d59c7af80e0a1068c549e5650f7f868",
+      "output_sha256": "09197942eb2849fb1edf279a6d3fbf4717803c126aa918dc3e2e9b4350a4f49e",
+      "baseline_seconds": 1.6303972920000005,
+      "speedup": 21.021110005157283
+    },
+    {
+      "case": "many_values",
+      "n": 2500,
+      "attributes_per_user": 500,
+      "m": 500,
+      "candidate_seconds": 0.1291079169999989,
+      "independent_set_oracle": true,
+      "input_sha256": "f938c14bf142cd3d82e23c4390495e61bbd1285ac323e889e62a859841f6279e",
+      "output_sha256": "2a92a57a7e24b562499894dd9815424927df7d572b31f8a3f2a5f5ac9457a403",
+      "baseline_seconds": 1.970695082999999,
+      "speedup": 15.263936780887075
+    },
+    {
+      "case": "unique_attributes",
+      "n": 2500,
+      "attributes_per_user": 500,
+      "m": 500,
+      "candidate_seconds": 0.04366508300000049,
+      "independent_set_oracle": true,
+      "input_sha256": "8c56c652e558096687978860ee710b1100df1900e0e6b5d90d15116eed6b6c8b",
+      "output_sha256": "07fb7884fd7ab85164cce9cc875f0c3de833244eb3461fb35d3be5d1cbb8448b",
+      "baseline_seconds": 2.622340542,
+      "speedup": 60.05577825192661
+    },
+    {
+      "case": "many_missing",
+      "n": 2500,
+      "attributes_per_user": 500,
+      "m": 500,
+      "candidate_seconds": 0.040503915999998696,
+      "independent_set_oracle": true,
+      "input_sha256": "cf9ba277994605f11a188032c57e758463935a45d78792b0434da46aa9a45412",
+      "output_sha256": "0d26f28c0d8ca7ffebf78ae614f7eaf38183d408579330785b04bc891d74efa6",
+      "baseline_seconds": 2.6563847920000008,
+      "speedup": 65.58340660197118
+    },
+    {
+      "case": "deep_expression",
+      "n": 2500,
+      "attributes_per_user": 500,
+      "m": 500,
+      "candidate_seconds": 0.07647150000000025,
+      "independent_set_oracle": true,
+      "input_sha256": "6982faf4e721173063f3a780b2225a3e6829cf0419d2c6e0c8b8c240f4b9e8a6",
+      "output_sha256": "09197942eb2849fb1edf279a6d3fbf4717803c126aa918dc3e2e9b4350a4f49e",
+      "baseline_seconds": 1.649755541000001,
+      "speedup": 21.573469083253183
+    },
+    {
+      "case": "wide_attribute_ids",
+      "n": 2500,
+      "attributes_per_user": 500,
+      "m": 500,
+      "candidate_seconds": 0.13215608299999815,
+      "independent_set_oracle": true,
+      "input_sha256": "594208f7ab13bd18bd396150e9adb58a0e97805e130a05a8797f9965233193ae",
+      "output_sha256": "2a92a57a7e24b562499894dd9815424927df7d572b31f8a3f2a5f5ac9457a403",
+      "baseline_seconds": 2.3456835420000033,
+      "speedup": 17.749342207728994
+    }
+  ],
+  "online_status": "Shumeng 100 Accepted; Luogu current source awaiting recheck",
+  "status": "passed",
+  "online_validation": {
+    "record": "https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef",
+    "score": 100,
+    "verdict": "Accepted",
+    "sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb",
+    "time": "21:02:34",
+    "final_observed_at": "2026-10-25T13:04:22.804Z"
+  }
+}

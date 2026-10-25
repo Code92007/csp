@@ -1,94 +1,138 @@
 #include <algorithm>
 #include <array>
 #include <cstdint>
-#include <iostream>
+#include <cstdio>
+#include <iterator>
 #include <set>
-#include <unordered_map>
 #include <utility>
 #include <vector>
 using namespace std;
-using i64 = long long;
-using Point = pair<i64, i64>;
-uint64_t code(i64 x, i64 y) {
-    return (uint64_t(x) << 32) | uint64_t(y);
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    i64 n, m;
-    int p, q;
-    cin >> n >> m >> p >> q;
-    vector<Point> position(p + 1);
-    array<set<Point>, 4> lines;
-    unordered_map<uint64_t, int> who;
-    who.reserve(p * 2);
-    auto keys = [](i64 x, i64 y) {
-        return array<Point, 4>{Point{y, x}, Point{x, y}, Point{x - y, x}, Point{x + y, x}};
-    };
-    auto insert = [&](int id) {
-        auto [x, y] = position[id];
-        auto k = keys(x, y);
-        for (int j = 0; j < 4; ++j)
-            lines[j].insert(k[j]);
-        who[code(x, y)] = id;
-    };
-    auto erase = [&](int id) {
-        auto [x, y] = position[id];
-        auto k = keys(x, y);
-        for (int j = 0; j < 4; ++j)
-            lines[j].erase(k[j]);
-        who.erase(code(x, y));
-    };
-    for (int i = 1; i <= p; ++i) {
-        cin >> position[i].first >> position[i].second;
-        insert(i);
+
+class FastInput {
+    static constexpr int SIZE = 1 << 16;
+    char buffer[SIZE];
+    int pos = 0, length = 0;
+    int get() {
+        if (pos == length) {
+            length = int(fread(buffer, 1, SIZE, stdin));
+            pos = 0;
+            if (!length) return EOF;
+        }
+        return buffer[pos++];
     }
-    const int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1}, dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
+public:
+    int read() {
+        int c = get(), value = 0;
+        while (c <= ' ' && c != EOF) c = get();
+        while (c >= '0' && c <= '9') {
+            value = value * 10 + c - '0';
+            c = get();
+        }
+        return value;
+    }
+};
+
+constexpr uint64_t MASK = (uint64_t(1) << 30) - 1;
+struct Entry {
+    uint64_t key;
+    int slot;
+    bool operator<(const Entry &other) const { return key < other.key; }
+};
+using Tree = set<Entry>;
+struct Slot {
+    int x, y, employee;
+    array<Tree::iterator, 4> at;
+};
+array<uint64_t, 4> keys(int x, int y) {
+    return {(uint64_t(y) << 30) | uint32_t(x),
+            (uint64_t(x) << 30) | uint32_t(y),
+            (uint64_t(x - y + 1000000000) << 30) | uint32_t(x),
+            (uint64_t(x + y) << 30) | uint32_t(x)};
+}
+
+int main() {
+    FastInput in;
+    int n = in.read(), m = in.read(), p = in.read(), q = in.read();
+    vector<Slot> slots(p + 1);
+    array<Tree, 4> lines;
+    for (int i = 1; i <= p; ++i) {
+        Slot &slot = slots[i];
+        slot.x = in.read(); slot.y = in.read(); slot.employee = i;
+        auto key = keys(slot.x, slot.y);
+        for (int j = 0; j < 4; ++j)
+            slot.at[j] = lines[j].insert({key[j], i}).first;
+    }
+    const int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1};
+    const int dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
+    const int positiveDirection[4] = {0, 2, 1, 7};
     while (q--) {
-        i64 u, v;
-        int t;
-        cin >> u >> v >> t;
-        t %= 8;
-        if (t == 0)
-            continue;
-        i64 boundary = min({u - 1, n - u, v - 1, m - v}), distance = boundary + 1;
-        auto k = keys(u, v);
+        int u = in.read(), v = in.read(), t = in.read();
+        int boundary = min({u - 1, n - u, v - 1, m - v});
+        if (!boundary) continue;
+        int distance = boundary + 1;
+        int nearest[8] = {}, distances[8] = {};
+        auto key = keys(u, v);
         for (int j = 0; j < 4; ++j) {
-            auto [line, coordinate] = k[j];
-            auto after = lines[j].upper_bound(k[j]);
-            if (after != lines[j].end() && after->first == line)
-                distance = min(distance, after->second - coordinate);
+            auto after = lines[j].upper_bound({key[j], 0});
+            auto accept = [&](Tree::iterator it, int direction) {
+                if ((it->key >> 30) != (key[j] >> 30)) return;
+                int delta = int(it->key & MASK) - int(key[j] & MASK);
+                if (delta < 0) delta = -delta;
+                nearest[direction] = it->slot;
+                distances[direction] = delta;
+                distance = min(distance, delta);
+            };
+            if (after != lines[j].end()) accept(after, positiveDirection[j]);
             if (after != lines[j].begin()) {
-                auto before = after;
-                --before;
-                if (*before == k[j]) {
-                    if (before == lines[j].begin())
-                        continue;
+                auto before = prev(after);
+                if (before->key == key[j]) {
+                    if (before == lines[j].begin()) continue;
                     --before;
                 }
-                if (before->first == line)
-                    distance = min(distance, coordinate - before->second);
+                accept(before, (positiveDirection[j] + 4) & 7);
             }
         }
-        if (distance > boundary)
-            continue;
-        array<pair<int, int>, 8> moved;
-        int movedCount = 0;
+        if (distance > boundary) continue;
+
+        int occupied[8] = {}, destinationEmployee[8] = {};
         for (int d = 0; d < 8; ++d) {
-            auto it = who.find(code(u + distance * dx[d], v + distance * dy[d]));
-            if (it != who.end())
-                moved[movedCount++] = {it->second, (d + t) % 8};
+            if (nearest[d] && distances[d] == distance) {
+                occupied[d] = nearest[d];
+                destinationEmployee[(d + t) & 7] = slots[nearest[d]].employee;
+            }
         }
-        for (int i = 0; i < movedCount; ++i)
-            erase(moved[i].first);
-        for (int i = 0; i < movedCount; ++i) {
-            auto [id, d] = moved[i];
-            position[id] = {u + distance * dx[d], v + distance * dy[d]};
-            insert(id);
+        int vacated[4], targets[4], count = 0, targetCount = 0;
+        for (int d = 0; d < 8; ++d) {
+            if (occupied[d] && destinationEmployee[d]) {
+                // The position stays occupied: only its employee label changes.
+                slots[occupied[d]].employee = destinationEmployee[d];
+            } else if (occupied[d]) {
+                vacated[count++] = occupied[d];
+            } else if (destinationEmployee[d]) {
+                targets[targetCount++] = d;
+            }
+        }
+        // Two subsets of an 8-element set with equal cardinality differ in
+        // at most 4 positions on each side. Reuse the vacated position slots.
+        array<array<Tree::node_type, 4>, 4> detached;
+        for (int i = 0; i < count; ++i)
+            for (int j = 0; j < 4; ++j)
+                detached[i][j] = lines[j].extract(slots[vacated[i]].at[j]);
+        for (int i = 0; i < count; ++i) {
+            int id = vacated[i], d = targets[i];
+            Slot &slot = slots[id];
+            slot.x = u + distance * dx[d];
+            slot.y = v + distance * dy[d];
+            slot.employee = destinationEmployee[d];
+            auto newKey = keys(slot.x, slot.y);
+            for (int j = 0; j < 4; ++j) {
+                detached[i][j].value().key = newKey[j];
+                slot.at[j] = lines[j].insert(std::move(detached[i][j])).position;
+            }
         }
     }
-    i64 answer = 0;
+    long long answer = 0;
     for (int i = 1; i <= p; ++i)
-        answer ^= i * position[i].first + position[i].second;
-    cout << answer << '\n';
+        answer ^= 1LL * slots[i].employee * slots[i].x + slots[i].y;
+    printf("%lld\n", answer);
 }

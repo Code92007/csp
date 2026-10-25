@@ -1,7 +1,7 @@
 # 曙梦 OJ 提交与核验记录
 
 截至 2026-10-25，工程 160 题中 152 题可查看；另 8 题登录后提示无权查看隐藏题目。
-已提交 150 题：146 题 100 分、4 题非满分、0 题待核验；其余 2 道可见题尚未提交。
+已提交 152 题：150 题 100 分、2 题非满分、0 题待核验；其余 0 道可见题尚未提交。
 合并洛谷结果后，网站应显示 155 道已验证满分，5 道未验证或未满分。
 
 本轮开始版本 [5183910](https://github.com/Code92007/csp/commit/51839105bf5e9fe5096a61f842f6de9a88274497) 有 95 道满分题；本轮净增 60 道。
@@ -77,7 +77,7 @@
 | 202309 | A | 坐标变换（其一） | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6) |
 | 202309 | B | 坐标变换（其二） | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52) |
 | 202309 | C | 梯度求解 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8cca67df0b81749be25) |
-| 202309 | D | 阴阳龙 | [15 分 Time Exceeded](https://oj.shumeng.tech/record/6addca8774ace1cba9a21e22) |
+| 202309 | D | 阴阳龙 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b) |
 | 202309 | E | 阻击 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d) |
 | 202305 | A | 重复局面 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8d0a67df0b81749be5a) |
 | 202305 | B | 矩阵运算 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8d2a67df0b81749be67) |
@@ -86,7 +86,7 @@
 | 202305 | E | 闪耀巡航 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8d7a67df0b81749be8f) |
 | 202303 | A | 田地丈量 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce918a67df0b81749c020) |
 | 202303 | B | 垦田计划 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a) |
-| 202303 | C | LDAP | [70 分 Time Exceeded](https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46) |
+| 202303 | C | LDAP | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef) |
 | 202303 | D | 星际网络 II | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce91da67df0b81749c032) |
 | 202303 | E | 施肥 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce91ea67df0b81749c036) |
 | 202206 | A | 归一化处理 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce920a67df0b81749c03a) |
@@ -167,11 +167,11 @@
 | 201403 | A | 相反数 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70) |
 | 201403 | B | 窗口 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc14d74ace1cba9a2189b) |
 | 201403 | C | 命令行选项 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8) |
-| 201403 | D | 无线网络 | 尚未提交 |
+| 201403 | D | 无线网络 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addf9b174ace1cba9a22fa2) |
 | 201403 | E | 任务调度 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc1d874ace1cba9a218be) |
 | 201312 | A | 出现次数最多的数 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc26374ace1cba9a21910) |
 | 201312 | B | ISBN 号码 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc2ed74ace1cba9a219a9) |
-| 201312 | C | 最大的矩形 | 尚未提交 |
+| 201312 | C | 最大的矩形 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addfb8f74ace1cba9a23115) |
 | 201312 | D | 有趣的数 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc37d74ace1cba9a21a93) |
 | 201312 | E | I’m stuck! | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc40e74ace1cba9a21ab6) |
 

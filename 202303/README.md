@@ -4,9 +4,9 @@ contest: "202303"
 contest_month: "2023-03"
 date: "2026-10-23"
 updated: "2026-10-25"
-tags: ["CSP", "矩形相交", "几何", "二分答案", "单调性", "递归下降", "位集", "倒排索引", "离散化", "线段树", "区间赋值", "分治", "树状数组", "区间计数"]
+tags: ["CSP", "矩形相交", "几何", "二分答案", "单调性", "递归下降", "位集", "离线处理", "排序", "离散化", "线段树", "区间赋值", "分治", "树状数组", "区间计数"]
 status: "published"
-problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16694"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce918a67df0b81749c020"}}, {"id": "B", "title": "垦田计划", "tags": ["二分答案", "单调性"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16695"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a"}}, {"id": "C", "title": "LDAP", "tags": ["递归下降", "位集", "倒排索引"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 70 分 Time Exceeded；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16696"}], "oj": {"status": "failed", "score": 70, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490926"}}, {"id": "D", "title": "星际网络 II", "tags": ["离散化", "线段树", "区间赋值"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16697"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91da67df0b81749c032"}}, {"id": "E", "title": "施肥", "tags": ["分治", "线段树", "树状数组", "区间计数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16698"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91ea67df0b81749c036"}}]
+problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16694"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce918a67df0b81749c020"}}, {"id": "B", "title": "垦田计划", "tags": ["二分答案", "单调性"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16695"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a"}}, {"id": "C", "title": "LDAP", "tags": ["递归下降", "位集", "离线处理", "排序"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过；曙梦 OJ 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16696"}], "previous_oj": {"status": "failed", "score": 70, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490926", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef", "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb"}}, {"id": "D", "title": "星际网络 II", "tags": ["离散化", "线段树", "区间赋值"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16697"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91da67df0b81749c032"}}, {"id": "E", "title": "施肥", "tags": ["分治", "线段树", "树状数组", "区间计数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16698"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91ea67df0b81749c036"}}]
 ---
 
 # CSP 202303 五题题解
@@ -122,9 +122,9 @@ int main() {
 
 ## C. LDAP
 
-标签：`递归下降` · `位集` · `倒排索引`
+标签：`递归下降` · `位集` · `离线处理` · `排序`
 
-状态：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 70 分 Time Exceeded](https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490926)（民间复刻评测）。
+状态：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef)（民间复刻评测）。
 
 ### 题意
 
@@ -136,11 +136,70 @@ int main() {
 
 ### 题解
 
-按属性建立倒排索引，记录 `(属性值,用户下标)` 并排序。断言用二分定位相等值区间，反断言遍历该属性的记录选取不等值；属性不存在的用户两者都不匹配。这与把“等于”的结果直接取反不同。
+#### 1. 用一个位集表示一批匹配用户
 
-递归下降解析表达式。原子表达式返回用户 bitset；逻辑表达式先递归读完两个括号中的表达式，再对位集做按位与／或。解析指针总是停在当前表达式之后，不使用短路逻辑跳过解析分支。最后扫描预先按 DN 排序的用户，输出被置位的下标。
+给用户按输入顺序编号 `0..n-1`。一个 `bitset<2500>` 就能表示一批用户：第 `i` 位为 1，表示用户 `i` 匹配。这样，逻辑与对应位集的 `&`，逻辑或对应 `|`。
 
-原子结果直接符合定义，逻辑结点的位集交并也符合组合语义，结构归纳得到正确性。设一条表达式含 A 个原子、L 个字符，用户数 n，则单次保守时间 $O(L+An)$，位集逻辑运算每次 $O(n/64)$；索引空间与总属性数线性相关，递归位集另占 $O(Ln/64)$。
+关键是原子表达式。对于属性 `a`，记 `exists[a]` 为具有该属性的用户集合；对于属性与值的组合 `(a,b)`，记 `equals[a,b]` 为属性值等于 `b` 的用户集合。则
+
+$$a:b\quad\longrightarrow\quad equals[a,b],$$
+
+$$a\mathbin{\sim}b\quad\longrightarrow\quad exists[a]\ \&\ \sim equals[a,b].$$
+
+反断言不能直接把相等集合取反：没有属性 `a` 的用户也不应匹配。必须再与 `exists[a]` 求交集。
+
+#### 2. 只给查询实际用到的属性和值建位集
+
+用户数据最多有 `2500 × 500 = 1250000` 条属性记录。若给每条不同的属性值组合都建一个完整位集，会浪费不少空间；反过来，若每次原子查询都重新扫描该属性的用户，又会在长表达式中重复工作。
+
+本题没有在线修改，所有表达式都可以先读入。因此先扫描全部表达式，收集其中出现的 `(属性,值)`，排序并去重；再从中得到实际需要查询的属性列表。
+
+对于收集到的组合分配 `equals` 位集，对于收集到的属性分配 `exists` 位集。用户数据中没有被表达式使用的属性不需要位集；某个被查询的组合没有出现在任何用户身上时，它的相等位集自然全为 0。
+
+每条表达式最多约 250 个原子，500 条表达式最多约 125000 个原子。因此即使都不同，位集数量也受查询总长度约束，而不会随着全部用户属性记录数无限增长。
+
+#### 3. 排序后一次构建索引
+
+读入用户时，把每条属性保存为 `(属性,值,用户下标)` 的扁平记录。代码用
+
+```text
+key = (uint64_t(属性) << 32) | 值
+```
+
+编码属性和值；两者均不超过 `10^9`，编码不会冲突，整数顺序也等于先比较属性、再比较值的顺序。
+
+把用户记录按 `key` 排序后，与已排序的查询组合列表、查询属性列表一起用双指针扫描：
+
+- 若记录的属性是需要查询的属性，把该用户加入相应 `exists`。
+- 若记录的完整 `key` 是需要查询的组合，把该用户加入相应 `equals`。
+
+这样每条记录只在建索引时处理一次。无需为百万个不同属性建立各自的小容器，也不会让每次反断言扫描该属性下的全部用户。索引建好后，原始记录可以释放。
+
+#### 4. 递归下降解析完整表达式
+
+维护一个指向表达式当前字符的位置：
+
+1. 遇到数字，读出属性、操作符和值，在排序后的组合列表中二分找到对应位集，按前面的公式返回结果。
+2. 遇到 `&` 或 `|`，依次解析两个括号里的完整表达式，再对返回的位集求交或求并。
+
+即使左子表达式的结果已经为空，也要正确读完右子表达式，保证解析位置没有错位。代码没有使用可能跳过解析分支的逻辑短路。
+
+最后预先把用户按 DN 排序，逐个查看结果位集中的用户下标，再按顺序输出 DN。DN 和输入下标是两种不同编号，不能混用。
+
+#### 5. 正确性与复杂度
+
+`exists` 和 `equals` 由用户原始记录直接构建，所以两个原子表达式的位集准确符合题意。组合表达式又分别取两个子结果的交集或并集，对表达式树作结构归纳即可得到整个结果正确。
+
+设属性记录总数为 `P`，不同查询组合数为 `K`，被查询的不同属性数为 `H`，所有表达式的总原子数为 `A`，总字符数为 `L`；位集占用 `W` 个机器字，当前上限为 `ceil(2500/64)=40`。
+
+- 排序和构建索引需要 `O(P log P + K log K + (K+H)W)`，排序后的合并扫描为 `O(P+K+H)`。
+- 解析与求值需要 `O(L + A(log K+W))`。
+- 输出前扫描用户需要 `O(mn)`，另计实际输出字符量。
+- 空间为 `O(P + (K+H)W + L)`，以及递归解析的临时位集。按题目上限，最保守的位集和属性记录总量也在 512 MiB 限制内。
+
+实现使用缓冲输入输出，避免大量属性数字及结果 DN 的输入输出成为新的耗时来源。
+
+本版本地验证：1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过。完整测试配置和同机基准见 [回归报告](../tests/ldap-report.json)。
 
 ### 代码
 
@@ -149,85 +208,177 @@ int main() {
 ```cpp
 #include <algorithm>
 #include <bitset>
-#include <cctype>
-#include <iostream>
+#include <cstdint>
+#include <cstdio>
 #include <string>
-#include <unordered_map>
 #include <utility>
 #include <vector>
 using namespace std;
 using Bits = bitset<2500>;
-unordered_map<int, vector<pair<int, int>>> attrs;
-string expr;
-size_t posi;
-int number() {
-    int x = 0;
-    while (posi < expr.size() && isdigit(expr[posi]))
-        x = x * 10 + expr[posi++] - '0';
-    return x;
-}
-Bits parse() {
-    if (expr[posi] == '&' || expr[posi] == '|') {
-        char op = expr[posi++];
-        ++posi;
-        Bits a = parse();
-        posi += 2;
-        Bits b = parse();
-        ++posi;
-        return op == '&' ? (a & b) : (a | b);
+
+class FastIO {
+    static constexpr int SIZE = 1 << 16;
+    char input[SIZE], output[SIZE];
+    int pos = 0, length = 0, used = 0;
+    int get() {
+        if (pos == length) {
+            length = int(fread(input, 1, SIZE, stdin));
+            pos = 0;
+            if (!length) return EOF;
+        }
+        return input[pos++];
     }
-    int key = number();
-    char op = expr[posi++];
-    int value = number();
-    Bits ans;
-    auto it = attrs.find(key);
-    if (it == attrs.end())
-        return ans;
-    const auto &v = it->second;
-    if (op == ':') {
-        auto l = lower_bound(v.begin(), v.end(), pair<int, int>{value, -1});
-        for (; l != v.end() && l->first == value; ++l)
-            ans.set(l->second);
-    } else
-        for (auto [val, id] : v)
-            if (val != value)
-                ans.set(id);
-    return ans;
+public:
+    ~FastIO() { flush(); }
+    int read() {
+        int c = get(), value = 0;
+        while (c <= ' ' && c != EOF) c = get();
+        while (c >= '0' && c <= '9') {
+            value = value * 10 + c - '0';
+            c = get();
+        }
+        return value;
+    }
+    string word() {
+        string result;
+        int c = get();
+        while (c <= ' ' && c != EOF) c = get();
+        while (c > ' ') {
+            result.push_back(char(c));
+            c = get();
+        }
+        return result;
+    }
+    void flush() {
+        fwrite(output, 1, used, stdout);
+        used = 0;
+    }
+    void put(char c) {
+        if (used == SIZE) flush();
+        output[used++] = c;
+    }
+    void write(int value) {
+        char digits[10];
+        int count = 0;
+        do {
+            digits[count++] = char('0' + value % 10);
+            value /= 10;
+        } while (value);
+        while (count) put(digits[--count]);
+    }
+};
+
+uint64_t encode(int attribute, int value) {
+    return (uint64_t(attribute) << 32) | uint32_t(value);
 }
+int number(const string &text, size_t &pos) {
+    int value = 0;
+    while (pos < text.size() && text[pos] >= '0' && text[pos] <= '9')
+        value = value * 10 + text[pos++] - '0';
+    return value;
+}
+struct Record {
+    uint64_t key;
+    int user;
+};
+
+class Evaluator {
+    const vector<uint64_t> &keys;
+    const vector<int> &attributeOf;
+    const vector<Bits> &equals, &exists;
+public:
+    Evaluator(const vector<uint64_t> &k, const vector<int> &a,
+              const vector<Bits> &e, const vector<Bits> &h)
+        : keys(k), attributeOf(a), equals(e), exists(h) {}
+    Bits parse(const string &text, size_t &pos) const {
+        if (text[pos] == '&' || text[pos] == '|') {
+            char op = text[pos++];
+            ++pos; // '('
+            Bits left = parse(text, pos);
+            pos += 2; // ')('
+            Bits right = parse(text, pos);
+            ++pos; // ')'
+            return op == '&' ? left & right : left | right;
+        }
+        int attribute = number(text, pos);
+        char op = text[pos++];
+        int value = number(text, pos);
+        size_t index = lower_bound(keys.begin(), keys.end(), encode(attribute, value)) - keys.begin();
+        if (op == ':') return equals[index];
+        // A missing attribute never satisfies either assertion form.
+        return exists[attributeOf[index]] & ~equals[index];
+    }
+};
+
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
+    FastIO io;
+    int n = io.read();
     vector<pair<int, int>> dn;
-    for (int i = 0; i < n; i++) {
-        int d, k;
-        cin >> d >> k;
-        dn.push_back({d, i});
-        while (k--) {
-            int a, v;
-            cin >> a >> v;
-            attrs[a].push_back({v, i});
+    vector<Record> records;
+    records.reserve(n * 500);
+    for (int i = 0; i < n; ++i) {
+        int id = io.read(), count = io.read();
+        dn.push_back({id, i});
+        while (count--) {
+            int attribute = io.read(), value = io.read();
+            records.push_back({encode(attribute, value), i});
         }
     }
-    for (auto &[key, v] : attrs)
-        sort(v.begin(), v.end());
-    sort(dn.begin(), dn.end());
-    int m;
-    cin >> m;
-    while (m--) {
-        cin >> expr;
-        posi = 0;
-        Bits ans = parse();
-        bool first = true;
-        for (auto [d, i] : dn)
-            if (ans[i]) {
-                if (!first)
-                    cout << ' ';
-                cout << d;
-                first = false;
+    int m = io.read();
+    vector<string> expressions(m);
+    vector<uint64_t> keys;
+    for (string &text : expressions) {
+        text = io.word();
+        for (size_t pos = 0; pos < text.size();) {
+            if (text[pos] >= '0' && text[pos] <= '9') {
+                int attribute = number(text, pos);
+                ++pos; // ':' or '~'
+                int value = number(text, pos);
+                keys.push_back(encode(attribute, value));
+            } else {
+                ++pos;
             }
-        cout << '\n';
+        }
+    }
+    sort(keys.begin(), keys.end());
+    keys.erase(unique(keys.begin(), keys.end()), keys.end());
+    vector<int> attributes, attributeOf;
+    for (uint64_t key : keys) {
+        int attribute = int(key >> 32);
+        if (attributes.empty() || attributes.back() != attribute)
+            attributes.push_back(attribute);
+        attributeOf.push_back(int(attributes.size()) - 1);
+    }
+    vector<Bits> equals(keys.size()), exists(attributes.size());
+    sort(records.begin(), records.end(), [](const Record &a, const Record &b) {
+        return a.key < b.key;
+    });
+    size_t keyIndex = 0, attributeIndex = 0;
+    for (const Record &record : records) {
+        int attribute = int(record.key >> 32);
+        while (attributeIndex < attributes.size() && attributes[attributeIndex] < attribute)
+            ++attributeIndex;
+        if (attributeIndex < attributes.size() && attributes[attributeIndex] == attribute)
+            exists[attributeIndex].set(record.user);
+        while (keyIndex < keys.size() && keys[keyIndex] < record.key)
+            ++keyIndex;
+        if (keyIndex < keys.size() && keys[keyIndex] == record.key)
+            equals[keyIndex].set(record.user);
+    }
+    vector<Record>().swap(records);
+    sort(dn.begin(), dn.end());
+    Evaluator evaluator(keys, attributeOf, equals, exists);
+    for (const string &text : expressions) {
+        size_t pos = 0;
+        Bits answer = evaluator.parse(text, pos);
+        bool first = true;
+        for (auto [id, user] : dn) {
+            if (!answer[user]) continue;
+            if (!first) io.put(' ');
+            io.write(id);
+            first = false;
+        }
+        io.put('\n');
     }
 }
 ```

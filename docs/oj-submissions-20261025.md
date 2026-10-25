@@ -71,7 +71,12 @@
 | 17:32:28 | CSP202112E | 56 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addccac74ace1cba9a21f0f) |
 | 17:34:49 | CSP201403A | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70) |
 | 20:31:17 | CSP201403C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8) |
+| 20:44:33 | CSP201403D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addf9b174ace1cba9a22fa2) |
+| 20:52:31 | CSP201312C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfb8f74ace1cba9a23115) |
 | 17:30:00 | CSP202312D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addcc1874ace1cba9a21ea2) |
+| 21:00:03 | CSP202309D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b) |
+| 21:02:34 | CSP202303C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef) |
+| 21:06:43 | CSP202112E | 84 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addfee374ace1cba9a233c6) |
 
 按上述实际提交时间排序，本轮曙梦相邻提交的最短间隔为 126 秒；未并发提交，也未使用 HTTP 脚本或 curl 提交。
 

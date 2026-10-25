@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "累加", "平移变换", "前缀积", "前缀和", "旋转变换", "自动微分", "表达式", "栈", "有序集合", "几何", "模拟", "动态树", "树的直径", "动态规划"]
 status: "published"
-problems: [{"id": "A", "title": "坐标变换（其一）", "tags": ["累加", "平移变换"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16054"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"}}, {"id": "B", "title": "坐标变换（其二）", "tags": ["前缀积", "前缀和", "旋转变换"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17/C++20 编译通过；2 个保存样例、500 组独立逐次操作对拍与 70 位精度边界复核通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16055"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490746", "code_git_blob": "20776d0627c78f6c02502fc311a5648a5f01a3cb", "note": "上一版代码记录；本版新增高低角度前缀精度修复，以曙梦复验为准"}}, {"id": "C", "title": "梯度求解", "tags": ["自动微分", "表达式", "栈"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16056"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"}}, {"id": "D", "title": "阴阳龙", "tags": ["有序集合", "几何", "模拟"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 15 分 Time Exceeded；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16057"}], "oj": {"status": "failed", "score": 15, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addca8774ace1cba9a21e22", "source_sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490899"}}, {"id": "E", "title": "阻击", "tags": ["动态树", "树的直径", "动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16058"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"}}]
+problems: [{"id": "A", "title": "坐标变换（其一）", "tags": ["累加", "平移变换"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16054"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"}}, {"id": "B", "title": "坐标变换（其二）", "tags": ["前缀积", "前缀和", "旋转变换"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17/C++20 编译通过；2 个保存样例、500 组独立逐次操作对拍与 70 位精度边界复核通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16055"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490746", "code_git_blob": "20776d0627c78f6c02502fc311a5648a5f01a3cb", "note": "上一版代码记录；本版新增高低角度前缀精度修复，以曙梦复验为准"}}, {"id": "C", "title": "梯度求解", "tags": ["自动微分", "表达式", "栈"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16056"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"}}, {"id": "D", "title": "阴阳龙", "tags": ["有序集合", "几何", "模拟"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例、700 组独立随机对拍、255 种八方向占位掩码与 6 组 p=q=100000 上界测试通过；曙梦 OJ 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16057"}], "previous_oj": {"status": "failed", "score": 15, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addca8774ace1cba9a21e22", "source_sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490899", "source_sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b", "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a"}}, {"id": "E", "title": "阻击", "tags": ["动态树", "树的直径", "动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16058"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"}}]
 ---
 
 # CSP 202309 五题题解
@@ -268,7 +268,7 @@ int main() {
 
 标签：`有序集合` · `几何` · `模拟`
 
-状态：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；[曙梦 OJ 15 分 Time Exceeded](https://oj.shumeng.tech/record/6addca8774ace1cba9a21e22)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490899)（民间复刻评测）。
+状态：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例、700 组独立随机对拍、255 种八方向占位掩码与 6 组 p=q=100000 上界测试通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b)（民间复刻评测）。
 
 ### 题意
 
@@ -280,13 +280,68 @@ int main() {
 
 ### 题解
 
-八条射线其实来自四条直线：水平、竖直、斜率 1、斜率 -1。分别建立四个有序集合，键写作 $(y,x)$、$(x,y)$、$(x-y,x)$、$(x+y,x)$。第一维区分直线，第二维给出线上顺序。
+#### 1. 八个方向对应四种直线
 
-每次事件在四个集合中各做一次 `upper_bound`，得到严格后继，并从它的前一项得到前驱；若前一项恰好是中心员工，则再往前一步。检查第一维相同，便得到八个方向的最近员工。最近距离还需不大于 $\min(u-1,n-u,v-1,m-v)$，因为题目要求八个位置都在边界内，不能只检查有员工的那个方向。
+一个点的八条射线可以分为四条直线：
 
-得到 $k$ 后，查八个候选坐标上的员工编号。先从四个集合中删除全部需要移动的员工，再计算新方向并全部插入。若边删边插，新位置可能覆盖另一名尚未移动的员工，因此必须分成两步。另用坐标到编号的哈希表定位员工；旋转整圈不改变任何位置，可以直接跳过。每次移动人数至多八，用固定长度数组保存，避免在事件循环中反复分配内存。
+| 直线 | 直线编号 | 线上排序坐标 | 坐标增大的方向 |
+| --- | --- | --- | --- |
+| 水平 | `y` | `x` | 右 |
+| 竖直 | `x` | `y` | 上 |
+| 斜率为 1 | `x-y` | `x` | 右上 |
+| 斜率为 -1 | `x+y` | `x` | 右下 |
 
-有序集合的邻点就是各射线最近点，取最小值得到题目定义的 $k$；四集合始终同步保存所有员工，轮转又同时应用，所以按事件归纳可知最终位置正确。时间 $O((p+q)\log p)$，空间 $O(p)$；异或前的 $ix_i+y_i$ 用 64 位。
+分别建立四个有序集合，按“直线编号、线上坐标”排序。查询中心时，取同一直线上的严格前驱和严格后继，就得到八个方向各自最近的员工。要跳过恰好位于中心的员工；前驱或后继若属于另一条直线，也不能采用。
+
+八个方向都不越界的最大距离为
+
+$$b=\min(u-1,n-u,v-1,m-v).$$
+
+若八个候选距离的最小值超过 `b`，本次事件不产生移动。否则这个最小值就是 `k`，所有距离恰好为 `k` 的候选员工都参加轮转。由于已经获得候选所在的槽位，不必再用坐标哈希表查一次人。
+
+#### 2. 把“哪个位置有人”与“这个人是谁”分开
+
+容易想到的实现是：把参加轮转的最多 8 名员工全部从四个集合删除，移动后再全部插入。但是，轮转后仍有人占据的位置，其几何索引其实没有变化。
+
+因此我们为每个当前占用的位置建立一个**槽位**，槽位记录：
+
+- 当前坐标；
+- 当前在该位置的员工编号；
+- 该位置在四个有序集合中的迭代器。
+
+槽位编号不等于员工编号。旋转只改变员工编号的分布；只有占用位置发生变化时才需要改动有序集合。
+
+设轮转前八个位置中有人占用的集合为 `A`，将其方向整体平移 `t` 后得到新的占用集合 `B`。先保存每个目标方向应该收到哪个员工，再统一更新：
+
+1. `A` 与 `B` 的公共位置：坐标保持原样，只更换槽位中的员工编号。
+2. `A` 中有、`B` 中没有的位置：槽位被腾空。
+3. `B` 中有、`A` 中没有的位置：把腾出的槽位搬到这些新位置，并填入对应员工编号。
+
+因为 `|A|=|B|`，腾出和新建的位置数相等。更进一步，它们都不超过 4：若总共有 `s` 个员工参与，腾出数量至多是 `min(s,8-s)`。当八个位置全有人时，几何索引完全不用修改，只交换员工编号即可。
+
+这一步同时避免了覆盖问题：必须先保存所有目标员工编号，再更改任何槽位，不能一边读取旧编号一边写入新编号。
+
+#### 3. 复用树节点，避免反复分配
+
+每个需要迁移的槽位在四个集合中各有一个节点。代码用 C++17 的 `set::extract` 根据已保存的迭代器取出节点，改写排序键，再通过 `insert` 放回。
+
+节点先脱离集合后才能改键，否则会破坏有序集合的顺序。所有待迁移槽位先统一取出，再统一放入新坐标；不需要申请和释放新的树节点。未迁移槽位的迭代器仍然有效。
+
+排序键用一个 64 位无符号整数编码。因为线上坐标小于 `2^30`，可以用
+
+```text
+key = (直线编号 << 30) | 线上坐标
+```
+
+斜率为 1 的直线编号 `x-y` 可能为负，统一加上 `10^9` 后再编码。其他编号以及平移后的编号均小于 `2^31`，总共只需 61 位。这样保留与二元组相同的字典序，又减少每次树比较的工作。
+
+#### 4. 正确性与复杂度
+
+同一直线严格前驱、后继分别是该方向的最近员工，因此四棵树能准确求出八方向的候选和本次最小合法距离。占用集合 `A` 经过方向偏移得到 `B`，每个目标位置的员工由原题轮转规则唯一确定；公共位置只改编号，其他位置通过槽位迁移补齐，所以几何状态和员工身份都与同时移动一致。
+
+初始化需要 `O(p log p)`，每次事件进行四次前驱/后继搜索，并至多迁移 4 个槽位，最坏 `O(log p)`，总复杂度为 `O((p+q) log p)`，空间为 `O(p)`。最终遍历所有槽位，用槽位保存的**员工编号**计算异或和；乘法使用 `long long`。
+
+本版本地验证：1 个保存样例、700 组独立随机对拍、255 种八方向占位掩码与 6 组 p=q=100000 上界测试通过。完整测试配置和同机基准见 [回归报告](../tests/yin_yang_dragon-report.json)。
 
 ### 代码
 
@@ -296,96 +351,140 @@ int main() {
 #include <algorithm>
 #include <array>
 #include <cstdint>
-#include <iostream>
+#include <cstdio>
+#include <iterator>
 #include <set>
-#include <unordered_map>
 #include <utility>
 #include <vector>
 using namespace std;
-using i64 = long long;
-using Point = pair<i64, i64>;
-uint64_t code(i64 x, i64 y) {
-    return (uint64_t(x) << 32) | uint64_t(y);
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    i64 n, m;
-    int p, q;
-    cin >> n >> m >> p >> q;
-    vector<Point> position(p + 1);
-    array<set<Point>, 4> lines;
-    unordered_map<uint64_t, int> who;
-    who.reserve(p * 2);
-    auto keys = [](i64 x, i64 y) {
-        return array<Point, 4>{Point{y, x}, Point{x, y}, Point{x - y, x}, Point{x + y, x}};
-    };
-    auto insert = [&](int id) {
-        auto [x, y] = position[id];
-        auto k = keys(x, y);
-        for (int j = 0; j < 4; ++j)
-            lines[j].insert(k[j]);
-        who[code(x, y)] = id;
-    };
-    auto erase = [&](int id) {
-        auto [x, y] = position[id];
-        auto k = keys(x, y);
-        for (int j = 0; j < 4; ++j)
-            lines[j].erase(k[j]);
-        who.erase(code(x, y));
-    };
-    for (int i = 1; i <= p; ++i) {
-        cin >> position[i].first >> position[i].second;
-        insert(i);
+
+class FastInput {
+    static constexpr int SIZE = 1 << 16;
+    char buffer[SIZE];
+    int pos = 0, length = 0;
+    int get() {
+        if (pos == length) {
+            length = int(fread(buffer, 1, SIZE, stdin));
+            pos = 0;
+            if (!length) return EOF;
+        }
+        return buffer[pos++];
     }
-    const int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1}, dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
+public:
+    int read() {
+        int c = get(), value = 0;
+        while (c <= ' ' && c != EOF) c = get();
+        while (c >= '0' && c <= '9') {
+            value = value * 10 + c - '0';
+            c = get();
+        }
+        return value;
+    }
+};
+
+constexpr uint64_t MASK = (uint64_t(1) << 30) - 1;
+struct Entry {
+    uint64_t key;
+    int slot;
+    bool operator<(const Entry &other) const { return key < other.key; }
+};
+using Tree = set<Entry>;
+struct Slot {
+    int x, y, employee;
+    array<Tree::iterator, 4> at;
+};
+array<uint64_t, 4> keys(int x, int y) {
+    return {(uint64_t(y) << 30) | uint32_t(x),
+            (uint64_t(x) << 30) | uint32_t(y),
+            (uint64_t(x - y + 1000000000) << 30) | uint32_t(x),
+            (uint64_t(x + y) << 30) | uint32_t(x)};
+}
+
+int main() {
+    FastInput in;
+    int n = in.read(), m = in.read(), p = in.read(), q = in.read();
+    vector<Slot> slots(p + 1);
+    array<Tree, 4> lines;
+    for (int i = 1; i <= p; ++i) {
+        Slot &slot = slots[i];
+        slot.x = in.read(); slot.y = in.read(); slot.employee = i;
+        auto key = keys(slot.x, slot.y);
+        for (int j = 0; j < 4; ++j)
+            slot.at[j] = lines[j].insert({key[j], i}).first;
+    }
+    const int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1};
+    const int dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
+    const int positiveDirection[4] = {0, 2, 1, 7};
     while (q--) {
-        i64 u, v;
-        int t;
-        cin >> u >> v >> t;
-        t %= 8;
-        if (t == 0)
-            continue;
-        i64 boundary = min({u - 1, n - u, v - 1, m - v}), distance = boundary + 1;
-        auto k = keys(u, v);
+        int u = in.read(), v = in.read(), t = in.read();
+        int boundary = min({u - 1, n - u, v - 1, m - v});
+        if (!boundary) continue;
+        int distance = boundary + 1;
+        int nearest[8] = {}, distances[8] = {};
+        auto key = keys(u, v);
         for (int j = 0; j < 4; ++j) {
-            auto [line, coordinate] = k[j];
-            auto after = lines[j].upper_bound(k[j]);
-            if (after != lines[j].end() && after->first == line)
-                distance = min(distance, after->second - coordinate);
+            auto after = lines[j].upper_bound({key[j], 0});
+            auto accept = [&](Tree::iterator it, int direction) {
+                if ((it->key >> 30) != (key[j] >> 30)) return;
+                int delta = int(it->key & MASK) - int(key[j] & MASK);
+                if (delta < 0) delta = -delta;
+                nearest[direction] = it->slot;
+                distances[direction] = delta;
+                distance = min(distance, delta);
+            };
+            if (after != lines[j].end()) accept(after, positiveDirection[j]);
             if (after != lines[j].begin()) {
-                auto before = after;
-                --before;
-                if (*before == k[j]) {
-                    if (before == lines[j].begin())
-                        continue;
+                auto before = prev(after);
+                if (before->key == key[j]) {
+                    if (before == lines[j].begin()) continue;
                     --before;
                 }
-                if (before->first == line)
-                    distance = min(distance, coordinate - before->second);
+                accept(before, (positiveDirection[j] + 4) & 7);
             }
         }
-        if (distance > boundary)
-            continue;
-        array<pair<int, int>, 8> moved;
-        int movedCount = 0;
+        if (distance > boundary) continue;
+
+        int occupied[8] = {}, destinationEmployee[8] = {};
         for (int d = 0; d < 8; ++d) {
-            auto it = who.find(code(u + distance * dx[d], v + distance * dy[d]));
-            if (it != who.end())
-                moved[movedCount++] = {it->second, (d + t) % 8};
+            if (nearest[d] && distances[d] == distance) {
+                occupied[d] = nearest[d];
+                destinationEmployee[(d + t) & 7] = slots[nearest[d]].employee;
+            }
         }
-        for (int i = 0; i < movedCount; ++i)
-            erase(moved[i].first);
-        for (int i = 0; i < movedCount; ++i) {
-            auto [id, d] = moved[i];
-            position[id] = {u + distance * dx[d], v + distance * dy[d]};
-            insert(id);
+        int vacated[4], targets[4], count = 0, targetCount = 0;
+        for (int d = 0; d < 8; ++d) {
+            if (occupied[d] && destinationEmployee[d]) {
+                // The position stays occupied: only its employee label changes.
+                slots[occupied[d]].employee = destinationEmployee[d];
+            } else if (occupied[d]) {
+                vacated[count++] = occupied[d];
+            } else if (destinationEmployee[d]) {
+                targets[targetCount++] = d;
+            }
+        }
+        // Two subsets of an 8-element set with equal cardinality differ in
+        // at most 4 positions on each side. Reuse the vacated position slots.
+        array<array<Tree::node_type, 4>, 4> detached;
+        for (int i = 0; i < count; ++i)
+            for (int j = 0; j < 4; ++j)
+                detached[i][j] = lines[j].extract(slots[vacated[i]].at[j]);
+        for (int i = 0; i < count; ++i) {
+            int id = vacated[i], d = targets[i];
+            Slot &slot = slots[id];
+            slot.x = u + distance * dx[d];
+            slot.y = v + distance * dy[d];
+            slot.employee = destinationEmployee[d];
+            auto newKey = keys(slot.x, slot.y);
+            for (int j = 0; j < 4; ++j) {
+                detached[i][j].value().key = newKey[j];
+                slot.at[j] = lines[j].insert(std::move(detached[i][j])).position;
+            }
         }
     }
-    i64 answer = 0;
+    long long answer = 0;
     for (int i = 1; i <= p; ++i)
-        answer ^= i * position[i].first + position[i].second;
-    cout << answer << '\n';
+        answer ^= 1LL * slots[i].employee * slots[i].x + slots[i].y;
+    printf("%lld\n", answer);
 }
 ```
 

@@ -177,8 +177,13 @@
       "previous_oj": {},
       "luogu_record": "https://www.luogu.com.cn/record/305643544",
       "sha256": "aba51d8d53cc594a3a946db1144c35d9a239d50198a9b9186efb87c8c058b8ac",
-      "status": "awaiting_login",
-      "reason": "登录会话失效，尚未提交"
+      "status": "accepted",
+      "reason": "登录会话失效，尚未提交",
+      "score": 100,
+      "verdict": "Accepted",
+      "time": "20:44:33",
+      "record": "https://oj.shumeng.tech/record/6addf9b174ace1cba9a22fa2",
+      "final_observed_at": "2026-10-25T12:46:32.265Z"
     },
     {
       "pid": "CSP201312C",
@@ -187,8 +192,13 @@
       "previous_oj": {},
       "luogu_record": "https://www.luogu.com.cn/record/305657951",
       "sha256": "a4c57208b2ba6ed54326a0002e455c660500b1319c5a4f0d3c191b6121ef19ab",
-      "status": "awaiting_login",
-      "reason": "登录会话失效，尚未提交"
+      "status": "accepted",
+      "reason": "登录会话失效，尚未提交",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addfb8f74ace1cba9a23115",
+      "time": "20:52:31",
+      "final_observed_at": "2026-10-25T12:57:31.659Z"
     },
     {
       "pid": "CSP202312D",
@@ -209,6 +219,66 @@
       "verdict": "Accepted",
       "source_file": "/private/tmp/csp-202312d-work/D.cpp",
       "note": "线段树优化版；旧版85分记录保留在前一条"
+    },
+    {
+      "pid": "CSP202309D",
+      "title": "阴阳龙",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202309D",
+      "previous_oj": {
+        "status": "failed",
+        "score": 15,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce8cda67df0b81749be44"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490899",
+      "sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a",
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "time": "21:00:03",
+      "record": "https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b",
+      "final_observed_at": "2026-10-25T13:00:32.202Z",
+      "note": "优化版；保留旧源码15分TLE历史，当前成绩仅对应本SHA256。"
+    },
+    {
+      "pid": "CSP202303C",
+      "title": "LDAP",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202303C",
+      "previous_oj": {
+        "status": "failed",
+        "score": 70,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce91ba67df0b81749c02e"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305490926",
+      "sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb",
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "time": "21:02:34",
+      "record": "https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef",
+      "final_observed_at": "2026-10-25T13:04:22.804Z",
+      "note": "优化版，原70分超时记录保留。"
+    },
+    {
+      "pid": "CSP202112E",
+      "title": "极差路径",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202112E",
+      "previous_oj": {
+        "status": "failed",
+        "score": 56,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce96da67df0b81749c18a"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305494838",
+      "sha256": "31830c5aa36db5caefb2833b37132f359579f29e82279170f47761c99115cba7",
+      "status": "failed",
+      "score": 84,
+      "verdict": "Time Exceeded",
+      "time": "21:06:43",
+      "record": "https://oj.shumeng.tech/record/6addfee374ace1cba9a233c6",
+      "final_observed_at": "2026-10-25T13:07:32.753Z",
+      "note": "隔离优化候选，尚未替换工程当前源码；仍有超时，继续优化。"
     }
   ],
   "luogu": [
@@ -259,6 +329,19 @@
       "verdict": "Accepted",
       "sha256": "56cd351dad5356979e24157a51d0d926a323500db0a838858d44d98dfbdac5c5",
       "source_file": "/private/tmp/csp-validation-20261025/202403/D.cpp"
+    },
+    {
+      "id": "202403E",
+      "title": "文件夹合并",
+      "pid": "P16035",
+      "problem_url": "https://www.luogu.com.cn/problem/P16035",
+      "source_file": "/private/tmp/csp-validation-20261025/202403/E.cpp",
+      "sha256": "dee2d9ee55c9b370bc2d6cec4977d220e26fea9b9af6d77d03d10625d712a469",
+      "record": "https://www.luogu.com.cn/record/305803314",
+      "submitted_at": "2026-10-25 21:04:06+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T13:04:22.804Z"
     }
   ]
 }

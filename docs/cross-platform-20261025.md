@@ -1,6 +1,6 @@
 # 2026-10-25 两平台交叉补验
 
-仅补交另一平台已满分、目标平台尚未满分的当前源码；每个平台相邻提交至少间隔 120 秒。源码 SHA256 与当前版本一致时才回填当前评测状态。
+包括两平台交叉补验与超时题优化复验。每个平台上一题终评确认后，再等待至少 120 秒才提交下一题；早期记录另保留实际提交间隔。源码 SHA256 与当前版本一致时才回填当前评测状态。
 
 ## 曙梦 OJ
 
@@ -13,7 +13,12 @@
 | 17:32:28 | CSP202112E 极差路径 | 56 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addccac74ace1cba9a21f0f) |
 | 17:34:49 | CSP201403A 相反数 | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70) |
 | 20:31:17 | CSP201403C 命令行选项 | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8) |
+| 20:44:33 | CSP201403D 无线网络 | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addf9b174ace1cba9a22fa2) |
+| 20:52:31 | CSP201312C 最大的矩形 | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfb8f74ace1cba9a23115) |
 | 17:30:00 | CSP202312D 宝藏 | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addcc1874ace1cba9a21ea2) |
+| 21:00:03 | CSP202309D 阴阳龙 | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b) |
+| 21:02:34 | CSP202303C LDAP | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef) |
+| 21:06:43 | CSP202112E 极差路径 | 84 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addfee374ace1cba9a233c6) |
 
 隐藏题复查：CSP202109A、CSP202109B、CSP202109C、CSP202109E。当前账号无权查看，未尝试绕过权限。
 
@@ -25,15 +30,18 @@
 | 17:24:28 | CSP202403B 相似度计算 | P16032 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305705069) |
 | 17:26:43 | CSP202403C 化学方程式配平 | P16033 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305706100) |
 | 17:29:06 | CSP202403D 十滴水 | P16034 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305707098) |
+| 21:04:06 | CSP202403E 文件夹合并 | P16035 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305803314) |
 
 曙梦本次补验实际最短提交间隔：126 秒。
 
 洛谷本次补验实际最短提交间隔：133 秒。
 
+## 继续处理状态
+
+洛谷尚有 34 道已确认映射的题目在队列，按终评后 120 秒间隔继续处理；后续验证码由用户在可见页面完成。
+
+《极差路径》的隔离优化候选获 84 分 Time Exceeded，仍在优化；工程继续保留原有源码及其独立评测记录，候选成绩不会套用到其他源码。
+
+曙梦可访问题目的交叉补验已完成；隐藏题因当前账号无查看权限而保留待验状态。
+
 [逐条结果与源码 SHA256](../tests/cross-platform-20261025.json)。只有 100 分 Accepted 才算该平台满分；两个平台的民间数据均不等同 CCF 官方成绩。
-
-## 暂停点与剩余队列
-
-曙梦尚有 CSP201403D《无线网络》、CSP201312C《最大的矩形》等待重新登录后提交；CSP202309D《阴阳龙》优化候选已通过本地独立验证，尚待目标平台复验。
-
-洛谷已完成 4 道补验，均为 100 分 Accepted；CSP202403E / P16035《文件夹合并》触发图形验证码，未生成评测记录。包括本题在内，另有 33 道已确认同题映射的待提交项。验证码完成前暂停洛谷投稿。未找到可靠映射的题目不计为已补验。
