@@ -1,0 +1,68 @@
+{
+  "problem": "CSP201412C",
+  "status": "online_WA_unresolved",
+  "source_sha256": "fbc09ce23271ad780ce856a5061e3b0b5cd1d8749b3febe81aaff3bd37ba098f",
+  "source_changed": false,
+  "judge_record": {
+    "platform": "Shumeng OJ",
+    "url": "https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8",
+    "verdict": "Wrong Answer",
+    "score": 90,
+    "failed_testcases": [2, 20],
+    "passed_testcases": 18
+  },
+  "historical_full_audit": {
+    "recorded_date": "2026-10-25",
+    "source_sha256": "fbc09ce23271ad780ce856a5061e3b0b5cd1d8749b3febe81aaff3bd37ba098f",
+    "status": "passed_local_audit_but_online_WA_unresolved",
+    "seed": 20141203,
+    "fixed_cases": 9,
+    "random_cases": 2000,
+    "maximum_5000_line_cases": 5,
+    "positive_volume_cases": 1811,
+    "zero_volume_convention_cases": 203,
+    "maximum_solver_process_seconds": 0.667420375,
+    "oracle": "Independent order scanning; small cases enumerate every integer cent.",
+    "timing_note": "Wall time includes starting the solver process; not an OJ time-limit prediction."
+  },
+  "portable_entry": {
+    "path": "tests/auction_regressions.py",
+    "default_fixed_cases": 9,
+    "default_random_cases": 200,
+    "stress_random_cases": 2000,
+    "stress_maximum_5000_line_cases": 5,
+    "stress_reproduces_historical_random_stream": true,
+    "full_suite_rerun_during_migration": false
+  },
+  "migration_validation": {
+    "recorded_at_utc": "2026-10-25T08:33:48.760063+00:00",
+    "status": "syntax_and_one_deterministic_case_passed",
+    "platform": "macOS-26.3.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "compiled_project_source": "201412/C.cpp",
+    "source_sha256": "fbc09ce23271ad780ce856a5061e3b0b5cd1d8749b3febe81aaff3bd37ba098f",
+    "deterministic_cases": 1,
+    "random_cases": 0,
+    "maximum_cases": 0,
+    "full_suite_rerun": false
+  },
+  "public_file_ui_retry": {
+    "recorded_date": "2026-10-25",
+    "context": "Retried once after other submissions demonstrated judging had recovered.",
+    "url": "https://oj.shumeng.tech/p/CSP201412C/files",
+    "selected_files": ["2.in", "2.ans", "20.in", "20.ans"],
+    "download_button_attempts": 1,
+    "download_wait_seconds": 10,
+    "result": "No download event and no visible page change; stopped and closed the audit-only tab.",
+    "test_data_obtained": false,
+    "hidden_endpoints_or_scripts_probed": false
+  },
+  "limitations": [
+    "Local differential checks cannot replace the actual OJ verdict; 90 WA remains unresolved.",
+    "Zero-volume highest price is not fully specified in the statement. Tests use the highest active quote, or 0.00 when none survive, solely as a convention.",
+    "Cancellation tests target prior active buy/sell rows; no unsupported cancel-cancel or future-row semantics are assumed.",
+    "Normal public test-file preview/download UI did not respond. The failed input files were not obtained; no hidden endpoints were probed.",
+    "The submitted source and current project source had matching SHA-256; no solution code was changed for this audit."
+  ]
+}

@@ -1,8 +1,10 @@
 # 曙梦 OJ 提交与核验记录
 
 截至 2026-10-25，工程 160 题中 152 题可查看；另 8 题登录后提示无权查看隐藏题目。
-已提交 137 题：130 题 100 分、6 题非满分、1 题待核验；其余 15 道可见题尚未提交。
-合并洛谷结果后，网站应显示 143 道已验证满分，17 道未验证或未满分。
+已提交 148 题：142 题 100 分、6 题非满分、0 题待核验；其余 4 道可见题尚未提交。
+合并洛谷结果后，网站应显示 155 道已验证满分，5 道未验证或未满分。
+
+本轮开始版本 [5183910](https://github.com/Code92007/csp/commit/51839105bf5e9fe5096a61f842f6de9a88274497) 有 95 道满分题；本轮净增 60 道。
 
 只有记录显示 100 分 Accepted 才标记“已验证满分”。曙梦 OJ 和洛谷在此均使用民间复刻数据，不能等同 CCF 官方认证成绩。
 
@@ -156,19 +158,19 @@
 | 201412 | B | Z 字形扫描 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addbabd74ace1cba9a20f29) |
 | 201412 | C | 集合竞价 | [90 分 Wrong Answer](https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8) |
 | 201412 | D | 最优灌溉 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addbbd074ace1cba9a21026) |
-| 201412 | E | 货物调度 | [已提交，待核验](https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124) |
-| 201409 | A | 相邻数对 | 尚未提交 |
-| 201409 | B | 画图 | 尚未提交 |
-| 201409 | C | 字符串匹配 | 尚未提交 |
-| 201409 | D | 最优配餐 | 尚未提交 |
-| 201409 | E | 拼图 | 尚未提交 |
+| 201412 | E | 货物调度 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124) |
+| 201409 | A | 相邻数对 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addbe9474ace1cba9a2168f) |
+| 201409 | B | 画图 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addbf1c74ace1cba9a216e8) |
+| 201409 | C | 字符串匹配 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addbfa574ace1cba9a21719) |
+| 201409 | D | 最优配餐 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc02f74ace1cba9a217cd) |
+| 201409 | E | 拼图 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc0c074ace1cba9a21859) |
 | 201403 | A | 相反数 | 尚未提交 |
-| 201403 | B | 窗口 | 尚未提交 |
+| 201403 | B | 窗口 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc14d74ace1cba9a2189b) |
 | 201403 | C | 命令行选项 | 尚未提交 |
 | 201403 | D | 无线网络 | 尚未提交 |
-| 201403 | E | 任务调度 | 尚未提交 |
-| 201312 | A | 出现次数最多的数 | 尚未提交 |
-| 201312 | B | ISBN 号码 | 尚未提交 |
+| 201403 | E | 任务调度 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc1d874ace1cba9a218be) |
+| 201312 | A | 出现次数最多的数 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc26374ace1cba9a21910) |
+| 201312 | B | ISBN 号码 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc2ed74ace1cba9a219a9) |
 | 201312 | C | 最大的矩形 | 尚未提交 |
-| 201312 | D | 有趣的数 | 尚未提交 |
-| 201312 | E | I’m stuck! | 尚未提交 |
+| 201312 | D | 有趣的数 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc37d74ace1cba9a21a93) |
+| 201312 | E | I’m stuck! | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc40e74ace1cba9a21ab6) |

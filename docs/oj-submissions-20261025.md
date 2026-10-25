@@ -52,6 +52,18 @@
 | 16:15:57 | CSP201412B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addbabd74ace1cba9a20f29) |
 | 16:18:13 | CSP201412C | 90 | Wrong Answer | [记录](https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8) |
 | 16:20:32 | CSP201412D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addbbd074ace1cba9a21026) |
+| 16:24:46 | CSP201412E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124) |
+| 16:32:20 | CSP201409A | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addbe9474ace1cba9a2168f) |
+| 16:34:36 | CSP201409B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addbf1c74ace1cba9a216e8) |
+| 16:36:52 | CSP201409C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addbfa574ace1cba9a21719) |
+| 16:39:10 | CSP201409D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc02f74ace1cba9a217cd) |
+| 16:41:36 | CSP201409E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc0c074ace1cba9a21859) |
+| 16:43:57 | CSP201403B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc14d74ace1cba9a2189b) |
+| 16:46:16 | CSP201403E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc1d874ace1cba9a218be) |
+| 16:48:35 | CSP201312A | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc26374ace1cba9a21910) |
+| 16:50:53 | CSP201312B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc2ed74ace1cba9a219a9) |
+| 16:53:17 | CSP201312D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc37d74ace1cba9a21a93) |
+| 16:55:42 | CSP201312E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addc40e74ace1cba9a21ab6) |
 
 按上述实际提交时间排序，本轮曙梦相邻提交的最短间隔为 130 秒；未并发提交，也未使用 HTTP 脚本或 curl 提交。
 
@@ -59,12 +71,6 @@
 201809E 与 202406E 的优化代码、本地独立对拍及性能说明见对应文章；重交状态以各条记录为准。
 另只读核对了旧账号的两条待核验记录：[202112B](https://oj.shumeng.tech/record/6adce92aa67df0b81749c061)、[202112C](https://oj.shumeng.tech/record/6adce92ba67df0b81749c065) 均为 100 分 Accepted，已回填终态，没有再次提交。
 洛谷 CSPro 标签 516 默认 P 题列表共 60 题，与工程交集 45 题均已有至少一个平台满分；另外 15 题所在场次未纳入本工程。随后继续核对默认列表之外的公开 U 题，仅确认同题、范围相同且有数据时提交。
-
-## 尚待评测
-
-以下记录已提交但尚未观察到终态，不计入满分；后续提交暂缓，避免堆积队列。
-
-- 201412E 货物调度：[等待评测](https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124)。
 
 ## 洛谷新增提交
 
