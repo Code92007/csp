@@ -493,6 +493,20 @@
       "sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a",
       "submission_method": "Normal code editor paste; exact clipboard comparison",
       "source_file": "/private/tmp/csp-validation-20261025/202309/D.cpp"
+    },
+    {
+      "id": "202309E",
+      "title": "阻击",
+      "pid": "P16058",
+      "problem_url": "https://www.luogu.com.cn/problem/P16058",
+      "record": "https://www.luogu.com.cn/record/305838452",
+      "submitted_at": "2026-10-25 23:36:38+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T15:37:30.002Z",
+      "sha256": "390e1e27f14b0e1b2b7b4a87d6d843c5179d50d32ff03fdf9fa9608b41359b8a",
+      "submission_method": "Root visible browser: current source file upload; user completed CAPTCHA and submission; record source DOM text matches local file exactly",
+      "source_file": "/private/tmp/csp-validation-20261025/202309/E.cpp"
     }
   ]
 }
