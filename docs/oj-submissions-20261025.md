@@ -47,11 +47,24 @@
 | 16:04:21 | CSP202309B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52) |
 | 16:06:36 | CSP201503C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb88c74ace1cba9a20dc5) |
 | 16:08:55 | CSP201503D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb91774ace1cba9a20e42) |
+| 16:11:13 | CSP201503E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb9a174ace1cba9a20ea0) |
+| 16:13:36 | CSP201412A | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addba3174ace1cba9a20ee1) |
+| 16:15:57 | CSP201412B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addbabd74ace1cba9a20f29) |
+| 16:18:13 | CSP201412C | 90 | Wrong Answer | [记录](https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8) |
+| 16:20:32 | CSP201412D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addbbd074ace1cba9a21026) |
+
+按上述实际提交时间排序，本轮曙梦相邻提交的最短间隔为 130 秒；未并发提交，也未使用 HTTP 脚本或 curl 提交。
 
 202006D 首次编译失败是辅助函数 `identity()` 与 GCC 15 / C++20 的 `std::identity` 重名；重命名为 `identity_matrix()` 后通过。
 201809E 与 202406E 的优化代码、本地独立对拍及性能说明见对应文章；重交状态以各条记录为准。
 另只读核对了旧账号的两条待核验记录：[202112B](https://oj.shumeng.tech/record/6adce92aa67df0b81749c061)、[202112C](https://oj.shumeng.tech/record/6adce92ba67df0b81749c065) 均为 100 分 Accepted，已回填终态，没有再次提交。
 洛谷 CSPro 标签 516 默认 P 题列表共 60 题，与工程交集 45 题均已有至少一个平台满分；另外 15 题所在场次未纳入本工程。随后继续核对默认列表之外的公开 U 题，仅确认同题、范围相同且有数据时提交。
+
+## 尚待评测
+
+以下记录已提交但尚未观察到终态，不计入满分；后续提交暂缓，避免堆积队列。
+
+- 201412E 货物调度：[等待评测](https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124)。
 
 ## 洛谷新增提交
 
@@ -61,3 +74,5 @@
 | 15:37:15 | CSP201403A | U281236 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305650472) |
 | 15:42:58 | CSP201403C | U281238 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305653686) |
 | 15:50:35 | CSP201312C | U281824 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305657951) |
+
+本轮洛谷相邻提交的最短间隔为 343 秒；上述四题均核对账号此前无提交后，才通过浏览器提交。

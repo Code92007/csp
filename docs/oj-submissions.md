@@ -1,8 +1,8 @@
 # 曙梦 OJ 提交与核验记录
 
 截至 2026-10-25，工程 160 题中 152 题可查看；另 8 题登录后提示无权查看隐藏题目。
-已提交 131 题：126 题 100 分、5 题非满分、0 题待核验；其余 21 道可见题尚未提交。
-合并洛谷结果后，网站应显示 139 道已验证满分，21 道未验证或未满分。
+已提交 137 题：130 题 100 分、6 题非满分、1 题待核验；其余 15 道可见题尚未提交。
+合并洛谷结果后，网站应显示 143 道已验证满分，17 道未验证或未满分。
 
 只有记录显示 100 分 Accepted 才标记“已验证满分”。曙梦 OJ 和洛谷在此均使用民间复刻数据，不能等同 CCF 官方认证成绩。
 
@@ -151,12 +151,12 @@
 | 201503 | B | 数字排序 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb77c74ace1cba9a20d2d) |
 | 201503 | C | 节日 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb88c74ace1cba9a20dc5) |
 | 201503 | D | 网络延时 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb91774ace1cba9a20e42) |
-| 201503 | E | 最小花费 | 尚未提交 |
-| 201412 | A | 门禁系统 | 尚未提交 |
-| 201412 | B | Z 字形扫描 | 尚未提交 |
-| 201412 | C | 集合竞价 | 尚未提交 |
-| 201412 | D | 最优灌溉 | 尚未提交 |
-| 201412 | E | 货物调度 | 尚未提交 |
+| 201503 | E | 最小花费 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb9a174ace1cba9a20ea0) |
+| 201412 | A | 门禁系统 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addba3174ace1cba9a20ee1) |
+| 201412 | B | Z 字形扫描 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addbabd74ace1cba9a20f29) |
+| 201412 | C | 集合竞价 | [90 分 Wrong Answer](https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8) |
+| 201412 | D | 最优灌溉 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addbbd074ace1cba9a21026) |
+| 201412 | E | 货物调度 | [已提交，待核验](https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124) |
 | 201409 | A | 相邻数对 | 尚未提交 |
 | 201409 | B | 画图 | 尚未提交 |
 | 201409 | C | 字符串匹配 | 尚未提交 |

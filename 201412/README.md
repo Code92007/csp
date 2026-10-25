@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "在线计数", "矩阵遍历", "对角线", "前缀和", "排序", "整数精度", "模拟", "最小生成树", "Kruskal", "并查集", "费用流", "时间展开图", "周期调度"]
 status: "published"
-problems: [{"id": "A", "title": "门禁系统", "tags": ["在线计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412A/"}]}, {"id": "B", "title": "Z 字形扫描", "tags": ["矩阵遍历", "对角线"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412B/"}]}, {"id": "C", "title": "集合竞价", "tags": ["前缀和", "排序", "整数精度", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412C/"}]}, {"id": "D", "title": "最优灌溉", "tags": ["最小生成树", "Kruskal", "并查集"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412D/"}]}, {"id": "E", "title": "货物调度", "tags": ["费用流", "时间展开图", "周期调度"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；未提交正式评测。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412E/"}]}]
+problems: [{"id": "A", "title": "门禁系统", "tags": ["在线计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addba3174ace1cba9a20ee1"}}, {"id": "B", "title": "Z 字形扫描", "tags": ["矩阵遍历", "对角线"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addbabd74ace1cba9a20f29"}}, {"id": "C", "title": "集合竞价", "tags": ["前缀和", "排序", "整数精度", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 90 分 Wrong Answer（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412C/"}], "oj": {"status": "failed", "score": 90, "verdict": "Wrong Answer", "record": "https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8"}}, {"id": "D", "title": "最优灌溉", "tags": ["最小生成树", "Kruskal", "并查集"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addbbd074ace1cba9a21026"}}, {"id": "E", "title": "货物调度", "tags": ["费用流", "时间展开图", "周期调度"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；曙梦 OJ 已提交，等待评测（2026-10-25 16:24:46）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412E/"}], "oj": {"status": "submitted", "score": 0, "verdict": "Waiting", "record": "https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124"}}]
 ---
 
 # CSP 201412 五题题解
@@ -21,7 +21,7 @@ problems: [{"id": "A", "title": "门禁系统", "tags": ["在线计数"], "statu
 
 标签：`在线计数`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addba3174ace1cba9a20ee1)（复刻评测）。
 
 ### 题意
 
@@ -66,7 +66,7 @@ int main() {
 
 标签：`矩阵遍历` · `对角线`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addbabd74ace1cba9a20f29)（复刻评测）。
 
 ### 题意
 
@@ -121,7 +121,7 @@ int main() {
 
 标签：`前缀和` · `排序` · `整数精度` · `模拟`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 尚未满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 90 分 Wrong Answer](https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8)（复刻评测）。
 
 ### 题意
 
@@ -211,7 +211,7 @@ int main() {
 
 标签：`最小生成树` · `Kruskal` · `并查集`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addbbd074ace1cba9a21026)（复刻评测）。
 
 ### 题意
 
@@ -281,7 +281,7 @@ int main() {
 
 标签：`费用流` · `时间展开图` · `周期调度`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；未提交正式评测。
+状态：**完整实现，曙梦 OJ 等待评测**。本地保存样例和独立对拍记录见前文元数据；[本次提交](https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124)于 2026-10-25 16:24:46 提交，尚未取得终态。
 
 ### 题意
 
