@@ -21,7 +21,7 @@
     "record": "https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52",
     "maximum_time_ms": 341,
     "memory_mib": 11.1,
-    "note": "This acceptance belongs to the exact two-component prefix source identified by the SHA256 above. The previous Luogu acceptance remains version-specific history."
+    "note": "The exact two-component prefix source identified by the SHA256 above has independently received 100 Accepted on both Shumeng and Luogu; earlier Luogu acceptance remains version-specific history."
   },
   "historical": {
     "date": "2026-10-25",
@@ -207,5 +207,17 @@
       "allowed_absolute_error": "0.1"
     },
     "status": "passed"
+  },
+  "luogu_validation": {
+    "record": "https://www.luogu.com.cn/record/305835741",
+    "score": 100,
+    "verdict": "Accepted",
+    "submitted_at": "2026-10-25 23:11:18+08:00",
+    "final_observed_at": "2026-10-25T15:14:15.675Z",
+    "source_sha256": "6a128e8d781e9fde0cb77ad2fa22862e21d8b03b9afeb979f5fad8c2c84f0bfc",
+    "record_source_matches_current_file": true,
+    "maximum_time_ms": 280,
+    "total_time_ms": 1220,
+    "memory_mib": 5.2
   }
 }

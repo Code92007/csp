@@ -449,6 +449,20 @@
       "sha256": "0279d6eff2d720df137c232c32f82dd060f4a83ca77eda7cd91d28fbf406eef0",
       "submission_method": "Normal code editor paste; exact clipboard comparison",
       "source_file": "/private/tmp/csp-validation-20261025/202309/A.cpp"
+    },
+    {
+      "id": "202309B",
+      "title": "坐标变换（其二）",
+      "pid": "P16055",
+      "problem_url": "https://www.luogu.com.cn/problem/P16055",
+      "record": "https://www.luogu.com.cn/record/305835741",
+      "submitted_at": "2026-10-25 23:11:18+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T15:14:15.675Z",
+      "sha256": "6a128e8d781e9fde0cb77ad2fa22862e21d8b03b9afeb979f5fad8c2c84f0bfc",
+      "submission_method": "Root visible browser: current source file upload; user completed CAPTCHA and submission; record source DOM text matches local file exactly",
+      "source_file": "/private/tmp/csp-validation-20261025/202309/B.cpp"
     }
   ]
 }
