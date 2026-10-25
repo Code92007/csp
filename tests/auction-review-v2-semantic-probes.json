@@ -1,0 +1,30 @@
+[
+  {
+    "name": "cancel_cancel_conditional",
+    "input": "/private/tmp/csp-201412c-review-v2/cancel_cancel_conditional.in",
+    "actual": "8.00 1",
+    "interpretation": "Conditional semantic probe, NOT a confirmed legal counterexample: if cancelling a cancellation restores its withdrawn order, answer would be 8.00 2; if cancellation effects are irreversible/current conventional model, subject returns 8.00 1.",
+    "alternative_if_rule_confirmed": "8.00 2"
+  },
+  {
+    "name": "zero_volume_single_buy",
+    "input": "/private/tmp/csp-201412c-review-v2/zero_volume_single_buy.in",
+    "actual": "1.00 0",
+    "interpretation": "Zero-volume ambiguity only. At both 1.00 and 2.00 volume is zero; without an explicit opening-price bound/candidate set, no highest unrestricted price exists. No unique expected answer asserted.",
+    "alternative_if_rule_confirmed": null
+  },
+  {
+    "name": "repeat_cancel_conditional",
+    "input": "/private/tmp/csp-201412c-review-v2/repeat_cancel_conditional.in",
+    "actual": "8.00 1",
+    "interpretation": "Repeated cancellation of the same earlier trade is idempotent in the subject. Whether redundant cancellations are legal is not specified beyond input-is-legal; no bug demonstrated.",
+    "alternative_if_rule_confirmed": null
+  },
+  {
+    "name": "cancel_last_trade_5000",
+    "input": "/private/tmp/csp-201412c-review-v2/cancel_last_trade_5000.in",
+    "actual": "10.00 249900000000",
+    "interpretation": "Explicitly conventional legal boundary: the final cancellation withdraws the immediately preceding buy row4999; analytically expected 10.00 249900000000.",
+    "alternative_if_rule_confirmed": "10.00 249900000000"
+  }
+]

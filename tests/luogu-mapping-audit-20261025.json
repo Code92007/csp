@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-25T21:12:50+08:00",
+  "input_file": "docs/luogu-unmapped-20261025.md",
+  "input_count": 104,
+  "method": "普通浏览器UI；从用户给定CSPro标签第2页进入，以页面分页按钮正常翻到第1页；读取可见题目标题与链接，无并发请求、无提交",
+  "scope": {
+    "tag": 516,
+    "tag_name": "CSPro",
+    "visible_total": 60,
+    "pages_reviewed": [
+      {
+        "url": "https://www.luogu.com.cn/problem/list?tag=516&page=2",
+        "visible_count": 10
+      },
+      {
+        "url": "https://www.luogu.com.cn/problem/list?tag=516&page=1",
+        "visible_count": 50
+      }
+    ],
+    "visible_cspro_sessions": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ]
+  },
+  "mapping_fields": [
+    "contest",
+    "id",
+    "title",
+    "pid",
+    "problem_url",
+    "verification_basis"
+  ],
+  "mappings": [],
+  "additional_mapping_count": 0,
+  "unresolved_count": 104,
+  "limitations": [
+    "此次只覆盖洛谷主题库CSPro标签当时可见的全部60题；不覆盖未打该标签的主题库题或用户题库。",
+    "104题与两页题目列表的原题名及场次没有可靠匹配，因此没有为其猜测或构造题号。",
+    "没有匹配不代表洛谷不存在同题；需后续提供可靠公开题目链接或在其他用户授权的范围继续查证。",
+    "没有新匹配候选，故没有打开无关题目详情页；未遇登录或CAPTCHA阻断。",
+    "本次没有提交题目，也没有修改工程、其他agent队列或结果文件。"
+  ]
+}

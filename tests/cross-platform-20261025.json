@@ -279,6 +279,26 @@
       "record": "https://oj.shumeng.tech/record/6addfee374ace1cba9a233c6",
       "final_observed_at": "2026-10-25T13:07:32.753Z",
       "note": "隔离优化候选，尚未替换工程当前源码；仍有超时，继续优化。"
+    },
+    {
+      "pid": "CSP202112E",
+      "title": "极差路径",
+      "problem_url": "https://oj.shumeng.tech/p/CSP202112E",
+      "previous_oj": {
+        "status": "failed",
+        "score": 56,
+        "verdict": "Time Exceeded",
+        "record": "https://oj.shumeng.tech/record/6adce96da67df0b81749c18a"
+      },
+      "luogu_record": "https://www.luogu.com.cn/record/305494838",
+      "sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312",
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "time": "21:30:21",
+      "record": "https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab",
+      "final_observed_at": "2026-10-25T13:32:52.234Z",
+      "note": "第二版优化；满分记录只对应本SHA256，保留原56及第一版84分超时历史。"
     }
   ],
   "luogu": [
@@ -342,6 +362,93 @@
       "score": 100,
       "verdict": "Accepted",
       "final_observed_at": "2026-10-25T13:04:22.804Z"
+    },
+    {
+      "id": "202312A",
+      "title": "仓库规划",
+      "pid": "P16064",
+      "problem_url": "https://www.luogu.com.cn/problem/P16064",
+      "record": "https://www.luogu.com.cn/record/305806451",
+      "submitted_at": "2026-10-25 21:13:45+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T13:14:35.654Z",
+      "sha256": "4c83d3db506e7f5e4767ced8ac4cef5fc097e00da47c3952011d644b6309957d",
+      "submission_method": "Normal code editor paste",
+      "source_file": "/private/tmp/csp-validation-20261025/202312/A.cpp"
+    },
+    {
+      "id": "202312B",
+      "title": "因子化简",
+      "pid": "P16065",
+      "problem_url": "https://www.luogu.com.cn/problem/P16065",
+      "record": "https://www.luogu.com.cn/record/305807711",
+      "submitted_at": "2026-10-25 21:17:36+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T13:18:09.370Z",
+      "sha256": "563b394c1a56a2ae26effa1a69a22016e0d9ba0e053c3ed2cd89bdff50935b00",
+      "submission_method": "Normal code editor paste",
+      "source_file": "/private/tmp/csp-validation-20261025/202312/B.cpp"
+    },
+    {
+      "id": "202312C",
+      "title": "树上搜索",
+      "pid": "P16066",
+      "problem_url": "https://www.luogu.com.cn/problem/P16066",
+      "record": "https://www.luogu.com.cn/record/305808966",
+      "submitted_at": "2026-10-25 21:21:01+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T13:21:28.973Z",
+      "sha256": "9dd41b045ba10af0744e306a984044d3e75c5b1fab25e9b0f98378321c4ddf64",
+      "submission_method": "Normal code editor paste",
+      "source_file": "/private/tmp/csp-validation-20261025/202312/C.cpp"
+    },
+    {
+      "id": "202312D",
+      "title": "宝藏",
+      "pid": "P16067",
+      "problem_url": "https://www.luogu.com.cn/problem/P16067",
+      "record": "https://www.luogu.com.cn/record/305810434",
+      "submitted_at": "2026-10-25 21:24:57+08:00",
+      "clicked_at": "2026-10-25T13:24:49.531Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T13:25:10.044Z",
+      "sha256": "ae452c40a94a10bde5c2b7762bc72497775a8991ed96e7f92f9e7e6bad5bc4a3",
+      "submission_method": "Normal code editor paste; exact clipboard comparison",
+      "source_file": "/private/tmp/csp-validation-20261025/202312/D.cpp"
+    },
+    {
+      "id": "202312E",
+      "title": "彩色路径",
+      "pid": "P16068",
+      "problem_url": "https://www.luogu.com.cn/problem/P16068",
+      "record": "https://www.luogu.com.cn/record/305811545",
+      "submitted_at": "2026-10-25 21:27:47+08:00",
+      "clicked_at": "2026-10-25T13:27:47.683Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T13:28:21.204Z",
+      "sha256": "50bb86e45543e321967d09cb269c8526e3649064b4c2c134197072f109b67e71",
+      "submission_method": "Normal code editor paste; exact clipboard comparison",
+      "source_file": "/private/tmp/csp-validation-20261025/202312/E.cpp"
+    },
+    {
+      "id": "202309A",
+      "title": "坐标变换（其一）",
+      "pid": "P16054",
+      "problem_url": "https://www.luogu.com.cn/problem/P16054",
+      "record": "https://www.luogu.com.cn/record/305812891",
+      "submitted_at": "2026-10-25 21:31:36+08:00",
+      "clicked_at": "2026-10-25T13:31:35.252Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-25T13:32:08.964Z",
+      "sha256": "0279d6eff2d720df137c232c32f82dd060f4a83ca77eda7cd91d28fbf406eef0",
+      "submission_method": "Normal code editor paste; exact clipboard comparison",
+      "source_file": "/private/tmp/csp-validation-20261025/202309/A.cpp"
     }
   ]
 }

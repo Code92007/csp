@@ -1,7 +1,7 @@
 # 曙梦 OJ 提交与核验记录
 
 截至 2026-10-25，工程 160 题中 152 题可查看；另 8 题登录后提示无权查看隐藏题目。
-已提交 152 题：150 题 100 分、2 题非满分、0 题待核验；其余 0 道可见题尚未提交。
+已提交 152 题：151 题 100 分、1 题非满分、0 题待核验；其余 0 道可见题尚未提交。
 合并洛谷结果后，网站应显示 155 道已验证满分，5 道未验证或未满分。
 
 本轮开始版本 [5183910](https://github.com/Code92007/csp/commit/51839105bf5e9fe5096a61f842f6de9a88274497) 有 95 道满分题；本轮净增 60 道。
@@ -98,7 +98,7 @@
 | 202112 | B | 序列查询新解 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce92aa67df0b81749c061) |
 | 202112 | C | 登机牌条码 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce92ba67df0b81749c065) |
 | 202112 | D | 磁盘文件操作 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce92da67df0b81749c06b) |
-| 202112 | E | 极差路径 | [56 分 Time Exceeded](https://oj.shumeng.tech/record/6addccac74ace1cba9a21f0f) |
+| 202112 | E | 极差路径 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab) |
 | 202109 | A | 数组推导 | 隐藏题，当前账号无权查看 |
 | 202109 | B | 非零段划分 | 隐藏题，当前账号无权查看 |
 | 202109 | C | 脉冲神经网络 | 隐藏题，当前账号无权查看 |
@@ -176,3 +176,5 @@
 | 201312 | E | I’m stuck! | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addc40e74ace1cba9a21ab6) |
 
 [两平台交叉补验记录与待提交状态](cross-platform-20261025.md)。
+
+[洛谷同题映射审计](luogu-mapping-audit-20261025.md) · [《集合竞价》剩余 WA 复查](auction-review-v2.md)。

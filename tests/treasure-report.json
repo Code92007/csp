@@ -93,5 +93,13 @@
     "record": "https://oj.shumeng.tech/record/6addcc1874ace1cba9a21ea2",
     "submitted_at": "2026-10-25 17:30:00+08:00",
     "source_sha256": "ae452c40a94a10bde5c2b7762bc72497775a8991ed96e7f92f9e7e6bad5bc4a3"
+  },
+  "luogu_validation": {
+    "record": "https://www.luogu.com.cn/record/305810434",
+    "score": 100,
+    "verdict": "Accepted",
+    "sha256": "ae452c40a94a10bde5c2b7762bc72497775a8991ed96e7f92f9e7e6bad5bc4a3",
+    "submitted_at": "2026-10-25 21:24:57+08:00",
+    "final_observed_at": "2026-10-25T13:25:10.044Z"
   }
 }

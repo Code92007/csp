@@ -77,6 +77,7 @@
 | 21:00:03 | CSP202309D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b) |
 | 21:02:34 | CSP202303C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef) |
 | 21:06:43 | CSP202112E | 84 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addfee374ace1cba9a233c6) |
+| 21:30:21 | CSP202112E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab) |
 
 按上述实际提交时间排序，本轮曙梦相邻提交的最短间隔为 126 秒；未并发提交，也未使用 HTTP 脚本或 curl 提交。
 
@@ -97,3 +98,5 @@
 本轮洛谷相邻提交的最短间隔为 343 秒；上述四题均核对账号此前无提交后，才通过浏览器提交。
 
 [两平台交叉补验记录与待提交状态](cross-platform-20261025.md)。
+
+[洛谷同题映射审计](luogu-mapping-audit-20261025.md) · [《集合竞价》剩余 WA 复查](auction-review-v2.md)。

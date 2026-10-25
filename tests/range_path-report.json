@@ -1,0 +1,188 @@
+{
+  "problem": "CSP202112E",
+  "date": "2026-10-25",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "flags": "-std=c++17 -O2 -Wall -Wextra -Wpedantic",
+  "source_sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312",
+  "baseline_sha256": "31830c5aa36db5caefb2833b37132f359579f29e82279170f47761c99115cba7",
+  "samples": 1,
+  "independent_random_cases": 650,
+  "medium_analytic_cases": 3,
+  "stress": [
+    {
+      "case": "chain_order",
+      "n": 500000,
+      "candidate_seconds": 0.14528666699999881,
+      "input_sha256": "f6ba28d7e663aa51b8f252000d90d08c6ef6277df74747a30f6dfc5da89ec51e",
+      "answer": "125000250000",
+      "independent_oracle": true,
+      "oracle": "analytic formula",
+      "baseline_seconds": 0.19560054199999932,
+      "speedup": 1.3463075865041416
+    },
+    {
+      "case": "chain_shuffled",
+      "n": 500000,
+      "candidate_seconds": 0.22184437499999987,
+      "input_sha256": "052178c1b4a5a94d8ff6428720bfa5c112789f5d4436d1f4de5e21d1c25d171c",
+      "answer": "20841252006",
+      "independent_oracle": false,
+      "oracle": "v1 full-output differential",
+      "baseline_seconds": 0.5711161669999996,
+      "speedup": 2.574400036061315
+    },
+    {
+      "case": "star",
+      "n": 500000,
+      "candidate_seconds": 0.0311016249999998,
+      "input_sha256": "33288648d2bcda01730dc8cb40cc5f63ce4d3a68e2138e087bf916711e5f65be",
+      "answer": "97806613265",
+      "independent_oracle": true,
+      "oracle": "analytic formula",
+      "baseline_seconds": 0.028024832999999916,
+      "speedup": 0.901072950368352
+    },
+    {
+      "case": "heap_balanced",
+      "n": 500000,
+      "candidate_seconds": 0.10664329200000111,
+      "input_sha256": "75b02d964b5753b0ad169af67d0f4850277339214abe4e0c0f95bda0eecb67db",
+      "answer": "8975732",
+      "independent_oracle": true,
+      "oracle": "analytic formula",
+      "baseline_seconds": 0.10184383300000022,
+      "speedup": 0.9549952096377441
+    },
+    {
+      "case": "heap_random",
+      "n": 500000,
+      "candidate_seconds": 0.12332750000000026,
+      "input_sha256": "e180afa37d059422dd5e6d56425406eeb73644aa47b0db74126e19842d83972e",
+      "answer": "6390450",
+      "independent_oracle": true,
+      "oracle": "analytic formula",
+      "baseline_seconds": 0.2199715839999996,
+      "speedup": 1.7836377450284742
+    },
+    {
+      "case": "random_shuffled",
+      "n": 500000,
+      "candidate_seconds": 0.3486900000000013,
+      "input_sha256": "b7510b3bcdf9a98ad41440aa8d88e684b747121e29d8805dc22bc54dd383491a",
+      "answer": "70582995369",
+      "independent_oracle": false,
+      "oracle": "v1 full-output differential",
+      "baseline_seconds": 0.5390977079999999,
+      "speedup": 1.5460658693968796
+    },
+    {
+      "case": "all_paths",
+      "n": 500000,
+      "candidate_seconds": 0.02520383300000084,
+      "input_sha256": "c800926d8161d4b1eb7f2196845263e5137f6e0dcb72c6692443056983d104cf",
+      "answer": "125000250000",
+      "independent_oracle": true,
+      "oracle": "analytic formula",
+      "baseline_seconds": 0.6898137920000007,
+      "speedup": 27.36940020194459
+    },
+    {
+      "case": "balanced_shuffled",
+      "n": 500000,
+      "candidate_seconds": 0.3252024589999998,
+      "input_sha256": "40cec063c6df7d0f1a7c61cfd369aa6b1e609351b8e30801e735ca50dd71d17a",
+      "answer": "69750296633",
+      "independent_oracle": false,
+      "oracle": "v1 full-output differential",
+      "baseline_seconds": 0.6873109580000012,
+      "speedup": 2.1134863497449805
+    },
+    {
+      "case": "zigzag_chain",
+      "n": 500000,
+      "candidate_seconds": 0.1271937089999966,
+      "input_sha256": "3c609df89c4ae745b5ce4e4dec74626e735d15407a15480bcc22e1657c2bb348",
+      "answer": "62066631944",
+      "independent_oracle": false,
+      "oracle": "v1 full-output differential",
+      "baseline_seconds": 0.3184877919999991,
+      "speedup": 2.5039586824220024
+    },
+    {
+      "case": "broom_shuffled",
+      "n": 500000,
+      "candidate_seconds": 0.13415674999999894,
+      "input_sha256": "9f31f3cb8c46d21abd43b518ce635f6d1d2d7d180702d5fd07b5f4425fdebb15",
+      "answer": "50262631647",
+      "independent_oracle": false,
+      "oracle": "v1 full-output differential",
+      "baseline_seconds": 0.3245567499999993,
+      "speedup": 2.4192353347856286
+    },
+    {
+      "case": "nearfull_random",
+      "n": 500000,
+      "candidate_seconds": 0.039492541999997854,
+      "input_sha256": "e15d048756601fec5a3b4e067b014c939f1919b38e18791e407d354ecf09796d",
+      "answer": "125000250000",
+      "independent_oracle": true,
+      "oracle": "two necessary bad paths",
+      "baseline_seconds": 0.6909733329999987,
+      "speedup": 17.49629925062905
+    },
+    {
+      "case": "min_endpoint_random",
+      "n": 500000,
+      "candidate_seconds": 0.2024671249999983,
+      "input_sha256": "306deecc74ad1fccff1392e45985b98c59efaab64933218dab199345120b0d82",
+      "answer": "9794713115",
+      "independent_oracle": true,
+      "oracle": "DSU activation",
+      "baseline_seconds": 0.3694006669999972,
+      "speedup": 1.8244970238995604
+    },
+    {
+      "case": "max_endpoint_random",
+      "n": 500000,
+      "candidate_seconds": 0.340168000000002,
+      "input_sha256": "c8eed9cfa94cbca3ce74692dc0b4a68c24fe0b3c3143c6b29455a609605aedaa",
+      "answer": "9359953986",
+      "independent_oracle": true,
+      "oracle": "DSU activation",
+      "baseline_seconds": 0.5083564160000016,
+      "speedup": 1.494427506408594
+    }
+  ],
+  "online_status": "Shumeng 100 Accepted; Luogu current source awaiting recheck",
+  "baseline_online_result": {
+    "score": 84,
+    "status": "Time Exceeded",
+    "url": "https://oj.shumeng.tech/record/6addfee374ace1cba9a233c6"
+  },
+  "baseline_original_git_blob": "97ad7a54b857dc993d441d0094ec36429a8adeb6",
+  "status": "passed",
+  "full_suite_source_sha256": "dfab0d1cf2da6629075c0be904ac50b386cee958a4f75fd0b1656dba918a7233",
+  "final_source_equivalence": {
+    "change": "Comments plus explicit <utility> include only",
+    "binary_before_and_after_sha256": "04020b071907e48bae22101ecb68f2c4650ce65f9097c7aed4f8ebf0cf479902",
+    "comparison": "Equal after compiling the final source with the same flags; full stress suite not repeated"
+  },
+  "peak_memory": {
+    "case": "random_shuffled",
+    "method": "Fresh Python process, one child; resource.getrusage(RUSAGE_CHILDREN).ru_maxrss on macOS (bytes)",
+    "rss_bytes": 42369024,
+    "expected_answer": "70582995369",
+    "note": "One extra execution checked memory and the recorded result."
+  },
+  "reproduction": "python3 validate-v2.py --stress (compiles adjacent E-v2.cpp and preserved E.cpp; Python 3.9+ standard library, CXX optional)",
+  "online_validation": {
+    "record": "https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab",
+    "score": 100,
+    "verdict": "Accepted",
+    "sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312",
+    "time": "21:30:21",
+    "final_observed_at": "2026-10-25T13:32:52.234Z"
+  }
+}

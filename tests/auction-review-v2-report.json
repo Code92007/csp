@@ -1,0 +1,65 @@
+{
+  "unit_quantity_exhaustive": 251904,
+  "unit_quantity_by_depth": [
+    6,
+    42,
+    324,
+    2700,
+    23976,
+    224856
+  ],
+  "quantity_1_or_2_exhaustive": 33864,
+  "random_cases": 1000,
+  "positive_volume": 192759,
+  "zero_convention_only": 94009,
+  "total": 286768,
+  "mismatches": 0,
+  "source_sha256": "fbc09ce23271ad780ce856a5061e3b0b5cd1d8749b3febe81aaff3bd37ba098f",
+  "oracle": "Enumerate equal-size subsets of individual buy/sell shares and their feasible common-price interval; no price-threshold sum scanning.",
+  "seed": 2026102503,
+  "in_process_seconds": 1.996,
+  "untouched_standalone_fixture_checks": 100,
+  "analytically_derived_5000_row_cases": [
+    {
+      "label": "max_balanced",
+      "rows": 5000,
+      "expected": "10000.00 250000000000",
+      "actual": "10000.00 250000000000"
+    },
+    {
+      "label": "max_identical",
+      "rows": 5000,
+      "expected": "10000.00 250000000000",
+      "actual": "10000.00 250000000000"
+    },
+    {
+      "label": "one_buyer",
+      "rows": 5000,
+      "expected": "10000.00 100000000",
+      "actual": "10000.00 100000000"
+    },
+    {
+      "label": "one_seller",
+      "rows": 5000,
+      "expected": "10000.00 100000000",
+      "actual": "10000.00 100000000"
+    },
+    {
+      "label": "two_cancels",
+      "rows": 5000,
+      "expected": "10.00 249800000000",
+      "actual": "10.00 249800000000"
+    }
+  ],
+  "total_seconds": 3.251,
+  "status": "No counterexample in the explicitly stated conventional model; actual Shumeng90WA remains unresolved.",
+  "sanitizer": {
+    "compiler_flags": "-std=c++17 -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer",
+    "scope": "Full independent exhaustive/random suite: 286768 cases",
+    "exit_code": 0,
+    "diagnostics": []
+  },
+  "semantic_probe_report": "tests/auction-review-v2-semantic-probes.json",
+  "confirmed_legal_counterexamples": 0,
+  "repair_candidate_created": false
+}

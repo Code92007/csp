@@ -19,6 +19,7 @@
 | 21:00:03 | CSP202309D 阴阳龙 | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b) |
 | 21:02:34 | CSP202303C LDAP | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef) |
 | 21:06:43 | CSP202112E 极差路径 | 84 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addfee374ace1cba9a233c6) |
+| 21:30:21 | CSP202112E 极差路径 | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab) |
 
 隐藏题复查：CSP202109A、CSP202109B、CSP202109C、CSP202109E。当前账号无权查看，未尝试绕过权限。
 
@@ -31,6 +32,12 @@
 | 17:26:43 | CSP202403C 化学方程式配平 | P16033 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305706100) |
 | 17:29:06 | CSP202403D 十滴水 | P16034 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305707098) |
 | 21:04:06 | CSP202403E 文件夹合并 | P16035 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305803314) |
+| 21:13:45 | CSP202312A 仓库规划 | P16064 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305806451) |
+| 21:17:36 | CSP202312B 因子化简 | P16065 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305807711) |
+| 21:21:01 | CSP202312C 树上搜索 | P16066 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305808966) |
+| 21:24:57 | CSP202312D 宝藏 | P16067 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305810434) |
+| 21:27:47 | CSP202312E 彩色路径 | P16068 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305811545) |
+| 21:31:36 | CSP202309A 坐标变换（其一） | P16054 | 100 | Accepted | [记录](https://www.luogu.com.cn/record/305812891) |
 
 曙梦本次补验实际最短提交间隔：126 秒。
 
@@ -38,10 +45,12 @@
 
 ## 继续处理状态
 
-洛谷尚有 34 道已确认映射的题目在队列，按终评后 120 秒间隔继续处理；后续验证码由用户在可见页面完成。
+洛谷尚有 29 道已确认映射的题目在队列，按终评后 120 秒间隔继续处理；后续验证码由用户在可见页面完成。另有 104 道题尚无可靠洛谷映射，详见 [映射审计](luogu-mapping-audit-20261025.md)。
 
-《极差路径》的隔离优化候选获 84 分 Time Exceeded，仍在优化；工程继续保留原有源码及其独立评测记录，候选成绩不会套用到其他源码。
+《极差路径》第二版优化已获曙梦 100 分 Accepted，并替换工程当前源码；旧版 56 分及第一版 84 分超时均保留在逐条记录中。当前源码的洛谷成绩需独立复验。
 
 曙梦可访问题目的交叉补验已完成；隐藏题因当前账号无查看权限而保留待验状态。
 
 [逐条结果与源码 SHA256](../tests/cross-platform-20261025.json)。只有 100 分 Accepted 才算该平台满分；两个平台的民间数据均不等同 CCF 官方成绩。
+
+当前洛谷暂停于 P16055《坐标变换（其二）》：交互式验证码待用户处理，当前源码已在可见页准备好，尚无新评测记录。
