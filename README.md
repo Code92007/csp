@@ -51,6 +51,8 @@ make random
 
 部分复杂实现还做了最大规模构造的运行检查，旧版结果保留在 [fifth-stress-report.json](tests/fifth-stress-report.json)。2026-10-25 优化了 201809E 和 202406E，均已在曙梦 OJ 取得 100 分 Accepted；代码、独立对拍和新旧性能比较见对应文章及 [优化验证报告](tests/optimization-report.json)。运行 `python3 tests/optimized_regressions.py` 可复现两题共 1100 组独立对拍，追加 `--stress` 可检查 11 组最大规模构造。性能依赖机器与数据，民间 OJ 通过也不能视为 CCF 官方成绩保证。
 
+202309B 另修复了低精度 `long double` 平台上大角度前缀相减的误差，新版已在曙梦 OJ 取得 100 分；上一版的洛谷 AC 作为历史版本单独保留。运行 `python3 tests/precision_regressions.py` 可复现 500 组逐次操作对拍与 70 位精度边界检查，详见 [精度报告](tests/precision-report.json) 和 [历史非满分记录审计](docs/remaining-failures-audit.md)。
+
 202605E 另有 2,042 组与小规模 DP 的对拍及 7 组十万点运行检查，分别用 `make random-gather`、`make stress-gather` 复现，见 [gather-report.json](tests/gather-report.json) 与 [gather-stress-report.json](tests/gather-stress-report.json)。逐题在线评测状态以 [提交与核验记录](docs/oj-submissions.md) 为准。
 
 ## 维护与发布

@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-10-25"
 tags: ["CSP", "累加", "平移变换", "前缀积", "前缀和", "旋转变换", "自动微分", "表达式", "栈", "有序集合", "几何", "模拟", "动态树", "树的直径", "动态规划"]
 status: "published"
-problems: [{"id":"A","title":"坐标变换（其一）","tags":["累加","平移变换"],"status":"implemented","code":"A.cpp","anchor":"problem-a","validation":"C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309A"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16054"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"}},{"id":"B","title":"坐标变换（其二）","tags":["前缀积","前缀和","旋转变换"],"status":"implemented","code":"B.cpp","anchor":"problem-b","validation":"C++17 编译通过；2 个保存样例/回归用例通过；101 组独立随机与压力对拍通过；曙梦 OJ 旧版 80 分 Wrong Answer（复刻评测）；洛谷民间数据 100 分 Accepted。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309B"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16055"}],"oj":{"status":"failed","score":80,"verdict":"Wrong Answer","record":"https://oj.shumeng.tech/record/6adce8caa67df0b81749be0c"},"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490746"}},{"id":"C","title":"梯度求解","tags":["自动微分","表达式","栈"],"status":"implemented","code":"C.cpp","anchor":"problem-c","validation":"C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309C"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16056"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"}},{"id":"D","title":"阴阳龙","tags":["有序集合","几何","模拟"],"status":"implemented","code":"D.cpp","anchor":"problem-d","validation":"C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 旧版 15 分 Time Exceeded（复刻评测）；洛谷民间数据 100 分 Accepted。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309D"},{"label":"公开题面存档","url":"https://www.luogu.com.cn/problem/P16057"}],"oj":{"status":"failed","score":15,"verdict":"Time Exceeded","record":"https://oj.shumeng.tech/record/6adce8cda67df0b81749be44"},"luogu":{"status":"accepted","score":100,"record":"https://www.luogu.com.cn/record/305490899"}},{"id":"E","title":"阻击","tags":["动态树","树的直径","动态规划"],"status":"implemented","code":"E.cpp","anchor":"problem-e","validation":"C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。","sources":[{"label":"曙梦 OJ 原题（可提交）","url":"https://oj.shumeng.tech/p/CSP202309E"},{"label":"公开题面与样例","url":"https://www.luogu.com.cn/problem/P16058"}],"oj":{"status":"accepted","score":100,"record":"https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"}}]
+problems: [{"id": "A", "title": "坐标变换（其一）", "tags": ["累加", "平移变换"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16054"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"}}, {"id": "B", "title": "坐标变换（其二）", "tags": ["前缀积", "前缀和", "旋转变换"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17/C++20 编译通过；2 个保存样例、500 组独立逐次操作对拍与 70 位精度边界复核通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16055"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490746", "code_git_blob": "20776d0627c78f6c02502fc311a5648a5f01a3cb", "note": "上一版代码记录；本版新增高低角度前缀精度修复，以曙梦复验为准"}}, {"id": "C", "title": "梯度求解", "tags": ["自动微分", "表达式", "栈"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16056"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"}}, {"id": "D", "title": "阴阳龙", "tags": ["有序集合", "几何", "模拟"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 旧版 15 分 Time Exceeded（复刻评测）；洛谷民间数据 100 分 Accepted。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16057"}], "oj": {"status": "failed", "score": 15, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6adce8cda67df0b81749be44"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490899"}}, {"id": "E", "title": "阻击", "tags": ["动态树", "树的直径", "动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16058"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"}}]
 ---
 
 # CSP 202309 五题题解
@@ -68,7 +68,7 @@ int main() {
 
 标签：`前缀积` · `前缀和` · `旋转变换`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；101 组独立随机与压力对拍通过；[曙梦 OJ 旧版 80 分 Wrong Answer](https://oj.shumeng.tech/record/6adce8caa67df0b81749be0c)（复刻评测）；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490746)。
+状态：**完整实现，曙梦 OJ 已验证满分**。C++17/C++20 编译通过；2 个保存样例、500 组独立逐次操作对拍与 70 位精度边界复核通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52)（复刻评测）。上一版代码曾获 [洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490746)；本版新增高低角度前缀修复，以本次曙梦复验为准。
 
 ### 题意
 
@@ -80,9 +80,43 @@ int main() {
 
 ### 题解
 
-等比例缩放与旋转可交换，两次旋转角度相加，两次缩放系数相乘。预处理缩放前缀积 P 和角度前缀和 S；区间缩放为 P[j]/P[i-1]，区间旋转为 S[j]-S[i-1]。旋转角是实数，题目没有规定小数位数，因此不能先把输入角度舍入到固定精度。角度前缀使用补偿求和，减少长序列累加误差；在 `long double` 与 `double` 精度相同的平台上也能稳定计算。
+**先把一串操作合并成一次缩放、一次旋转。** 每次缩放都对两个坐标乘同一个正数，每次旋转都围绕原点，因此缩放与旋转的先后次序可以交换。若区间内缩放系数的乘积为 $k$、旋转角度之和为 $\theta$，结果就是
 
-查询时将角度差按 $2\pi$ 取模，最后只应用一次公式：`(x*cosθ-y*sinθ, x*sinθ+y*cosθ)`，再乘缩放。复合规律保证该结果与逐次操作一致，前缀相除／相减提取指定区间。时间 $O(n+m)$，空间 $O(n)$；题目按绝对误差判定，输出足够小数。之前按千分位取整的版本在洛谷得 0 分；修正后在洛谷民间数据得 100 分。
+$$
+\begin{aligned}
+x'&=k(x\cos\theta-y\sin\theta),\\
+y'&=k(x\sin\theta+y\cos\theta).
+\end{aligned}
+$$
+
+于是可以预处理缩放前缀积 $P_i$ 和角度前缀和 $S_i$。对于查询 $[l,r]$，有 $k=P_r/P_{l-1}$、$\theta=S_r-S_{l-1}$，每次查询只需常数次计算。题目保证任意区间的缩放乘积在 $[0.001,1000]$ 内，不会出现除以零。
+
+**角度必须保留输入的实数精度。** 题面没有规定角度只有三位小数，不能把角度乘 1000 后取整。比如将点 $(10^6,0)$ 旋转 $0.0001$ 弧度，纵坐标约为 100；把角度舍入成 0 会直接算错。
+
+**还要避免两个大前缀相减时丢掉低位。** 当 $n$ 达到 $10^5$，角度前缀可能达到几十万。即使使用补偿求和，若每个前缀最终仍只存一个浮点数，保存时的舍入误差也会留下来。两份大前缀相减后，误差再被 $10^6$ 的坐标和 1000 倍缩放放大，可能超过题目允许的绝对误差 0.1。某些平台的 `long double` 与 `double` 都只有 53 位有效二进制位，不能只依赖类型名字判断精度。
+
+本实现把每个角度前缀拆为两部分：`high` 保存常规求和结果，`low` 累积每次加法被舍入掉的误差，即 $S_i\approx H_i+L_i$。加入新角度 $v$ 时，先算 `next = high + v`；再根据两个加数的大小，用 Neumaier 补偿公式恢复这次加法的低位误差并累加到 `low`。
+
+查询时也保留减法误差。先算 `difference = H_r - H_{l-1}`，再用补偿减法恢复该次相减丢掉的低位，并加上 $L_r-L_{l-1}$，得到 `residual`。所以区间角度表示为
+
+$$\theta\approx\text{difference}+\text{residual}.$$
+
+此时不要立刻把两部分相加，否则较小的 `residual` 可能再次被舍去。分别求出两部分的正弦、余弦，再用角度和公式合成：
+
+$$
+\begin{aligned}
+\cos(a+b)&=\cos a\cos b-\sin a\sin b,\\
+\sin(a+b)&=\sin a\cos b+\cos a\sin b.
+\end{aligned}
+$$
+
+也不手工用近似的 $2\pi$ 常量对大角度取模，避免取模时将周期常量的误差放大；直接把高、低两部分交给标准库三角函数。最后代入最初的坐标变换公式即可。
+
+**正确性。** 缩放可交换且系数相乘，旋转可合并且角度相加；前缀积相除与前缀和相减恰好提取查询区间。补偿表示只改变浮点计算方式，不改变区间角度的数学含义，角度和公式仍给出同一次旋转。因此得到的就是按原顺序执行全部区间操作后的坐标。浮点误差另用独立高精度回归检查，不能用数学推导替代数值验证。
+
+**复杂度。** 预处理 $O(n)$，每次查询 $O(1)$，总时间 $O(n+m)$，空间 $O(n)$。
+
+精度回归采用 70 位 Decimal 与独立 Taylor 三角函数。在 Apple Silicon 的 53 位 `long double` 环境，合法最大长度重复角度构造的误差由旧版约 0.175913 降至本版约 0.049876（要求不超过 0.1）；固定种子 5003 个长前缀查询的最大误差约为 0.000219。复核入口：[精度回归脚本](../tests/precision_regressions.py)、[精度报告](../tests/precision-report.json)。
 
 ### 代码
 
@@ -94,38 +128,54 @@ int main() {
 #include <iostream>
 #include <vector>
 using namespace std;
+
+struct AngleSum {
+    long double high = 0, low = 0;
+    void add(long double value) {
+        long double next = high + value;
+        // Retain the rounding error instead of rounding the compensated total
+        // back to a single floating-point value at every prefix.
+        low += fabsl(high) >= fabsl(value) ? (high - next) + value : (value - next) + high;
+        high = next;
+    }
+};
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     int n, m;
     cin >> n >> m;
     vector<long double> scale(n + 1, 1);
-    vector<long double> angle(n + 1);
-    long double angleSum = 0, compensation = 0;
-    const long double turn = 2 * acosl(-1.0L);
-    for (int i = 1; i <= n; i++) {
+    vector<AngleSum> angle(n + 1);
+    for (int i = 1; i <= n; ++i) {
         int type;
         long double value;
         cin >> type >> value;
         scale[i] = scale[i - 1];
+        angle[i] = angle[i - 1];
         if (type == 1)
             scale[i] *= value;
-        else {
-            long double corrected = value - compensation;
-            long double next = angleSum + corrected;
-            compensation = (next - angleSum) - corrected;
-            angleSum = next;
-        }
-        angle[i] = angleSum;
+        else
+            angle[i].add(value);
     }
     cout << fixed << setprecision(10);
     while (m--) {
         int i, j;
         long double x, y;
         cin >> i >> j >> x >> y;
-        long double s = scale[j] / scale[i - 1];
-        long double a = fmodl(angle[j] - angle[i - 1], turn);
-        cout << s * (x * cosl(a) - y * sinl(a)) << ' ' << s * (x * sinl(a) + y * cosl(a)) << '\n';
+        long double a = angle[j].high, b = angle[i - 1].high;
+        long double difference = a - b;
+        long double virtualB = a - difference;
+        long double residual = (a - (difference + virtualB)) + (virtualB - b);
+        residual += angle[j].low - angle[i - 1].low;
+        // Evaluate the high/low parts separately. Do not reduce a large angle
+        // with a rounded 2*pi constant, or add the small residual back too early.
+        long double c = cosl(difference), s = sinl(difference);
+        long double dc = cosl(residual), ds = sinl(residual);
+        long double cosine = c * dc - s * ds, sine = s * dc + c * ds;
+        long double factor = scale[j] / scale[i - 1];
+        cout << factor * (x * cosine - y * sine) << ' '
+             << factor * (x * sine + y * cosine) << '\n';
     }
 }
 ```

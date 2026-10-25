@@ -38,6 +38,15 @@
 | 15:43:41 | CSP201512D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb32d74ace1cba9a20871) |
 | 15:46:01 | CSP201512E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb3b974ace1cba9a2089c) |
 | 15:48:17 | CSP201509A | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb44174ace1cba9a20918) |
+| 15:50:51 | CSP201509B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb4db74ace1cba9a209b5) |
+| 15:53:05 | CSP201509C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb56174ace1cba9a20adf) |
+| 15:55:20 | CSP201509D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb5e874ace1cba9a20bc7) |
+| 15:57:36 | CSP201509E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb67074ace1cba9a20c6f) |
+| 15:59:51 | CSP201503A | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb6f774ace1cba9a20ceb) |
+| 16:02:04 | CSP201503B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb77c74ace1cba9a20d2d) |
+| 16:04:21 | CSP202309B | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52) |
+| 16:06:36 | CSP201503C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb88c74ace1cba9a20dc5) |
+| 16:08:55 | CSP201503D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addb91774ace1cba9a20e42) |
 
 202006D 首次编译失败是辅助函数 `identity()` 与 GCC 15 / C++20 的 `std::identity` 重名；重命名为 `identity_matrix()` 后通过。
 201809E 与 202406E 的优化代码、本地独立对拍及性能说明见对应文章；重交状态以各条记录为准。

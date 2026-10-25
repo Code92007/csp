@@ -1,8 +1,8 @@
 # 曙梦 OJ 提交与核验记录
 
 截至 2026-10-25，工程 160 题中 152 题可查看；另 8 题登录后提示无权查看隐藏题目。
-已提交 123 题：117 题 100 分、6 题非满分、0 题待核验；其余 29 道可见题尚未提交。
-合并洛谷结果后，网站应显示 131 道已验证满分，29 道未验证或未满分。
+已提交 131 题：126 题 100 分、5 题非满分、0 题待核验；其余 21 道可见题尚未提交。
+合并洛谷结果后，网站应显示 139 道已验证满分，21 道未验证或未满分。
 
 只有记录显示 100 分 Accepted 才标记“已验证满分”。曙梦 OJ 和洛谷在此均使用民间复刻数据，不能等同 CCF 官方认证成绩。
 
@@ -73,7 +73,7 @@
 | 202312 | D | 宝藏 | [85 分 Time Exceeded](https://oj.shumeng.tech/record/6adce8c5a67df0b81749bdca) |
 | 202312 | E | 彩色路径 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8c7a67df0b81749bdda) |
 | 202309 | A | 坐标变换（其一） | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6) |
-| 202309 | B | 坐标变换（其二） | [80 分 Wrong Answer](https://oj.shumeng.tech/record/6adce8caa67df0b81749be0c) |
+| 202309 | B | 坐标变换（其二） | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52) |
 | 202309 | C | 梯度求解 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8cca67df0b81749be25) |
 | 202309 | D | 阴阳龙 | [15 分 Time Exceeded](https://oj.shumeng.tech/record/6adce8cda67df0b81749be44) |
 | 202309 | E | 阻击 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d) |
@@ -143,14 +143,14 @@
 | 201512 | D | 送货 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb32d74ace1cba9a20871) |
 | 201512 | E | 矩阵 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb3b974ace1cba9a2089c) |
 | 201509 | A | 数列分段 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb44174ace1cba9a20918) |
-| 201509 | B | 日期计算 | 尚未提交 |
-| 201509 | C | 模板生成系统 | 尚未提交 |
-| 201509 | D | 高速公路 | 尚未提交 |
-| 201509 | E | 最佳文章 | 尚未提交 |
-| 201503 | A | 图像旋转 | 尚未提交 |
-| 201503 | B | 数字排序 | 尚未提交 |
-| 201503 | C | 节日 | 尚未提交 |
-| 201503 | D | 网络延时 | 尚未提交 |
+| 201509 | B | 日期计算 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb4db74ace1cba9a209b5) |
+| 201509 | C | 模板生成系统 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb56174ace1cba9a20adf) |
+| 201509 | D | 高速公路 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb5e874ace1cba9a20bc7) |
+| 201509 | E | 最佳文章 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb67074ace1cba9a20c6f) |
+| 201503 | A | 图像旋转 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb6f774ace1cba9a20ceb) |
+| 201503 | B | 数字排序 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb77c74ace1cba9a20d2d) |
+| 201503 | C | 节日 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb88c74ace1cba9a20dc5) |
+| 201503 | D | 网络延时 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb91774ace1cba9a20e42) |
 | 201503 | E | 最小花费 | 尚未提交 |
 | 201412 | A | 门禁系统 | 尚未提交 |
 | 201412 | B | Z 字形扫描 | 尚未提交 |

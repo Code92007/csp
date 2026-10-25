@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "problem": "202309B",
+  "purpose": "Numerical correctness evidence for the current project source; judge status must be attached to the exact source version.",
+  "previous_verified_version": {
+    "git_commit": "b2f46247c0543bffc28e902c0d1435d15ba0bb1f",
+    "source_git_blob": "20776d0627c78f6c02502fc311a5648a5f01a3cb",
+    "luogu_record": "https://www.luogu.com.cn/record/305490746",
+    "score": 100,
+    "verdict": "Accepted",
+    "note": "This acceptance belongs to the earlier single-value compensated-prefix implementation."
+  },
+  "candidate": {
+    "source_sha256": "6a128e8d781e9fde0cb77ad2fa22862e21d8b03b9afeb979f5fad8c2c84f0bfc",
+    "source_git_blob": "a06fd0f2f3c0e2619fa089b77f7388529f483c47",
+    "judge_status": "accepted",
+    "judge": "曙梦 OJ",
+    "date": "2026-10-25",
+    "score": 100,
+    "verdict": "Accepted",
+    "record": "https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52",
+    "maximum_time_ms": 341,
+    "memory_mib": 11.1,
+    "note": "This acceptance belongs to the exact two-component prefix source identified by the SHA256 above. The previous Luogu acceptance remains version-specific history."
+  },
+  "historical": {
+    "date": "2026-10-25",
+    "machine": "Apple Silicon arm64; macOS 26.3.1",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "flags": "-std=c++17 -O2",
+    "long_double_mantissa_bits": 53,
+    "label_definitions": {
+      "old": "The historical implementation rounding input angles to thousandths.",
+      "current": "The previous b2f4624 single-value compensated-prefix implementation, before this repair.",
+      "candidate": "The repaired two-component prefix implementation now accepted by Shumeng."
+    },
+    "oracle": "70-digit Python Decimal prefix sums with independent Taylor sine/cosine; general random tests use sequential operation simulation.",
+    "diagnosis": {
+      "minimal_fractional_angle": {
+        "old": {
+          "output": [
+            "1000000.0000000000",
+            "0E-10"
+          ],
+          "max_absolute_error": "99.99999983333333341666666664682539682815255731897346480681419917530952"
+        },
+        "current": {
+          "output": [
+            "999999.9950000000",
+            "99.9999998333"
+          ],
+          "max_absolute_error": "3.333341666666664682539682815255731897346480681419917530952E-11"
+        },
+        "candidate": {
+          "output": [
+            "999999.9950000000",
+            "99.9999998333"
+          ],
+          "max_absolute_error": "3.333341666666664682539682815255731897346480681419917530952E-11"
+        }
+      },
+      "large_prefix_precision": {
+        "n": 100000,
+        "queries": 5003,
+        "oracle": "70-digit Decimal prefix sums and Taylor sine/cosine",
+        "scale": 1000,
+        "coordinate_absolute_value": 1000000,
+        "required_absolute_error": "0.1",
+        "implementations": {
+          "current": {
+            "max_absolute_error": "0.14247312048016308802973032966055532952080217831308395976476070",
+            "passed": false,
+            "worst_query": [
+              94880,
+              100000,
+              1000000,
+              -1000000
+            ]
+          },
+          "candidate": {
+            "max_absolute_error": "0.00021933954011194042743126541637139483930525121633272943255170",
+            "passed": true,
+            "worst_query": [
+              428,
+              100000,
+              1000000,
+              -1000000
+            ]
+          }
+        },
+        "worst_query_diagnosis": {
+          "input_conversion_angle_error": "1.363774000478419475257396697998046875E-14",
+          "prefix_difference_rounding_error": "-1.0210765566398549708537757396697998046875E-10",
+          "range_reduction_angle_error": "1.24350635985422241615534734763203607450617958739029357E-12",
+          "scale_note": "Nine exact factors 2 and one exact binary factor 1.953125 give exactly 1000; no scale-rounding error in this fixture.",
+          "constraints": "All angles lie in [6.2,6.283] within [0,2pi); all scale factors lie in [0.5,2]; every subinterval scale product is in [1,1000], hence in [0.001,1000]; all query coordinates are integers of absolute value 1e6."
+        }
+      }
+    },
+    "deterministic_regression": {
+      "rotations": 99990,
+      "angle": "6.283",
+      "scaling_operations": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1.953125
+      ],
+      "query": [
+        2640,
+        100000,
+        1000000,
+        -1000000
+      ],
+      "expected": [
+        "1413795406.869975064950002228022571815364538770845371887574868245078471",
+        "34388188.57342827415904934310671667975167970703443101709599011183233160"
+      ],
+      "previous_max_error": "0.17591314664095065689328332024832029296556898290400988816766840",
+      "current": {
+        "output": [
+          "1413795406.8656961918",
+          "34388188.7493414208"
+        ],
+        "max_error": "0.17591314664095065689328332024832029296556898290400988816766840"
+      },
+      "candidate": {
+        "output": [
+          "1413795406.8687617779",
+          "34388188.6233037785"
+        ],
+        "max_error": "0.04987550434095065689328332024832029296556898290400988816766840"
+      }
+    },
+    "candidate_validation": {
+      "samples": 2,
+      "independent_sequential_random": 500,
+      "repeated_angle_cases": [
+        {
+          "angle": "0",
+          "n": 100000,
+          "queries": 4,
+          "max_absolute_error": "0E-60"
+        },
+        {
+          "angle": "0.0000001",
+          "n": 100000,
+          "queries": 4,
+          "max_absolute_error": "1.099596809137899544950906416398246820975418631511320152E-7"
+        },
+        {
+          "angle": "3.141592653589793238462643",
+          "n": 100000,
+          "queries": 4,
+          "max_absolute_error": "0.012245297361675882506609125032490852159784329530957136350483"
+        },
+        {
+          "angle": "6.283",
+          "n": 100000,
+          "queries": 4,
+          "max_absolute_error": "0.0458084133452009827931096750546832635245135160912030496263816"
+        },
+        {
+          "angle": "6.283185307179585",
+          "n": 100000,
+          "queries": 4,
+          "max_absolute_error": "0.0343782704346925953004601101932944513425074343875207682726208"
+        },
+        {
+          "angle": "6.247183912837454857",
+          "n": 100000,
+          "queries": 4,
+          "max_absolute_error": "0.0343020911151456451459234184767962918778000293172836232283501"
+        }
+      ],
+      "random_max_absolute_difference": 5.960464477539063e-08,
+      "maximum_query_benchmark": {
+        "n": 100000,
+        "m": 100000,
+        "candidate_seconds": 0.618,
+        "previous_seconds": 0.622,
+        "independent_high_precision_queries_checked": 100
+      }
+    }
+  },
+  "latest_run": {
+    "recorded_at_utc": "2026-10-25T08:08:18.218950+00:00",
+    "platform": "macOS-26.3.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+    "flags": "-std=c++17 -O2 -Wall -Wextra -Wpedantic",
+    "source_sha256": "6a128e8d781e9fde0cb77ad2fa22862e21d8b03b9afeb979f5fad8c2c84f0bfc",
+    "stress_requested": false,
+    "samples": 2,
+    "independent_sequential_random": 500,
+    "random_maximum_absolute_difference": "5.959638671875E-8",
+    "deterministic_high_precision": {
+      "case": "deterministic_high_precision",
+      "seconds": 0.104,
+      "maximum_absolute_error": "0.04987550434095065689328332024832029296556898290400988816766840",
+      "allowed_absolute_error": "0.1"
+    },
+    "status": "passed"
+  }
+}
