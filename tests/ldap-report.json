@@ -90,7 +90,7 @@
       "speedup": 17.749342207728994
     }
   ],
-  "online_status": "Shumeng 100 Accepted; Luogu current source awaiting recheck",
+  "online_status": "Shumeng 100 Accepted; Luogu 100 Accepted; both verified against current source",
   "status": "passed",
   "online_validation": {
     "record": "https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef",
@@ -99,5 +99,22 @@
     "sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb",
     "time": "21:02:34",
     "final_observed_at": "2026-10-25T13:04:22.804Z"
-  }
+  },
+  "luogu_validation": {
+    "id": "202303C",
+    "title": "LDAP",
+    "pid": "P16696",
+    "source_file": "/private/tmp/csp-validation-20261025/202303/C.cpp",
+    "problem_url": "https://www.luogu.com.cn/problem/P16696",
+    "record": "https://www.luogu.com.cn/record/305934606",
+    "submitted_at": "2026-10-26 17:30:11+08:00",
+    "clicked_at": "2026-10-26T09:30:11.287Z",
+    "score": 100,
+    "verdict": "Accepted",
+    "final_observed_at": "2026-10-26T09:31:10.986Z",
+    "sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb",
+    "submission_method": "Root IAB normal editor paste with exact clipboard readback; record source exactly matches current file",
+    "record_source_matches_current_file": true
+  },
+  "online_updated": "2026-10-26"
 }
