@@ -690,18 +690,21 @@
       "sha256": "34b442118b93a1609b689159910d0d67586cba362236d1513d8dfa5042ff4ef7",
       "submission_method": "User completed CAPTCHA on root visible page; displayed record source exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "202303B",
+      "title": "垦田计划",
+      "pid": "P16695",
+      "source_file": "/private/tmp/csp-validation-20261025/202303/B.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16695",
+      "record": "https://www.luogu.com.cn/record/305933793",
+      "submitted_at": "2026-10-26 17:27:24+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T09:27:59.621Z",
+      "sha256": "cf5d32583c21adaa802cb829eaaddaba3128a3efc71b191734543ac88b6ab990",
+      "submission_method": "User completed CAPTCHA on root IAB; displayed record source exactly matches current file",
+      "record_source_matches_current_file": true
     }
-  ],
-  "luogu_blocked": {
-    "id": "202303B",
-    "title": "垦田计划",
-    "pid": "P16695",
-    "reason": "captcha",
-    "problem_url": "https://www.luogu.com.cn/problem/P16695#submit",
-    "source_file": "/private/tmp/csp-validation-20261025/202303/B.cpp",
-    "sha256": "cf5d32583c21adaa802cb829eaaddaba3128a3efc71b191734543ac88b6ab990",
-    "root_attempt_clicked_at": "2026-10-26T09:09:15.471Z",
-    "record": null,
-    "notes": "Root visible IAB form stopped at the site CAPTCHA dialog; user input requested; no later submissions."
-  }
+  ]
 }
