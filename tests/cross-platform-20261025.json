@@ -913,6 +913,33 @@
       "sha256": "d7e2bd6ce9f7665c2fc211365c95c7a3e09dcdac58a3a2944cdec0c56ef00672",
       "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "202104C",
+      "title": "DHCP 服务器",
+      "pid": "P16038",
+      "source_file": "/private/tmp/csp-validation-20261025/202104/C.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16038",
+      "record": "https://www.luogu.com.cn/record/305947294",
+      "submitted_at": "2026-10-26 18:27:37+08:00",
+      "clicked_at": "2026-10-26T10:27:37.283Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T10:27:46.042Z",
+      "sha256": "c7cdcf35a856adecb28fca6057aff11acc7d1aba5196d514c012d1c46d2b025f",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
     }
-  ]
+  ],
+  "luogu_blocked": {
+    "id": "202104D",
+    "pid": "P16039",
+    "title": "校门外的树",
+    "problem_url": "https://www.luogu.com.cn/problem/P16039",
+    "source_sha256": "45455ae0cfa0766b11ba60e26ec3f73e3b374a4e5d2c2b9e8dab4d61fdca2c84",
+    "reason": "Root IAB interactive CAPTCHA; exact current source verified in editor; no record observed yet",
+    "clicked_at": "2026-10-26T10:29:58.794Z",
+    "screenshot": "/private/tmp/csp-luogu-p16039-root-captcha.jpg",
+    "awaiting": "User completes visible verification; later submissions paused"
+  }
 }
