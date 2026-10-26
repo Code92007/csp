@@ -660,6 +660,21 @@
       "sha256": "829f3795e6aa8ac84fc225ae3ebdd072531b41c1b5c781fdb6c8f9fc25322b96",
       "submission_method": "Normal code editor paste; exact clipboard comparison",
       "source_file": "/private/tmp/csp-validation-20261025/202305/D.cpp"
+    },
+    {
+      "id": "202305E",
+      "title": "闪耀巡航",
+      "pid": "P16671",
+      "problem_url": "https://www.luogu.com.cn/problem/P16671",
+      "record": "https://www.luogu.com.cn/record/305917627",
+      "submitted_at": "2026-10-26 16:27:49+08:00",
+      "clicked_at": "2026-10-26T08:27:49.103Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T08:28:26.181Z",
+      "sha256": "52b83a2ead5ce02693c2a67654fc6754c208fca306e93d0374608e8ace3b00da",
+      "submission_method": "Normal code editor paste; exact clipboard comparison",
+      "source_file": "/private/tmp/csp-validation-20261025/202305/E.cpp"
     }
   ]
 }
