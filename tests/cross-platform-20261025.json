@@ -849,17 +849,22 @@
       "sha256": "3d1c08db14005411be92eb49ebc4c741a1d335fad30d8b220b8e836136c2e1dd",
       "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "202112E",
+      "title": "极差路径",
+      "pid": "P16063",
+      "source_file": "/private/tmp/csp-validation-20261025/202112/E.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16063",
+      "record": "https://www.luogu.com.cn/record/305944901",
+      "submitted_at": "2026-10-26 18:16:31+08:00",
+      "clicked_at": "2026-10-26T10:02:35.900Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T10:16:58.991Z",
+      "sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
     }
-  ],
-  "luogu_blocked": {
-    "id": "202112E",
-    "pid": "P16063",
-    "title": "极差路径",
-    "problem_url": "https://www.luogu.com.cn/problem/P16063",
-    "source_sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312",
-    "reason": "Root IAB visible interactive CAPTCHA; current optimized source exactly verified in editor; no record observed yet",
-    "clicked_at": "2026-10-26T10:02:35.900Z",
-    "screenshot": "/private/tmp/csp-luogu-p16063-root-captcha.jpg",
-    "awaiting": "User completes visible verification; next submissions paused"
-  }
+  ]
 }

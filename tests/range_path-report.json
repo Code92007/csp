@@ -155,7 +155,7 @@
       "speedup": 1.494427506408594
     }
   ],
-  "online_status": "Shumeng 100 Accepted; Luogu current source awaiting recheck",
+  "online_status": "Shumeng and Luogu 100 Accepted for current source",
   "baseline_online_result": {
     "score": 84,
     "status": "Time Exceeded",
@@ -184,5 +184,25 @@
     "sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312",
     "time": "21:30:21",
     "final_observed_at": "2026-10-25T13:32:52.234Z"
+  },
+  "online_updated": "2026-10-26",
+  "luogu_online_validation": {
+    "id": "202112E",
+    "title": "极差路径",
+    "pid": "P16063",
+    "source_file": "/private/tmp/csp-validation-20261025/202112/E.cpp",
+    "problem_url": "https://www.luogu.com.cn/problem/P16063",
+    "record": "https://www.luogu.com.cn/record/305944901",
+    "submitted_at": "2026-10-26 18:16:31+08:00",
+    "clicked_at": "2026-10-26T10:02:35.900Z",
+    "score": 100,
+    "verdict": "Accepted",
+    "final_observed_at": "2026-10-26T10:16:58.991Z",
+    "sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312",
+    "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+    "record_source_matches_current_file": true,
+    "maximum_time_ms": 706,
+    "memory_mib": 49.33,
+    "test_points": 25
   }
 }
