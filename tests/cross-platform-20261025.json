@@ -737,6 +737,22 @@
       "sha256": "91e3edd94753f6dc16b11f6eb2612a2bd740c13e14ebeb6e1cf4a93ae2a20363",
       "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "202303E",
+      "title": "施肥",
+      "pid": "P16698",
+      "source_file": "/private/tmp/csp-validation-20261025/202303/E.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16698",
+      "record": "https://www.luogu.com.cn/record/305936519",
+      "submitted_at": "2026-10-26 17:37:11+08:00",
+      "clicked_at": "2026-10-26T09:37:11.430Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T09:38:07.622Z",
+      "sha256": "33d8956583e622b00cecc81c91baa224e566b1a7194a1fe3258ac41d90141fd2",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
     }
   ]
 }
