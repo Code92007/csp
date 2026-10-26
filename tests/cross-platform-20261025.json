@@ -675,6 +675,21 @@
       "sha256": "52b83a2ead5ce02693c2a67654fc6754c208fca306e93d0374608e8ace3b00da",
       "submission_method": "Normal code editor paste; exact clipboard comparison",
       "source_file": "/private/tmp/csp-validation-20261025/202305/E.cpp"
+    },
+    {
+      "id": "202303A",
+      "title": "田地丈量",
+      "pid": "P16694",
+      "source_file": "/private/tmp/csp-validation-20261025/202303/A.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16694",
+      "record": "https://www.luogu.com.cn/record/305927066",
+      "submitted_at": "2026-10-26 17:03:50+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T09:04:35.267Z",
+      "sha256": "34b442118b93a1609b689159910d0d67586cba362236d1513d8dfa5042ff4ef7",
+      "submission_method": "User completed CAPTCHA on root visible page; displayed record source exactly matches current file",
+      "record_source_matches_current_file": true
     }
   ]
 }
