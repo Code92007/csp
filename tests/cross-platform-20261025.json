@@ -753,6 +753,38 @@
       "sha256": "33d8956583e622b00cecc81c91baa224e566b1a7194a1fe3258ac41d90141fd2",
       "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "202206A",
+      "title": "归一化处理",
+      "pid": "P13910",
+      "source_file": "/private/tmp/csp-validation-20261025/202206/A.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P13910",
+      "record": "https://www.luogu.com.cn/record/305937570",
+      "submitted_at": "2026-10-26 17:41:26+08:00",
+      "clicked_at": "2026-10-26T09:41:26.066Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T09:42:20.361Z",
+      "sha256": "c1e2dcc4f047a86704b4cc0da88bbebfd5ed840f08d9f5cdb47d36a9b3137cc1",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
+    },
+    {
+      "id": "202206B",
+      "title": "寻宝！大冒险！",
+      "pid": "P13911",
+      "source_file": "/private/tmp/csp-validation-20261025/202206/B.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P13911",
+      "record": "https://www.luogu.com.cn/record/305938226",
+      "submitted_at": "2026-10-26 17:44:45+08:00",
+      "clicked_at": "2026-10-26T09:44:45.025Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T09:46:42.275Z",
+      "sha256": "c4bd808350d4951436fba8b59a592650e534fa773d7e8875ad4b87137feac365",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
     }
   ]
 }
