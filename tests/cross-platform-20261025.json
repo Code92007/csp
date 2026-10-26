@@ -929,17 +929,38 @@
       "sha256": "c7cdcf35a856adecb28fca6057aff11acc7d1aba5196d514c012d1c46d2b025f",
       "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "202104D",
+      "title": "校门外的树",
+      "pid": "P16039",
+      "source_file": "/private/tmp/csp-validation-20261025/202104/D.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16039",
+      "record": "https://www.luogu.com.cn/record/305948508",
+      "submitted_at": "2026-10-26 18:33:18+08:00",
+      "clicked_at": "2026-10-26T10:29:58.794Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T10:35:18.435Z",
+      "sha256": "45455ae0cfa0766b11ba60e26ec3f73e3b374a4e5d2c2b9e8dab4d61fdca2c84",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
+    },
+    {
+      "id": "202104E",
+      "title": "疫苗运输",
+      "pid": "P16040",
+      "source_file": "/private/tmp/csp-validation-20261025/202104/E.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16040",
+      "record": "https://www.luogu.com.cn/record/305949490",
+      "submitted_at": "2026-10-26 18:37:50+08:00",
+      "clicked_at": "2026-10-26T10:37:50.101Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T10:38:01.596Z",
+      "sha256": "294e801f8822119af5dd27d341ae76ab81ee536e48d6d1ae979435541b27c072",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
     }
-  ],
-  "luogu_blocked": {
-    "id": "202104D",
-    "pid": "P16039",
-    "title": "校门外的树",
-    "problem_url": "https://www.luogu.com.cn/problem/P16039",
-    "source_sha256": "45455ae0cfa0766b11ba60e26ec3f73e3b374a4e5d2c2b9e8dab4d61fdca2c84",
-    "reason": "Root IAB interactive CAPTCHA; exact current source verified in editor; no record observed yet",
-    "clicked_at": "2026-10-26T10:29:58.794Z",
-    "screenshot": "/private/tmp/csp-luogu-p16039-root-captcha.jpg",
-    "awaiting": "User completes visible verification; later submissions paused"
-  }
+  ]
 }
