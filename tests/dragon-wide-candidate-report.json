@@ -1,6 +1,6 @@
 {
   "source_sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815",
-  "status": "candidate: Shumeng 100 Accepted; Luogu awaiting user CAPTCHA; main source unchanged; root cause unresolved",
+  "status": "integrated current source; Shumeng and Luogu both 100 Accepted; old fast-version failure root cause unresolved",
   "platform": "macOS-26.3.1-arm64-arm-64bit",
   "machine": "arm64",
   "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
@@ -110,12 +110,12 @@
     "verification": "Root matched the displayed source to the conservative candidate exactly. Wide source has its own Shumeng record; no Luogu wide record yet."
   },
   "interpretation": "Clear improvement on full occupancy (2.07x median), modest benefit on checkerboard, mixed near-parity elsewhere. This is not a proven fix and no cause is inferred from the conservative candidate AC.",
-  "source_file": "tests/diagnostics/202309D-wide.cpp",
+  "source_file": "202309/D.cpp",
   "online": {
     "shumeng": {
       "pid": "CSP202309D",
       "title": "阴阳龙",
-      "source_file": "tests/diagnostics/202309D-wide.cpp",
+      "source_file": "202309/D.cpp",
       "sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815",
       "candidate_only": true,
       "account": "jojo",
@@ -134,10 +134,23 @@
       "memory_mib": 34.3
     },
     "luogu": {
-      "status": "awaiting_user_captcha",
-      "problem_url": "https://www.luogu.com.cn/problem/P16057#submit",
-      "record": null,
-      "score": null
+      "id": "202309D",
+      "title": "阴阳龙",
+      "pid": "P16057",
+      "candidate_only": true,
+      "source_file": "202309/D.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16057",
+      "record": "https://www.luogu.com.cn/record/305916165",
+      "submitted_at": "2026-10-26 16:21:25+08:00",
+      "clicked_at": "2026-10-26T08:21:25.022Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T08:21:49.048Z",
+      "sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815",
+      "submission_method": "Root ordinary code editor paste, exact clipboard readback; record source DOM text exactly matches candidate",
+      "maximum_time_ms": 673,
+      "memory_mb": 32.38,
+      "record_source_matches_current_file": true
     }
   },
   "root_independent_regressions": {
@@ -155,5 +168,6 @@
     "stress": [],
     "online_status": "not_submitted_by_validator",
     "status": "passed"
-  }
+  },
+  "integration_date": "2026-10-26"
 }

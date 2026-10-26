@@ -1,6 +1,6 @@
 # 曙梦 OJ 提交与核验记录
 
-截至 2026-10-25，工程 160 题中 152 题可查看；另 8 题登录后提示无权查看隐藏题目。
+截至 2026-10-26，工程 160 题中 152 题可查看；另 8 题登录后提示无权查看隐藏题目。
 已提交 152 题：151 题 100 分、1 题非满分、0 题待核验；其余 0 道可见题尚未提交。
 合并洛谷结果后，网站应显示 155 道已验证满分，5 道未验证或未满分。
 
@@ -77,7 +77,7 @@
 | 202309 | A | 坐标变换（其一） | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6) |
 | 202309 | B | 坐标变换（其二） | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52) |
 | 202309 | C | 梯度求解 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8cca67df0b81749be25) |
-| 202309 | D | 阴阳龙 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b) |
+| 202309 | D | 阴阳龙 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6ade253b74ace1cba9a24563) |
 | 202309 | E | 阻击 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d) |
 | 202305 | A | 重复局面 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8d0a67df0b81749be5a) |
 | 202305 | B | 矩阵运算 | [已验证：100 分 Accepted](https://oj.shumeng.tech/record/6adce8d2a67df0b81749be67) |

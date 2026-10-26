@@ -608,6 +608,58 @@
       "sha256": "6d341d5fcc167d14be201984db5b923b0919c1139cf6afe94beb0b87759d1b2f",
       "submission_method": "Normal code editor paste; exact clipboard comparison",
       "source_file": "/private/tmp/csp-validation-20261025/202305/C.cpp"
+    },
+    {
+      "id": "202309D",
+      "title": "阴阳龙（保守版复验）",
+      "pid": "P16057",
+      "candidate_only": true,
+      "source_file": "/private/tmp/csp-validation-20261025/tests/diagnostics/202309D-conservative.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16057",
+      "record": "https://www.luogu.com.cn/record/305915328",
+      "submitted_at": "2026-10-26 16:17:45+08:00",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T08:19:08.022Z",
+      "sha256": "79d35e9c66f39264bbf3383c51ad61383fc82ca13fb553997ca37c5f1b408df2",
+      "submission_method": "User submitted; root verified displayed source DOM text exactly matches conservative candidate",
+      "maximum_time_ms": 761,
+      "memory_mb": 30.09,
+      "record_source_matches_current_file": true
+    },
+    {
+      "id": "202309D",
+      "title": "阴阳龙",
+      "pid": "P16057",
+      "candidate_only": true,
+      "source_file": "/private/tmp/csp-validation-20261025/tests/diagnostics/202309D-wide.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16057",
+      "record": "https://www.luogu.com.cn/record/305916165",
+      "submitted_at": "2026-10-26 16:21:25+08:00",
+      "clicked_at": "2026-10-26T08:21:25.022Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T08:21:49.048Z",
+      "sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815",
+      "submission_method": "Root ordinary code editor paste, exact clipboard readback; record source DOM text exactly matches candidate",
+      "maximum_time_ms": 673,
+      "memory_mb": 32.38,
+      "record_source_matches_current_file": true
+    },
+    {
+      "id": "202305D",
+      "title": "电力网络",
+      "pid": "P16670",
+      "problem_url": "https://www.luogu.com.cn/problem/P16670",
+      "record": "https://www.luogu.com.cn/record/305916957",
+      "submitted_at": "2026-10-26 16:24:51+08:00",
+      "clicked_at": "2026-10-26T08:24:51.450Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T08:25:34.866Z",
+      "sha256": "829f3795e6aa8ac84fc225ae3ebdd072531b41c1b5c781fdb6c8f9fc25322b96",
+      "submission_method": "Normal code editor paste; exact clipboard comparison",
+      "source_file": "/private/tmp/csp-validation-20261025/202305/D.cpp"
     }
   ]
 }

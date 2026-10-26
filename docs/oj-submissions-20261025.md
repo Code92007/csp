@@ -78,6 +78,8 @@
 | 21:02:34 | CSP202303C | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef) |
 | 21:06:43 | CSP202112E | 84 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6addfee374ace1cba9a233c6) |
 | 21:30:21 | CSP202112E | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab) |
+| 23:47:13 | CSP202309D | 55 | Time Exceeded | [记录](https://oj.shumeng.tech/record/6ade248174ace1cba9a24539) |
+| 23:50:19 | CSP202309D | 100 | Accepted | [记录](https://oj.shumeng.tech/record/6ade253b74ace1cba9a24563) |
 
 按上述实际提交时间排序，本轮曙梦相邻提交的最短间隔为 126 秒；未并发提交，也未使用 HTTP 脚本或 curl 提交。
 
