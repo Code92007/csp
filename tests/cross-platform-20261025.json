@@ -785,6 +785,38 @@
       "sha256": "c4bd808350d4951436fba8b59a592650e534fa773d7e8875ad4b87137feac365",
       "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "202206C",
+      "title": "角色授权",
+      "pid": "P13912",
+      "source_file": "/private/tmp/csp-validation-20261025/202206/C.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P13912",
+      "record": "https://www.luogu.com.cn/record/305939423",
+      "submitted_at": "2026-10-26 17:50:28+08:00",
+      "clicked_at": "2026-10-26T09:49:27.789Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T09:52:25.491Z",
+      "sha256": "6a7f11b6730219655a2f7086866eed2ac34cf2a420f0d7f574b601fd945d5e55",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
+    },
+    {
+      "id": "202206D",
+      "title": "光线追踪",
+      "pid": "P13913",
+      "source_file": "/private/tmp/csp-validation-20261025/202206/D.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P13913",
+      "record": "https://www.luogu.com.cn/record/305940404",
+      "submitted_at": "2026-10-26 17:54:42+08:00",
+      "clicked_at": "2026-10-26T09:54:41.208Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T09:55:01.470Z",
+      "sha256": "c66dd2a4555c087b797cd0757325577bf1b1e7a5d162d75d1d9a646283df5ce2",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
     }
   ]
 }
