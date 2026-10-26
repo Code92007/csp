@@ -865,6 +865,54 @@
       "sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312",
       "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "202109D",
+      "title": "收集卡牌",
+      "pid": "P16029",
+      "source_file": "/private/tmp/csp-validation-20261025/202109/D.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16029",
+      "record": "https://www.luogu.com.cn/record/305945496",
+      "submitted_at": "2026-10-26 18:19:24+08:00",
+      "clicked_at": "2026-10-26T10:19:23.825Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T10:19:44.071Z",
+      "sha256": "d0054cc4dee11a8f6a87b53aa508d7c4dff26aeb6418407984f5a70260c5dbdc",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
+    },
+    {
+      "id": "202104A",
+      "title": "灰度直方图",
+      "pid": "P16036",
+      "source_file": "/private/tmp/csp-validation-20261025/202104/A.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16036",
+      "record": "https://www.luogu.com.cn/record/305946069",
+      "submitted_at": "2026-10-26 18:22:08+08:00",
+      "clicked_at": "2026-10-26T10:22:07.778Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T10:22:25.696Z",
+      "sha256": "cb04b1e64425e465d51f4d3e823af05735f5c3f8dd0928971918d527e62604c8",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
+    },
+    {
+      "id": "202104B",
+      "title": "邻域均值",
+      "pid": "P16037",
+      "source_file": "/private/tmp/csp-validation-20261025/202104/B.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16037",
+      "record": "https://www.luogu.com.cn/record/305946624",
+      "submitted_at": "2026-10-26 18:24:41+08:00",
+      "clicked_at": "2026-10-26T10:24:40.580Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T10:24:51.788Z",
+      "sha256": "d7e2bd6ce9f7665c2fc211365c95c7a3e09dcdac58a3a2944cdec0c56ef00672",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
     }
   ]
 }
