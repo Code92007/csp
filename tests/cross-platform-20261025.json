@@ -961,6 +961,52 @@
       "sha256": "294e801f8822119af5dd27d341ae76ab81ee536e48d6d1ae979435541b27c072",
       "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "201912C",
+      "title": "化学方程式",
+      "pid": "U283455",
+      "source_file": "/private/tmp/csp-validation-20261025/201912/C.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/U283455",
+      "record": "https://www.luogu.com.cn/record/305950101",
+      "submitted_at": "2026-10-26 18:40:35+08:00",
+      "clicked_at": "2026-10-26T10:40:35.458Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T10:40:58.386Z",
+      "sha256": "189420464de9f6d303fba4f90ce0c63be59f635e2cbab8ce639ef536bb5d0c26",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
+    },
+    {
+      "id": "201312B",
+      "title": "ISBN 号码",
+      "pid": "P1055",
+      "source_file": "/private/tmp/csp-validation-20261025/201312/B.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P1055",
+      "record": "https://www.luogu.com.cn/record/305950844",
+      "submitted_at": "2026-10-26 18:43:45+08:00",
+      "clicked_at": "2026-10-26T10:43:44.949Z",
+      "score": null,
+      "verdict": "Compile Error",
+      "language": "Go",
+      "final_observed_at": "2026-10-26T10:44:21.149Z",
+      "sha256": "fb2dbaaa5a38e612c92b9e432e0ff9a75fc25dbbdd33a522d2084d2ea8020ec0",
+      "record_source_matches_current_file": true,
+      "note": "C++ source was submitted with Go language selected; compilation failed before running tests. Correct-language recheck is required."
     }
-  ]
+  ],
+  "luogu_blocked": {
+    "id": "201312B",
+    "pid": "P1055",
+    "title": "ISBN 号码",
+    "problem_url": "https://www.luogu.com.cn/problem/P1055",
+    "source_sha256": "fb2dbaaa5a38e612c92b9e432e0ff9a75fc25dbbdd33a522d2084d2ea8020ec0",
+    "language": "C++17",
+    "reason": "Root IAB interactive CAPTCHA on correct-language resubmission; exact current source verified in editor; no new record observed yet",
+    "clicked_at": "2026-10-26T10:46:43.070Z",
+    "screenshot": "/private/tmp/csp-luogu-p1055-cpp17-captcha.jpg",
+    "awaiting": "User completes visible verification; queue paused"
+  },
+  "updated": "2026-10-26"
 }
