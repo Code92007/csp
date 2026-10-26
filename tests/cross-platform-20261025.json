@@ -817,6 +817,49 @@
       "sha256": "c66dd2a4555c087b797cd0757325577bf1b1e7a5d162d75d1d9a646283df5ce2",
       "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
       "record_source_matches_current_file": true
+    },
+    {
+      "id": "202112A",
+      "title": "序列查询",
+      "pid": "P16059",
+      "source_file": "/private/tmp/csp-validation-20261025/202112/A.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16059",
+      "record": "https://www.luogu.com.cn/record/305940917",
+      "submitted_at": "2026-10-26 17:57:13+08:00",
+      "clicked_at": "2026-10-26T09:57:12.088Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T09:57:32.280Z",
+      "sha256": "74c492ab0f041b54d3dec002984de837659422a21c103bd228cfdd4c1202737f",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
+    },
+    {
+      "id": "202112D",
+      "title": "磁盘文件操作",
+      "pid": "P16062",
+      "source_file": "/private/tmp/csp-validation-20261025/202112/D.cpp",
+      "problem_url": "https://www.luogu.com.cn/problem/P16062",
+      "record": "https://www.luogu.com.cn/record/305941488",
+      "submitted_at": "2026-10-26 17:59:57+08:00",
+      "clicked_at": "2026-10-26T09:59:56.527Z",
+      "score": 100,
+      "verdict": "Accepted",
+      "final_observed_at": "2026-10-26T10:00:14.547Z",
+      "sha256": "3d1c08db14005411be92eb49ebc4c741a1d335fad30d8b220b8e836136c2e1dd",
+      "submission_method": "Root IAB ordinary editor paste with exact clipboard readback; record source DOM text exactly matches current file",
+      "record_source_matches_current_file": true
     }
-  ]
+  ],
+  "luogu_blocked": {
+    "id": "202112E",
+    "pid": "P16063",
+    "title": "极差路径",
+    "problem_url": "https://www.luogu.com.cn/problem/P16063",
+    "source_sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312",
+    "reason": "Root IAB visible interactive CAPTCHA; current optimized source exactly verified in editor; no record observed yet",
+    "clicked_at": "2026-10-26T10:02:35.900Z",
+    "screenshot": "/private/tmp/csp-luogu-p16063-root-captcha.jpg",
+    "awaiting": "User completes visible verification; next submissions paused"
+  }
 }
