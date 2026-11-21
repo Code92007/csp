@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Refresh only the generated progress table in the project's README."""
+"""Refresh the progress tables and problem directories from article metadata."""
 from content import ROOT,articles
 import re
 posts=articles()
@@ -43,3 +43,32 @@ for letter in 'DCBA':
         rows.append(f'| {a["contest"]} | [{p["title"]}](../{a["path"]}#{p["anchor"]}) | {label} | {"、".join(p["tags"])} |')
     rows.append('')
 (ROOT/'docs'/'problem-order.md').write_text('\n'.join(rows)+'\n',encoding='utf-8')
+
+# Keep the study plan's full directory aligned with the actual articles.
+# The curated four-week schedule above this block remains hand-written.
+rows=[]
+for letters,title in [('AB','A/B 基础题库'),('CD','C/D 提分题库'),('E','E 拓展题库')]:
+    rows += [f'### {title}（{len(posts)*len(letters)} 题）','']
+    if letters=='E':
+        rows += ['| 年月 | T5 / E | 算法标签 |','|---|---|---|']
+    else:
+        columns=' | '.join(f'T{ord(letter)-64} / {letter}' for letter in letters)
+        rows += [f'| 年月 | {columns} |','|---|---|---|']
+    for a in posts:
+        cells=[a['contest_month']+('（第 0 次）' if a['contest']=='201312' else '')]
+        for letter in letters:
+            p=a['problems'][ord(letter)-65]
+            link=f'[{a["contest"]}{letter} {p["title"]}](../{a["path"]}#{p["anchor"]})'
+            tags='、'.join(p['tags'])
+            if letters=='E':
+                cells += [link,tags]
+            else:
+                cells.append(f'{link}<br>{tags}')
+        rows.append('| '+' | '.join(cells)+' |')
+    rows.append('')
+path=ROOT/'docs'/'study-plan.md'
+text=path.read_text(encoding='utf-8')
+start='<!-- study-problems:start -->';end='<!-- study-problems:end -->'
+before,rest=text.split(start,1);_,after=rest.split(end,1)
+path.write_text(before+start+'\n\n'+'\n'.join(rows)+'\n'+end+after,encoding='utf-8')
+print('已更新备考计划的全量题单。')
