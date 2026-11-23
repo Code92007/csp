@@ -1,0 +1,62 @@
+{
+  "contest": "201512",
+  "source_sha256": {
+    "A": "5e60cd1085007422b523f3d09bfb3f5bd2fc57566df6204f6f6947d6dd3e869a",
+    "B": "5ada26eb6c299b8d9a4d7b216b8c34dd794f01723bc8058e110dd16f74b0b5ac",
+    "C": "5759c34089bab4c9928854999b052a174e339b4c6aa8e79bb489b6791a6da8e0",
+    "D": "48408a0fbad390414fb835efcd315a8711520a6d7983d6c19b500784e3dc0f7b",
+    "E": "65ae8c42e9b69b9442054dd9d7285ae7212d14e1c05e03e0c144fda2d21309c0"
+  },
+  "different_inputs": 1249,
+  "categories": {
+    "retained_independent": 401,
+    "additional_independent": 840,
+    "saved_sample": 7,
+    "constructive_stress": 1
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.009149958000000069
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 67,
+        "B": 614,
+        "C": 103,
+        "D": 233,
+        "E": 232
+      },
+      "total": 1249,
+      "seconds": 5.567068750000001
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 67,
+        "B": 614,
+        "C": 103,
+        "D": 233,
+        "E": 231
+      },
+      "total": 1248,
+      "seconds": 7.763985542
+    }
+  ],
+  "independent_oracles": "Digit strings, maximal equal-color runs before simultaneous elimination, literal canvas simulation, exhaustive edge-mask Euler trail search, direct GF(2) matrix exponentiation independent of Krylov polynomials.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

@@ -1,60 +1,61 @@
-#include <algorithm>
-#include <iostream>
-#include <queue>
-#include <string>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-bool wall(char c) {
-    return c == '-' || c == '|' || c == '+';
+typedef pair<int,int> P;
+const int N=110,M=4;
+const int dx[M]={1,-1,0,0},dy[M]={0,0,1,-1};
+int n,m,k;
+char a[N][N];
+bool vis[N][N];
+bool wall(char c){
+    return c=='-' || c=='|' || c=='+';
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int m, n, q;
-    cin >> m >> n >> q;
-    vector<string> a(n, string(m, '.'));
-    while (q--) {
-        int type, x, y;
-        cin >> type >> x >> y;
-        if (type == 0) {
-            int xx, yy;
-            cin >> xx >> yy;
-            bool horizontal = y == yy;
-            if (x > xx)
-                swap(x, xx);
-            if (y > yy)
-                swap(y, yy);
-            for (int i = y; i <= yy; i++)
-                for (int j = x; j <= xx; j++) {
-                    char &c = a[i][j];
-                    c = (c == '+' || (horizontal ? c == '|' : c == '-')) ? '+'
-                        : horizontal                                     ? '-'
-                                                                         : '|';
+int main(){
+    scanf("%d%d%d",&m,&n,&k);
+    for(int i=0;i<n;++i){
+        for(int j=0;j<m;++j){
+            a[i][j]='.';
+        }
+    }
+    while(k--){
+        int op,x,y;
+        scanf("%d%d%d",&op,&x,&y);
+        if(!op){
+            int u,v;
+            scanf("%d%d",&u,&v);
+            bool row=(y==v);
+            if(x>u)swap(x,u);
+            if(y>v)swap(y,v);
+            for(int i=y;i<=v;++i){
+                for(int j=x;j<=u;++j){
+                    char &c=a[i][j];
+                    if(c=='+' || (row?c=='|':c=='-'))c='+';
+                    else c=row?'-':'|';
                 }
-        } else {
+            }
+        }
+        else{
             char c;
-            cin >> c;
-            vector<vector<bool>> seen(n, vector<bool>(m));
-            queue<pair<int, int>> todo;
-            todo.push({x, y});
-            seen[y][x] = true;
-            int dx[] = {1, -1, 0, 0}, dy[] = {0, 0, 1, -1};
-            while (!todo.empty()) {
-                auto [u, v] = todo.front();
-                todo.pop();
-                a[v][u] = c;
-                for (int k = 0; k < 4; k++) {
-                    int xx = u + dx[k], yy = v + dy[k];
-                    if (xx >= 0 && xx < m && yy >= 0 && yy < n && !seen[yy][xx] &&
-                        !wall(a[yy][xx])) {
-                        seen[yy][xx] = true;
-                        todo.push({xx, yy});
-                    }
+            scanf(" %c",&c);
+            memset(vis,0,sizeof vis);
+            queue<P> q;
+            q.push({x,y});
+            vis[y][x]=true;
+            while(!q.empty()){
+                auto [u,v]=q.front();
+                q.pop();
+                a[v][u]=c;
+                for(int i=0;i<M;++i){
+                    int x=u+dx[i],y=v+dy[i];
+                    if(x<0 || x>=m || y<0 || y>=n)continue;
+                    if(vis[y][x] || wall(a[y][x]))continue;
+                    vis[y][x]=true;
+                    q.push({x,y});
                 }
             }
         }
     }
-    for (int y = n - 1; y >= 0; y--)
-        cout << a[y] << '\n';
+    for(int y=n-1;y>=0;--y){
+        puts(a[y]);
+    }
+    return 0;
 }

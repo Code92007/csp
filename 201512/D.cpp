@@ -1,50 +1,55 @@
-#include <algorithm>
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<vector<pair<int, int>>> graph(n + 1);
-    for (int i = 0; i < m; ++i) {
-        int u, v;
-        cin >> u >> v;
-        graph[u].push_back({v, i});
-        graph[v].push_back({u, i});
+typedef pair<int,int> P;
+const int N=10010,M=1e5+10;
+int n,m,pos[N],st[M],ans[M],top,cnt;
+bool vis[M];
+vector<vector<P>> g;
+int main(){
+    scanf("%d%d",&n,&m);
+    g.assign(n+1,vector<P>());
+    memset(vis,0,sizeof vis);
+    memset(pos,0,sizeof pos);
+    top=cnt=0;
+    for(int i=0;i<m;++i){
+        int u,v;
+        scanf("%d%d",&u,&v);
+        g[u].push_back({v,i});
+        g[v].push_back({u,i});
     }
-    int odd = 0;
-    for (int u = 1; u <= n; ++u) {
-        sort(graph[u].begin(), graph[u].end());
-        odd += graph[u].size() % 2;
+    int odd=0;
+    for(int u=1;u<=n;++u){
+        sort(g[u].begin(),g[u].end());
+        odd+=g[u].size()%2;
     }
-    if (odd != 0 && (odd != 2 || graph[1].size() % 2 == 0)) {
-        cout << -1 << '\n';
+    if(odd && (odd!=2 || g[1].size()%2==0)){
+        puts("-1");
         return 0;
     }
-    vector<bool> used(m);
-    vector<int> pointer(n + 1), stack{1}, path;
-    while (!stack.empty()) {
-        int u = stack.back();
-        auto &i = pointer[u];
-        while (i < int(graph[u].size()) && used[graph[u][i].second])
+    st[++top]=1;
+    while(top){
+        int u=st[top];
+        int &i=pos[u];
+        while(i<(int)g[u].size() && vis[g[u][i].second]){
             ++i;
-        if (i == int(graph[u].size())) {
-            path.push_back(u);
-            stack.pop_back();
-        } else {
-            auto [v, id] = graph[u][i++];
-            used[id] = true;
-            stack.push_back(v);
+        }
+        if(i==(int)g[u].size()){
+            ans[cnt++]=u;
+            --top;
+        }
+        else{
+            auto [v,id]=g[u][i++];
+            vis[id]=true;
+            st[++top]=v;
         }
     }
-    if (path.size() != size_t(m + 1)) {
-        cout << -1 << '\n';
+    if(cnt!=m+1){
+        puts("-1");
         return 0;
     }
-    reverse(path.begin(), path.end());
-    for (size_t i = 0; i < path.size(); ++i)
-        cout << path[i] << (i + 1 == path.size() ? '\n' : ' ');
+    reverse(ans,ans+cnt);
+    for(int i=0;i<cnt;++i){
+        printf("%d%c",ans[i],i+1==cnt?'\n':' ');
+    }
+    return 0;
 }

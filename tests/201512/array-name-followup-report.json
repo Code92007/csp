@@ -1,0 +1,69 @@
+{
+  "contest": "201512",
+  "source_sha256": {
+    "D": "90a4c0063b35f9fb8011a7fb8464938a8b09af724602e6e176fc317bb4defa79",
+    "E": "2379b70633a90f2df0d66ee0a465c94838e2afcfc565c42205f28619dac07431"
+  },
+  "different_inputs": 466,
+  "categories": {
+    "retained_independent": 141,
+    "additional_independent": 321,
+    "saved_sample": 2,
+    "constructive_stress": 1,
+    "array_boundary_checker": 1
+  },
+  "compilation": {
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.009260667000000389
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "D": 234,
+        "E": 232
+      },
+      "total": 466,
+      "seconds": 2.0846442499999998
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.023632209000000515
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "D": 234,
+        "E": 232
+      },
+      "total": 466,
+      "seconds": 3.2588004579999996
+    }
+  ],
+  "independent_oracles": "Exhaustive edge-mask Euler trail search with lexicographic comparison; direct GF(2) matrix exponentiation independent of Krylov polynomial reduction. A maximum 10000-vertex/100000-edge Euler instance independently checks every edge multiplicity and route length; the 1000-dimensional cyclic matrix has analytic query answers.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor.",
+  "before_sha256": {
+    "D": "48408a0fbad390414fb835efcd315a8711520a6d7983d6c19b500784e3dc0f7b",
+    "E": "cbeb1b0de2a061342f295153b50317d5dee5cefcc73bdd5427e78c88e391cb0c"
+  },
+  "changes": {
+    "D": "vis/pos/st/ans replaced by global bounded arrays; initialization explicitly clears vis/pos and resets top/cnt per input. st and ans each hold at most m+1 entries.",
+    "E": "expr array renamed f; reduce function renamed rem, preserving all polynomial arithmetic."
+  },
+  "array_bounds": {
+    "N": 10010,
+    "M": 100010,
+    "maximum_vertices": 10000,
+    "maximum_edges": 100000,
+    "maximum_stack_entries": 100001,
+    "maximum_answer_entries": 100001
+  }
+}

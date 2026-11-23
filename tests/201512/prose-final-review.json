@@ -1,0 +1,51 @@
+{
+  "contest": "201512",
+  "scope": "Final prose review: semantic paragraphs, separate headings/operation lists, current code names, full formulas/proofs/complexities and source attribution. Source code unchanged.",
+  "current_source_sha256": {
+    "A": "5e60cd1085007422b523f3d09bfb3f5bd2fc57566df6204f6f6947d6dd3e869a",
+    "B": "5ada26eb6c299b8d9a4d7b216b8c34dd794f01723bc8058e110dd16f74b0b5ac",
+    "C": "5759c34089bab4c9928854999b052a174e339b4c6aa8e79bb489b6791a6da8e0",
+    "D": "90a4c0063b35f9fb8011a7fb8464938a8b09af724602e6e176fc317bb4defa79",
+    "E": "2379b70633a90f2df0d66ee0a465c94838e2afcfc565c42205f28619dac07431"
+  },
+  "changes": [
+    {
+      "before": "反复把n%10加入答案，再令n/=10删除最低位，直到n为0。",
+      "after": "反复把 `n%10` 加入答案，再令 `n/=10` 删除最低位，直到 n 为 0。"
+    },
+    {
+      "before": "初值答案设为0，输入0时无需进入循环也能正确输出0。",
+      "after": "初始答案设为 0，输入 0 时无需进入循环也能正确输出 0。"
+    },
+    {
+      "before": "最后统一把标记格输出为0。",
+      "after": "最后统一把标记格输出为 0。"
+    },
+    {
+      "before": "另开 visited 记录本轮访问。",
+      "after": "另开 `vis` 记录本轮访问。"
+    },
+    {
+      "before": "因此得到最小字典序的欧拉路线。 最终序列长度",
+      "after": "因此得到最小字典序的欧拉路线。\n\n最终序列长度"
+    },
+    {
+      "before": "线性相关式右乘任意次 $A$ 后仍成立",
+      "after": "将线性相关式两边同时作用任意次 $A$ 后，等式仍成立"
+    }
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged_or_mask_to_S": true,
+  "markdown": [
+    {
+      "file": "201512/README.md",
+      "before_sha256": "d37db5c68950758d9fb94d8d1d839eae97bdde7e695b2efcc5837fc457054906",
+      "after_sha256": "cc18bb5a3ad45d98f1857cfb1a8a0687a955336c5d51f31475280ca4b588baa6"
+    },
+    {
+      "file": "201512题解.md",
+      "before_sha256": "2cd1dc5ccf8c95c1d07e363676991107801dd8f6858b450e9a12e1cbc1227dd1",
+      "after_sha256": "91c86e64ec41a5e9e53da867b8d0edccfa59da4c926a4ad259bcd67630371ddf"
+    }
+  ]
+}

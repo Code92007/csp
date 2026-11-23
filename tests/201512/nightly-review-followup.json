@@ -1,0 +1,36 @@
+{
+  "contest": "201512",
+  "changes": {
+    "E": {
+      "before_sha256": "65ae8c42e9b69b9442054dd9d7285ae7212d14e1c05e03e0c144fda2d21309c0",
+      "renames": {
+        "P": "F"
+      },
+      "numeric_literals": {},
+      "token_equivalence": true,
+      "after_sha256": "cbeb1b0de2a061342f295153b50317d5dee5cefcc73bdd5427e78c88e391cb0c",
+      "runs": [
+        {
+          "mode": "o2",
+          "compilation": "passed without diagnostics",
+          "saved_samples": 1,
+          "all_passed": true
+        },
+        {
+          "mode": "ubsan",
+          "compilation": "passed without diagnostics",
+          "saved_samples": 1,
+          "all_passed": true
+        }
+      ]
+    }
+  },
+  "current_source_sha256": {
+    "A": "5e60cd1085007422b523f3d09bfb3f5bd2fc57566df6204f6f6947d6dd3e869a",
+    "B": "5ada26eb6c299b8d9a4d7b216b8c34dd794f01723bc8058e110dd16f74b0b5ac",
+    "C": "5759c34089bab4c9928854999b052a174e339b4c6aa8e79bb489b6791a6da8e0",
+    "D": "48408a0fbad390414fb835efcd315a8711520a6d7983d6c19b500784e3dc0f7b",
+    "E": "cbeb1b0de2a061342f295153b50317d5dee5cefcc73bdd5427e78c88e391cb0c"
+  },
+  "note": "Identifier-only and exactly equal integer-literal style changes; no algorithm or input contract change. Original full independent verification reports remain historical. No online submission."
+}

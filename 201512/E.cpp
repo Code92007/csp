@@ -1,94 +1,94 @@
-#include <array>
-#include <bitset>
-#include <iostream>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using Bits = bitset<1001>;
-using Poly = bitset<2048>;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int m;
-    cin >> m;
-    vector<Bits> a(m), basis(m), expression(m), states;
-    string s;
-    for (int i = 0; i < m; ++i) {
-        cin >> s;
-        for (int j = 0; j < m; ++j)
-            a[i][j] = s[j] == '1';
+const int N=1005,M=2048,K=31;
+typedef bitset<N> B;
+typedef bitset<M> F;
+int m,q,d;
+char s[N];
+B a[N],base[N],f[N];
+F rel,pw[K];
+vector<B> v;
+F rem(F x){
+    for(int i=2*d-1;i>=d;--i){
+        if(x[i])x^=rel<<(i-d);
     }
-    cin >> s;
-    Bits current;
-    for (int j = 0; j < m; ++j)
-        current[j] = s[j] == '1';
-    Poly relation;
-    int degree = 0;
-    for (int d = 0; d <= m; ++d) {
-        Bits v = current, e;
-        e[d] = 1;
-        bool independent = false;
-        for (int p = m - 1; p >= 0; --p)
-            if (v[p]) {
-                if (basis[p].none()) {
-                    basis[p] = v;
-                    expression[p] = e;
-                    independent = true;
-                    break;
-                }
-                v ^= basis[p];
-                e ^= expression[p];
+    return x;
+}
+F mul(const F &x,const F &y){
+    F z;
+    for(int i=0;i<d;++i){
+        if(x[i])z^=y<<i;
+    }
+    return rem(z);
+}
+int main(){
+    scanf("%d",&m);
+    for(int i=0;i<m;++i){
+        scanf("%s",s);
+        for(int j=0;j<m;++j){
+            a[i][j]=(s[j]=='1');
+        }
+    }
+    scanf("%s",s);
+    B cur;
+    for(int j=0;j<m;++j){
+        cur[j]=(s[j]=='1');
+    }
+    for(int i=0;i<=m;++i){
+        B x=cur,e;
+        e[i]=1;
+        bool ok=false;
+        for(int p=m-1;p>=0;--p){
+            if(!x[p])continue;
+            if(base[p].none()){
+                base[p]=x;
+                f[p]=e;
+                ok=true;
+                break;
             }
-        if (!independent) {
-            degree = d;
-            for (int j = 0; j <= d; ++j)
-                relation[j] = e[j];
+            x^=base[p];
+            e^=f[p];
+        }
+        if(!ok){
+            d=i;
+            for(int j=0;j<=d;++j){
+                rel[j]=e[j];
+            }
             break;
         }
-        states.push_back(current);
-        Bits next;
-        for (int i = 0; i < m; ++i)
-            next[i] = (a[i] & current).count() % 2;
-        current = next;
-    }
-    auto reduce = [&](Poly v) {
-        for (int i = 2 * degree - 1; i >= degree; --i)
-            if (v[i])
-                v ^= relation << (i - degree);
-        return v;
-    };
-    auto multiply = [&](const Poly &x, const Poly &y) {
-        Poly z;
-        for (int i = 0; i < degree; ++i)
-            if (x[i])
-                z ^= y << i;
-        return reduce(z);
-    };
-    array<Poly, 31> power{};
-    if (degree) {
-        power[0][1] = 1;
-        power[0] = reduce(power[0]);
-        for (int j = 1; j < 31; ++j)
-            power[j] = multiply(power[j - 1], power[j - 1]);
-    }
-    int q;
-    cin >> q;
-    while (q--) {
-        unsigned k;
-        cin >> k;
-        Bits answer;
-        if (degree) {
-            Poly p;
-            p[0] = 1;
-            for (int j = 0; j < 31; ++j)
-                if (k >> j & 1)
-                    p = multiply(p, power[j]);
-            for (int j = 0; j < degree; ++j)
-                if (p[j])
-                    answer ^= states[j];
+        v.push_back(cur);
+        B next;
+        for(int j=0;j<m;++j){
+            next[j]=(a[j]&cur).count()%2;
         }
-        for (int j = 0; j < m; ++j)
-            cout << answer[j];
-        cout << '\n';
+        cur=next;
     }
+    if(d){
+        pw[0][1]=1;
+        pw[0]=rem(pw[0]);
+        for(int j=1;j<K;++j){
+            pw[j]=mul(pw[j-1],pw[j-1]);
+        }
+    }
+    scanf("%d",&q);
+    while(q--){
+        unsigned k;
+        scanf("%u",&k);
+        B ans;
+        if(d){
+            F p;
+            p[0]=1;
+            for(int j=0;j<K;++j){
+                if(k>>j&1)p=mul(p,pw[j]);
+            }
+            for(int j=0;j<d;++j){
+                if(p[j])ans^=v[j];
+            }
+        }
+        for(int j=0;j<m;++j){
+            putchar(ans[j]?'1':'0');
+        }
+        puts("");
+    }
+    return 0;
 }

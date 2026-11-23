@@ -1,29 +1,33 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<vector<int>> a(n, vector<int>(m));
-    vector<vector<bool>> erase(n, vector<bool>(m));
-    for (auto &r : a)
-        for (int &x : r)
-            cin >> x;
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < m; j++) {
-            if (j + 2 < m && a[i][j] == a[i][j + 1] && a[i][j] == a[i][j + 2])
-                for (int d = 0; d < 3; d++)
-                    erase[i][j + d] = true;
-            if (i + 2 < n && a[i][j] == a[i + 1][j] && a[i][j] == a[i + 2][j])
-                for (int d = 0; d < 3; d++)
-                    erase[i + d][j] = true;
+const int N=35;
+int n,m,a[N][N];
+bool vis[N][N];
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=0;i<n;++i){
+        for(int j=0;j<m;++j){
+            scanf("%d",&a[i][j]);
         }
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            if (j)
-                cout << ' ';
-            cout << (erase[i][j] ? 0 : a[i][j]);
-        }
-        cout << '\n';
     }
+    for(int i=0;i<n;++i){
+        for(int j=0;j<m;++j){
+            if(j+2<m && a[i][j]==a[i][j+1] && a[i][j]==a[i][j+2]){
+                for(int k=0;k<3;++k){
+                    vis[i][j+k]=true;
+                }
+            }
+            if(i+2<n && a[i][j]==a[i+1][j] && a[i][j]==a[i+2][j]){
+                for(int k=0;k<3;++k){
+                    vis[i+k][j]=true;
+                }
+            }
+        }
+    }
+    for(int i=0;i<n;++i){
+        for(int j=0;j<m;++j){
+            printf("%d%c",vis[i][j]?0:a[i][j],j==m-1?'\n':' ');
+        }
+    }
+    return 0;
 }
