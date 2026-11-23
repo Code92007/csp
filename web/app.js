@@ -86,6 +86,7 @@ function enhanceArticle(container,contest){
   }
   for(const pre of container.querySelectorAll('pre')){
     const code=pre.querySelector('code');if(!code)continue;
+    if(code.classList.contains('language-cpp'))hljs.highlightElement(code);
     const button=document.createElement('button');button.className='copy-code';button.textContent='复制代码';button.type='button';button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(code.textContent);button.textContent='已复制';setTimeout(()=>button.textContent='复制代码',1500);}catch(_){toast('自动复制不可用，请手动选择代码。');}});pre.append(button);
   }
 }
