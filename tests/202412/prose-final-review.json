@@ -1,0 +1,31 @@
+{
+  "contest": "202412",
+  "scope": "Final prose review: semantic paragraphs, separate headings/operation lists, current code names, full formulas/proofs/complexities and source attribution. Source code unchanged.",
+  "current_source_sha256": {
+    "A": "fe39fd7880e10e9da3d6b833b2cc868b2f8f72189564cae735d7ee95c325fd67",
+    "B": "c2319119bc4d46c845be647885b597f61bc21db2e0e2c24f1ad6fdd51a1b7455",
+    "C": "b2de022babdf4bf41269f23bbe1219cfbacc356b98d1e7fd9a68a19eeb107c53",
+    "D": "3a25bb512f48002f27b21559bc763469cfe6a0e9dc64d27c5f925bbf4a11751b",
+    "E": "7ae5e5f1e5eed6aa0bd9083b1c74bc0619a098ade17b779b4c8d52bce0f93511"
+  },
+  "changes": [
+    {
+      "before": "令 $c_j$ 表示离开地点 $j$ 前，累计支出减去已获得的补给。",
+      "after": "令 $c_j$ 表示支付离开地点 $j$ 的消耗后，累计支出减去已获得的补给。"
+    }
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged_or_mask_to_S": true,
+  "markdown": [
+    {
+      "file": "202412/README.md",
+      "before_sha256": "04d5b082ae0c7afd69ccd8d44543f4dbfbf546445c7c330720277eef2706e924",
+      "after_sha256": "ab0046edee674c988c3127a703eebe34fc1bfaa9c33a8f58a4aaee250fe0270c"
+    },
+    {
+      "file": "202412题解.md",
+      "before_sha256": "46c89eacb5a447ad9c3b5afd3d4e709335e5172a3b5dbd3ae974437e57882f0e",
+      "after_sha256": "aaf5d734c3d157846e535af712a4a74a3b4e72ae10258622ad249ae5cbf03b7e"
+    }
+  ]
+}

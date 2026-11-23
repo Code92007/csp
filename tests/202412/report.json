@@ -1,0 +1,72 @@
+{
+  "contest": "202412",
+  "source_sha256": {
+    "A": "fe39fd7880e10e9da3d6b833b2cc868b2f8f72189564cae735d7ee95c325fd67",
+    "B": "c2319119bc4d46c845be647885b597f61bc21db2e0e2c24f1ad6fdd51a1b7455",
+    "C": "b2de022babdf4bf41269f23bbe1219cfbacc356b98d1e7fd9a68a19eeb107c53",
+    "D": "3a25bb512f48002f27b21559bc763469cfe6a0e9dc64d27c5f925bbf4a11751b",
+    "E": "4a18baeac5da9ea0c8a82c1df3c68684d7a5d132b19f9c980cc3c15b73b004bd"
+  },
+  "different_inputs": 1221,
+  "categories": {
+    "retained_independent": 567,
+    "additional_independent": 644,
+    "saved_sample": 7,
+    "constructive_stress": 3
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "A",
+      "kind": "constructive_stress",
+      "seconds": 0.017206083000000483
+    },
+    {
+      "problem": "D",
+      "kind": "constructive_stress",
+      "seconds": 0.01052237500000075
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.20836929100000035
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 76,
+        "B": 252,
+        "C": 251,
+        "D": 416,
+        "E": 226
+      },
+      "total": 1221,
+      "seconds": 5.683308749999999
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 75,
+        "B": 252,
+        "C": 251,
+        "D": 415,
+        "E": 225
+      },
+      "total": 1218,
+      "seconds": 8.3050595
+    }
+  ],
+  "independent_oracles": "Independent step simulation, initial-energy feasibility, list-based cache simulation, explicit graph BFS, interval make/kill DP.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

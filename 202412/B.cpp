@@ -1,29 +1,29 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    vector<long long> a(n + 1), b(n + 1), need(n + 1), pre(n + 1), suf(n + 2, -(1LL << 60));
-    for (auto &x : a)
-        cin >> x;
-    for (int i = 1; i <= n; i++)
-        cin >> b[i];
-    long long cost = 0;
-    for (int i = 0; i <= n; i++) {
-        cost += a[i] - b[i];
-        need[i] = cost;
-        pre[i] = i ? max(pre[i - 1], need[i]) : need[i];
+typedef long long ll;
+const int N=1e5+10;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+int n;
+ll a[N],b[N],c[N],pre[N],suf[N],sum;
+int main(){
+    scanf("%d",&n);
+    for(int i=0;i<=n;++i){
+        scanf("%lld",&a[i]);
     }
-    for (int i = n; i >= 0; i--)
-        suf[i] = max(suf[i + 1], need[i]);
-    for (int i = 1; i <= n; i++) {
-        if (i > 1)
-            cout << ' ';
-        cout << max(pre[i - 1], suf[i] + b[i]);
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&b[i]);
     }
-    cout << '\n';
+    for(int i=0;i<=n;++i){
+        sum+=a[i]-b[i];
+        c[i]=sum;
+        pre[i]=i?max(pre[i-1],c[i]):c[i];
+    }
+    suf[n+1]=-INF;
+    for(int i=n;i>=0;--i){
+        suf[i]=max(suf[i+1],c[i]);
+    }
+    for(int i=1;i<=n;++i){
+        printf("%lld%c",max(pre[i-1],suf[i]+b[i]),i==n?'\n':' ');
+    }
+    return 0;
 }

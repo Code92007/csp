@@ -1,39 +1,35 @@
-#include <iostream>
-#include <list>
-#include <unordered_map>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Entry {
-    int address;
+struct node{
+    int id;
     bool dirty;
 };
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int ways, groups, q;
-    cin >> ways >> groups >> q;
-    vector<list<Entry>> cache(groups);
-    unordered_map<int, list<Entry>::iterator> location;
-    location.reserve(min(q, ways * groups) * 2 + 1);
-    while (q--) {
-        int op, address;
-        cin >> op >> address;
-        auto &group = cache[(address / ways) % groups];
-        auto it = location.find(address);
-        if (it != location.end()) {
-            it->second->dirty |= op == 1;
-            group.splice(group.begin(), group, it->second);
+int n,m,q;
+vector<list<node>> g;
+unordered_map<int,list<node>::iterator> mp;
+int main(){
+    scanf("%d%d%d",&n,&m,&q);
+    g.resize(m);
+    mp.reserve(min(q,n*m)*2+1);
+    while(q--){
+        int op,x;
+        scanf("%d%d",&op,&x);
+        auto &cur=g[x/n%m];
+        auto it=mp.find(x);
+        if(it!=mp.end()){
+            it->second->dirty|=(op==1);
+            cur.splice(cur.begin(),cur,it->second);
             continue;
         }
-        if (int(group.size()) == ways) {
-            Entry victim = group.back();
-            if (victim.dirty)
-                cout << "1 " << victim.address << '\n';
-            location.erase(victim.address);
-            group.pop_back();
+        if((int)cur.size()==n){
+            node v=cur.back();
+            if(v.dirty)printf("1 %d\n",v.id);
+            mp.erase(v.id);
+            cur.pop_back();
         }
-        cout << "0 " << address << '\n';
-        group.push_front({address, op == 1});
-        location[address] = group.begin();
+        printf("0 %d\n",x);
+        cur.push_front({x,op==1});
+        mp[x]=cur.begin();
     }
+    return 0;
 }

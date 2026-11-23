@@ -1,48 +1,41 @@
-#include <algorithm>
-#include <iostream>
-#include <numeric>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Successor {
-    vector<int> parent;
-    explicit Successor(int n) : parent(n + 2) {
-        iota(parent.begin(), parent.end(), 0);
+typedef long long ll;
+const int N=1e5+10;
+int n,a[N],k[N],fa[N],dis[N],q[N];
+int find(int x){
+    while(x!=fa[x]){
+        x=fa[x]=fa[fa[x]];
     }
-    int find(int x) {
-        int root = x;
-        while (parent[root] != root)
-            root = parent[root];
-        while (x != root) {
-            int next = parent[x];
-            parent[x] = root;
-            x = next;
-        }
-        return root;
+    return x;
+}
+int main(){
+    scanf("%d",&n);
+    for(int i=1;i<=n;++i){
+        scanf("%d",&a[i]);
     }
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    vector<int> a(n + 1), k(n + 1), distance(n + 1, -1);
-    for (int i = 1; i <= n; ++i)
-        cin >> a[i];
-    for (int i = 1; i <= n; ++i)
-        cin >> k[i];
-    Successor next(n);
-    vector<int> queue{1};
-    distance[1] = 0;
-    for (size_t head = 0; head < queue.size(); ++head) {
-        int u = queue[head], right = int(min<long long>(n, 1LL * u + k[u]));
-        for (int landing = next.find(u + 1); landing <= right; landing = next.find(landing)) {
-            int v = landing - a[landing];
-            if (distance[v] == -1) {
-                distance[v] = distance[u] + 1;
-                queue.push_back(v);
+    for(int i=1;i<=n;++i){
+        scanf("%d",&k[i]);
+    }
+    for(int i=1;i<=n+1;++i){
+        fa[i]=i;
+    }
+    memset(dis,-1,sizeof dis);
+    dis[1]=0;
+    int head=0,tail=1;
+    q[0]=1;
+    while(head<tail){
+        int u=q[head++];
+        int r=min((ll)n,u+(ll)k[u]);
+        for(int j=find(u+1);j<=r;j=find(j)){
+            int v=j-a[j];
+            if(dis[v]==-1){
+                dis[v]=dis[u]+1;
+                q[tail++]=v;
             }
-            next.parent[landing] = next.find(landing + 1);
+            fa[j]=find(j+1);
         }
     }
-    cout << distance[n] << '\n';
+    printf("%d\n",dis[n]);
+    return 0;
 }

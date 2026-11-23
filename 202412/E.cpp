@@ -1,75 +1,70 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    vector<int> originalA(n + 2), originalB(n + 2);
-    for (int i = 1; i <= n; ++i)
-        cin >> originalA[i];
-    for (int i = 1; i <= n; ++i)
-        cin >> originalB[i];
-    int q;
-    cin >> q;
-    vector<int> left(n + 2), right(n + 2), stack;
-    stack.reserve(n);
-    vector<ll> prefix(n + 2), answer(n + 2), maximum;
-    maximum.reserve(n);
-    while (q--) {
-        auto a = originalA, b = originalB;
-        int k;
-        cin >> k;
-        while (k--) {
-            int i;
-            cin >> i;
-            cin >> a[i] >> b[i];
-        }
-        for (int i = 1; i <= n; ++i)
-            prefix[i] = prefix[i - 1] + b[i];
-        stack.clear();
-        for (int i = 1; i <= n; ++i) {
-            while (!stack.empty() && a[stack.back()] < a[i])
-                stack.pop_back();
-            left[i] = stack.empty() ? 0 : stack.back();
-            stack.push_back(i);
-        }
-        stack.clear();
-        for (int i = n; i >= 1; --i) {
-            while (!stack.empty() && a[stack.back()] < a[i])
-                stack.pop_back();
-            right[i] = stack.empty() ? n + 1 : stack.back();
-            stack.push_back(i);
-        }
-        stack.clear();
-        maximum.clear();
-        for (int p = 1; p < n; ++p) {
-            while (!stack.empty() && stack.back() < p) {
-                stack.pop_back();
-                maximum.pop_back();
-            }
-            ll need = a[p] - (prefix[right[p] - 1] - prefix[p]);
-            stack.push_back(right[p] - 1);
-            maximum.push_back(max(need, maximum.empty() ? 0LL : maximum.back()));
-            answer[p] = maximum.back();
-        }
-        stack.clear();
-        maximum.clear();
-        ll result = 0;
-        for (int p = n - 1; p >= 1; --p) {
-            while (!stack.empty() && stack.back() > p) {
-                stack.pop_back();
-                maximum.pop_back();
-            }
-            int j = p + 1;
-            ll need = a[j] - (prefix[j - 1] - prefix[left[j]]);
-            stack.push_back(left[j]);
-            maximum.push_back(max(need, maximum.empty() ? 0LL : maximum.back()));
-            result ^= max(answer[p], maximum.back());
-        }
-        cout << result << '\n';
+typedef long long ll;
+const int N=2e6+10;
+int n,q,a[N],b[N],x[N],y[N],l[N],r[N],st[N],top;
+ll pre[N],ans[N],mx[N];
+int main(){
+    scanf("%d",&n);
+    for(int i=1;i<=n;++i){
+        scanf("%d",&a[i]);
     }
+    for(int i=1;i<=n;++i){
+        scanf("%d",&b[i]);
+    }
+    scanf("%d",&q);
+    while(q--){
+        memcpy(x,a,(n+2)*sizeof *a);
+        memcpy(y,b,(n+2)*sizeof *b);
+        int k;
+        scanf("%d",&k);
+        while(k--){
+            int i;
+            scanf("%d",&i);
+            scanf("%d%d",&x[i],&y[i]);
+        }
+        for(int i=1;i<=n;++i){
+            pre[i]=pre[i-1]+y[i];
+        }
+        top=0;
+        for(int i=1;i<=n;++i){
+            while(top && x[st[top]]<x[i]){
+                --top;
+            }
+            l[i]=top?st[top]:0;
+            st[++top]=i;
+        }
+        top=0;
+        for(int i=n;i>=1;--i){
+            while(top && x[st[top]]<x[i]){
+                --top;
+            }
+            r[i]=top?st[top]:n+1;
+            st[++top]=i;
+        }
+        top=0;
+        for(int i=1;i<n;++i){
+            while(top && st[top]<i){
+                --top;
+            }
+            ll val=x[i]-(pre[r[i]-1]-pre[i]);
+            st[++top]=r[i]-1;
+            mx[top]=max(val,mx[top-1]);
+            ans[i]=mx[top];
+        }
+        top=0;
+        ll res=0;
+        for(int i=n-1;i>=1;--i){
+            while(top && st[top]>i){
+                --top;
+            }
+            int j=i+1;
+            ll val=x[j]-(pre[j-1]-pre[l[j]]);
+            st[++top]=l[j];
+            mx[top]=max(val,mx[top-1]);
+            res^=max(ans[i],mx[top]);
+        }
+        printf("%lld\n",res);
+    }
+    return 0;
 }
