@@ -1,66 +1,62 @@
-#include <cctype>
-#include <iostream>
-#include <map>
-#include <string>
+#include<bits/stdc++.h>
 using namespace std;
-using Counts = map<string, long long>;
-string s;
-size_t p;
-long long number() {
-    if (p == s.size() || !isdigit(s[p]))
-        return 1;
-    long long n = 0;
-    while (p < s.size() && isdigit(s[p]))
-        n = n * 10 + s[p++] - '0';
-    return n;
+typedef long long ll;
+typedef map<string,ll> counts;
+const int N=1010;
+int n,p;
+char s[N];
+ll num(){
+    if(!isdigit(s[p]))return 1;
+    ll x=0;
+    while(isdigit(s[p])){
+        x=x*10+s[p++]-'0';
+    }
+    return x;
 }
-void add(Counts &a, const Counts &b, long long factor) {
-    for (auto &[element, count] : b)
-        a[element] += count * factor;
+void add(counts &a,const counts &b,ll k){
+    for(const auto &[x,v]:b){
+        a[x]+=v*k;
+    }
 }
-Counts formula() {
-    Counts result;
-    while (p < s.size() && s[p] != ')' && s[p] != '+' && s[p] != '=') {
-        Counts term;
-        if (s[p] == '(') {
+counts formula(){
+    counts ans;
+    while(s[p] && s[p]!=')' && s[p]!='+' && s[p]!='='){
+        counts cur;
+        if(s[p]=='('){
             ++p;
-            term = formula();
+            cur=formula();
             ++p;
-        } else {
-            string element(1, s[p++]);
-            if (p < s.size() && islower(s[p]))
-                element += s[p++];
-            term[element] = 1;
         }
-        long long factor = number();
-        add(result, term, factor);
+        else{
+            string x(1,s[p++]);
+            if(islower(s[p]))x+=s[p++];
+            cur[x]=1;
+        }
+        ll k=num();
+        add(ans,cur,k);
     }
-    return result;
+    return ans;
 }
-Counts expression() {
-    Counts result;
-    while (p < s.size() && s[p] != '=') {
-        long long factor = number();
-        Counts term = formula();
-        add(result, term, factor);
-        if (p < s.size() && s[p] == '+')
-            ++p;
-        else
-            break;
+counts expr(){
+    counts ans;
+    while(s[p] && s[p]!='='){
+        ll k=num();
+        counts cur=formula();
+        add(ans,cur,k);
+        if(s[p]=='+')++p;
+        else break;
     }
-    return result;
+    return ans;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    while (n--) {
-        cin >> s;
-        p = 0;
-        Counts a = expression();
+int main(){
+    scanf("%d",&n);
+    while(n--){
+        scanf("%1000s",s);
+        p=0;
+        counts a=expr();
         ++p;
-        Counts b = expression();
-        cout << (a == b ? 'Y' : 'N') << '\n';
+        counts b=expr();
+        puts(a==b?"Y":"N");
     }
+    return 0;
 }

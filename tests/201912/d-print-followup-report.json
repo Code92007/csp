@@ -1,0 +1,29 @@
+{
+  "problem": "201912D",
+  "previous_sha256": "4adb3eb0916e9d8eb1fa049ec307ff68c1b3570305218d5a2f217c4cfad95f1d",
+  "source_sha256": "85e29333f344fe8e9f2226f535e0be925c60105a05850d0895508233c8d60c40",
+  "distinct_inputs": 2,
+  "case_sha256": "6f3c6b66fbe8fa5033eaac83dedccc3686726ab4d1285e53a87f148660591b33",
+  "case_kinds": {
+    "saved_sample": 2
+  },
+  "compilation": "C++17 O2/UBSan -Wall -Wextra -Wshadow, no diagnostics",
+  "results": [
+    {
+      "mode": "O2",
+      "inputs": 2,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.7450181670000001
+    },
+    {
+      "mode": "UBSan",
+      "inputs": 2,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.4791362079999999
+    }
+  ],
+  "change": "Print size as %d with explicit int cast. k<=30000, so a chain has at most k+1<=30001 blocks and the conversion is exact.",
+  "note": "Historical independent reports preserved. Focused local followup only; no new online submission."
+}

@@ -1,0 +1,29 @@
+{
+  "problem": "201912E",
+  "previous_sha256": "3867577cb891d07d3ca4a6c0506585a690ebb14fc675b599001b09cd20e3d39f",
+  "source_sha256": "d4893ff0c0fb00da463d0ae6c2148553fbbfb928321caf2c539917fbe96da45b",
+  "distinct_inputs": 61,
+  "per_binary_results": {
+    "O2": {
+      "passed": 61,
+      "seconds": 0.65
+    },
+    "UBSan": {
+      "passed": 61,
+      "seconds": 1.1
+    }
+  },
+  "case_sha256": "3db09cc4a6cc0ea4621b03efb9dc78324d70d3166cf8553dc1e1a53c337a9a3f",
+  "case_kinds": {
+    "saved_sample": 2,
+    "retained_independent": 58,
+    "boundary": 1
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "Modulus identifier P renamed mod; pair aliases P unchanged."
+  ],
+  "historical_report": "refactor-report.json",
+  "rename_only_text_equivalence": true,
+  "note": "Existing saved samples, independent oracle cases and boundaries replayed; no online resubmission."
+}

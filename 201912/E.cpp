@@ -1,106 +1,108 @@
-#include <algorithm>
-#include <array>
-#include <cstdint>
-#include <iostream>
-#include <map>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using U = uint64_t;
-using Wide = __uint128_t;
-const U MOD = 2009731336725594113ULL;
-const U magic[5] = {314882150829468584ULL, 427197303358170108ULL, 1022292690726729920ULL,
-                    1698479428772363217ULL, 2006101093849356424ULL};
-int product[32][32];
-struct Tree {
-    int base;
-    vector<array<int, 32>> sum;
-    vector<unsigned char> lazy;
-    explicit Tree(int n, const vector<U> &group) {
-        base = 1;
-        while (base < n)
-            base *= 2;
-        sum.resize(2 * base);
-        lazy.resize(2 * base);
-        array<U, 32> residue{};
-        for (int i = 1; i <= n; ++i)
-            for (int s = 0; s < 32; ++s) {
-                residue[s] += group[s];
-                if (residue[s] >= MOD)
-                    residue[s] -= MOD;
-                sum[base + i - 1][s] = residue[s] % 2019;
-            }
-        for (int u = base - 1; u; --u)
-            pull(u);
-    }
-    void pull(int u) {
-        for (int s = 0; s < 32; ++s)
-            sum[u][s] = sum[2 * u][s] + sum[2 * u + 1][s];
-    }
-    void apply(int u, int state) {
-        array<int, 32> next;
-        for (int s = 0; s < 32; ++s)
-            next[s] = sum[u][product[s][state]];
-        sum[u] = next;
-        lazy[u] = product[lazy[u]][state];
-    }
-    void push(int u) {
-        if (lazy[u]) {
-            apply(2 * u, lazy[u]);
-            apply(2 * u + 1, lazy[u]);
-            lazy[u] = 0;
+typedef unsigned long long ull;
+typedef __uint128_t u128;
+const int N=32,M=5;
+const ull mod=2009731336725594113ull;
+const ull magic[M]={314882150829468584ull,427197303358170108ull,1022292690726729920ull,1698479428772363217ull,2006101093849356424ull};
+int n,q,l,r,f[N][N];
+ull rem[N];
+vector<ull> g{1};
+map<ull,int> id{{1,0}};
+struct segtree{
+    int n;
+    struct node{
+        int l,r,s[N];
+        unsigned char tag;
+    };
+    vector<node> e;
+    #define l(p) e[p].l
+    #define r(p) e[p].r
+    void pushup(int p){
+        for(int i=0;i<N;++i){
+            e[p].s[i]=e[p<<1].s[i]+e[p<<1|1].s[i];
         }
     }
-    int query(int u, int l, int r, int a, int b) {
-        if (a <= l && r <= b)
-            return sum[u][0];
-        push(u);
-        int mid = (l + r) / 2, ans = 0;
-        if (a <= mid)
-            ans += query(2 * u, l, mid, a, b);
-        if (b > mid)
-            ans += query(2 * u + 1, mid + 1, r, a, b);
-        return ans;
-    }
-    void update(int u, int l, int r, int a, int b, int state) {
-        if (a <= l && r <= b) {
-            apply(u, state);
+    void build(int p,int x,int y,int k){
+        l(p)=x;r(p)=y;
+        if(x==y){
+            if(x>k)return;
+            for(int i=0;i<N;++i){
+                rem[i]+=g[i];
+                if(rem[i]>=mod)rem[i]-=mod;
+                e[p].s[i]=rem[i]%2019;
+            }
             return;
         }
-        push(u);
-        int mid = (l + r) / 2;
-        if (a <= mid)
-            update(2 * u, l, mid, a, b, state);
-        if (b > mid)
-            update(2 * u + 1, mid + 1, r, a, b, state);
-        pull(u);
+        int mid=(x+y)>>1;
+        build(p<<1,x,mid,k);
+        build(p<<1|1,mid+1,y,k);
+        pushup(p);
     }
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, q;
-    cin >> n >> q;
-    vector<U> group{1};
-    map<U, int> id{{1, 0}};
-    for (size_t i = 0; i < group.size(); ++i)
-        for (U x : magic) {
-            U y = Wide(group[i]) * x % MOD;
-            if (!id.count(y)) {
-                id[y] = group.size();
-                group.push_back(y);
-            }
+    void init(int k){
+        n=1;
+        while(n<k){
+            n<<=1;
         }
-    if (group.size() != 32)
-        return 1;
-    for (int i = 0; i < 32; ++i)
-        for (int j = 0; j < 32; ++j)
-            product[i][j] = id.at(Wide(group[i]) * group[j] % MOD);
-    Tree tree(n, group);
-    while (q--) {
-        int l, r;
-        cin >> l >> r;
-        int answer = tree.query(1, 1, tree.base, l, r);
-        cout << answer << '\n';
-        tree.update(1, 1, tree.base, l, r, id.at(magic[answer % 5]));
+        e.resize(n<<1);
+        build(1,1,n,k);
     }
+    void set(int p,int s){
+        int a[N];
+        for(int i=0;i<N;++i){
+            a[i]=e[p].s[f[i][s]];
+        }
+        copy(a,a+N,e[p].s);
+        e[p].tag=f[e[p].tag][s];
+    }
+    void pushdown(int p){
+        if(!e[p].tag)return;
+        set(p<<1,e[p].tag);
+        set(p<<1|1,e[p].tag);
+        e[p].tag=0;
+    }
+    int query(int p,int x,int y){
+        if(x<=l(p) && r(p)<=y)return e[p].s[0];
+        pushdown(p);
+        int mid=(l(p)+r(p))>>1,ans=0;
+        if(x<=mid)ans+=query(p<<1,x,y);
+        if(y>mid)ans+=query(p<<1|1,x,y);
+        return ans;
+    }
+    void update(int p,int x,int y,int s){
+        if(x<=l(p) && r(p)<=y){
+            set(p,s);
+            return;
+        }
+        pushdown(p);
+        int mid=(l(p)+r(p))>>1;
+        if(x<=mid)update(p<<1,x,y,s);
+        if(y>mid)update(p<<1|1,x,y,s);
+        pushup(p);
+    }
+}tr;
+int main(){
+    scanf("%d%d",&n,&q);
+    for(size_t i=0;i<g.size();++i){
+        for(const ull &x:magic){
+            ull y=u128(g[i])*x%mod;
+            if(id.count(y))continue;
+            id[y]=g.size();
+            g.push_back(y);
+        }
+    }
+    if(g.size()!=N)return 1;
+    for(int i=0;i<N;++i){
+        for(int j=0;j<N;++j){
+            f[i][j]=id.at(u128(g[i])*g[j]%mod);
+        }
+    }
+    tr.init(n);
+    while(q--){
+        scanf("%d%d",&l,&r);
+        int ans=tr.query(1,l,r);
+        printf("%d\n",ans);
+        tr.update(1,l,r,id.at(magic[ans%5]));
+    }
+    return 0;
 }

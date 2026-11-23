@@ -1,0 +1,31 @@
+{
+  "problem": "201912B",
+  "previous_sha256": "7e1cee7743e8a4baf3b72583ba609c50fbd7ff551169878fe5d0573e59ac825f",
+  "source_sha256": "324cab41522e451b36bd28fb780742a6ea8c1370350a0cf9e513e0d95a007508",
+  "distinct_inputs": 104,
+  "case_sha256": "e15a638ff30f290756e142e8a504705cfb874cb31037c19ad73ba3b7b066ab6c",
+  "case_kinds": {
+    "saved_sample": 3,
+    "retained_independent": 100,
+    "boundary": 1
+  },
+  "compilation": "C++17 O2/UBSan -Wall -Wextra -Wshadow, no diagnostics",
+  "results": [
+    {
+      "mode": "O2",
+      "inputs": 104,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.6719824999999999
+    },
+    {
+      "mode": "UBSan",
+      "inputs": 104,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.9148776669999998
+    }
+  ],
+  "change": "Four adjacent coordinate tests moved into a short vector and reference loop, retaining the same four set-membership conditions.",
+  "note": "Original independent validation remains historical; this is a focused local style followup without online resubmission."
+}

@@ -1,0 +1,29 @@
+{
+  "problem": "201912E",
+  "previous_sha256": "d4893ff0c0fb00da463d0ae6c2148553fbbfb928321caf2c539917fbe96da45b",
+  "source_sha256": "6dc66659465e70fae3977dbe23dee8d0bee27051f2c5d23196ca0bebc5c55d64",
+  "distinct_inputs": 2,
+  "case_sha256": "ab42d1f8dfb4199c1f21235e50fa8c7c5dc598c301fb0973e954ef76da3f9c72",
+  "case_kinds": {
+    "saved_sample": 2
+  },
+  "compilation": "C++17 O2/UBSan -Wall -Wextra -Wshadow, no diagnostics",
+  "results": [
+    {
+      "mode": "O2",
+      "inputs": 2,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.493810458
+    },
+    {
+      "mode": "UBSan",
+      "inputs": 2,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.4731265
+    }
+  ],
+  "change": "Five ull magic constants are on a single line, preserving all digit tokens and ull suffixes.",
+  "note": "Historical independent reports preserved. Focused local followup only; no new online submission."
+}

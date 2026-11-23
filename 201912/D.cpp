@@ -1,97 +1,93 @@
-#include <algorithm>
-#include <iostream>
-#include <map>
-#include <queue>
-#include <sstream>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using i64 = long long;
-struct Block {
-    int parent, id, length;
+typedef long long ll;
+const int N=100;
+struct block{
+    int fa,id,len;
 };
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<vector<int>> graph(n);
-    for (int i = 0; i < m; ++i) {
-        int u, v;
-        cin >> u >> v;
-        --u;
-        --v;
-        graph[u].push_back(v);
-        graph[v].push_back(u);
+int n,m,k;
+ll delay;
+char s[N];
+vector<vector<int>> g,d;
+vector<block> e{{-1,0,1}};
+vector<int> cur;
+vector<map<ll,int>> q;
+bool better(int a,int b){
+    if(e[a].len!=e[b].len)return e[a].len>e[b].len;
+    return e[a].id<e[b].id;
+}
+void advance(int u,ll t){
+    auto it=q[u].upper_bound(t);
+    if(it!=q[u].begin())cur[u]=prev(it)->second;
+    q[u].erase(q[u].begin(),it);
+}
+void schedule(int u,ll t,int x){
+    auto it=q[u].lower_bound(t);
+    int pre=it==q[u].begin()?cur[u]:prev(it)->second;
+    if(!better(x,pre))return;
+    if(it!=q[u].end() && it->first==t && !better(x,it->second))return;
+    while(it!=q[u].end() && !better(it->second,x)){
+        it=q[u].erase(it);
     }
-    i64 delay;
-    int k;
-    cin >> delay >> k;
-    vector<vector<int>> distance(n, vector<int>(n, -1));
-    for (int start = 0; start < n; ++start) {
-        vector<int> queue{start};
-        distance[start][start] = 0;
-        for (size_t head = 0; head < queue.size(); ++head)
-            for (int v : graph[queue[head]])
-                if (distance[start][v] < 0) {
-                    distance[start][v] = distance[start][queue[head]] + 1;
-                    queue.push_back(v);
-                }
+    q[u][t]=x;
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    g.resize(n);
+    for(int i=0;i<m;++i){
+        int u,v;
+        scanf("%d%d",&u,&v);
+        u--,v--;
+        g[u].push_back(v);
+        g[v].push_back(u);
     }
-    vector<Block> blocks{{-1, 0, 1}};
-    vector<int> current(n);
-    vector<map<i64, int>> future(n);
-    auto better = [&](int a, int b) {
-        return blocks[a].length != blocks[b].length ? blocks[a].length > blocks[b].length
-                                                    : blocks[a].id < blocks[b].id;
-    };
-    auto advance = [&](int u, i64 time) {
-        auto end = future[u].upper_bound(time);
-        if (end != future[u].begin())
-            current[u] = prev(end)->second;
-        future[u].erase(future[u].begin(), end);
-    };
-    auto schedule = [&](int u, i64 time, int chain) {
-        auto it = future[u].lower_bound(time);
-        int previous = it == future[u].begin() ? current[u] : prev(it)->second;
-        if (!better(chain, previous))
-            return;
-        if (it != future[u].end() && it->first == time && !better(chain, it->second))
-            return;
-        while (it != future[u].end() && !better(it->second, chain))
-            it = future[u].erase(it);
-        future[u][time] = chain;
-    };
-    string line;
-    getline(cin, line);
-    for (int i = 0; i < k; ++i) {
-        getline(cin, line);
-        istringstream input(line);
-        int u, id;
-        i64 time;
-        input >> u >> time;
-        --u;
-        advance(u, time);
-        if (input >> id) {
-            int index = blocks.size();
-            blocks.push_back({current[u], id, blocks[current[u]].length + 1});
-            current[u] = index;
-            auto &events = future[u];
-            auto it = events.begin();
-            while (it != events.end() && !better(it->second, index))
-                it = events.erase(it);
-            for (int v = 0; v < n; ++v)
-                if (v != u && distance[u][v] >= 0)
-                    schedule(v, time + delay * distance[u][v], index);
-        } else {
-            vector<int> answer;
-            for (int b = current[u]; b != -1; b = blocks[b].parent)
-                answer.push_back(blocks[b].id);
-            reverse(answer.begin(), answer.end());
-            cout << answer.size();
-            for (int x : answer)
-                cout << ' ' << x;
-            cout << '\n';
+    scanf("%lld%d",&delay,&k);
+    d.assign(n,vector<int>(n,-1));
+    for(int st=0;st<n;++st){
+        vector<int> v{st};
+        d[st][st]=0;
+        for(size_t p=0;p<v.size();++p){
+            for(int &u:g[v[p]]){
+                if(d[st][u]>=0)continue;
+                d[st][u]=d[st][v[p]]+1;
+                v.push_back(u);
+            }
         }
     }
+    cur.resize(n);
+    q.resize(n);
+    fgets(s,N,stdin);
+    for(int i=0;i<k;++i){
+        fgets(s,N,stdin);
+        int u,id;
+        ll t;
+        bool make=sscanf(s,"%d%lld%d",&u,&t,&id)==3;
+        --u;
+        advance(u,t);
+        if(make){
+            int x=e.size();
+            e.push_back({cur[u],id,e[cur[u]].len+1});
+            cur[u]=x;
+            auto it=q[u].begin();
+            while(it!=q[u].end() && !better(it->second,x)){
+                it=q[u].erase(it);
+            }
+            for(int v=0;v<n;++v){
+                if(v!=u && d[u][v]>=0)schedule(v,t+delay*d[u][v],x);
+            }
+        }
+        else{
+            vector<int> ans;
+            for(int p=cur[u];p!=-1;p=e[p].fa){
+                ans.push_back(e[p].id);
+            }
+            reverse(ans.begin(),ans.end());
+            printf("%d",(int)ans.size());
+            for(int &x:ans){
+                printf(" %d",x);
+            }
+            putchar('\n');
+        }
+    }
+    return 0;
 }

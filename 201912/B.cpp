@@ -1,27 +1,35 @@
-#include <iostream>
-#include <set>
-#include <utility>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    set<pair<int, int>> a;
-    while (n--) {
-        int x, y;
-        cin >> x >> y;
-        a.insert({x, y});
+typedef pair<int,int> P;
+const int N=5;
+int n,cnt[N];
+set<P> a;
+bool ok(int x,int y){
+    vector<P> g={{x-1,y},{x+1,y},{x,y-1},{x,y+1}};
+    for(auto &v:g){
+        if(!a.count(v))return false;
     }
-    int count[5] = {};
-    for (auto [x, y] : a) {
-        if (!a.count({x - 1, y}) || !a.count({x + 1, y}) || !a.count({x, y - 1}) ||
-            !a.count({x, y + 1}))
-            continue;
-        int score = 0;
-        for (int dx : {-1, 1})
-            for (int dy : {-1, 1})
-                score += a.count({x + dx, y + dy});
-        ++count[score];
+    return true;
+}
+int main(){
+    scanf("%d",&n);
+    while(n--){
+        int x,y;
+        scanf("%d%d",&x,&y);
+        a.insert({x,y});
     }
-    for (int x : count)
-        cout << x << '\n';
+    for(const auto &[x,y]:a){
+        if(!ok(x,y))continue;
+        int sum=0;
+        for(int dx:{-1,1}){
+            for(int dy:{-1,1}){
+                sum+=a.count({x+dx,y+dy});
+            }
+        }
+        ++cnt[sum];
+    }
+    for(int &x:cnt){
+        printf("%d\n",x);
+    }
+    return 0;
 }
