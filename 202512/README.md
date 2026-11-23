@@ -57,7 +57,7 @@ problems: [{"id": "A", "title": "集合", "tags": ["集合比较", "异或", "�
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
-const int N=1e4+5,M=105;
+const int N=10005,M=105;
 int n,m,k,v,a[N],h[M];
 vector<int>s[M];
 int main(){
@@ -221,7 +221,7 @@ int main(){
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
-const int N=405,M=5e4+10,K=6,L=15;
+const int N=405,M=50010,K=6,L=15;
 int z,k,t,dir,n,m,op[M][K];
 char a[N][N],b[L][L];
 char &at(int x,int y){
@@ -666,11 +666,14 @@ int main(){
 - [a-style-followup-report.json](../tests/202512/a-style-followup-report.json)
 - [ab-report.json](../tests/202512/ab-report.json)
 - [ab-style-followup.json](../tests/202512/ab-style-followup.json)
+- [ac-constants-cases.json](../tests/202512/ac-constants-cases.json)
+- [ac-constants-report.json](../tests/202512/ac-constants-report.json)
 - [cd-report.json](../tests/202512/cd-report.json)
 - [d-mod-followup-report.json](../tests/202512/d-mod-followup-report.json)
 - [e-report.json](../tests/202512/e-report.json)
 - [summary.json](../tests/202512/summary.json)
 - [verify-ab.py](../tests/202512/verify-ab.py)
+- [verify-ac-constants.py](../tests/202512/verify-ac-constants.py)
 - [verify-cd.py](../tests/202512/verify-cd.py)
 - [verify-e.py](../tests/202512/verify-e.py)
 

@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-const int N=1e4+5,M=105;
+const int N=10005,M=105;
 int n,m,k,v,a[N],h[M];
 vector<int>s[M];
 int main(){

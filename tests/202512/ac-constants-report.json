@@ -1,0 +1,56 @@
+{
+  "contest": "202512",
+  "source_sha256": {
+    "A": "af7667804637455410c3963f3310620cbe81a8c33cd4d0734f6822708e3221c7",
+    "C": "55c55e3daadc8fd30d011358fd4bcb28f96f1e7ae06acab9b3f7b6e36e20c725"
+  },
+  "changes": {
+    "A": "N=10005 (same integer capacity)",
+    "C": "M=50010 (same integer capacity)"
+  },
+  "compilation": {
+    "A:O2": "passed without diagnostics",
+    "A:UBSan": "passed without diagnostics",
+    "C:O2": "passed without diagnostics",
+    "C:UBSan": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "A",
+      "mode": "O2",
+      "passed": 63,
+      "independent": 60,
+      "saved": 2,
+      "boundary": 1,
+      "seconds": 0.555870959
+    },
+    {
+      "problem": "A",
+      "mode": "UBSan",
+      "passed": 63,
+      "independent": 60,
+      "saved": 2,
+      "boundary": 1,
+      "seconds": 0.7243731249999998
+    },
+    {
+      "problem": "C",
+      "mode": "O2",
+      "passed": 103,
+      "independent": 100,
+      "saved": 2,
+      "boundary": 1,
+      "seconds": 0.6558961249999999
+    },
+    {
+      "problem": "C",
+      "mode": "UBSan",
+      "passed": 103,
+      "independent": 100,
+      "saved": 2,
+      "boundary": 1,
+      "seconds": 0.8812611250000004
+    }
+  ],
+  "note": "Equivalent constant spelling only; historical broad reports retained. No online resubmission."
+}

@@ -22,3 +22,21 @@ E 使用静态节点池避免 vector 扩容的瞬时内存峰值。最大节点�
 [最终汇总与 SHA-256](summary.json)。A/B 完整测试时的旧哈希保留在原报告，最终等价改写的哈希与重测范围单独记录，未覆盖历史证据。
 
 D 按最新 review 将模数名称 `P` 改为 `mod`，保留其他题中 pair 的类型别名 `P`。优化版与 UBSan 版重新通过同一批 652 个不同输入，并已核对仅名称及常量声明分行变化。[当前 D 源码哈希与检查](d-mod-followup-report.json)。此前 C/D 报告保留历史源码哈希。
+
+## A、C 容量常量复核
+
+将小于十万的已知容量按个人风格展开：A 使用 `N=10005`，C 使用 `M=50010`，整数容量和算法不变。当前源码均通过 O2、UBSan 无诊断编译，重放独立集合比较、逐步正向图像变换、保存样例，并分别检查 `n=10000` 与 `Z=400,t=50000` 的容量边界。
+
+报告：[ac-constants-report.json](ac-constants-report.json)；用例：[ac-constants-cases.json](ac-constants-cases.json)；复现：[verify-ac-constants.py](verify-ac-constants.py)。保留原完整验证记录，本轮复验不计为新的在线评测。
+
+- A O2：63 组通过。
+
+- A UBSan：63 组通过。
+
+- C O2：103 组通过。
+
+- C UBSan：103 组通过。
+
+- `A.cpp` 当前 SHA-256：`af7667804637455410c3963f3310620cbe81a8c33cd4d0734f6822708e3221c7`
+
+- `C.cpp` 当前 SHA-256：`55c55e3daadc8fd30d011358fd4bcb28f96f1e7ae06acab9b3f7b6e36e20c725`

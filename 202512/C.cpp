@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-const int N=405,M=5e4+10,K=6,L=15;
+const int N=405,M=50010,K=6,L=15;
 int z,k,t,dir,n,m,op[M][K];
 char a[N][N],b[L][L];
 char &at(int x,int y){
