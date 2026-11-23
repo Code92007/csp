@@ -1,0 +1,147 @@
+{
+  "contest": "201604",
+  "distinct_cases": 551,
+  "results": {
+    "opt": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 94,
+        "E:retained_independent": 184,
+        "A:saved": 1,
+        "B:saved": 1,
+        "C:saved": 1,
+        "D:saved": 1,
+        "E:saved": 1,
+        "A:stress": 1,
+        "A:boundary": 1,
+        "C:boundary": 1,
+        "D:stress": 1,
+        "E:boundary": 1,
+        "E:stress": 3
+      },
+      "total": 551,
+      "seconds": 3.092,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "1000 alternating values",
+          "seconds": 0.0018
+        },
+        {
+          "problem": "D",
+          "label": "time boundary 100; 100x100; required oscillation",
+          "seconds": 0.0065
+        },
+        {
+          "problem": "E",
+          "label": "500 vertices p=6 full bandwidth allzero",
+          "seconds": 0.0404
+        },
+        {
+          "problem": "E",
+          "label": "500 vertices p=6 full bandwidth allone",
+          "seconds": 0.0428
+        },
+        {
+          "problem": "E",
+          "label": "500 vertices p=6 full bandwidth endpoints",
+          "seconds": 0.0394
+        }
+      ]
+    },
+    "ubsan": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 94,
+        "E:retained_independent": 184,
+        "A:saved": 1,
+        "B:saved": 1,
+        "C:saved": 1,
+        "D:saved": 1,
+        "E:saved": 1,
+        "A:stress": 1,
+        "A:boundary": 1,
+        "C:boundary": 1,
+        "D:stress": 1,
+        "E:boundary": 1,
+        "E:stress": 3
+      },
+      "total": 551,
+      "seconds": 5.263,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "1000 alternating values",
+          "seconds": 0.004
+        },
+        {
+          "problem": "D",
+          "label": "time boundary 100; 100x100; required oscillation",
+          "seconds": 0.0105
+        },
+        {
+          "problem": "E",
+          "label": "500 vertices p=6 full bandwidth allzero",
+          "seconds": 0.0592
+        },
+        {
+          "problem": "E",
+          "label": "500 vertices p=6 full bandwidth allone",
+          "seconds": 0.0551
+        },
+        {
+          "problem": "E",
+          "label": "500 vertices p=6 full bandwidth endpoints",
+          "seconds": 0.0537
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "A": "27d88683255a5d09be05ffc2bcf1f18fe671e1dd572d1763fbc9f542f698ff65",
+    "B": "12fd5ff0d46471dc167332d7ed78cedc2c2b7cf0c9838a24e915832540603d96",
+    "C": "28f32713b74769230bb19018acabc706552366946bc4350d74c9409bb2da91eb",
+    "D": "4cfb2a6bcf223cb1e9fb3d9d58d2baa399b6c95cb6709810117d30e73e9b1191",
+    "E": "535b669e86c1a845b1a9e6d55ed93e1f8bb57986076bb6599a7c9bba9378a2e5"
+  },
+  "cases_sha256": "af04f933365ae3979f23ed050cda2869c1c6172fc5ceab0a4f11a86f52dfb596",
+  "original_evaluations": {
+    "A": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addad4c74ace1cba9a20424"
+    },
+    "B": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addaddf74ace1cba9a20472"
+    },
+    "C": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addae9574ace1cba9a2058d"
+    },
+    "D": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addaf1b74ace1cba9a20648"
+    },
+    "E": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addb00e74ace1cba9a206db"
+    }
+  },
+  "refactored_online_submission": false,
+  "oracle": "Repository independent Python generators captured by tools/nightly/retained_oracles.py; saved cases and independently generated boundary/stress expectations are also replayed. No output is taken from the original executable.",
+  "platform_note": "Apple Clang C++17 uses a local standard-header shim for bits/stdc++.h. Timings are local, not official judge results."
+}

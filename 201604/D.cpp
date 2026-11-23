@@ -1,45 +1,36 @@
-#include <algorithm>
-#include <array>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, k;
-    cin >> n >> m >> k;
-    vector<int> begin(n * m, 1), end(n * m, 0);
-    int last = 0;
-    for (int i = 0; i < k; ++i) {
-        int r, c, a, b;
-        cin >> r >> c >> a >> b;
-        int u = (r - 1) * m + c - 1;
-        begin[u] = a;
-        end[u] = b;
-        last = max(last, b);
+const int N=110,M=310,K=4;
+const int dx[K]={1,-1,0,0},dy[K]={0,0,1,-1};
+int n,m,k,l[N][N],r[N][N],last,q[M*N*N],head,tail;
+bool vis[M][N][N];
+int main(){
+    scanf("%d%d%d",&n,&m,&k);
+    for(int i=0,x,y,a,b;i<k;++i){
+        scanf("%d%d%d%d",&x,&y,&a,&b);
+        --x,--y;
+        l[x][y]=a,r[x][y]=b;
+        last=max(last,b);
     }
-    int limit = last + n + m;
-    vector<vector<bool>> seen(limit + 1, vector<bool>(n * m));
-    vector<pair<int, int>> queue{{0, 0}};
-    seen[0][0] = true;
-    const int dx[4] = {1, -1, 0, 0}, dy[4] = {0, 0, 1, -1};
-    for (size_t head = 0; head < queue.size(); ++head) {
-        auto [u, time] = queue[head];
-        if (u == n * m - 1) {
-            cout << time << '\n';
+    q[tail++]=0;
+    vis[0][0][0]=1;
+    int lim=last+n+m;
+    while(head<tail){
+        int v=q[head++],t=v/(n*m),u=v%(n*m);
+        int x=u/m,y=u%m;
+        if(x==n-1 && y==m-1){
+            printf("%d\n",t);
             return 0;
         }
-        if (time == limit)
-            continue;
-        for (int d = 0; d < 4; ++d) {
-            int x = u / m + dx[d], y = u % m + dy[d], t = time + 1;
-            if (x < 0 || x >= n || y < 0 || y >= m)
-                continue;
-            int v = x * m + y;
-            if (!seen[t][v] && !(begin[v] <= t && t <= end[v])) {
-                seen[t][v] = true;
-                queue.push_back({v, t});
-            }
+        if(t==lim)continue;
+        for(int d=0;d<K;++d){
+            int a=x+dx[d],b=y+dy[d];
+            if(a<0 || a>=n || b<0 || b>=m)continue;
+            if(l[a][b]<=t+1 && t+1<=r[a][b])continue;
+            if(vis[t+1][a][b])continue;
+            vis[t+1][a][b]=1;
+            q[tail++]=(t+1)*n*m+a*m+b;
         }
     }
+    return 0;
 }

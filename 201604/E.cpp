@@ -1,124 +1,110 @@
-#include <algorithm>
-#include <array>
-#include <iostream>
-#include <numeric>
-#include <string>
-#include <unordered_map>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int tests;
-    cin >> tests;
-    while (tests--) {
-        int n, m, p;
-        cin >> n >> m >> p;
-        string terminal;
-        cin >> terminal;
-        int last = terminal.find_last_of('1');
-        vector<array<int, 6>> cost(n);
-        for (auto &a : cost)
-            a.fill(-1);
-        for (int i = 0, u, v, w; i < m; ++i) {
-            cin >> u >> v >> w;
-            cost[u - 1][v - u - 1] = w;
-        }
-        vector<int> codes{0};
-        unordered_map<int, int> id{{0, 0}};
-        vector<vector<int>> transition;
-        for (size_t index = 0; index < codes.size(); ++index) {
-            int code = codes[index];
-            vector<int> row(1 << p, -1);
-            for (int mask = 0; mask < (1 << p); ++mask) {
-                array<int, 7> parent{}, selected{};
-                iota(parent.begin(), parent.end(), 0);
-                auto root = [&](int u) {
-                    while (parent[u] != u)
-                        u = parent[u];
-                    return u;
-                };
-                auto unite = [&](int u, int v) { parent[root(u)] = root(v); };
-                for (int i = 0; i < p; ++i) {
-                    int label = (code >> (3 * i)) & 7;
-                    selected[i] = label != 0;
-                    if (label)
-                        for (int j = 0; j < i; ++j)
-                            if (((code >> (3 * j)) & 7) == label)
-                                unite(i, j);
+typedef long long ll;
+const int N=510,K=7,M=64,V=900,H=1<<18;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+int T,n,m,p,cnt,last,w[N][K],code[V],id[H],tr[V][M];
+int fa[K],on[K],lab[K];
+ll dp[V],ndp[V];
+char s[N];
+int find(int x){
+    return fa[x]==x?x:fa[x]=find(fa[x]);
+}
+void merge(int x,int y){
+    fa[find(x)]=find(y);
+}
+void init(){
+    memset(id,-1,sizeof id);
+    cnt=1;code[0]=0;id[0]=0;
+    for(int u=0;u<cnt;++u){
+        int c=code[u];
+        for(int S=0;S<(1<<p);++S){
+            iota(fa,fa+K,0);
+            memset(on,0,sizeof on);
+            memset(lab,0,sizeof lab);
+            for(int i=0;i<p;++i){
+                int v=(c>>(i*3))&7;
+                on[i]=(v!=0);
+                if(!v)continue;
+                for(int j=0;j<i;++j){
+                    if(((c>>(j*3))&7)==v)merge(i,j);
                 }
-                for (int j = 0; j < p; ++j)
-                    if (mask >> j & 1) {
-                        selected[0] = selected[j + 1] = 1;
-                        unite(0, j + 1);
-                    }
-                if (selected[0]) {
-                    bool stays = false, other = false;
-                    for (int j = 1; j <= p; ++j)
-                        if (selected[j]) {
-                            if (root(j) == root(0))
-                                stays = true;
-                            else
-                                other = true;
-                        }
-                    if (!stays) {
-                        row[mask] = other ? -1 : -2;
-                        continue;
-                    }
+            }
+            for(int j=0;j<p;++j){
+                if((S>>j)&1){
+                    on[0]=on[j+1]=1;
+                    merge(0,j+1);
                 }
-                array<int, 7> label{};
-                int count = 0, next = 0;
-                for (int j = 1; j <= p; ++j)
-                    if (selected[j]) {
-                        int r = root(j);
-                        if (!label[r])
-                            label[r] = ++count;
-                        next |= label[r] << (3 * (j - 1));
-                    }
-                auto [it, inserted] = id.emplace(next, codes.size());
-                if (inserted)
-                    codes.push_back(next);
-                row[mask] = it->second;
             }
-            transition.push_back(std::move(row));
-        }
-        const ll INF = 1LL << 60;
-        vector<ll> dp(codes.size(), INF);
-        dp[0] = 0;
-        ll answer = INF;
-        for (int i = 0; i < n; ++i) {
-            vector<ll> next(codes.size(), INF);
-            int available = 0;
-            for (int j = 0; j < p; ++j)
-                if (cost[i][j] >= 0)
-                    available |= 1 << j;
-            vector<pair<int, ll>> options;
-            for (int mask = available;; mask = (mask - 1) & available) {
-                ll sum = 0;
-                for (int j = 0; j < p; ++j)
-                    if (mask >> j & 1)
-                        sum += cost[i][j];
-                options.push_back({mask, sum});
-                if (!mask)
-                    break;
-            }
-            for (int state = 0; state < int(codes.size()); ++state) {
-                if (dp[state] == INF)
+            if(on[0]){
+                bool stay=0,other=0;
+                for(int j=1;j<=p;++j){
+                    if(!on[j])continue;
+                    if(find(j)==find(0))stay=1;
+                    else other=1;
+                }
+                if(!stay){
+                    tr[u][S]=other?-1:-2;
                     continue;
-                for (auto [mask, w] : options) {
-                    if (terminal[i] == '1' && !(codes[state] & 7) && !mask)
-                        continue;
-                    int to = transition[state][mask];
-                    if (to == -2) {
-                        if (i >= last)
-                            answer = min(answer, dp[state] + w);
-                    } else if (to >= 0)
-                        next[to] = min(next[to], dp[state] + w);
                 }
             }
-            dp.swap(next);
+            int num=0,v=0;
+            for(int j=1;j<=p;++j){
+                if(!on[j])continue;
+                int r=find(j);
+                if(!lab[r])lab[r]=++num;
+                v|=lab[r]<<(3*(j-1));
+            }
+            if(id[v]<0){
+                id[v]=cnt;
+                code[cnt++]=v;
+            }
+            tr[u][S]=id[v];
         }
-        cout << answer << '\n';
     }
+}
+int main(){
+    scanf("%d",&T);
+    while(T--){
+        scanf("%d%d%d%s",&n,&m,&p,s);
+        last=0;
+        for(int i=0;i<n;++i){
+            if(s[i]=='1')last=i;
+        }
+        memset(w,-1,sizeof w);
+        for(int i=0,u,v,c;i<m;++i){
+            scanf("%d%d%d",&u,&v,&c);
+            w[u-1][v-u-1]=c;
+        }
+        init();
+        memset(dp,(int)INF,sizeof dp);
+        dp[0]=0;
+        ll ans=INF;
+        for(int i=0;i<n;++i){
+            memset(ndp,(int)INF,sizeof ndp);
+            int S=0;
+            for(int j=0;j<p;++j){
+                if(w[i][j]>=0)S|=1<<j;
+            }
+            for(int b=S;;b=(b-1)&S){
+                ll sum=0;
+                for(int j=0;j<p;++j){
+                    if((b>>j)&1)sum+=w[i][j];
+                }
+                for(int u=0;u<cnt;++u){
+                    if(dp[u]==INF)continue;
+                    if(s[i]=='1' && !(code[u]&7) && !b)continue;
+                    int v=tr[u][b];
+                    if(v==-2){
+                        if(i>=last)ans=min(ans,dp[u]+sum);
+                    }
+                    else if(v>=0)ndp[v]=min(ndp[v],dp[u]+sum);
+                }
+                if(!b)break;
+            }
+            copy(ndp,ndp+cnt,dp);
+        }
+        printf("%lld\n",ans);
+    }
+    return 0;
 }

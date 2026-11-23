@@ -1,15 +1,17 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    vector<int> a(n);
-    for (int &x : a)
-        cin >> x;
-    int count = 0;
-    for (int i = 1; i + 1 < n; i++)
-        if ((a[i] > a[i - 1] && a[i] > a[i + 1]) || (a[i] < a[i - 1] && a[i] < a[i + 1]))
-            ++count;
-    cout << count << '\n';
+const int N=1010;
+int n,a[N],ans;
+int main(){
+    scanf("%d",&n);
+    for(int i=0;i<n;++i){
+        scanf("%d",&a[i]);
+    }
+    for(int i=1;i<n-1;++i){
+        bool up=(a[i]>a[i-1] && a[i]>a[i+1]);
+        bool down=(a[i]<a[i-1] && a[i]<a[i+1]);
+        ans+=(up || down);
+    }
+    printf("%d\n",ans);
+    return 0;
 }
