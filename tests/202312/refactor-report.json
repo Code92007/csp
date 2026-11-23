@@ -1,0 +1,71 @@
+{
+  "contest": "202312",
+  "source_sha256": {
+    "A": "710a79b37c5eb67b6cfa08008c8c827b32aa67d576a3c39863e25d78cf67b0cf",
+    "B": "e5c90cc994df3c3c5864791d0c7023407fdeba9a494dace9901649c1bfe1646c",
+    "C": "29202e2532f4399a113d653ffbc938d3bcd219d20146f62c2621daba97a67190",
+    "D": "b3ab529eb3968f588af00e189c2f6fbb833f9a4d2e5f591b316935bcc702a85c",
+    "E": "00d4a4dd8e42a1098efe486417fd7ff5b41c18f99c38e484a92ab49eb3f464fd"
+  },
+  "case_sha256": "c1e2177eb565ea20e459f04308ddfe267ba888930a0246d20331eee0b06df36c",
+  "distinct_inputs": 1141,
+  "per_problem": {
+    "A": 62,
+    "B": 102,
+    "C": 102,
+    "D": 813,
+    "E": 62
+  },
+  "results": [
+    {
+      "binary_suffix": "(optimized)",
+      "inputs": 1141,
+      "counts": {
+        "A/boundary": 1,
+        "A/retained_independent": 60,
+        "A/saved_sample": 1,
+        "B/boundary": 1,
+        "B/retained_independent": 100,
+        "B/saved_sample": 1,
+        "C/boundary": 1,
+        "C/retained_independent": 100,
+        "C/saved_sample": 1,
+        "D/boundary": 2,
+        "D/independent_stack": 700,
+        "D/retained_independent": 110,
+        "D/saved_sample": 1,
+        "E/boundary": 1,
+        "E/retained_independent": 60,
+        "E/saved_sample": 1
+      },
+      "seconds": 9.725
+    },
+    {
+      "binary_suffix": "-ubsan",
+      "inputs": 1141,
+      "counts": {
+        "A/boundary": 1,
+        "A/retained_independent": 60,
+        "A/saved_sample": 1,
+        "B/boundary": 1,
+        "B/retained_independent": 100,
+        "B/saved_sample": 1,
+        "C/boundary": 1,
+        "C/retained_independent": 100,
+        "C/saved_sample": 1,
+        "D/boundary": 2,
+        "D/independent_stack": 700,
+        "D/retained_independent": 110,
+        "D/saved_sample": 1,
+        "E/boundary": 1,
+        "E/retained_independent": 60,
+        "E/saved_sample": 1
+      },
+      "seconds": 9.436
+    }
+  ],
+  "runner_sha256": "b22318cb1ba248c21a5b2ef0986c733c55eb22f5ab17e2d519611269f9f53119",
+  "boundary_sha256": "9368e08da13db49bf04477ad33f0af20c4d13104d53c560aa2a8fec26a1222a7",
+  "compilation": "Apple Clang C++17, -O2 -Wall -Wextra -Wshadow; additionally -O1 -g -fsanitize=undefined -fno-sanitize-recover=all. Both builds compiled without warnings.",
+  "note": "Local validation only. Preserved original online records do not represent new submissions; sanitizer repeats are not additional distinct inputs."
+}

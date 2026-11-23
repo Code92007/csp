@@ -1,0 +1,29 @@
+{
+  "problem": "202312C",
+  "previous_sha256": "29202e2532f4399a113d653ffbc938d3bcd219d20146f62c2621daba97a67190",
+  "source_sha256": "26c33898ee789f478bd67652b4cc6d910c22182d1ccf129e9a0280a55892ee67",
+  "distinct_inputs": 102,
+  "per_binary_results": {
+    "O2": {
+      "passed": 102,
+      "seconds": 0.658
+    },
+    "UBSan": {
+      "passed": 102,
+      "seconds": 1.634
+    }
+  },
+  "case_sha256": "b03babf83a4905ec3c56193e11e48642112f5fcdca5a13586a6cbe4f21d1470f",
+  "case_kinds": {
+    "saved_sample": 1,
+    "retained_independent": 100,
+    "boundary": 1
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "Repeated Euler-interval containment factored into anc(int t,int x); t is contained and x is ancestor."
+  ],
+  "historical_report": "refactor-report.json",
+  "rename_only_text_equivalence": null,
+  "note": "Existing saved samples, independent oracle cases and boundaries replayed; no online resubmission."
+}

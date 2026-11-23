@@ -1,0 +1,23 @@
+{
+  "problem": "202312D",
+  "previous_sha256": "61966ddbb91338218a4fbaa2a89bedbb8343cd3dd9717ac60bfc778d90e2794e",
+  "source_sha256": "a0f4375d0c7528854e6cfa934b3783bdef1b8f14fc5681a24dd85ac8fd72261c",
+  "distinct_inputs": 1,
+  "per_binary_results": {
+    "GNU O2": {
+      "saved_samples_passed": 1,
+      "compile_stderr": "",
+      "sanitizer_stderr": ""
+    },
+    "Clang UBSan": {
+      "saved_samples_passed": 1,
+      "compile_stderr": "",
+      "sanitizer_stderr": ""
+    }
+  },
+  "changes": [
+    "Unused typedef long long ll removed; no executable tokens changed."
+  ],
+  "historical_report": "d-style-followup-report.json",
+  "note": "One saved sample after a declaration-only edit. The prior 813-case run remains historical and was not repeated."
+}

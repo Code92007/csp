@@ -1,29 +1,30 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<vector<int>> a(n, vector<int>(m));
-    for (auto &r : a)
-        for (int &x : r)
-            cin >> x;
-    for (int i = 0; i < n; i++) {
-        int answer = 0;
-        for (int j = 0; j < n; j++) {
-            bool larger = true;
-            for (int k = 0; k < m; k++)
-                if (a[j][k] <= a[i][k]) {
-                    larger = false;
+const int N=1010,M=15;
+int n,m,a[N][M];
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;++i){
+        for(int j=0;j<m;++j){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(int i=1;i<=n;++i){
+        int ans=0;
+        for(int j=1;j<=n;++j){
+            bool ok=true;
+            for(int k=0;k<m;++k){
+                if(a[j][k]<=a[i][k]){
+                    ok=false;
                     break;
                 }
-            if (larger) {
-                answer = j + 1;
+            }
+            if(ok){
+                ans=j;
                 break;
             }
         }
-        cout << answer << '\n';
+        printf("%d\n",ans);
     }
+    return 0;
 }

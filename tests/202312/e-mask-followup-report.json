@@ -1,0 +1,30 @@
+{
+  "problem": "202312E",
+  "previous_sha256": "00d4a4dd8e42a1098efe486417fd7ff5b41c18f99c38e484a92ab49eb3f464fd",
+  "source_sha256": "7035b3ceb3c58de35a5ded1bb1ee44a370671d4d101f21e63011cbfdb6731f9b",
+  "distinct_inputs": 62,
+  "case_kinds": {
+    "saved_sample": 1,
+    "retained_independent": 60,
+    "boundary": 1
+  },
+  "case_sha256": "11fbe3bd652b850170b41dce4d0606c043daa6867af623a1521f08e43ca9981e",
+  "per_binary_results": {
+    "O2": {
+      "passed": 62,
+      "seconds": 0.662
+    },
+    "UBSan": {
+      "passed": 62,
+      "seconds": 2.054
+    }
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "mask identifiers renamed S without scope collisions.",
+    "col[v] cached in int c for the shift and bit insertion."
+  ],
+  "limited_text_equivalence_checked": true,
+  "historical_report": "refactor-report.json",
+  "note": "Existing independent oracle and boundary/saved cases replayed. Historical reports are retained and do not claim the current hash. No new online submission."
+}

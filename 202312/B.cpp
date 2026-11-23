@@ -1,27 +1,25 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int q;
-    cin >> q;
-    while (q--) {
-        long long n, answer = 1;
-        int k;
-        cin >> n >> k;
-        for (long long p = 2; p <= n / p; p++) {
-            int count = 0;
-            long long power = 1;
-            while (n % p == 0) {
-                n /= p;
-                power *= p;
-                ++count;
+typedef long long ll;
+int q,k;
+ll n;
+int main(){
+    scanf("%d",&q);
+    while(q--){
+        scanf("%lld%d",&n,&k);
+        ll ans=1;
+        for(ll p=2;p<=n/p;++p){
+            int cnt=0;
+            ll v=1;
+            while(n%p==0){
+                n/=p;
+                v*=p;
+                ++cnt;
             }
-            if (count >= k)
-                answer *= power;
+            if(cnt>=k)ans*=v;
         }
-        if (n > 1 && k <= 1)
-            answer *= n;
-        cout << answer << '\n';
+        if(n>1 && k<=1)ans*=n;
+        printf("%lld\n",ans);
     }
+    return 0;
 }

@@ -1,179 +1,132 @@
-#include <algorithm>
-#include <cstdint>
-#include <cstdio>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-
-constexpr uint32_t MOD = 998244353;
-struct Matrix {
-    uint32_t a = 1, b = 0, c = 0, d = 1;
+const int N=1<<17,M=32;
+const int mod=998244353;
+struct mat{
+    int a=1,b=0,c=0,d=1;
 };
-inline Matrix multiply(const Matrix &x, const Matrix &y) {
-    return {
-        uint32_t((uint64_t(x.a) * y.a + uint64_t(x.b) * y.c) % MOD),
-        uint32_t((uint64_t(x.a) * y.b + uint64_t(x.b) * y.d) % MOD),
-        uint32_t((uint64_t(x.c) * y.a + uint64_t(x.d) * y.c) % MOD),
-        uint32_t((uint64_t(x.c) * y.b + uint64_t(x.d) * y.d) % MOD)
-    };
+mat mul(const mat &x,const mat &y){
+    mat z;
+    z.a=(1ll*x.a*y.a+1ll*x.b*y.c)%mod;
+    z.b=(1ll*x.a*y.b+1ll*x.b*y.d)%mod;
+    z.c=(1ll*x.c*y.a+1ll*x.d*y.c)%mod;
+    z.d=(1ll*x.c*y.b+1ll*x.d*y.d)%mod;
+    return z;
 }
-struct Product {
-    Matrix front, back;
+struct prod{
+    mat a,b;
 };
-// Execute x before y: later front insertions precede all earlier ones.
-inline Product join(const Product &x, const Product &y) {
-    return {multiply(y.front, x.front), multiply(x.back, y.back)};
+prod merge(const prod &x,const prod &y){
+    return {mul(y.a,x.a),mul(x.b,y.b)};
 }
-
-class FastIO {
-    static constexpr int SIZE = 1 << 16;
-    char input[SIZE], output[SIZE];
-    int pos = 0, length = 0, used = 0;
-    int get() {
-        if (pos == length) {
-            length = int(fread(input, 1, SIZE, stdin));
-            pos = 0;
-            if (!length) return EOF;
+struct segtree{
+    int n;
+    struct node{
+        int l,r,del,sz,cnt;
+        prod all,pre;
+    }e[N<<1];
+    #define l(p) e[p].l
+    #define r(p) e[p].r
+    prod prefix(int p,int k){
+        node &v=e[p];
+        if(k==v.sz)return v.all;
+        if(!k)return prod();
+        if(k<=v.cnt)return prefix(p<<1,k);
+        return merge(v.pre,prefix(p<<1|1,k-v.cnt));
+    }
+    void pushup(int p){
+        node &v=e[p],&a=e[p<<1],&b=e[p<<1|1];
+        v.cnt=max(0,a.sz-b.del);
+        v.sz=v.cnt+b.sz;
+        v.del=a.del+max(0,b.del-a.sz);
+        v.pre=prefix(p<<1,v.cnt);
+        if(!v.cnt)v.all=b.all;
+        else if(!b.sz)v.all=v.pre;
+        else v.all=merge(v.pre,b.all);
+    }
+    void set(int p,int type,const mat &v){
+        e[p].del=(type==3);
+        e[p].sz=(type!=3);
+        e[p].all=prod();
+        if(type==1)e[p].all.a=v;
+        if(type==2)e[p].all.b=v;
+    }
+    void build(int p,int x,int y){
+        l(p)=x;r(p)=y;
+        if(x==y)return;
+        int mid=(x+y)>>1;
+        build(p<<1,x,mid);
+        build(p<<1|1,mid+1,y);
+    }
+    void init(int k){
+        n=1;
+        while(n<k){
+            n<<=1;
         }
-        return input[pos++];
+        build(1,0,n-1);
     }
-public:
-    ~FastIO() { flush(); }
-    int read() {
-        int ch = get(), value = 0;
-        while (ch <= ' ' && ch != EOF) ch = get();
-        while (ch >= '0' && ch <= '9') {
-            value = value * 10 + ch - '0';
-            ch = get();
+    void update(int x,int type,const mat &v){
+        int p=n+x;
+        set(p,type,v);
+        while(p>>=1){
+            pushup(p);
         }
-        return value;
     }
-    void flush() {
-        fwrite(output, 1, used, stdout);
-        used = 0;
-    }
-    void write(uint32_t value, char end) {
-        if (used + 12 >= SIZE) flush();
-        char digits[10];
-        int count = 0;
-        do {
-            digits[count++] = char('0' + value % 10);
-            value /= 10;
-        } while (value);
-        while (count) output[used++] = digits[--count];
-        output[used++] = end;
-    }
-};
-
-struct Node {
-    int removed = 0, size = 0, leftSize = 0;
-    Product all, leftPart;
-};
-
-class SegmentTree {
-    int base = 1;
-    vector<Node> nodes;
-
-    // First count insertions of this node's reduced chronological sequence.
-    Product prefix(int u, int count) const {
-        const Node &node = nodes[u];
-        if (count == node.size) return node.all;
-        if (!count) return {};
-        if (count <= node.leftSize) return prefix(u * 2, count);
-        return join(node.leftPart, prefix(u * 2 + 1, count - node.leftSize));
-    }
-
-    void pull(int u) {
-        Node &node = nodes[u];
-        const Node &left = nodes[u * 2], &right = nodes[u * 2 + 1];
-        node.leftSize = max(0, left.size - right.removed);
-        node.size = node.leftSize + right.size;
-        node.removed = left.removed + max(0, right.removed - left.size);
-        node.leftPart = prefix(u * 2, node.leftSize);
-        if (!node.leftSize) node.all = right.all;
-        else if (!right.size) node.all = node.leftPart;
-        else node.all = join(node.leftPart, right.all);
-    }
-
-    void setLeaf(int u, int type, const Matrix &value) {
-        Node &node = nodes[u];
-        node.removed = type == 3;
-        node.size = type != 3;
-        node.all = {};
-        if (type == 1) node.all.front = value;
-        if (type == 2) node.all.back = value;
-    }
-
-public:
-    explicit SegmentTree(int n) {
-        while (base < n) base *= 2;
-        nodes.resize(base * 2);
-    }
-    void initialize(int i, int type, const Matrix &value) {
-        setLeaf(base + i, type, value);
-    }
-    void build() {
-        for (int u = base - 1; u; --u) pull(u);
-    }
-    void update(int i, int type, const Matrix &value) {
-        int u = base + i;
-        setLeaf(u, type, value);
-        while ((u /= 2)) pull(u);
-    }
-    Matrix query(int l, int r) const {
-        // Collect the disjoint covering nodes in chronological order.
-        int leftNodes[32], rightNodes[32], nl = 0, nr = 0;
-        for (l += base, r += base + 1; l < r; l /= 2, r /= 2) {
-            if (l & 1) leftNodes[nl++] = l++;
-            if (r & 1) rightNodes[nr++] = --r;
+    mat query(int x,int y){
+        int a[M],b[M],na=0,nb=0;
+        for(x+=n,y+=n+1;x<y;x>>=1,y>>=1){
+            if(x&1)a[na++]=x++;
+            if(y&1)b[nb++]=--y;
         }
-        int removed = 0;
-        Product answer;
-        bool nonempty = false;
-        auto consume = [&](int u) {
-            const Node &node = nodes[u];
-            if (node.size <= removed) {
-                removed += node.removed - node.size;
-            } else {
-                Product part = prefix(u, node.size - removed);
-                answer = nonempty ? join(part, answer) : part;
-                nonempty = true;
-                removed = node.removed;
+        int del=0;
+        prod ans;
+        bool ok=false;
+        auto take=[&](int p){
+            node &v=e[p];
+            if(v.sz<=del)del+=v.del-v.sz;
+            else{
+                prod cur=prefix(p,v.sz-del);
+                ans=ok?merge(cur,ans):cur;
+                ok=true;
+                del=v.del;
             }
         };
-        // Scan backwards: later deletions remove a suffix of earlier survivors.
-        for (int i = 0; i < nr; ++i) consume(rightNodes[i]);
-        for (int i = nl - 1; i >= 0; --i) consume(leftNodes[i]);
-        return multiply(answer.front, answer.back);
-    }
-};
-
-int main() {
-    FastIO io;
-    int n = io.read(), m = io.read();
-    SegmentTree tree(n);
-    auto readMatrix = [&](int type) {
-        Matrix value;
-        if (type != 3) {
-            value.a = io.read(); value.b = io.read();
-            value.c = io.read(); value.d = io.read();
+        for(int i=0;i<nb;++i){
+            take(b[i]);
         }
-        return value;
-    };
-    for (int i = 0; i < n; ++i) {
-        int type = io.read();
-        tree.initialize(i, type, readMatrix(type));
+        for(int i=na-1;i>=0;--i){
+            take(a[i]);
+        }
+        return mul(ans.a,ans.b);
     }
-    tree.build();
-    while (m--) {
-        int op = io.read();
-        if (op == 1) {
-            int i = io.read() - 1, type = io.read();
-            tree.update(i, type, readMatrix(type));
-        } else {
-            int l = io.read() - 1, r = io.read() - 1;
-            Matrix answer = tree.query(l, r);
-            io.write(answer.a, ' '); io.write(answer.b, ' ');
-            io.write(answer.c, ' '); io.write(answer.d, '\n');
+}tr;
+int n,m,op,x,y,type;
+mat read(int t){
+    mat v;
+    if(t!=3)scanf("%d%d%d%d",&v.a,&v.b,&v.c,&v.d);
+    return v;
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    tr.init(n);
+    for(int i=0;i<n;++i){
+        scanf("%d",&type);
+        tr.set(tr.n+i,type,read(type));
+    }
+    for(int p=tr.n-1;p;--p){
+        tr.pushup(p);
+    }
+    while(m--){
+        scanf("%d",&op);
+        if(op==1){
+            scanf("%d%d",&x,&type);
+            tr.update(x-1,type,read(type));
+        }
+        else{
+            scanf("%d%d",&x,&y);
+            mat ans=tr.query(x-1,y-1);
+            printf("%d %d %d %d\n",ans.a,ans.b,ans.c,ans.d);
         }
     }
+    return 0;
 }

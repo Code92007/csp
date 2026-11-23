@@ -1,89 +1,93 @@
-#include <algorithm>
-#include <cstdint>
-#include <iostream>
-#include <unordered_map>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using Mask = uint32_t;
-using Word = uint64_t;
-using Layer = vector<unordered_map<Mask, int>>;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, limit, k;
-    cin >> n >> m >> limit >> k;
-    vector<int> color(n), from(m), to(m), weight(m);
-    for (int &x : color)
-        cin >> x;
-    for (int &x : from)
-        cin >> x;
-    for (int &x : to)
-        cin >> x;
-    for (int &x : weight)
-        cin >> x;
-    vector<vector<pair<int, int>>> g(n), rg(n);
-    for (int i = 0; i < m; ++i) {
-        g[from[i]].push_back({to[i], weight[i]});
-        rg[to[i]].push_back({from[i], weight[i]});
-    }
-    auto compute = [&](int source, const vector<vector<pair<int, int>>> &edges) {
-        vector<Layer> dp(5, Layer(n));
-        dp[0][source][Mask(1) << color[source]] = 0;
-        for (int d = 0; d < 4 && d + 1 < limit; ++d)
-            for (int u = 0; u < n; ++u)
-                for (auto [mask, value] : dp[d][u])
-                    for (auto [v, w] : edges[u])
-                        if (!(mask >> color[v] & 1)) {
-                            auto &best = dp[d + 1][v][mask | (Mask(1) << color[v])];
-                            best = max(best, value + w);
-                        }
-        return dp;
-    };
-    auto forward = compute(0, g), backward = compute(n - 1, rg);
-    int answer = 0;
-    for (int u = 0; u < n; ++u)
-        for (int d = 0; d <= 4 && d < limit; ++d) {
-            if (forward[d][u].empty())
-                continue;
-            int cap = min(4, limit - 1 - d);
-            vector<pair<int, Mask>> candidates;
-            for (int e = 0; e <= cap; ++e)
-                for (auto [mask, value] : backward[e][u])
-                    candidates.push_back({value, mask});
-            sort(candidates.rbegin(), candidates.rend());
-            int words = (int(candidates.size()) + 63) / 64;
-            if (!words)
-                continue;
-            vector<vector<Word>> bad(k, vector<Word>(words));
-            for (int i = 0; i < int(candidates.size()); ++i) {
-                Mask mask = candidates[i].second;
-                while (mask) {
-                    int c = __builtin_ctz(mask);
-                    mask &= mask - 1;
-                    bad[c][i / 64] |= Word(1) << (i % 64);
-                }
-            }
-            for (auto [key, value] : forward[d][u]) {
-                Mask mask = key ^ (Mask(1) << color[u]);
-                vector<int> colors;
-                while (mask) {
-                    colors.push_back(__builtin_ctz(mask));
-                    mask &= mask - 1;
-                }
-                for (int j = 0; j < words; ++j) {
-                    Word excluded = 0;
-                    for (int c : colors)
-                        excluded |= bad[c][j];
-                    Word valid = ~excluded;
-                    if (valid) {
-                        int index = j * 64 + __builtin_ctzll(valid);
-                        if (index < int(candidates.size()))
-                            answer = max(answer, value + candidates[index].first);
-                        break;
-                    }
+typedef pair<int,int> P;
+typedef unsigned int ui;
+typedef unsigned long long ull;
+typedef vector<unordered_map<ui,int>> layer;
+const int N=105,M=5;
+int n,m,l,k,col[N];
+vector<P> g[N],rg[N];
+vector<layer> calc(int s,vector<P> edges[N]){
+    vector<layer> dp(M,layer(n));
+    dp[0][s][1u<<col[s]]=0;
+    for(int d=0;d<M-1 && d+1<l;++d){
+        for(int u=0;u<n;++u){
+            for(auto &[S,val]:dp[d][u]){
+                for(auto &[v,w]:edges[u]){
+                    int c=col[v];
+                    if(S>>c&1)continue;
+                    int &best=dp[d+1][v][S|(1u<<c)];
+                    best=max(best,val+w);
                 }
             }
         }
-    cout << answer << '\n';
+    }
+    return dp;
+}
+int main(){
+    scanf("%d%d%d%d",&n,&m,&l,&k);
+    for(int i=0;i<n;++i){
+        scanf("%d",&col[i]);
+    }
+    vector<int> a(m),b(m),w(m);
+    for(int &x:a){
+        scanf("%d",&x);
+    }
+    for(int &x:b){
+        scanf("%d",&x);
+    }
+    for(int &x:w){
+        scanf("%d",&x);
+    }
+    for(int i=0;i<m;++i){
+        g[a[i]].push_back({b[i],w[i]});
+        rg[b[i]].push_back({a[i],w[i]});
+    }
+    auto f=calc(0,g),h=calc(n-1,rg);
+    int ans=0;
+    for(int u=0;u<n;++u){
+        for(int d=0;d<M && d<l;++d){
+            if(f[d][u].empty())continue;
+            int cap=min(M-1,l-1-d);
+            vector<pair<int,ui>> v;
+            for(int i=0;i<=cap;++i){
+                for(auto &[S,val]:h[i][u]){
+                    v.push_back({val,S});
+                }
+            }
+            sort(v.rbegin(),v.rend());
+            int len=(v.size()+63)/64;
+            if(!len)continue;
+            vector<vector<ull>> bad(k,vector<ull>(len));
+            for(int i=0;i<(int)v.size();++i){
+                ui S=v[i].second;
+                while(S){
+                    int c=__builtin_ctz(S);
+                    S&=S-1;
+                    bad[c][i/64]|=1ull<<(i%64);
+                }
+            }
+            for(auto &[key,val]:f[d][u]){
+                ui S=key^(1u<<col[u]);
+                vector<int> colors;
+                while(S){
+                    colors.push_back(__builtin_ctz(S));
+                    S&=S-1;
+                }
+                for(int i=0;i<len;++i){
+                    ull ex=0;
+                    for(int &c:colors){
+                        ex|=bad[c][i];
+                    }
+                    ull ok=~ex;
+                    if(!ok)continue;
+                    int pos=i*64+__builtin_ctzll(ok);
+                    if(pos<(int)v.size())ans=max(ans,val+v[pos].first);
+                    break;
+                }
+            }
+        }
+    }
+    printf("%d\n",ans);
+    return 0;
 }
