@@ -8,10 +8,9 @@ tags: ["CSP", "位运算", "计数", "0/1背包", "分数背包", "贪心", "模
 status: "published"
 problems: [{"id": "A", "title": "平衡数", "tags": ["位运算", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 924 组验证；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce724a67df0b81749b544"}}, {"id": "B", "title": "机器人项目管理", "tags": ["0/1背包", "分数背包", "贪心"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 473 组验证；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce726a67df0b81749b54b"}}, {"id": "C", "title": "进程通信", "tags": ["模拟", "内存分配", "有序集合"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 328 组验证；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce727a67df0b81749b550"}}, {"id": "D", "title": "异或", "tags": ["数位", "线段树", "懒标记"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 440 组验证（D 含同算法模板微调前记录，详见验证报告）；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce729a67df0b81749b56b"}}, {"id": "E", "title": "旅游计划 - Easy Ver.", "tags": ["树链剖分", "树状数组", "随机化", "在线查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 364 组验证；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72ba67df0b81749b59e"}}]
 ---
-
 # CSP 202603 五题题解
 
-[返回总目录](../README.md) · [验证记录](../tests/202603/validation.md)
+[原页面](https://code92007.github.io/csp/#/contest/202603) · [验证记录](../tests/202603/VALIDATION.md)
 
 <a id="problem-a"></a>
 
@@ -19,7 +18,7 @@ problems: [{"id": "A", "title": "平衡数", "tags": ["位运算", "计数"], "s
 
 标签：`位运算` · `计数`
 
-本地验证见 [VALIDATION.md](../tests/202603/validation.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
 
 ### 题意
 
@@ -35,8 +34,7 @@ problems: [{"id": "A", "title": "平衡数", "tags": ["位运算", "计数"], "s
 
 **逐位统计**
 
-每次用 `x&1` 取得最低位，再将 `x` 右移一位，直到它变为 0。  
-用 `len` 记录处理的位数，`cnt` 记录其中 1 的个数。0 的个数为 `len-cnt`，因此只需判断 `cnt*2==len`。
+每次用 `x&1` 取得最低位，再将 `x` 右移一位，直到它变为 0。用 `len` 记录位数，`cnt` 记录其中 1 的个数，0 的个数就是 `len-cnt`，因此只需判断 `cnt*2==len`。
 
 **正确性**
 
@@ -77,7 +75,7 @@ int main(){
 
 标签：`0/1背包` · `分数背包` · `贪心`
 
-本地验证见 [VALIDATION.md](../tests/202603/validation.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
 
 ### 题意
 
@@ -93,9 +91,7 @@ int main(){
 
 **普通任务做 0/1 背包**
 
-先求最多能节省多少时间，再用初始总耗时减去它。
-
-`dp[j]` 表示普通任务花费不超过 $j$ 杯咖啡时，最多节省的时间。每个任务只能选一次，因此容量倒序更新：
+先求最多能节省多少时间，再用初始总耗时减去它。`dp[j]` 表示普通任务花费不超过 $j$ 杯咖啡时，最多节省的时间。每个任务只能选一次，因此容量倒序更新：
 
 $$dp[j]=\max(dp[j],dp[j-a]+b).$$
 
@@ -103,8 +99,7 @@ $$dp[j]=\max(dp[j],dp[j-a]+b).$$
 
 将灵活任务按 $b/a$ 从大到小排序，依次购买，买满一个再考虑下一个。比较效率时使用交叉乘法，避免排序中的浮点误差。
 
-预处理 `g[c]`，表示灵活任务使用不超过整数预算 $c$ 时的最大收益。由于每个任务的上限 $a$ 是整数，按排序结果每次追加一杯的收益 $b/a$，即可得到所有整数预算的答案。  
-如果所有灵活任务都已买满，剩余预算的收益不再增加。
+预处理 `g[c]`，表示灵活任务使用不超过整数预算 $c$ 时的最大收益。由于每个任务的上限 $a$ 是整数，按排序结果每次追加一杯的收益 $b/a$，即可得到所有整数预算的答案。买满所有灵活任务后，剩余预算的收益不再增加。
 
 **枚举预算分配**
 
@@ -184,7 +179,7 @@ int main(){
 
 标签：`模拟` · `内存分配` · `有序集合`
 
-本地验证见 [VALIDATION.md](../tests/202603/validation.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
 
 ### 题意
 
@@ -216,9 +211,7 @@ int main(){
 
 **释放时合并相邻空洞**
 
-在 `mp` 中寻找释放区间的左右邻居，端点相接就合并。如果合并后的右端点等于 `tail`，将 `tail` 左移到新区间起点。否则，将合并后的有限空洞同时加入两份索引。
-
-地址及地址之和使用 `ll`，避免多次分配后超出 `int` 范围。
+在 `mp` 中寻找释放区间的左右邻居，端点相接就合并。如果合并后的右端点等于 `tail`，将 `tail` 左移到新区间起点。否则，将合并后的有限空洞同时加入两份索引。地址及地址之和使用 `ll`，避免多次分配后超出 `int` 范围。
 
 **正确性**
 
@@ -323,14 +316,13 @@ int main(){
 
 标签：`数位` · `线段树` · `懒标记`
 
-本地验证见 [VALIDATION.md](../tests/202603/validation.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
 
 ### 题意
 
 把两个非负整数写成奇数 $k$ 进制，每一位相加后对 $k$ 取模，不产生进位，定义运算 $\oplus_k$。定义 $f(0)=0$、$f(x)=x\oplus_k f(x-1)$。需要维护一个非负整数数组，支持区间修改与区间查询。
 
-输入先给出 `n m k`，接着给出长度为 $n$ 的数组，随后给出 $m$ 次操作。  
-数据范围为 $1\le n\le5\times10^5$、$1\le m\le10^4$、$11\le k\le10^9$，且 $k$ 为奇数；保证 $1\le l\le r\le n$，所有时刻的数组元素和输入的修改值均为非负整数，不超过 $10^{12}$。操作格式如下：
+输入先给出 `n m k`，接着给出长度为 $n$ 的数组，随后给出 $m$ 次操作。数据范围为 $1\le n\le5\times10^5$、$1\le m\le10^4$、$11\le k\le10^9$，且 $k$ 为奇数；保证 $1\le l\le r\le n$，所有时刻的数组元素和输入的修改值均为非负整数，不超过 $10^{12}$。操作格式如下：
 
 - `1 l r v`：将区间内每个元素替换为 $a_i\oplus_k v$。
 - `2 l r`：查询区间内所有 $f(a_i)$ 的 $\oplus_k$。
@@ -385,9 +377,7 @@ $$S'_j=S_j+Lc_j\pmod k.$$
 
 逐位求和消去了 $f$ 的递推，所得查询式恰好表示区间内所有 $f(a_i)$ 的数位和。
 
-叶子节点直接计算 $S_j,P_j$，父节点按位相加。修改公式与逐元素加数位后的统计量完全一致，懒标记合并也与连续修改等价。
-
-因此，节点始终保存正确统计量，查询合并后再按进制重建，就得到答案。
+叶子节点直接计算 $S_j,P_j$，父节点按位相加。修改公式与逐元素加数位后的统计量一致，懒标记合并也与连续修改等价。因此节点始终保存正确统计量，查询合并后按进制重建，就得到答案。
 
 **复杂度**
 
@@ -527,7 +517,7 @@ int main(){
 
 标签：`树链剖分` · `树状数组` · `随机化` · `在线查询`
 
-本地验证见 [VALIDATION.md](../tests/202603/validation.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
 
 ### 题意
 
@@ -575,15 +565,11 @@ $$S\le2m+\binom{k}{2}.$$
 
 树链剖分将路径拆成 $O(\log n)$ 个连续区间。把每条边放在较深端点的 `dfn` 位置，树状数组中未修边记为 1，修好后减一。
 
-检查路段时，先求各区间中的未修边数，得到总数 `tot`。在 $1$ 到 `tot` 中随机选择两个不同的秩，再根据区间计数和树状数组的 `kth` 定位到具体边。
-
-这样每条剩余未修边被选中的机会相同，随机选择树上点则不能保证。
+检查路段时，先求各区间中的未修边数，得到总数 `tot`。在 $1$ 到 `tot` 中随机选择两个不同的秩，再根据区间计数和树状数组的 `kth` 定位到具体边。这样每条剩余未修边被选中的机会相同，随机选树上点则不能保证。
 
 **正确性**
 
-任意两条未修见证都能证明该路段不可行，所以随机选择不会造成误判。
-
-如果一个路段从不可行变为可行，它的未修边数必然降到了 1。此前选择的两条见证不可能都留下，因此至少有一条被修好，程序一定会触发重新检查。
+任意两条未修见证都能证明该路段不可行，所以随机选择不会造成误判。如果一个路段从不可行变为可行，它的未修边数必然降到了 1。此前选择的两条见证不可能都留下，因此至少有一条被修好，程序一定会触发重新检查。
 
 可行路段之后只会继续减少未修边，不会重新变差。每个路段只在首次可行时更新依赖计划，`need` 恰好记录未达标路段数，所以总答案准确。
 
@@ -836,9 +822,11 @@ int main(){
 }
 ```
 
+<!-- local-validation-attachments:start -->
 
 ### 验证附件
 
+- [VALIDATION.md](../tests/202603/VALIDATION.md)
 - [a-global-report.json](../tests/202603/a-global-report.json)
 - [abc-boundary-report.json](../tests/202603/abc-boundary-report.json)
 - [d-boundary-report.json](../tests/202603/d-boundary-report.json)
@@ -852,3 +840,5 @@ int main(){
 - [verify-d.py](../tests/202603/verify-d.py)
 - [verify-e.py](../tests/202603/verify-e.py)
 - [verify-retained.py](../tests/202603/verify-retained.py)
+
+<!-- local-validation-attachments:end -->
