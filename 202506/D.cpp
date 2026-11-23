@@ -1,104 +1,101 @@
-#include <array>
-#include <cstdint>
-#include <iostream>
-#include <string>
-#include <unordered_map>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int MOD = 998244353, S = 10, SMALL = 100000;
-using Row = array<int, S>;
-using Matrix = array<Row, S>;
-Row multiply(const Row &a, const Matrix &b) {
-    Row c{};
-    for (int j = 0; j < S; ++j) {
-        uint64_t sum = 0;
-        for (int k = 0; k < S; ++k)
-            sum += uint64_t(a[k]) * b[k][j];
-        c[j] = sum % MOD;
-    }
-    return c;
-}
-int next_state(int s, char ch) {
-    if (s == 9)
-        return 9;
-    string pattern = s < 3 ? "ccf" : "cspark";
-    int offset = s < 3 ? 0 : 3;
-    string text = pattern.substr(0, s - offset) + ch;
-    for (int len = pattern.size(); len >= 0; --len)
-        if (text.size() >= size_t(len) &&
-            text.compare(text.size() - len, len, pattern, 0, len) == 0)
-            return offset + len;
-    return offset;
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<int> lengths;
-    int previous = 0;
-    for (int i = 0; i < m; ++i) {
-        int position;
-        cin >> position;
-        lengths.push_back(position - previous - 1);
-        previous = position;
-    }
-    lengths.push_back(n - previous);
-    Matrix transition{};
-    for (int s = 0; s < S; ++s)
-        for (char c = 'a'; c <= 'z'; ++c)
-            ++transition[s][next_state(s, c)];
-    array<Matrix, 30> power;
-    power[0] = transition;
-    for (int bit = 1; bit < 30; ++bit)
-        for (int row = 0; row < S; ++row)
-            power[bit][row] = multiply(power[bit - 1][row], power[bit - 1]);
-    // For a segment: counts for 0->0, 0->1, 1->1, and all strings.
-    auto extract = [](const Row &a, const Row &b) {
-        array<int, 4> result{};
-        for (int s = 0; s < S; ++s) {
-            if (s < 3)
-                result[0] = (result[0] + a[s]) % MOD;
-            if (s >= 3 && s < 9)
-                result[1] = (result[1] + a[s]) % MOD;
-            if (s < 9)
-                result[2] = (result[2] + b[s]) % MOD;
-            result[3] = (result[3] + a[s]) % MOD;
+typedef long long ll;
+typedef unsigned long long ull;
+const int N=10;
+typedef array<int,N> A;
+typedef array<A,N> Mat;
+const int M=4,K=30,H=1e5;
+const int mod=998244353;
+int n,m;
+ll u=1,w,z;
+Mat tr,pw[K];
+A a,b;
+vector<int>g;
+vector<array<int,M>>dp;
+unordered_map<int,array<int,M>>mp;
+A mul(const A &x,const Mat &y){
+    A res;
+    for(int j=0;j<N;++j){
+        ull sum=0;
+        for(int k=0;k<N;++k){
+            sum+=(ull)x[k]*y[k][j];
         }
-        return result;
-    };
-    vector<array<int, 4>> small(min(n, SMALL) + 1);
-    Row a{}, b{};
-    a[0] = b[3] = 1;
-    for (size_t len = 0; len < small.size(); ++len) {
-        small[len] = extract(a, b);
-        a = multiply(a, transition);
-        b = multiply(b, transition);
+        res[j]=sum%mod;
     }
-    unordered_map<int, array<int, 4>> cache;
-    long long unseen = 1, waiting = 0, accepted = 0;
-    for (int len : lengths) {
-        array<int, 4> ways;
-        if (len < int(small.size()))
-            ways = small[len];
-        else if (cache.count(len))
-            ways = cache[len];
-        else {
-            a.fill(0);
-            b.fill(0);
-            a[0] = b[3] = 1;
-            for (int bit = 0; bit < 30; ++bit)
-                if (len >> bit & 1) {
-                    a = multiply(a, power[bit]);
-                    b = multiply(b, power[bit]);
+    return res;
+}
+int step(int s,char c){
+    if(s==9)return 9;
+    string p=s<3?"ccf":"cspark";
+    int off=s<3?0:3;
+    string t=p.substr(0,s-off)+c;
+    for(int len=(int)p.size();len>=0;--len){
+        if(t.size()>=(size_t)len &&
+           t.compare(t.size()-len,len,p,0,len)==0){
+            return off+len;
+        }
+    }
+    return off;
+}
+array<int,M> f(const A &x,const A &y){
+    array<int,M>res;
+    res.fill(0);
+    for(int s=0;s<N;++s){
+        if(s<3)res[0]=(res[0]+x[s])%mod;
+        if(s>=3 && s<9)res[1]=(res[1]+x[s])%mod;
+        if(s<9)res[2]=(res[2]+y[s])%mod;
+        res[3]=(res[3]+x[s])%mod;
+    }
+    return res;
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    int pre=0;
+    for(int i=0;i<m;++i){
+        int x;
+        scanf("%d",&x);
+        g.push_back(x-pre-1);
+        pre=x;
+    }
+    g.push_back(n-pre);
+    for(int s=0;s<N;++s){
+        for(char c='a';c<='z';++c){
+            ++tr[s][step(s,c)];
+        }
+    }
+    pw[0]=tr;
+    for(int i=1;i<K;++i){
+        for(int j=0;j<N;++j){
+            pw[i][j]=mul(pw[i-1][j],pw[i-1]);
+        }
+    }
+    dp.resize(min(n,H)+1);
+    a[0]=b[3]=1;
+    for(int i=0;i<(int)dp.size();++i){
+        dp[i]=f(a,b);
+        a=mul(a,tr);b=mul(b,tr);
+    }
+    for(int &len:g){
+        array<int,M>v;
+        if(len<(int)dp.size())v=dp[len];
+        else if(mp.count(len))v=mp[len];
+        else{
+            a.fill(0);b.fill(0);
+            a[0]=b[3]=1;
+            for(int i=0;i<K;++i){
+                if(len>>i&1){
+                    a=mul(a,pw[i]);b=mul(b,pw[i]);
                 }
-            ways = cache[len] = extract(a, b);
+            }
+            v=mp[len]=f(a,b);
         }
-        auto [no_first, first_only, no_second, all] = ways;
-        long long direct = (all - no_first - first_only + 2LL * MOD) % MOD;
-        accepted = (accepted * all + waiting * (all - no_second + MOD) + unseen * direct) % MOD;
-        waiting = (waiting * no_second + unseen * first_only) % MOD;
-        unseen = unseen * no_first % MOD;
+        auto [x,y,c,t]=v;
+        ll cur=(t-x-y+2ll*mod)%mod;
+        z=(z*t+w*(t-c+mod)+u*cur)%mod;
+        w=(w*c+u*y)%mod;
+        u=u*x%mod;
     }
-    cout << accepted << '\n';
+    printf("%lld\n",z);
+    return 0;
 }

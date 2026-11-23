@@ -1,0 +1,17 @@
+{
+  "problem": "202506C",
+  "previous_sha256": "0416d75a24bd291aff5e8a19c33a1cdbaa2a11bf615e028e8871fba9c76ef97d",
+  "source_sha256": "500837767022031d280ebcf635869a3f11505db5391f41bf85e93d5b97459521",
+  "distinct_inputs": 102,
+  "per_binary_passed": {
+    "O2": 102,
+    "UBSan": 102
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "decode renamed dec",
+    "get renamed f",
+    "paired receiver sender state assignment per user review"
+  ],
+  "historical_report": "refactor-report.json"
+}

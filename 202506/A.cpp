@@ -1,12 +1,12 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int k;
-    cin >> k;
-    while (k--) {
-        int mu, sigma, n;
-        cin >> mu >> sigma >> n;
-        int value = 100 * (n - mu) / sigma;
-        cout << value / 10 + 1 << ' ' << value % 10 + 1 << '\n';
+int k,mu,sig,n;
+int main(){
+    scanf("%d",&k);
+    while(k--){
+        scanf("%d%d%d",&mu,&sig,&n);
+        int v=100*(n-mu)/sig;
+        printf("%d %d\n",v/10+1,v%10+1);
     }
+    return 0;
 }

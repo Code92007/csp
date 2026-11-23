@@ -1,31 +1,32 @@
-#include <iostream>
-#include <queue>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n, k, x, y;
-    cin >> n >> k >> x >> y;
-    --x;
-    --y;
-    vector<vector<int>> dist(n, vector<int>(n, -1));
-    queue<pair<int, int>> q;
-    q.push({x, y});
-    dist[x][y] = 0;
-    int ans = 0, dx[] = {1, 1, -1, -1, 2, 2, -2, -2}, dy[] = {2, -2, 2, -2, 1, -1, 1, -1};
-    while (!q.empty()) {
-        auto [u, v] = q.front();
+typedef pair<int,int> P;
+const int N=105,M=8;
+int n,k,x,y,ans,d[N][N];
+int dx[M]={1,1,-1,-1,2,2,-2,-2};
+int dy[M]={2,-2,2,-2,1,-1,1,-1};
+queue<P>q;
+bool ok(int a,int b){
+    return 0<=a && a<n && 0<=b && b<n && d[a][b]==-1;
+}
+int main(){
+    scanf("%d%d%d%d",&n,&k,&x,&y);
+    x--,y--;
+    memset(d,-1,sizeof d);
+    d[x][y]=0;
+    q.push(P(x,y));
+    while(!q.empty()){
+        auto [u,v]=q.front();
         q.pop();
         ++ans;
-        if (dist[u][v] == k)
-            continue;
-        for (int i = 0; i < 8; i++) {
-            int a = u + dx[i], b = v + dy[i];
-            if (a >= 0 && a < n && b >= 0 && b < n && dist[a][b] == -1) {
-                dist[a][b] = dist[u][v] + 1;
-                q.push({a, b});
-            }
+        if(d[u][v]==k)continue;
+        for(int i=0;i<M;++i){
+            int a=u+dx[i],b=v+dy[i];
+            if(!ok(a,b))continue;
+            d[a][b]=d[u][v]+1;
+            q.push(P(a,b));
         }
     }
-    cout << ans << '\n';
+    printf("%d\n",ans);
+    return 0;
 }

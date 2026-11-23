@@ -1,0 +1,17 @@
+{
+  "problem": "202506D",
+  "previous_sha256": "7f7629ce5b7395e1aa241d8f702824dee4c1d0e7ad3f1c7879c8666a475436f8",
+  "source_sha256": "a9f6cb2671ce9b7bb81650d1d98433df0e591704f378a0788bd224b8805f3f17",
+  "distinct_inputs": 78,
+  "per_binary_passed": {
+    "O2": 78,
+    "UBSan": 78
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "typedef order respecting N dependency",
+    "get renamed f; lookup table renamed dp to avoid collision",
+    "related paired assignments grouped per user review"
+  ],
+  "historical_report": "refactor-report.json"
+}

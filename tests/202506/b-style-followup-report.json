@@ -1,0 +1,16 @@
+{
+  "problem": "202506B",
+  "previous_sha256": "534c3f6221feb6deb9b48ff4aec030a630f1cd75d3fc6b8e6068604c5c6c4b1c",
+  "source_sha256": "0e69c7258195d5c5019875ce1c29b4aa3aadac5102e613d10a044b195898b673",
+  "distinct_inputs": 100,
+  "per_binary_passed": {
+    "O2": 100,
+    "UBSan": 100
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "paired coordinate decrement per user review",
+    "short validity helper"
+  ],
+  "historical_report": "refactor-report.json"
+}
