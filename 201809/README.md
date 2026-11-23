@@ -3,17 +3,15 @@ title: "CSP 201809 五题题解"
 contest: "201809"
 contest_month: "2018-09"
 date: "2026-10-23"
-updated: "2026-10-25"
+updated: "2026-11-24"
 tags: ["CSP", "数组", "同时更新", "双指针", "区间交集", "树", "祖先关系", "字符串", "贪心", "记忆化搜索", "动态规划", "字典序", "线性递推", "多项式", "NTT", "生成函数"]
 status: "published"
-problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7"}}, {"id": "B", "title": "买菜", "tags": ["双指针", "区间交集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946"}}, {"id": "C", "title": "元素选择器", "tags": ["树", "祖先关系", "字符串", "贪心"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972"}}, {"id": "D", "title": "再卖菜", "tags": ["记忆化搜索", "动态规划", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0"}}, {"id": "E", "title": "线性递推式", "tags": ["线性递推", "多项式", "NTT", "生成函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17/C++20 编译通过；3 个保存样例通过；500 组直接递推独立对拍、100 组大下标差分和 5 组压力测试通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91"}}]
+problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，1 个保存用例、60 组独立对拍及 1 组边界/压力通过；UBSan 共 62 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7"}}, {"id": "B", "title": "买菜", "tags": ["双指针", "区间交集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 102 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946"}}, {"id": "C", "title": "元素选择器", "tags": ["树", "祖先关系", "字符串", "贪心"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 102 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972"}}, {"id": "D", "title": "再卖菜", "tags": ["记忆化搜索", "动态规划", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，1 个保存用例、90 组独立对拍及 2 组边界/压力通过；UBSan 共 93 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0"}}, {"id": "E", "title": "线性递推式", "tags": ["线性递推", "多项式", "NTT", "生成函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：C++17 编译通过，3 个保存用例、580 组独立对拍及 4 组边界/压力通过；UBSan 共 587 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91"}}]
 ---
 
 # CSP 201809 五题题解
 
-[返回总目录](../README.md)
-
-本场已实现 **5/5** 题。每题依次给出题意、题解、代码。源码使用 C++17。
+[原页面](https://code92007.github.io/csp/#/contest/201809) · [验证记录](../tests/201809/VALIDATION.md) · [返回总目录](../README.md)
 
 <a id="problem-a"></a>
 
@@ -21,46 +19,54 @@ problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "s
 
 标签：`数组` · `同时更新`
 
-状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7)（复刻评测）。
+本地：62 组优化版、62 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
 
 ### 题意
 
-第二天每家菜店价格为自己及相邻店第一天价格的平均值并向下取整；两端只有一个邻居。求全部新价格。
+一排商店同时调整菜价：第二天的价格等于自己和相邻商店第一天价格的平均值，向下取整。两端只有一个邻居，求全部新价格。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/)。
+输入商店数 $n$，再输入 $n$ 个原价。$2\le n\le1000$，原价为不超过 $10^4$ 的正整数。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809A)。
+输出一行 $n$ 个整数，依次表示第二天的价格。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809A)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-保存完整原数组，对位置i取[max(0,i-1),min(n-1,i+1)]中的价格求和，除以实际项数。全部计算始终读取原数组。
+保存完整的原价数组。对于位置 $i$，求区间 $[\max(0,i-1),\min(n-1,i+1)]$ 内的价格之和，再除以区间长度。
 
-区间恰好包含本店与存在的邻居，正整数除法就是向下取整。不能边计算边覆盖原价格，否则下一家会误用第二天的数据。时间 $O(n)$，空间 $O(n)$。
+**正确性**
+
+区间恰好包含本店及存在的邻居，正整数除法实现向下取整。所有计算始终读取原数组，符合同时调整的要求；若边算边覆盖，就会误用已经更新的价格。
+
+**复杂度**
+
+每家最多读取三个数，时间 $O(n)$，空间 $O(n)$。
 
 ### 代码
 
 独立源码：[A.cpp](A.cpp)
 
 ```cpp
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    vector<int> a(n);
-    for (int &x : a)
-        cin >> x;
-    for (int i = 0; i < n; i++) {
-        int l = max(0, i - 1), r = min(n - 1, i + 1), sum = 0;
-        for (int j = l; j <= r; j++)
-            sum += a[j];
-        if (i)
-            cout << ' ';
-        cout << sum / (r - l + 1);
+const int N=1010;
+int n,a[N];
+int main(){
+    scanf("%d",&n);
+    for(int i=0;i<n;++i){
+        scanf("%d",&a[i]);
     }
-    cout << '\n';
+    for(int i=0;i<n;++i){
+        int l=max(0,i-1),r=min(n-1,i+1),sum=0;
+        for(int j=l;j<=r;++j){
+            sum+=a[j];
+        }
+        printf("%d%c",sum/(r-l+1),i==n-1?'\n':' ');
+    }
+    return 0;
 }
 ```
 
@@ -70,49 +76,64 @@ int main() {
 
 标签：`双指针` · `区间交集`
 
-状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946)（复刻评测）。
+本地：102 组优化版、102 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
 
 ### 题意
 
-两人各有n个有序且互不相交的装车时间区间，求同时装车的总时长。区间[s,t]的时长是t-s，端点接触时没有正长度交集。
+两个人各有 $n$ 个装车时间段，求两人同时装车的总时长。区间 $[s,t]$ 的时长为 $t-s$，仅在端点接触时贡献为零。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/)。
+输入 $n$，接着分别输入两人的 $n$ 个区间。$1\le n\le2000$，时间在 $[1,10^6]$ 内；每个人的区间按时间递增，且前一区间的右端严格小于后一区间的左端。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809B)。
+输出一个整数，表示总时长。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809B)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-双指针指向各自当前区间，交集长度为 `max(0,min(右端)-max(左端))`。累加后，右端较早的区间先结束，移动其指针；另一边保留以便继续与后续区间相交。
+用两个指针分别指向当前区间，交集长度为
 
-被丢弃区间不可能与另一侧更晚且不重叠的区间产生新交集，所以不会遗漏；同一人的区间不重叠又保证不会重复计时。时间 $O(n)$，空间 $O(n)$。
+$$\max\bigl(0,\min(r_1,r_2)-\max(l_1,l_2)\bigr).$$
+
+累加交集后，移动右端点较早的区间；另一个区间保留，继续尝试与后续区间相交。右端相同时移动任意一边即可。
+
+**正确性**
+
+结束较早的区间，不可能再与另一人更晚的区间产生正长度交集，因此可以安全丢弃。每个人的区间互不相交，累加也不会重复计时。
+
+**复杂度**
+
+每个指针最多移动 $n$ 次，时间 $O(n)$，空间 $O(n)$。
 
 ### 代码
 
 独立源码：[B.cpp](B.cpp)
 
 ```cpp
-#include <algorithm>
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    vector<pair<int, int>> a(n), b(n);
-    for (auto &[l, r] : a)
-        cin >> l >> r;
-    for (auto &[l, r] : b)
-        cin >> l >> r;
-    int i = 0, j = 0, answer = 0;
-    while (i < n && j < n) {
-        answer += max(0, min(a[i].second, b[j].second) - max(a[i].first, b[j].first));
-        if (a[i].second < b[j].second)
-            ++i;
-        else
-            ++j;
+typedef pair<int,int> P;
+const int N=2010;
+int n,i,j,ans;
+P a[N],b[N];
+int main(){
+    scanf("%d",&n);
+    for(int k=0;k<n;++k){
+        scanf("%d%d",&a[k].first,&a[k].second);
     }
-    cout << answer << '\n';
+    for(int k=0;k<n;++k){
+        scanf("%d%d",&b[k].first,&b[k].second);
+    }
+    while(i<n && j<n){
+        int l=max(a[i].first,b[j].first);
+        int r=min(a[i].second,b[j].second);
+        ans+=max(0,r-l);
+        if(a[i].second<b[j].second)++i;
+        else ++j;
+    }
+    printf("%d\n",ans);
+    return 0;
 }
 ```
 
@@ -122,100 +143,102 @@ int main() {
 
 标签：`树` · `祖先关系` · `字符串` · `贪心`
 
-状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972)（复刻评测）。
+本地：102 组优化版、102 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
 
 ### 题意
 
-用每层两个点号的缩进描述元素树，元素含大小写不敏感的标签及可选大小写敏感 id。  
-查询是单个选择器或以空格相连的后代选择器链，输出最后一个选择器匹配且祖先链满足前面条件的行号。  
-n≤100，查询数≤10。
+文档按行描述一棵元素树，每级缩进用两个点号表示。每个元素有标签和可选的 `#id`：标签不区分大小写，id 区分大小写。查询可为标签、id，或用空格连接的后代选择器链；链中相邻条件要求严格祖先关系，允许跨过若干层。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/)。
+输入 `n m`，接着输入 $n$ 行文档和 $m$ 行选择器。$1\le n\le100$，$1\le m\le10$，每行长度不超过 $80$。输入合法，文档中的 id 各不相同。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809C)。
+每个查询输出一行，先输出选中数量，再按递增顺序输出元素行号。父元素被选中不会使未匹配的后代自动入选。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809C)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-读入树时维护各深度最近的结点栈，弹出同层及更深结点后，栈顶就是父亲。标签统一转小写，id 原样保存。
+**建立父指针**
 
-枚举查询可能选择的结点，先要求它匹配最后一级，再沿父亲向上，贪心匹配倒数第二级、倒数第三级等。这里是严格祖先，不能让同一个结点匹配两级；中间允许跳过任意不匹配祖先。
+维护各深度最近出现的元素。当前行深度为 $d$，父亲就是深度 $d-1$ 的最近元素，再更新深度 $d$ 的记录。标签及标签选择器统一转小写，id 保留原样。
 
-选择最近的可用祖先不会减少更上方可选祖先，因此若存在一条匹配链，贪心也能完成；反之完成的链本身就是证明。  
-按输入行序枚举自然得到递增输出，每个结点至多输出一次。每条查询时间 $O(nh)$，h 为树高，空间 $O(n+|S|)$。
+**沿祖先链匹配**
+
+枚举元素作为最后一级选择器的候选，先检查自身是否匹配。然后沿父指针向上，依次寻找前一个选择器对应的最近祖先；命中后继续向更高处寻找，不重复使用同一个元素。
+
+**正确性**
+
+若存在合法匹配，选择最近的可用祖先只会为前面的条件留下更多祖先，不会减少可选范围。因此从右向左贪心能找到匹配，当且仅当候选确实满足整条选择器链。按行号枚举候选即可得到递增且无重复的结果。
+
+**复杂度**
+
+设树高为 $h$、单行长度上限为 $L$，每次查询时间 $O(L+nh)$，存储文档与查询的空间 $O(nL)$。
 
 ### 代码
 
 独立源码：[C.cpp](C.cpp)
 
 ```cpp
-#include <cctype>
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-string lower(string s) {
-    for (char &c : s)
-        c = tolower(static_cast<unsigned char>(c));
+const int N=110,M=90;
+int n,m,fa[N],st[N],top,ans[N],cnt;
+char s[M];
+string tag[N],id[N],sel[M];
+string lower(string s){
+    for(char &c:s){
+        c=tolower((unsigned char)c);
+    }
     return s;
 }
-struct Node {
-    string tag, id;
-    int parent;
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    string line;
-    getline(cin, line);
-    vector<Node> a(n + 1);
-    vector<int> stack;
-    for (int i = 1; i <= n; i++) {
-        getline(cin, line);
-        int d = 0;
-        while (line[d] == '.')
+bool match(int u,int k){
+    if(sel[k][0]=='#')return id[u]==sel[k];
+    return tag[u]==sel[k];
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    fgets(s,M,stdin);
+    for(int i=1;i<=n;++i){
+        fgets(s,M,stdin);
+        int d=0;
+        while(s[d]=='.'){
             ++d;
-        d /= 2;
-        while (int(stack.size()) > d)
-            stack.pop_back();
-        a[i].parent = stack.empty() ? 0 : stack.back();
-        istringstream in(line.substr(2 * d));
-        in >> a[i].tag >> a[i].id;
-        a[i].tag = lower(a[i].tag);
-        stack.push_back(i);
-    }
-    while (m--) {
-        getline(cin, line);
-        istringstream in(line);
-        vector<string> sel;
-        string t;
-        while (in >> t)
-            sel.push_back(t[0] == '#' ? t : lower(t));
-        auto match = [&](int u, int k) {
-            return sel[k][0] == '#' ? a[u].id == sel[k] : a[u].tag == sel[k];
-        };
-        vector<int> ans;
-        for (int i = 1; i <= n; i++) {
-            int k = int(sel.size()) - 1;
-            if (!match(i, k))
-                continue;
-            --k;
-            int u = a[i].parent;
-            while (k >= 0 && u) {
-                if (match(u, k))
-                    --k;
-                u = a[u].parent;
-            }
-            if (k < 0)
-                ans.push_back(i);
         }
-        cout << ans.size();
-        for (int u : ans)
-            cout << ' ' << u;
-        cout << '\n';
+        top=d/2;
+        fa[i]=top?st[top]:0;
+        istringstream in(s+d);
+        in>>tag[i]>>id[i];
+        tag[i]=lower(tag[i]);
+        st[++top]=i;
     }
+    while(m--){
+        fgets(s,M,stdin);
+        istringstream in(s);
+        int len=0;
+        string t;
+        while(in>>t){
+            sel[len++]=t[0]=='#'?t:lower(t);
+        }
+        cnt=0;
+        for(int i=1;i<=n;++i){
+            int k=len-1;
+            if(!match(i,k))continue;
+            --k;
+            int u=fa[i];
+            while(k>=0 && u){
+                if(match(u,k))--k;
+                u=fa[u];
+            }
+            if(k<0)ans[cnt++]=i;
+        }
+        printf("%d",cnt);
+        for(int i=0;i<cnt;++i){
+            printf(" %d",ans[i]);
+        }
+        puts("");
+    }
+    return 0;
 }
 ```
 
@@ -225,77 +248,95 @@ int main() {
 
 标签：`记忆化搜索` · `动态规划` · `字典序`
 
-状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0)（复刻评测）。
+本地：93 组优化版、93 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
 
 ### 题意
 
-已知 n 家商店第二天的价格 b。两端价格是第一天自己与邻店的平均值向下取整，中间是自己及两侧三家的平均值向下取整。还原所有价格均为正整数、且字典序最小的第一天价格 a。$2\le n\le300,b_i\le100$，保证有解。
+已知一排商店第二天的菜价。第二天的价格等于自己和相邻商店第一天价格的平均值，向下取整；两端只涉及两家。恢复一个全部为正整数、且字典序最小的第一天价格序列。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/)。
+输入商店数 $n$ 及第二天的 $n$ 个价格 $b_i$。$2\le n\le300$，$1\le b_i\le100$，保证有解。第一天的价格可以超过 $100$。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809D)。
+输出一行 $n$ 个正整数，表示字典序最小的原价序列。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809D)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-已知相邻原价 x、y 后，由中间商店平均值 b 可知下一项只能是 $3b-x-y$、$3b+1-x-y$、$3b+2-x-y$。因此状态只需记录当前位置与前两个原价，无需记录整个前缀。
+**缩小每步的选择范围**
 
-设 `possible(i,x,y)` 判断固定 $a_{i-1}=x,a_i=y$ 后，是否存在合法后缀。  
-到末尾检查 $(x+y)/2=b_i$；其他位置枚举上述三个正整数并递归。记忆化成功或失败结果，避免指数重复搜索。  
-原价取 1 到 302 已足够：任何三项和最多 302，而另外两项至少为 1；端点二项和最多 201。
+已知相邻原价 $x,y$，由中间商店的价格 $b_i$ 可得
 
-先升序枚举 a1，再升序枚举满足首端平均值的两个 a2 候选，选择首个后缀可行的组合。以后每一步也取最小的可行下一项。与任何其他解在第一个不同位置比较，我们的取值都不更大，所以得到全局字典序最小解。
+$$3b_i\le x+y+z\le3b_i+2.$$
 
-状态总数 $O(nV^2)$，每个状态至多三个转移，时间与空间均为 $O(nV^2)$，$V=303$。缓存用单字节三态值降低内存。
+因此下一项 $z$ 只能是 $3b_i-x-y$ 及随后两个整数，再排除非正数。端点则要求两项之和为 $2b_i$ 或 $2b_i+1$。
+
+**记忆化后缀可行性**
+
+定义 `check(i,x,y)`：已经固定 $a_{i-1}=x,a_i=y$，能否完成后缀并满足 $b_i,\ldots,b_{n-1}$。到末尾检查 $(x+y)/2=b_i$；否则枚举至多三个下一项，递归判断并缓存结果。
+
+原价只需考虑 $1$ 到 $302$。任一三项和最多为 $302$，各项均为正数；端点两项和最多为 $201$。因此有限状态覆盖所有可能的解，缓存用单字节保存未知、失败和成功三态。
+
+**按字典序重建**
+
+先升序枚举 $a_0$，再升序枚举满足首端均值的 $a_1$，保留第一个后缀可行的组合。之后每步也选择最小的可行下一项。
+
+每次只选取存在完整后缀的最小值，与其他解在第一个不同位置比较，该值一定不大于其他解，因此最终序列字典序最小。
+
+**复杂度**
+
+记原价容量为 $V=303$，最多 $O(nV^2)$ 个状态，每个状态至多三个转移。时间、空间均为 $O(nV^2)$。
 
 ### 代码
 
 独立源码：[D.cpp](D.cpp)
 
 ```cpp
-#include <cstdint>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int V = 303;
-int n;
-vector<int> b;
-vector<int8_t> memo;
-bool possible(int i, int x, int y) {
-    if (x < 1 || x >= V || y < 1 || y >= V)
-        return false;
-    int8_t &answer = memo[(i * V + x) * V + y];
-    if (answer != -1)
-        return answer;
-    if (i == n - 1)
-        return answer = (x + y) / 2 == b[i];
-    for (int z = 3 * b[i] - x - y; z <= 3 * b[i] + 2 - x - y; ++z)
-        if (possible(i + 1, y, z))
-            return answer = 1;
-    return answer = 0;
+const int N=310,M=303;
+int n,a[N],b[N];
+signed char dp[N][M][M];
+bool check(int i,int x,int y){
+    if(x<1 || x>=M || y<1 || y>=M)return false;
+    signed char &v=dp[i][x][y];
+    if(v!=-1)return v;
+    if(i==n-1)return v=((x+y)/2==b[i]);
+    int l=3*b[i]-x-y;
+    for(int z=l;z<=l+2;++z){
+        if(check(i+1,y,z))return v=1;
+    }
+    return v=0;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cin >> n;
-    b.resize(n);
-    for (auto &x : b)
-        cin >> x;
-    memo.assign(n * V * V, -1);
-    vector<int> a;
-    for (int x = 1; x <= 2 * b[0] && a.empty(); ++x)
-        for (int y = max(1, 2 * b[0] - x); y <= 2 * b[0] + 1 - x; ++y)
-            if (possible(1, x, y)) {
-                a = {x, y};
+int main(){
+    scanf("%d",&n);
+    for(int i=0;i<n;++i){
+        scanf("%d",&b[i]);
+    }
+    memset(dp,-1,sizeof dp);
+    for(int x=1;x<=2*b[0] && !a[0];++x){
+        int l=max(1,2*b[0]-x),r=2*b[0]+1-x;
+        for(int y=l;y<=r;++y){
+            if(check(1,x,y)){
+                a[0]=x,a[1]=y;
                 break;
             }
-    for (int i = 1; i < n - 1; ++i)
-        for (int z = 3 * b[i] - a[i - 1] - a[i]; z <= 3 * b[i] + 2 - a[i - 1] - a[i]; ++z)
-            if (possible(i + 1, a[i], z)) {
-                a.push_back(z);
+        }
+    }
+    for(int i=1;i<n-1;++i){
+        int l=3*b[i]-a[i-1]-a[i];
+        for(int z=l;z<=l+2;++z){
+            if(check(i+1,a[i],z)){
+                a[i+1]=z;
                 break;
             }
-    for (int i = 0; i < n; ++i)
-        cout << a[i] << (i + 1 == n ? '\n' : ' ');
+        }
+    }
+    for(int i=0;i<n;++i){
+        printf("%d%c",a[i],i==n-1?'\n':' ');
+    }
+    return 0;
 }
 ```
 
@@ -305,273 +346,313 @@ int main() {
 
 标签：`线性递推` · `多项式` · `NTT` · `生成函数`
 
-状态：**完整实现，曙梦 OJ 已验证满分**。  
-C++17/C++20 编译通过；3 个保存样例通过；500 组直接递推独立对拍、100 组大下标差分和 5 组压力测试通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91)（复刻评测）。
+本地：587 组优化版、587 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
 
 ### 题意
 
-给定 $a_0=1$，对 $n>0$ 有 $a_n=\sum_{i=1}^{\min(n,m)}k_i a_{n-i}$，所有计算模 $998244353$。输入 `m l r` 和 $m$ 个系数，输出 $a_l$ 至 $a_r$。$m\le10^5,l\le10^{12},r-l\le3\times10^5$，不能逐项算到 $l$。
+给定 $a_0=1$，对于 $n>0$ 有
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/)
+$$a_n=\sum_{i=1}^{\min(n,m)}k_i a_{n-i}\pmod{998244353}.$$
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809E)。
+求连续区间 $a_l,a_{l+1},\ldots,a_r$。
+
+输入 `m l r` 及 $m$ 个系数。$1\le m\le10^5$，$1\le l\le10^{12}$，$0\le r-l\le3\times10^5$，$0\le k_i<998244353$。
+
+输出 $r-l+1$ 行，依次给出区间内各项对 $998244353$ 取模的值。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201809E)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-**第一步：求递推序列的前缀。** 令 $C(x)=1-k_1x-\cdots-k_mx^m$，由递推式可得 $A(x)=\sum_{i\ge0}a_ix^i=1/C(x)$。使用多项式牛顿迭代 $B_{new}=B(2-CB)\bmod x^{2t}$，将逆多项式的已知长度逐次翻倍；卷积用模 $998244353$ 的 NTT 计算。
+**第一步：求递推序列的前缀**
 
-**第二步：把巨大下标压回 $m$ 维。** 定义特征多项式 $P(x)=x^m-k_1x^{m-1}-\cdots-k_m$，计算
+令 $C(x)=1-k_1x-\cdots-k_mx^m$。由递推式可得生成函数
+
+$$A(x)=\sum_{i\ge0}a_ix^i=\frac1{C(x)}.$$
+
+使用多项式牛顿迭代 $B_{\mathrm{new}}=B(2-CB)\bmod x^{2t}$，每次把逆多项式的已知长度翻倍；卷积用模 $998244353$ 下的 NTT 计算。
+
+**第二步：把巨大下标压回 $m$ 维**
+
+定义特征多项式 $P(x)=x^m-k_1x^{m-1}-\cdots-k_m$，计算
 
 $$R(x)=x^l\bmod P(x)=\sum_{j=0}^{m-1}r_jx^j.$$
 
-从最高二进制位向最低位处理 $l$。若已处理前缀为 $s$，保持 $R=x^s\bmod P$；下一位为 $b$ 时，更新为 $R^2x^b\bmod P$。  
-平方后用逆序多项式除法求余：逆序 $P$ 就是 $C$，所以可预先求出并复用 $1/C$ 的前缀。  
-乘 $x$ 则只需移位，再以 $x^m=k_1x^{m-1}+\cdots+k_m$ 消去最高项，耗时 $O(m)$，无需再做通用卷积。  
-最初次数较小时保留实际长度。
+从最高二进制位向最低位处理 $l$。若已处理前缀为 $s$，保持 $R=x^s\bmod P$；下一位为 $b$ 时，更新为 $R^2x^b\bmod P$。
 
-**第三步：一次卷积求出整个答案区间。** 递推关系保证对每个 $t\ge0$ 都有
+平方后用逆序多项式除法求余：逆序 $P$ 恰好是 $C$，因此可复用 $1/C$ 的前缀。乘 $x$ 只需移位，再利用 $x^m=k_1x^{m-1}+\cdots+k_m$ 消去最高项，耗时 $O(m)$。次数较小时保留实际长度。
+
+**第三步：一次卷积求出整个区间**
+
+递推关系保证任意 $t\ge0$ 都有
 
 $$a_{l+t}=\sum_{j=0}^{m-1}r_ja_{t+j}.$$
 
-将 $R$ 逆序，与序列前缀卷积，下标 $m-1+t$ 的项就是所求值。  
-代码若只保留了 $u$ 个系数，则相应只求出 $a_0$ 至 $a_{u+d-2}$，读取卷积下标 $u-1+t$，其中 $d=r-l+1$。  
-$m=1$ 时直接计算等比数列；$l=0$ 与零系数也自然成立。
+将 $R$ 逆序，与序列前缀卷积，下标 $m-1+t$ 的项就是所求值。若代码只保留了 $u$ 个系数，则求出 $a_0$ 至 $a_{u+d-2}$ 即可，读取卷积下标 $u-1+t$，其中 $d=r-l+1$。
 
-**降低 NTT 常数。** 平方只变换一个因子，固定的除式及逆多项式缓存其频域结果。  
-牛顿迭代从 $t$ 扩展到 $2t$ 时复用旧逆的变换，只计算误差的高半段：长度 $2t$ 的循环卷积回卷只影响舍弃的低半段，因此每步用 5 次长度 $2t$ 的 NTT 即可。  
-正变换采用 DIF、逆变换采用 DIT，共享倒位序的频率排列，并预处理各层单位根。
+$m=1$ 时直接求等比数列；实现也兼容 $l=0$ 和全零系数。
 
-**正确性。** 二进制更新保持 $R=x^s\bmod P$，故最后得到 $x^l$ 的余式。  
-多项式除法中被减去的 $P$ 的倍数对应若干递推等式的线性组合，在任意非负位移处均为零，所以余式给出的线性组合成立；最后的卷积恰好同时计算所有位移。
+**降低 NTT 常数**
 
-**复杂度。** 时间 $O(m\log m\log l+(m+d)\log(m+d))$，空间 $O(m+d)$。优化前曙梦 OJ 为 [77 分超时](https://oj.shumeng.tech/record/6adda38574ace1cba9a1fa97)。  
-本地最大随机构造从 3.715 秒降至 0.514 秒，指数多置位构造从 5.240 秒降至 0.504 秒；同机性能对比不等同于目标评测机耗时。  
-复核入口：[优化回归脚本](../tests/optimized_regressions.py)、[验证报告](../tests/optimization-report.json)。
+平方只变换一个因子；固定除式及其逆多项式缓存频域结果。牛顿迭代扩展到 $2t$ 项时，仅计算误差的高半段：循环卷积回卷只影响将被舍弃的低半段，因此每步用五次长度 $2t$ 的变换。
+
+正变换采用 DIF、逆变换采用 DIT，共享倒位序的频率排列，并缓存各层单位根。多项式及变换长度随阶段变化，使用动态存储保留实际长度。
+
+**正确性**
+
+二进制更新保持 $R=x^s\bmod P$，最后得到 $x^l$ 的余式。除法中减去的 $P$ 的倍数，对应递推等式的线性组合，在任意非负位移处均为零。因此余式给出的线性组合成立，最终卷积同时计算全部位移。
+
+**复杂度**
+
+时间 $O(m\log m\log(l+1)+(m+d)\log(m+d))$，空间 $O(m+d)$。这里的小规模直接乘法、平方优化、频域缓存及逆多项式优化均予以保留。
 
 ### 代码
 
 独立源码：[E.cpp](E.cpp)
 
 ```cpp
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int MOD = 998244353;
-using Polynomial = vector<int>;
-
-int power(int a, long long n) {
-    int r = 1;
-    for (; n; n >>= 1, a = 1LL * a * a % MOD)
-        if (n & 1) r = 1LL * r * a % MOD;
-    return r;
+typedef long long ll;
+typedef vector<int> poly;
+const int mod=998244353;
+int m,d;
+ll l,r;
+int qpow(int a,ll n){
+    int res=1;
+    for(;n;n>>=1,a=(ll)a*a%mod){
+        if(n&1)res=(ll)res*a%mod;
+    }
+    return res;
 }
-int transformSize(int need) {
-    int n = 1;
-    while (n < need) n <<= 1;
+int size(int x){
+    int n=1;
+    while(n<x){
+        n<<=1;
+    }
     return n;
 }
-
-// DIF forward and DIT inverse use the same bit-reversed frequency order.
-// Roots are stored once for every butterfly stage, avoiding per-block powers.
-void ntt(Polynomial &a, bool inverse) {
-    static Polynomial roots{0, 1}, inverseRoots{0, 1};
-    int n = int(a.size());
-    while (int(roots.size()) < n) {
-        int half = int(roots.size());
-        roots.resize(2 * half);
-        inverseRoots.resize(2 * half);
-        int w = power(3, (MOD - 1) / (2 * half));
-        int iw = power(w, MOD - 2);
-        roots[half] = inverseRoots[half] = 1;
-        for (int j = 1; j < half; ++j) {
-            roots[half + j] = 1LL * roots[half + j - 1] * w % MOD;
-            inverseRoots[half + j] = 1LL * inverseRoots[half + j - 1] * iw % MOD;
+void ntt(poly &a,bool op){
+    static poly w{0,1},iw{0,1};
+    int n=a.size();
+    while((int)w.size()<n){
+        int h=w.size();
+        w.resize(h*2);iw.resize(h*2);
+        int x=qpow(3,(mod-1)/(h*2)),y=qpow(x,mod-2);
+        w[h]=iw[h]=1;
+        for(int j=1;j<h;++j){
+            w[h+j]=(ll)w[h+j-1]*x%mod;
+            iw[h+j]=(ll)iw[h+j-1]*y%mod;
         }
     }
-    if (!inverse) {
-        for (int half = n / 2; half; half >>= 1)
-            for (int start = 0; start < n; start += 2 * half)
-                for (int j = 0; j < half; ++j) {
-                    int u = a[start + j], v = a[start + j + half];
-                    int sum = u + v, difference = u - v;
-                    if (sum >= MOD) sum -= MOD;
-                    if (difference < 0) difference += MOD;
-                    a[start + j] = sum;
-                    a[start + j + half] = 1LL * difference * roots[half + j] % MOD;
+    if(!op){
+        for(int h=n/2;h;h>>=1){
+            for(int p=0;p<n;p+=h*2){
+                for(int j=0;j<h;++j){
+                    int u=a[p+j],v=a[p+j+h];
+                    int x=u+v,y=u-v;
+                    if(x>=mod)x-=mod;
+                    if(y<0)y+=mod;
+                    a[p+j]=x;
+                    a[p+j+h]=(ll)y*w[h+j]%mod;
                 }
-    } else {
-        for (int half = 1; half < n; half <<= 1)
-            for (int start = 0; start < n; start += 2 * half)
-                for (int j = 0; j < half; ++j) {
-                    int u = a[start + j];
-                    int v = 1LL * a[start + j + half] * inverseRoots[half + j] % MOD;
-                    int sum = u + v, difference = u - v;
-                    if (sum >= MOD) sum -= MOD;
-                    if (difference < 0) difference += MOD;
-                    a[start + j] = sum;
-                    a[start + j + half] = difference;
+            }
+        }
+    }
+    else{
+        for(int h=1;h<n;h<<=1){
+            for(int p=0;p<n;p+=h*2){
+                for(int j=0;j<h;++j){
+                    int u=a[p+j],v=(ll)a[p+j+h]*iw[h+j]%mod;
+                    int x=u+v,y=u-v;
+                    if(x>=mod)x-=mod;
+                    if(y<0)y+=mod;
+                    a[p+j]=x,a[p+j+h]=y;
                 }
-        int scale = power(n, MOD - 2);
-        for (int &x : a) x = 1LL * x * scale % MOD;
+            }
+        }
+        int v=qpow(n,mod-2);
+        for(int &x:a){
+            x=(ll)x*v%mod;
+        }
     }
 }
-Polynomial multiply(Polynomial a, Polynomial b) {
-    if (a.empty() || b.empty()) return {};
-    int size = int(a.size() + b.size()) - 1;
-    if (min(a.size(), b.size()) <= 32) {
-        Polynomial c(size);
-        for (int i = 0; i < int(a.size()); ++i)
-            for (int j = 0; j < int(b.size()); ++j)
-                c[i + j] = (c[i + j] + 1LL * a[i] * b[j]) % MOD;
+poly mul(poly a,poly b){
+    if(a.empty() || b.empty())return {};
+    int len=a.size()+b.size()-1;
+    if(min(a.size(),b.size())<=32){
+        poly c(len);
+        for(int i=0;i<(int)a.size();++i){
+            for(int j=0;j<(int)b.size();++j){
+                c[i+j]=(c[i+j]+(ll)a[i]*b[j])%mod;
+            }
+        }
         return c;
     }
-    int n = transformSize(size);
-    a.resize(n);
-    b.resize(n);
-    ntt(a, false);
-    ntt(b, false);
-    for (int i = 0; i < n; ++i) a[i] = 1LL * a[i] * b[i] % MOD;
-    ntt(a, true);
-    a.resize(size);
+    int n=size(len);
+    a.resize(n);b.resize(n);
+    ntt(a,0);ntt(b,0);
+    for(int i=0;i<n;++i){
+        a[i]=(ll)a[i]*b[i]%mod;
+    }
+    ntt(a,1);
+    a.resize(len);
     return a;
 }
-
-Polynomial inverse(const Polynomial &a, int size) {
-    Polynomial b{power(a[0], MOD - 2)};
-    while (int(b.size()) < size) {
-        int old = int(b.size()), n = 2 * old;
-        Polynomial fb = b, error(n);
-        fb.resize(n);
-        copy_n(a.begin(), min(n, int(a.size())), error.begin());
-        ntt(fb, false);
-        ntt(error, false);
-        for (int i = 0; i < n; ++i) error[i] = 1LL * error[i] * fb[i] % MOD;
-        ntt(error, true);
-        // Only the upper half is needed. Cyclic wraparound affects the lower half.
-        fill(error.begin(), error.begin() + old, 0);
-        ntt(error, false);
-        for (int i = 0; i < n; ++i) error[i] = 1LL * error[i] * fb[i] % MOD;
-        ntt(error, true);
+poly inv(const poly &a,int len){
+    poly b{qpow(a[0],mod-2)};
+    while((int)b.size()<len){
+        int h=b.size(),n=h*2;
+        poly f=b,g(n);
+        f.resize(n);
+        copy_n(a.begin(),min(n,(int)a.size()),g.begin());
+        ntt(f,0);ntt(g,0);
+        for(int i=0;i<n;++i){
+            g[i]=(ll)g[i]*f[i]%mod;
+        }
+        ntt(g,1);
+        fill(g.begin(),g.begin()+h,0);
+        ntt(g,0);
+        for(int i=0;i<n;++i){
+            g[i]=(ll)g[i]*f[i]%mod;
+        }
+        ntt(g,1);
         b.resize(n);
-        for (int i = old; i < n; ++i) b[i] = error[i] ? MOD - error[i] : 0;
+        for(int i=h;i<n;++i){
+            b[i]=g[i]?mod-g[i]:0;
+        }
     }
-    b.resize(size);
+    b.resize(len);
     return b;
 }
-
-class Remainder {
-    int m, n;
-    Polynomial characteristic, inversePrefix, transformedP, transformedInverse;
-public:
-    explicit Remainder(const Polynomial &c)
-        : m(int(c.size()) - 1), n(transformSize(2 * m - 1)),
-          characteristic(c.rbegin(), c.rend()), inversePrefix(inverse(c, m)) {}
-
-    Polynomial square(const Polynomial &a) {
-        int size = 2 * int(a.size()) - 1;
-        Polynomial product;
-        if (int(a.size()) <= 32) {
-            product = multiply(a, a);
-        } else {
-            product = a;
-            product.resize(transformSize(size));
-            ntt(product, false);
-            for (int &x : product) x = 1LL * x * x % MOD;
-            ntt(product, true);
-            product.resize(size);
+struct rem{
+    int m,n;
+    poly c,b,f,g;
+    rem(const poly &a):m(a.size()-1),n(size(m*2-1)),
+        c(a.rbegin(),a.rend()),b(inv(a,m)){}
+    poly square(const poly &a){
+        int len=a.size()*2-1;
+        poly v;
+        if(a.size()<=32)v=mul(a,a);
+        else{
+            v=a;
+            v.resize(size(len));
+            ntt(v,0);
+            for(int &x:v){
+                x=(ll)x*x%mod;
+            }
+            ntt(v,1);
+            v.resize(len);
         }
-        if (size <= m) return product;
-        int length = size - m;
-        Polynomial quotient(product.rbegin(), product.rbegin() + length);
-        if (length < m - 1 || m <= 32) {
-            Polynomial cut(inversePrefix.begin(), inversePrefix.begin() + length);
-            quotient = multiply(quotient, cut);
-            quotient.resize(length);
-            reverse(quotient.begin(), quotient.end());
-            auto removed = multiply(quotient, characteristic);
-            product.resize(m);
-            for (int i = 0; i < m; ++i) {
-                product[i] -= removed[i];
-                if (product[i] < 0) product[i] += MOD;
-            }
-        } else {
-            if (transformedP.empty()) {
-                transformedP = characteristic;
-                transformedP.resize(n);
-                transformedInverse = inversePrefix;
-                transformedInverse.resize(n);
-                ntt(transformedP, false);
-                ntt(transformedInverse, false);
-            }
-            quotient.resize(n);
-            ntt(quotient, false);
-            for (int i = 0; i < n; ++i)
-                quotient[i] = 1LL * quotient[i] * transformedInverse[i] % MOD;
-            ntt(quotient, true);
-            quotient.resize(length);
-            reverse(quotient.begin(), quotient.end());
-            quotient.resize(n);
-            ntt(quotient, false);
-            for (int i = 0; i < n; ++i)
-                quotient[i] = 1LL * quotient[i] * transformedP[i] % MOD;
-            ntt(quotient, true);
-            product.resize(m);
-            for (int i = 0; i < m; ++i) {
-                product[i] -= quotient[i];
-                if (product[i] < 0) product[i] += MOD;
+        if(len<=m)return v;
+        int k=len-m;
+        poly q(v.rbegin(),v.rbegin()+k);
+        if(k<m-1 || m<=32){
+            poly t(b.begin(),b.begin()+k);
+            q=mul(q,t);
+            q.resize(k);
+            reverse(q.begin(),q.end());
+            t=mul(q,c);
+            v.resize(m);
+            for(int i=0;i<m;++i){
+                v[i]-=t[i];
+                if(v[i]<0)v[i]+=mod;
             }
         }
-        return product;
+        else{
+            if(f.empty()){
+                f=c;g=b;
+                f.resize(n);g.resize(n);
+                ntt(f,0);ntt(g,0);
+            }
+            q.resize(n);
+            ntt(q,0);
+            for(int i=0;i<n;++i){
+                q[i]=(ll)q[i]*g[i]%mod;
+            }
+            ntt(q,1);
+            q.resize(k);
+            reverse(q.begin(),q.end());
+            q.resize(n);
+            ntt(q,0);
+            for(int i=0;i<n;++i){
+                q[i]=(ll)q[i]*f[i]%mod;
+            }
+            ntt(q,1);
+            v.resize(m);
+            for(int i=0;i<m;++i){
+                v[i]-=q[i];
+                if(v[i]<0)v[i]+=mod;
+            }
+        }
+        return v;
     }
-
-    void multiplyX(Polynomial &a) const {
-        if (int(a.size()) < m) {
-            a.insert(a.begin(), 0);
+    void shift(poly &a){
+        if((int)a.size()<m){
+            a.insert(a.begin(),0);
             return;
         }
-        int top = a.back();
-        for (int i = m - 1; i >= 0; --i) {
-            int value = i ? a[i - 1] : 0;
-            value = (value - 1LL * top * characteristic[i]) % MOD;
-            if (value < 0) value += MOD;
-            a[i] = value;
+        int t=a.back();
+        for(int i=m-1;i>=0;--i){
+            int v=i?a[i-1]:0;
+            v=(v-(ll)t*c[i])%mod;
+            if(v<0)v+=mod;
+            a[i]=v;
         }
     }
 };
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int m;
-    long long l, r;
-    if (!(cin >> m >> l >> r)) return 0;
-    int count = int(r - l + 1);
-    Polynomial c(m + 1);
-    c[0] = 1;
-    for (int i = 1, k; i <= m; ++i) {
-        cin >> k;
-        c[i] = k ? MOD - k : 0;
+int main(){
+    scanf("%d%lld%lld",&m,&l,&r);
+    d=r-l+1;
+    poly c(m+1);
+    c[0]=1;
+    for(int i=1,k;i<=m;++i){
+        scanf("%d",&k);
+        c[i]=k?mod-k:0;
     }
-    if (m == 1) {
-        int k = c[1] ? MOD - c[1] : 0, a = power(k, l);
-        for (int i = 0; i < count; ++i, a = 1LL * a * k % MOD) cout << a << '\n';
+    if(m==1){
+        int k=c[1]?mod-c[1]:0,a=qpow(k,l);
+        for(int i=0;i<d;++i){
+            printf("%d\n",a);
+            a=(ll)a*k%mod;
+        }
         return 0;
     }
-    Polynomial result{1};
-    if (l) {
-        Remainder reduce(c);
-        int highest = 0;
-        while ((1LL << (highest + 1)) <= l) ++highest;
-        for (int bit = highest; bit >= 0; --bit) {
-            result = reduce.square(result);
-            if ((l >> bit) & 1) reduce.multiplyX(result);
+    poly a{1};
+    if(l){
+        rem tr(c);
+        int h=0;
+        while((1ll<<(h+1))<=l){
+            ++h;
+        }
+        for(int i=h;i>=0;--i){
+            a=tr.square(a);
+            if((l>>i)&1)tr.shift(a);
         }
     }
-    int used = int(result.size());
-    auto prefix = inverse(c, used + count - 1);
-    reverse(result.begin(), result.end());
-    auto answer = multiply(result, prefix);
-    for (int i = 0; i < count; ++i) cout << answer[used - 1 + i] << '\n';
+    int len=a.size();
+    poly b=inv(c,len+d-1);
+    reverse(a.begin(),a.end());
+    poly ans=mul(a,b);
+    for(int i=0;i<d;++i){
+        printf("%d\n",ans[len-1+i]);
+    }
+    return 0;
 }
 ```
+
+<!-- local-validation-attachments:start -->
+
+### 验证附件
+
+- [VALIDATION.md](../tests/201809/VALIDATION.md)
+- [cases.json](../tests/201809/cases.json)
+- [compile.json](../tests/201809/compile.json)
+- [current-sources.json](../tests/201809/current-sources.json)
+- [extra.py](../tests/201809/extra.py)
+- [naming-followup.json](../tests/201809/naming-followup.json)
+- [summary.json](../tests/201809/summary.json)
+
+<!-- local-validation-attachments:end -->

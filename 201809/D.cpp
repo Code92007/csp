@@ -1,45 +1,45 @@
-#include <cstdint>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int V = 303;
-int n;
-vector<int> b;
-vector<int8_t> memo;
-bool possible(int i, int x, int y) {
-    if (x < 1 || x >= V || y < 1 || y >= V)
-        return false;
-    int8_t &answer = memo[(i * V + x) * V + y];
-    if (answer != -1)
-        return answer;
-    if (i == n - 1)
-        return answer = (x + y) / 2 == b[i];
-    for (int z = 3 * b[i] - x - y; z <= 3 * b[i] + 2 - x - y; ++z)
-        if (possible(i + 1, y, z))
-            return answer = 1;
-    return answer = 0;
+const int N=310,M=303;
+int n,a[N],b[N];
+signed char dp[N][M][M];
+bool check(int i,int x,int y){
+    if(x<1 || x>=M || y<1 || y>=M)return false;
+    signed char &v=dp[i][x][y];
+    if(v!=-1)return v;
+    if(i==n-1)return v=((x+y)/2==b[i]);
+    int l=3*b[i]-x-y;
+    for(int z=l;z<=l+2;++z){
+        if(check(i+1,y,z))return v=1;
+    }
+    return v=0;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cin >> n;
-    b.resize(n);
-    for (auto &x : b)
-        cin >> x;
-    memo.assign(n * V * V, -1);
-    vector<int> a;
-    for (int x = 1; x <= 2 * b[0] && a.empty(); ++x)
-        for (int y = max(1, 2 * b[0] - x); y <= 2 * b[0] + 1 - x; ++y)
-            if (possible(1, x, y)) {
-                a = {x, y};
+int main(){
+    scanf("%d",&n);
+    for(int i=0;i<n;++i){
+        scanf("%d",&b[i]);
+    }
+    memset(dp,-1,sizeof dp);
+    for(int x=1;x<=2*b[0] && !a[0];++x){
+        int l=max(1,2*b[0]-x),r=2*b[0]+1-x;
+        for(int y=l;y<=r;++y){
+            if(check(1,x,y)){
+                a[0]=x,a[1]=y;
                 break;
             }
-    for (int i = 1; i < n - 1; ++i)
-        for (int z = 3 * b[i] - a[i - 1] - a[i]; z <= 3 * b[i] + 2 - a[i - 1] - a[i]; ++z)
-            if (possible(i + 1, a[i], z)) {
-                a.push_back(z);
+        }
+    }
+    for(int i=1;i<n-1;++i){
+        int l=3*b[i]-a[i-1]-a[i];
+        for(int z=l;z<=l+2;++z){
+            if(check(i+1,a[i],z)){
+                a[i+1]=z;
                 break;
             }
-    for (int i = 0; i < n; ++i)
-        cout << a[i] << (i + 1 == n ? '\n' : ' ');
+        }
+    }
+    for(int i=0;i<n;++i){
+        printf("%d%c",a[i],i==n-1?'\n':' ');
+    }
+    return 0;
 }

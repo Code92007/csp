@@ -1,0 +1,185 @@
+{
+  "contest": "201809",
+  "distinct_cases": 946,
+  "results": {
+    "opt": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 90,
+        "E:retained_independent": 580,
+        "A:saved": 1,
+        "B:saved": 1,
+        "C:saved": 1,
+        "D:saved": 1,
+        "E:saved": 3,
+        "A:stress": 1,
+        "B:stress": 1,
+        "C:stress": 1,
+        "D:stress": 2,
+        "E:stress": 4
+      },
+      "total": 946,
+      "seconds": 16.264,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "1000 alternating prices",
+          "seconds": 0.014
+        },
+        {
+          "problem": "B",
+          "label": "2000 identical disjoint intervals",
+          "seconds": 0.0146
+        },
+        {
+          "problem": "C",
+          "label": "100 nodes; mixed tag/id/descendant queries",
+          "seconds": 0.0146
+        },
+        {
+          "problem": "D",
+          "label": "300 equal observed prices 1",
+          "seconds": 0.0164
+        },
+        {
+          "problem": "D",
+          "label": "300 equal observed prices 100",
+          "seconds": 0.0222
+        },
+        {
+          "problem": "E",
+          "label": "m=100000; 300001 outputs; zero",
+          "seconds": 0.3939
+        },
+        {
+          "problem": "E",
+          "label": "m=100000; 300001 outputs; periodic",
+          "seconds": 0.4033
+        },
+        {
+          "problem": "E",
+          "label": "m=100000; 300001 outputs; geometric",
+          "seconds": 0.4299
+        },
+        {
+          "problem": "E",
+          "label": "100000 nonzero coefficients; dense inverse",
+          "seconds": 0.0502
+        }
+      ]
+    },
+    "ubsan": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 90,
+        "E:retained_independent": 580,
+        "A:saved": 1,
+        "B:saved": 1,
+        "C:saved": 1,
+        "D:saved": 1,
+        "E:saved": 3,
+        "A:stress": 1,
+        "B:stress": 1,
+        "C:stress": 1,
+        "D:stress": 2,
+        "E:stress": 4
+      },
+      "total": 946,
+      "seconds": 20.404,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "1000 alternating prices",
+          "seconds": 0.0175
+        },
+        {
+          "problem": "B",
+          "label": "2000 identical disjoint intervals",
+          "seconds": 0.0175
+        },
+        {
+          "problem": "C",
+          "label": "100 nodes; mixed tag/id/descendant queries",
+          "seconds": 0.0161
+        },
+        {
+          "problem": "D",
+          "label": "300 equal observed prices 1",
+          "seconds": 0.0175
+        },
+        {
+          "problem": "D",
+          "label": "300 equal observed prices 100",
+          "seconds": 0.0247
+        },
+        {
+          "problem": "E",
+          "label": "m=100000; 300001 outputs; zero",
+          "seconds": 0.9746
+        },
+        {
+          "problem": "E",
+          "label": "m=100000; 300001 outputs; periodic",
+          "seconds": 1.0122
+        },
+        {
+          "problem": "E",
+          "label": "m=100000; 300001 outputs; geometric",
+          "seconds": 1.0258
+        },
+        {
+          "problem": "E",
+          "label": "100000 nonzero coefficients; dense inverse",
+          "seconds": 0.0877
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "A": "0586a6c18c7af27212d0f8145c196683747db72be0457ae9f6ca3d3b674efc16",
+    "B": "b412b1963ed37e9734f7518a0adf0e6da6a0884a4779a01cda2a801e8e7a74b4",
+    "C": "eea2ba51da2f15f5ea5b8b18e476fd6b0cf1e3cd99fbbf49953a3bd22fe86c6b",
+    "D": "d9e4fbc5723135785a8ebe988691bec386a0c21233edeb246b8209da6627fe19",
+    "E": "5ac87cf8bb9d012844e45b9d14da3618eabe0c22cd91c47f9e2179e5059a645f"
+  },
+  "cases_sha256": "c044ae8f765eac1e5e6112981e9f7caec47cae25b155485aaff4ee2c86ae4e54",
+  "original_evaluations": {
+    "A": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7"
+    },
+    "B": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946"
+    },
+    "C": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972"
+    },
+    "D": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0"
+    },
+    "E": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91"
+    }
+  },
+  "refactored_online_submission": false,
+  "oracle": "Repository independent Python generators captured by tools/nightly/retained_oracles.py; saved cases and independently generated boundary/stress expectations are also replayed. No output is taken from the original executable.",
+  "platform_note": "Apple Clang C++17 uses a local standard-header shim for bits/stdc++.h. Timings are local, not official judge results."
+}

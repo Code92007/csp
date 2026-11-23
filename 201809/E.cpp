@@ -1,221 +1,228 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int MOD = 998244353;
-using Polynomial = vector<int>;
-
-int power(int a, long long n) {
-    int r = 1;
-    for (; n; n >>= 1, a = 1LL * a * a % MOD)
-        if (n & 1) r = 1LL * r * a % MOD;
-    return r;
+typedef long long ll;
+typedef vector<int> poly;
+const int mod=998244353;
+int m,d;
+ll l,r;
+int qpow(int a,ll n){
+    int res=1;
+    for(;n;n>>=1,a=(ll)a*a%mod){
+        if(n&1)res=(ll)res*a%mod;
+    }
+    return res;
 }
-int transformSize(int need) {
-    int n = 1;
-    while (n < need) n <<= 1;
+int size(int x){
+    int n=1;
+    while(n<x){
+        n<<=1;
+    }
     return n;
 }
-
-// DIF forward and DIT inverse use the same bit-reversed frequency order.
-// Roots are stored once for every butterfly stage, avoiding per-block powers.
-void ntt(Polynomial &a, bool inverse) {
-    static Polynomial roots{0, 1}, inverseRoots{0, 1};
-    int n = int(a.size());
-    while (int(roots.size()) < n) {
-        int half = int(roots.size());
-        roots.resize(2 * half);
-        inverseRoots.resize(2 * half);
-        int w = power(3, (MOD - 1) / (2 * half));
-        int iw = power(w, MOD - 2);
-        roots[half] = inverseRoots[half] = 1;
-        for (int j = 1; j < half; ++j) {
-            roots[half + j] = 1LL * roots[half + j - 1] * w % MOD;
-            inverseRoots[half + j] = 1LL * inverseRoots[half + j - 1] * iw % MOD;
+void ntt(poly &a,bool op){
+    static poly w{0,1},iw{0,1};
+    int n=a.size();
+    while((int)w.size()<n){
+        int h=w.size();
+        w.resize(h*2);iw.resize(h*2);
+        int x=qpow(3,(mod-1)/(h*2)),y=qpow(x,mod-2);
+        w[h]=iw[h]=1;
+        for(int j=1;j<h;++j){
+            w[h+j]=(ll)w[h+j-1]*x%mod;
+            iw[h+j]=(ll)iw[h+j-1]*y%mod;
         }
     }
-    if (!inverse) {
-        for (int half = n / 2; half; half >>= 1)
-            for (int start = 0; start < n; start += 2 * half)
-                for (int j = 0; j < half; ++j) {
-                    int u = a[start + j], v = a[start + j + half];
-                    int sum = u + v, difference = u - v;
-                    if (sum >= MOD) sum -= MOD;
-                    if (difference < 0) difference += MOD;
-                    a[start + j] = sum;
-                    a[start + j + half] = 1LL * difference * roots[half + j] % MOD;
+    if(!op){
+        for(int h=n/2;h;h>>=1){
+            for(int p=0;p<n;p+=h*2){
+                for(int j=0;j<h;++j){
+                    int u=a[p+j],v=a[p+j+h];
+                    int x=u+v,y=u-v;
+                    if(x>=mod)x-=mod;
+                    if(y<0)y+=mod;
+                    a[p+j]=x;
+                    a[p+j+h]=(ll)y*w[h+j]%mod;
                 }
-    } else {
-        for (int half = 1; half < n; half <<= 1)
-            for (int start = 0; start < n; start += 2 * half)
-                for (int j = 0; j < half; ++j) {
-                    int u = a[start + j];
-                    int v = 1LL * a[start + j + half] * inverseRoots[half + j] % MOD;
-                    int sum = u + v, difference = u - v;
-                    if (sum >= MOD) sum -= MOD;
-                    if (difference < 0) difference += MOD;
-                    a[start + j] = sum;
-                    a[start + j + half] = difference;
+            }
+        }
+    }
+    else{
+        for(int h=1;h<n;h<<=1){
+            for(int p=0;p<n;p+=h*2){
+                for(int j=0;j<h;++j){
+                    int u=a[p+j],v=(ll)a[p+j+h]*iw[h+j]%mod;
+                    int x=u+v,y=u-v;
+                    if(x>=mod)x-=mod;
+                    if(y<0)y+=mod;
+                    a[p+j]=x,a[p+j+h]=y;
                 }
-        int scale = power(n, MOD - 2);
-        for (int &x : a) x = 1LL * x * scale % MOD;
+            }
+        }
+        int v=qpow(n,mod-2);
+        for(int &x:a){
+            x=(ll)x*v%mod;
+        }
     }
 }
-Polynomial multiply(Polynomial a, Polynomial b) {
-    if (a.empty() || b.empty()) return {};
-    int size = int(a.size() + b.size()) - 1;
-    if (min(a.size(), b.size()) <= 32) {
-        Polynomial c(size);
-        for (int i = 0; i < int(a.size()); ++i)
-            for (int j = 0; j < int(b.size()); ++j)
-                c[i + j] = (c[i + j] + 1LL * a[i] * b[j]) % MOD;
+poly mul(poly a,poly b){
+    if(a.empty() || b.empty())return {};
+    int len=a.size()+b.size()-1;
+    if(min(a.size(),b.size())<=32){
+        poly c(len);
+        for(int i=0;i<(int)a.size();++i){
+            for(int j=0;j<(int)b.size();++j){
+                c[i+j]=(c[i+j]+(ll)a[i]*b[j])%mod;
+            }
+        }
         return c;
     }
-    int n = transformSize(size);
-    a.resize(n);
-    b.resize(n);
-    ntt(a, false);
-    ntt(b, false);
-    for (int i = 0; i < n; ++i) a[i] = 1LL * a[i] * b[i] % MOD;
-    ntt(a, true);
-    a.resize(size);
+    int n=size(len);
+    a.resize(n);b.resize(n);
+    ntt(a,0);ntt(b,0);
+    for(int i=0;i<n;++i){
+        a[i]=(ll)a[i]*b[i]%mod;
+    }
+    ntt(a,1);
+    a.resize(len);
     return a;
 }
-
-Polynomial inverse(const Polynomial &a, int size) {
-    Polynomial b{power(a[0], MOD - 2)};
-    while (int(b.size()) < size) {
-        int old = int(b.size()), n = 2 * old;
-        Polynomial fb = b, error(n);
-        fb.resize(n);
-        copy_n(a.begin(), min(n, int(a.size())), error.begin());
-        ntt(fb, false);
-        ntt(error, false);
-        for (int i = 0; i < n; ++i) error[i] = 1LL * error[i] * fb[i] % MOD;
-        ntt(error, true);
-        // Only the upper half is needed. Cyclic wraparound affects the lower half.
-        fill(error.begin(), error.begin() + old, 0);
-        ntt(error, false);
-        for (int i = 0; i < n; ++i) error[i] = 1LL * error[i] * fb[i] % MOD;
-        ntt(error, true);
+poly inv(const poly &a,int len){
+    poly b{qpow(a[0],mod-2)};
+    while((int)b.size()<len){
+        int h=b.size(),n=h*2;
+        poly f=b,g(n);
+        f.resize(n);
+        copy_n(a.begin(),min(n,(int)a.size()),g.begin());
+        ntt(f,0);ntt(g,0);
+        for(int i=0;i<n;++i){
+            g[i]=(ll)g[i]*f[i]%mod;
+        }
+        ntt(g,1);
+        fill(g.begin(),g.begin()+h,0);
+        ntt(g,0);
+        for(int i=0;i<n;++i){
+            g[i]=(ll)g[i]*f[i]%mod;
+        }
+        ntt(g,1);
         b.resize(n);
-        for (int i = old; i < n; ++i) b[i] = error[i] ? MOD - error[i] : 0;
+        for(int i=h;i<n;++i){
+            b[i]=g[i]?mod-g[i]:0;
+        }
     }
-    b.resize(size);
+    b.resize(len);
     return b;
 }
-
-class Remainder {
-    int m, n;
-    Polynomial characteristic, inversePrefix, transformedP, transformedInverse;
-public:
-    explicit Remainder(const Polynomial &c)
-        : m(int(c.size()) - 1), n(transformSize(2 * m - 1)),
-          characteristic(c.rbegin(), c.rend()), inversePrefix(inverse(c, m)) {}
-
-    Polynomial square(const Polynomial &a) {
-        int size = 2 * int(a.size()) - 1;
-        Polynomial product;
-        if (int(a.size()) <= 32) {
-            product = multiply(a, a);
-        } else {
-            product = a;
-            product.resize(transformSize(size));
-            ntt(product, false);
-            for (int &x : product) x = 1LL * x * x % MOD;
-            ntt(product, true);
-            product.resize(size);
+struct rem{
+    int m,n;
+    poly c,b,f,g;
+    rem(const poly &a):m(a.size()-1),n(size(m*2-1)),
+        c(a.rbegin(),a.rend()),b(inv(a,m)){}
+    poly square(const poly &a){
+        int len=a.size()*2-1;
+        poly v;
+        if(a.size()<=32)v=mul(a,a);
+        else{
+            v=a;
+            v.resize(size(len));
+            ntt(v,0);
+            for(int &x:v){
+                x=(ll)x*x%mod;
+            }
+            ntt(v,1);
+            v.resize(len);
         }
-        if (size <= m) return product;
-        int length = size - m;
-        Polynomial quotient(product.rbegin(), product.rbegin() + length);
-        if (length < m - 1 || m <= 32) {
-            Polynomial cut(inversePrefix.begin(), inversePrefix.begin() + length);
-            quotient = multiply(quotient, cut);
-            quotient.resize(length);
-            reverse(quotient.begin(), quotient.end());
-            auto removed = multiply(quotient, characteristic);
-            product.resize(m);
-            for (int i = 0; i < m; ++i) {
-                product[i] -= removed[i];
-                if (product[i] < 0) product[i] += MOD;
-            }
-        } else {
-            if (transformedP.empty()) {
-                transformedP = characteristic;
-                transformedP.resize(n);
-                transformedInverse = inversePrefix;
-                transformedInverse.resize(n);
-                ntt(transformedP, false);
-                ntt(transformedInverse, false);
-            }
-            quotient.resize(n);
-            ntt(quotient, false);
-            for (int i = 0; i < n; ++i)
-                quotient[i] = 1LL * quotient[i] * transformedInverse[i] % MOD;
-            ntt(quotient, true);
-            quotient.resize(length);
-            reverse(quotient.begin(), quotient.end());
-            quotient.resize(n);
-            ntt(quotient, false);
-            for (int i = 0; i < n; ++i)
-                quotient[i] = 1LL * quotient[i] * transformedP[i] % MOD;
-            ntt(quotient, true);
-            product.resize(m);
-            for (int i = 0; i < m; ++i) {
-                product[i] -= quotient[i];
-                if (product[i] < 0) product[i] += MOD;
+        if(len<=m)return v;
+        int k=len-m;
+        poly q(v.rbegin(),v.rbegin()+k);
+        if(k<m-1 || m<=32){
+            poly t(b.begin(),b.begin()+k);
+            q=mul(q,t);
+            q.resize(k);
+            reverse(q.begin(),q.end());
+            t=mul(q,c);
+            v.resize(m);
+            for(int i=0;i<m;++i){
+                v[i]-=t[i];
+                if(v[i]<0)v[i]+=mod;
             }
         }
-        return product;
+        else{
+            if(f.empty()){
+                f=c;g=b;
+                f.resize(n);g.resize(n);
+                ntt(f,0);ntt(g,0);
+            }
+            q.resize(n);
+            ntt(q,0);
+            for(int i=0;i<n;++i){
+                q[i]=(ll)q[i]*g[i]%mod;
+            }
+            ntt(q,1);
+            q.resize(k);
+            reverse(q.begin(),q.end());
+            q.resize(n);
+            ntt(q,0);
+            for(int i=0;i<n;++i){
+                q[i]=(ll)q[i]*f[i]%mod;
+            }
+            ntt(q,1);
+            v.resize(m);
+            for(int i=0;i<m;++i){
+                v[i]-=q[i];
+                if(v[i]<0)v[i]+=mod;
+            }
+        }
+        return v;
     }
-
-    void multiplyX(Polynomial &a) const {
-        if (int(a.size()) < m) {
-            a.insert(a.begin(), 0);
+    void shift(poly &a){
+        if((int)a.size()<m){
+            a.insert(a.begin(),0);
             return;
         }
-        int top = a.back();
-        for (int i = m - 1; i >= 0; --i) {
-            int value = i ? a[i - 1] : 0;
-            value = (value - 1LL * top * characteristic[i]) % MOD;
-            if (value < 0) value += MOD;
-            a[i] = value;
+        int t=a.back();
+        for(int i=m-1;i>=0;--i){
+            int v=i?a[i-1]:0;
+            v=(v-(ll)t*c[i])%mod;
+            if(v<0)v+=mod;
+            a[i]=v;
         }
     }
 };
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int m;
-    long long l, r;
-    if (!(cin >> m >> l >> r)) return 0;
-    int count = int(r - l + 1);
-    Polynomial c(m + 1);
-    c[0] = 1;
-    for (int i = 1, k; i <= m; ++i) {
-        cin >> k;
-        c[i] = k ? MOD - k : 0;
+int main(){
+    scanf("%d%lld%lld",&m,&l,&r);
+    d=r-l+1;
+    poly c(m+1);
+    c[0]=1;
+    for(int i=1,k;i<=m;++i){
+        scanf("%d",&k);
+        c[i]=k?mod-k:0;
     }
-    if (m == 1) {
-        int k = c[1] ? MOD - c[1] : 0, a = power(k, l);
-        for (int i = 0; i < count; ++i, a = 1LL * a * k % MOD) cout << a << '\n';
+    if(m==1){
+        int k=c[1]?mod-c[1]:0,a=qpow(k,l);
+        for(int i=0;i<d;++i){
+            printf("%d\n",a);
+            a=(ll)a*k%mod;
+        }
         return 0;
     }
-    Polynomial result{1};
-    if (l) {
-        Remainder reduce(c);
-        int highest = 0;
-        while ((1LL << (highest + 1)) <= l) ++highest;
-        for (int bit = highest; bit >= 0; --bit) {
-            result = reduce.square(result);
-            if ((l >> bit) & 1) reduce.multiplyX(result);
+    poly a{1};
+    if(l){
+        rem tr(c);
+        int h=0;
+        while((1ll<<(h+1))<=l){
+            ++h;
+        }
+        for(int i=h;i>=0;--i){
+            a=tr.square(a);
+            if((l>>i)&1)tr.shift(a);
         }
     }
-    int used = int(result.size());
-    auto prefix = inverse(c, used + count - 1);
-    reverse(result.begin(), result.end());
-    auto answer = multiply(result, prefix);
-    for (int i = 0; i < count; ++i) cout << answer[used - 1 + i] << '\n';
+    int len=a.size();
+    poly b=inv(c,len+d-1);
+    reverse(a.begin(),a.end());
+    poly ans=mul(a,b);
+    for(int i=0;i<d;++i){
+        printf("%d\n",ans[len-1+i]);
+    }
+    return 0;
 }
