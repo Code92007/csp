@@ -1,0 +1,9 @@
+{
+  "problem": "202605E",
+  "previous_source_sha256": "1ad515b891d2cdf399a035b425779f1af8255a1a5b03900377de69a0b17f2656",
+  "source_sha256": "9fbe859bdd3062e14908a0ae245b6f0216165f1843f33309ce0814cb0667d387",
+  "change": "Keep bits/stdc++.h and explicitly include cassert; preserve assertions, algorithm and data structures. GNU16 bits header explicitly omits cassert.",
+  "prior_failure_record": "gnu-header-build-failure.json",
+  "current_actual_verification": "current-hash-gnu-revalidation.json",
+  "note": "This is a provenance index; the linked report contains the actual current-hash GNU O2 compilation and 2077 successful retained checks."
+}

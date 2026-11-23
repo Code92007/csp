@@ -1,6 +1,7 @@
 // 候选根算法来源：zlxFTH
 // https://www.zhihu.com/question/2043989350854156307/answer/2044499207764105133
 #include<bits/stdc++.h>
+#include<cassert>
 using namespace std;
 typedef pair<int,int> P;
 typedef priority_queue<int,vector<int>,greater<int>> Q;

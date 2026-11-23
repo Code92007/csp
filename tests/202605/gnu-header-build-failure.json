@@ -1,0 +1,20 @@
+{
+  "problem": "202605E",
+  "checked_at": "2026-11-23T21:58:16.616821+00:00",
+  "source_sha256": "1ad515b891d2cdf399a035b425779f1af8255a1a5b03900377de69a0b17f2656",
+  "compilation": {
+    "command": [
+      "/opt/homebrew/bin/g++-16",
+      "-std=c++17",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "/Users/yzm007/Documents/CSP45/202605/E.cpp",
+      "-o",
+      "/Users/yzm007/Documents/CSP45/.build/2026-current-hash-gnu/202605E"
+    ],
+    "exit_code": 1,
+    "stderr": "/Users/yzm007/Documents/CSP45/202605/E.cpp: In function 'void put(int)':\n/Users/yzm007/Documents/CSP45/202605/E.cpp:40:5: error: 'assert' was not declared in this scope\n   40 |     assert(u>=1 && u<=n && !used[u]);\n      |     ^~~~~~\n/Users/yzm007/Documents/CSP45/202605/E.cpp:4:1: note: 'assert' is defined in header '<cassert>'; this is probably fixable by adding '#include <cassert>'\n    3 | #include<bits/stdc++.h>\n  +++ |+#include <cassert>\n    4 | using namespace std;\n/Users/yzm007/Documents/CSP45/202605/E.cpp: In function 'void orient(int, int)':\n/Users/yzm007/Documents/CSP45/202605/E.cpp:116:9: error: 'assert' was not declared in this scope\n  116 |         assert(!to[x]);\n      |         ^~~~~~\n/Users/yzm007/Documents/CSP45/202605/E.cpp:116:9: note: 'assert' is defined in header '<cassert>'; this is probably fixable by adding '#include <cassert>'\n/Users/yzm007/Documents/CSP45/202605/E.cpp: In function 'int next(int)':\n/Users/yzm007/Documents/CSP45/202605/E.cpp:157:13: error: 'assert' was not declared in this scope\n  157 |             assert(u && b!=INF);\n      |             ^~~~~~\n/Users/yzm007/Documents/CSP45/202605/E.cpp:157:13: note: 'assert' is defined in header '<cassert>'; this is probably fixable by adding '#include <cassert>'\n"
+  },
+  "note": "Direct GNU16 build failed because assert macro is not supplied transitively. No source edit made by this validator; retained for diagnosis, not a passing record."
+}

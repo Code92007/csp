@@ -2,7 +2,8 @@
 using namespace std;
 typedef long long ll;
 const int N=15,M=45;
-int n,m,own[M];
+int n,m,own[M],low[M],high[M],held[N];
+bool ok[N],drop[N];
 struct node{
     char tp;
     int st,w,num,a[M],t[M];
@@ -29,9 +30,6 @@ int main(){
     int cnt=0,quiet=0;
     for(int now=1;cnt<n;++now){
         bool event=0;
-        bool ok[N],drop[N];
-        int low[M],high[M];
-        int held[N];
         memset(ok,0,sizeof ok);
         memset(drop,0,sizeof drop);
         memset(low,0,sizeof low);

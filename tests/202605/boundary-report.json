@@ -1,0 +1,33 @@
+{
+  "A_max_integral_part": {
+    "inputs": 100,
+    "passed": true
+  },
+  "B_k1_m2000": {
+    "n": 1000000000000000000,
+    "answer": 18637565,
+    "passed": true
+  },
+  "B_k5_m500": {
+    "n": 1000000000000000000,
+    "answer": 363724,
+    "passed": true
+  },
+  "B_k2_m1200": {
+    "n": 1000000000000000000,
+    "answer": 591998,
+    "passed": true
+  },
+  "D_million_zero": {
+    "n": 1000000,
+    "q": 1000000,
+    "seconds": 0.273,
+    "passed": true
+  },
+  "D_unique_prefix": {
+    "n": 1000000,
+    "q": 3,
+    "seconds": 0.139,
+    "passed": true
+  }
+}

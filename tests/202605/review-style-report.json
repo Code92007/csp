@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-24",
+  "reason": "User review: short B branches, explicit per-round C array clearing, remove D bare scope while releasing maps",
+  "seed": 20261023,
+  "cases": {
+    "B": 100,
+    "C": 90,
+    "D": 110
+  },
+  "seconds": 2.173,
+  "samples": {
+    "B": 1,
+    "C": 1,
+    "D": 1
+  },
+  "source_sha256": {
+    "B": "a225049d5411bc120d3d68f11917e9acc1ae478104b5d4c24500b797753556f1",
+    "C": "12ab5e51f156322ed1ebebdd6daa5ea96325b422c066a5a8ea4673f712a9ebbf",
+    "D": "97d112035eec221a59bed5619ffcc6ea7a7aaeac30485e425c904c184ef9b21d"
+  }
+}

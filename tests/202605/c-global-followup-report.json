@@ -1,0 +1,33 @@
+{
+  "problem": "202605C",
+  "previous_sha256": "12ab5e51f156322ed1ebebdd6daa5ea96325b422c066a5a8ea4673f712a9ebbf",
+  "source_sha256": "a016407cae5e8a2071f985347e845362b43778c12ce5c00a9aa7b0e3746bdc0b",
+  "distinct_inputs": 92,
+  "case_kinds": {
+    "retained_independent": 90,
+    "saved_sample": 1,
+    "array_boundary": 1
+  },
+  "case_sha256": "33faf20e4afc982687041804fb25738468bc43c951ce9789cfb1c1e9162a8d91",
+  "oracle_sha256": "4f1dfbecc652188d24318dca6abf26e75da0bd6ff4eb72f95022915a111fd1d4",
+  "compilation": "C++17 O2/UBSan -Wall -Wextra -Wshadow no diagnostics",
+  "results": [
+    {
+      "mode": "O2",
+      "inputs": 92,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.615964417
+    },
+    {
+      "mode": "UBSan",
+      "inputs": 92,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.8799246250000001
+    }
+  ],
+  "change": "Move ok/drop/low/high/held arrays to globals; preserve all five memset calls inside every round; event remains local.",
+  "oracle": "Retained independent model uses absolute waiting-start times and fixed 1000-unit timeline; maximum n=10/m=40 nonconflicting resource chains have analytic gain 10 and duration 4.",
+  "note": "Local style followup; earlier reports remain historical and no online resubmission."
+}

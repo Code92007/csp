@@ -1,0 +1,11 @@
+{
+  "scope": "202605 final prose and code alignment",
+  "before_sha256": "03f322bba0c408a48f7eaf5605863b4bf2d2846a917869a271337b8dcd8d43e5",
+  "after_sha256": "40bc117bc14be0497dd8ef0a645817b04859b926214c4c0b2c560e8a7c5fa380",
+  "code_unchanged": true,
+  "changes": [
+    "Separate independent X/other input formats",
+    "Explain current global round arrays and mandatory resets"
+  ],
+  "verification": "All five fenced blocks match current standalone sources"
+}

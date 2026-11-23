@@ -8,10 +8,9 @@ tags: ["CSP", "数学", "精度", "模拟", "二分答案", "状态机", "调度
 status: "published"
 problems: [{"id": "A", "title": "银行家舍入", "tags": ["数学", "精度", "模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版已通过 C++17 编译、覆盖全部小数位和整数奇偶组合的校验、整数部分上界检查及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605A"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e8a67df0b81749b446"}}, {"id": "B", "title": "机器人宿管指南", "tags": ["二分答案", "模拟", "数学"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版已通过 C++17 编译、100 组枚举对拍、3 组大整数边界检查及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605B"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e9a67df0b81749b44f"}}, {"id": "C", "title": "死锁优化", "tags": ["模拟", "状态机", "调度"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版已通过 C++17 编译、90 组独立时间轴模拟对拍及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605C"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6eba67df0b81749b463"}}, {"id": "D", "title": "石子游戏", "tags": ["异或", "前缀和", "贪心", "倍增"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版已通过 C++17 编译、110 组区间划分 DP 对拍、两组百万规模边界检查及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605D"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6eda67df0b81749b46e"}}, {"id": "E", "title": "绝世好串", "tags": ["树", "字典序", "贪心", "候选根淘汰", "并查集", "启发式合并", "倍增"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版已通过 C++17 编译、24 组操作穷举、2042 组独立 DP 对拍、7 组十万点构造及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605E"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开题目存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605E/"}, {"label": "zlxFTH：原题非官方完整算法", "url": "https://www.zhihu.com/question/2043989350854156307/answer/2044499207764105133"}, {"label": "CYMario：Bonus Ver. 探索报告", "url": "https://zhuanlan.zhihu.com/p/2083646963501815540"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6efa67df0b81749b475"}}]
 ---
-
 # CSP 202605 五题题解
 
-[返回总目录](../README.md) · [验证记录](../tests/202605-validation.md)
+[原页面](https://code92007.github.io/csp/#/contest/202605) · [验证记录](../tests/202605/VALIDATION.md)
 
 <a id="problem-a"></a>
 
@@ -172,7 +171,12 @@ int main(){
 
 对同一资源的强制申请者都开始运行，只有编号最大的实际持有资源，其他普通申请失败。被抢走资源的进程不重新执行已完成的任务。
 
-输入 `n m`，随后依次给出每个进程的信息。X 类输入 `X st k a1 t1 ... ak tk`；其他类输入 `类型 st w k a1 t1 ... ak tk`。数据范围为 $n\le10$、$m\le40$，所有开始时间、忍耐限度和任务时长都不超过 20，每进程任务数不超过 40。
+输入 `n m`，随后依次给出每个进程的信息：
+
+- X 类：`X st k a1 t1 ... ak tk`。
+- 其他类：`类型 st w k a1 t1 ... ak tk`。
+
+数据范围为 $n\le10$、$m\le40$，所有开始时间、忍耐限度和任务时长都不超过 20，每进程任务数不超过 40。
 
 输出每个进程的总收益和从开始到结束的持续段数；永久等待则持续段数为 `-1`。
 
@@ -187,7 +191,7 @@ int main(){
 资源数组 `own[r]` 记录唯一的实际持有者，0 表示空闲。进程记录“未开始、等待、运行、结束”四种状态、当前任务、已失败次数、剩余运行段数、累计收益及是否已因本次等待释放过资源。  
 实际持有数量每段从 `own` 重新统计，资源被 C 类抢走时无需修改多个副本。
 
-代码用状态 0、1、2、3 分别表示未开始、等待、运行和结束。普通申请只需记录每个资源的最小申请编号 `low`，强制申请只需记录最大编号 `high`；所有强制申请者都在 `ok` 中标记为可运行。
+代码用状态 0、1、2、3 分别表示未开始、等待、运行和结束。普通申请只需记录每个资源的最小申请编号 `low`，强制申请只需记录最大编号 `high`；所有强制申请者都在 `ok` 中标记为可运行。`ok/drop/low/high/held` 使用全局数组，每段开始时分别清零，再记录本段申请与持有情况。
 
 每段按四步执行：
 
@@ -227,7 +231,8 @@ int main(){
 using namespace std;
 typedef long long ll;
 const int N=15,M=45;
-int n,m,own[M];
+int n,m,own[M],low[M],high[M],held[N];
+bool ok[N],drop[N];
 struct node{
     char tp;
     int st,w,num,a[M],t[M];
@@ -254,9 +259,6 @@ int main(){
     int cnt=0,quiet=0;
     for(int now=1;cnt<n;++now){
         bool event=0;
-        bool ok[N],drop[N];
-        int low[M],high[M];
-        int held[N];
         memset(ok,0,sizeof ok);
         memset(drop,0,sizeof drop);
         memset(low,0,sizeof low);
@@ -504,7 +506,7 @@ int main(){
 **小规模精确解仍保留**
 
 原来的 `dp[mask][u]` 保存“已收集集合为 mask、长块位于 u 时的最小序列”。同一状态下，更大的内部排列在后续整块拼接中不会反超，故可以删去。  
-转移枚举 u 及其邻点作为新中心，并处理集合不变的移动闭包。这份算法适用 $n\le10$，现在放在 [小规模 DP 源码](../tests/202605-oracle.cpp)，作为下方完整算法的独立对拍基准。
+转移枚举 u 及其邻点作为新中心，并处理集合不变的移动闭包。这份算法适用 $n\le10$，现在放在 [小规模 DP 源码](../tests/202605/oracle.cpp)，作为下方完整算法的独立对拍基准。
 
 **从固定根到共同前缀**
 
@@ -598,9 +600,9 @@ CYMario 的文章针对 Bonus 分析了多块的位置、内部顺序和联合�
 
 本版本通过保存样例、n≤6 的全部 1,442 棵有标号树以及 n=7…10 的 600 棵随机树，与保留的小规模 DP 共对拍 2,042 组；另运行 7 组十万点构造。
 
-完整排列检查与压力运行不等于大规模最优性证明；详细结果和复现入口见 [gather-report.json](../tests/202605-gather-report.json)、[gather-stress-report.json](../tests/202605-stress-report.json)。本地验证报告与原版在线评测记录分别保留；本次重构代码未重新提交在线评测。
+完整排列检查与压力运行不等于大规模最优性证明；详细结果和复现入口见 [gather-report.json](../tests/202605/gather-report.json)、[gather-stress-report.json](../tests/202605/gather-stress-report.json)。本地验证报告与原版在线评测记录分别保留；本次重构代码未重新提交在线评测。
 
-全场验证与 B、C、D 整改复核见 [验证记录](../tests/202605-validation.md)、[独立校验报告](../tests/202605-refactor-report.json)、[review 复核报告](../tests/202605-review-report.json)和[边界检查报告](../tests/202605-boundary-report.json)。
+全场验证与 B、C、D 整改复核见 [验证记录](../tests/202605/VALIDATION.md)、[独立校验报告](../tests/202605/randomized-202605-report.json)、[review 复核报告](../tests/202605/review-style-report.json)和[边界检查报告](../tests/202605/boundary-report.json)。
 
 ### 代码
 
@@ -610,6 +612,7 @@ CYMario 的文章针对 Bonus 分析了多块的位置、内部顺序和联合�
 // 候选根算法来源：zlxFTH
 // https://www.zhihu.com/question/2043989350854156307/answer/2044499207764105133
 #include<bits/stdc++.h>
+#include<cassert>
 using namespace std;
 typedef pair<int,int> P;
 typedef priority_queue<int,vector<int>,greater<int>> Q;
@@ -873,3 +876,24 @@ int main(){
     return 0;
 }
 ```
+
+<!-- local-validation-attachments:start -->
+
+### 验证附件
+
+- [VALIDATION.md](../tests/202605/VALIDATION.md)
+- [boundary-report.json](../tests/202605/boundary-report.json)
+- [c-global-before.json](../tests/202605/c-global-before.json)
+- [c-global-followup-report.json](../tests/202605/c-global-followup-report.json)
+- [current-hash-gnu-revalidation.json](../tests/202605/current-hash-gnu-revalidation.json)
+- [e-header-followup.json](../tests/202605/e-header-followup.json)
+- [gather-report.json](../tests/202605/gather-report.json)
+- [gather-stress-report.json](../tests/202605/gather-stress-report.json)
+- [gnu-header-build-failure.json](../tests/202605/gnu-header-build-failure.json)
+- [oracle.cpp](../tests/202605/oracle.cpp)
+- [prose-final-review.json](../tests/202605/prose-final-review.json)
+- [randomized-202605-report.json](../tests/202605/randomized-202605-report.json)
+- [review-style-report.json](../tests/202605/review-style-report.json)
+- [verify-c-global.py](../tests/202605/verify-c-global.py)
+
+<!-- local-validation-attachments:end -->
