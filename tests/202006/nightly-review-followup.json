@@ -1,0 +1,36 @@
+{
+  "contest": "202006",
+  "changes": {
+    "D": {
+      "before_sha256": "215ba10451621e37fbcbcb3e54951aebe93119aafd30024735e46e2579f4b328",
+      "renames": {
+        "P": "mod"
+      },
+      "numeric_literals": {},
+      "token_equivalence": true,
+      "after_sha256": "0167f3e95faee47f37bab8b18205ba577f9c80e37850668f40acc8e7b6791f68",
+      "runs": [
+        {
+          "mode": "o2",
+          "compilation": "passed without diagnostics",
+          "saved_samples": 2,
+          "all_passed": true
+        },
+        {
+          "mode": "ubsan",
+          "compilation": "passed without diagnostics",
+          "saved_samples": 2,
+          "all_passed": true
+        }
+      ]
+    }
+  },
+  "current_source_sha256": {
+    "A": "499159d30459e793344c3cde4357bd3f74d4ec0937103476fb8b231f74f6186a",
+    "B": "69870b23476a53266183dbff56366f91b08a729eff4cd95169f9a8a559fe3d4c",
+    "C": "c3cdb976a0b8511c2dc56748901abf641cccdcf39f62fcb54cf034e63be1dd9b",
+    "D": "0167f3e95faee47f37bab8b18205ba577f9c80e37850668f40acc8e7b6791f68",
+    "E": "7bd7e46548bbf9b36cfb1f2b4229f2adc9f896bc375ab312ced748fab75afa27"
+  },
+  "note": "Identifier-only and exactly equal integer-literal style changes; no algorithm or input contract change. Original full independent verification reports remain historical. No online submission."
+}

@@ -1,126 +1,134 @@
-#include <algorithm>
-#include <array>
-#include <deque>
-#include <iostream>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using i64 = long long;
-constexpr i64 MOD = 998244353;
-using Matrix = array<array<i64, 5>, 5>;
-using Vector = array<i64, 5>;
-Matrix identity_matrix() {
-    Matrix a{};
-    for (int i = 0; i < 5; ++i)
-        a[i][i] = 1;
+typedef long long ll;
+const int N=4,M=5,K=1e5+10;
+const ll mod=998244353;
+typedef array<ll,M> V;
+typedef array<V,M> A;
+ll n;
+int len,keep,fa[K];
+char t[K],c[M]="1246";
+string s;
+vector<int> g[N]={{1},{2},{0,3},{3,2}};
+A unit(){
+    A a;
+    memset(a.data(),0,sizeof a);
+    for(int i=0;i<M;++i){
+        a[i][i]=1;
+    }
     return a;
 }
-Matrix multiply(const Matrix &a, const Matrix &b) {
-    Matrix c{};
-    for (int i = 0; i < 5; ++i)
-        for (int j = 0; j < 5; ++j)
-            for (int k = 0; k < 5; ++k)
-                c[i][j] = (c[i][j] + a[i][k] * b[k][j]) % MOD;
+A mul(const A &a,const A &b){
+    A c;
+    memset(c.data(),0,sizeof c);
+    for(int i=0;i<M;++i){
+        for(int j=0;j<M;++j){
+            for(int k=0;k<M;++k){
+                c[i][j]=(c[i][j]+a[i][k]*b[k][j])%mod;
+            }
+        }
+    }
     return c;
 }
-Vector apply_matrix(const Matrix &a, const Vector &b) {
-    Vector c{};
-    for (int i = 0; i < 5; ++i)
-        for (int j = 0; j < 5; ++j)
-            c[i] = (c[i] + a[i][j] * b[j]) % MOD;
+V calc(const A &a,const V &b){
+    V c;
+    memset(c.data(),0,sizeof c);
+    for(int i=0;i<M;++i){
+        for(int j=0;j<M;++j){
+            c[i]=(c[i]+a[i][j]*b[j])%mod;
+        }
+    }
     return c;
 }
-struct Ends {
-    array<string, 4> prefix, suffix;
-    bool operator==(const Ends &b) const {
-        return prefix == b.prefix && suffix == b.suffix;
+struct node{
+    array<string,N> pre,suf;
+    bool operator==(const node &b)const{
+        return pre==b.pre && suf==b.suf;
     }
 };
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    i64 n;
-    string pattern;
-    cin >> n >> pattern;
-    int length = pattern.size(), keep = length - 1;
-    vector<int> failure(length);
-    for (int i = 1, j = 0; i < length; ++i) {
-        while (j && pattern[i] != pattern[j])
-            j = failure[j - 1];
-        if (pattern[i] == pattern[j])
-            ++j;
-        failure[i] = j;
+ll match(const string &t){
+    ll ans=0;
+    int j=0;
+    for(const char &c:t){
+        while(j && c!=s[j]){
+            j=fa[j-1];
+        }
+        if(c==s[j])++j;
+        if(j==len){
+            ++ans;
+            j=fa[j-1];
+        }
     }
-    auto matches = [&](const string &text) {
-        i64 count = 0;
-        int j = 0;
-        for (char c : text) {
-            while (j && c != pattern[j])
-                j = failure[j - 1];
-            if (c == pattern[j])
-                ++j;
-            if (j == length) {
-                ++count;
-                j = failure[j - 1];
+    return ans;
+}
+int main(){
+    scanf("%lld%s",&n,t);
+    s=t;
+    len=s.size();
+    keep=len-1;
+    for(int i=1,j=0;i<len;++i){
+        while(j && s[i]!=s[j]){
+            j=fa[j-1];
+        }
+        if(s[i]==s[j])++j;
+        fa[i]=j;
+    }
+    node state;
+    V cnt;
+    memset(cnt.data(),0,sizeof cnt);
+    cnt[N]=1;
+    for(int i=0;i<N;++i){
+        if(keep)state.pre[i]=state.suf[i]=string(1,c[i]);
+        cnt[i]=(s==string(1,c[i]));
+    }
+    deque<node> q;
+    q.push_back(state);
+    vector<A> tr;
+    ll time=0;
+    while(time<n){
+        node next;
+        A a;
+        memset(a.data(),0,sizeof a);
+        a[N][N]=1;
+        for(int i=0;i<N;++i){
+            for(int &j:g[i]){
+                ++a[i][j];
+                next.pre[i]+=state.pre[j];
+                next.suf[i]+=state.suf[j];
+            }
+            if((int)next.pre[i].size()>keep)next.pre[i].resize(keep);
+            if((int)next.suf[i].size()>keep){
+                next.suf[i].erase(0,next.suf[i].size()-keep);
+            }
+            if(g[i].size()==2){
+                a[i][N]=match(state.suf[g[i][0]]+state.pre[g[i][1]]);
             }
         }
-        return count;
-    };
-    const string symbols = "1246";
-    const vector<vector<int>> children{{1}, {2}, {0, 3}, {3, 2}};
-    Ends state;
-    Vector count{};
-    count[4] = 1;
-    for (int a = 0; a < 4; ++a) {
-        if (keep)
-            state.prefix[a] = state.suffix[a] = string(1, symbols[a]);
-        count[a] = pattern == string(1, symbols[a]);
-    }
-    deque<Ends> history{state};
-    vector<Matrix> transitions;
-    for (i64 time = 0; time < n;) {
-        Ends next;
-        Matrix transform{};
-        transform[4][4] = 1;
-        for (int a = 0; a < 4; ++a) {
-            for (int child : children[a]) {
-                ++transform[a][child];
-                next.prefix[a] += state.prefix[child];
-                next.suffix[a] += state.suffix[child];
-            }
-            if (int(next.prefix[a].size()) > keep)
-                next.prefix[a].resize(keep);
-            if (int(next.suffix[a].size()) > keep)
-                next.suffix[a].erase(0, next.suffix[a].size() - keep);
-            if (children[a].size() == 2)
-                transform[a][4] =
-                    matches(state.suffix[children[a][0]] + state.prefix[children[a][1]]);
-        }
-        count = apply_matrix(transform, count);
-        state = std::move(next);
-        transitions.push_back(transform);
+        cnt=calc(a,cnt);
+        state=std::move(next);
+        tr.push_back(a);
         ++time;
-        // Equal endpoints imply exactly equal future boundary contributions.
-        if (history.size() == 6 && state == history.front()) {
-            i64 remaining = n - time;
-            int begin = int(transitions.size()) - 6;
-            Matrix cycle = identity_matrix();
-            for (int j = begin; j < begin + 6; ++j)
-                cycle = multiply(transitions[j], cycle);
-            i64 rounds = remaining / 6;
-            while (rounds) {
-                if (rounds & 1)
-                    count = apply_matrix(cycle, count);
-                cycle = multiply(cycle, cycle);
-                rounds /= 2;
+        if(q.size()==6 && state==q.front()){
+            ll rem=n-time;
+            int pos=tr.size()-6;
+            A a=unit();
+            for(int j=pos;j<pos+6;++j){
+                a=mul(tr[j],a);
             }
-            for (int j = 0; j < remaining % 6; ++j)
-                count = apply_matrix(transitions[begin + j], count);
+            ll k=rem/6;
+            while(k){
+                if(k&1)cnt=calc(a,cnt);
+                a=mul(a,a);
+                k>>=1;
+            }
+            for(int j=0;j<rem%6;++j){
+                cnt=calc(tr[pos+j],cnt);
+            }
             break;
         }
-        history.push_back(state);
-        if (history.size() > 6)
-            history.pop_front();
+        q.push_back(state);
+        if(q.size()>6)q.pop_front();
     }
-    cout << count[0] << '\n';
+    printf("%lld\n",cnt[0]);
+    return 0;
 }

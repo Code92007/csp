@@ -1,30 +1,31 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Point {
-    long long x, y;
-    char type;
+typedef long long ll;
+struct node{
+    ll x,y;
+    char c;
 };
-int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<Point> points(n);
-    for (auto &p : points)
-        cin >> p.x >> p.y >> p.type;
-    while (m--) {
-        long long a, b, c;
-        cin >> a >> b >> c;
-        int reference = 0;
-        bool ok = true;
-        for (auto p : points) {
-            long long value = a + b * p.x + c * p.y;
-            int side = value > 0 ? 1 : -1;
-            if (p.type == 'B')
-                side = -side;
-            if (value == 0 || (reference && reference != side))
-                ok = false;
-            reference = side;
-        }
-        cout << (ok ? "Yes" : "No") << '\n';
+int n,m;
+vector<node> p;
+int main(){
+    scanf("%d%d",&n,&m);
+    p.resize(n);
+    for(auto &v:p){
+        scanf("%lld%lld %c",&v.x,&v.y,&v.c);
     }
+    while(m--){
+        ll a,b,c;
+        scanf("%lld%lld%lld",&a,&b,&c);
+        int last=0;
+        bool ok=true;
+        for(auto &v:p){
+            ll val=a+b*v.x+c*v.y;
+            int s=val>0?1:-1;
+            if(v.c=='B')s=-s;
+            if(!val || (last && last!=s))ok=false;
+            last=s;
+        }
+        puts(ok?"Yes":"No");
+    }
+    return 0;
 }

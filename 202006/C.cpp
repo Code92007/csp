@@ -1,81 +1,83 @@
-#include <iostream>
-#include <string>
+#include<bits/stdc++.h>
 using namespace std;
-string trim(const string &s) {
-    size_t l = s.find_first_not_of(' ');
-    if (l == string::npos)
-        return "";
-    return s.substr(l, s.find_last_not_of(' ') - l + 1);
+typedef long long ll;
+int w,state;
+ll ans;
+bool had;
+string text;
+string trim(const string &s){
+    int l=s.find_first_not_of(' ');
+    if(l==-1)return "";
+    return s.substr(l,s.find_last_not_of(' ')-l+1);
 }
-long long lines(const string &s, int width) {
-    if (s.empty())
-        return 1;
-    long long ans = 0;
-    size_t p = 0;
-    while (p < s.size()) {
+ll calc(const string &s,int w){
+    if(s.empty())return 1;
+    ll ans=0;
+    int p=0,len=s.size();
+    while(p<len){
         ++ans;
-        p += width;
-        while (p < s.size() && s[p] == ' ')
+        p+=w;
+        while(p<len && s[p]==' '){
             ++p;
+        }
     }
     return ans;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int w;
-    cin >> w;
-    string s, text;
-    getline(cin, s);
-    int state = 0;
-    long long answer = 0;
-    bool hadBlock = false;
-    auto flush = [&]() {
-        if (state)
-            answer += lines(text, state == 2 ? w - 3 : w);
-        text.clear();
-    };
-    auto begin = [&](int kind) {
-        if (hadBlock)
-            ++answer;
-        hadBlock = true;
-        state = kind;
-    };
-    auto append = [&](const string &part) {
-        string t = trim(part);
-        if (t.empty())
-            return;
-        if (!text.empty())
-            text += ' ';
-        text += t;
-    };
-    while (getline(cin, s)) {
-        bool blank = trim(s).empty();
-        bool bullet = s.size() >= 2 && s[0] == '*' && s[1] == ' ';
-        bool indent = s.size() >= 2 && s[0] == ' ' && s[1] == ' ';
-        if (blank) {
+void flush(){
+    if(state)ans+=calc(text,state==2?w-3:w);
+    text.clear();
+}
+void start(int kind){
+    if(had)++ans;
+    had=true;
+    state=kind;
+}
+void append(const string &s){
+    string t=trim(s);
+    if(t.empty())return;
+    if(!text.empty())text+=' ';
+    text+=t;
+}
+bool read(string &s){
+    s.clear();
+    int c=getchar();
+    while(c!=EOF && c!='\n'){
+        s+=char(c);
+        c=getchar();
+    }
+    return c!=EOF || !s.empty();
+}
+int main(){
+    scanf("%d",&w);
+    string s;
+    read(s);
+    while(read(s)){
+        bool blank=trim(s).empty();
+        bool bullet=(s.size()>=2 && s[0]=='*' && s[1]==' ');
+        bool indent=(s.size()>=2 && s[0]==' ' && s[1]==' ');
+        if(blank){
             flush();
-            state = 0;
+            state=0;
             continue;
         }
-        if (bullet) {
-            if (state == 2)
+        if(bullet){
+            if(state==2)flush();
+            else{
                 flush();
-            else {
-                flush();
-                begin(2);
+                start(2);
             }
             append(s.substr(2));
-        } else if (state == 2 && indent) {
-            append(s.substr(2));
-        } else {
-            if (state != 1) {
+        }
+        else if(state==2 && indent)append(s.substr(2));
+        else{
+            if(state!=1){
                 flush();
-                begin(1);
+                start(1);
             }
             append(s);
         }
     }
     flush();
-    cout << answer << '\n';
+    printf("%lld\n",ans);
+    return 0;
 }

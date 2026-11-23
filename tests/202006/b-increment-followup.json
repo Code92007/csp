@@ -1,0 +1,29 @@
+{
+  "problem": "202006B",
+  "previous_sha256": "69870b23476a53266183dbff56366f91b08a729eff4cd95169f9a8a559fe3d4c",
+  "source_sha256": "28bc09c0fa003b727c263298127472f21b0d17004dfc29d9201861aefda3f941",
+  "distinct_inputs": 1,
+  "case_sha256": "7c9e49416e1f1f26f9ebaeb1c8f24463d305b17ff22be8e1d9d7466bcefce743",
+  "case_kinds": {
+    "saved_sample": 1
+  },
+  "compilation": "C++17 O2/UBSan -Wall -Wextra -Wshadow, no diagnostics",
+  "results": [
+    {
+      "mode": "O2",
+      "inputs": 1,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.528183625
+    },
+    {
+      "mode": "UBSan",
+      "inputs": 1,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.48270454099999993
+    }
+  ],
+  "change": "Two adjacent increments share one line; statement sequence unchanged.",
+  "note": "Original independent validation remains historical; this is a focused local style followup without online resubmission."
+}

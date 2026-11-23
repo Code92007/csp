@@ -1,0 +1,77 @@
+{
+  "contest": "202006",
+  "source_sha256": {
+    "A": "499159d30459e793344c3cde4357bd3f74d4ec0937103476fb8b231f74f6186a",
+    "B": "69870b23476a53266183dbff56366f91b08a729eff4cd95169f9a8a559fe3d4c",
+    "C": "c3cdb976a0b8511c2dc56748901abf641cccdcf39f62fcb54cf034e63be1dd9b",
+    "D": "215ba10451621e37fbcbcb3e54951aebe93119aafd30024735e46e2579f4b328",
+    "E": "7bd7e46548bbf9b36cfb1f2b4229f2adc9f896bc375ab312ced748fab75afa27"
+  },
+  "different_inputs": 809,
+  "categories": {
+    "retained_independent": 435,
+    "additional_independent": 363,
+    "saved_sample": 7,
+    "constructive_stress": 4
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "B",
+      "kind": "constructive_stress",
+      "seconds": 0.06773249999999997
+    },
+    {
+      "problem": "C",
+      "kind": "constructive_stress",
+      "seconds": 0.30879520900000035
+    },
+    {
+      "problem": "D",
+      "kind": "constructive_stress",
+      "seconds": 0.0070645420000001735
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.004515332999999622
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 62,
+        "B": 102,
+        "C": 123,
+        "D": 269,
+        "E": 253
+      },
+      "total": 809,
+      "seconds": 3.441813833
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 62,
+        "B": 101,
+        "C": 122,
+        "D": 268,
+        "E": 252
+      },
+      "total": 805,
+      "seconds": 6.376638833000001
+    }
+  ],
+  "independent_oracles": "Direct signs and sparse dictionaries; explicit line-by-line Markdown rendering; literal simultaneous substitution and substring enumeration; exhaustive product purchase quantities with original dependency rules.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

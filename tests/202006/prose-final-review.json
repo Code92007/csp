@@ -1,0 +1,63 @@
+{
+  "contest": "202006",
+  "scope": "Final prose review: semantic paragraphs, separate headings/operation lists, current code names, full formulas/proofs/complexities and source attribution. Source code unchanged.",
+  "current_source_sha256": {
+    "A": "499159d30459e793344c3cde4357bd3f74d4ec0937103476fb8b231f74f6186a",
+    "B": "28bc09c0fa003b727c263298127472f21b0d17004dfc29d9201861aefda3f941",
+    "C": "c3cdb976a0b8511c2dc56748901abf641cccdcf39f62fcb54cf034e63be1dd9b",
+    "D": "0167f3e95faee47f37bab8b18205ba577f9c80e37850668f40acc8e7b6791f68",
+    "E": "7bd7e46548bbf9b36cfb1f2b4229f2adc9f896bc375ab312ced748fab75afa27"
+  },
+  "changes": [
+    {
+      "before": "将B类点的符号反转后",
+      "after": "将 B 类点的符号反转后"
+    },
+    {
+      "before": "一致意味着A在同侧、B恰在另一侧",
+      "after": "一致意味着 A 在同侧、B 恰在另一侧"
+    },
+    {
+      "before": "乘法使用64位防止改变符号",
+      "after": "乘法使用 64 位整数，避免溢出改变符号"
+    },
+    {
+      "before": "与巨大维数n无关；累计值可能超出32位，使用long long。",
+      "after": "与巨大维数 n 无关；累计值可能超出 32 位，使用 `long long`。"
+    },
+    {
+      "before": "每行内容先去首尾空格，非空内容之间只加一个连接空格；行内原有多个空格必须保留。 计算行数时",
+      "after": "每行内容先去首尾空格，非空内容之间只加一个连接空格；行内原有多个空格必须保留。\n\n计算行数时"
+    },
+    {
+      "before": "再加跨界次数。 跨界匹配",
+      "after": "再加跨界次数。\n\n跨界匹配"
+    },
+    {
+      "before": "对每个循环相位，继续展开只向截断范围之外延长。 程序不猜预热轮数",
+      "after": "对每个循环相位，继续展开只向截断范围之外延长。\n\n程序不猜预热轮数"
+    },
+    {
+      "before": "同一流程仍成立；n=0 直接保留初始计数。",
+      "after": "同一流程仍成立；`n=0` 直接保留初始计数。"
+    },
+    {
+      "before": "因此最小割给出原问题最大值。 代码使用 Dinic。",
+      "after": "因此最小割给出原问题最大值。\n\n**复杂度**\n\n代码使用 Dinic。"
+    }
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged_or_mask_to_S": true,
+  "markdown": [
+    {
+      "file": "202006/README.md",
+      "before_sha256": "5eec562a507235c1c9097f704b5860a00f3371827c6131abeb636b860693ed9c",
+      "after_sha256": "527038162ed47d1037e1bf727d13367548569974bfb1714993f8ed8a102daa41"
+    },
+    {
+      "file": "202006题解.md",
+      "before_sha256": "9eb9e3a9f3002033ebe282ffba48c5fd037ea7132c567bc62a15ce76933fd1c7",
+      "after_sha256": "7d1fc61e86f311d11aa032b53cf8f728f23077cbd531703aae3651fe57ec648c"
+    }
+  ]
+}
