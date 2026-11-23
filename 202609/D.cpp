@@ -1,98 +1,92 @@
-#include <algorithm>
-#include <iostream>
-#include <numeric>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-
-struct ParityDSU {
-    vector<int> parent, size, parity;
-    explicit ParityDSU(int n) : parent(n), size(n, 1), parity(n) {
-        iota(parent.begin(), parent.end(), 0);
+typedef long long ll;
+const int N=5e5+10,M=3;
+int n,op,fa[N],sz[N],d[N],nxt[N];
+ll k,a[N];
+vector<ll>g[M];
+int find(int x){
+    if(fa[x]==x)return x;
+    int y=fa[x];
+    fa[x]=find(y);
+    d[x]^=d[y];
+    return fa[x];
+}
+int jump(int x){
+    while(nxt[x]!=x){
+        x=nxt[x]=nxt[nxt[x]];
     }
-    int find(int x) {
-        if (parent[x] == x) return x;
-        int old = parent[x];
-        parent[x] = find(old);
-        parity[x] ^= parity[old];
-        return parent[x];
+    return x;
+}
+bool merge(int x,int y,int w){
+    int u=find(x),v=find(y);
+    int z=d[x]^d[y]^w;
+    if(u==v)return z==0;
+    if(sz[u]<sz[v]){
+        swap(u,v);
     }
-    bool join(int a, int b, int difference) {
-        int ra = find(a), rb = find(b);
-        int relation = parity[a] ^ parity[b] ^ difference;
-        if (ra == rb) return relation == 0;
-        if (size[ra] < size[rb]) swap(ra, rb);
-        parent[rb] = ra;
-        parity[rb] = relation;
-        size[ra] += size[rb];
-        return true;
+    fa[v]=u;
+    d[v]=z;
+    sz[u]+=sz[v];
+    return 1;
+}
+int main(){
+    scanf("%d%lld%d",&n,&k,&op);
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&a[i]);
+        fa[i]=nxt[i]=i;
+        sz[i]=1;
     }
-};
-
-struct Successor {
-    vector<int> parent;
-    explicit Successor(int n) : parent(n + 1) { iota(parent.begin(), parent.end(), 0); }
-    int find(int x) {
-        int root = x;
-        while (parent[root] != root) root = parent[root];
-        while (parent[x] != x) { int next = parent[x]; parent[x] = root; x = next; }
-        return root;
-    }
-    void erase(int x) { parent[x] = find(x + 1); }
-};
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, op;
-    ll k;
-    if (!(cin >> n >> k >> op)) return 0;
-    vector<ll> values(n);
-    for (ll& x : values) cin >> x;
-    sort(values.begin(), values.end());
-    ParityDSU dsu(n);
-    Successor unused(n);
-    bool hasEdge = false, bipartite = true;
-    for (int i = 0; i < n && bipartite; ++i) {
-        if (op == 0) {
-            if (values[i] % k != 0) continue;
-            auto it = lower_bound(values.begin(), values.end(), values[i] / k);
-            if (it != values.end() && *it == values[i] / k) {
-                hasEdge = true;
-                bipartite = dsu.join(i, int(it - values.begin()), 1);
+    nxt[n+1]=n+1;
+    sort(a+1,a+n+1);
+    bool edge=0,ok=1;
+    for(int i=1;i<=n && ok;++i){
+        int l,r;
+        if(!op){
+            if(a[i]%k)continue;
+            l=lower_bound(a+1,a+n+1,a[i]/k)-a;
+            if(l>n || a[l]!=a[i]/k)continue;
+            r=l;
+        }
+        else{
+            l=upper_bound(a+1,a+n+1,a[i]/(k+1))-a;
+            r=upper_bound(a+1,a+n+1,a[i]/k)-a-1;
+        }
+        if(l>r)continue;
+        edge=1;
+        for(int j=jump(l);j<r;j=jump(j)){
+            if(!merge(j,j+1,0)){
+                ok=0;
+                break;
             }
-        } else {
-            int left = upper_bound(values.begin(), values.end(), values[i] / (k + 1)) - values.begin();
-            int right = int(upper_bound(values.begin(), values.end(), values[i] / k) - values.begin()) - 1;
-            if (left > right) continue;
-            hasEdge = true;
-            // All smaller neighbours of i must have the same colour.
-            for (int j = unused.find(left); j < right; j = unused.find(j)) {
-                if (!dsu.join(j, j + 1, 0)) { bipartite = false; break; }
-                unused.erase(j);
-            }
-            if (bipartite) bipartite = dsu.join(i, left, 1);
+            nxt[j]=jump(j+1);
+        }
+        if(ok){
+            ok=merge(i,l,1);
         }
     }
-    int groupCount = !hasEdge ? 1 : (bipartite ? 2 : 3);
-    vector<vector<ll>> groups(groupCount);
-    for (int i = 0; i < n; ++i) {
-        int colour = 0;
-        if (groupCount == 2) {
-            dsu.find(i);
-            colour = dsu.parity[i];
-        } else if (groupCount == 3) {
-            ll x = values[i];
-            int level = 0;
-            while (x >= k) { x /= k; ++level; }
-            colour = level % 3;
+    int cnt=!edge?1:(ok?2:3);
+    for(int i=1;i<=n;++i){
+        int col=0;
+        if(cnt==2){
+            find(i);
+            col=d[i];
         }
-        groups[colour].push_back(values[i]);
+        if(cnt==3){
+            for(ll x=a[i];x>=k;x/=k){
+                ++col;
+            }
+            col%=3;
+        }
+        g[col].push_back(a[i]);
     }
-    cout << groupCount << '\n';
-    for (const auto& group : groups) {
-        cout << group.size();
-        for (ll x : group) cout << ' ' << x;
-        cout << '\n';
+    printf("%d\n",cnt);
+    for(int i=0;i<cnt;++i){
+        printf("%d",(int)g[i].size());
+        for(ll &x:g[i]){
+            printf(" %lld",x);
+        }
+        puts("");
     }
+    return 0;
 }

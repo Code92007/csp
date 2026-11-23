@@ -1,56 +1,55 @@
-#include <algorithm>
-#include <iostream>
-#include <queue>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    ll period;
-    if (!(cin >> n >> m >> period)) return 0;
-    vector<int> quantum(m), work(n);
-    for (int& x : quantum) cin >> x;
-    vector<vector<bool>> preferred(n, vector<bool>(m));
-    vector<queue<int>> waiting(m);
-    for (int i = 0; i < n; ++i) {
-        int count; cin >> work[i] >> count;
-        while (count--) { int cpu; cin >> cpu; preferred[i][cpu - 1] = true; }
-        waiting[i % m].push(i);
+const int N=105;
+int n,m,T,t[N],a[N],cur[N],ed[N],st[N],ans[N];
+bool pre[N][N];
+queue<int>q[N];
+int main(){
+    scanf("%d%d%d",&n,&m,&T);
+    for(int i=0;i<m;++i){
+        scanf("%d",&t[i]);
     }
-    vector<int> running(m, -1);
-    vector<ll> ends(m), first(n, -1), answer(n);
-    int completed = 0;
-    for (ll now = 0; completed < n; ++now) {
-        // Complete slices before applying a rotation at this timestamp.
-        for (int cpu = 0; cpu < m; ++cpu) {
-            int job = running[cpu];
-            if (job == -1 || ends[cpu] != now) continue;
-            if (work[job] == 0) {
-                answer[job] = now - first[job];
-                ++completed;
-            } else {
-                int oldQueue = (cpu + (now - 1) / period % m) % m;
-                waiting[oldQueue].push(job);
+    for(int i=1;i<=n;++i){
+        int k,x;
+        scanf("%d%d",&a[i],&k);
+        while(k--){
+            scanf("%d",&x);
+            pre[i][x-1]=1;
+        }
+        q[(i-1)%m].push(i);
+    }
+    memset(st,-1,sizeof st);
+    int cnt=0;
+    for(int now=0;cnt<n;++now){
+        for(int i=0;i<m;++i){
+            int u=cur[i];
+            if(!u || ed[i]!=now)continue;
+            if(!a[u]){
+                ans[u]=now-st[u];
+                ++cnt;
             }
-            running[cpu] = -1;
+            else{
+                q[(i+(now-1)/T)%m].push(u);
+            }
+            cur[i]=0;
         }
-        if (completed == n) break;
-        int shift = now / period % m;
-        for (int cpu = 0; cpu < m; ++cpu) {
-            int queueId = (cpu + shift) % m;
-            if (running[cpu] != -1 || waiting[queueId].empty()) continue;
-            int job = waiting[queueId].front();
-            waiting[queueId].pop();
-            int speed = preferred[job][cpu] ? 2 : 1;
-            int duration = min(quantum[cpu], (work[job] + speed - 1) / speed);
-            if (first[job] == -1) first[job] = now;
-            work[job] = max(0, work[job] - duration * speed);
-            running[cpu] = job;
-            ends[cpu] = now + duration;
+        for(int i=0;i<m;++i){
+            int id=(i+now/T)%m;
+            if(cur[i] || q[id].empty())continue;
+            int u=q[id].front();
+            q[id].pop();
+            int v=pre[u][i]+1;
+            int len=min(t[i],(a[u]+v-1)/v);
+            if(st[u]==-1){
+                st[u]=now;
+            }
+            a[u]=max(0,a[u]-len*v);
+            cur[i]=u;
+            ed[i]=now+len;
         }
     }
-    for (int i = 0; i < n; ++i) cout << answer[i] << (i + 1 == n ? '\n' : ' ');
+    for(int i=1;i<=n;++i){
+        printf("%d%c",ans[i]," \n"[i==n]);
+    }
+    return 0;
 }

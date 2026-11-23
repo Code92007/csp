@@ -1,184 +1,180 @@
-#include <algorithm>
-#include <cstdint>
-#include <iostream>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using Mask = uint64_t;
-using ll = long long;
-
-struct Hash {
-    size_t operator()(Mask x) const {
-        x += 0x9e3779b97f4a7c15ULL;
-        x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9ULL;
-        x = (x ^ (x >> 27)) * 0x94d049bb133111ebULL;
-        return x ^ (x >> 31);
-    }
+typedef long long ll;
+typedef unsigned long long ull;
+typedef pair<int,int> P;
+const int N=1e5+10;
+int n,m,k,q,tot,fa[N],sz[N],ord[N],dis[N];
+ll bit[N],mask[N],ans;
+bool vis[N];
+char s[N];
+vector<P>g[N];
+struct node{
+    ll mask;
+    int rt,id,dis;
 };
-class Counter {
-    static constexpr Mask empty = ~Mask(0);
-    vector<Mask> keys;
-    vector<int> values;
-    size_t capacityMask = 0;
-
-    size_t slot(Mask key) const {
-        size_t i = Hash{}(key) & capacityMask;
-        while (keys[i] != empty && keys[i] != key) i = (i + 1) & capacityMask;
-        return i;
+vector<node>rec[N];
+struct Hash{
+    int mask;
+    vector<ll>key;
+    vector<int>val;
+    void init(int n){
+        int s=2;
+        while(s<n*2){
+            s<<=1;
+        }
+        mask=s-1;
+        key.assign(s,-1);
+        val.assign(s,0);
     }
-public:
-    void reserve(size_t expected) {
-        size_t capacity = 2;
-        while (capacity < expected * 2) capacity <<= 1;
-        keys.assign(capacity, empty);
-        values.assign(capacity, 0);
-        capacityMask = capacity - 1;
+    int pos(ll x){
+        ull h=x+0x9e3779b97f4a7c15ull;
+        h=(h^(h>>30))*0xbf58476d1ce4e5b9ull;
+        h=(h^(h>>27))*0x94d049bb133111ebull;
+        int p=(h^(h>>31))&mask;
+        while(key[p]!=-1 && key[p]!=x){
+            p=(p+1)&mask;
+        }
+        return p;
     }
-    void emplace(Mask key, int value) {
-        size_t i = slot(key);
-        if (keys[i] == empty) { keys[i] = key; values[i] = value; }
+    void ins(ll x){
+        key[pos(x)]=x;
     }
-    int get(Mask key) const {
-        size_t i = slot(key);
-        return keys[i] == key ? values[i] : 0;
+    void add(ll x,int v){
+        val[pos(x)]+=v;
     }
-    void add(Mask key, int delta) { values[slot(key)] += delta; }
-};
-struct Edge { int to, weight; };
-struct Record { Mask mask; int centre, branch, distance; };
-struct Visit { int node, parent, distance; Mask mask; };
-
-class Solver {
-    int n, modulus;
-    vector<vector<Edge>> tree;
-    vector<Mask> bit, colours;
-    vector<bool> removed;
-    vector<int> parent, subtree;
-    vector<vector<Record>> ancestors;
-    vector<Counter> all, branch;
-
-    int centroid(int start, vector<int>& nodes) {
-        nodes.push_back(start);
-        parent[start] = -1;
-        for (size_t i = 0; i < nodes.size(); ++i) {
-            int v = nodes[i];
-            for (const auto& e : tree[v]) {
-                if (removed[e.to] || e.to == parent[v]) continue;
-                parent[e.to] = v;
-                nodes.push_back(e.to);
+    int get(ll x){
+        int p=pos(x);
+        return key[p]==x?val[p]:0;
+    }
+}all[N],sub[N];
+int getrt(int s){
+    int cnt=1;
+    ord[1]=s;
+    fa[s]=0;
+    for(int i=1;i<=cnt;++i){
+        int u=ord[i];
+        sz[u]=1;
+        for(auto &[v,w]:g[u]){
+            if(vis[v] || v==fa[u])continue;
+            fa[v]=u;
+            ord[++cnt]=v;
+        }
+    }
+    int rt=s,mn=cnt;
+    for(int i=cnt;i;--i){
+        int u=ord[i],mx=cnt-sz[u];
+        for(auto &[v,w]:g[u]){
+            if(!vis[v] && fa[v]==u){
+                mx=max(mx,sz[v]);
             }
         }
-        for (auto it = nodes.rbegin(); it != nodes.rend(); ++it) {
-            int v = *it;
-            subtree[v] = 1;
-            for (const auto& e : tree[v])
-                if (!removed[e.to] && parent[e.to] == v) subtree[v] += subtree[e.to];
+        if(mx<mn){
+            mn=mx;
+            rt=u;
         }
-        int best = start, bestPart = int(nodes.size());
-        for (int v : nodes) {
-            int largest = int(nodes.size()) - subtree[v];
-            for (const auto& e : tree[v])
-                if (!removed[e.to] && parent[e.to] == v) largest = max(largest, subtree[e.to]);
-            if (largest < bestPart) { bestPart = largest; best = v; }
+        if(fa[u]){
+            sz[fa[u]]+=sz[u];
         }
-        return best;
     }
-
-    void decompose(int start) {
-        vector<int> nodes;
-        int centre = centroid(start, nodes);
-        removed[centre] = true;
-        all[centre].reserve(nodes.size());
-        ancestors[centre].push_back({bit[centre], centre, -1, 0});
-        all[centre].emplace(bit[centre] << 2, 0);
-        for (const auto& edge : tree[centre]) {
-            if (removed[edge.to]) continue;
-            int id = int(branch.size());
-            branch.emplace_back();
-            vector<Visit> visits{{edge.to, centre, edge.weight % modulus, bit[centre] ^ bit[edge.to]}};
-            for (size_t i = 0; i < visits.size(); ++i) {
-                Visit cur = visits[i];
-                for (const auto& next : tree[cur.node]) {
-                    if (removed[next.to] || next.to == cur.parent) continue;
-                    visits.push_back({next.to, cur.node, (cur.distance + next.weight) % modulus, cur.mask ^ bit[next.to]});
-                }
-            }
-            branch[id].reserve(visits.size());
-            for (const auto& cur : visits) {
-                ancestors[cur.node].push_back({cur.mask, centre, id, cur.distance});
-                Mask key = (cur.mask << 2) | Mask(cur.distance);
-                all[centre].emplace(key, 0);
-                branch[id].emplace(key, 0);
+    return rt;
+}
+void solve(int u){
+    int rt=getrt(u);
+    vis[rt]=1;
+    all[rt].init(sz[u]);
+    all[rt].ins(bit[rt]<<2);
+    rec[rt].push_back({bit[rt],rt,0,0});
+    for(auto &[v,w]:g[rt]){
+        if(vis[v])continue;
+        int id=++tot,cnt=1;
+        ord[1]=v;
+        fa[v]=rt;
+        dis[v]=w%k;
+        mask[v]=bit[rt]^bit[v];
+        for(int i=1;i<=cnt;++i){
+            int x=ord[i];
+            for(auto &[y,z]:g[x]){
+                if(vis[y] || y==fa[x])continue;
+                fa[y]=x;
+                ord[++cnt]=y;
+                dis[y]=(dis[x]+z)%k;
+                mask[y]=mask[x]^bit[y];
             }
         }
-        for (const auto& edge : tree[centre])
-            if (!removed[edge.to]) decompose(edge.to);
-    }
-
-public:
-    Solver(int count, int k) : n(count), modulus(k), tree(n), bit(n), removed(n), parent(n), subtree(n), ancestors(n), all(n) {
-        branch.reserve(n);
-    }
-    void read() {
-        for (Mask& x : bit) { int colour; cin >> colour; x = Mask(1) << (colour - 1); }
-        colours = bit;
-        sort(colours.begin(), colours.end());
-        colours.erase(unique(colours.begin(), colours.end()), colours.end());
-        for (int i = 1; i < n; ++i) {
-            int a, b, w; cin >> a >> b >> w; --a; --b;
-            tree[a].push_back({b, w}); tree[b].push_back({a, w});
+        sub[id].init(cnt);
+        for(int i=1;i<=cnt;++i){
+            int x=ord[i];
+            ll key=(mask[x]<<2)|dis[x];
+            rec[x].push_back({mask[x],rt,id,dis[x]});
+            all[rt].ins(key);
+            sub[id].ins(key);
         }
-        decompose(0);
     }
-    ll partners(int node) const {
-        ll result = 0;
-        for (const auto& r : ancestors[node]) {
-            Mask base = r.mask ^ bit[r.centre];
-            int required = (modulus - r.distance) % modulus;
-            for (Mask oddColour : colours) {
-                Mask key = ((base ^ oddColour) << 2) | Mask(required);
-                result += all[r.centre].get(key);
-                if (r.branch != -1) result -= branch[r.branch].get(key);
+    for(auto &[v,w]:g[rt]){
+        if(!vis[v]){
+            solve(v);
+        }
+    }
+}
+ll ask(int u){
+    ll res=0;
+    for(auto &x:rec[u]){
+        ll base=x.mask^bit[x.rt];
+        int d=(k-x.dis)%k;
+        for(int i=0;i<m;++i){
+            ll key=((base^(1ll<<i))<<2)|d;
+            res+=all[x.rt].get(key);
+            if(x.id){
+                res-=sub[x.id].get(key);
             }
         }
-        return result;
     }
-    void change(int node, int delta) {
-        for (const auto& r : ancestors[node]) {
-            Mask key = (r.mask << 2) | Mask(r.distance);
-            all[r.centre].add(key, delta);
-            if (r.branch != -1) branch[r.branch].add(key, delta);
+    return res;
+}
+void add(int u,int v){
+    for(auto &x:rec[u]){
+        ll key=(x.mask<<2)|x.dis;
+        all[x.rt].add(key,v);
+        if(x.id){
+            sub[x.id].add(key,v);
         }
     }
-};
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, k, q;
-    if (!(cin >> n >> m >> k >> q)) return 0;
-    string lamps; cin >> lamps;
-    Solver solver(n, k);
-    solver.read();
-    ll answer = 0;
-    for (int v = 0; v < n; ++v) {
-        if (lamps[v] == '1') {
-            answer += solver.partners(v) + 1;
-            solver.change(v, 1);
+}
+int main(){
+    scanf("%d%d%d%d%s",&n,&m,&k,&q,s+1);
+    for(int i=1;i<=n;++i){
+        int c;
+        scanf("%d",&c);
+        bit[i]=1ll<<(c-1);
+    }
+    for(int i=1;i<n;++i){
+        int u,v,w;
+        scanf("%d%d%d",&u,&v,&w);
+        g[u].push_back(P(v,w));
+        g[v].push_back(P(u,w));
+    }
+    solve(1);
+    for(int i=1;i<=n;++i){
+        if(s[i]=='1'){
+            ans+=ask(i)+1;
+            add(i,1);
         }
     }
-    cout << answer << '\n';
-    while (q--) {
-        int v; cin >> v; --v;
-        if (lamps[v] == '1') {
-            answer -= solver.partners(v);
-            solver.change(v, -1);
-            lamps[v] = '0';
-        } else {
-            answer += solver.partners(v) + 1;
-            solver.change(v, 1);
-            lamps[v] = '1';
+    printf("%lld\n",ans);
+    while(q--){
+        int u;
+        scanf("%d",&u);
+        if(s[u]=='1'){
+            ans-=ask(u);
+            add(u,-1);
         }
-        cout << answer << '\n';
+        else{
+            ans+=ask(u)+1;
+            add(u,1);
+        }
+        s[u]^=1;
+        printf("%lld\n",ans);
     }
+    return 0;
 }
