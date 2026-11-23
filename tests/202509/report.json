@@ -1,0 +1,67 @@
+{
+  "contest": "202509",
+  "source_sha256": {
+    "A": "ebec3287fd4999bc4e9b986691e1526e7b58bc3e2651034abfb9c2f4d83fada7",
+    "B": "3e756a2b9f936b5f4f10ddc831ecd4c3735518b7d141b3471089a03bb58cf087",
+    "C": "834ebd52033b63dcd96dfbfab3a6886d38590b5d78fd28ec8b6ee966cb7d30a8",
+    "D": "6f09013511acaaf01629bcd02bc7e294b41a3142bee1cdb306db185f7517d4bb",
+    "E": "9a44c2a9a289ec5056b78fb4ec43394929ad0ab61957630a529eeaf3fe89c591"
+  },
+  "different_inputs": 1442,
+  "categories": {
+    "retained_independent": 490,
+    "saved_sample": 10,
+    "additional_independent": 940,
+    "constructive_stress": 2
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "D",
+      "kind": "constructive_stress",
+      "seconds": 0.06030983299999981
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.4904538340000002
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 65,
+        "B": 68,
+        "C": 103,
+        "D": 312,
+        "E": 894
+      },
+      "total": 1442,
+      "seconds": 5.13710075
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 65,
+        "B": 68,
+        "C": 103,
+        "D": 311,
+        "E": 893
+      },
+      "total": 1440,
+      "seconds": 9.665856834000001
+    }
+  ],
+  "independent_oracles": "Repository independent generators, geometric integer count, direct pattern matching, Huffman literal simulation, explicit tree paths, make/finish choice DP.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

@@ -1,0 +1,16 @@
+{
+  "contest": "202509",
+  "scope": "Final prose review only; semantic paragraphs, operation lists, independent headings, current source names, complete formulas/complexities/source attribution. No algorithm changes.",
+  "current_source_sha256": {
+    "A": "ebec3287fd4999bc4e9b986691e1526e7b58bc3e2651034abfb9c2f4d83fada7",
+    "B": "0b3b127e87de2706f8c194544025e02b807687714d7f0d380b4512344bd0a2d8",
+    "C": "e9d6976a5a6a902e5cfa1f3f6320acead297ab8fff6b12b84f709036476ca2a9",
+    "D": "9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da",
+    "E": "f30997019754ecdbad11e1e9a94bec8515d9360f4681cd3deeaded7e9d073288"
+  },
+  "changes": [
+    "C narrative names a/d/f(x) consistently with the reviewed code."
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged": true
+}

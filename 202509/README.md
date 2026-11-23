@@ -3,17 +3,15 @@ title: "CSP 202509 五题题解"
 contest: "202509"
 contest_month: "2025-09"
 date: "2026-10-23"
-updated: "2026-10-25"
+updated: "2026-11-24"
 tags: ["CSP", "几何判断", "定点数", "计数", "矩阵枚举", "差分", "区间并集", "字符串解析", "Huffman", "双端队列", "模拟", "树", "LCA", "可持久化线段树", "mex", "动态规划", "离散凸性", "优先队列", "拉格朗日优化"]
 status: "published"
-problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点数", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce736a67df0b81749b65c"}}, {"id": "B", "title": "水印检查", "tags": ["矩阵枚举", "差分", "区间并集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce738a67df0b81749b678"}}, {"id": "C", "title": "HTTP 头信息", "tags": ["字符串解析", "Huffman", "双端队列", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce739a67df0b81749b685"}}, {"id": "D", "title": "造题计划（上）", "tags": ["树", "LCA", "可持久化线段树", "mex"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a"}}, {"id": "E", "title": "造题计划（下）", "tags": ["动态规划", "离散凸性", "优先队列", "拉格朗日优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1"}}]
+problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点数", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce736a67df0b81749b65c"}}, {"id": "B", "title": "水印检查", "tags": ["矩阵枚举", "差分", "区间并集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce738a67df0b81749b678"}}, {"id": "C", "title": "HTTP 头信息", "tags": ["字符串解析", "Huffman", "双端队列", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce739a67df0b81749b685"}}, {"id": "D", "title": "造题计划（上）", "tags": ["树", "LCA", "可持久化线段树", "mex"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a"}}, {"id": "E", "title": "造题计划（下）", "tags": ["动态规划", "离散凸性", "优先队列", "拉格朗日优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1"}}]
 ---
 
 # CSP 202509 五题题解
 
-[返回总目录](../README.md)
-
-本场已实现 **5/5** 题。每题依次给出题意、题解、代码。源码使用 C++17。
+[返回总目录](../README.md) · [本地验证](../tests/202509/VALIDATION.md)
 
 <a id="problem-a"></a>
 
@@ -21,56 +19,73 @@ problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点
 
 标签：`几何判断` · `定点数` · `计数`
 
-状态：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce736a67df0b81749b65c)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
 
 ### 题意
 
-给定正方形[-a,a]²内的n个点，统计位于半径a圆内（含边界）的点数m，输出估计值4m/n。坐标最多两位小数，n、a≤1000。
+给定正方形 $[-a,a]^2$ 内的 $n$ 个点，统计落在以原点为圆心、$a$ 为半径的圆内（含边界）的点数 $m$，用 $4m/n$ 估计圆周率。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/)。
+输入 $n,a$，再输入 $n$ 个点的坐标。$n,a\le1000$，坐标最多两位小数，可以为负数。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509A)。
+输出估计值 $4m/n$，保留足够的小数位。
+
+来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/) · [曙梦 OJ 原题](https://oj.shumeng.tech/p/CSP202509A)。
 
 ### 题解
 
-先把坐标字符串精确转换成百分之一单位的整数，如-3.01变为-301，整数4变为400。圆半径也乘100，然后用64位比较x²+y²≤r²；避免平方根，也避免小数舍入导致圆周点被错误排除。
+**转成整数判断**
 
-统一缩放不改变距离与半径的大小关系，因此计数准确。最后仅在4m/n时使用浮点除法。时间 $O(n)$，额外空间 $O(1)$，输出足够小数。
+把坐标精确转换成百分之一单位的整数，例如 `-3.01` 变为 $-301$，整数 `4` 变为 $400$。半径同样乘以 100，然后用 64 位整数比较 $x^2+y^2\le r^2$。坐标有负数且小数位数不固定，读入时需处理符号并补足两位小数，不能直接拼接整数、小数部分。
+
+**正确性**
+
+统一放大 100 倍不改变点与圆的位置关系，整数平方比较准确包含圆周上的点。统计得到 $m$ 后，只有最后的 $4m/n$ 使用浮点除法。
+
+**复杂度**
+
+时间 $O(n)$，额外空间 $O(1)$。
 
 ### 代码
 
 独立源码：[A.cpp](A.cpp)
 
 ```cpp
-#include <iomanip>
-#include <iostream>
-#include <string>
+#include<bits/stdc++.h>
 using namespace std;
-long long hundredths(string s) {
-    bool neg = s[0] == '-';
-    if (neg || s[0] == '+')
-        s = s.substr(1);
-    size_t p = s.find('.');
-    long long v = stoll(s.substr(0, p)) * 100;
-    if (p != string::npos) {
-        string frac = s.substr(p + 1);
-        while (frac.size() < 2)
-            frac += '0';
-        v += stoll(frac);
+typedef long long ll;
+const int M=25;
+int n,a,cnt;
+char s[M];
+int read(){
+    scanf("%s",s);
+    int i=0,x=0,k=-1,sgn=1;
+    if(s[i]=='-' || s[i]=='+'){
+        if(s[i]=='-')sgn=-1;
+        ++i;
     }
-    return neg ? -v : v;
+    for(;s[i];++i){
+        if(s[i]=='.')k=0;
+        else{
+            x=x*10+s[i]-'0';
+            if(k>=0)++k;
+        }
+    }
+    if(k<0)k=0;
+    while(k<2){
+        x*=10;
+        ++k;
+    }
+    return x*sgn;
 }
-int main() {
-    int n, a, inside = 0;
-    cin >> n >> a;
-    long long r = 100LL * a;
-    for (int i = 0; i < n; i++) {
-        string sx, sy;
-        cin >> sx >> sy;
-        long long x = hundredths(sx), y = hundredths(sy);
-        inside += x * x + y * y <= r * r;
+int main(){
+    scanf("%d%d",&n,&a);
+    ll r=a*100;
+    for(int i=0;i<n;++i){
+        ll x=read(),y=read();
+        cnt+=(x*x+y*y<=r*r);
     }
-    cout << fixed << setprecision(8) << 4.0 * inside / n << '\n';
+    printf("%.8f\n",4.0*cnt/n);
+    return 0;
 }
 ```
 
@@ -80,66 +95,81 @@ int main() {
 
 标签：`矩阵枚举` · `差分` · `区间并集`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce738a67df0b81749b678)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
 
 ### 题意
 
-对 n×n 灰度图选阈值 k，灰度≥k 为白，否则黑。求所有使某个 5×9 子矩阵恰好呈现题定 CSP 图案的 k，范围 0≤k<L，n≤200、L≤65536。图案固定、不旋转、不翻转。
+对一张 $n\times n$ 灰度图选阈值 $k$，将灰度不小于 $k$ 的格子变白，其余变黑。找出所有能在图中出现指定 $5\times9$ CSP 水印的阈值，水印不能旋转或翻转。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/)。
+输入 $n,L$ 和灰度矩阵，$n\le200$、$L\le65536$，灰度和阈值均在 $[0,L-1]$ 内。固定水印中 `1` 表示白色，`0` 表示黑色：
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509B)。
+```text
+111111111
+100100101
+100111110
+100001100
+111111100
+```
+
+按从小到大的顺序输出所有合法阈值，每行一个；没有合法阈值时不输出。
+
+来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/) · [曙梦 OJ 原题](https://oj.shumeng.tech/p/CSP202509B)。
 
 ### 题解
 
-固定一个左上角后，所有白格要求 k≤该格灰度，所有黑格要求 k>该格灰度。因此允许阈值恰是区间 `[黑格最大值+1,白格最小值]`，再与 [0,L-1] 相交。区间为空则该位置无解。
+**每个位置对应一个阈值区间**
 
-枚举所有位置，每个检查 45 格，把得到的合法闭区间用差分标记。  
-最终前缀和大于 0 的阈值，说明至少一个位置存在水印，依次输出。  
-区间约束既必要又充分，差分求其并集不会遗漏或重复输出。时间 $O(45n^2+L)$，空间 $O(n^2+L)$。
+固定水印左上角，所有白格要求 $k$ 不大于对应灰度，所有黑格要求 $k$ 大于对应灰度。因此合法阈值恰为：
+
+$$[\text{黑格最大值}+1,\ \text{白格最小值}]\cap[0,L-1].$$
+
+枚举所有能容纳水印的位置，每个位置检查 45 个格子。区间为空则跳过，否则在左端点加一、右端点后一位减一，用差分记录这些区间的并集。
+
+**正确性**
+
+白格和黑格的限制都是必要且充分的，取交集恰好得到该位置的全部合法阈值。差分前缀和大于 0，等价于至少一个位置可以呈现水印；按阈值顺序扫描即可避免重复输出。
+
+**复杂度**
+
+时间 $O(45n^2+L)$，空间 $O(n^2+L)$。
 
 ### 代码
 
 独立源码：[B.cpp](B.cpp)
 
 ```cpp
-#include <algorithm>
-#include <iostream>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, L;
-    cin >> n >> L;
-    vector<vector<int>> a(n, vector<int>(n));
-    for (auto &r : a)
-        for (int &x : r)
-            cin >> x;
-    string pattern[] = {"111111111", "100100101", "100111110", "100001100", "111111100"};
-    vector<int> diff(L + 1);
-    for (int i = 0; i + 4 < n; i++)
-        for (int j = 0; j + 8 < n; j++) {
-            int low = 0, high = L - 1;
-            for (int u = 0; u < 5; u++)
-                for (int v = 0; v < 9; v++) {
-                    if (pattern[u][v] == '1')
-                        high = min(high, a[i + u][j + v]);
-                    else
-                        low = max(low, a[i + u][j + v] + 1);
-                }
-            if (low <= high) {
-                ++diff[low];
-                --diff[high + 1];
-            }
+const int N=205,M=65540,H=5,W=10;
+int n,m,a[N][N],d[M];
+char s[H][W]={"111111111","100100101","100111110","100001100","111111100"};
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=0;i<n;++i){
+        for(int j=0;j<n;++j){
+            scanf("%d",&a[i][j]);
         }
-    int sum = 0;
-    for (int k = 0; k < L; k++) {
-        sum += diff[k];
-        if (sum)
-            cout << k << '\n';
     }
+    for(int i=0;i+H<=n;++i){
+        for(int j=0;j+W-1<=n;++j){
+            int l=0,r=m-1;
+            for(int u=0;u<H;++u){
+                for(int v=0;v<W-1;++v){
+                    if(s[u][v]=='1')r=min(r,a[i+u][j+v]);
+                    else l=max(l,a[i+u][j+v]+1);
+                }
+            }
+            if(l>r)continue;
+            ++d[l];
+            --d[r+1];
+        }
+    }
+    int sum=0;
+    for(int i=0;i<m;++i){
+        sum+=d[i];
+        if(sum)printf("%d\n",i);
+    }
+    return 0;
 }
 ```
 
@@ -149,121 +179,133 @@ int main() {
 
 标签：`字符串解析` · `Huffman` · `双端队列` · `模拟`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce739a67df0b81749b685)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
 
 ### 题意
 
-模拟简化 HPACK。静态表有 S 项，动态表最多 D 项，新项插在动态表最前面，超限删除末项。  
-指令 1 引用完整条目；2 指定字段名和字段值并加入动态表；3 只输出、不加入。  
-字段名可直接给出或按表索引引用。普通字符串原样输出，HH 开头去掉一个 H；单个 H 开头表示十六进制 Huffman 数据，末字节是补零位数。  
-输出 `key: value`。
+模拟简化的 HPACK 头信息解码。静态表保存固定条目，动态表保存最近插入的条目；每个条目包含字段名与字段值。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/)。
+输入静态表大小 $S$、动态表容量 $D$，再输入静态条目、Huffman 树的前序编码和指令数，最后依次输入各条指令。表索引从 1 开始，静态表在前、动态表在后；新条目插入动态表最前端，超出容量时删除末项。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509C)。
+- 指令 `1`：按索引引用完整条目。
+- 指令 `2`：指定字段名与字段值，输出后加入动态表。
+- 指令 `3`：指定字段名与字段值，仅输出，不加入动态表。
+
+后两种指令的字段名既可以按索引引用，也可以在索引为 0 时直接给出。指令中的普通字符串原样使用，`HH` 开头的字符串去掉一个 `H`；只有一个前导 `H` 时，后面是十六进制 Huffman 数据，末字节表示补零位数。静态表的字符串已经是原文。
+
+每条指令输出一行 `key: value`。
+
+来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/) · [曙梦 OJ 原题](https://oj.shumeng.tech/p/CSP202509C)。
 
 ### 题解
 
-先按前序编码重建 Huffman 树：读到 1 后再读一个字符形成叶子；读到 0 则依次递归建立左右子树。  
-解码十六进制串时，最后一字节只表示补零位数，不是内容；剩下的数据按每字节高位到低位沿树行走，到叶子输出字符并回根，最后的补零位不参与解码。
+**重建并解码 Huffman 树**
 
-静态表用数组，动态表用 deque；索引 1 到 S 对应静态表，其余减去 S 后对应动态表。  
-每条指令先完整取得当前字段名和字段值，输出后才按类型 2 插入动态表，避免插入造成索引偏移。  
-表中的静态字符串已经是原文，不应再次执行 H 解码；只有指令中的字面量需要解码。
+前序编码中，读到 `1` 后再读一个字符，建立叶子；读到 `0` 则递归建立左右子树。用节点下标连接子树，避免容器扩容时引用失效。
 
-Huffman 树是前缀码，到叶子即确定唯一字符；表更新顺序又与指令一致，因此逐条归纳得到正确输出。时间与输入解码位数、输出字符总数线性相关，动态表操作均为常数次，空间为树与两张表的字符串总量。
+解码十六进制串时，最后一字节表示补零位数，不属于实际内容。剩余数据从高位向低位沿树行走，到叶子就输出字符并回到根；末尾的补零位不参与解码。`HH` 的转义优先判断，普通字符串直接返回。
+
+**维护两张表**
+
+静态表存入顺序表 `a`，动态表用 `deque` `d`，统一通过 `f(x)` 按索引取条目。索引 $1$ 到 $S$ 对应静态条目，其余减去 $S$ 后对应动态表。每条指令先完整取得字段名、字段值，输出后才按指令 `2` 插入动态表，避免插入造成索引偏移。
+
+静态表中保存的已经是原文，只有指令内的字面量才执行解码。动态表取得的字段也不能重复解码。
+
+**正确性**
+
+Huffman 编码是前缀码，到达叶子即可确定唯一字符。两张表的索引、插入和淘汰顺序与指令一致，因此每条指令都能取得正确条目，逐条输出即为答案。
+
+**复杂度**
+
+时间与输入解码位数及输出字符总数线性相关；空间为 Huffman 树与两张表保存的字符串总量。动态表每次插入、淘汰只需常数次操作。
 
 ### 代码
 
 独立源码：[C.cpp](C.cpp)
 
 ```cpp
-#include <deque>
-#include <functional>
-#include <iostream>
-#include <string>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Node {
-    int left = -1, right = -1;
-    char symbol = 0;
+typedef pair<string,string> P;
+struct node{
+    int l,r;
+    char c;
 };
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int s, capacity;
-    cin >> s >> capacity;
-    vector<pair<string, string>> fixed(s);
-    for (auto &[key, value] : fixed)
-        cin >> key >> value;
-    string encoding;
-    cin >> encoding;
-    vector<Node> tree;
-    int position = 0;
-    function<int()> parse = [&]() {
-        int u = tree.size();
-        tree.push_back({});
-        char type = encoding[position++];
-        if (type == '1')
-            tree[u].symbol = encoding[position++];
-        else {
-            int left = parse(), right = parse();
-            tree[u].left = left;
-            tree[u].right = right;
-        }
-        return u;
-    };
-    int root = parse();
-    auto hex = [](char c) { return c <= '9' ? c - '0' : c - 'a' + 10; };
-    auto decode = [&](const string &input) {
-        if (input[0] != 'H')
-            return input;
-        if (input.size() > 1 && input[1] == 'H')
-            return input.substr(1);
-        int bytes = (input.size() - 1) / 2,
-            padding = hex(input[input.size() - 2]) * 16 + hex(input.back());
-        int bits = (bytes - 1) * 8 - padding;
-        string result;
-        int u = root;
-        for (int i = 0; i < bits; ++i) {
-            int bit = (hex(input[1 + i / 4]) >> (3 - i % 4)) & 1;
-            u = bit ? tree[u].right : tree[u].left;
-            if (tree[u].symbol) {
-                result += tree[u].symbol;
-                u = root;
-            }
-        }
-        return result;
-    };
-    deque<pair<string, string>> dynamic;
-    auto lookup = [&](int index) { return index <= s ? fixed[index - 1] : dynamic[index - s - 1]; };
-    int n;
-    cin >> n;
-    while (n--) {
-        int type, index;
-        cin >> type >> index;
-        pair<string, string> header;
-        if (type == 1)
-            header = lookup(index);
-        else {
-            string value;
-            if (index == 0) {
-                string key;
-                cin >> key;
-                header.first = decode(key);
-            } else
-                header.first = lookup(index).first;
-            cin >> value;
-            header.second = decode(value);
-        }
-        cout << header.first << ": " << header.second << '\n';
-        if (type == 2) {
-            dynamic.push_front(header);
-            if (int(dynamic.size()) > capacity)
-                dynamic.pop_back();
+int n,m,q,p;
+string s;
+vector<node> tr(1);
+vector<P> a;
+deque<P> d;
+string read(){
+    string t;
+    int c=getchar();
+    while(isspace(c)){
+        c=getchar();
+    }
+    while(c!=EOF && !isspace(c)){
+        t+=char(c);
+        c=getchar();
+    }
+    return t;
+}
+int build(){
+    int u=tr.size();
+    tr.push_back({0,0,0});
+    if(s[p++]=='1')tr[u].c=s[p++];
+    else{
+        tr[u].l=build();
+        tr[u].r=build();
+    }
+    return u;
+}
+int hex(char c){
+    return c<='9'?c-'0':c-'a'+10;
+}
+string decode(string t){
+    if(t[0]!='H')return t;
+    if(t.size()>1 && t[1]=='H')return t.substr(1);
+    int len=t.size();
+    int w=hex(t[len-2])*16+hex(t[len-1]);
+    int b=((len-1)/2-1)*8-w,u=1;
+    string ans;
+    for(int i=0;i<b;++i){
+        int v=(hex(t[1+i/4])>>(3-i%4))&1;
+        u=v?tr[u].r:tr[u].l;
+        if(tr[u].c){
+            ans+=tr[u].c;
+            u=1;
         }
     }
+    return ans;
+}
+P f(int x){
+    return x<=n?a[x-1]:d[x-n-1];
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=0;i<n;++i){
+        string k=read(),v=read();
+        a.push_back({k,v});
+    }
+    s=read();
+    build();
+    scanf("%d",&q);
+    while(q--){
+        int op,x;
+        scanf("%d%d",&op,&x);
+        P cur;
+        if(op==1)cur=f(x);
+        else{
+            cur.first=x?f(x).first:decode(read());
+            cur.second=decode(read());
+        }
+        printf("%s: %s\n",cur.first.c_str(),cur.second.c_str());
+        if(op==2){
+            d.push_front(cur);
+            if((int)d.size()>m)d.pop_back();
+        }
+    }
+    return 0;
 }
 ```
 
@@ -273,127 +315,144 @@ int main() {
 
 标签：`树` · `LCA` · `可持久化线段树` · `mex`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；150 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
 
 ### 题意
 
-给定一棵 $n$ 个点的树，每个点有一个权值，所有权值恰为 $0,1,\ldots,n-1$ 的排列。  
-每次询问两点之间简单路径上的权值集合的 mex，即最小未出现的非负整数。  
-输入 $n,m$、点权、$n-1$ 条边和 $m$ 对查询端点；每个查询输出一个整数。  
-$n,m\le2\times10^5$。
+给定一棵 $n$ 个点的树，点权恰为 $0,1,\ldots,n-1$ 的排列。每次询问两点间简单路径上的权值集合的 mex，即最小未出现的非负整数。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/)。
+输入 $n,m$、各点点权、$n-1$ 条边和 $m$ 对查询端点，$n,m\le2\times10^5$。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509D)。
+每次查询输出一个整数，表示该路径的 mex。
+
+来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/) · [曙梦 OJ 原题](https://oj.shumeng.tech/p/CSP202509D)。
 
 ### 题解
 
-**把树上路径拆成四条根路径。** 任取 1 为根，建立每个点 $u$ 对应的版本，记录从根到 $u$ 所有权值的出现次数。  
-若 $w=\operatorname{LCA}(u,v)$，查询路径的计数就是版本 $u+v-w-\operatorname{parent}(w)$；空节点 0 的版本全为零。  
-这样公共祖先恰好保留一次。
+**把路径拆成四条根路径**
 
-每个版本用可持久化线段树保存权值区间的计数。插入当前点权时，只复制根到叶的一条链，旧节点供其他版本共享。树的遍历用队列式数组完成，避免链状输入导致 DFS 栈溢出；LCA 用倍增。
+以 1 为根，建立每个点 $u$ 对应的可持久化线段树版本，记录根到 $u$ 的点权出现次数。若 $w=\operatorname{LCA}(u,v)$，则查询路径的计数为：
 
-**在线段树上找第一个空缺。** 值域取 $[0,n]$，因为 $n$ 一定没有出现。  
-若当前左半区间包含的权值个数等于左半区间长度，则其每个数都在路径上，mex 必在右边；否则向左走。  
-这个判定严格依赖“全局权值互不相同”：若允许重复，计数等于长度不再代表全部出现。
+$$\operatorname{root}(u)+\operatorname{root}(v)-\operatorname{root}(w)-\operatorname{root}(\operatorname{parent}(w)).$$
 
-四版本相减恰好得到路径上的集合；每一步都保留含有最小缺失值的半区间，因此最后的叶子就是 mex。总时间 $O((n+m)\log n)$，空间 $O(n\log n)$。
+公共祖先恰好保留一次。点 0 的版本全为零；代码先建一棵空树，每次插入只复制根到叶的一条链，其余节点共享。树的遍历使用队列式数组，避免链状树导致 DFS 栈溢出，LCA 使用倍增。
+
+**在线段树上找第一个空缺**
+
+值域取 $[0,n]$，因为 $n$ 一定没有出现。若当前左半区间的权值个数等于其长度，说明每个数都已出现，mex 必在右侧；否则向左侧继续找。
+
+这个判定依赖全局权值互不相同。若允许重复，计数等于区间长度就不能代表每个数都出现。
+
+**正确性**
+
+四个版本相减准确得到查询路径上的权值集合。每次下降都保留包含最小缺失值的半区间，最终叶子就是 mex。
+
+**复杂度**
+
+时间 $O((n+m)\log n)$，空间 $O(n\log n)$。
 
 ### 代码
 
 独立源码：[D.cpp](D.cpp)
 
 ```cpp
-#include <array>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int LOG = 20;
-struct Node {
-    int left = 0, right = 0, count = 0;
-};
-vector<Node> seg(1);
-int insert(int old, int l, int r, int x) {
-    int u = seg.size();
-    seg.push_back(seg[old]);
-    ++seg[u].count;
-    if (l < r) {
-        int mid = (l + r) / 2;
-        if (x <= mid)
-            seg[u].left = insert(seg[old].left, l, mid, x);
-        else
-            seg[u].right = insert(seg[old].right, mid + 1, r, x);
+const int N=2e5+10,M=20,K=N*22;
+int n,m,a[N],rt[N],dep[N],fa[N][M];
+vector<int> g[N],ord;
+struct segtree{
+    struct node{
+        int l,r,ls,rs,cnt;
+    }e[K];
+    #define l(p) e[p].l
+    #define r(p) e[p].r
+    int tot;
+    int build(int x,int y){
+        int p=++tot;
+        l(p)=x;r(p)=y;
+        if(x==y)return p;
+        int mid=(x+y)/2;
+        e[p].ls=build(x,mid);
+        e[p].rs=build(mid+1,y);
+        return p;
     }
-    return u;
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<int> a(n + 1), root(n + 1), depth(n + 1);
-    vector<array<int, LOG>> up(n + 1);
-    vector<vector<int>> graph(n + 1);
-    for (int i = 1; i <= n; ++i)
-        cin >> a[i];
-    for (int i = 1; i < n; ++i) {
-        int u, v;
-        cin >> u >> v;
-        graph[u].push_back(v);
-        graph[v].push_back(u);
+    int update(int old,int x){
+        int p=++tot;
+        e[p]=e[old];
+        ++e[p].cnt;
+        if(l(p)==r(p))return p;
+        int mid=(l(p)+r(p))/2;
+        if(x<=mid)e[p].ls=update(e[old].ls,x);
+        else e[p].rs=update(e[old].rs,x);
+        return p;
     }
-    seg.reserve(size_t(n) * (LOG + 1));
-    vector<int> order{1};
-    for (size_t i = 0; i < order.size(); ++i) {
-        int u = order[i];
-        root[u] = insert(root[up[u][0]], 0, n, a[u]);
-        for (int j = 1; j < LOG; ++j)
-            up[u][j] = up[up[u][j - 1]][j - 1];
-        for (int v : graph[u]) {
-            if (v == up[u][0])
-                continue;
-            up[v][0] = u;
-            depth[v] = depth[u] + 1;
-            order.push_back(v);
-        }
-    }
-    auto lca = [&](int u, int v) {
-        if (depth[u] < depth[v])
-            swap(u, v);
-        int difference = depth[u] - depth[v];
-        for (int j = 0; j < LOG; ++j)
-            if (difference >> j & 1)
-                u = up[u][j];
-        if (u == v)
-            return u;
-        for (int j = LOG - 1; j >= 0; --j)
-            if (up[u][j] != up[v][j]) {
-                u = up[u][j];
-                v = up[v][j];
+    int query(int x,int y,int z,int w){
+        while(l(x)<r(x)){
+            int mid=(l(x)+r(x))/2;
+            int u=e[x].ls,v=e[y].ls;
+            int s=e[z].ls,t=e[w].ls;
+            int cnt=e[u].cnt+e[v].cnt-e[s].cnt-e[t].cnt;
+            if(cnt==mid-l(x)+1){
+                x=e[x].rs,y=e[y].rs;
+                z=e[z].rs,w=e[w].rs;
             }
-        return up[u][0];
-    };
-    while (m--) {
-        int u, v;
-        cin >> u >> v;
-        int w = lca(u, v);
-        array<int, 4> roots{root[u], root[v], root[w], root[up[w][0]]};
-        int l = 0, r = n;
-        while (l < r) {
-            int mid = (l + r) / 2;
-            int count = seg[seg[roots[0]].left].count + seg[seg[roots[1]].left].count -
-                        seg[seg[roots[2]].left].count - seg[seg[roots[3]].left].count;
-            bool full = count == mid - l + 1;
-            for (int &rt : roots)
-                rt = full ? seg[rt].right : seg[rt].left;
-            if (full)
-                l = mid + 1;
-            else
-                r = mid;
+            else{
+                x=u,y=v,z=s,w=t;
+            }
         }
-        cout << l << '\n';
+        return l(x);
     }
+}tr;
+int lca(int u,int v){
+    if(dep[u]<dep[v])swap(u,v);
+    int d=dep[u]-dep[v];
+    for(int i=0;i<M;++i){
+        if(d>>i&1)u=fa[u][i];
+    }
+    if(u==v)return u;
+    for(int i=M-1;i>=0;--i){
+        if(fa[u][i]!=fa[v][i]){
+            u=fa[u][i];
+            v=fa[v][i];
+        }
+    }
+    return fa[u][0];
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;++i){
+        scanf("%d",&a[i]);
+    }
+    for(int i=1;i<n;++i){
+        int u,v;
+        scanf("%d%d",&u,&v);
+        g[u].push_back(v);
+        g[v].push_back(u);
+    }
+    rt[0]=tr.build(0,n);
+    ord.push_back(1);
+    for(int i=0;i<(int)ord.size();++i){
+        int u=ord[i];
+        rt[u]=tr.update(rt[fa[u][0]],a[u]);
+        for(int j=1;j<M;++j){
+            fa[u][j]=fa[fa[u][j-1]][j-1];
+        }
+        for(int &v:g[u]){
+            if(v==fa[u][0])continue;
+            fa[v][0]=u;
+            dep[v]=dep[u]+1;
+            ord.push_back(v);
+        }
+    }
+    while(m--){
+        int u,v;
+        scanf("%d%d",&u,&v);
+        int w=lca(u,v);
+        int ans=tr.query(rt[u],rt[v],rt[w],rt[fa[w][0]]);
+        printf("%d\n",ans);
+    }
+    return 0;
 }
 ```
 
@@ -403,104 +462,122 @@ int main() {
 
 标签：`动态规划` · `离散凸性` · `优先队列` · `拉格朗日优化`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
 
 ### 题意
 
-共 $n$ 天，第 $i$ 天上午至多造一题、费用 $a_i$，下午至多验一题、费用 $b_i$。  
-验题之前必须已经造好，同一天上午造的题可以下午验。给定预算 $m$，求最多完成的题数。  
-输入 `n m`，然后两行费用。$n\le5\times10^5$，费用在 $[1,10^9]$，预算不超过 $10^{18}$。
+共 $n$ 天，第 $i$ 天上午至多造一题，费用为 $a_i$；下午至多验一题，费用为 $b_i$。验题之前必须已经造好，同一天上午造的题可以在下午验。给定预算 $m$，求最多能完成多少题。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/)
+输入 `n m`，再输入两行造题、验题费用。$n\le5\times10^5$，费用在 $[1,10^9]$ 内，预算不超过 $10^{18}$。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202509E)。
+输出预算内最多能完成的题数。
+
+来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/) · [曙梦 OJ 原题](https://oj.shumeng.tech/p/CSP202509E)。
 
 ### 题解
 
-**从余额 DP 开始。** 余额 $h$ 表示已造未验的题数，始终不能为负。  
-若固定完成题数，直接 DP 要同时记天数、余额和完成数，规模太大。  
-给每完成一题奖励 $\lambda$，把验题费用改成 $b_i-\lambda$，只需最小化“真实费用减奖励”。
+**从余额 DP 开始**
 
-设当前 $F(h)$ 为余额 $h$ 的最小调整费用。它是离散凸函数，即相邻差 $D_h=F(h)-F(h-1)$ 不递减。  
-用一个小根堆保存全部斜率，并另外保存 $F(0)$。上午可以不造或造一题，转移是与序列 $(0,a_i)$ 做最小卷积，等价于把斜率 $a_i$ 插入堆。  
-下午令 $c=b_i-\lambda$：若最小斜率 $d$ 满足 $d+c<0$，则把 $F(0)$ 加上 $d+c$，弹出 $d$，插入 $-c$；否则保持。  
-这来自 $F_{new}(h)=\min(F(h),F(h+1)+c)$：相邻候选在斜率首次超过 $-c$ 处切换，斜率多重集恰好替换一次。
+余额 $h$ 表示已造未验的题数，始终不能为负。若固定完成题数，直接 DP 需要同时记录天数、余额和完成数，状态过多。给每完成一题奖励 $\lambda$，把验题费用改为 $b_i-\lambda$，便只需最小化“真实费用减奖励”。
 
-**同时恢复题数。** 堆元素和 $F(0)$ 都用二元组 `(调整费用, -完成数)`，按字典序比较。  
-费用相等时选择完成数最多的方案。加减二元组就是对整个目标函数做相同运算，最终从第二维恢复完成数，再加回奖励得到真实费用。
+设 $F(h)$ 为余额 $h$ 的最小调整费用。它是离散凸函数，即相邻差 $D_h=F(h)-F(h-1)$ 不递减，用小根堆保存全部斜率，并另外保存 $F(0)$。
 
-**预算对应哪个断点？** 固定完成数的最小费用 $C(k)$ 是整数离散凸函数；可将它看作单位容量费用流的最小费用，逐次增广的边际费用不减。  
-二分最大的整数奖励 `lo`，使所选方案仍在预算内；下一个奖励 `hi=lo+1` 对应一段边际费用都等于 `hi` 的题目。  
-若 `lo` 得到 $(cost,count)$，还可多做 $\lfloor(m-cost)/hi\rfloor$ 题。先判断全部题都能完成的情况，避免没有右边界。
+上午可以不造或造一题，转移相当于与序列 $(0,a_i)$ 做最小卷积，也就是把斜率 $a_i$ 插入堆。下午令 $c=b_i-\lambda$，转移为：
 
-**复杂度。** 每次参数求解 $O(n\log n)$，总计 $O(n\log n\log(2\times10^9))$，空间 $O(n)$。费用、预算和乘积使用 64 位整数。
+$$F_{\mathrm{new}}(h)=\min(F(h),F(h+1)+c).$$
+
+若最小斜率 $d$ 满足 $d+c<0$，把 $F(0)$ 加上 $d+c$，弹出 $d$ 并插入 $-c$；否则保持不变。相邻候选在斜率首次超过 $-c$ 处切换，因此斜率多重集恰好替换一次。
+
+**同时恢复题数**
+
+堆元素和 $F(0)$ 都用二元组 `(调整费用, -完成数)`，按字典序比较，费用相等时选择完成数最多的方案。加减二元组，就是对整个目标函数做相同运算；最终从第二维恢复完成数，再加回奖励得到真实费用。
+
+**找到预算对应的断点**
+
+固定完成数的最小费用 $C(k)$ 是整数离散凸函数。可将它看作单位容量费用流的最小费用，逐次增广的边际费用不递减。二分最大的整数奖励 `l`，使选出的方案仍在预算内；下一个奖励 `r=l+1` 对应一段边际费用均为 `r` 的题目。
+
+若 `l` 对应真实费用和题数为 $(cost,cnt)$，还可以增加的题数是：
+
+$$\left\lfloor\frac{m-cost}{r}\right\rfloor.$$
+
+先判断全部题都能完成的情况，避免二分没有越过预算的右边界。每题造、验费用之和至多 $2\times10^9$，所以右边界取 $2\times10^9+1$。
+
+**复杂度**
+
+每次参数求解 $O(n\log n)$，总时间 $O(n\log n\log(2\times10^9))$，空间 $O(n)$。费用、预算及乘积使用 64 位整数。
 
 ### 代码
 
 独立源码：[E.cpp](E.cpp)
 
 ```cpp
-#include <algorithm>
-#include <functional>
-#include <iostream>
-#include <queue>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-using P = pair<ll, int>; // adjusted cost, negative number of completed tasks
-P operator+(P a, P b) {
-    return {a.first + b.first, a.second + b.second};
+typedef long long ll;
+typedef pair<ll,int> P;
+const int N=5e5+10;
+int n;
+ll m,sum,a[N],b[N];
+P operator+(P x,P y){
+    return {x.first+y.first,x.second+y.second};
 }
-P operator-(P a) {
-    return {-a.first, -a.second};
+P operator-(P x){
+    return {-x.first,-x.second};
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    ll budget;
-    cin >> n >> budget;
-    vector<ll> a(n), b(n);
-    ll full = 0;
-    for (auto &x : a) {
-        cin >> x;
-        full += x;
+pair<ll,ll> check(ll k){
+    priority_queue<P,vector<P>,greater<P>> q;
+    P dp={0,0};
+    for(int i=1;i<=n;++i){
+        q.push({a[i],0});
+        P val={b[i]-k,-1};
+        P cur=q.top()+val;
+        if(cur<P{0,0}){
+            dp=dp+cur;
+            q.pop();
+            q.push(-val);
+        }
     }
-    for (auto &x : b) {
-        cin >> x;
-        full += x;
+    ll cnt=-dp.second;
+    return {dp.first+k*cnt,cnt};
+}
+int main(){
+    scanf("%d%lld",&n,&m);
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&a[i]);
+        sum+=a[i];
     }
-    if (full <= budget) {
-        cout << n << '\n';
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&b[i]);
+        sum+=b[i];
+    }
+    if(sum<=m){
+        printf("%d\n",n);
         return 0;
     }
-    auto evaluate = [&](ll reward) {
-        priority_queue<P, vector<P>, greater<P>> slopes;
-        P base{0, 0};
-        for (int i = 0; i < n; ++i) {
-            slopes.push({a[i], 0});
-            P finish{b[i] - reward, -1};
-            P change = slopes.top() + finish;
-            if (change < P{0, 0}) {
-                base = base + change;
-                slopes.pop();
-                slopes.push(-finish);
-            }
-        }
-        ll count = -base.second;
-        return pair<ll, ll>{base.first + reward * count, count};
-    };
-    ll lo = 0, hi = 2000000001LL;
-    while (lo + 1 < hi) {
-        ll mid = (lo + hi) / 2;
-        if (evaluate(mid).first <= budget)
-            lo = mid;
-        else
-            hi = mid;
+    ll l=0,r=(ll)2e9+1;
+    while(l+1<r){
+        ll mid=(l+r)/2;
+        P res=check(mid);
+        if(res.first<=m)l=mid;
+        else r=mid;
     }
-    auto [cost, count] = evaluate(lo);
-    // All additional tasks at the next breakpoint have marginal cost hi.
-    cout << count + (budget - cost) / hi << '\n';
+    auto [cost,cnt]=check(l);
+    printf("%lld\n",cnt+(m-cost)/r);
+    return 0;
 }
 ```
+
+<!-- local-validation-attachments:start -->
+
+### 验证附件
+
+- [VALIDATION.md](../tests/202509/VALIDATION.md)
+- [prose-final-review.json](../tests/202509/prose-final-review.json)
+- [report.json](../tests/202509/report.json)
+- [retained_oracles.py](../tests/202509/retained_oracles.py)
+- [style-before.json](../tests/202509/style-before.json)
+- [style-followup-report.json](../tests/202509/style-followup-report.json)
+- [verify-style-followup.py](../tests/202509/verify-style-followup.py)
+- [verify.py](../tests/202509/verify.py)
+
+<!-- local-validation-attachments:end -->

@@ -1,90 +1,98 @@
-#include <array>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int LOG = 20;
-struct Node {
-    int left = 0, right = 0, count = 0;
-};
-vector<Node> seg(1);
-int insert(int old, int l, int r, int x) {
-    int u = seg.size();
-    seg.push_back(seg[old]);
-    ++seg[u].count;
-    if (l < r) {
-        int mid = (l + r) / 2;
-        if (x <= mid)
-            seg[u].left = insert(seg[old].left, l, mid, x);
-        else
-            seg[u].right = insert(seg[old].right, mid + 1, r, x);
+const int N=2e5+10,M=20,K=N*22;
+int n,m,a[N],rt[N],dep[N],fa[N][M];
+vector<int> g[N],ord;
+struct segtree{
+    struct node{
+        int l,r,ls,rs,cnt;
+    }e[K];
+    #define l(p) e[p].l
+    #define r(p) e[p].r
+    int tot;
+    int build(int x,int y){
+        int p=++tot;
+        l(p)=x;r(p)=y;
+        if(x==y)return p;
+        int mid=(x+y)/2;
+        e[p].ls=build(x,mid);
+        e[p].rs=build(mid+1,y);
+        return p;
     }
-    return u;
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<int> a(n + 1), root(n + 1), depth(n + 1);
-    vector<array<int, LOG>> up(n + 1);
-    vector<vector<int>> graph(n + 1);
-    for (int i = 1; i <= n; ++i)
-        cin >> a[i];
-    for (int i = 1; i < n; ++i) {
-        int u, v;
-        cin >> u >> v;
-        graph[u].push_back(v);
-        graph[v].push_back(u);
+    int update(int old,int x){
+        int p=++tot;
+        e[p]=e[old];
+        ++e[p].cnt;
+        if(l(p)==r(p))return p;
+        int mid=(l(p)+r(p))/2;
+        if(x<=mid)e[p].ls=update(e[old].ls,x);
+        else e[p].rs=update(e[old].rs,x);
+        return p;
     }
-    seg.reserve(size_t(n) * (LOG + 1));
-    vector<int> order{1};
-    for (size_t i = 0; i < order.size(); ++i) {
-        int u = order[i];
-        root[u] = insert(root[up[u][0]], 0, n, a[u]);
-        for (int j = 1; j < LOG; ++j)
-            up[u][j] = up[up[u][j - 1]][j - 1];
-        for (int v : graph[u]) {
-            if (v == up[u][0])
-                continue;
-            up[v][0] = u;
-            depth[v] = depth[u] + 1;
-            order.push_back(v);
-        }
-    }
-    auto lca = [&](int u, int v) {
-        if (depth[u] < depth[v])
-            swap(u, v);
-        int difference = depth[u] - depth[v];
-        for (int j = 0; j < LOG; ++j)
-            if (difference >> j & 1)
-                u = up[u][j];
-        if (u == v)
-            return u;
-        for (int j = LOG - 1; j >= 0; --j)
-            if (up[u][j] != up[v][j]) {
-                u = up[u][j];
-                v = up[v][j];
+    int query(int x,int y,int z,int w){
+        while(l(x)<r(x)){
+            int mid=(l(x)+r(x))/2;
+            int u=e[x].ls,v=e[y].ls;
+            int s=e[z].ls,t=e[w].ls;
+            int cnt=e[u].cnt+e[v].cnt-e[s].cnt-e[t].cnt;
+            if(cnt==mid-l(x)+1){
+                x=e[x].rs,y=e[y].rs;
+                z=e[z].rs,w=e[w].rs;
             }
-        return up[u][0];
-    };
-    while (m--) {
-        int u, v;
-        cin >> u >> v;
-        int w = lca(u, v);
-        array<int, 4> roots{root[u], root[v], root[w], root[up[w][0]]};
-        int l = 0, r = n;
-        while (l < r) {
-            int mid = (l + r) / 2;
-            int count = seg[seg[roots[0]].left].count + seg[seg[roots[1]].left].count -
-                        seg[seg[roots[2]].left].count - seg[seg[roots[3]].left].count;
-            bool full = count == mid - l + 1;
-            for (int &rt : roots)
-                rt = full ? seg[rt].right : seg[rt].left;
-            if (full)
-                l = mid + 1;
-            else
-                r = mid;
+            else{
+                x=u,y=v,z=s,w=t;
+            }
         }
-        cout << l << '\n';
+        return l(x);
     }
+}tr;
+int lca(int u,int v){
+    if(dep[u]<dep[v])swap(u,v);
+    int d=dep[u]-dep[v];
+    for(int i=0;i<M;++i){
+        if(d>>i&1)u=fa[u][i];
+    }
+    if(u==v)return u;
+    for(int i=M-1;i>=0;--i){
+        if(fa[u][i]!=fa[v][i]){
+            u=fa[u][i];
+            v=fa[v][i];
+        }
+    }
+    return fa[u][0];
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;++i){
+        scanf("%d",&a[i]);
+    }
+    for(int i=1;i<n;++i){
+        int u,v;
+        scanf("%d%d",&u,&v);
+        g[u].push_back(v);
+        g[v].push_back(u);
+    }
+    rt[0]=tr.build(0,n);
+    ord.push_back(1);
+    for(int i=0;i<(int)ord.size();++i){
+        int u=ord[i];
+        rt[u]=tr.update(rt[fa[u][0]],a[u]);
+        for(int j=1;j<M;++j){
+            fa[u][j]=fa[fa[u][j-1]][j-1];
+        }
+        for(int &v:g[u]){
+            if(v==fa[u][0])continue;
+            fa[v][0]=u;
+            dep[v]=dep[u]+1;
+            ord.push_back(v);
+        }
+    }
+    while(m--){
+        int u,v;
+        scanf("%d%d",&u,&v);
+        int w=lca(u,v);
+        int ans=tr.query(rt[u],rt[v],rt[w],rt[fa[w][0]]);
+        printf("%d\n",ans);
+    }
+    return 0;
 }

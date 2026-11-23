@@ -1,0 +1,66 @@
+{
+  "changes": "B字模整体单行；C pos/p、pad/w、bits/b、key/k、val/v、get/f；动态表d避免与位数b重名；D成组短赋值及查询结果局部变量；E二分右界显式ll转换、check结果先存P res。",
+  "before_sha256": {
+    "B": "3e756a2b9f936b5f4f10ddc831ecd4c3735518b7d141b3471089a03bb58cf087",
+    "C": "834ebd52033b63dcd96dfbfab3a6886d38590b5d78fd28ec8b6ee966cb7d30a8",
+    "D": "6f09013511acaaf01629bcd02bc7e294b41a3142bee1cdb306db185f7517d4bb",
+    "E": "9a44c2a9a289ec5056b78fb4ec43394929ad0ab61957630a529eeaf3fe89c591"
+  },
+  "after_sha256": {
+    "B": "0b3b127e87de2706f8c194544025e02b807687714d7f0d380b4512344bd0a2d8",
+    "C": "e9d6976a5a6a902e5cfa1f3f6320acead297ab8fff6b12b84f709036476ca2a9",
+    "D": "9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da",
+    "E": "f30997019754ecdbad11e1e9a94bec8515d9360f4681cd3deeaded7e9d073288"
+  },
+  "checks": [
+    {
+      "mode": "O2",
+      "problem": "B",
+      "inputs": 2,
+      "result": "passed"
+    },
+    {
+      "mode": "O2",
+      "problem": "C",
+      "inputs": 103,
+      "result": "passed"
+    },
+    {
+      "mode": "O2",
+      "problem": "D",
+      "inputs": 312,
+      "result": "passed"
+    },
+    {
+      "mode": "O2",
+      "problem": "E",
+      "inputs": 894,
+      "result": "passed"
+    },
+    {
+      "mode": "UBSan",
+      "problem": "B",
+      "inputs": 2,
+      "result": "passed"
+    },
+    {
+      "mode": "UBSan",
+      "problem": "C",
+      "inputs": 103,
+      "result": "passed"
+    },
+    {
+      "mode": "UBSan",
+      "problem": "D",
+      "inputs": 312,
+      "result": "passed"
+    },
+    {
+      "mode": "UBSan",
+      "problem": "E",
+      "inputs": 894,
+      "result": "passed"
+    }
+  ],
+  "history": "report.json保留前一版源码哈希和全量1442输入记录；本次仅补跑受影响B/C/D/E。"
+}
