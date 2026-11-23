@@ -1,0 +1,134 @@
+{
+  "contest": "202206",
+  "distinct_cases": 633,
+  "results": {
+    "opt": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 100,
+        "E:retained_independent": 260,
+        "A:saved": 1,
+        "B:saved": 2,
+        "C:saved": 1,
+        "D:saved": 1,
+        "E:saved": 2,
+        "A:boundary": 1,
+        "B:stress": 1,
+        "C:stress": 1,
+        "D:stress": 1,
+        "D:boundary": 1,
+        "E:stress": 1
+      },
+      "total": 633,
+      "seconds": 6.836,
+      "stresses": [
+        {
+          "problem": "B",
+          "label": "1000 sparse trees and S=50",
+          "seconds": 0.0033
+        },
+        {
+          "problem": "C",
+          "label": "500 roles and 5000 queries of 400 groups",
+          "seconds": 0.0965
+        },
+        {
+          "problem": "D",
+          "label": "300000 total mirror length and 100000 operations",
+          "seconds": 0.108
+        },
+        {
+          "problem": "E",
+          "label": "500000 large close points; 20000 partial operations",
+          "seconds": 0.0828
+        }
+      ]
+    },
+    "ubsan": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 100,
+        "E:retained_independent": 260,
+        "A:saved": 1,
+        "B:saved": 2,
+        "C:saved": 1,
+        "D:saved": 1,
+        "E:saved": 2,
+        "A:boundary": 1,
+        "B:stress": 1,
+        "C:stress": 1,
+        "D:stress": 1,
+        "D:boundary": 1,
+        "E:stress": 1
+      },
+      "total": 633,
+      "seconds": 8.49,
+      "stresses": [
+        {
+          "problem": "B",
+          "label": "1000 sparse trees and S=50",
+          "seconds": 0.0065
+        },
+        {
+          "problem": "C",
+          "label": "500 roles and 5000 queries of 400 groups",
+          "seconds": 0.1446
+        },
+        {
+          "problem": "D",
+          "label": "300000 total mirror length and 100000 operations",
+          "seconds": 0.1341
+        },
+        {
+          "problem": "E",
+          "label": "500000 large close points; 20000 partial operations",
+          "seconds": 0.0974
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "A": "be41560514213ca80e4beff5b50d2ec8585db76e2cca82355d10348b83f89892",
+    "B": "736f5e3862eac6c8747b5803578afbee351c494986490822e0c6cdc9a21ec5f7",
+    "C": "b18f838e56e8901b5d12ee81e51d038440278b987d334e9c23d66bf2f779ba35",
+    "D": "c4a6adfccafac181025c18c3263f54963f6fed2e7d261f772babfca324a7637d",
+    "E": "0aa0f4041561176d9d95fb2ae5323dbaed900444308329b95684c7029b04d39b"
+  },
+  "cases_sha256": "60a465516eda7d908f9cad7a3adcd666085a99d5d3ad7d81cc8781831fe8a3b5",
+  "original_evaluations": {
+    "A": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce920a67df0b81749c03a"
+    },
+    "B": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce921a67df0b81749c040"
+    },
+    "C": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce923a67df0b81749c046"
+    },
+    "D": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce925a67df0b81749c04d"
+    },
+    "E": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addcb9374ace1cba9a21e80",
+      "source_sha256": "cf492760608f922b71d0100c83502a913c3365af4f0d2e666c6024dee9fee905"
+    }
+  },
+  "refactored_online_submission": false,
+  "oracle": "Repository independent Python generators captured by tools/nightly/retained_oracles.py; saved cases and independently generated boundary/stress expectations are also replayed. No output is taken from the original executable.",
+  "platform_note": "Apple Clang C++17 uses a local standard-header shim for bits/stdc++.h. Timings are local, not official judge results."
+}

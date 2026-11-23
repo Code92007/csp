@@ -1,40 +1,37 @@
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, L, S;
-    cin >> n >> L >> S;
-    vector<pair<int, int>> trees(n);
-    for (auto &[x, y] : trees)
-        cin >> x >> y;
-    vector<vector<int>> b(S + 1, vector<int>(S + 1));
-    int ones = 0;
-    for (int x = S; x >= 0; x--)
-        for (int y = 0; y <= S; y++) {
-            cin >> b[x][y];
-            ones += b[x][y];
+typedef pair<int,int> P;
+const int N=1010,M=55;
+int n,l,s,b[M][M],tot,ans;
+P a[N];
+int main(){
+    scanf("%d%d%d",&n,&l,&s);
+    for(int i=0;i<n;++i){
+        scanf("%d%d",&a[i].first,&a[i].second);
+    }
+    for(int i=s;i>=0;--i){
+        for(int j=0;j<=s;++j){
+            scanf("%d",&b[i][j]);
+            tot+=b[i][j];
         }
-    int answer = 0;
-    for (auto [x, y] : trees) {
-        if (x + S > L || y + S > L)
-            continue;
-        int count = 0;
-        bool ok = true;
-        for (auto [u, v] : trees) {
-            int dx = u - x, dy = v - y;
-            if (dx >= 0 && dx <= S && dy >= 0 && dy <= S) {
-                ++count;
-                if (!b[dx][dy]) {
-                    ok = false;
-                    break;
-                }
+    }
+    for(int i=0;i<n;++i){
+        auto [x,y]=a[i];
+        if(x+s>l || y+s>l)continue;
+        int cnt=0;
+        bool ok=1;
+        for(int j=0;j<n;++j){
+            auto [u,v]=a[j];
+            int dx=u-x,dy=v-y;
+            if(dx<0 || dx>s || dy<0 || dy>s)continue;
+            ++cnt;
+            if(!b[dx][dy]){
+                ok=0;
+                break;
             }
         }
-        if (ok && count == ones)
-            ++answer;
+        ans+=(ok && cnt==tot);
     }
-    cout << answer << '\n';
+    printf("%d\n",ans);
+    return 0;
 }

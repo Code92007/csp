@@ -1,0 +1,187 @@
+[
+  {
+    "problem": "A",
+    "variant": "opt",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O2",
+      "/Users/yzm007/Documents/CSP45/202206/A.cpp",
+      "-o",
+      "/tmp/csp-202206/A-opt"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "problem": "A",
+    "variant": "ubsan",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O1",
+      "-g",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all",
+      "/Users/yzm007/Documents/CSP45/202206/A.cpp",
+      "-o",
+      "/tmp/csp-202206/A-ubsan"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "problem": "B",
+    "variant": "opt",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O2",
+      "/Users/yzm007/Documents/CSP45/202206/B.cpp",
+      "-o",
+      "/tmp/csp-202206/B-opt"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "problem": "B",
+    "variant": "ubsan",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O1",
+      "-g",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all",
+      "/Users/yzm007/Documents/CSP45/202206/B.cpp",
+      "-o",
+      "/tmp/csp-202206/B-ubsan"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "problem": "C",
+    "variant": "opt",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O2",
+      "/Users/yzm007/Documents/CSP45/202206/C.cpp",
+      "-o",
+      "/tmp/csp-202206/C-opt"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "problem": "C",
+    "variant": "ubsan",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O1",
+      "-g",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all",
+      "/Users/yzm007/Documents/CSP45/202206/C.cpp",
+      "-o",
+      "/tmp/csp-202206/C-ubsan"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "problem": "D",
+    "variant": "opt",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O2",
+      "/Users/yzm007/Documents/CSP45/202206/D.cpp",
+      "-o",
+      "/tmp/csp-202206/D-opt"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "problem": "D",
+    "variant": "ubsan",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O1",
+      "-g",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all",
+      "/Users/yzm007/Documents/CSP45/202206/D.cpp",
+      "-o",
+      "/tmp/csp-202206/D-ubsan"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "problem": "E",
+    "variant": "opt",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O2",
+      "/Users/yzm007/Documents/CSP45/202206/E.cpp",
+      "-o",
+      "/tmp/csp-202206/E-opt"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "problem": "E",
+    "variant": "ubsan",
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/tmp/csp-personal-compat",
+      "-O1",
+      "-g",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all",
+      "/Users/yzm007/Documents/CSP45/202206/E.cpp",
+      "-o",
+      "/tmp/csp-202206/E-ubsan"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  }
+]

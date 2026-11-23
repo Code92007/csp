@@ -1,69 +1,64 @@
-#include <bitset>
-#include <iostream>
-#include <string>
-#include <unordered_map>
-#include <unordered_set>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Role {
-    unordered_set<string> verbs, types, names;
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, q;
-    cin >> n >> m >> q;
-    vector<Role> roles(n);
-    unordered_map<string, int> rid;
-    for (int i = 0; i < n; i++) {
-        string name, s;
-        cin >> name;
-        rid[name] = i;
-        for (auto *set : {&roles[i].verbs, &roles[i].types, &roles[i].names}) {
+const int N=510,M=15;
+int n,m,q;
+char s[M];
+struct role{
+    unordered_set<string>op,type,name;
+}a[N];
+unordered_map<string,int>id;
+unordered_map<string,bitset<N>>user,group;
+string read(){
+    scanf("%s",s);
+    return s;
+}
+int main(){
+    scanf("%d%d%d",&n,&m,&q);
+    for(int i=0;i<n;++i){
+        id[read()]=i;
+        for(auto *st:{&a[i].op,&a[i].type,&a[i].name}){
             int k;
-            cin >> k;
-            while (k--) {
-                cin >> s;
-                set->insert(s);
+            scanf("%d",&k);
+            while(k--){
+                st->insert(read());
             }
         }
     }
-    unordered_map<string, bitset<500>> users, groups;
-    while (m--) {
-        string r, t, name;
+    while(m--){
+        string r=read();
         int k;
-        cin >> r >> k;
-        while (k--) {
-            cin >> t >> name;
-            (t == "u" ? users : groups)[name].set(rid[r]);
+        scanf("%d",&k);
+        while(k--){
+            string t=read(),s=read();
+            (t=="u"?user:group)[s].set(id[r]);
         }
     }
-    while (q--) {
-        string user, g, verb, type, name;
+    while(q--){
+        string s=read();
         int k;
-        cin >> user >> k;
-        bitset<500> allowed;
-        auto u = users.find(user);
-        if (u != users.end())
-            allowed = u->second;
-        while (k--) {
-            cin >> g;
-            auto it = groups.find(g);
-            if (it != groups.end())
-                allowed |= it->second;
+        scanf("%d",&k);
+        bitset<N>can;
+        auto it=user.find(s);
+        if(it!=user.end())can=it->second;
+        while(k--){
+            string g=read();
+            auto it=group.find(g);
+            if(it!=group.end())can|=it->second;
         }
-        cin >> verb >> type >> name;
-        bool ok = false;
-        for (int i = 0; i < n; i++)
-            if (allowed[i]) {
-                auto &r = roles[i];
-                if ((r.verbs.count("*") || r.verbs.count(verb)) &&
-                    (r.types.count("*") || r.types.count(type)) &&
-                    (r.names.empty() || r.names.count(name))) {
-                    ok = true;
-                    break;
-                }
+        string op=read(),type=read(),name=read();
+        bool ok=0;
+        for(int i=0;i<n;++i){
+            if(!can[i])continue;
+            role &r=a[i];
+            bool x=r.op.count("*") || r.op.count(op);
+            bool y=r.type.count("*") || r.type.count(type);
+            bool z=r.name.empty() || r.name.count(name);
+            if(x && y && z){
+                ok=1;
+                break;
             }
-        cout << ok << '\n';
+        }
+        printf("%d\n",ok);
     }
+    return 0;
 }
