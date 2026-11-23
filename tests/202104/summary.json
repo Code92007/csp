@@ -1,0 +1,145 @@
+{
+  "contest": "202104",
+  "distinct_cases": 435,
+  "results": {
+    "opt": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 95,
+        "E:retained_independent": 60,
+        "A:saved": 2,
+        "B:saved": 2,
+        "C:saved": 2,
+        "D:saved": 2,
+        "E:saved": 3,
+        "A:stress": 1,
+        "B:stress": 1,
+        "C:stress": 1,
+        "D:stress": 1,
+        "D:boundary": 3,
+        "E:stress": 1,
+        "E:boundary": 1
+      },
+      "total": 435,
+      "seconds": 2.237,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "500x500 image and 256 levels",
+          "seconds": 0.0089
+        },
+        {
+          "problem": "B",
+          "label": "600x600 uniform equality threshold",
+          "seconds": 0.0129
+        },
+        {
+          "problem": "C",
+          "label": "10000 addresses and leases crossing signed int",
+          "seconds": 0.0084
+        },
+        {
+          "problem": "D",
+          "label": "1000 equally spaced obstacles",
+          "seconds": 0.0363
+        },
+        {
+          "problem": "E",
+          "label": "500 stations and 500 dense routes",
+          "seconds": 0.0178
+        }
+      ]
+    },
+    "ubsan": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 95,
+        "E:retained_independent": 60,
+        "A:saved": 2,
+        "B:saved": 2,
+        "C:saved": 2,
+        "D:saved": 2,
+        "E:saved": 3,
+        "A:stress": 1,
+        "B:stress": 1,
+        "C:stress": 1,
+        "D:stress": 1,
+        "D:boundary": 3,
+        "E:stress": 1,
+        "E:boundary": 1
+      },
+      "total": 435,
+      "seconds": 4.556,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "500x500 image and 256 levels",
+          "seconds": 0.0122
+        },
+        {
+          "problem": "B",
+          "label": "600x600 uniform equality threshold",
+          "seconds": 0.0174
+        },
+        {
+          "problem": "C",
+          "label": "10000 addresses and leases crossing signed int",
+          "seconds": 0.0116
+        },
+        {
+          "problem": "D",
+          "label": "1000 equally spaced obstacles",
+          "seconds": 0.0607
+        },
+        {
+          "problem": "E",
+          "label": "500 stations and 500 dense routes",
+          "seconds": 0.0219
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "A": "0cea71d189ecc28e23389f465bff3bf19f6faf8a935ce005c53f337d89d336fb",
+    "B": "b883d2fa5500bcf25b39daf59fb21e422cd9589dc794454624881e62473d3275",
+    "C": "bf9a37f2370976f00a99437a7b09f06bac6199e4ba7bed2a7ef8b506b234f357",
+    "D": "27eea5714d4b8702e6916e18f77c84389eb5e17ed97e87ddffe3c76c55397630",
+    "E": "9ca09c5c5879ae6a7e812a7832a1dfb45ac9b92f1dc0911de9f96efe0dce74b6"
+  },
+  "cases_sha256": "f10957b4428de74778e25076c5f561b09a285e9980013c08147f3b4edab6bda7",
+  "original_evaluations": {
+    "A": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce971a67df0b81749c1a2"
+    },
+    "B": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce972a67df0b81749c1b8"
+    },
+    "C": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adceb1074ace1cba9a1bca0"
+    },
+    "D": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adceb1274ace1cba9a1bca8"
+    },
+    "E": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6add984074ace1cba9a1f29d"
+    }
+  },
+  "refactored_online_submission": false,
+  "oracle": "Repository independent Python generators captured by tools/nightly/retained_oracles.py; saved cases and independently generated boundary/stress expectations are also replayed. No output is taken from the original executable.",
+  "platform_note": "Apple Clang C++17 uses a local standard-header shim for bits/stdc++.h. Timings are local, not official judge results."
+}

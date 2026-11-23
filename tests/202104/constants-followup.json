@@ -1,0 +1,18 @@
+{
+  "prior_report": "summary.json",
+  "source_sha256": {
+    "D": "4d335ff4ddafc454697d4a9ce8453a37d56d0637a5d49c22c253f74097f7b4bb"
+  },
+  "results": {
+    "D:opt": {
+      "passed": 101,
+      "seconds": 1.238882333,
+      "compile_stderr": ""
+    },
+    "D:ubsan": {
+      "passed": 101,
+      "seconds": 1.1125088339999998,
+      "compile_stderr": ""
+    }
+  }
+}

@@ -1,101 +1,87 @@
-#include <algorithm>
-#include <iostream>
-#include <numeric>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-using I = __int128_t;
-ll inverse(ll a, ll mod) {
-    ll b = mod, x = 1, y = 0;
-    while (b) {
-        ll q = a / b;
-        ll c = a - q * b;
-        a = b;
-        b = c;
-        c = x - q * y;
-        x = y;
-        y = c;
+typedef long long ll;
+typedef __int128 I;
+const int N=510;
+const I INF=I(1)<<120;
+int n,m;
+ll p[N],a[N][N];
+I d[N],ans[N];
+bool vis[N];
+ll inv(ll a,ll b){
+    ll mod=b,x=1,y=0;
+    while(b){
+        ll q=a/b,c=a-q*b;
+        a=b;b=c;
+        c=x-q*y;
+        x=y;y=c;
     }
-    return (x % mod + mod) % mod;
+    return (x%mod+mod)%mod;
 }
-void print(I x) {
-    if (x == 0) {
-        cout << 0;
+void print(I x){
+    if(!x){
+        putchar('0');
         return;
     }
     string s;
-    while (x) {
-        s.push_back(char('0' + x % 10));
-        x /= 10;
+    while(x){
+        s.push_back('0'+x%10);
+        x/=10;
     }
-    reverse(s.begin(), s.end());
-    cout << s;
+    reverse(s.begin(),s.end());
+    printf("%s",s.c_str());
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<ll> period(m);
-    vector<vector<ll>> offset(m, vector<ll>(n, -1));
-    for (int i = 0; i < m; ++i) {
-        int length;
-        cin >> length;
-        for (int j = 0; j < length; ++j) {
+int main(){
+    scanf("%d%d",&n,&m);
+    memset(a,-1,sizeof a);
+    fill(d,d+m,INF);
+    fill(ans,ans+n,INF);
+    for(int i=0;i<m;++i){
+        int k;
+        scanf("%d",&k);
+        while(k--){
             int s;
-            ll travel;
-            cin >> s >> travel;
-            offset[i][s - 1] = period[i];
-            period[i] += travel;
+            ll t;
+            scanf("%d%lld",&s,&t);
+            a[i][s-1]=p[i];
+            p[i]+=t;
+        }
+        if(a[i][0]>=0)d[i]=a[i][0];
+    }
+    for(int turn=0;turn<m;++turn){
+        int u=-1;
+        for(int i=0;i<m;++i){
+            if(!vis[i] && (u<0 || d[i]<d[u]))u=i;
+        }
+        if(u<0 || d[u]==INF)break;
+        vis[u]=1;
+        for(int s=0;s<n;++s){
+            if(a[u][s]<0)continue;
+            I t=a[u][s];
+            if(t<d[u])t+=(d[u]-t+p[u]-1)/p[u]*p[u];
+            ans[s]=min(ans[s],t);
+        }
+        for(int v=0;v<m;++v){
+            if(vis[v] || d[v]<=d[u])continue;
+            ll g=gcd(p[u],p[v]),mod=p[v]/g;
+            ll iv=mod==1?0:inv(p[u]/g,mod),cycle=p[u]*mod;
+            for(int s=0;s<n;++s){
+                if(a[u][s]<0 || a[v][s]<0)continue;
+                ll w=a[v][s]-a[u][s];
+                if(w%g)continue;
+                ll k=0;
+                if(mod>1)k=(w/g*iv%mod+mod)%mod;
+                I t=a[u][s]+p[u]*k;
+                if(t>=d[v])continue;
+                if(t<d[u])t+=(d[u]-t+cycle-1)/cycle*cycle;
+                d[v]=min(d[v],t);
+            }
         }
     }
-    const I INF = I(1) << 120;
-    vector<I> dist(m, INF), answer(n, INF);
-    vector<bool> used(m);
-    for (int i = 0; i < m; ++i)
-        if (offset[i][0] >= 0)
-            dist[i] = offset[i][0];
-    for (int iteration = 0; iteration < m; ++iteration) {
-        int u = -1;
-        for (int i = 0; i < m; ++i)
-            if (!used[i] && (u < 0 || dist[i] < dist[u]))
-                u = i;
-        if (u < 0 || dist[u] == INF)
-            break;
-        used[u] = true;
-        for (int s = 0; s < n; ++s)
-            if (offset[u][s] >= 0) {
-                I t = offset[u][s];
-                if (t < dist[u])
-                    t += (dist[u] - t + period[u] - 1) / period[u] * period[u];
-                answer[s] = min(answer[s], t);
-            }
-        for (int v = 0; v < m; ++v)
-            if (!used[v] && dist[v] > dist[u]) {
-                ll g = gcd(period[u], period[v]), mod = period[v] / g;
-                ll inv = mod == 1 ? 0 : inverse(period[u] / g, mod);
-                ll cycle = period[u] * mod;
-                for (int s = 0; s < n; ++s)
-                    if (offset[u][s] >= 0 && offset[v][s] >= 0) {
-                        ll difference = offset[v][s] - offset[u][s];
-                        if (difference % g)
-                            continue;
-                        ll factor = mod == 1 ? 0 : ((difference / g * inv % mod) + mod) % mod;
-                        I time = offset[u][s] + period[u] * factor;
-                        if (time >= dist[v])
-                            continue;
-                        if (time < dist[u])
-                            time += (dist[u] - time + cycle - 1) / cycle * cycle;
-                        dist[v] = min(dist[v], time);
-                    }
-            }
+    for(int i=1;i<n;++i){
+        if(ans[i]==INF)printf("inf");
+        else print(ans[i]);
+        puts("");
     }
-    for (int s = 1; s < n; ++s) {
-        if (answer[s] == INF)
-            cout << "inf";
-        else
-            print(answer[s]);
-        cout << '\n';
-    }
+    return 0;
 }
