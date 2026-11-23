@@ -1,0 +1,29 @@
+{
+  "prior_report": "summary.json",
+  "source_sha256": {
+    "B": "298cd9cb9ee229091ee7dd3b9bbfe5b9556747c201bb92f72b6948ba75f28ddf",
+    "C": "49fab441d635bcbeb4921b8ae83c43ea4b724d187909304f7c14b5db8dc3e254"
+  },
+  "results": {
+    "B:opt": {
+      "passed": 103,
+      "seconds": 1.543448833,
+      "compile_stderr": ""
+    },
+    "B:ubsan": {
+      "passed": 103,
+      "seconds": 1.092408625,
+      "compile_stderr": ""
+    },
+    "C:opt": {
+      "passed": 133,
+      "seconds": 1.3318572919999996,
+      "compile_stderr": ""
+    },
+    "C:ubsan": {
+      "passed": 133,
+      "seconds": 1.6911410839999999,
+      "compile_stderr": ""
+    }
+  }
+}

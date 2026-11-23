@@ -1,0 +1,37 @@
+{
+  "source_sha256": "efe8a23edda1c0bf3007259bc4e6cc5bc29c808918368bf6e127ac338f6e8981",
+  "prior_source_sha256": "f1bfd3a736fce091f933bf40da6dfe5f1d46575dbc7aa9098504fcbb3f810c33",
+  "note": "macOS wait4 ru_maxrss in bytes; local analytic maximum tests, not a universal upper bound",
+  "measurements": [
+    {
+      "case": "500000 horizontal strips; axis swap",
+      "variant": "before_arrays",
+      "max_rss_bytes": 61194240
+    },
+    {
+      "case": "500000 horizontal strips; axis swap",
+      "variant": "global_arrays",
+      "max_rss_bytes": 61079552
+    },
+    {
+      "case": "500000 diagonal points and intersection queries",
+      "variant": "before_arrays",
+      "max_rss_bytes": 185548800
+    },
+    {
+      "case": "500000 diagonal points and intersection queries",
+      "variant": "global_arrays",
+      "max_rss_bytes": 184958976
+    },
+    {
+      "case": "500000 full-width nested strips; maximum envelope workspace",
+      "variant": "before_arrays",
+      "max_rss_bytes": 109199360
+    },
+    {
+      "case": "500000 full-width nested strips; maximum envelope workspace",
+      "variant": "global_arrays",
+      "max_rss_bytes": 111149056
+    }
+  ]
+}

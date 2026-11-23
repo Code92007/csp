@@ -1,49 +1,42 @@
-#include <algorithm>
-#include <functional>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, target;
-    cin >> n >> m >> target;
-    vector<int> basic(n), unit(n);
-    vector<vector<int>> goods(n);
-    for (int i = 0; i < n; ++i)
-        cin >> basic[i] >> unit[i];
-    for (int i = 0; i < m; ++i) {
-        int value, warehouse;
-        cin >> value >> warehouse;
-        goods[warehouse].push_back(value);
+const int N=1010,M=40010,INF=0x3f3f3f3f;
+int n,m,v,b[N],c[N],dp[M],ndp[M];
+vector<int>g[N];
+int main(){
+    scanf("%d%d%d",&n,&m,&v);
+    for(int i=0;i<n;++i){
+        scanf("%d%d",&b[i],&c[i]);
     }
-    int bound = 0;
-    for (int i = 0; i < n; ++i)
-        if (!goods[i].empty())
-            bound += basic[i] + unit[i] * goods[i].size();
-    const int NEG = -1000000000;
-    vector<int> dp(bound + 1, NEG);
-    dp[0] = 0;
-    int previous_bound = 0;
-    for (int i = 0; i < n; ++i) {
-        if (goods[i].empty())
-            continue;
-        sort(goods[i].begin(), goods[i].end(), greater<int>());
-        vector<int> next = dp;
-        int value = 0;
-        for (size_t k = 1; k <= goods[i].size(); ++k) {
-            value += goods[i][k - 1];
-            int cost = basic[i] + int(k) * unit[i];
-            for (int old = 0; old <= previous_bound; ++old)
-                if (dp[old] != NEG)
-                    next[old + cost] = max(next[old + cost], dp[old] + value - cost);
+    for(int i=0;i<m;++i){
+        int x,t;
+        scanf("%d%d",&x,&t);
+        g[t].push_back(x);
+    }
+    fill(dp,dp+M,-INF);
+    dp[0]=0;
+    int bound=0;
+    for(int i=0;i<n;++i){
+        if(g[i].empty())continue;
+        sort(g[i].begin(),g[i].end(),greater<int>());
+        memcpy(ndp,dp,sizeof dp);
+        int sum=0;
+        for(int j=1;j<=(int)g[i].size();++j){
+            sum+=g[i][j-1];
+            int cost=b[i]+j*c[i];
+            for(int k=0;k<=bound;++k){
+                if(dp[k]==-INF)continue;
+                ndp[k+cost]=max(ndp[k+cost],dp[k]+sum-cost);
+            }
         }
-        previous_bound += basic[i] + unit[i] * goods[i].size();
-        dp.swap(next);
+        bound+=b[i]+c[i]*g[i].size();
+        memcpy(dp,ndp,sizeof dp);
     }
-    for (int cost = 0; cost <= bound; ++cost)
-        if (dp[cost] >= target) {
-            cout << cost << '\n';
+    for(int i=0;i<=bound;++i){
+        if(dp[i]>=v){
+            printf("%d\n",i);
             return 0;
         }
+    }
+    return 0;
 }

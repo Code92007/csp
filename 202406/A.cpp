@@ -1,17 +1,13 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, p, q;
-    cin >> n >> m >> p >> q;
-    for (int k = 0; k < n * m; k++) {
-        int x;
-        cin >> x;
-        if (k % q)
-            cout << ' ';
-        cout << x;
-        if (k % q == q - 1)
-            cout << '\n';
+int n,m,p,q,x;
+int main(){
+    scanf("%d%d%d%d",&n,&m,&p,&q);
+    for(int i=0;i<n*m;++i){
+        scanf("%d",&x);
+        if(i%q)printf(" ");
+        printf("%d",x);
+        if((i%q)==(q-1))printf("\n");
     }
+    return 0;
 }

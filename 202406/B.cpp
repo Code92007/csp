@@ -1,29 +1,26 @@
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, t;
-    cin >> n >> m >> t;
-    vector<int> a(n * m);
-    for (int &x : a)
-        cin >> x;
-    while (t--) {
-        int op, x, y;
-        cin >> op >> x >> y;
-        if (op == 1) {
-            n = x;
-            m = y;
-        } else if (op == 2) {
-            vector<int> b(a.size());
-            for (int i = 0; i < n; i++)
-                for (int j = 0; j < m; j++)
-                    b[j * n + i] = a[i * m + j];
-            a.swap(b);
-            swap(n, m);
-        } else
-            cout << a[x * m + y] << '\n';
+const int N=10010;
+int n,m,t,a[N],b[N];
+int main(){
+    scanf("%d%d%d",&n,&m,&t);
+    for(int i=0;i<n*m;++i){
+        scanf("%d",&a[i]);
     }
+    while(t--){
+        int op,x,y;
+        scanf("%d%d%d",&op,&x,&y);
+        if(op==1)n=x,m=y;
+        else if(op==2){
+            for(int i=0;i<n;++i){
+                for(int j=0;j<m;++j){
+                    b[j*n+i]=a[i*m+j];
+                }
+            }
+            memcpy(a,b,n*m*sizeof(int));
+            swap(n,m);
+        }
+        else printf("%d\n",a[x*m+y]);
+    }
+    return 0;
 }

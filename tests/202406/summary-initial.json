@@ -1,0 +1,161 @@
+{
+  "contest": "202406",
+  "distinct_cases": 1054,
+  "results": {
+    "opt": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 130,
+        "D:retained_independent": 100,
+        "E:retained_independent": 648,
+        "A:saved": 2,
+        "B:saved": 2,
+        "C:saved": 1,
+        "D:saved": 2,
+        "E:saved": 2,
+        "A:stress": 1,
+        "B:stress": 1,
+        "C:stress": 2,
+        "D:stress": 1,
+        "E:stress": 2
+      },
+      "total": 1054,
+      "seconds": 8.044,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "10000 elements row-major",
+          "seconds": 0.0044
+        },
+        {
+          "problem": "B",
+          "label": "100000 operations and 100 transposes",
+          "seconds": 0.0181
+        },
+        {
+          "problem": "C",
+          "label": "near 250000 characters overlap",
+          "seconds": 0.2327
+        },
+        {
+          "problem": "C",
+          "label": "near 250000 characters overlap",
+          "seconds": 0.2812
+        },
+        {
+          "problem": "D",
+          "label": "maximum total cost 40000",
+          "seconds": 0.0138
+        },
+        {
+          "problem": "E",
+          "label": "500000 horizontal strips; axis swap",
+          "seconds": 0.5149
+        },
+        {
+          "problem": "E",
+          "label": "500000 diagonal points and intersection queries",
+          "seconds": 0.7237
+        }
+      ]
+    },
+    "ubsan": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 130,
+        "D:retained_independent": 100,
+        "E:retained_independent": 648,
+        "A:saved": 2,
+        "B:saved": 2,
+        "C:saved": 1,
+        "D:saved": 2,
+        "E:saved": 2,
+        "A:stress": 1,
+        "B:stress": 1,
+        "C:stress": 2,
+        "D:stress": 1,
+        "E:stress": 2
+      },
+      "total": 1054,
+      "seconds": 12.99,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "10000 elements row-major",
+          "seconds": 0.0064
+        },
+        {
+          "problem": "B",
+          "label": "100000 operations and 100 transposes",
+          "seconds": 0.0214
+        },
+        {
+          "problem": "C",
+          "label": "near 250000 characters overlap",
+          "seconds": 0.2554
+        },
+        {
+          "problem": "C",
+          "label": "near 250000 characters overlap",
+          "seconds": 0.3054
+        },
+        {
+          "problem": "D",
+          "label": "maximum total cost 40000",
+          "seconds": 0.0206
+        },
+        {
+          "problem": "E",
+          "label": "500000 horizontal strips; axis swap",
+          "seconds": 0.4458
+        },
+        {
+          "problem": "E",
+          "label": "500000 diagonal points and intersection queries",
+          "seconds": 0.792
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "A": "1853df971e969838d35d6e7fa6aeff3ab8147139043b5951e1eb15e0ce171082",
+    "B": "e28ec18f1338238b0f730a7d536d8fec9fc59fca847c796d0b720b797ec51e73",
+    "C": "9c80227f068c0a646cf0b9ffd2ccd7a41e45a708ae42da3633a211770023ae73",
+    "D": "30a5f8a84b5c8c7d090d291a483bf6600fdf4ce25edb02fd5714a0d07f07d461",
+    "E": "203244f7e2bc8e8341e9f7f5d802798cee7534b5ef5d3599198880d70aaa378b"
+  },
+  "cases_sha256": "771519e2c1b9a943db9a3b3f4c1ad860c7fa74cb16f5c36a50cbb18f54043014",
+  "original_evaluations": {
+    "A": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce81ca67df0b81749bb2f"
+    },
+    "B": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce81da67df0b81749bb39"
+    },
+    "C": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce81fa67df0b81749bb49"
+    },
+    "D": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce821a67df0b81749bb75"
+    },
+    "E": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b"
+    }
+  },
+  "refactored_online_submission": false,
+  "oracle": "Repository independent Python generators captured by tools/nightly/retained_oracles.py; saved cases and independently generated boundary/stress expectations are also replayed. No output is taken from the original executable.",
+  "platform_note": "Apple Clang C++17 uses a local standard-header shim for bits/stdc++.h. Timings are local, not official judge results."
+}
