@@ -1,0 +1,29 @@
+{
+  "problem": "201703B",
+  "previous_sha256": "451d018dff91726a23e3fffa27c5fc7542d5de6e5ef7804e42c77441b4c4957f",
+  "source_sha256": "29092b495277b75adc72c28a4b82105772a8a5c026bb80e58368fa34d8eb778b",
+  "distinct_inputs": 1,
+  "case_sha256": "fedbdc0036c4b2a64685a79af4e53722241004ec1646df5720fe81b9f734d81c",
+  "case_kinds": {
+    "saved_sample": 1
+  },
+  "compilation": "C++17 O2/UBSan -Wall -Wextra -Wshadow, no diagnostics",
+  "results": [
+    {
+      "mode": "O2",
+      "inputs": 1,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.43280387499999984
+    },
+    {
+      "mode": "UBSan",
+      "inputs": 1,
+      "passed": true,
+      "compile_stderr": "",
+      "seconds": 0.4251418330000001
+    }
+  ],
+  "change": "putchar newline replaced by puts empty string; both output exactly one newline.",
+  "note": "Historical independent reports preserved. Focused local followup only; no new online submission."
+}

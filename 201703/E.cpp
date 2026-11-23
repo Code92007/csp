@@ -1,37 +1,45 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    ll a, b, q, x;
-    cin >> n >> m >> a >> b >> q >> x;
-    int h = n - 1;
-    vector<int> vertical(h * m), horizontal((h - 1) * (m - 1));
-    auto next = [&]() {
-        x = (a * x + b) % q;
-        return int(x);
-    };
-    for (int row = 0; row < h; ++row)
-        for (int col = 0; col < m; ++col)
-            vertical[col * h + row] = next();
-    for (int row = 0; row < h - 1; ++row)
-        for (int col = 0; col < m - 1; ++col)
-            horizontal[col * (h - 1) + row] = next();
-    vector<ll> dp(h);
-    for (int row = 0; row < h; ++row)
-        dp[row] = vertical[row];
-    for (int col = 1; col < m; ++col) {
-        int offset = (col - 1) * (h - 1);
-        for (int row = 1; row < h; ++row)
-            dp[row] = min(dp[row], dp[row - 1] + horizontal[offset + row - 1]);
-        for (int row = h - 2; row >= 0; --row)
-            dp[row] = min(dp[row], dp[row + 1] + horizontal[offset + row]);
-        for (int row = 0; row < h; ++row)
-            dp[row] += vertical[col * h + row];
+typedef long long ll;
+int n,m,h;
+ll a,b,q,x;
+vector<int> v,w;
+vector<ll> dp;
+int gen(){
+    x=(a*x+b)%q;
+    return x;
+}
+int main(){
+    scanf("%d%d%lld%lld%lld%lld",&n,&m,&a,&b,&q,&x);
+    h=n-1;
+    v.resize(h*m);
+    w.resize((h-1)*(m-1));
+    for(int i=0;i<h;++i){
+        for(int j=0;j<m;++j){
+            v[j*h+i]=gen();
+        }
     }
-    cout << *min_element(dp.begin(), dp.end()) << '\n';
+    for(int i=0;i<h-1;++i){
+        for(int j=0;j<m-1;++j){
+            w[j*(h-1)+i]=gen();
+        }
+    }
+    dp.resize(h);
+    for(int i=0;i<h;++i){
+        dp[i]=v[i];
+    }
+    for(int j=1;j<m;++j){
+        int off=(j-1)*(h-1);
+        for(int i=1;i<h;++i){
+            dp[i]=min(dp[i],dp[i-1]+w[off+i-1]);
+        }
+        for(int i=h-2;i>=0;--i){
+            dp[i]=min(dp[i],dp[i+1]+w[off+i]);
+        }
+        for(int i=0;i<h;++i){
+            dp[i]+=v[j*h+i];
+        }
+    }
+    printf("%lld\n",*min_element(dp.begin(),dp.end()));
+    return 0;
 }

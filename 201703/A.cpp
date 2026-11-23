@@ -1,19 +1,17 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n, k;
-    cin >> n >> k;
-    int current = 0, answer = 0;
-    while (n--) {
-        int x;
-        cin >> x;
-        current += x;
-        if (current >= k) {
-            ++answer;
-            current = 0;
+int n,k,sum,ans,x;
+int main(){
+    scanf("%d%d",&n,&k);
+    while(n--){
+        scanf("%d",&x);
+        sum+=x;
+        if(sum>=k){
+            ++ans;
+            sum=0;
         }
     }
-    if (current > 0)
-        ++answer;
-    cout << answer << '\n';
+    if(sum)++ans;
+    printf("%d\n",ans);
+    return 0;
 }
