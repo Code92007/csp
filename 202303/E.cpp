@@ -1,115 +1,133 @@
-#include <algorithm>
-#include <functional>
-#include <iostream>
-#include <limits>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Range {
-    int base, identity;
-    bool minimum;
-    vector<int> t;
-    Range(int n, bool mn)
-        : base(n), identity(mn ? 1000000000 : -1000000000), minimum(mn), t(2 * n, identity) {}
-    int combine(int a, int b) {
-        return minimum ? min(a, b) : max(a, b);
+typedef long long ll;
+typedef pair<int,int> P;
+const int INF=0x3f3f3f3f;
+struct range{
+    int n,val;
+    bool mn;
+    vector<int> tr;
+    void init(int k,bool flag){
+        n=k;
+        mn=flag;
+        val=mn?INF:-INF;
+        tr.assign(n*2,val);
     }
-    void put(int x, int v) {
-        x += base;
-        t[x] = combine(t[x], v);
-        for (x >>= 1; x; x >>= 1)
-            t[x] = combine(t[2 * x], t[2 * x + 1]);
+    int merge(int a,int b){
+        return mn?min(a,b):max(a,b);
     }
-    int get(int l, int r) {
-        if (l > r)
-            return identity;
-        int ans = identity;
-        for (l += base, r += base + 1; l < r; l >>= 1, r >>= 1) {
-            if (l & 1)
-                ans = combine(ans, t[l++]);
-            if (r & 1)
-                ans = combine(ans, t[--r]);
+    void add(int x,int v){
+        x+=n;
+        tr[x]=merge(tr[x],v);
+        for(x>>=1;x;x>>=1){
+            tr[x]=merge(tr[x<<1],tr[x<<1|1]);
+        }
+    }
+    int query(int l,int r){
+        if(l>r)return val;
+        int ans=val;
+        for(l+=n,r+=n+1;l<r;l>>=1,r>>=1){
+            if(l&1)ans=merge(ans,tr[l++]);
+            if(r&1)ans=merge(ans,tr[--r]);
         }
         return ans;
     }
 };
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<pair<int, int>> intervals(m);
-    for (auto &a : intervals)
-        cin >> a.first >> a.second;
-    function<long long(int, int, vector<pair<int, int>>)> solve =
-        [&](int lo, int hi, vector<pair<int, int>> items) -> long long {
-        if (lo == hi || items.empty())
-            return 0;
-        int mid = (lo + hi) / 2, len = hi - lo + 1;
-        vector<pair<int, int>> left, right, cross;
-        vector<int> furthest(len), nearest(len);
-        for (int i = lo; i <= hi; ++i) {
-            furthest[i - lo] = i - 1;
-            nearest[i - lo] = i + 1;
+struct BIT{
+    int n;
+    vector<int> tr;
+    void init(int k){
+        n=k;
+        tr.assign(n+1,0);
+    }
+    void add(int x){
+        for(;x<=n;x+=x&-x){
+            ++tr[x];
         }
-        for (auto [l, r] : items) {
-            if (r <= mid) {
-                left.push_back({l, r});
-                furthest[l - lo] = max(furthest[l - lo], r);
-            } else if (l > mid) {
-                right.push_back({l, r});
-                nearest[r - lo] = min(nearest[r - lo], l);
-            } else
-                cross.push_back({l, r});
+    }
+    int sum(int x){
+        int ans=0;
+        for(;x>0;x-=x&-x){
+            ans+=tr[x];
         }
-        vector<int> needRight(mid - lo + 1), needLeft(hi - mid);
-        {
-            Range reach(len, false), ends(len, true);
-            for (auto [l, r] : cross)
-                ends.put(l - lo, r);
-            for (int L = mid; L >= lo; --L) {
-                int a = furthest[L - lo];
-                a = max(a, reach.get(L + 1 - lo, min(mid, a + 1) - lo));
-                reach.put(L - lo, a);
-                int b = ends.get(L - lo, min(mid, a + 1) - lo);
-                if (a == mid)
-                    b = min(b, mid + 1);
-                needRight[L - lo] = b;
-            }
+        return ans;
+    }
+};
+int n,m;
+ll solve(int l,int r,vector<P> v){
+    if(l==r || v.empty())return 0;
+    int mid=(l+r)>>1,len=r-l+1;
+    vector<P> a,b,c;
+    vector<int> far(len),near(len);
+    for(int i=l;i<=r;++i){
+        far[i-l]=i-1;
+        near[i-l]=i+1;
+    }
+    for(auto &[x,y]:v){
+        if(y<=mid){
+            a.push_back({x,y});
+            far[x-l]=max(far[x-l],y);
         }
-        {
-            Range reach(len, true), starts(len, false);
-            for (auto [l, r] : cross)
-                starts.put(r - lo, l);
-            for (int R = mid + 1; R <= hi; ++R) {
-                int a = nearest[R - lo];
-                a = min(a, reach.get(max(mid + 1, a - 1) - lo, R - 1 - lo));
-                reach.put(R - lo, a);
-                int b = starts.get(max(mid + 1, a - 1) - lo, R - lo);
-                if (a == mid + 1)
-                    b = max(b, mid);
-                needLeft[R - mid - 1] = b;
-            }
+        else if(x>mid){
+            b.push_back({x,y});
+            near[y-l]=min(near[y-l],x);
         }
-        vector<pair<int, int>> events;
-        for (int L = lo; L <= mid; ++L)
-            events.push_back({needRight[L - lo], L});
-        sort(events.begin(), events.end());
-        vector<int> bit(mid - lo + 2);
-        size_t p = 0;
-        long long answer = 0;
-        for (int R = mid + 1; R <= hi; ++R) {
-            while (p < events.size() && events[p].first <= R) {
-                int x = events[p++].second - lo + 1;
-                for (; x < int(bit.size()); x += x & -x)
-                    ++bit[x];
-            }
-            int bound = min(mid, needLeft[R - mid - 1]);
-            for (int x = bound - lo + 1; x > 0; x -= x & -x)
-                answer += bit[x];
+        else c.push_back({x,y});
+    }
+    vector<int> right(mid-l+1),left(r-mid);
+    range reach,ends;
+    reach.init(len,false);
+    ends.init(len,true);
+    for(auto &[x,y]:c){
+        ends.add(x-l,y);
+    }
+    for(int i=mid;i>=l;--i){
+        int x=far[i-l];
+        x=max(x,reach.query(i+1-l,min(mid,x+1)-l));
+        reach.add(i-l,x);
+        int y=ends.query(i-l,min(mid,x+1)-l);
+        if(x==mid)y=min(y,mid+1);
+        right[i-l]=y;
+    }
+    reach.init(len,true);
+    ends.init(len,false);
+    for(auto &[x,y]:c){
+        ends.add(y-l,x);
+    }
+    for(int i=mid+1;i<=r;++i){
+        int x=near[i-l];
+        x=min(x,reach.query(max(mid+1,x-1)-l,i-1-l));
+        reach.add(i-l,x);
+        int y=ends.query(max(mid+1,x-1)-l,i-l);
+        if(x==mid+1)y=max(y,mid);
+        left[i-mid-1]=y;
+    }
+    vector<P> events;
+    for(int i=l;i<=mid;++i){
+        events.push_back({right[i-l],i});
+    }
+    sort(events.begin(),events.end());
+    BIT bit;
+    bit.init(mid-l+1);
+    size_t p=0;
+    ll ans=0;
+    for(int i=mid+1;i<=r;++i){
+        while(p<events.size() && events[p].first<=i){
+            bit.add(events[p++].second-l+1);
         }
-        // Release this level's bulky lists before recursing.
-        return answer + solve(lo, mid, std::move(left)) + solve(mid + 1, hi, std::move(right));
-    };
-    cout << solve(1, n, std::move(intervals)) << '\n';
+        int x=min(mid,left[i-mid-1]);
+        ans+=bit.sum(x-l+1);
+    }
+    ans+=solve(l,mid,std::move(a));
+    ans+=solve(mid+1,r,std::move(b));
+    return ans;
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    vector<P> v(m);
+    for(auto &[l,r]:v){
+        scanf("%d%d",&l,&r);
+    }
+    printf("%lld\n",solve(1,n,std::move(v)));
+    return 0;
 }

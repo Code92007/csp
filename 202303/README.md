@@ -3,17 +3,16 @@ title: "CSP 202303 五题题解"
 contest: "202303"
 contest_month: "2023-03"
 date: "2026-10-23"
-updated: "2026-10-26"
+updated: "2026-11-24"
 tags: ["CSP", "矩形相交", "几何", "二分答案", "单调性", "递归下降", "位集", "离线处理", "排序", "离散化", "线段树", "区间赋值", "分治", "树状数组", "区间计数"]
 status: "published"
-problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16694"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce918a67df0b81749c020"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305927066", "source_sha256": "34b442118b93a1609b689159910d0d67586cba362236d1513d8dfa5042ff4ef7"}}, {"id": "B", "title": "垦田计划", "tags": ["二分答案", "单调性"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16695"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305933793", "source_sha256": "cf5d32583c21adaa802cb829eaaddaba3128a3efc71b191734543ac88b6ab990"}}, {"id": "C", "title": "LDAP", "tags": ["递归下降", "位集", "离线处理", "排序"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16696"}], "previous_oj": {"status": "failed", "score": 70, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490926", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef", "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305934606", "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb"}}, {"id": "D", "title": "星际网络 II", "tags": ["离散化", "线段树", "区间赋值"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16697"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91da67df0b81749c032"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305935489", "source_sha256": "91e3edd94753f6dc16b11f6eb2612a2bd740c13e14ebeb6e1cf4a93ae2a20363"}}, {"id": "E", "title": "施肥", "tags": ["分治", "线段树", "树状数组", "区间计数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16698"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91ea67df0b81749c036"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305936519", "source_sha256": "33d8956583e622b00cecc81c91baa224e566b1a7194a1fe3258ac41d90141fd2"}}]
+problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版 C++17 编译通过；62 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16694"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce918a67df0b81749c020"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305927066", "source_sha256": "34b442118b93a1609b689159910d0d67586cba362236d1513d8dfa5042ff4ef7"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "B", "title": "垦田计划", "tags": ["二分答案", "单调性"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版 C++17 编译通过；103 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16695"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305933793", "source_sha256": "cf5d32583c21adaa802cb829eaaddaba3128a3efc71b191734543ac88b6ab990"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "C", "title": "LDAP", "tags": ["递归下降", "位集", "离线处理", "排序"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版 C++17 编译通过；703 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16696"}], "previous_oj": {"status": "failed", "score": 70, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490926", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef", "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305934606", "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb"}, "original_validation": "C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "D", "title": "星际网络 II", "tags": ["离散化", "线段树", "区间赋值"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版 C++17 编译通过；102 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16697"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91da67df0b81749c032"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305935489", "source_sha256": "91e3edd94753f6dc16b11f6eb2612a2bd740c13e14ebeb6e1cf4a93ae2a20363"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "E", "title": "施肥", "tags": ["分治", "线段树", "树状数组", "区间计数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版 C++17 编译通过；83 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16698"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91ea67df0b81749c036"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305936519", "source_sha256": "33d8956583e622b00cecc81c91baa224e566b1a7194a1fe3258ac41d90141fd2"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}]
 ---
 
 # CSP 202303 五题题解
 
-[返回总目录](../README.md)
+[返回总目录](../README.md) · [本地验证](../tests/202303/VALIDATION.md)
 
-本场已实现 **5/5** 题。每题依次给出题意、题解、代码。源码使用 C++17。
 
 <a id="problem-a"></a>
 
@@ -21,12 +20,19 @@ problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何
 
 标签：`矩形相交` · `几何`
 
-状态：**完整实现，已验证满分**。  
-C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce918a67df0b81749c020)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305927066)（民间复刻评测）。
+本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adce918a67df0b81749c020)。
+
+原版验证：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce918a67df0b81749c020)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305927066)（民间复刻评测）。
 
 ### 题意
 
-已有若干内部互不相交的轴对齐田地，求它们落在目标矩形[0,a]×[0,b]内的总面积。坐标可为负。
+若干轴对齐田地的内部互不相交，求它们落在目标矩形 [0,a]×[0,b] 内的总面积。
+
+输入田地数 n、目标边长 a、b，随后每块田地输入左下角与右上角坐标。坐标可以为负，原田地之间允许接触边界。
+
+输出落在目标矩形内的面积之和。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16694)。
 
@@ -43,19 +49,21 @@ C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机�
 独立源码：[A.cpp](A.cpp)
 
 ```cpp
-#include <algorithm>
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    long long a, b, answer = 0;
-    cin >> n >> a >> b;
-    while (n--) {
-        long long x, y, xx, yy;
-        cin >> x >> y >> xx >> yy;
-        answer += max(0LL, min(a, xx) - max(0LL, x)) * max(0LL, min(b, yy) - max(0LL, y));
+typedef long long ll;
+int n;
+ll a,b,ans,x,y,u,v;
+int main(){
+    scanf("%d%lld%lld",&n,&a,&b);
+    while(n--){
+        scanf("%lld%lld%lld%lld",&x,&y,&u,&v);
+        ll w=max(0ll,min(a,u)-max(0ll,x));
+        ll h=max(0ll,min(b,v)-max(0ll,y));
+        ans+=w*h;
     }
-    cout << answer << '\n';
+    printf("%lld\n",ans);
+    return 0;
 }
 ```
 
@@ -65,12 +73,19 @@ int main() {
 
 标签：`二分答案` · `单调性`
 
-状态：**完整实现，已验证满分**。  
-C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305933793)（民间复刻评测）。
+本地验证：103 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a)。
+
+原版验证：**完整实现，已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305933793)（民间复刻评测）。
 
 ### 题意
 
-n 块田同时开垦，第 i 块原耗时 t[i]，每缩短一天花 c[i] 资源，最短均为 k 天。共有 m 资源，求总完成时间的最小值。n、t[i]、c[i]≤$10^5$。
+n 块田同时开垦，第 i 块原耗时 t[i]，每缩短一天花 c[i] 资源，最短均为 k 天。可用资源总量为 m，求全部田地完成的最短时间。
+
+输入 n、m、k，随后每块田地输入 t[i]、c[i]。范围为 n、t[i]、c[i]≤$10^5$。
+
+输出总完成时间的最小值。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16695)。
 
@@ -80,45 +95,39 @@ n 块田同时开垦，第 i 块原耗时 t[i]，每缩短一天花 c[i] 资源�
 
 判断能否在 T 天完成：每块超过 T 的田至少要缩短 t[i]-T 天，因此最少花费为 `Σ max(0,t[i]-T)*c[i]`。总花费≤m 就可行。
 
-T 越大，所需资源只会减少，所以在 [k,max(t)] 二分第一个可行时间。  
-判定的花费既是必要下界，也可通过恰好缩短相应天数实现，故单调判定充分必要。  
-时间 $O(n\log\max t)$，空间 $O(n)$，总成本可达$10^{15}$，用64位。
+T 越大，所需资源只会减少，所以在 [k,max(t)] 二分第一个可行时间。判定的花费既是必要下界，也可通过恰好缩短相应天数实现，故单调判定充分必要。时间 $O(n\log\max t)$，空间 $O(n)$，总成本可达$10^{15}$，用64位。
 
 ### 代码
 
 独立源码：[B.cpp](B.cpp)
 
 ```cpp
-#include <algorithm>
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, k;
-    long long m;
-    cin >> n >> m >> k;
-    vector<pair<int, int>> a(n);
-    int hi = k;
-    for (auto &[t, c] : a) {
-        cin >> t >> c;
-        hi = max(hi, t);
+typedef long long ll;
+typedef pair<int,int> P;
+int n,k,l,r;
+ll m;
+vector<P> a;
+int main(){
+    scanf("%d%lld%d",&n,&m,&k);
+    a.resize(n);
+    l=r=k;
+    for(auto &[t,c]:a){
+        scanf("%d%d",&t,&c);
+        r=max(r,t);
     }
-    int lo = k;
-    while (lo < hi) {
-        int mid = lo + (hi - lo) / 2;
-        long long need = 0;
-        for (auto [t, c] : a)
-            if (t > mid)
-                need += 1LL * (t - mid) * c;
-        if (need <= m)
-            hi = mid;
-        else
-            lo = mid + 1;
+    while(l<r){
+        int mid=l+(r-l)/2;
+        ll sum=0;
+        for(auto &[t,c]:a){
+            if(t>mid)sum+=1ll*(t-mid)*c;
+        }
+        if(sum<=m)r=mid;
+        else l=mid+1;
     }
-    cout << lo << '\n';
+    printf("%d\n",l);
+    return 0;
 }
 ```
 
@@ -128,14 +137,19 @@ int main() {
 
 标签：`递归下降` · `位集` · `离线处理` · `排序`
 
-状态：**完整实现，已验证满分**。  
-C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305934606)（民间复刻评测）。
+本地验证：703 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef)。
+
+原版验证：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305934606)（民间复刻评测）。
 
 ### 题意
 
-每个用户有唯一 DN 及若干整数属性。  
-表达式 `a:b` 匹配具有属性 a 且值等于 b 的用户，`a~b` 匹配具有该属性且值不等于 b 的用户；`&(E1)(E2)`、`|(E1)(E2)` 表示交和并。  
-每次输出匹配 DN 的升序列表，可以为空行。用户至多 2500，查询至多 500，表达式长度至多 2000。
+每个用户有唯一 DN 及若干整数属性，通过给定表达式筛选用户。原子表达式 `a:b` 表示具有属性 a 且值等于 b，`a~b` 表示具有该属性且值不等于 b；`&(E1)(E2)`、`|(E1)(E2)` 分别表示交和并。
+
+输入用户数、各用户的 DN 和属性表，再输入查询数及各条表达式。用户至多 2500，每人至多 500 条属性，查询至多 500，表达式长度至多 2000；属性和值均不超过 `10^9`。没有属性 a 的用户不满足 `a~b`。
+
+每次输出匹配 DN 的升序列表，没有匹配时输出空行。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16696)。
 
@@ -147,23 +161,21 @@ C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6
 
 给用户按输入顺序编号 `0..n-1`。一个 `bitset<2500>` 就能表示一批用户：第 `i` 位为 1，表示用户 `i` 匹配。这样，逻辑与对应位集的 `&`，逻辑或对应 `|`。
 
-关键是原子表达式。对于属性 `a`，记 `exists[a]` 为具有该属性的用户集合；对于属性与值的组合 `(a,b)`，记 `equals[a,b]` 为属性值等于 `b` 的用户集合。则
+关键是原子表达式。下文用属性及属性值组合标识集合；代码会先离散化，再用下标访问 `has`、`eq`。对于属性 `a`，记 `has[a]` 为具有该属性的用户集合；对于属性与值的组合 `(a,b)`，记 `eq[a,b]` 为属性值等于 `b` 的用户集合。则
 
-$$a:b\quad\longrightarrow\quad equals[a,b],$$
+$$a:b\quad\longrightarrow\quad eq[a,b],$$
 
-$$a\mathbin{\sim}b\quad\longrightarrow\quad exists[a]\ \&\ \sim equals[a,b].$$
+$$a\mathbin{\sim}b\quad\longrightarrow\quad has[a]\ \&\ \sim eq[a,b].$$
 
-反断言不能直接把相等集合取反：没有属性 `a` 的用户也不应匹配。必须再与 `exists[a]` 求交集。
+反断言不能直接把相等集合取反：没有属性 `a` 的用户也不应匹配。必须再与 `has[a]` 求交集。
 
 #### 2. 只给查询实际用到的属性和值建位集
 
-用户数据最多有 `2500 × 500 = 1250000` 条属性记录。  
-若给每条不同的属性值组合都建一个完整位集，会浪费不少空间；反过来，若每次原子查询都重新扫描该属性的用户，又会在长表达式中重复工作。
+用户数据最多有 `2500 × 500 = 1250000` 条属性记录。若给每条不同的属性值组合都建一个完整位集，会浪费不少空间；反过来，若每次原子查询都重新扫描该属性的用户，又会在长表达式中重复工作。
 
 本题没有在线修改，所有表达式都可以先读入。因此先扫描全部表达式，收集其中出现的 `(属性,值)`，排序并去重；再从中得到实际需要查询的属性列表。
 
-对于收集到的组合分配 `equals` 位集，对于收集到的属性分配 `exists` 位集。  
-用户数据中没有被表达式使用的属性不需要位集；某个被查询的组合没有出现在任何用户身上时，它的相等位集自然全为 0。
+对于收集到的组合分配 `eq` 位集，对于收集到的属性分配 `has` 位集。用户数据中没有被表达式使用的属性不需要位集；某个被查询的组合没有出现在任何用户身上时，它的相等位集自然全为 0。
 
 每条表达式最多约 250 个原子，500 条表达式最多约 125000 个原子。因此即使都不同，位集数量也受查询总长度约束，而不会随着全部用户属性记录数无限增长。
 
@@ -172,15 +184,15 @@ $$a\mathbin{\sim}b\quad\longrightarrow\quad exists[a]\ \&\ \sim equals[a,b].$$
 读入用户时，把每条属性保存为 `(属性,值,用户下标)` 的扁平记录。代码用
 
 ```text
-key = (uint64_t(属性) << 32) | 值
+key = (ull(属性) << 32) | unsigned(值)
 ```
 
 编码属性和值；两者均不超过 `10^9`，编码不会冲突，整数顺序也等于先比较属性、再比较值的顺序。
 
 把用户记录按 `key` 排序后，与已排序的查询组合列表、查询属性列表一起用双指针扫描：
 
-- 若记录的属性是需要查询的属性，把该用户加入相应 `exists`。
-- 若记录的完整 `key` 是需要查询的组合，把该用户加入相应 `equals`。
+- 若记录的属性是需要查询的属性，把该用户加入相应 `has`。
+- 若记录的完整 `key` 是需要查询的组合，把该用户加入相应 `eq`。
 
 这样每条记录只在建索引时处理一次。无需为百万个不同属性建立各自的小容器，也不会让每次反断言扫描该属性下的全部用户。索引建好后，原始记录可以释放。
 
@@ -197,199 +209,134 @@ key = (uint64_t(属性) << 32) | 值
 
 #### 5. 正确性与复杂度
 
-`exists` 和 `equals` 由用户原始记录直接构建，所以两个原子表达式的位集准确符合题意。组合表达式又分别取两个子结果的交集或并集，对表达式树作结构归纳即可得到整个结果正确。
+`has` 和 `eq` 由用户原始记录直接构建，所以两个原子表达式的位集准确符合题意。组合表达式又分别取两个子结果的交集或并集，对表达式树作结构归纳即可得到整个结果正确。
 
-设属性记录总数为 `P`，不同查询组合数为 `K`，被查询的不同属性数为 `H`，所有表达式的总原子数为 `A`，总字符数为 `L`；  
-位集占用 `W` 个机器字，当前上限为 `ceil(2500/64)=40`。
+设属性记录总数为 `P`，不同查询组合数为 `K`，被查询的不同属性数为 `H`，所有表达式的总原子数为 `A`，总字符数为 `L`；位集占用 `W` 个机器字，当前上限为 `ceil(2500/64)=40`。
 
 - 排序和构建索引需要 `O(P log P + K log K + (K+H)W)`，排序后的合并扫描为 `O(P+K+H)`。
 - 解析与求值需要 `O(L + A(log K+W))`。
 - 输出前扫描用户需要 `O(mn)`，另计实际输出字符量。
 - 空间为 `O(P + (K+H)W + L)`，以及递归解析的临时位集。按题目上限，最保守的位集和属性记录总量也在 512 MiB 限制内。
 
-实现使用缓冲输入输出，避免大量属性数字及结果 DN 的输入输出成为新的耗时来源。
-
-本版本地验证：1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过。完整测试配置和同机基准见 [回归报告](../tests/ldap-report.json)。
+原版本地验证：1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过。完整测试配置和同机基准见 [回归报告](../tests/ldap-report.json)。
 
 ### 代码
 
 独立源码：[C.cpp](C.cpp)
 
 ```cpp
-#include <algorithm>
-#include <bitset>
-#include <cstdint>
-#include <cstdio>
-#include <string>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using Bits = bitset<2500>;
-
-class FastIO {
-    static constexpr int SIZE = 1 << 16;
-    char input[SIZE], output[SIZE];
-    int pos = 0, length = 0, used = 0;
-    int get() {
-        if (pos == length) {
-            length = int(fread(input, 1, SIZE, stdin));
-            pos = 0;
-            if (!length) return EOF;
-        }
-        return input[pos++];
-    }
-public:
-    ~FastIO() { flush(); }
-    int read() {
-        int c = get(), value = 0;
-        while (c <= ' ' && c != EOF) c = get();
-        while (c >= '0' && c <= '9') {
-            value = value * 10 + c - '0';
-            c = get();
-        }
-        return value;
-    }
-    string word() {
-        string result;
-        int c = get();
-        while (c <= ' ' && c != EOF) c = get();
-        while (c > ' ') {
-            result.push_back(char(c));
-            c = get();
-        }
-        return result;
-    }
-    void flush() {
-        fwrite(output, 1, used, stdout);
-        used = 0;
-    }
-    void put(char c) {
-        if (used == SIZE) flush();
-        output[used++] = c;
-    }
-    void write(int value) {
-        char digits[10];
-        int count = 0;
-        do {
-            digits[count++] = char('0' + value % 10);
-            value /= 10;
-        } while (value);
-        while (count) put(digits[--count]);
-    }
+typedef unsigned long long ull;
+typedef pair<int,int> P;
+const int N=2500,M=2010;
+typedef bitset<N> bits;
+struct record{
+    ull key;
+    int u;
 };
-
-uint64_t encode(int attribute, int value) {
-    return (uint64_t(attribute) << 32) | uint32_t(value);
+int n,m;
+char s[M];
+vector<P> dn;
+vector<record> rec;
+vector<string> expr;
+vector<ull> keys;
+vector<int> attr,id;
+vector<bits> eq,has;
+ull code(int a,int b){
+    return (ull(a)<<32)|unsigned(b);
 }
-int number(const string &text, size_t &pos) {
-    int value = 0;
-    while (pos < text.size() && text[pos] >= '0' && text[pos] <= '9')
-        value = value * 10 + text[pos++] - '0';
-    return value;
+int num(const string &str,size_t &p){
+    int x=0;
+    while(p<str.size() && str[p]>='0' && str[p]<='9'){
+        x=x*10+str[p++]-'0';
+    }
+    return x;
 }
-struct Record {
-    uint64_t key;
-    int user;
-};
-
-class Evaluator {
-    const vector<uint64_t> &keys;
-    const vector<int> &attributeOf;
-    const vector<Bits> &equals, &exists;
-public:
-    Evaluator(const vector<uint64_t> &k, const vector<int> &a,
-              const vector<Bits> &e, const vector<Bits> &h)
-        : keys(k), attributeOf(a), equals(e), exists(h) {}
-    Bits parse(const string &text, size_t &pos) const {
-        if (text[pos] == '&' || text[pos] == '|') {
-            char op = text[pos++];
-            ++pos; // '('
-            Bits left = parse(text, pos);
-            pos += 2; // ')('
-            Bits right = parse(text, pos);
-            ++pos; // ')'
-            return op == '&' ? left & right : left | right;
-        }
-        int attribute = number(text, pos);
-        char op = text[pos++];
-        int value = number(text, pos);
-        size_t index = lower_bound(keys.begin(), keys.end(), encode(attribute, value)) - keys.begin();
-        if (op == ':') return equals[index];
-        // A missing attribute never satisfies either assertion form.
-        return exists[attributeOf[index]] & ~equals[index];
+bits parse(const string &str,size_t &p){
+    if(str[p]=='&' || str[p]=='|'){
+        char op=str[p++];
+        ++p;
+        bits a=parse(str,p);
+        p+=2;
+        bits b=parse(str,p);
+        ++p;
+        return op=='&'?a&b:a|b;
     }
-};
-
-int main() {
-    FastIO io;
-    int n = io.read();
-    vector<pair<int, int>> dn;
-    vector<Record> records;
-    records.reserve(n * 500);
-    for (int i = 0; i < n; ++i) {
-        int id = io.read(), count = io.read();
-        dn.push_back({id, i});
-        while (count--) {
-            int attribute = io.read(), value = io.read();
-            records.push_back({encode(attribute, value), i});
+    int a=num(str,p);
+    char op=str[p++];
+    int b=num(str,p);
+    int x=lower_bound(keys.begin(),keys.end(),code(a,b))-keys.begin();
+    if(op==':')return eq[x];
+    return has[id[x]]&~eq[x];
+}
+int main(){
+    scanf("%d",&n);
+    rec.reserve(n*500);
+    for(int i=0;i<n;++i){
+        int u,k;
+        scanf("%d%d",&u,&k);
+        dn.push_back({u,i});
+        while(k--){
+            int a,b;
+            scanf("%d%d",&a,&b);
+            rec.push_back({code(a,b),i});
         }
     }
-    int m = io.read();
-    vector<string> expressions(m);
-    vector<uint64_t> keys;
-    for (string &text : expressions) {
-        text = io.word();
-        for (size_t pos = 0; pos < text.size();) {
-            if (text[pos] >= '0' && text[pos] <= '9') {
-                int attribute = number(text, pos);
-                ++pos; // ':' or '~'
-                int value = number(text, pos);
-                keys.push_back(encode(attribute, value));
-            } else {
-                ++pos;
+    scanf("%d",&m);
+    expr.resize(m);
+    for(string &str:expr){
+        scanf("%2000s",s);
+        str=s;
+        for(size_t p=0;p<str.size();){
+            if(str[p]>='0' && str[p]<='9'){
+                int a=num(str,p);
+                ++p;
+                int b=num(str,p);
+                keys.push_back(code(a,b));
             }
+            else ++p;
         }
     }
-    sort(keys.begin(), keys.end());
-    keys.erase(unique(keys.begin(), keys.end()), keys.end());
-    vector<int> attributes, attributeOf;
-    for (uint64_t key : keys) {
-        int attribute = int(key >> 32);
-        if (attributes.empty() || attributes.back() != attribute)
-            attributes.push_back(attribute);
-        attributeOf.push_back(int(attributes.size()) - 1);
+    sort(keys.begin(),keys.end());
+    keys.erase(unique(keys.begin(),keys.end()),keys.end());
+    for(ull &key:keys){
+        int a=key>>32;
+        if(attr.empty() || attr.back()!=a)attr.push_back(a);
+        id.push_back(attr.size()-1);
     }
-    vector<Bits> equals(keys.size()), exists(attributes.size());
-    sort(records.begin(), records.end(), [](const Record &a, const Record &b) {
-        return a.key < b.key;
+    eq.resize(keys.size());
+    has.resize(attr.size());
+    sort(rec.begin(),rec.end(),[](const record &a,const record &b){
+        return a.key<b.key;
     });
-    size_t keyIndex = 0, attributeIndex = 0;
-    for (const Record &record : records) {
-        int attribute = int(record.key >> 32);
-        while (attributeIndex < attributes.size() && attributes[attributeIndex] < attribute)
-            ++attributeIndex;
-        if (attributeIndex < attributes.size() && attributes[attributeIndex] == attribute)
-            exists[attributeIndex].set(record.user);
-        while (keyIndex < keys.size() && keys[keyIndex] < record.key)
-            ++keyIndex;
-        if (keyIndex < keys.size() && keys[keyIndex] == record.key)
-            equals[keyIndex].set(record.user);
-    }
-    vector<Record>().swap(records);
-    sort(dn.begin(), dn.end());
-    Evaluator evaluator(keys, attributeOf, equals, exists);
-    for (const string &text : expressions) {
-        size_t pos = 0;
-        Bits answer = evaluator.parse(text, pos);
-        bool first = true;
-        for (auto [id, user] : dn) {
-            if (!answer[user]) continue;
-            if (!first) io.put(' ');
-            io.write(id);
-            first = false;
+    size_t x=0,y=0;
+    for(record &v:rec){
+        int a=v.key>>32;
+        while(y<attr.size() && attr[y]<a){
+            ++y;
         }
-        io.put('\n');
+        if(y<attr.size() && attr[y]==a)has[y].set(v.u);
+        while(x<keys.size() && keys[x]<v.key){
+            ++x;
+        }
+        if(x<keys.size() && keys[x]==v.key)eq[x].set(v.u);
     }
+    vector<record>().swap(rec);
+    sort(dn.begin(),dn.end());
+    for(string &str:expr){
+        size_t p=0;
+        bits ans=parse(str,p);
+        bool first=true;
+        for(auto &[u,i]:dn){
+            if(!ans[i])continue;
+            if(!first)putchar(' ');
+            printf("%d",u);
+            first=false;
+        }
+        putchar('\n');
+    }
+    return 0;
 }
 ```
 
@@ -399,15 +346,23 @@ int main() {
 
 标签：`离散化` · `线段树` · `区间赋值`
 
-状态：**完整实现，已验证满分**。  
-C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce91da67df0b81749c032)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305935489)（民间复刻评测）。
+本地验证：102 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adce91da67df0b81749c032)。
+
+原版验证：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce91da67df0b81749c032)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305935489)（民间复刻评测）。
 
 ### 题意
 
-管理最多 512 位二进制的地址，输入采用固定长度十六进制、每四位以冒号分隔。  
-`1 id l r` 申请闭区间：不能含其他用户的地址，且必须至少有一个尚未分配地址，成功则全部归 id 并输出 YES，否则 NO。  
-`2 s` 查询地址主人，未分配为 0；`3 l r` 查询是否整段都属于同一用户，是则输出编号，否则 0。  
-操作数 $q\le5\times10^4$。
+管理最多 512 位二进制的地址，支持申请地址段、查询单个地址主人及查询整段是否同属一个用户。
+
+输入地址位数及操作数 q，再依次输入操作，$q\le5\times10^4$。地址用固定长度十六进制表示，每四位以冒号分隔：
+
+- `1 id l r`：申请闭区间。不能含其他用户的地址，且必须至少有一个尚未分配的地址；成功后全部归 id。
+- `2 s`：查询地址 s 的主人，未分配为 0。
+- `3 l r`：查询整段是否属于同一用户。
+
+申请成功输出 YES，否则输出 NO。点查询输出主人编号；区间查询全部同主时输出该编号，否则输出 0。
 
 来源：[公开题面存档](https://www.luogu.com.cn/problem/P16697)。
 
@@ -415,15 +370,13 @@ C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机�
 
 ### 题解
 
-**大整数只用于排序，不需要转换成整数。** 删除冒号后，所有地址等长，字典序就是数值顺序。在前面补一位 0，便能安全计算最大地址的后继，避免全为 f 时溢出。
+**大整数只用于排序，不需要转换成整数**
 
-把每个闭区间变成半开区间 $[l,r+1)$；点查询同样视为 $[s,s+1)$。先读完所有操作，收集这些边界并排序去重。  
-相邻边界之间的所有地址永远一起被操作，因此可以压成一个叶子。  
-不能仅压缩 l 和 r 而忽略它们之间可能存在的空白地址。
+删除冒号后，所有地址等长，字典序就是数值顺序。在前面补一位 0，便能安全计算最大地址的后继，避免全为 f 时溢出。
 
-线段树维护区间内的最小主人编号、最大主人编号、最小正主人编号，并支持整段赋值。  
-申请合法等价于：最小编号为 0（确有空闲），并且最大编号为 0，或所有正编号都等于申请者。  
-查询同一主人时，只需最小编号等于最大编号。
+把每个闭区间变成半开区间 $[l,r+1)$；点查询同样视为 $[s,s+1)$。先读完所有操作，收集这些边界并排序去重。相邻边界之间的所有地址永远一起被操作，因此可以压成一个叶子。不能仅压缩 l 和 r 而忽略它们之间可能存在的空白地址。
+
+线段树维护区间内的最小主人编号、最大主人编号、最小正主人编号，并支持整段赋值。申请合法等价于：最小编号为 0（确有空闲），并且最大编号为 0，或所有正编号都等于申请者。查询同一主人时，只需最小编号等于最大编号。
 
 这些统计量可以从左右孩子合并，赋值时直接重置；懒标记保证区间操作效率。离散化保留每次操作的完整边界，因此压缩前后的覆盖关系一致，合法性判断又与规则逐项等价。
 
@@ -434,116 +387,120 @@ C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机�
 独立源码：[D.cpp](D.cpp)
 
 ```cpp
-#include <algorithm>
-#include <iostream>
-#include <limits>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int INF = 1000000000;
-struct Info {
-    int low = 0, high = 0, positive = INF;
+const int N=200,INF=0x3f3f3f3f;
+struct info{
+    int mn=0,mx=0,pos=INF;
 };
-Info merge(Info a, Info b) {
-    return {min(a.low, b.low), max(a.high, b.high), min(a.positive, b.positive)};
+info merge(info a,info b){
+    return {min(a.mn,b.mn),max(a.mx,b.mx),min(a.pos,b.pos)};
 }
-struct Node {
-    Info info;
-    int lazy = -1;
+struct segtree{
+    int n;
+    struct node{
+        int l,r,tag=-1;
+        info v;
+    };
+    vector<node> e;
+    #define l(p) e[p].l
+    #define r(p) e[p].r
+    void build(int p,int x,int y){
+        l(p)=x;r(p)=y;
+        if(x==y)return;
+        int mid=(x+y)>>1;
+        build(p<<1,x,mid);
+        build(p<<1|1,mid+1,y);
+    }
+    void init(int k){
+        n=k;
+        e.resize(n*4+4);
+        build(1,0,n-1);
+    }
+    void set(int p,int v){
+        e[p].v={v,v,v?v:INF};
+        e[p].tag=v;
+    }
+    void pushup(int p){
+        e[p].v=merge(e[p<<1].v,e[p<<1|1].v);
+    }
+    void pushdown(int p){
+        if(e[p].tag==-1)return;
+        set(p<<1,e[p].tag);
+        set(p<<1|1,e[p].tag);
+        e[p].tag=-1;
+    }
+    info query(int p,int x,int y){
+        if(x<=l(p) && r(p)<=y)return e[p].v;
+        pushdown(p);
+        int mid=(l(p)+r(p))>>1;
+        if(y<=mid)return query(p<<1,x,y);
+        if(x>mid)return query(p<<1|1,x,y);
+        return merge(query(p<<1,x,y),query(p<<1|1,x,y));
+    }
+    void update(int p,int x,int y,int v){
+        if(x<=l(p) && r(p)<=y){
+            set(p,v);
+            return;
+        }
+        pushdown(p);
+        int mid=(l(p)+r(p))>>1;
+        if(x<=mid)update(p<<1,x,y,v);
+        if(y>mid)update(p<<1|1,x,y,v);
+        pushup(p);
+    }
+}tr;
+struct operation{
+    int type,id;
+    string l,r;
 };
-struct Operation {
-    int type, id = 0;
-    string left, right;
-};
-string address() {
-    string s;
-    cin >> s;
-    s.erase(remove(s.begin(), s.end(), ':'), s.end());
-    return '0' + s;
+int bits,q;
+char s[N];
+vector<operation> ops;
+vector<string> a;
+string read(){
+    scanf("%s",s);
+    string str=s;
+    str.erase(remove(str.begin(),str.end(),':'),str.end());
+    return '0'+str;
 }
-string successor(string s) {
-    const string digits = "0123456789abcdef";
-    for (int i = int(s.size()) - 1; i >= 0; --i) {
-        if (s[i] == 'f')
-            s[i] = '0';
-        else {
-            s[i] = digits[digits.find(s[i]) + 1];
+string next(string str){
+    const string digit="0123456789abcdef";
+    for(int i=str.size()-1;i>=0;--i){
+        if(str[i]=='f')str[i]='0';
+        else{
+            str[i]=digit[digit.find(str[i])+1];
             break;
         }
     }
-    return s;
+    return str;
 }
-vector<Node> tree;
-void assign(int u, int value) {
-    tree[u].info = {value, value, value ? value : INF};
-    tree[u].lazy = value;
-}
-void push(int u) {
-    if (tree[u].lazy != -1) {
-        assign(u * 2, tree[u].lazy);
-        assign(u * 2 + 1, tree[u].lazy);
-        tree[u].lazy = -1;
+int main(){
+    scanf("%d%d",&bits,&q);
+    ops.resize(q);
+    for(operation &op:ops){
+        scanf("%d",&op.type);
+        if(op.type==1)scanf("%d",&op.id);
+        op.l=read();
+        op.r=next(op.type==2?op.l:read());
+        a.push_back(op.l);
+        a.push_back(op.r);
     }
-}
-Info query(int u, int l, int r, int a, int b) {
-    if (a <= l && r <= b)
-        return tree[u].info;
-    push(u);
-    int mid = (l + r) / 2;
-    if (b <= mid)
-        return query(u * 2, l, mid, a, b);
-    if (a > mid)
-        return query(u * 2 + 1, mid + 1, r, a, b);
-    return merge(query(u * 2, l, mid, a, b), query(u * 2 + 1, mid + 1, r, a, b));
-}
-void update(int u, int l, int r, int a, int b, int value) {
-    if (a <= l && r <= b) {
-        assign(u, value);
-        return;
+    sort(a.begin(),a.end());
+    a.erase(unique(a.begin(),a.end()),a.end());
+    tr.init(a.size()-1);
+    for(operation &op:ops){
+        int x=lower_bound(a.begin(),a.end(),op.l)-a.begin();
+        int y=lower_bound(a.begin(),a.end(),op.r)-a.begin()-1;
+        info v=tr.query(1,x,y);
+        if(op.type==1){
+            bool ok=v.mn==0 && (v.mx==0 || (v.mx==op.id && v.pos==op.id));
+            puts(ok?"YES":"NO");
+            if(ok)tr.update(1,x,y,op.id);
+        }
+        else printf("%d\n",v.mn==v.mx?v.mn:0);
     }
-    push(u);
-    int mid = (l + r) / 2;
-    if (a <= mid)
-        update(u * 2, l, mid, a, b, value);
-    if (b > mid)
-        update(u * 2 + 1, mid + 1, r, a, b, value);
-    tree[u].info = merge(tree[u * 2].info, tree[u * 2 + 1].info);
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int bits, q;
-    cin >> bits >> q;
-    vector<Operation> ops(q);
-    vector<string> coordinates;
-    for (auto &op : ops) {
-        cin >> op.type;
-        if (op.type == 1)
-            cin >> op.id;
-        op.left = address();
-        op.right = successor(op.type == 2 ? op.left : address());
-        coordinates.push_back(op.left);
-        coordinates.push_back(op.right);
-    }
-    sort(coordinates.begin(), coordinates.end());
-    coordinates.erase(unique(coordinates.begin(), coordinates.end()), coordinates.end());
-    int n = int(coordinates.size()) - 1;
-    tree.resize(4 * n + 4);
-    for (auto &op : ops) {
-        int l = lower_bound(coordinates.begin(), coordinates.end(), op.left) - coordinates.begin();
-        int r = int(lower_bound(coordinates.begin(), coordinates.end(), op.right) -
-                    coordinates.begin()) -
-                1;
-        Info value = query(1, 0, n - 1, l, r);
-        if (op.type == 1) {
-            bool possible = value.low == 0 &&
-                            (value.high == 0 || (value.high == op.id && value.positive == op.id));
-            cout << (possible ? "YES" : "NO") << '\n';
-            if (possible)
-                update(1, 0, n - 1, l, r, op.id);
-        } else
-            cout << (value.low == value.high ? value.low : 0) << '\n';
-    }
+    return 0;
 }
 ```
 
@@ -553,14 +510,19 @@ int main() {
 
 标签：`分治` · `线段树` · `树状数组` · `区间计数`
 
-状态：**完整实现，已验证满分**。  
-C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce91ea67df0b81749c036)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305936519)（民间复刻评测）。
+本地验证：83 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adce91ea67df0b81749c036)。
+
+原版验证：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce91ea67df0b81749c036)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305936519)（民间复刻评测）。
 
 ### 题意
 
-$n$ 块田地排成一行，每辆车只能完整覆盖给定闭区间 $[l_i,r_i]$，不能截断。  
-统计多少个 $L<R$，使得能选择若干辆车，恰好覆盖 $[L,R]$，允许重叠，但不能漏田或覆盖范围外的田。  
-输入 `n m` 以及 $m$ 个区间，$n,m\le2\times10^5$。注意田地是离散的：$[1,2]$ 与 $[3,4]$ 可以直接拼成 $[1,4]$。
+$n$ 块田地排成一行，每辆车只能完整覆盖给定闭区间 $[l_i,r_i]$，不能截断。统计有多少个 $L<R$，可以选择若干辆车恰好覆盖 $[L,R]$；允许重叠，但不能漏田或覆盖范围外的田。
+
+输入 `n m` 以及 $m$ 个区间，范围为 $n,m\le2\times10^5$。田地是离散的，$[1,2]$ 与 $[3,4]$ 可以直接拼成 $[1,4]$。
+
+输出符合要求的区间数量。
 
 来源：[公开题面与样例](https://www.luogu.com.cn/problem/P16698)
 
@@ -568,143 +530,172 @@ $n$ 块田地排成一行，每辆车只能完整覆盖给定闭区间 $[l_i,r_i
 
 ### 题解
 
-**按答案区间跨越的位置分治。** 在 $[lo,hi]$ 中取中点 $mid$。完全在左边、完全在右边的答案递归计算；本层只数 $L\le mid<R$。把车辆区间分成左侧、右侧、跨中点三类。
+**按答案区间跨越的位置分治**
 
-对每个左端点 $L$，定义 $a_L$ 为只用左侧车辆、从 $L$ 开始能连续覆盖的最远位置；没有以 $L$ 为起点的覆盖时设为 $L-1$。  
-倒序扫描 $L$：先取所有起点恰为 $L$ 的区间的最大右端点 $r$，再查询已算好的 $a_t$，其中 $L<t\le\min(mid,r+1)$，取最大值。  
-一次查询即可：达到最大值的那条链已经包含了从该 $t$ 能继续拼接的全部车辆。  
-线段树维护这些最大值。
+在 $[l,r]$ 中取中点 $mid$。完全在左边、完全在右边的答案递归计算；本层只数 $L\le mid<R$。把车辆区间分成左侧、右侧、跨中点三类。
+
+对每个左端点 $L$，定义 $a_L$ 为只用左侧车辆、从 $L$ 开始能连续覆盖的最远位置；没有以 $L$ 为起点的覆盖时设为 $L-1$。倒序扫描 $L$：先取所有起点恰为 $L$ 的区间的最大右端点 $r$，再查询已算好的 $a_t$，其中 $L<t\le\min(mid,r+1)$，取最大值。一次查询即可：达到最大值的那条链已经包含了从该 $t$ 能继续拼接的全部车辆。线段树维护这些最大值。
 
 若要通过一辆跨中点的车继续覆盖，它的左端点必须位于 $[L,a_L+1]$。在这些车中取最小右端点，记为 $b_L$。如果 $a_L=mid$，还可以完全不使用跨中点车辆，此时把 $mid+1$ 也作为候选 $b_L$。没有方案则为正无穷。
 
 从右向左做完全对称的计算，得到 $a_R$（右侧能连续覆盖到的最左位置），以及 $b_R$（能接上的跨中点车辆的最大左端点）；若右侧本身覆盖到 $mid+1$，也允许 $b_R=mid$。
 
-**关键判定：** $[L,R]$ 可覆盖，当且仅当 $b_L\le R$ 且 $L\le b_R$。必要性由一组覆盖中接通左右边界的第一、最后跨中点车辆得到。  
-充分性是：左右两端分别有合法覆盖接到跨中点车辆；两辆跨中点车必定重叠。  
-若两侧都靠相邻拼接接通，则它们在 $mid,mid+1$ 相邻，仍连续。若只有一侧不需要跨车，另一侧的跨车也能与它接上。
+**关键判定**
 
-把所有 $L$ 按 $b_L$ 排序，按 $R$ 递增扫描，将 $b_L\le R$ 的左端点加入树状数组，查询不超过 $b_R$ 的数量即可。  
-本层 $O((n+m)\log n)$，递归后总时间 $O((n+m)\log^2 n)$；实现保留各层临时数组，空间上界 $O((n+m)\log n)$。  
-重复车辆不影响答案，单点区间不计入。
+$[L,R]$ 可覆盖，当且仅当 $b_L\le R$ 且 $L\le b_R$。必要性由一组覆盖中接通左右边界的第一、最后跨中点车辆得到。充分性是：左右两端分别有合法覆盖接到跨中点车辆；两辆跨中点车必定重叠。若两侧都靠相邻拼接接通，则它们在 $mid,mid+1$ 相邻，仍连续。若只有一侧不需要跨车，另一侧的跨车也能与它接上。
+
+把所有 $L$ 按 $b_L$ 排序，按 $R$ 递增扫描，将 $b_L\le R$ 的左端点加入树状数组，查询不超过 $b_R$ 的数量即可。
+
+本层 $O((n+m)\log n)$，递归后总时间 $O((n+m)\log^2 n)$；实现保留各层临时数组，空间上界 $O((n+m)\log n)$。重复车辆不影响答案，单点区间不计入。
 
 ### 代码
 
 独立源码：[E.cpp](E.cpp)
 
 ```cpp
-#include <algorithm>
-#include <functional>
-#include <iostream>
-#include <limits>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Range {
-    int base, identity;
-    bool minimum;
-    vector<int> t;
-    Range(int n, bool mn)
-        : base(n), identity(mn ? 1000000000 : -1000000000), minimum(mn), t(2 * n, identity) {}
-    int combine(int a, int b) {
-        return minimum ? min(a, b) : max(a, b);
+typedef long long ll;
+typedef pair<int,int> P;
+const int INF=0x3f3f3f3f;
+struct range{
+    int n,val;
+    bool mn;
+    vector<int> tr;
+    void init(int k,bool flag){
+        n=k;
+        mn=flag;
+        val=mn?INF:-INF;
+        tr.assign(n*2,val);
     }
-    void put(int x, int v) {
-        x += base;
-        t[x] = combine(t[x], v);
-        for (x >>= 1; x; x >>= 1)
-            t[x] = combine(t[2 * x], t[2 * x + 1]);
+    int merge(int a,int b){
+        return mn?min(a,b):max(a,b);
     }
-    int get(int l, int r) {
-        if (l > r)
-            return identity;
-        int ans = identity;
-        for (l += base, r += base + 1; l < r; l >>= 1, r >>= 1) {
-            if (l & 1)
-                ans = combine(ans, t[l++]);
-            if (r & 1)
-                ans = combine(ans, t[--r]);
+    void add(int x,int v){
+        x+=n;
+        tr[x]=merge(tr[x],v);
+        for(x>>=1;x;x>>=1){
+            tr[x]=merge(tr[x<<1],tr[x<<1|1]);
+        }
+    }
+    int query(int l,int r){
+        if(l>r)return val;
+        int ans=val;
+        for(l+=n,r+=n+1;l<r;l>>=1,r>>=1){
+            if(l&1)ans=merge(ans,tr[l++]);
+            if(r&1)ans=merge(ans,tr[--r]);
         }
         return ans;
     }
 };
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<pair<int, int>> intervals(m);
-    for (auto &a : intervals)
-        cin >> a.first >> a.second;
-    function<long long(int, int, vector<pair<int, int>>)> solve =
-        [&](int lo, int hi, vector<pair<int, int>> items) -> long long {
-        if (lo == hi || items.empty())
-            return 0;
-        int mid = (lo + hi) / 2, len = hi - lo + 1;
-        vector<pair<int, int>> left, right, cross;
-        vector<int> furthest(len), nearest(len);
-        for (int i = lo; i <= hi; ++i) {
-            furthest[i - lo] = i - 1;
-            nearest[i - lo] = i + 1;
+struct BIT{
+    int n;
+    vector<int> tr;
+    void init(int k){
+        n=k;
+        tr.assign(n+1,0);
+    }
+    void add(int x){
+        for(;x<=n;x+=x&-x){
+            ++tr[x];
         }
-        for (auto [l, r] : items) {
-            if (r <= mid) {
-                left.push_back({l, r});
-                furthest[l - lo] = max(furthest[l - lo], r);
-            } else if (l > mid) {
-                right.push_back({l, r});
-                nearest[r - lo] = min(nearest[r - lo], l);
-            } else
-                cross.push_back({l, r});
+    }
+    int sum(int x){
+        int ans=0;
+        for(;x>0;x-=x&-x){
+            ans+=tr[x];
         }
-        vector<int> needRight(mid - lo + 1), needLeft(hi - mid);
-        {
-            Range reach(len, false), ends(len, true);
-            for (auto [l, r] : cross)
-                ends.put(l - lo, r);
-            for (int L = mid; L >= lo; --L) {
-                int a = furthest[L - lo];
-                a = max(a, reach.get(L + 1 - lo, min(mid, a + 1) - lo));
-                reach.put(L - lo, a);
-                int b = ends.get(L - lo, min(mid, a + 1) - lo);
-                if (a == mid)
-                    b = min(b, mid + 1);
-                needRight[L - lo] = b;
-            }
+        return ans;
+    }
+};
+int n,m;
+ll solve(int l,int r,vector<P> v){
+    if(l==r || v.empty())return 0;
+    int mid=(l+r)>>1,len=r-l+1;
+    vector<P> a,b,c;
+    vector<int> far(len),near(len);
+    for(int i=l;i<=r;++i){
+        far[i-l]=i-1;
+        near[i-l]=i+1;
+    }
+    for(auto &[x,y]:v){
+        if(y<=mid){
+            a.push_back({x,y});
+            far[x-l]=max(far[x-l],y);
         }
-        {
-            Range reach(len, true), starts(len, false);
-            for (auto [l, r] : cross)
-                starts.put(r - lo, l);
-            for (int R = mid + 1; R <= hi; ++R) {
-                int a = nearest[R - lo];
-                a = min(a, reach.get(max(mid + 1, a - 1) - lo, R - 1 - lo));
-                reach.put(R - lo, a);
-                int b = starts.get(max(mid + 1, a - 1) - lo, R - lo);
-                if (a == mid + 1)
-                    b = max(b, mid);
-                needLeft[R - mid - 1] = b;
-            }
+        else if(x>mid){
+            b.push_back({x,y});
+            near[y-l]=min(near[y-l],x);
         }
-        vector<pair<int, int>> events;
-        for (int L = lo; L <= mid; ++L)
-            events.push_back({needRight[L - lo], L});
-        sort(events.begin(), events.end());
-        vector<int> bit(mid - lo + 2);
-        size_t p = 0;
-        long long answer = 0;
-        for (int R = mid + 1; R <= hi; ++R) {
-            while (p < events.size() && events[p].first <= R) {
-                int x = events[p++].second - lo + 1;
-                for (; x < int(bit.size()); x += x & -x)
-                    ++bit[x];
-            }
-            int bound = min(mid, needLeft[R - mid - 1]);
-            for (int x = bound - lo + 1; x > 0; x -= x & -x)
-                answer += bit[x];
+        else c.push_back({x,y});
+    }
+    vector<int> right(mid-l+1),left(r-mid);
+    range reach,ends;
+    reach.init(len,false);
+    ends.init(len,true);
+    for(auto &[x,y]:c){
+        ends.add(x-l,y);
+    }
+    for(int i=mid;i>=l;--i){
+        int x=far[i-l];
+        x=max(x,reach.query(i+1-l,min(mid,x+1)-l));
+        reach.add(i-l,x);
+        int y=ends.query(i-l,min(mid,x+1)-l);
+        if(x==mid)y=min(y,mid+1);
+        right[i-l]=y;
+    }
+    reach.init(len,true);
+    ends.init(len,false);
+    for(auto &[x,y]:c){
+        ends.add(y-l,x);
+    }
+    for(int i=mid+1;i<=r;++i){
+        int x=near[i-l];
+        x=min(x,reach.query(max(mid+1,x-1)-l,i-1-l));
+        reach.add(i-l,x);
+        int y=ends.query(max(mid+1,x-1)-l,i-l);
+        if(x==mid+1)y=max(y,mid);
+        left[i-mid-1]=y;
+    }
+    vector<P> events;
+    for(int i=l;i<=mid;++i){
+        events.push_back({right[i-l],i});
+    }
+    sort(events.begin(),events.end());
+    BIT bit;
+    bit.init(mid-l+1);
+    size_t p=0;
+    ll ans=0;
+    for(int i=mid+1;i<=r;++i){
+        while(p<events.size() && events[p].first<=i){
+            bit.add(events[p++].second-l+1);
         }
-        // Release this level's bulky lists before recursing.
-        return answer + solve(lo, mid, std::move(left)) + solve(mid + 1, hi, std::move(right));
-    };
-    cout << solve(1, n, std::move(intervals)) << '\n';
+        int x=min(mid,left[i-mid-1]);
+        ans+=bit.sum(x-l+1);
+    }
+    ans+=solve(l,mid,std::move(a));
+    ans+=solve(mid+1,r,std::move(b));
+    return ans;
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    vector<P> v(m);
+    for(auto &[l,r]:v){
+        scanf("%d%d",&l,&r);
+    }
+    printf("%lld\n",solve(1,n,std::move(v)));
+    return 0;
 }
 ```
+
+<!-- local-validation-attachments:start -->
+
+### 验证附件
+
+- [VALIDATION.md](../tests/202303/VALIDATION.md)
+- [boundaries.py](../tests/202303/boundaries.py)
+- [e-style-followup-report.json](../tests/202303/e-style-followup-report.json)
+- [refactor-report.json](../tests/202303/refactor-report.json)
+- [statements.json](../tests/202303/statements.json)
+
+<!-- local-validation-attachments:end -->

@@ -1,0 +1,28 @@
+{
+  "problem": "202303E",
+  "previous_sha256": "aa3fdaa1da661946a900861f2b499e9a17d3c560671a55a0a3a0de2e47a8da20",
+  "source_sha256": "a24464b151f4e0eaee241f63faebff0c5e9ac2e90763ac3454e39cbb8abbe32b",
+  "distinct_inputs": 83,
+  "case_kinds": {
+    "saved_sample": 1,
+    "retained_independent": 80,
+    "boundary": 2
+  },
+  "case_sha256": "eb9bd48b83203cd56362e1d90342f8954a44c6760f659a7ca6289f8bcc37fa38",
+  "per_binary_results": {
+    "O2": {
+      "passed": 83,
+      "seconds": 1.371
+    },
+    "UBSan": {
+      "passed": 83,
+      "seconds": 1.456
+    }
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "Recursive sums accumulated in separate statements, then return ans."
+  ],
+  "historical_report": "refactor-report.json",
+  "note": "Replay of saved samples, independent oracle cases and existing boundaries; no new online submission."
+}

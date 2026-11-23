@@ -1,31 +1,27 @@
-#include <algorithm>
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, k;
-    long long m;
-    cin >> n >> m >> k;
-    vector<pair<int, int>> a(n);
-    int hi = k;
-    for (auto &[t, c] : a) {
-        cin >> t >> c;
-        hi = max(hi, t);
+typedef long long ll;
+typedef pair<int,int> P;
+int n,k,l,r;
+ll m;
+vector<P> a;
+int main(){
+    scanf("%d%lld%d",&n,&m,&k);
+    a.resize(n);
+    l=r=k;
+    for(auto &[t,c]:a){
+        scanf("%d%d",&t,&c);
+        r=max(r,t);
     }
-    int lo = k;
-    while (lo < hi) {
-        int mid = lo + (hi - lo) / 2;
-        long long need = 0;
-        for (auto [t, c] : a)
-            if (t > mid)
-                need += 1LL * (t - mid) * c;
-        if (need <= m)
-            hi = mid;
-        else
-            lo = mid + 1;
+    while(l<r){
+        int mid=l+(r-l)/2;
+        ll sum=0;
+        for(auto &[t,c]:a){
+            if(t>mid)sum+=1ll*(t-mid)*c;
+        }
+        if(sum<=m)r=mid;
+        else l=mid+1;
     }
-    cout << lo << '\n';
+    printf("%d\n",l);
+    return 0;
 }
