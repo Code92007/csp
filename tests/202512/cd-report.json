@@ -1,0 +1,102 @@
+{
+  "problems": "202512CD",
+  "seed": 9200720251203,
+  "source_sha256": {
+    "C": "395fbf034365cc6f68e917e07ce25850fdf26054b7d34f1b9f0152f0e837fcda",
+    "D": "dbec5bd77fcfa70223d056458affad8101a38bd8bc2e607aec1d7a2c1b327a29"
+  },
+  "script_sha256": "1ddc8ea5c46c6dface88618fbf930c1a3cd463c200ef3a3ca7f610d4dc78fa1a",
+  "original_source_sha256": {
+    "C": "0cc986c47b1b61908fab09a097258df8aeabd426de2eb26b4d0483cbf4c51a4a",
+    "D": "4ce68af1efd3f78912f78e78b31bcd3891e81035c2aafe43f13a574d17f29675"
+  },
+  "case_sha256": "914b7e375139c34c6233e3d5f9d9c08fd8138d98f7d15a752c28de4afdd228c2",
+  "distinct_independent_inputs": 2786,
+  "results": [
+    {
+      "binary_suffix": "(optimized)",
+      "inputs": 2786,
+      "cases": {
+        "C/all_small_flips": 542,
+        "C/all_small_rotations": 1188,
+        "C/max_size_identity": 2,
+        "C/mixed_forward_random": 300,
+        "C/retained_independent": 100,
+        "C/saved_sample": 2,
+        "D/literal_tuple_oracle": 492,
+        "D/retained_independent": 157,
+        "D/saved_sample": 3
+      },
+      "seconds": 6.432
+    },
+    {
+      "binary_suffix": "-ubsan",
+      "inputs": 2786,
+      "cases": {
+        "C/all_small_flips": 542,
+        "C/all_small_rotations": 1188,
+        "C/max_size_identity": 2,
+        "C/mixed_forward_random": 300,
+        "C/retained_independent": 100,
+        "C/saved_sample": 2,
+        "D/literal_tuple_oracle": 492,
+        "D/retained_independent": 157,
+        "D/saved_sample": 3
+      },
+      "seconds": 14.441
+    }
+  ],
+  "stress": [
+    {
+      "problem": "D",
+      "op": 0,
+      "n": 10000000,
+      "binary": "D",
+      "seconds": 0.092,
+      "peak_rss_bytes": 88522752,
+      "output": "660906850",
+      "reference": "Original source compatibility check; independent literal oracle covers n<=5000."
+    },
+    {
+      "problem": "D",
+      "op": 0,
+      "n": 10000000,
+      "binary": "D-ubsan",
+      "seconds": 0.132,
+      "peak_rss_bytes": 99041280,
+      "output": "660906850",
+      "reference": "Original source compatibility check; independent literal oracle covers n<=5000."
+    },
+    {
+      "problem": "D",
+      "op": 1,
+      "n": 10000000,
+      "binary": "D",
+      "seconds": 0.157,
+      "peak_rss_bytes": 248676352,
+      "output": "474588597",
+      "reference": "Original source compatibility check; independent literal oracle covers n<=5000."
+    },
+    {
+      "problem": "D",
+      "op": 1,
+      "n": 10000000,
+      "binary": "D-ubsan",
+      "seconds": 0.253,
+      "peak_rss_bytes": 259129344,
+      "output": "474588597",
+      "reference": "Original source compatibility check; independent literal oracle covers n<=5000."
+    }
+  ],
+  "literal_tuple_prefix_limit": 5000,
+  "source_ranges": {
+    "C": "1<=z<=400,1<=t<=50000,key_length=6*t+1; local dimensions<=10; rotations90/180/270 and whole turns0..3; flips1/-1.",
+    "D": "op in {0,1},1<=n<=10000000; modulus998244353."
+  },
+  "oracles": {
+    "C": "Physical forward encryption of copied grids; exhaustive small rotation/flip parameters, mixed operations, and provably identity operation blocks for maximum-size cases.",
+    "D": "Enumerate divisors C,E of b*b, retain literal positive integral seven-tuples satisfying all equations, directly test seven-value set cardinality. No weighted local-function/inclusion-exclusion oracle."
+  },
+  "compilation": "Apple Clang C++17 -O2 -Wall -Wextra -Wshadow; additional -O1 -g -fsanitize=undefined -fno-sanitize-recover=all builds. No warnings.",
+  "note": "Local checks only; no new online submission. Maximum-n D runs are source-compatibility/performance checks, not independent brute force. Repeated sanitizer runs are not additional distinct inputs."
+}

@@ -1,0 +1,62 @@
+{
+  "problems": "202512AB",
+  "seed": 92007202512,
+  "source_sha256": {
+    "A.cpp": "28c1850d2d27b8befca5b9d4284a907a7c68ad8c2b1dfd726c88bd587552926e",
+    "B.cpp": "b6557d005dac77f82b30dabaa3c8f7c9b45b0ee1727774268e9d6d3e98f48e6b"
+  },
+  "oracle_sha256": "1f4eb333c27b5db715f34bde1390615bc44b535acb2a470235518847bb772cde",
+  "case_sha256": "c3c5aebb9344d5042e5c246ee795571a29caa023a9c529ade00d7940c771e2b7",
+  "distinct_inputs": 1557,
+  "results": [
+    {
+      "binary_suffix": "(optimized)",
+      "inputs": 1557,
+      "cases": {
+        "A/exhaustive_small": 852,
+        "A/max_size": 2,
+        "A/retained_independent": 60,
+        "A/saved_sample": 2,
+        "A/value31_boundary": 12,
+        "B/exhaustive_short_keys": 584,
+        "B/long_alternating_keys": 2,
+        "B/long_random_keys": 2,
+        "B/max_size": 1,
+        "B/retained_independent": 30,
+        "B/saved_sample": 2,
+        "B/thousand_repeated_keys": 8
+      },
+      "seconds": 5.18
+    },
+    {
+      "binary_suffix": "-ubsan",
+      "inputs": 194,
+      "cases": {
+        "A/exhaustive_small": 41,
+        "A/max_size": 2,
+        "A/retained_independent": 60,
+        "A/saved_sample": 2,
+        "A/value31_boundary": 12,
+        "B/exhaustive_short_keys": 32,
+        "B/long_alternating_keys": 2,
+        "B/long_random_keys": 2,
+        "B/max_size": 1,
+        "B/retained_independent": 30,
+        "B/saved_sample": 2,
+        "B/thousand_repeated_keys": 8
+      },
+      "seconds": 2.058
+    }
+  ],
+  "source_ranges": {
+    "A": "1<=n<=10000,1<=m<=100,0<=a_i<2^31,1<=set_size<=1000; nonempty strictly increasing sets.",
+    "B": "1<=n<=500000,1<=m<=1000,0<=key<8,0<=value<512."
+  },
+  "sources": [
+    "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512A/",
+    "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512B/"
+  ],
+  "oracle": "Retained 60 A/30 B independent oracle loops and four saved samples. A compares actual Python sets and exact XOR; exhaustive tiny assignments/subset pairs and full-size inputs. B applies algebraic inverse rounds backwards for all 512 states; exhausts key sequences of lengths 1..3, long keys and maximum input.",
+  "compilation": "Apple Clang C++17, -O2 -Wall -Wextra; additional -O1 -g -fsanitize=undefined -fno-sanitize-recover=all builds. No compiler warnings or sanitizer diagnostics.",
+  "note": "Local validation only; no new online submission. Repeated sanitizer executions do not add distinct inputs."
+}

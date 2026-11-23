@@ -1,0 +1,97 @@
+{
+  "problem": "202512E",
+  "seed": 92007202512,
+  "source_sha256": "b630cd0290456ab85c5509cb0ffd8e6e14980d98672bd82e250d507350cd9964",
+  "distinct_inputs": 501,
+  "cases": {
+    "retained_saved": 1,
+    "oj_sample": 3,
+    "retained_random": 100,
+    "threshold_boundary": 93,
+    "subset_partition_random": 300,
+    "max_singletons_merge": 1,
+    "max_distinct_path_growth": 1,
+    "balanced_duplicate_merges": 1,
+    "max_all_conflict": 1
+  },
+  "case_sha256": "17c51af4d7a6acde301e80b6bd8bfa89e41ca4e01201a586c5812f15ac14d99d",
+  "results": {
+    "/tmp/csp-202512e-opt": {
+      "cases": {
+        "retained_saved": 1,
+        "oj_sample": 3,
+        "retained_random": 100,
+        "threshold_boundary": 93,
+        "subset_partition_random": 300,
+        "max_singletons_merge": 1,
+        "max_distinct_path_growth": 1,
+        "balanced_duplicate_merges": 1,
+        "max_all_conflict": 1
+      },
+      "seconds": 2.357,
+      "stresses": [
+        {
+          "kind": "max_singletons_merge",
+          "seconds": 0.1941,
+          "peak_rss_bytes": 305397760
+        },
+        {
+          "kind": "max_distinct_path_growth",
+          "seconds": 0.2182,
+          "peak_rss_bytes": 595394560
+        },
+        {
+          "kind": "balanced_duplicate_merges",
+          "seconds": 0.1671,
+          "peak_rss_bytes": 153436160
+        },
+        {
+          "kind": "max_all_conflict",
+          "seconds": 0.0532,
+          "peak_rss_bytes": null
+        }
+      ]
+    },
+    "/tmp/csp-202512e-ubsan": {
+      "cases": {
+        "retained_saved": 1,
+        "oj_sample": 3,
+        "retained_random": 100,
+        "threshold_boundary": 93,
+        "subset_partition_random": 300,
+        "max_all_conflict": 1
+      },
+      "seconds": 3.063,
+      "stresses": [
+        {
+          "kind": "max_all_conflict",
+          "seconds": 0.0567,
+          "peak_rss_bytes": null
+        }
+      ]
+    }
+  },
+  "oracle": "Retained and new small cases use independent stable-subset partition DP, adapted from tests/fifth_support.py. No Trie states or clique recurrence are used. Large W=1 stresses use duplicate multiplicities; balanced merges preserve contiguous ranges of periodic values so each cost is ceil(length/1024). W>=2^30 makes every pair conflict and the cost equals element count.",
+  "allocation": {
+    "kind": "Global static node pool",
+    "capacity_nodes": 30000600,
+    "node_bytes": 20,
+    "capacity_bytes": 600012000,
+    "rationale": "At most 500000 initial elements plus 500000 inserted elements; each insertion creates at most 30 nodes. Avoids vector reallocation peak.",
+    "prior_vector_sha256": "a5da5e6cb2bdceda402cbe6b7d31040f6425920edf63b5f7f22cd76b3dbb4939",
+    "prior_vector_peak_rss_bytes": 1266745344
+  },
+  "compiler": "Apple Clang C++17 with -I/tmp/csp202609-check/include for bits/stdc++.h; optimized -O2 -Wall -Wextra; UBSan -O1 -g -fsanitize=undefined -fno-sanitize-recover=all.",
+  "sources": [
+    "https://oj.shumeng.tech/p/CSP202512E",
+    "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512E/"
+  ],
+  "original_oj": {
+    "status": "accepted",
+    "score": 100,
+    "record": "https://oj.shumeng.tech/record/6adce734a67df0b81749b63c",
+    "belongs_to": "Original source only; replica evaluation."
+  },
+  "refactored_online_submission": false,
+  "note": "Local validation only. Retained historical generator cases may include an all-empty initial state, beyond the official positive initial-total lower bound; new random/boundary/pressure cases respect it. Stress timings and RSS from Python resource.getrusage are machine-specific, not official judge measurements."
+}

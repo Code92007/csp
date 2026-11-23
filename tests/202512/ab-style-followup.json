@@ -1,0 +1,45 @@
+{
+  "problems": "202512AB",
+  "previous_source_sha256": {
+    "A.cpp": "28c1850d2d27b8befca5b9d4284a907a7c68ad8c2b1dfd726c88bd587552926e",
+    "B.cpp": "b6557d005dac77f82b30dabaa3c8f7c9b45b0ee1727774268e9d6d3e98f48e6b"
+  },
+  "source_sha256": {
+    "A.cpp": "93911be9080e9e3f93308a3f0ee67d771c7ccdfeaf1de4480d451c469360cf4c",
+    "B.cpp": "1492328dcb86414212f59ce97fc0e50fa6d5692c4018ecf879fb3dcbd6f6d559"
+  },
+  "changes": {
+    "A": [
+      "bool ok=((s[i]==t)==(h[i]==v));",
+      "puts(ok?\"correct\":\"wrong\");"
+    ],
+    "B": [
+      "x=b<<6;",
+      "x|=(c^f(b,k[j]))<<3;",
+      "x|=a^f(c,k[j]);"
+    ]
+  },
+  "compilation": "Apple Clang C++17 -O2 -Wall -Wextra; both sources compile with no warnings.",
+  "tests": {
+    "A_saved_samples": 2,
+    "B_saved_samples": 2,
+    "B_full_state_multikey_inputs": 1,
+    "B_full_state_values": 512,
+    "B_keys": [
+      0,
+      7,
+      3,
+      1,
+      6,
+      2,
+      5,
+      4,
+      7,
+      0,
+      3
+    ]
+  },
+  "equivalence": "A stores the same boolean before output. B combines the same three disjoint bit fields in three statements; a,b,c retain the previous state throughout.",
+  "result": "passed",
+  "note": "Retains historical 1557-case report unchanged. This style follow-up reruns only the stated samples and one complete-state B input; no new online submission."
+}

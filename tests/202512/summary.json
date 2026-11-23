@@ -1,0 +1,22 @@
+{
+  "contest": "202512",
+  "status": "passed",
+  "source_sha256": {
+    "A": "93911be9080e9e3f93308a3f0ee67d771c7ccdfeaf1de4480d451c469360cf4c",
+    "B": "1492328dcb86414212f59ce97fc0e50fa6d5692c4018ecf879fb3dcbd6f6d559",
+    "C": "395fbf034365cc6f68e917e07ce25850fdf26054b7d34f1b9f0152f0e837fcda",
+    "D": "dbec5bd77fcfa70223d056458affad8101a38bd8bc2e607aec1d7a2c1b327a29",
+    "E": "b630cd0290456ab85c5509cb0ffd8e6e14980d98672bd82e250d507350cd9964"
+  },
+  "optimized_distinct_inputs": 4844,
+  "ubsan_replays": 3478,
+  "groups": {
+    "AB": 1557,
+    "CD": 2786,
+    "E": 501
+  },
+  "style_followup": "reports/ab-style-followup.json",
+  "online_submission": false,
+  "note": "Different problem/input pairs, including saved samples and large constructions; sanitizer replays are not additional distinct inputs. AB exhaustive report precedes equivalent line splitting; final hashes and focused rerun in style followup. D modulus identifier was later renamed mod; current D hash and focused replay are in modulus_followup, while the prior source hash above remains historical.",
+  "modulus_followup": "reports/d-mod-followup-report.json"
+}

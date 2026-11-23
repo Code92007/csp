@@ -1,33 +1,31 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<int> a(n + 1), hash(m);
-    for (int i = 1; i <= n; i++)
-        cin >> a[i];
-    vector<vector<int>> sets(m);
-    for (int i = 0; i < m; i++) {
-        int size;
-        cin >> size;
-        sets[i].resize(size);
-        for (int &x : sets[i]) {
-            cin >> x;
-            hash[i] ^= a[x];
+const int N=1e4+5,M=105;
+int n,m,k,v,a[N],h[M];
+vector<int>s[M];
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;++i){
+        scanf("%d",&a[i]);
+    }
+    for(int i=1;i<=m;++i){
+        scanf("%d",&k);
+        s[i].resize(k);
+        for(int &x:s[i]){
+            scanf("%d",&x);
+            h[i]^=a[x];
         }
     }
-    for (int i = 0; i < m; i++) {
-        int size, value = 0;
-        cin >> size;
-        vector<int> other(size);
-        for (int &x : other) {
-            cin >> x;
-            value ^= a[x];
+    for(int i=1;i<=m;++i){
+        scanf("%d",&k);
+        vector<int>t(k);
+        v=0;
+        for(int &x:t){
+            scanf("%d",&x);
+            v^=a[x];
         }
-        bool actual = sets[i] == other, predicted = hash[i] == value;
-        cout << (actual == predicted ? "correct" : "wrong") << '\n';
+        bool ok=((s[i]==t)==(h[i]==v));
+        puts(ok?"correct":"wrong");
     }
+    return 0;
 }

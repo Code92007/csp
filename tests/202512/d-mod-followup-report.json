@@ -1,0 +1,29 @@
+{
+  "problem": "202512D",
+  "previous_sha256": "dbec5bd77fcfa70223d056458affad8101a38bd8bc2e607aec1d7a2c1b327a29",
+  "source_sha256": "606c3bb805c8e1cf5a6dd74eff3e7e077a2dfd17fefe5c598dad2c967f1656b5",
+  "distinct_inputs": 652,
+  "case_kinds": {
+    "saved_sample": 3,
+    "retained_independent": 157,
+    "literal_tuple_oracle": 492
+  },
+  "case_sha256": "0c887cd124177a8e030e710b7eed4a08a9acb4138a51dde0a6faa3272e1ae8c7",
+  "per_binary_results": {
+    "O2": {
+      "passed": 652,
+      "seconds": 4.122
+    },
+    "UBSan": {
+      "passed": 652,
+      "seconds": 4.383
+    }
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "P modulus renamed mod; pair aliases retained."
+  ],
+  "limited_text_equivalence_checked": true,
+  "historical_report": "cd-report.json",
+  "note": "Existing independent oracle and boundary/saved cases replayed. Historical reports are retained and do not claim the current hash. No new online submission."
+}

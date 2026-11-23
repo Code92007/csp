@@ -1,0 +1,15 @@
+{
+  "problem": "202512A",
+  "previous_source_sha256": "28c1850d2d27b8befca5b9d4284a907a7c68ad8c2b1dfd726c88bd587552926e",
+  "source_sha256": "93911be9080e9e3f93308a3f0ee67d771c7ccdfeaf1de4480d451c469360cf4c",
+  "before": "puts((s[i]==t)==(h[i]==v)?\"correct\":\"wrong\");",
+  "after": [
+    "bool ok=((s[i]==t)==(h[i]==v));",
+    "puts(ok?\"correct\":\"wrong\");"
+  ],
+  "compilation": "Apple Clang C++17 -O2 -Wall -Wextra; no warnings.",
+  "saved_samples": 2,
+  "result": "passed",
+  "reason": "The identical boolean expression is evaluated once and stored before the same conditional string selection. No algorithm or input behavior changed.",
+  "note": "The 1557-case ab-report.json is retained with historical source hashes. Only two saved A samples were rerun for this expression-only revision. No online submission."
+}

@@ -1,86 +1,86 @@
-#include <array>
-#include <cmath>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using i64 = long long;
-constexpr int MOD = 998244353;
-using Values = array<int, 5>;
-Values local(int p, int exponent) {
-    vector<i64> power(3 * exponent + 1, 1);
-    for (int i = 1; i <= 3 * exponent; ++i)
-        power[i] = power[i - 1] * p % MOD;
-    Values ans{};
-    for (int x = -exponent; x <= exponent; ++x) {
-        for (int y = -exponent; y <= exponent; ++y) {
-            if (x + y > exponent)
-                continue;
-            int w = power[exponent - x - y];
-            auto add = [&](int index) { ans[index] = (ans[index] + w) % MOD; };
-            add(0);
-            if (x == 0)
-                add(1);
-            if (x == y)
-                add(2);
-            if (x == -y)
-                add(3);
-            if (y == -2 * x)
-                add(4);
+typedef long long ll;
+const int N=1e7+10,M=5,K=3200,L=75;
+const int mod=998244353;
+typedef array<int,M> A;
+int op,n,lim,cnt,mn[N];
+ll ans;
+vector<int>pr,f[M];
+vector<A>g[K];
+A calc(int p,int e){
+    ll pw[L];
+    pw[0]=1;
+    for(int i=1;i<=3*e;++i){
+        pw[i]=pw[i-1]*p%mod;
+    }
+    A res;
+    res.fill(0);
+    for(int x=-e;x<=e;++x){
+        for(int y=-e;y<=e;++y){
+            if(x+y>e)continue;
+            int w=pw[e-x-y];
+            res[0]=(res[0]+w)%mod;
+            if(!x)res[1]=(res[1]+w)%mod;
+            if(x==y)res[2]=(res[2]+w)%mod;
+            if(x==-y)res[3]=(res[3]+w)%mod;
+            if(y==-2*x)res[4]=(res[4]+w)%mod;
         }
     }
-    return ans;
+    return res;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int op, n;
-    cin >> op >> n;
-    int limit = sqrt(n);
-    vector<int> least(n + 1), primes;
-    for (int i = 2; i <= n; ++i) {
-        if (!least[i]) {
-            least[i] = i;
-            primes.push_back(i);
+int main(){
+    scanf("%d%d",&op,&n);
+    lim=sqrt(n);
+    for(int i=2;i<=n;++i){
+        if(!mn[i]){
+            mn[i]=i;
+            pr.push_back(i);
         }
-        for (int p : primes) {
-            if (p > least[i] || i64(p) * i > n)
-                break;
-            least[i * p] = p;
+        for(int &p:pr){
+            if(p>mn[i] || 1ll*p*i>n)break;
+            mn[i*p]=p;
         }
     }
-    vector<vector<Values>> table(limit + 1);
-    for (int p : primes) {
-        if (p > limit)
-            break;
-        table[p].push_back({});
-        for (i64 power = p, e = 1; power <= n; power *= p, ++e)
-            table[p].push_back(local(p, int(e)));
-    }
-    int count = op ? 5 : 1;
-    vector<vector<int>> f(count, vector<int>(n + 1));
-    for (auto &row : f)
-        row[1] = 1;
-    i64 answer = op ? 0 : 1;
-    for (int i = 2; i <= n; ++i) {
-        int p = least[i], rest = i, exponent = 0;
-        do {
-            rest /= p;
-            ++exponent;
-        } while (rest % p == 0);
-        Values v;
-        if (p <= limit)
-            v = table[p][exponent];
-        else {
-            i64 p2 = i64(p) * p % MOD, p3 = p2 * p % MOD;
-            v = {int((p3 + 2 * p2 + 3LL * p + 2) % MOD), int((p2 + p + 1) % MOD),
-                 int((p3 + p) % MOD), int(3LL * p % MOD), p};
+    for(int &p:pr){
+        if(p>lim)break;
+        ll x=p;
+        for(int e=1;x<=n;++e){
+            g[p].push_back(calc(p,e));
+            x*=p;
         }
-        for (int j = 0; j < count; ++j)
-            f[j][i] = i64(f[j][rest]) * v[j] % MOD;
-        i64 value = f[0][i];
-        if (op)
-            value += -2LL * f[1][i] - f[2][i] - f[3][i] - 2LL * f[4][i] + 5LL * i;
-        answer = (answer + value) % MOD;
     }
-    cout << (answer + MOD) % MOD << '\n';
+    cnt=op?M:1;
+    for(int j=0;j<cnt;++j){
+        f[j].resize(n+1);
+        f[j][1]=1;
+    }
+    ans=op?0:1;
+    for(int i=2;i<=n;++i){
+        int p=mn[i],r=i,e=0;
+        while(r%p==0){
+            r/=p;
+            ++e;
+        }
+        A v;
+        if(p<=lim)v=g[p][e-1];
+        else{
+            ll p2=1ll*p*p%mod,p3=p2*p%mod;
+            v[0]=(p3+2*p2+3ll*p+2)%mod;
+            v[1]=(p2+p+1)%mod;
+            v[2]=(p3+p)%mod;
+            v[3]=3ll*p%mod;
+            v[4]=p;
+        }
+        for(int j=0;j<cnt;++j){
+            f[j][i]=1ll*f[j][r]*v[j]%mod;
+        }
+        ll val=f[0][i];
+        if(op){
+            val+=-2ll*f[1][i]-f[2][i]-f[3][i]-2ll*f[4][i]+5ll*i;
+        }
+        ans=(ans+val)%mod;
+    }
+    printf("%lld\n",(ans+mod)%mod);
+    return 0;
 }

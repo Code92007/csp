@@ -1,31 +1,28 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int f(int x, int k) {
-    return ((x * x + k * k) % 8) ^ k;
+const int N=1005,M=512;
+int n,m,x,k[N],ans[M];
+int f(int x,int k){
+    return ((x*x+k*k)%8)^k;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<int> keys(m);
-    for (int &k : keys)
-        cin >> k;
-    int inverse[512];
-    for (int initial = 0; initial < 512; initial++) {
-        int x = initial;
-        for (int k : keys) {
-            int a = x >> 6, b = (x >> 3) & 7, c = x & 7;
-            x = (b << 6) | ((c ^ f(b, k)) << 3) | (a ^ f(c, k));
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=m;++i){
+        scanf("%d",&k[i]);
+    }
+    for(int i=0;i<M;++i){
+        x=i;
+        for(int j=1;j<=m;++j){
+            int a=x>>6,b=x>>3&7,c=x&7;
+            x=b<<6;
+            x|=(c^f(b,k[j]))<<3;
+            x|=a^f(c,k[j]);
         }
-        inverse[x] = initial;
+        ans[x]=i;
     }
-    for (int i = 0, x; i < n; i++) {
-        cin >> x;
-        if (i)
-            cout << ' ';
-        cout << inverse[x];
+    for(int i=1;i<=n;++i){
+        scanf("%d",&x);
+        printf("%d%c",ans[x]," \n"[i==n]);
     }
-    cout << '\n';
+    return 0;
 }
