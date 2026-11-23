@@ -1,0 +1,92 @@
+{
+  "contest": "202305",
+  "source_sha256": {
+    "D": "24b806a5a2dcf465c54404ff0bfe23a090b2461fd9184f738602fda7ef28f1ec",
+    "E": "6e1d292cd7725bb031fd47b1cef08670b2c3725e6e9ef023318fe215168dd41c"
+  },
+  "different_inputs": 509,
+  "categories": {
+    "retained_independent": 214,
+    "additional_independent": 289,
+    "saved_sample": 3,
+    "constructive_stress": 1,
+    "storage_boundary": 2
+  },
+  "compilation": {
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.008514334000000012
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "D": 286,
+        "E": 223
+      },
+      "total": 509,
+      "seconds": 2.212096333
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "D": 286,
+        "E": 222
+      },
+      "total": 508,
+      "seconds": 3.463121125
+    }
+  ],
+  "independent_oracles": "Exhaustive label assignment; independent raw-route state Dijkstra without edge dominance/SOS preprocessing; 10000-node 10-label equal-cost chain and star with analytic answer 29998.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor.",
+  "storage_boundary_checks": [
+    {
+      "mode": "refactored",
+      "shape": "chain",
+      "n": 10000,
+      "k": 10,
+      "expected": 29998,
+      "seconds": 0.05064854100000005,
+      "passed": true
+    },
+    {
+      "mode": "refactored",
+      "shape": "star",
+      "n": 10000,
+      "k": 10,
+      "expected": 29998,
+      "seconds": 0.05070129099999998,
+      "passed": true
+    },
+    {
+      "mode": "ubsan",
+      "shape": "chain",
+      "n": 10000,
+      "k": 10,
+      "expected": 29998,
+      "seconds": 0.08608341600000002,
+      "passed": true
+    },
+    {
+      "mode": "ubsan",
+      "shape": "star",
+      "n": 10000,
+      "k": 10,
+      "expected": 29998,
+      "seconds": 0.06482399999999999,
+      "passed": true
+    }
+  ],
+  "changes": "D moves dfn/low/fa/cnt/sep/st/ord/label and deletion flags to global bounded arrays N=10010, resets per call, uses top; main queue global. E priority queue global; every Dijkstra fully drains it before next start.",
+  "before_sha256": {
+    "D": "96fe79c09a7aa926f3c7594c010ba82119be1208a731add10af6721460683c6d",
+    "E": "e433104ce39f9850193b6f2d9bae98b875e994acc9e6def0e719c6bb1be3c079"
+  },
+  "storage_case_sha256": "451b9799a81abd74a3c8bbc1defbe40b12be05d36a09b2405e82a08b19efb516"
+}

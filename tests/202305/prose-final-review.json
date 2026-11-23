@@ -1,0 +1,63 @@
+{
+  "contest": "202305",
+  "scope": "Final prose review: semantic paragraphs, separate headings/operation lists, current code names, full formulas/proofs/complexities and source attribution. Source code unchanged.",
+  "current_source_sha256": {
+    "A": "cf469ba06e4fcf69f36739059d8813f8a687b8238017030be00322c08f063b5a",
+    "B": "aaa4eda6f66102f27861a8bce3e279db42d0c0f5d35271ea5dfa1c8a5be14477",
+    "C": "e6772cbcb6503ca3c3c3b84f4a7f3111231e1435f584e6b2709a583138302bc2",
+    "D": "24b806a5a2dcf465c54404ff0bfe23a090b2461fd9184f738602fda7ef28f1ec",
+    "E": "6e1d292cd7725bb031fd47b1cef08670b2c3725e6e9ef023318fe215168dd41c"
+  },
+  "changes": [
+    {
+      "before": "把每局8行按固定顺序拼成64字符字符串",
+      "after": "把每局 8 行按固定顺序拼成 64 字符字符串"
+    },
+    {
+      "before": "先算 d×d 的 T=KᵀV，再算 QT，最后把第 i 行乘 W[i]。",
+      "after": "先算 d×d 的 T=KᵀV（代码中存入 `a`），再算 QT，最后把第 i 行乘 W[i]。"
+    },
+    {
+      "before": "交换求和次序正是此算法，因此变形等价。 两次乘法",
+      "after": "交换求和次序正是此算法，因此变形等价。\n\n两次乘法"
+    },
+    {
+      "before": "用指针依次读取。标记字节低两位决定类型。",
+      "after": "用指针依次读取。标记字节用 `x` 表示，低两位决定类型。"
+    },
+    {
+      "before": "`((tag>>2)&7)+4`",
+      "after": "`((x>>2)&7)+4`"
+    },
+    {
+      "before": "`(tag>>2)+1`",
+      "after": "`(x>>2)+1`"
+    },
+    {
+      "before": "途中目标城市集合 $mask$",
+      "after": "途中目标城市集合 $S$"
+    },
+    {
+      "before": "得到 `dist[start][end][mask]`。",
+      "after": "得到各起终点和目标集合的最短距离，保存在 `dis` 中。"
+    },
+    {
+      "before": "使 `need[S]` 表示至少包含 $S$ 的最短距离。",
+      "after": "使 `need[S]` 表示至少包含 $S$ 的最短距离；代码直接更新 `dis`，不另开 `need` 数组。"
+    }
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged_or_mask_to_S": true,
+  "markdown": [
+    {
+      "file": "202305/README.md",
+      "before_sha256": "e17e74157e8a6a431dffbbf31ec3c59b8f10cb68b23bf3ea31d7d45dead97806",
+      "after_sha256": "93efa062fc0032adb5ceb7e0cb1bfb2e0bea46128ee4e62ea884b71fc8f06d12"
+    },
+    {
+      "file": "202305题解.md",
+      "before_sha256": "cab748b89bc7cd9213d41e3760c7014ca04cbfa1948d62244e4fd6f419d98c72",
+      "after_sha256": "59fa28c162f0a959dcb1bcc063bfd691c0f25e8660cda3e0cd2d455e5500e3a8"
+    }
+  ]
+}

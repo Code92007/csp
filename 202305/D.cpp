@@ -1,196 +1,204 @@
-#include <algorithm>
-#include <functional>
-#include <iostream>
-#include <limits>
-#include <map>
-#include <queue>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using i64 = long long;
-using Matrix = vector<vector<i64>>;
-const i64 INF = 4000000000000000000LL;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, k;
-    cin >> n >> m >> k;
-    vector<vector<i64>> cost(n, vector<i64>(k));
-    for (auto &row : cost)
-        for (auto &x : row)
-            cin >> x;
-    vector<map<int, Matrix>> edges(n);
-    auto connect = [&](int u, int v, const Matrix &a) {
-        Matrix transpose(k, vector<i64>(k));
-        for (int i = 0; i < k; ++i)
-            for (int j = 0; j < k; ++j)
-                transpose[j][i] = a[i][j];
-        edges[u][v] = a;
-        edges[v][u] = transpose;
-    };
-    for (int e = 0; e < m; ++e) {
-        int u, v;
-        cin >> u >> v;
-        Matrix a(k, vector<i64>(k));
-        for (auto &row : a)
-            for (auto &x : row)
-                cin >> x;
-        connect(u, v, a);
+typedef long long ll;
+typedef vector<vector<ll>> V;
+const int N=10010;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+int n,m,k,dfn[N],low[N],fa[N],cnt[N],sep[N],st[N];
+int ord[N],label[N],top,tot;
+bool del[N];
+queue<int> q;
+map<int,V>::iterator it[N];
+V cost;
+vector<map<int,V>> g;
+vector<int> core;
+ll ans=INF;
+void connect(int u,int v,const V &a){
+    V b(k,vector<ll>(k));
+    for(int i=0;i<k;++i){
+        for(int j=0;j<k;++j){
+            b[j][i]=a[i][j];
+        }
     }
-    // Count components after deleting each vertex using an iterative low-link DFS.
-    vector<int> tin(n), low(n), parent(n, -1), children(n), separated(n), order;
-    int timer = 0;
-    vector<map<int, Matrix>::iterator> cursor(n);
-    vector<int> stack{0};
-    tin[0] = low[0] = ++timer;
-    cursor[0] = edges[0].begin();
-    while (!stack.empty()) {
-        int u = stack.back();
-        if (cursor[u] == edges[u].end()) {
-            stack.pop_back();
-            order.push_back(u);
-            if (parent[u] != -1) {
-                int p = parent[u];
-                low[p] = min(low[p], low[u]);
-                if (low[u] >= tin[p])
-                    ++separated[p];
+    g[u][v]=a;
+    g[v][u]=b;
+}
+int check(){
+    memset(dfn,0,sizeof dfn);
+    memset(low,0,sizeof low);
+    memset(fa,-1,sizeof fa);
+    memset(cnt,0,sizeof cnt);
+    memset(sep,0,sizeof sep);
+    top=tot=0;
+    st[++top]=0;
+    dfn[0]=low[0]=++tot;
+    it[0]=g[0].begin();
+    while(top){
+        int u=st[top];
+        if(it[u]==g[u].end()){
+            --top;
+            if(fa[u]!=-1){
+                int p=fa[u];
+                low[p]=min(low[p],low[u]);
+                if(low[u]>=dfn[p])++sep[p];
             }
             continue;
         }
-        int v = (cursor[u]++)->first;
-        if (v == parent[u])
-            continue;
-        if (tin[v])
-            low[u] = min(low[u], tin[v]);
-        else {
-            parent[v] = u;
-            ++children[u];
-            tin[v] = low[v] = ++timer;
-            cursor[v] = edges[v].begin();
-            stack.push_back(v);
+        int v=(it[u]++)->first;
+        if(v==fa[u])continue;
+        if(dfn[v])low[u]=min(low[u],dfn[v]);
+        else{
+            fa[v]=u;
+            ++cnt[u];
+            dfn[v]=low[v]=++tot;
+            it[v]=g[v].begin();
+            st[++top]=v;
         }
     }
-    int fixed = -1;
-    for (int u = 0; u < n; ++u) {
-        int components = parent[u] == -1 ? children[u] : separated[u] + 1;
-        if (m - n + 1 - int(edges[u].size()) + components == 0) {
-            fixed = u;
-            break;
+    for(int u=0;u<n;++u){
+        int cnts=fa[u]==-1?cnt[u]:sep[u]+1;
+        if(m-n+1-(int)g[u].size()+cnts==0)return u;
+    }
+    return -1;
+}
+ll solve(int root){
+    fill(fa,fa+n,-2);
+    int num=0;
+    fa[root]=-1;
+    for(int s=0;s<n;++s){
+        if(fa[s]!=-2)continue;
+        fa[s]=-1;
+        ord[num++]=s;
+        for(int i=num-1;i<num;++i){
+            int u=ord[i];
+            for(auto &[v,a]:g[u]){
+                if(fa[v]!=-2)continue;
+                fa[v]=u;
+                ord[num++]=v;
+            }
         }
     }
-    if (fixed != -1) {
-        // After fixing this vertex, all remaining components are trees.
-        vector<int> par(n, -2), traversal;
-        par[fixed] = -1;
-        for (int start = 0; start < n; ++start)
-            if (par[start] == -2) {
-                par[start] = -1;
-                traversal.push_back(start);
-                for (size_t head = traversal.size() - 1; head < traversal.size(); ++head) {
-                    int u = traversal[head];
-                    for (const auto &[v, a] : edges[u])
-                        if (par[v] == -2) {
-                            par[v] = u;
-                            traversal.push_back(v);
-                        }
-                }
+    ll ans=INF;
+    for(int s=0;s<k;++s){
+        V dp=cost;
+        for(auto &[u,a]:g[root]){
+            for(int x=0;x<k;++x){
+                dp[u][x]+=a[s][x];
             }
-        i64 answer = INF;
-        for (int label = 0; label < k; ++label) {
-            auto dp = cost;
-            for (const auto &[u, a] : edges[fixed])
-                for (int b = 0; b < k; ++b)
-                    dp[u][b] += a[label][b];
-            i64 total = cost[fixed][label];
-            for (auto it = traversal.rbegin(); it != traversal.rend(); ++it) {
-                int u = *it, p = par[u];
-                if (p == -1) {
-                    total += *min_element(dp[u].begin(), dp[u].end());
-                    continue;
-                }
-                const auto &a = edges[p].at(u);
-                for (int x = 0; x < k; ++x) {
-                    i64 best = INF;
-                    for (int y = 0; y < k; ++y)
-                        best = min(best, a[x][y] + dp[u][y]);
-                    dp[p][x] += best;
-                }
-            }
-            answer = min(answer, total);
         }
-        cout << answer << '\n';
+        ll sum=cost[root][s];
+        for(int i=num-1;i>=0;--i){
+            int u=ord[i],p=fa[u];
+            if(p==-1){
+                sum+=*min_element(dp[u].begin(),dp[u].end());
+                continue;
+            }
+            auto &a=g[p].at(u);
+            for(int x=0;x<k;++x){
+                ll best=INF;
+                for(int y=0;y<k;++y){
+                    best=min(best,a[x][y]+dp[u][y]);
+                }
+                dp[p][x]+=best;
+            }
+        }
+        ans=min(ans,sum);
+    }
+    return ans;
+}
+void dfs(int i,ll val){
+    if(val>=ans)return;
+    if(i==(int)core.size()){
+        ans=val;
+        return;
+    }
+    int u=core[i];
+    for(int x=0;x<k;++x){
+        ll sum=val+cost[u][x];
+        for(int j=0;j<i;++j){
+            int v=core[j];
+            if(g[u].count(v))sum+=g[u].at(v)[x][label[v]];
+        }
+        label[u]=x;
+        dfs(i+1,sum);
+    }
+}
+int main(){
+    scanf("%d%d%d",&n,&m,&k);
+    cost=V(n,vector<ll>(k));
+    g.resize(n);
+    for(auto &row:cost){
+        for(ll &x:row){
+            scanf("%lld",&x);
+        }
+    }
+    for(int i=0;i<m;++i){
+        int u,v;
+        scanf("%d%d",&u,&v);
+        V a(k,vector<ll>(k));
+        for(auto &row:a){
+            for(ll &x:row){
+                scanf("%lld",&x);
+            }
+        }
+        connect(u,v,a);
+    }
+    int root=check();
+    if(root!=-1){
+        printf("%lld\n",solve(root));
         return 0;
     }
-    // Eliminate vertices of degree <= 2, keeping exact unary/pairwise costs.
-    queue<int> ready;
-    vector<bool> removed(n);
-    for (int u = 0; u < n; ++u)
-        if (edges[u].size() <= 2)
-            ready.push(u);
-    i64 constant = 0;
-    while (!ready.empty()) {
-        int u = ready.front();
-        ready.pop();
-        if (removed[u] || edges[u].size() > 2)
-            continue;
-        removed[u] = true;
-        if (edges[u].empty()) {
-            constant += *min_element(cost[u].begin(), cost[u].end());
-            continue;
-        }
-        int v = edges[u].begin()->first;
-        if (edges[u].size() == 1) {
-            const auto &a = edges[v].at(u);
-            for (int x = 0; x < k; ++x) {
-                i64 best = INF;
-                for (int y = 0; y < k; ++y)
-                    best = min(best, a[x][y] + cost[u][y]);
-                cost[v][x] += best;
-            }
-            edges[v].erase(u);
-            ready.push(v);
-        } else {
-            int w = next(edges[u].begin())->first;
-            const auto &a = edges[v].at(u);
-            const auto &b = edges[u].at(w);
-            Matrix merged(k, vector<i64>(k, INF));
-            for (int x = 0; x < k; ++x)
-                for (int y = 0; y < k; ++y) {
-                    for (int z = 0; z < k; ++z)
-                        merged[x][y] = min(merged[x][y], a[x][z] + cost[u][z] + b[z][y]);
-                    if (edges[v].count(w))
-                        merged[x][y] += edges[v].at(w)[x][y];
-                }
-            edges[v].erase(u);
-            edges[w].erase(u);
-            connect(v, w, merged);
-            ready.push(v);
-            ready.push(w);
-        }
-        edges[u].clear();
+    memset(del,0,sizeof del);
+    for(int u=0;u<n;++u){
+        if(g[u].size()<=2)q.push(u);
     }
-    vector<int> core;
-    for (int u = 0; u < n; ++u)
-        if (!removed[u])
-            core.push_back(u);
-    vector<int> label(n);
-    i64 answer = INF;
-    function<void(int, i64)> enumerate = [&](int index, i64 value) {
-        if (value >= answer)
-            return;
-        if (index == int(core.size())) {
-            answer = value;
-            return;
+    ll sum=0;
+    while(!q.empty()){
+        int u=q.front();
+        q.pop();
+        if(del[u] || g[u].size()>2)continue;
+        del[u]=true;
+        if(g[u].empty()){
+            sum+=*min_element(cost[u].begin(),cost[u].end());
+            continue;
         }
-        int u = core[index];
-        for (int x = 0; x < k; ++x) {
-            i64 next_value = value + cost[u][x];
-            for (int j = 0; j < index; ++j)
-                if (edges[u].count(core[j]))
-                    next_value += edges[u].at(core[j])[x][label[core[j]]];
-            label[u] = x;
-            enumerate(index + 1, next_value);
+        int v=g[u].begin()->first;
+        if(g[u].size()==1){
+            auto &a=g[v].at(u);
+            for(int x=0;x<k;++x){
+                ll best=INF;
+                for(int y=0;y<k;++y){
+                    best=min(best,a[x][y]+cost[u][y]);
+                }
+                cost[v][x]+=best;
+            }
+            g[v].erase(u);
+            q.push(v);
         }
-    };
-    enumerate(0, constant);
-    cout << answer << '\n';
+        else{
+            int w=next(g[u].begin())->first;
+            auto &a=g[v].at(u),&b=g[u].at(w);
+            V c(k,vector<ll>(k,INF));
+            for(int x=0;x<k;++x){
+                for(int y=0;y<k;++y){
+                    for(int z=0;z<k;++z){
+                        c[x][y]=min(c[x][y],a[x][z]+cost[u][z]+b[z][y]);
+                    }
+                    if(g[v].count(w))c[x][y]+=g[v].at(w)[x][y];
+                }
+            }
+            g[v].erase(u);
+            g[w].erase(u);
+            connect(v,w,c);
+            q.push(v);
+            q.push(w);
+        }
+        g[u].clear();
+    }
+    for(int u=0;u<n;++u){
+        if(!del[u])core.push_back(u);
+    }
+    dfs(0,sum);
+    printf("%lld\n",ans);
+    return 0;
 }

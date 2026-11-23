@@ -1,0 +1,72 @@
+{
+  "contest": "202305",
+  "source_sha256": {
+    "A": "cf469ba06e4fcf69f36739059d8813f8a687b8238017030be00322c08f063b5a",
+    "B": "7e75691807092dcfebc7aeed29458cfc4f8eb20d2d8b3912b7fa96c6a2300f78",
+    "C": "e6772cbcb6503ca3c3c3b84f4a7f3111231e1435f584e6b2709a583138302bc2",
+    "D": "96fe79c09a7aa926f3c7594c010ba82119be1208a731add10af6721460683c6d",
+    "E": "e433104ce39f9850193b6f2d9bae98b875e994acc9e6def0e719c6bb1be3c079"
+  },
+  "different_inputs": 797,
+  "categories": {
+    "retained_independent": 474,
+    "additional_independent": 311,
+    "saved_sample": 9,
+    "constructive_stress": 3
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "B",
+      "kind": "constructive_stress",
+      "seconds": 0.048521916999999526
+    },
+    {
+      "problem": "C",
+      "kind": "constructive_stress",
+      "seconds": 0.15562079199999967
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.008211584000000549
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 63,
+        "B": 103,
+        "C": 124,
+        "D": 284,
+        "E": 223
+      },
+      "total": 797,
+      "seconds": 4.520280625
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 63,
+        "B": 102,
+        "C": 123,
+        "D": 284,
+        "E": 222
+      },
+      "total": 794,
+      "seconds": 6.513413415999999
+    }
+  ],
+  "independent_oracles": "Complete board comparison; direct Q*K-transpose then V multiplication; independently encoded Snappy streams; exhaustive label assignment; raw-route state Dijkstra without edge dominance or SOS preprocessing.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

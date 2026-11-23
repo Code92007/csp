@@ -1,17 +1,18 @@
-#include <iostream>
-#include <string>
-#include <unordered_map>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    unordered_map<string, int> count;
-    while (n--) {
-        string board, row;
-        for (int i = 0; i < 8; i++) {
-            cin >> row;
-            board += row;
+const int N=8,M=10;
+int n;
+char s[M];
+unordered_map<string,int> cnt;
+int main(){
+    scanf("%d",&n);
+    while(n--){
+        string t;
+        for(int i=0;i<N;++i){
+            scanf("%s",s);
+            t+=s;
         }
-        cout << ++count[board] << '\n';
+        printf("%d\n",++cnt[t]);
     }
+    return 0;
 }
