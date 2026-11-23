@@ -1,25 +1,24 @@
-#include <iomanip>
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-bool leap(int y) {
-    return y % 400 == 0 || (y % 4 == 0 && y % 100 != 0);
+const int N=13;
+int a,b,c,l,r,first=2;
+int mon[N]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+bool leap(int y){
+    return y%400==0 || (y%4==0 && y%100!=0);
 }
-int main() {
-    int a, b, c, y1, y2;
-    cin >> a >> b >> c >> y1 >> y2;
-    int month[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    int first = 2;
-    for (int y = 1850; y <= y2; y++) {
-        if (y >= y1) {
-            int weekday = first;
-            for (int m = 1; m < a; m++)
-                weekday = (weekday + month[m] + (m == 2 && leap(y))) % 7;
-            int day = 1 + (c % 7 - weekday + 7) % 7 + 7 * (b - 1);
-            if (day > month[a] + (a == 2 && leap(y)))
-                cout << "none\n";
-            else
-                cout << y << '/' << setfill('0') << setw(2) << a << '/' << setw(2) << day << '\n';
+int main(){
+    scanf("%d%d%d%d%d",&a,&b,&c,&l,&r);
+    for(int y=1850;y<=r;++y){
+        if(y>=l){
+            int w=first;
+            for(int m=1;m<a;++m){
+                w=(w+mon[m]+(m==2 && leap(y)))%7;
+            }
+            int d=1+(c%7-w+7)%7+7*(b-1);
+            if(d>mon[a]+(a==2 && leap(y)))puts("none");
+            else printf("%d/%02d/%02d\n",y,a,d);
         }
-        first = (first + 365 + leap(y)) % 7;
+        first=(first+365+leap(y))%7;
     }
+    return 0;
 }

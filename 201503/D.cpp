@@ -1,33 +1,36 @@
-#include <algorithm>
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<vector<int>> graph(n + m);
-    for (int u = 1; u < n + m; ++u) {
-        int p;
-        cin >> p;
-        --p;
-        graph[u].push_back(p);
-        graph[p].push_back(u);
+const int N=20010;
+int n,m,head[N],to[N<<1],nxt[N<<1],cnt,d[N],q[N];
+void add(int u,int v){
+    to[++cnt]=v;
+    nxt[cnt]=head[u];
+    head[u]=cnt;
+}
+int bfs(int s){
+    memset(d,-1,sizeof d);
+    int l=0,r=0,u=s;
+    q[r++]=s;d[s]=0;
+    while(l<r){
+        int x=q[l++];
+        if(d[x]>d[u])u=x;
+        for(int i=head[x];i;i=nxt[i]){
+            int v=to[i];
+            if(d[v]>=0)continue;
+            d[v]=d[x]+1;
+            q[r++]=v;
+        }
     }
-    auto farthest = [&](int start) {
-        vector<int> distance(n + m, -1), queue{start};
-        distance[start] = 0;
-        for (size_t i = 0; i < queue.size(); ++i)
-            for (int v : graph[queue[i]])
-                if (distance[v] < 0) {
-                    distance[v] = distance[queue[i]] + 1;
-                    queue.push_back(v);
-                }
-        int u = max_element(distance.begin(), distance.end()) - distance.begin();
-        return pair<int, int>{u, distance[u]};
-    };
-    auto [endpoint, unused] = farthest(0);
-    cout << farthest(endpoint).second << '\n';
+    return u;
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int u=1,p;u<n+m;++u){
+        scanf("%d",&p);
+        --p;
+        add(u,p);add(p,u);
+    }
+    int u=bfs(0),v=bfs(u);
+    printf("%d\n",d[v]);
+    return 0;
 }

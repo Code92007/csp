@@ -1,0 +1,157 @@
+{
+  "contest": "201503",
+  "distinct_cases": 616,
+  "results": {
+    "opt": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 79,
+        "E:retained_independent": 257,
+        "A:saved": 1,
+        "B:saved": 1,
+        "C:saved": 1,
+        "D:saved": 2,
+        "E:saved": 1,
+        "A:stress": 1,
+        "B:stress": 1,
+        "C:boundary": 7,
+        "D:stress": 1,
+        "E:stress": 3,
+        "E:boundary": 1
+      },
+      "total": 616,
+      "seconds": 4.127,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "1000x1000 rotation",
+          "seconds": 0.119
+        },
+        {
+          "problem": "B",
+          "label": "1000 distinct values tied by frequency",
+          "seconds": 0.0186
+        },
+        {
+          "problem": "D",
+          "label": "10000-switch chain with terminal leaves",
+          "seconds": 0.0042
+        },
+        {
+          "problem": "E",
+          "label": "100000 vertices/queries; decreasing",
+          "seconds": 0.0927
+        },
+        {
+          "problem": "E",
+          "label": "100000 vertices/queries; constant",
+          "seconds": 0.1038
+        },
+        {
+          "problem": "E",
+          "label": "100000 vertices/queries; star",
+          "seconds": 0.0396
+        }
+      ]
+    },
+    "ubsan": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 79,
+        "E:retained_independent": 257,
+        "A:saved": 1,
+        "B:saved": 1,
+        "C:saved": 1,
+        "D:saved": 2,
+        "E:saved": 1,
+        "A:stress": 1,
+        "B:stress": 1,
+        "C:boundary": 7,
+        "D:stress": 1,
+        "E:stress": 3,
+        "E:boundary": 1
+      },
+      "total": 616,
+      "seconds": 6.387,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "1000x1000 rotation",
+          "seconds": 0.1247
+        },
+        {
+          "problem": "B",
+          "label": "1000 distinct values tied by frequency",
+          "seconds": 0.0205
+        },
+        {
+          "problem": "D",
+          "label": "10000-switch chain with terminal leaves",
+          "seconds": 0.0053
+        },
+        {
+          "problem": "E",
+          "label": "100000 vertices/queries; decreasing",
+          "seconds": 0.148
+        },
+        {
+          "problem": "E",
+          "label": "100000 vertices/queries; constant",
+          "seconds": 0.1501
+        },
+        {
+          "problem": "E",
+          "label": "100000 vertices/queries; star",
+          "seconds": 0.0443
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "A": "eb172ff1edc4b6f7e8372f1438f28e64d002bba4447ee3630a7dee323b1c56cf",
+    "B": "4c1b99eca36b4960a21f631f6d76dfa73bb0c1b038f1ae8d93cbcc51d5b21777",
+    "C": "4f8c6fb2c746626a41873acc6cc643c1aba0cf47a384fd749f1d510adebab959",
+    "D": "fdf567852b4129eb3e860cecc3b9686642ef60e2c95009f4bfc23718fabc117b",
+    "E": "dc0a691106c49fb6b40c8bf3d2dfbfe141c5c58ac8a9a8c0859221ac54426154"
+  },
+  "cases_sha256": "82673f22c7bbea26521f08853c0260d4aba67de3f94a1e721fbb09449e769ed2",
+  "original_evaluations": {
+    "A": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addb6f774ace1cba9a20ceb"
+    },
+    "B": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addb77c74ace1cba9a20d2d"
+    },
+    "C": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addb88c74ace1cba9a20dc5"
+    },
+    "D": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addb91774ace1cba9a20e42"
+    },
+    "E": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addb9a174ace1cba9a20ea0"
+    }
+  },
+  "refactored_online_submission": false,
+  "oracle": "Repository independent Python generators captured by tools/nightly/retained_oracles.py; saved cases and independently generated boundary/stress expectations are also replayed. No output is taken from the original executable.",
+  "platform_note": "Apple Clang C++17 uses a local standard-header shim for bits/stdc++.h. Timings are local, not official judge results."
+}

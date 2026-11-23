@@ -1,22 +1,21 @@
-#include <algorithm>
-#include <iostream>
-#include <map>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    map<int, int> count;
-    while (n--) {
-        int x;
-        cin >> x;
-        ++count[x];
+typedef pair<int,int> P;
+const int N=1010;
+int n,cnt[N],tot;
+P a[N];
+int main(){
+    scanf("%d",&n);
+    for(int i=0,x;i<n;++i){
+        scanf("%d",&x);
+        ++cnt[x];
     }
-    vector<pair<int, int>> order;
-    for (auto [x, c] : count)
-        order.push_back({-c, x});
-    sort(order.begin(), order.end());
-    for (auto [c, x] : order)
-        cout << x << ' ' << -c << '\n';
+    for(int i=0;i<N;++i){
+        if(cnt[i])a[tot++]=P(-cnt[i],i);
+    }
+    sort(a,a+tot);
+    for(int i=0;i<tot;++i){
+        printf("%d %d\n",a[i].second,-a[i].first);
+    }
+    return 0;
 }

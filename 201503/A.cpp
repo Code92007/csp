@@ -1,21 +1,18 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<vector<int>> a(n, vector<int>(m));
-    for (auto &r : a)
-        for (int &x : r)
-            cin >> x;
-    for (int j = m - 1; j >= 0; j--) {
-        for (int i = 0; i < n; i++) {
-            if (i)
-                cout << ' ';
-            cout << a[i][j];
+const int N=1010;
+int n,m,a[N][N];
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=0;i<n;++i){
+        for(int j=0;j<m;++j){
+            scanf("%d",&a[i][j]);
         }
-        cout << '\n';
     }
+    for(int j=m-1;j>=0;--j){
+        for(int i=0;i<n;++i){
+            printf("%d%c",a[i][j],i==n-1?'\n':' ');
+        }
+    }
+    return 0;
 }

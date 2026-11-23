@@ -1,132 +1,131 @@
-#include <algorithm>
-#include <array>
-#include <iostream>
-#include <numeric>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-const int LOG = 18;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<int> price(n + 1);
-    price[0] = 2000000000;
-    for (int i = 1; i <= n; ++i)
-        cin >> price[i];
-    vector<vector<pair<int, int>>> g(n + 1);
-    for (int i = 1, u, v, w; i < n; ++i) {
-        cin >> u >> v >> w;
-        g[u].push_back({v, w});
-        g[v].push_back({u, w});
+typedef long long ll;
+typedef pair<int,int> P;
+const int N=1e5+10,K=18;
+int n,m,a[N],fa[N],sz[N],bel[N],low[N],ord[N],root[N];
+int up[N][K],mn[N][K],head[N],to[N<<1],nxt[N<<1],w[N<<1],cnt;
+ll ans[N],dis[N],uc[N],dc[N];
+bool del[N];
+P qs[N];
+struct task{
+    int rt;
+    vector<int> ids;
+};
+vector<task> tasks;
+void add(int u,int v,int c){
+    to[++cnt]=v;
+    w[cnt]=c;
+    nxt[cnt]=head[u];
+    head[u]=cnt;
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    a[0]=2e9;
+    for(int i=1;i<=n;++i){
+        scanf("%d",&a[i]);
     }
-    vector<pair<int, int>> queries(m);
-    for (auto &q : queries)
-        cin >> q.first >> q.second;
-    vector<ll> answer(m), distance(n + 1), upCost(n + 1), downCost(n + 1);
-    vector<int> parent(n + 1), size(n + 1), branch(n + 1), prefixMin(n + 1);
-    vector<bool> removed(n + 1);
-    vector<array<int, LOG>> up(n + 1), minimum(n + 1);
-    minimum[0].fill(price[0]);
-    struct Task {
-        int start;
-        vector<int> ids;
-    };
-    vector<Task> tasks(1);
-    tasks[0].start = 1;
+    for(int i=1,u,v,c;i<n;++i){
+        scanf("%d%d%d",&u,&v,&c);
+        add(u,v,c);add(v,u,c);
+    }
+    for(int i=0;i<m;++i){
+        scanf("%d%d",&qs[i].first,&qs[i].second);
+    }
+    fill(mn[0],mn[0]+K,a[0]);
+    tasks.resize(1);
+    tasks[0].rt=1;
     tasks[0].ids.resize(m);
-    iota(tasks[0].ids.begin(), tasks[0].ids.end(), 0);
-    while (!tasks.empty()) {
-        Task task = std::move(tasks.back());
+    iota(tasks[0].ids.begin(),tasks[0].ids.end(),0);
+    while(!tasks.empty()){
+        task cur=std::move(tasks.back());
         tasks.pop_back();
-        if (task.ids.empty())
-            continue;
-        vector<int> order{task.start};
-        parent[task.start] = 0;
-        for (size_t i = 0; i < order.size(); ++i) {
-            int u = order[i];
-            for (auto [v, w] : g[u])
-                if (!removed[v] && v != parent[u]) {
-                    parent[v] = u;
-                    order.push_back(v);
-                }
-        }
-        int total = order.size(), center = task.start;
-        for (auto it = order.rbegin(); it != order.rend(); ++it) {
-            int u = *it;
-            size[u] = 1;
-            int largest = 0;
-            for (auto [v, w] : g[u])
-                if (!removed[v] && parent[v] == u) {
-                    size[u] += size[v];
-                    largest = max(largest, size[v]);
-                }
-            if (max(largest, total - size[u]) <= total / 2)
-                center = u;
-        }
-        order = {center};
-        parent[center] = 0;
-        branch[center] = -1;
-        distance[center] = upCost[center] = downCost[center] = 0;
-        prefixMin[center] = price[center];
-        vector<int> roots;
-        for (auto [v, w] : g[center])
-            if (!removed[v])
-                roots.push_back(v);
-        for (size_t i = 0; i < order.size(); ++i) {
-            int u = order[i], p = parent[u];
-            up[u][0] = p;
-            minimum[u][0] = price[p];
-            for (int j = 1; j < LOG; ++j) {
-                up[u][j] = up[up[u][j - 1]][j - 1];
-                minimum[u][j] = min(minimum[u][j - 1], minimum[up[u][j - 1]][j - 1]);
+        if(cur.ids.empty())continue;
+        int len=1;
+        ord[0]=cur.rt;fa[cur.rt]=0;
+        for(int i=0;i<len;++i){
+            int u=ord[i];
+            for(int j=head[u];j;j=nxt[j]){
+                int v=to[j];
+                if(del[v] || v==fa[u])continue;
+                fa[v]=u;
+                ord[len++]=v;
             }
-            if (p) {
-                int v = u;
-                for (int j = LOG - 1; j >= 0; --j)
-                    if (up[v][j] && minimum[v][j] >= price[u])
-                        v = up[v][j];
-                int lower = parent[v];
-                upCost[u] = ll(price[u]) * (distance[u] - distance[lower]) + upCost[lower];
-            }
-            int rootIndex = 0;
-            for (auto [v, w] : g[u])
-                if (!removed[v] && v != p) {
-                    parent[v] = u;
-                    distance[v] = distance[u] + w;
-                    prefixMin[v] = min(prefixMin[u], price[v]);
-                    downCost[v] = downCost[u] + ll(w) * prefixMin[u];
-                    branch[v] = u == center ? rootIndex++ : branch[u];
-                    order.push_back(v);
-                }
         }
-        vector<vector<int>> pending(roots.size());
-        for (int id : task.ids) {
-            auto [s, t] = queries[id];
-            if (s != center && t != center && branch[s] == branch[t]) {
-                pending[branch[s]].push_back(id);
+        int c=cur.rt;
+        for(int i=len-1;i>=0;--i){
+            int u=ord[i],mx=0;
+            sz[u]=1;
+            for(int j=head[u];j;j=nxt[j]){
+                int v=to[j];
+                if(del[v] || fa[v]!=u)continue;
+                sz[u]+=sz[v];
+                mx=max(mx,sz[v]);
+            }
+            if(max(mx,len-sz[u])<=len/2)c=u;
+        }
+        len=1;
+        ord[0]=c;fa[c]=0;bel[c]=-1;
+        dis[c]=uc[c]=dc[c]=0;low[c]=a[c];
+        int tot=0;
+        for(int j=head[c];j;j=nxt[j]){
+            if(!del[to[j]])root[tot++]=to[j];
+        }
+        for(int i=0;i<len;++i){
+            int u=ord[i],p=fa[u];
+            up[u][0]=p;mn[u][0]=a[p];
+            for(int j=1;j<K;++j){
+                int v=up[u][j-1];
+                up[u][j]=up[v][j-1];
+                mn[u][j]=min(mn[u][j-1],mn[v][j-1]);
+            }
+            if(p){
+                int v=u;
+                for(int j=K-1;j>=0;--j){
+                    if(up[v][j] && mn[v][j]>=a[u])v=up[v][j];
+                }
+                int q=fa[v];
+                uc[u]=(ll)a[u]*(dis[u]-dis[q])+uc[q];
+            }
+            int num=0;
+            for(int j=head[u];j;j=nxt[j]){
+                int v=to[j];
+                if(del[v] || v==p)continue;
+                fa[v]=u;dis[v]=dis[u]+w[j];
+                low[v]=min(low[u],a[v]);
+                dc[v]=dc[u]+(ll)w[j]*low[u];
+                bel[v]=u==c?num++:bel[u];
+                ord[len++]=v;
+            }
+        }
+        vector<vector<int>> pending(tot);
+        for(int &id:cur.ids){
+            auto [s,t]=qs[id];
+            if(s!=c && t!=c && bel[s]==bel[t]){
+                pending[bel[s]].push_back(id);
                 continue;
             }
-            ll cost = upCost[s];
-            int p = prefixMin[s];
-            if (prefixMin[t] >= p)
-                cost += ll(p) * distance[t];
-            else {
-                int v = t;
-                for (int j = LOG - 1; j >= 0; --j)
-                    if (up[v][j] && prefixMin[up[v][j]] < p)
-                        v = up[v][j];
-                cost += ll(p) * distance[v] + downCost[t] - downCost[v];
+            ll res=uc[s];
+            int p=low[s];
+            if(low[t]>=p)res+=(ll)p*dis[t];
+            else{
+                int v=t;
+                for(int j=K-1;j>=0;--j){
+                    if(up[v][j] && low[up[v][j]]<p)v=up[v][j];
+                }
+                res+=(ll)p*dis[v]+dc[t]-dc[v];
             }
-            answer[id] = cost;
+            ans[id]=res;
         }
-        removed[center] = true;
-        for (size_t i = 0; i < roots.size(); ++i)
-            if (!pending[i].empty())
-                tasks.push_back({roots[i], std::move(pending[i])});
+        del[c]=1;
+        for(int i=0;i<tot;++i){
+            if(!pending[i].empty()){
+                tasks.push_back({root[i],std::move(pending[i])});
+            }
+        }
     }
-    for (ll x : answer)
-        cout << x << '\n';
+    for(int i=0;i<m;++i){
+        printf("%lld\n",ans[i]);
+    }
+    return 0;
 }
