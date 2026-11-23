@@ -1,86 +1,94 @@
-#include <algorithm>
-#include <array>
-#include <iostream>
-#include <queue>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-const ll NEG = -(1LL << 60);
-using Matrix = vector<vector<ll>>;
-Matrix multiply(const Matrix &a, const Matrix &b) {
-    int n = a.size();
-    Matrix c(n, vector<ll>(n, NEG));
-    for (int i = 0; i < n; ++i)
-        for (int k = 0; k < n; ++k)
-            if (a[i][k] != NEG)
-                for (int j = 0; j < n; ++j)
-                    if (b[k][j] != NEG)
-                        c[i][j] = max(c[i][j], a[i][k] + b[k][j]);
+typedef long long ll;
+typedef vector<vector<ll>> mat;
+const int N=105,M=26;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+int n;
+ll m;
+char s[N];
+namespace AC{
+    struct node{
+        int ch[M],fail,w;
+    }e[N];
+    int tot;
+    void insert(const char *t){
+        int u=0;
+        for(int i=0;t[i];++i){
+            int c=t[i]-'a';
+            if(!e[u].ch[c])e[u].ch[c]=++tot;
+            u=e[u].ch[c];
+        }
+        ++e[u].w;
+    }
+    void build(){
+        queue<int> q;
+        for(int &v:e[0].ch){
+            if(v)q.push(v);
+        }
+        while(!q.empty()){
+            int u=q.front();
+            q.pop();
+            e[u].w+=e[e[u].fail].w;
+            for(int c=0;c<M;++c){
+                int v=e[u].ch[c];
+                if(v){
+                    e[v].fail=e[e[u].fail].ch[c];
+                    q.push(v);
+                }
+                else e[u].ch[c]=e[e[u].fail].ch[c];
+            }
+        }
+    }
+}
+using namespace AC;
+mat mul(const mat &a,const mat &b){
+    int len=a.size();
+    mat c(len,vector<ll>(len,-INF));
+    for(int i=0;i<len;++i){
+        for(int k=0;k<len;++k){
+            if(a[i][k]==-INF)continue;
+            for(int j=0;j<len;++j){
+                if(b[k][j]!=-INF){
+                    c[i][j]=max(c[i][j],a[i][k]+b[k][j]);
+                }
+            }
+        }
+    }
     return c;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    ll length;
-    cin >> n >> length;
-    struct Node {
-        array<int, 26> next{};
-        int fail = 0, reward = 0;
-    };
-    vector<Node> trie(1);
-    for (int i = 0; i < n; ++i) {
-        string s;
-        cin >> s;
-        int u = 0;
-        for (char c : s) {
-            int k = c - 'a';
-            if (!trie[u].next[k]) {
-                trie[u].next[k] = trie.size();
-                trie.emplace_back();
+int main(){
+    scanf("%d%lld",&n,&m);
+    for(int i=0;i<n;++i){
+        scanf("%100s",s);
+        insert(s);
+    }
+    build();
+    int len=tot+1;
+    mat a(len,vector<ll>(len,-INF));
+    for(int u=0;u<len;++u){
+        for(int &v:e[u].ch){
+            a[u][v]=e[v].w;
+        }
+    }
+    vector<ll> dp(len,-INF);
+    dp[0]=0;
+    while(m){
+        if(m&1){
+            vector<ll> v(len,-INF);
+            for(int i=0;i<len;++i){
+                if(dp[i]==-INF)continue;
+                for(int j=0;j<len;++j){
+                    if(a[i][j]!=-INF){
+                        v[j]=max(v[j],dp[i]+a[i][j]);
+                    }
+                }
             }
-            u = trie[u].next[k];
+            dp.swap(v);
         }
-        ++trie[u].reward;
+        m>>=1;
+        if(m)a=mul(a,a);
     }
-    queue<int> q;
-    for (int v : trie[0].next)
-        if (v)
-            q.push(v);
-    while (!q.empty()) {
-        int u = q.front();
-        q.pop();
-        trie[u].reward += trie[trie[u].fail].reward;
-        for (int c = 0; c < 26; ++c) {
-            int v = trie[u].next[c];
-            if (v) {
-                trie[v].fail = trie[trie[u].fail].next[c];
-                q.push(v);
-            } else
-                trie[u].next[c] = trie[trie[u].fail].next[c];
-        }
-    }
-    int s = trie.size();
-    Matrix a(s, vector<ll>(s, NEG));
-    for (int u = 0; u < s; ++u)
-        for (int v : trie[u].next)
-            a[u][v] = trie[v].reward;
-    vector<ll> dp(s, NEG);
-    dp[0] = 0;
-    while (length) {
-        if (length & 1) {
-            vector<ll> next(s, NEG);
-            for (int u = 0; u < s; ++u)
-                if (dp[u] != NEG)
-                    for (int v = 0; v < s; ++v)
-                        if (a[u][v] != NEG)
-                            next[v] = max(next[v], dp[u] + a[u][v]);
-            dp.swap(next);
-        }
-        length >>= 1;
-        if (length)
-            a = multiply(a, a);
-    }
-    cout << *max_element(dp.begin(), dp.end()) << '\n';
+    printf("%lld\n",*max_element(dp.begin(),dp.end()));
+    return 0;
 }

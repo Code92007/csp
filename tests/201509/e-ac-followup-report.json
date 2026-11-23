@@ -1,0 +1,29 @@
+{
+  "problem": "201509E",
+  "previous_sha256": "5645f88d95bf03ead5c5c20f3d91a6685e2bc92a8fb0dc234124d1f193ee173e",
+  "source_sha256": "e679621282d692f8715d9800fe0d0daed97c54a77baf8858b0258116e2227d50",
+  "distinct_inputs": 62,
+  "case_kinds": {
+    "saved_sample": 1,
+    "retained_independent": 59,
+    "boundary": 2
+  },
+  "case_sha256": "6bb90425ca1f1b603bceee3eea149778a8bfa2736f3dc65cd71633070d56500f",
+  "per_binary_results": {
+    "O2": {
+      "passed": 62,
+      "seconds": 1.117
+    },
+    "UBSan": {
+      "passed": 62,
+      "seconds": 0.889
+    }
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "Long matrix-update conditions expanded into braced branches.",
+    "AC automaton node array, count, insert and build grouped in namespace AC; matrices remain outside."
+  ],
+  "historical_report": "refactor-report.json",
+  "note": "Existing independent oracle, saved sample and boundaries replayed; 201509 includes 101 automaton states and article length 1e15. No new online submission."
+}

@@ -1,38 +1,42 @@
-#include <iostream>
-#include <string>
-#include <unordered_map>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int m, n;
-    cin >> m >> n;
-    string line;
-    getline(cin, line);
-    vector<string> lines(m);
-    for (auto &s : lines)
-        getline(cin, s);
-    unordered_map<string, string> values;
-    while (n--) {
-        getline(cin, line);
-        size_t space = line.find(' '), quote = line.find('"', space);
-        values[line.substr(0, space)] = line.substr(quote + 1, line.size() - quote - 2);
+int m,n;
+string s;
+vector<string> lines;
+unordered_map<string,string> mp;
+void read(string &str){
+    str.clear();
+    int c;
+    while((c=getchar())!=EOF && c!='\n'){
+        str+=char(c);
     }
-    for (auto &s : lines) {
-        for (size_t p = 0; p < s.size();) {
-            size_t l = s.find("{{ ", p);
-            if (l == string::npos) {
-                cout << s.substr(p);
+}
+int main(){
+    scanf("%d%d",&m,&n);
+    read(s);
+    lines.resize(m);
+    for(string &str:lines){
+        read(str);
+    }
+    while(n--){
+        read(s);
+        size_t p=s.find(' '),q=s.find('"',p);
+        mp[s.substr(0,p)]=s.substr(q+1,s.size()-q-2);
+    }
+    for(string &str:lines){
+        for(size_t p=0;p<str.size();){
+            size_t l=str.find("{{ ",p);
+            if(l==string::npos){
+                printf("%s",str.substr(p).c_str());
                 break;
             }
-            cout << s.substr(p, l - p);
-            size_t r = s.find(" }}", l + 3);
-            auto it = values.find(s.substr(l + 3, r - l - 3));
-            if (it != values.end())
-                cout << it->second;
-            p = r + 3;
+            printf("%s",str.substr(p,l-p).c_str());
+            size_t r=str.find(" }}",l+3);
+            auto it=mp.find(str.substr(l+3,r-l-3));
+            if(it!=mp.end())printf("%s",it->second.c_str());
+            p=r+3;
         }
-        cout << '\n';
+        putchar('\n');
     }
+    return 0;
 }
