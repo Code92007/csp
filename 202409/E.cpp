@@ -1,97 +1,93 @@
-#include <algorithm>
-#include <iostream>
-#include <random>
-#include <unordered_map>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Node {
-    int l = 0, r = 0, size = 1, color = 0, first = 0, last = 0, runs = 1;
-    unsigned priority = 0;
-};
-vector<Node> t(1);
-int sizeOf(int u) {
-    return u ? t[u].size : 0;
+const int N=1e5+10;
+struct node{
+    int l,r,sz,c,first,last,cnt;
+    unsigned pri;
+    void read();
+    void pushup();
+}e[N];
+int n,m,k,x,l,r,root[N];
+unordered_map<int,int> mp[N];
+mt19937 rng(94127);
+void node::read(){
+    scanf("%d",&c);
+    first=last=c;
+    sz=cnt=1;
+    pri=rng();
 }
-void pull(int u) {
-    auto &x = t[u];
-    x.size = 1 + sizeOf(x.l) + sizeOf(x.r);
-    x.first = x.l ? t[x.l].first : x.color;
-    x.last = x.r ? t[x.r].last : x.color;
-    x.runs = 1 + (x.l ? t[x.l].runs - (t[x.l].last == x.color) : 0) +
-             (x.r ? t[x.r].runs - (t[x.r].first == x.color) : 0);
+int size(int u){
+    return u?e[u].sz:0;
 }
-void split(int u, int key, int &a, int &b) {
-    if (!u) {
-        a = b = 0;
+void node::pushup(){
+    sz=1+size(l)+size(r);
+    first=l?e[l].first:c;
+    last=r?e[r].last:c;
+    cnt=1;
+    if(l)cnt+=e[l].cnt-(e[l].last==c);
+    if(r)cnt+=e[r].cnt-(e[r].first==c);
+}
+void split(int u,int key,int &a,int &b){
+    if(!u){
+        a=b=0;
         return;
     }
-    if (u <= key) {
-        a = u;
-        split(t[u].r, key, t[u].r, b);
-        pull(u);
-    } else {
-        b = u;
-        split(t[u].l, key, a, t[u].l);
-        pull(u);
+    if(u<=key){
+        a=u;
+        split(e[u].r,key,e[u].r,b);
+        e[u].pushup();
+    }
+    else{
+        b=u;
+        split(e[u].l,key,a,e[u].l);
+        e[u].pushup();
     }
 }
-int join(int a, int b) {
-    if (!a || !b)
-        return a | b;
-    if (t[a].priority < t[b].priority) {
-        t[a].r = join(t[a].r, b);
-        pull(a);
+int merge(int a,int b){
+    if(!a || !b)return a|b;
+    if(e[a].pri<e[b].pri){
+        e[a].r=merge(e[a].r,b);
+        e[a].pushup();
         return a;
     }
-    t[b].l = join(a, t[b].l);
-    pull(b);
+    e[b].l=merge(a,e[b].l);
+    e[b].pushup();
     return b;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, k;
-    cin >> n >> m >> k;
-    t.resize(n + 1);
-    vector<int> roots(k + 2);
-    vector<unordered_map<int, int>> freq(k + 2);
-    mt19937 rng(94127);
-    for (int i = 1; i <= n; ++i) {
-        cin >> t[i].color;
-        t[i].first = t[i].last = t[i].color;
-        t[i].priority = rng();
-        roots[1] = join(roots[1], i);
-        ++freq[1][t[i].color];
+int main(){
+    scanf("%d%d%d",&n,&m,&k);
+    for(int i=1;i<=n;++i){
+        e[i].read();
+        root[1]=merge(root[1],i);
+        ++mp[1][e[i].c];
     }
-    for (int id = 2; id <= k + 1; ++id) {
-        int x, l, r, a, b, c;
-        cin >> x >> l >> r;
-        split(roots[x], r, b, c);
-        split(b, l - 1, a, b);
-        roots[x] = join(a, c);
-        roots[id] = b;
-        int small = id, large = x;
-        if (sizeOf(roots[x]) < sizeOf(roots[id])) {
-            freq[x].swap(freq[id]);
-            small = x;
-            large = id;
+    for(int id=2;id<=k+1;++id){
+        scanf("%d%d%d",&x,&l,&r);
+        int a,b,c;
+        split(root[x],r,b,c);
+        split(b,l-1,a,b);
+        root[x]=merge(a,c);
+        root[id]=b;
+        int u=id,v=x;
+        if(size(root[x])<size(root[id])){
+            mp[x].swap(mp[id]);
+            u=x;
+            v=id;
         }
-        vector<int> stack;
-        if (roots[small])
-            stack.push_back(roots[small]);
-        while (!stack.empty()) {
-            int u = stack.back();
-            stack.pop_back();
-            int color = t[u].color;
-            ++freq[small][color];
-            auto it = freq[large].find(color);
-            if (--it->second == 0)
-                freq[large].erase(it);
-            if (t[u].l)
-                stack.push_back(t[u].l);
-            if (t[u].r)
-                stack.push_back(t[u].r);
+        vector<int> st;
+        if(root[u])st.push_back(root[u]);
+        while(!st.empty()){
+            int p=st.back();
+            st.pop_back();
+            int col=e[p].c;
+            ++mp[u][col];
+            auto it=mp[v].find(col);
+            if(--it->second==0)mp[v].erase(it);
+            if(e[p].l)st.push_back(e[p].l);
+            if(e[p].r)st.push_back(e[p].r);
         }
-        cout << freq[id].size() << ' ' << (roots[id] ? t[roots[id]].runs : 0) << '\n';
+        int cnt=root[id]?e[root[id]].cnt:0;
+        printf("%zu %d\n",mp[id].size(),cnt);
     }
+    return 0;
 }

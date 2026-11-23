@@ -1,25 +1,26 @@
-#include <cctype>
-#include <iostream>
-#include <string>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    while (n--) {
-        string s;
-        cin >> s;
-        bool letter = false, digit = false, special = false, repeat = false;
-        int count[128] = {};
-        for (unsigned char c : s) {
-            if (isalpha(c))
-                letter = true;
-            else if (isdigit(c))
-                digit = true;
-            else
-                special = true;
-            if (++count[c] > 2)
-                repeat = true;
+const int N=1e5+10,M=128;
+int n,cnt[M];
+char s[N];
+int main(){
+    scanf("%d",&n);
+    while(n--){
+        scanf("%s",s);
+        memset(cnt,0,sizeof cnt);
+        bool a=false,b=false,c=false,rep=false;
+        for(int i=0;s[i];++i){
+            unsigned char x=s[i];
+            if(isalpha(x))a=true;
+            else if(isdigit(x))b=true;
+            else c=true;
+            if(++cnt[x]>2)rep=true;
         }
-        cout << (!(letter && digit && special) ? 0 : repeat ? 1 : 2) << '\n';
+        int ans;
+        if(!(a && b && c))ans=0;
+        else if(rep)ans=1;
+        else ans=2;
+        printf("%d\n",ans);
     }
+    return 0;
 }

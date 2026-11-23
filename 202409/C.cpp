@@ -1,131 +1,131 @@
-#include <algorithm>
-#include <iostream>
-#include <limits>
-#include <regex>
-#include <string>
-#include <unordered_map>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Block {
-    long long start, old_count, new_count;
-    vector<int> before, after;
+typedef long long ll;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+struct block{
+    ll st,m,k;
+    vector<int> a,b;
 };
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    string line;
-    getline(cin, line);
-    vector<string> text;
-    unordered_map<string, int> ids;
-    auto id = [&](const string &s) {
-        auto it = ids.find(s);
-        if (it != ids.end())
-            return it->second;
-        int x = text.size();
-        text.push_back(s);
-        ids[s] = x;
-        return x;
-    };
-    vector<int> original(n);
-    for (auto &x : original) {
-        getline(cin, line);
-        x = id(line);
+int n,used;
+ll off;
+bool ok=true;
+string s;
+vector<string> text;
+vector<int> a,ans;
+vector<block> v;
+unordered_map<string,int> mp;
+bool read(string &str){
+    str.clear();
+    int c;
+    while((c=getchar())!=EOF && c!='\n'){
+        str+=char(c);
     }
-    vector<Block> blocks;
-    bool valid = true;
-    regex header("^@@ -([1-9][0-9]*),([1-9][0-9]*) \\+([1-9][0-9]*),([1-9][0-9]*) @@$");
-    auto number = [](const string &s) {
-        long long x = 0;
-        for (char c : s) {
-            x = x * 10 + c - '0';
-            if (x > 1000000000000LL)
-                return 1000000000000LL;
-        }
-        return x;
-    };
-    while (getline(cin, line)) {
-        if (!line.empty() && line[0] == '#')
-            continue;
-        if (!line.empty() && line[0] == '@') {
+    return c!=EOF || !str.empty();
+}
+int id(const string &str){
+    auto it=mp.find(str);
+    if(it!=mp.end())return it->second;
+    int x=text.size();
+    text.push_back(str);
+    mp[str]=x;
+    return x;
+}
+ll num(const string &str){
+    ll x=0;
+    for(const char &c:str){
+        x=x*10+c-'0';
+        if(x>1e12)return 1e12;
+    }
+    return x;
+}
+int main(){
+    scanf("%d",&n);
+    read(s);
+    a.resize(n);
+    for(int &x:a){
+        read(s);
+        x=id(s);
+    }
+    regex re("^@@ -([1-9][0-9]*),([1-9][0-9]*) \\+([1-9][0-9]*),([1-9][0-9]*) @@$");
+    while(read(s)){
+        if(!s.empty() && s[0]=='#')continue;
+        if(!s.empty() && s[0]=='@'){
             smatch match;
-            if (!regex_match(line, match, header)) {
-                valid = false;
+            if(!regex_match(s,match,re)){
+                ok=false;
                 break;
             }
-            Block b{number(match[1]), number(match[2]), number(match[4]), {}, {}};
-            if (!blocks.empty() && b.start < blocks.back().start + blocks.back().old_count) {
-                valid = false;
+            block cur;
+            cur.st=num(match[1]);
+            cur.m=num(match[2]);
+            cur.k=num(match[4]);
+            if(!v.empty() && cur.st<v.back().st+v.back().m){
+                ok=false;
                 break;
             }
-            blocks.push_back(std::move(b));
-        } else if (!blocks.empty()) {
-            if (line.empty() || (line[0] != ' ' && line[0] != '+' && line[0] != '-')) {
-                valid = false;
+            v.push_back(std::move(cur));
+        }
+        else if(!v.empty()){
+            if(s.empty() || (s[0]!=' ' && s[0]!='+' && s[0]!='-')){
+                ok=false;
                 break;
             }
-            int value = id(line.substr(1));
-            if (line[0] != '+')
-                blocks.back().before.push_back(value);
-            if (line[0] != '-')
-                blocks.back().after.push_back(value);
+            int x=id(s.substr(1));
+            if(s[0]!='+')v.back().a.push_back(x);
+            if(s[0]!='-')v.back().b.push_back(x);
         }
     }
-    if (blocks.empty())
-        valid = false;
-    for (const auto &b : blocks)
-        if (b.old_count != static_cast<long long>(b.before.size()) ||
-            b.new_count != static_cast<long long>(b.after.size()))
-            valid = false;
-    vector<int> result;
-    int consumed = 0;
-    long long offset = 0;
-    if (valid)
-        for (const auto &b : blocks) {
-            int length = b.before.size();
-            vector<int> failure(length);
-            for (int i = 1, j = 0; i < length; ++i) {
-                while (j && b.before[i] != b.before[j])
-                    j = failure[j - 1];
-                if (b.before[i] == b.before[j])
-                    ++j;
-                failure[i] = j;
+    if(v.empty())ok=false;
+    for(block &cur:v){
+        if(cur.m!=(ll)cur.a.size() || cur.k!=(ll)cur.b.size())ok=false;
+    }
+    if(ok){
+        for(block &cur:v){
+            int len=cur.a.size();
+            vector<int> f(len);
+            for(int i=1,j=0;i<len;++i){
+                while(j && cur.a[i]!=cur.a[j]){
+                    j=f[j-1];
+                }
+                if(cur.a[i]==cur.a[j])++j;
+                f[i]=j;
             }
-            long long expected = b.start - 1 + offset,
-                      best_delta = numeric_limits<long long>::max();
-            int best = -1;
-            for (int i = consumed, j = 0; i < n; ++i) {
-                while (j && original[i] != b.before[j])
-                    j = failure[j - 1];
-                if (original[i] == b.before[j])
-                    ++j;
-                if (j == length) {
-                    int start = i - length + 1;
-                    long long delta = start - expected;
-                    if (abs(delta) < length &&
-                        (best == -1 || abs(delta) < abs(best_delta) ||
-                         (abs(delta) == abs(best_delta) && delta < best_delta))) {
-                        best = start;
-                        best_delta = delta;
+            ll st=cur.st-1+off,delta=INF;
+            int pos=-1;
+            for(int i=used,j=0;i<n;++i){
+                while(j && a[i]!=cur.a[j]){
+                    j=f[j-1];
+                }
+                if(a[i]==cur.a[j])++j;
+                if(j==len){
+                    int x=i-len+1;
+                    ll d=x-st;
+                    bool best=pos==-1 || abs(d)<abs(delta);
+                    best=best || (abs(d)==abs(delta) && d<delta);
+                    if(abs(d)<len && best){
+                        pos=x;
+                        delta=d;
                     }
-                    j = failure[j - 1];
+                    j=f[j-1];
                 }
             }
-            if (best == -1) {
-                valid = false;
+            if(pos==-1){
+                ok=false;
                 break;
             }
-            result.insert(result.end(), original.begin() + consumed, original.begin() + best);
-            result.insert(result.end(), b.after.begin(), b.after.end());
-            consumed = best + length;
-            offset += best_delta;
+            ans.insert(ans.end(),a.begin()+used,a.begin()+pos);
+            ans.insert(ans.end(),cur.b.begin(),cur.b.end());
+            used=pos+len;
+            off+=delta;
         }
-    if (!valid) {
-        cout << "Patch is damaged.\n";
+    }
+    if(!ok){
+        puts("Patch is damaged.");
         return 0;
     }
-    result.insert(result.end(), original.begin() + consumed, original.end());
-    for (int x : result)
-        cout << text[x] << '\n';
+    ans.insert(ans.end(),a.begin()+used,a.end());
+    for(int &x:ans){
+        puts(text[x].c_str());
+    }
+    return 0;
 }

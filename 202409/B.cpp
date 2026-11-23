@@ -1,38 +1,44 @@
-#include <iostream>
-#include <string>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    string s, line;
-    getline(cin, s);
-    s = s.substr(1, s.size() - 2);
-    int jump[31][128];
-    for (int c = 0; c < 128; c++)
-        jump[0][c] = c;
-    int n;
-    cin >> n;
-    getline(cin, line);
-    while (n--) {
-        getline(cin, line);
-        jump[0][int(line[1])] = line[2];
+const int N=31,M=128;
+int n,q,k,f[N][M];
+string s,t;
+void read(string &str){
+    str.clear();
+    int c;
+    while((c=getchar())!=EOF && c!='\n'){
+        str+=char(c);
     }
-    for (int b = 1; b < 31; b++)
-        for (int c = 0; c < 128; c++)
-            jump[b][c] = jump[b - 1][jump[b - 1][c]];
-    int q;
-    cin >> q;
-    while (q--) {
-        int k;
-        cin >> k;
-        cout << '#';
-        for (char ch : s) {
-            int c = ch;
-            for (int b = 0; b < 31; b++)
-                if (k & (1 << b))
-                    c = jump[b][c];
-            cout << char(c);
+}
+int main(){
+    read(s);
+    s=s.substr(1,s.size()-2);
+    for(int i=0;i<M;++i){
+        f[0][i]=i;
+    }
+    scanf("%d",&n);
+    read(t);
+    while(n--){
+        read(t);
+        f[0][int(t[1])]=t[2];
+    }
+    for(int i=1;i<N;++i){
+        for(int j=0;j<M;++j){
+            f[i][j]=f[i-1][f[i-1][j]];
         }
-        cout << "#\n";
     }
+    scanf("%d",&q);
+    while(q--){
+        scanf("%d",&k);
+        putchar('#');
+        for(char &ch:s){
+            int c=ch;
+            for(int i=0;i<N;++i){
+                if(k>>i&1)c=f[i][c];
+            }
+            putchar(c);
+        }
+        puts("#");
+    }
+    return 0;
 }

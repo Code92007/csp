@@ -1,0 +1,17 @@
+{
+  "problem": "202409E",
+  "previous_sha256": "70ac86bbb37ba874cec017866aca779bace266c2b0fd1b75e6e2279bb1ed4c2e",
+  "source_sha256": "8484bffd01a1f4342e5cab4fb7ea08cb85366d2c9c26dadbdc84d5f32f583b16",
+  "distinct_inputs": 62,
+  "per_binary_passed": {
+    "O2": 62,
+    "UBSan": 62
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "pushup made a node member to access own fields directly",
+    "read made a node member for input and initialization in one call"
+  ],
+  "historical_report": "e-member-pushup-report.json",
+  "original_report": "refactor-report.json"
+}

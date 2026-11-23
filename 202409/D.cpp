@@ -1,51 +1,46 @@
-#include <cstdlib>
-#include <iostream>
-#include <limits>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using i64 = long long;
-struct Station {
-    i64 x, y, r, cost;
-    bool used = false;
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<i64> x(n), y(n);
-    for (int i = 0; i < n; ++i)
-        cin >> x[i] >> y[i];
-    vector<Station> stations(m);
-    for (auto &s : stations)
-        cin >> s.x >> s.y >> s.r >> s.cost;
-    const i64 INF = numeric_limits<i64>::max() / 4;
-    vector<i64> distance(n, INF);
-    vector<bool> done(n);
-    distance[0] = 0;
-    for (int step = 0; step < n; ++step) {
-        int u = -1;
-        for (int i = 0; i < n; ++i)
-            if (!done[i] && (u == -1 || distance[i] < distance[u]))
-                u = i;
-        if (u == -1 || distance[u] == INF)
-            break;
-        done[u] = true;
-        if (u == n - 1)
-            break;
-        for (auto &s : stations) {
-            if (s.used || abs(x[u] - s.x) > s.r || abs(y[u] - s.y) > s.r)
-                continue;
-            s.used = true;
-            i64 candidate = distance[u] + s.cost;
-            for (int v = 0; v < n; ++v)
-                if (!done[v] && candidate < distance[v] && abs(x[v] - s.x) <= s.r &&
-                    abs(y[v] - s.y) <= s.r)
-                    distance[v] = candidate;
+typedef long long ll;
+const int N=5010;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+struct station{
+    ll x,y,r,c;
+    bool vis;
+}e[N];
+int n,m;
+ll x[N],y[N],d[N];
+bool vis[N];
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=0;i<n;++i){
+        scanf("%lld%lld",&x[i],&y[i]);
+    }
+    for(int i=0;i<m;++i){
+        scanf("%lld%lld%lld%lld",&e[i].x,&e[i].y,&e[i].r,&e[i].c);
+    }
+    memset(d,(int)INF,sizeof d);
+    d[0]=0;
+    for(int i=0;i<n;++i){
+        int u=-1;
+        for(int j=0;j<n;++j){
+            if(!vis[j] && (u==-1 || d[j]<d[u]))u=j;
+        }
+        if(u==-1 || d[u]==INF)break;
+        vis[u]=true;
+        if(u==n-1)break;
+        for(int j=0;j<m;++j){
+            station &s=e[j];
+            bool in=abs(x[u]-s.x)<=s.r && abs(y[u]-s.y)<=s.r;
+            if(s.vis || !in)continue;
+            s.vis=true;
+            ll val=d[u]+s.c;
+            for(int v=0;v<n;++v){
+                bool near=abs(x[v]-s.x)<=s.r && abs(y[v]-s.y)<=s.r;
+                if(!vis[v] && val<d[v] && near)d[v]=val;
+            }
         }
     }
-    if (distance[n - 1] == INF)
-        cout << "Nan\n";
-    else
-        cout << distance[n - 1] << '\n';
+    if(d[n-1]==INF)puts("Nan");
+    else printf("%lld\n",d[n-1]);
+    return 0;
 }

@@ -1,0 +1,15 @@
+{
+  "problem": "202409A",
+  "previous_sha256": "69267b259194008a83b5d3a5c7f176b411033d83581a2b91710a62ad87fd793c",
+  "source_sha256": "aa3519dbde3db6a904503b4f292e3dcda9545937bdd1f323f0f4392374600416",
+  "distinct_inputs": 62,
+  "per_binary_passed": {
+    "O2": 62,
+    "UBSan": 62
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "nested ternary replaced by if/else branches"
+  ],
+  "historical_report": "refactor-report.json"
+}

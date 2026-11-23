@@ -1,0 +1,15 @@
+{
+  "problem": "202409E",
+  "previous_sha256": "81ffe87a341d12a99917d399f5585d32f61d4dfc565c5960034cb747054471e1",
+  "source_sha256": "70ac86bbb37ba874cec017866aca779bace266c2b0fd1b75e6e2279bb1ed4c2e",
+  "distinct_inputs": 62,
+  "per_binary_passed": {
+    "O2": 62,
+    "UBSan": 62
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "pushup made a node member to access own fields directly"
+  ],
+  "historical_report": "refactor-report.json"
+}
