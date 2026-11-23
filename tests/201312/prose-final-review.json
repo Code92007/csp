@@ -1,0 +1,43 @@
+{
+  "contest": "201312",
+  "scope": "Final prose review: semantic paragraphs, separate headings/operation lists, current code names, full formulas/proofs/complexities and source attribution. Source code unchanged.",
+  "current_source_sha256": {
+    "A": "1eccdb2025f426ed406db7a660c25cb024db017cbe6f803985d44905290e3513",
+    "B": "fe3211ab6d5ca2d92327fd7077c405543541d5b39cabcafd2cf4233c46746b12",
+    "C": "d085dc5bf3906bb95b8fad9584b206335929af9001f16ff4ea68a4a959985dbc",
+    "D": "888315c8f29416a93ef4a41861647fd99a890c0961eb2cfa410a54f39196d655",
+    "E": "6df458c6bbf3b4908a85ba0405fcfd6c517cca44bda4008661c64449774d01d2"
+  },
+  "changes": [
+    {
+      "before": "求余后转换为0…9或X",
+      "after": "求余后转换为 0…9 或 X"
+    },
+    {
+      "before": "定义中的1到9",
+      "after": "定义中的 1 到 9"
+    },
+    {
+      "before": "从 S 在原图 BFS，得到 `vis`。如果 T 不在其中，立即输出指定提示。 再从 T",
+      "after": "从 S 在原图 BFS，得到 `vis`。如果 T 不在其中，立即输出指定提示。\n\n再从 T"
+    },
+    {
+      "before": "**为什么反向搜索等价？**",
+      "after": "**为什么反向搜索等价**"
+    }
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged_or_mask_to_S": true,
+  "markdown": [
+    {
+      "file": "201312/README.md",
+      "before_sha256": "183982379d581708234b97d8af7f9b0c6ccb0817ba59254d71f1efc681b1772e",
+      "after_sha256": "4f6db67d5195311680066178430cacead0db98d8656ba3adcc87d4dcb9c85ca0"
+    },
+    {
+      "file": "201312题解.md",
+      "before_sha256": "2e4bad05a8b78ee49a430190d3bc7a9e2f56ba79c8701fbfb1052dc656799986",
+      "after_sha256": "96cf915a29395822e0cc081625089577fe6b64152326111ca2d74a180a026b52"
+    }
+  ]
+}

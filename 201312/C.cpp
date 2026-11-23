@@ -1,24 +1,21 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    vector<long long> h(n + 2);
-    for (int i = 1; i <= n; i++)
-        cin >> h[i];
-    vector<int> stack{0};
-    long long answer = 0;
-    for (int i = 1; i <= n + 1; i++) {
-        while (stack.size() > 1 && h[stack.back()] >= h[i]) {
-            int top = stack.back();
-            stack.pop_back();
-            answer = max(answer, h[top] * (i - stack.back() - 1));
-        }
-        stack.push_back(i);
+typedef long long ll;
+const int N=1e5+10;
+int n,st[N],top;
+ll h[N],ans;
+int main(){
+    scanf("%d",&n);
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&h[i]);
     }
-    cout << answer << '\n';
+    for(int i=1;i<=n+1;++i){
+        while(top && h[st[top]]>=h[i]){
+            int u=st[top--];
+            ans=max(ans,h[u]*(i-st[top]-1));
+        }
+        st[++top]=i;
+    }
+    printf("%lld\n",ans);
+    return 0;
 }

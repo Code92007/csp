@@ -1,20 +1,19 @@
-#include <iostream>
-#include <map>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    map<int, int> count;
-    while (n--) {
-        int x;
-        cin >> x;
-        ++count[x];
+map<int,int> cnt;
+int n,x,ans,num;
+int main(){
+    scanf("%d",&n);
+    while(n--){
+        scanf("%d",&x);
+        ++cnt[x];
     }
-    int answer = 0, most = 0;
-    for (auto [x, c] : count)
-        if (c > most) {
-            most = c;
-            answer = x;
+    for(auto &[x,c]:cnt){
+        if(c>num){
+            num=c;
+            ans=x;
         }
-    cout << answer << '\n';
+    }
+    printf("%d\n",ans);
+    return 0;
 }

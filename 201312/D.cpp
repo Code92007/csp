@@ -1,44 +1,34 @@
-#include <algorithm>
-#include <array>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int MOD = 1000000007;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    vector<int> input;
-    int x;
-    while (cin >> x)
-        input.push_back(x);
-    if (input.empty())
-        return 0;
-    // Original CSP input is one n; the archived OJ also provides a T-case variant.
-    vector<int> queries = input.size() == 1 ? input : vector<int>(input.begin() + 1, input.end());
-    int maximum = *max_element(queries.begin(), queries.end());
-    vector<int> answer(maximum + 1);
-    array<int, 16> dp{};
-    dp[0] = 1;
-    for (int len = 0; len < maximum; ++len) {
-        array<int, 16> next{};
-        for (int mask = 0; mask < 16; ++mask)
-            for (int digit = 0; digit < 4; ++digit) {
-                if (len == 0 && digit == 0)
-                    continue;
-                if (digit == 0 && (mask & 2))
-                    continue;
-                if (digit == 1 && !(mask & 1))
-                    continue;
-                if (digit == 2 && (mask & 8))
-                    continue;
-                if (digit == 3 && !(mask & 4))
-                    continue;
-                int to = mask | (1 << digit);
-                next[to] = (next[to] + dp[mask]) % MOD;
-            }
-        dp = next;
-        answer[len + 1] = dp[15];
+const int N=1005,M=16,mod=1e9+7;
+int n,x,dp[M],nd[M],ans[N];
+vector<int> a;
+int main(){
+    while(scanf("%d",&x)==1){
+        a.push_back(x);
     }
-    for (int n : queries)
-        cout << answer[n] << '\n';
+    if(a.empty())return 0;
+    int l=a.size()>1;
+    n=*max_element(a.begin()+l,a.end());
+    dp[0]=1;
+    for(int len=0;len<n;++len){
+        memset(nd,0,sizeof nd);
+        for(int S=0;S<16;++S){
+            for(int d=0;d<4;++d){
+                if(!len && !d)continue;
+                if(!d && (S&2))continue;
+                if(d==1 && !(S&1))continue;
+                if(d==2 && (S&8))continue;
+                if(d==3 && !(S&4))continue;
+                int to=S|(1<<d);
+                nd[to]=(nd[to]+dp[S])%mod;
+            }
+        }
+        memcpy(dp,nd,sizeof dp);
+        ans[len+1]=dp[15];
+    }
+    for(int i=l;i<(int)a.size();++i){
+        printf("%d\n",ans[a[i]]);
+    }
+    return 0;
 }

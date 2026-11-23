@@ -1,0 +1,72 @@
+{
+  "contest": "201312",
+  "source_sha256": {
+    "A": "1eccdb2025f426ed406db7a660c25cb024db017cbe6f803985d44905290e3513",
+    "B": "fe3211ab6d5ca2d92327fd7077c405543541d5b39cabcafd2cf4233c46746b12",
+    "C": "d085dc5bf3906bb95b8fad9584b206335929af9001f16ff4ea68a4a959985dbc",
+    "D": "514714fd7b66484fb9555d004256e28ce4a42c10bae2eac68238aa7df26eb752",
+    "E": "6df458c6bbf3b4908a85ba0405fcfd6c517cca44bda4008661c64449774d01d2"
+  },
+  "different_inputs": 2888,
+  "categories": {
+    "retained_independent": 321,
+    "additional_independent": 2554,
+    "saved_sample": 10,
+    "constructive_stress": 3
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "C",
+      "kind": "constructive_stress",
+      "seconds": 0.007128708999999844
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.0027345419999988962
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.0027433750000014356
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 102,
+        "B": 304,
+        "C": 1255,
+        "D": 103,
+        "E": 1124
+      },
+      "total": 2888,
+      "seconds": 8.477656583
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 102,
+        "B": 304,
+        "C": 1254,
+        "D": 103,
+        "E": 1122
+      },
+      "total": 2885,
+      "seconds": 16.533228959
+    }
+  ],
+  "independent_oracles": "Frequency counter/minimum tie, independent ISBN weighted checksum, exhaustive subinterval histogram minima, combinatorial digit-count/interleaving formula independent of bitmask DP, literal forward reachability from every reachable cell independent of reverse BFS.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

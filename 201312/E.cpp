@@ -1,65 +1,61 @@
-#include <array>
-#include <iostream>
-#include <queue>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int r, c;
-    cin >> r >> c;
-    vector<string> grid(r);
-    for (auto &s : grid)
-        cin >> s;
-    int start = -1, target = -1;
-    vector<vector<int>> g(r * c), back(r * c);
-    array<int, 4> dx{-1, 1, 0, 0}, dy{0, 0, -1, 1};
-    for (int x = 0; x < r; ++x)
-        for (int y = 0; y < c; ++y) {
-            char ch = grid[x][y];
-            int u = x * c + y;
-            if (ch == 'S')
-                start = u;
-            if (ch == 'T')
-                target = u;
-            if (ch == '#')
-                continue;
-            for (int d = 0; d < 4; ++d) {
-                bool allowed = ch == '+' || ch == 'S' || ch == 'T' || (ch == '-' && d >= 2) ||
-                               (ch == '|' && d < 2) || (ch == '.' && d == 1);
-                int a = x + dx[d], b = y + dy[d];
-                if (allowed && a >= 0 && a < r && b >= 0 && b < c && grid[a][b] != '#') {
-                    int v = a * c + b;
-                    g[u].push_back(v);
-                    back[v].push_back(u);
-                }
+const int N=55,M=4,K=N*N;
+int n,m,s,t,ans,dx[M]={-1,1,0,0},dy[M]={0,0,-1,1};
+char a[N][N];
+bool vis[K],can[K];
+vector<int> g[K],h[K];
+bool ok(char c,int d){
+    if(c=='+' || c=='S' || c=='T')return true;
+    if(c=='-')return d>=2;
+    if(c=='|')return d<2;
+    return c=='.' && d==1;
+}
+void bfs(int s,vector<int> g[],bool vis[]){
+    queue<int> q;
+    q.push(s);
+    vis[s]=true;
+    while(!q.empty()){
+        int u=q.front();
+        q.pop();
+        for(int &v:g[u]){
+            if(vis[v])continue;
+            vis[v]=true;
+            q.push(v);
+        }
+    }
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=0;i<n;++i){
+        scanf("%s",a[i]);
+    }
+    for(int x=0;x<n;++x){
+        for(int y=0;y<m;++y){
+            char c=a[x][y];
+            int u=x*m+y;
+            if(c=='S')s=u;
+            if(c=='T')t=u;
+            if(c=='#')continue;
+            for(int d=0;d<4;++d){
+                int i=x+dx[d],j=y+dy[d];
+                if(!ok(c,d) || i<0 || i>=n || j<0 || j>=m)continue;
+                if(a[i][j]=='#')continue;
+                int v=i*m+j;
+                g[u].push_back(v);
+                h[v].push_back(u);
             }
         }
-    auto bfs = [&](int root, const vector<vector<int>> &edges) {
-        vector<bool> seen(r * c);
-        queue<int> q;
-        q.push(root);
-        seen[root] = true;
-        while (!q.empty()) {
-            int u = q.front();
-            q.pop();
-            for (int v : edges[u])
-                if (!seen[v]) {
-                    seen[v] = true;
-                    q.push(v);
-                }
-        }
-        return seen;
-    };
-    auto reachable = bfs(start, g);
-    if (!reachable[target]) {
-        cout << "I'm stuck!\n";
+    }
+    bfs(s,g,vis);
+    if(!vis[t]){
+        puts("I'm stuck!");
         return 0;
     }
-    auto returnable = bfs(target, back);
-    int answer = 0;
-    for (int u = 0; u < r * c; ++u)
-        answer += reachable[u] && !returnable[u];
-    cout << answer << '\n';
+    bfs(t,h,can);
+    for(int u=0;u<n*m;++u){
+        ans+=(vis[u] && !can[u]);
+    }
+    printf("%d\n",ans);
+    return 0;
 }
