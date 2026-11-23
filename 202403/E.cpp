@@ -1,77 +1,88 @@
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<vector<int>> original(n + 1);
-    vector<int> head(n + 1), tail(n + 1), next(n + 1), count(n + 1), depth(n + 1), tin(n + 1),
-        tout(n + 1), bit(n + 2);
-    auto append = [&](int u, int a, int b) {
-        if (!a)
-            return;
-        if (tail[u])
-            next[tail[u]] = a;
-        else
-            head[u] = a;
-        tail[u] = b;
-    };
-    for (int i = 2, p; i <= n; ++i) {
-        cin >> p;
-        original[p].push_back(i);
-        append(p, i, i);
-        ++count[p];
+typedef long long ll;
+typedef pair<int,bool> P;
+const int N=5e5+10;
+int n,m,op,u,head[N],tail[N],nxt[N],cnt[N];
+int dep[N],dfn[N],out[N],tot;
+ll a[N];
+vector<int> g[N];
+struct BIT{
+    int n,tr[N];
+    void init(int x){
+        n=x;
+        memset(tr,0,sizeof tr);
     }
-    vector<long long> data(n + 1);
-    for (int i = 1; i <= n; ++i)
-        cin >> data[i];
-    int timer = 0;
-    depth[1] = 1;
-    vector<pair<int, bool>> stack{{1, false}};
-    while (!stack.empty()) {
-        auto [u, exit] = stack.back();
-        stack.pop_back();
-        if (exit) {
-            tout[u] = timer;
+    void add(int x,int v){
+        for(;x<=n;x+=x&-x){
+            tr[x]+=v;
+        }
+    }
+    int sum(int x){
+        int ans=0;
+        for(;x;x-=x&-x){
+            ans+=tr[x];
+        }
+        return ans;
+    }
+}bit;
+void append(int u,int l,int r){
+    if(!l)return;
+    if(tail[u])nxt[tail[u]]=l;
+    else head[u]=l;
+    tail[u]=r;
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=2;i<=n;++i){
+        int p;
+        scanf("%d",&p);
+        g[p].push_back(i);
+        append(p,i,i);
+        ++cnt[p];
+    }
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&a[i]);
+    }
+    vector<P> st;
+    st.push_back({1,false});
+    dep[1]=1;
+    while(!st.empty()){
+        auto [x,ed]=st.back();
+        st.pop_back();
+        if(ed){
+            out[x]=tot;
             continue;
         }
-        tin[u] = ++timer;
-        stack.push_back({u, true});
-        for (int v : original[u]) {
-            depth[v] = depth[u] + 1;
-            stack.push_back({v, false});
+        dfn[x]=++tot;
+        st.push_back({x,true});
+        for(int &v:g[x]){
+            dep[v]=dep[x]+1;
+            st.push_back({v,false});
         }
     }
-    auto add = [&](int x, int d) {
-        for (; x <= n; x += x & -x)
-            bit[x] += d;
-    };
-    while (m--) {
-        int op, u;
-        cin >> op >> u;
-        if (op == 2) {
-            int d = depth[u];
-            for (int x = tin[u]; x; x -= x & -x)
-                d += bit[x];
-            cout << d << '\n';
-        } else {
-            // Save the old list before appending grandchildren: delete only one level.
-            int v = head[u];
-            head[u] = tail[u] = count[u] = 0;
-            while (v) {
-                int following = next[v];
-                next[v] = 0;
-                data[u] += data[v];
-                append(u, head[v], tail[v]);
-                count[u] += count[v];
-                add(tin[v], -1);
-                add(tout[v] + 1, 1);
-                v = following;
+    bit.init(n);
+    while(m--){
+        scanf("%d%d",&op,&u);
+        if(op==2){
+            int ans=dep[u]+bit.sum(dfn[u]);
+            printf("%d\n",ans);
+        }
+        else{
+            int v=head[u];
+            head[u]=tail[u]=cnt[u]=0;
+            while(v){
+                int next=nxt[v];
+                nxt[v]=0;
+                a[u]+=a[v];
+                append(u,head[v],tail[v]);
+                cnt[u]+=cnt[v];
+                bit.add(dfn[v],-1);
+                bit.add(out[v]+1,1);
+                v=next;
             }
-            cout << count[u] << ' ' << data[u] << '\n';
+            printf("%d %lld\n",cnt[u],a[u]);
         }
     }
+    return 0;
 }

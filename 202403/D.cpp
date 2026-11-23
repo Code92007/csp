@@ -1,50 +1,44 @@
-#include <algorithm>
-#include <functional>
-#include <iostream>
-#include <numeric>
-#include <queue>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int width, m, n;
-    cin >> width >> m >> n;
-    vector<pair<int, int>> cells(m);
-    for (auto &[x, water] : cells)
-        cin >> x >> water;
-    sort(cells.begin(), cells.end());
-    vector<int> left(m), right(m);
-    for (int i = 0; i < m; ++i) {
-        left[i] = i - 1;
-        right[i] = i + 1;
+typedef pair<int,int> P;
+int c,m,n,cnt;
+vector<P> a;
+vector<int> l,r;
+priority_queue<int,vector<int>,greater<int>> q;
+void add(int u){
+    if(u>=0 && u<m && ++a[u].second==5)q.push(u);
+}
+int main(){
+    scanf("%d%d%d",&c,&m,&n);
+    a.resize(m);
+    l.resize(m);
+    r.resize(m);
+    for(auto &[x,y]:a){
+        scanf("%d%d",&x,&y);
     }
-    priority_queue<int, vector<int>, greater<int>> ready;
-    auto add = [&](int u) {
-        if (u >= 0 && u < m && ++cells[u].second == 5)
-            ready.push(u);
-    };
-    int alive = m;
-    while (n--) {
-        int position;
-        cin >> position;
-        int u =
-            lower_bound(cells.begin(), cells.end(), pair<int, int>{position, -1}) - cells.begin();
+    sort(a.begin(),a.end());
+    for(int i=0;i<m;++i){
+        l[i]=i-1;
+        r[i]=i+1;
+    }
+    cnt=m;
+    while(n--){
+        int x;
+        scanf("%d",&x);
+        int u=lower_bound(a.begin(),a.end(),P(x,-1))-a.begin();
         add(u);
-        while (!ready.empty()) {
-            int x = ready.top();
-            ready.pop();
-            int l = left[x], r = right[x];
-            if (l >= 0)
-                right[l] = r;
-            if (r < m)
-                left[r] = l;
-            cells[x].second = 0;
-            --alive;
-            add(l);
-            add(r);
+        while(!q.empty()){
+            int v=q.top();
+            q.pop();
+            int s=l[v],t=r[v];
+            if(s>=0)r[s]=t;
+            if(t<m)l[t]=s;
+            a[v].second=0;
+            --cnt;
+            add(s);
+            add(t);
         }
-        cout << alive << '\n';
+        printf("%d\n",cnt);
     }
+    return 0;
 }

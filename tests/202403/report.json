@@ -1,0 +1,67 @@
+{
+  "contest": "202403",
+  "source_sha256": {
+    "A": "46dcec9c7c37722118b60ae8b644e4e48b983b7852424db54862772aa5ce6845",
+    "B": "f4af6528d2b1e5ee7cc980c2793f4e4523d1f09d4fe81ec584a7ac06300b80bb",
+    "C": "5830665c266d28d4d4119eab6f15068ed4b7af364a3428c76473c97a30bf2ef6",
+    "D": "6e3a2ecf632d0c96f9168e73c5961d9c57a6f36c6a9c2e8c6b6bcfe31888c3e8",
+    "E": "15d3c9902b74090184f00cc268192c82cf4cd5279e0cb545323491847e7398fe"
+  },
+  "different_inputs": 986,
+  "categories": {
+    "retained_independent": 450,
+    "saved_sample": 11,
+    "additional_independent": 523,
+    "constructive_stress": 2
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "B",
+      "kind": "constructive_stress",
+      "seconds": 0.05144404199999997
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.048546416999998954
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 63,
+        "B": 106,
+        "C": 273,
+        "D": 322,
+        "E": 222
+      },
+      "total": 986,
+      "seconds": 4.936368583
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 63,
+        "B": 105,
+        "C": 273,
+        "D": 322,
+        "E": 221
+      },
+      "total": 984,
+      "seconds": 7.5626408330000015
+    }
+  ],
+  "independent_oracles": "Per-article sets, normalized string sets, exact rational matrix rank, literal water dictionary/minimum explosion simulation, explicit live-parent folder merging.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

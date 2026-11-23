@@ -1,30 +1,30 @@
-#include <cctype>
-#include <iostream>
-#include <string>
-#include <unordered_set>
+#include<bits/stdc++.h>
 using namespace std;
-string lower(string s) {
-    for (char &c : s)
-        c = tolower(static_cast<unsigned char>(c));
+int n,m,cnt;
+unordered_set<string> a,b;
+string read(){
+    string s;
+    int c=getchar();
+    while(isspace(c)){
+        c=getchar();
+    }
+    while(c!=EOF && !isspace(c)){
+        s+=char(tolower(c));
+        c=getchar();
+    }
     return s;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    unordered_set<string> a, b;
-    string s;
-    while (n--) {
-        cin >> s;
-        a.insert(lower(s));
+int main(){
+    scanf("%d%d",&n,&m);
+    while(n--){
+        a.insert(read());
     }
-    while (m--) {
-        cin >> s;
-        b.insert(lower(s));
+    while(m--){
+        b.insert(read());
     }
-    size_t common = 0;
-    for (auto &s : a)
-        common += b.count(s);
-    cout << common << '\n' << a.size() + b.size() - common << '\n';
+    for(auto &s:a){
+        cnt+=b.count(s);
+    }
+    printf("%d\n%zu\n",cnt,a.size()+b.size()-cnt);
+    return 0;
 }

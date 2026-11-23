@@ -1,0 +1,47 @@
+{
+  "contest": "202403",
+  "scope": "Final prose review: semantic paragraphs, separate headings/operation lists, current code names, full formulas/proofs/complexities and source attribution. Source code unchanged.",
+  "current_source_sha256": {
+    "A": "46dcec9c7c37722118b60ae8b644e4e48b983b7852424db54862772aa5ce6845",
+    "B": "f4af6528d2b1e5ee7cc980c2793f4e4523d1f09d4fe81ec584a7ac06300b80bb",
+    "C": "0bf263fdafe6f1cc25241d3dcac911f22deadf7e83bbd9f4454af39e6c7e8add",
+    "D": "6e3a2ecf632d0c96f9168e73c5961d9c57a6f36c6a9c2e8c6b6bcfe31888c3e8",
+    "E": "bd8198461f1d1aea7e989e516d124e7996419cfbf83fba1627762d0c795df149"
+  },
+  "changes": [
+    {
+      "before": "为每个词保存`sum`、`cnt`和`last`三项。每读到一次词就增加`sum`；只有`last`不是当前文章编号时才增加`cnt`，并更新`last`。",
+      "after": "为每个词保存 `sum`、`cnt` 和 `last` 三项。每读到一次词就增加 `sum`；只有 `last` 不是当前文章编号时才增加 `cnt`，并更新 `last`。"
+    },
+    {
+      "before": "`last`标记该词",
+      "after": "`last` 标记该词"
+    },
+    {
+      "before": "的单词数 I；并集大小由容斥为 |A|+|B|-I。",
+      "after": "的单词数 `I`；并集大小由容斥得到 `|A|+|B|-I`。"
+    },
+    {
+      "before": "保证每个格子只排队一次。 取出后",
+      "after": "保证每个格子只排队一次。\n\n取出后"
+    },
+    {
+      "before": "拼接只修改头尾指针，不逐个重设孙子的父亲。注意不能",
+      "after": "拼接只修改头尾指针，不逐个重设孙子的父亲。\n\n注意不能"
+    }
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged_or_mask_to_S": true,
+  "markdown": [
+    {
+      "file": "202403/README.md",
+      "before_sha256": "583a32a45725aaa49c80a94bc2118dd6b7891c5740125b233a653a9706e6af4d",
+      "after_sha256": "e88caee6b1b01288a8ac0629e884fac935650e00c937bd7513bb479f5aca3ddf"
+    },
+    {
+      "file": "202403题解.md",
+      "before_sha256": "180322557b718a7e45fccd19965362038d27e21a78e8acf079df4298c5a145db",
+      "after_sha256": "696dc7abe57c6ab62dac2e6a0438547ea2175f475301aeeaa3ae160d24ba11cd"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "contest": "202403",
+  "source_sha256": {
+    "C": "0bf263fdafe6f1cc25241d3dcac911f22deadf7e83bbd9f4454af39e6c7e8add",
+    "E": "bd8198461f1d1aea7e989e516d124e7996419cfbf83fba1627762d0c795df149"
+  },
+  "different_inputs": 495,
+  "categories": {
+    "retained_independent": 170,
+    "saved_sample": 3,
+    "additional_independent": 321,
+    "constructive_stress": 1
+  },
+  "compilation": {
+    "refactored/C": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.044484041000000474
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "C": 273,
+        "E": 222
+      },
+      "total": 495,
+      "seconds": 2.6906712080000004
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "C": 273,
+        "E": 221
+      },
+      "total": 494,
+      "seconds": 3.8497031250000004
+    }
+  ],
+  "independent_oracles": "Per-article sets, normalized string sets, exact rational matrix rank, literal water dictionary/minimum explosion simulation, explicit live-parent folder merging.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

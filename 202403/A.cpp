@@ -1,23 +1,27 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<int> articles(m + 1), total(m + 1), last(m + 1);
-    for (int i = 1; i <= n; i++) {
-        int l;
-        cin >> l;
-        while (l--) {
-            int word;
-            cin >> word;
-            ++total[word];
-            if (last[word] != i) {
-                ++articles[word];
-                last[word] = i;
+int n,m;
+vector<int> cnt,sum,last;
+int main(){
+    scanf("%d%d",&n,&m);
+    cnt.resize(m+1);
+    sum.resize(m+1);
+    last.resize(m+1);
+    for(int i=1;i<=n;++i){
+        int k;
+        scanf("%d",&k);
+        while(k--){
+            int x;
+            scanf("%d",&x);
+            ++sum[x];
+            if(last[x]!=i){
+                ++cnt[x];
+                last[x]=i;
             }
         }
     }
-    for (int i = 1; i <= m; i++)
-        cout << articles[i] << ' ' << total[i] << '\n';
+    for(int i=1;i<=m;++i){
+        printf("%d %d\n",cnt[i],sum[i]);
+    }
+    return 0;
 }
