@@ -1,0 +1,48 @@
+{
+  "contest": "202609",
+  "source_sha256": {
+    "B": "4103c0cd5c428919f97be1c656c9c02c8137e0ecbbdf8b3db172df611d1c530e",
+    "D": "b66586cebc5f4c41bdf7c1fc3614ca36cce5df9b07ea676104ae58cad1e30a35"
+  },
+  "compilation": {
+    "B:O2": "passed without diagnostics",
+    "B:UBSan": "passed without diagnostics",
+    "D:O2": "passed without diagnostics",
+    "D:UBSan": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "B",
+      "mode": "O2",
+      "independent": 250,
+      "saved": 21,
+      "passed": 271,
+      "seconds": 12.702977583
+    },
+    {
+      "problem": "B",
+      "mode": "UBSan",
+      "independent": 250,
+      "saved": 21,
+      "passed": 271,
+      "seconds": 13.342227750000001
+    },
+    {
+      "problem": "D",
+      "mode": "O2",
+      "independent": 600,
+      "saved": 22,
+      "passed": 622,
+      "seconds": 9.199756250000004
+    },
+    {
+      "problem": "D",
+      "mode": "UBSan",
+      "independent": 600,
+      "saved": 22,
+      "passed": 622,
+      "seconds": 10.421788917
+    }
+  ],
+  "note": "Equivalent style revisions only; no online submission. Independent exhaustive subset/coloring oracles remain the source of small-case expected answers."
+}

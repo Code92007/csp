@@ -5,17 +5,17 @@ typedef unsigned long long ull;
 typedef pair<int,int> P;
 const int N=1e5+10;
 int n,m,k,q,tot,fa[N],sz[N],ord[N],dis[N];
-ll bit[N],mask[N],ans;
+ll bit[N],S[N],ans;
 bool vis[N];
 char s[N];
 vector<P>g[N];
 struct node{
-    ll mask;
+    ll S;
     int rt,id,dis;
 };
 vector<node>rec[N];
 struct Hash{
-    int mask;
+    int S;
     vector<ll>key;
     vector<int>val;
     void init(int n){
@@ -23,7 +23,7 @@ struct Hash{
         while(s<n*2){
             s<<=1;
         }
-        mask=s-1;
+        S=s-1;
         key.assign(s,-1);
         val.assign(s,0);
     }
@@ -31,9 +31,9 @@ struct Hash{
         ull h=x+0x9e3779b97f4a7c15ull;
         h=(h^(h>>30))*0xbf58476d1ce4e5b9ull;
         h=(h^(h>>27))*0x94d049bb133111ebull;
-        int p=(h^(h>>31))&mask;
+        int p=(h^(h>>31))&S;
         while(key[p]!=-1 && key[p]!=x){
-            p=(p+1)&mask;
+            p=(p+1)&S;
         }
         return p;
     }
@@ -91,7 +91,7 @@ void solve(int u){
         ord[1]=v;
         fa[v]=rt;
         dis[v]=w%k;
-        mask[v]=bit[rt]^bit[v];
+        S[v]=bit[rt]^bit[v];
         for(int i=1;i<=cnt;++i){
             int x=ord[i];
             for(auto &[y,z]:g[x]){
@@ -99,14 +99,14 @@ void solve(int u){
                 fa[y]=x;
                 ord[++cnt]=y;
                 dis[y]=(dis[x]+z)%k;
-                mask[y]=mask[x]^bit[y];
+                S[y]=S[x]^bit[y];
             }
         }
         sub[id].init(cnt);
         for(int i=1;i<=cnt;++i){
             int x=ord[i];
-            ll key=(mask[x]<<2)|dis[x];
-            rec[x].push_back({mask[x],rt,id,dis[x]});
+            ll key=(S[x]<<2)|dis[x];
+            rec[x].push_back({S[x],rt,id,dis[x]});
             all[rt].ins(key);
             sub[id].ins(key);
         }
@@ -120,7 +120,7 @@ void solve(int u){
 ll ask(int u){
     ll res=0;
     for(auto &x:rec[u]){
-        ll base=x.mask^bit[x.rt];
+        ll base=x.S^bit[x.rt];
         int d=(k-x.dis)%k;
         for(int i=0;i<m;++i){
             ll key=((base^(1ll<<i))<<2)|d;
@@ -134,7 +134,7 @@ ll ask(int u){
 }
 void add(int u,int v){
     for(auto &x:rec[u]){
-        ll key=(x.mask<<2)|x.dis;
+        ll key=(x.S<<2)|x.dis;
         all[x.rt].add(key,v);
         if(x.id){
             sub[x.id].add(key,v);

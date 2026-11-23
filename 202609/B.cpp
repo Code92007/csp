@@ -21,7 +21,7 @@ int main(){
             dp[j]=min(dp[j],dp[j-mu[i]]+v);
         }
     }
-    ll lim=100000000ll*m*m;
+    ll lim=(ll)1e8*m*m;
     for(int i=sum;i>=0;--i){
         if(1ll*dp[i]*q*q<=lim){
             printf("%d\n",i);

@@ -65,7 +65,10 @@ int main(){
             ok=merge(i,l,1);
         }
     }
-    int cnt=!edge?1:(ok?2:3);
+    int cnt;
+    if(!edge)cnt=1;
+    else if(ok)cnt=2;
+    else cnt=3;
     for(int i=1;i<=n;++i){
         int col=0;
         if(cnt==2){
