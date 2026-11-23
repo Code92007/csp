@@ -6,6 +6,20 @@ let data, route, debounce, renderToken=0;
 $('.skip').addEventListener('click',event=>{event.preventDefault();$('#main').focus();$('#main').scrollIntoView();});
 try { const theme=localStorage.getItem('csp-theme'); if(theme)document.documentElement.dataset.theme=theme; } catch (_) {}
 $('#theme').addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;try{localStorage.setItem('csp-theme',theme);}catch(_) {}});
+const codeThemes=new Set(['zhihu','vscode','sublime','devcpp']);
+function setCodeTheme(theme){
+  if(!codeThemes.has(theme))theme='zhihu';
+  document.documentElement.dataset.codeTheme=theme;
+  $('#code-theme').value=theme;
+}
+let savedCodeTheme='zhihu';
+try{savedCodeTheme=localStorage.getItem('csp-code-theme');}catch(_){}
+setCodeTheme(savedCodeTheme);
+$('#code-theme').addEventListener('change',event=>{
+  const theme=event.target.value;
+  setCodeTheme(theme);
+  try{localStorage.setItem('csp-code-theme',theme);}catch(_){}
+});
 function url(path, params={}) {const q=new URLSearchParams(Object.entries(params).filter(([,v])=>v!==''&&v!==null&&v!==undefined));return '#'+path+(q.size?'?'+q:'');}
 function tag(tag, path='/problems', active=false, count) {
   let hash=0;for(const c of tag)hash=(hash+c.codePointAt(0))%tagColours.length;

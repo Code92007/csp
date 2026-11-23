@@ -23,7 +23,17 @@
     <a href="#/problems" data-nav="problems">按题目</a>
     <a href="#/tags" data-nav="tags">标签地图</a>
   </nav>
-  <button id="theme" class="icon-button" title="切换明暗主题" aria-label="切换明暗主题">◐</button>
+  <div class="reading-controls">
+    <label class="code-theme" for="code-theme"><span>代码配色</span>
+      <select id="code-theme" aria-label="代码配色">
+        <option value="zhihu">知乎</option>
+        <option value="vscode">VS Code · 深色</option>
+        <option value="sublime">Sublime · Monokai</option>
+        <option value="devcpp">Dev-C++ · 经典</option>
+      </select>
+    </label>
+    <button id="theme" class="icon-button" title="切换页面明暗主题" aria-label="切换页面明暗主题">◐</button>
+  </div>
 </header>
 <main id="main" tabindex="-1"><div class="loading">正在读取 Markdown 题解索引…</div></main>
 <footer class="footer"><span>CSP 手记 / Markdown 驱动</span><span>题意为自行概述；本地验证记录与正式评测分开标注。</span></footer>
