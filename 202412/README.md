@@ -23,7 +23,7 @@ problems: [{"id": "A", "title": "移动", "tags": ["模拟", "边界判断"], "s
 
 ### 题意
 
-机器人在坐标均为 $1\ldots n$ 的方格场地上移动。指令 `f/b/l/r` 分别使 $y$ 加一、$y$ 减一、$x$ 减一、$x$ 加一；如果下一步出界，则忽略该指令。
+机器人在坐标均为 $1\ldots n$ 的方格场地上移动。指令 `f/b/l/r` 分别使 $y$ 加一、$y$ 减一、$x$ 减一、$x$ 加一；下一步出界就不执行。
 
 输入场地大小 $n$ 与独立任务数 $k$，每个任务给出起点坐标及指令串。各任务从自己的起点出发，互不影响。
 
@@ -462,5 +462,6 @@ int main(){
 - [retained_oracles.py](../tests/202412/retained_oracles.py)
 - [verify-e-sizeof.py](../tests/202412/verify-e-sizeof.py)
 - [verify.py](../tests/202412/verify.py)
+- [visual-tail-followup.json](../tests/202412/visual-tail-followup.json)
 
 <!-- local-validation-attachments:end -->

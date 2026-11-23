@@ -1,0 +1,5 @@
+{
+  "reason": "Observed two-character last line in rendered desktop 202412A statement; shorten equivalent boundary sentence without forced-width wrapping",
+  "code_changed": false,
+  "markdown_fences_unchanged": true
+}
