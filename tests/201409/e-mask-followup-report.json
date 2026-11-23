@@ -1,0 +1,29 @@
+{
+  "problem": "201409E",
+  "previous_sha256": "37192d66b54b1ad8c4e3d30fc3d3abd26434ab49a8292e6145f215d87e982202",
+  "source_sha256": "ba9eac0745db8994aeac9662f5ec4f95c56e3c173ff2ff344c08da356c0cb7b0",
+  "distinct_inputs": 28,
+  "case_kinds": {
+    "saved_sample": 2,
+    "retained_independent": 20,
+    "boundary": 6
+  },
+  "case_sha256": "4411fce7afa47bc588f45aceef2f1819fc495fd8fba54b375872b7d5aab072ed",
+  "per_binary_results": {
+    "O2": {
+      "passed": 28,
+      "seconds": 1.028
+    },
+    "UBSan": {
+      "passed": 28,
+      "seconds": 1.918
+    }
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "mask identifiers renamed S without scope collisions."
+  ],
+  "limited_text_equivalence_checked": true,
+  "historical_report": "e-mod-followup-report.json",
+  "note": "Existing independent oracle and boundary/saved cases replayed. Historical reports are retained and do not claim the current hash. No new online submission."
+}

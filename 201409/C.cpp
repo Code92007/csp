@@ -1,24 +1,21 @@
-#include <cctype>
-#include <iostream>
-#include <string>
+#include<bits/stdc++.h>
 using namespace std;
-string lower(string s) {
-    for (char &c : s)
-        c = tolower(static_cast<unsigned char>(c));
-    return s;
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    string pattern, line;
-    int sensitive, n;
-    cin >> pattern >> sensitive >> n;
-    if (!sensitive)
-        pattern = lower(pattern);
-    while (n--) {
-        cin >> line;
-        string key = sensitive ? line : lower(line);
-        if (key.find(pattern) != string::npos)
-            cout << line << '\n';
+const int N=1010;
+int op,n;
+char pat[N],s[N];
+string lower(string str){
+    for(char &c:str){
+        c=tolower((unsigned char)c);
     }
+    return str;
+}
+int main(){
+    scanf("%s%d%d",pat,&op,&n);
+    string p=op?pat:lower(pat);
+    while(n--){
+        scanf("%s",s);
+        string key=op?s:lower(s);
+        if(key.find(p)!=string::npos)puts(s);
+    }
+    return 0;
 }

@@ -1,17 +1,17 @@
-#include <iostream>
-#include <set>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    set<int> a;
-    while (n--) {
+int n,ans;
+set<int> a;
+int main(){
+    scanf("%d",&n);
+    while(n--){
         int x;
-        cin >> x;
+        scanf("%d",&x);
         a.insert(x);
     }
-    int answer = 0;
-    for (int x : a)
-        answer += a.count(x + 1);
-    cout << answer << '\n';
+    for(const int &x:a){
+        ans+=a.count(x+1);
+    }
+    printf("%d\n",ans);
+    return 0;
 }

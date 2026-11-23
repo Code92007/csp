@@ -1,19 +1,23 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    bool paint[100][100] = {};
-    while (n--) {
-        int x, y, xx, yy;
-        cin >> x >> y >> xx >> yy;
-        for (int i = x; i < xx; i++)
-            for (int j = y; j < yy; j++)
-                paint[i][j] = true;
+const int N=100;
+int n,x,y,u,v,ans;
+bool a[N][N];
+int main(){
+    scanf("%d",&n);
+    while(n--){
+        scanf("%d%d%d%d",&x,&y,&u,&v);
+        for(int i=x;i<u;++i){
+            for(int j=y;j<v;++j){
+                a[i][j]=true;
+            }
+        }
     }
-    int answer = 0;
-    for (auto &r : paint)
-        for (bool v : r)
-            answer += v;
-    cout << answer << '\n';
+    for(auto &row:a){
+        for(bool &val:row){
+            ans+=val;
+        }
+    }
+    printf("%d\n",ans);
+    return 0;
 }

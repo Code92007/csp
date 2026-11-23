@@ -1,0 +1,28 @@
+{
+  "problem": "201409E",
+  "previous_sha256": "ba9eac0745db8994aeac9662f5ec4f95c56e3c173ff2ff344c08da356c0cb7b0",
+  "source_sha256": "6ac324fc58dec85d44a521b16b3bd50bc1ef0ce65f121c758324b8c0463d635a",
+  "distinct_inputs": 28,
+  "case_kinds": {
+    "saved_sample": 2,
+    "retained_independent": 20,
+    "boundary": 6
+  },
+  "case_sha256": "4411fce7afa47bc588f45aceef2f1819fc495fd8fba54b375872b7d5aab072ed",
+  "per_binary_results": {
+    "O2": {
+      "passed": 28,
+      "seconds": 0.592
+    },
+    "UBSan": {
+      "passed": 28,
+      "seconds": 0.566
+    }
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "Long matrix-update conditions expanded into braced branches."
+  ],
+  "historical_report": "e-mask-followup-report.json",
+  "note": "Existing independent oracle, saved sample and boundaries replayed; 201509 includes 101 automaton states and article length 1e15. No new online submission."
+}

@@ -1,73 +1,77 @@
-#include <functional>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-const int MOD = 1000000007;
-using Matrix = vector<vector<int>>;
-Matrix multiply(const Matrix &a, const Matrix &b) {
-    int s = a.size();
-    Matrix c(s, vector<int>(s));
-    for (int i = 0; i < s; ++i)
-        for (int k = 0; k < s; ++k)
-            if (a[i][k])
-                for (int j = 0; j < s; ++j)
-                    if (b[k][j])
-                        c[i][j] = (c[i][j] + 1LL * a[i][k] * b[k][j]) % MOD;
-    return c;
+typedef long long ll;
+typedef vector<vector<int>> mat;
+const int mod=1e9+7;
+ll n;
+int m,len,full,st;
+mat a;
+mat mul(const mat &x,const mat &y){
+    int size=x.size();
+    mat z(size,vector<int>(size));
+    for(int i=0;i<size;++i){
+        for(int k=0;k<size;++k){
+            if(!x[i][k])continue;
+            for(int j=0;j<size;++j){
+                if(y[k][j]){
+                    z[i][j]=(z[i][j]+1ll*x[i][k]*y[k][j])%mod;
+                }
+            }
+        }
+    }
+    return z;
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    long long n;
-    int m;
-    cin >> n >> m;
-    if ((n % 3) * (m % 3) % 3) {
-        cout << 0 << '\n';
+void dfs(int S,int next){
+    if(S==full){
+        ++a[st][next];
+        return;
+    }
+    int c=0;
+    while(S>>c&1){
+        ++c;
+    }
+    for(int l=c-1;l<=c;++l){
+        if(l<0 || l+1>=m)continue;
+        for(int miss=0;miss<4;++miss){
+            int up=0,down=0;
+            for(int i=0;i<4;++i){
+                if(i==miss)continue;
+                if(i<2)up|=1<<(l+i);
+                else down|=1<<(l+i-2);
+            }
+            if(!(up>>c&1) || (up&S) || (down&next))continue;
+            dfs(S|up,next|down);
+        }
+    }
+}
+int main(){
+    scanf("%lld%d",&n,&m);
+    if((n%3)*(m%3)%3){
+        puts("0");
         return 0;
     }
-    int s = 1 << m, full = s - 1;
-    Matrix a(s, vector<int>(s));
-    for (int initial = 0; initial < s; ++initial) {
-        function<void(int, int)> dfs = [&](int occupied, int next) {
-            if (occupied == full) {
-                ++a[initial][next];
-                return;
+    len=1<<m;
+    full=len-1;
+    a.assign(len,vector<int>(len));
+    for(st=0;st<len;++st){
+        dfs(st,0);
+    }
+    vector<int> dp(len);
+    dp[0]=1;
+    while(n){
+        if(n&1){
+            vector<int> v(len);
+            for(int i=0;i<len;++i){
+                if(!dp[i])continue;
+                for(int j=0;j<len;++j){
+                    v[j]=(v[j]+1ll*dp[i]*a[i][j])%mod;
+                }
             }
-            int c = 0;
-            while (occupied >> c & 1)
-                ++c;
-            for (int left = c - 1; left <= c; ++left)
-                if (left >= 0 && left + 1 < m)
-                    for (int missing = 0; missing < 4; ++missing) {
-                        int upper = 0, lower = 0;
-                        for (int cell = 0; cell < 4; ++cell)
-                            if (cell != missing) {
-                                if (cell < 2)
-                                    upper |= 1 << (left + cell);
-                                else
-                                    lower |= 1 << (left + cell - 2);
-                            }
-                        if (!(upper >> c & 1) || (upper & occupied) || (lower & next))
-                            continue;
-                        dfs(occupied | upper, next | lower);
-                    }
-        };
-        dfs(initial, 0);
-    }
-    vector<int> dp(s);
-    dp[0] = 1;
-    while (n) {
-        if (n & 1) {
-            vector<int> next(s);
-            for (int i = 0; i < s; ++i)
-                if (dp[i])
-                    for (int j = 0; j < s; ++j)
-                        next[j] = (next[j] + 1LL * dp[i] * a[i][j]) % MOD;
-            dp.swap(next);
+            dp.swap(v);
         }
-        n >>= 1;
-        if (n)
-            a = multiply(a, a);
+        n>>=1;
+        if(n)a=mul(a,a);
     }
-    cout << dp[0] << '\n';
+    printf("%d\n",dp[0]);
+    return 0;
 }
