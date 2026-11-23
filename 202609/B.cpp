@@ -2,6 +2,7 @@
 using namespace std;
 typedef long long ll;
 const int N=105,M=10005;
+const int INF=0x3f3f3f3f;
 int n,m,q,sum,mu[N],dp[M];
 int main(){
     int a,b;
@@ -10,11 +11,11 @@ int main(){
     for(int i=1;i<=n;++i){
         scanf("%d",&mu[i]);
     }
-    memset(dp,0x3f,sizeof dp);
+    memset(dp,INF,sizeof dp);
     dp[0]=0;
     for(int i=1;i<=n;++i){
         scanf("%d.%d",&a,&b);
-        int v=(a*10+b)*(a*10+b);
+        int w=a*10+b,v=w*w;
         sum+=mu[i];
         for(int j=sum;j>=mu[i];--j){
             dp[j]=min(dp[j],dp[j-mu[i]]+v);
