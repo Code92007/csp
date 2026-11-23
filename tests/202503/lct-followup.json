@@ -1,0 +1,33 @@
+{
+  "prior_report": "summary.json",
+  "source_sha256": "fb4c78b4e22b4ab3e9d42a0ff1e75c2ca1a9a22dd460248fd2a58c9540d669ca",
+  "cases_sha256": "4e47e373a1697583f593feacb07f2961e10b9ce1300edc346d1f01cdb0f180bf",
+  "results": {
+    "opt": {
+      "total": 324,
+      "counts": {
+        "retained_independent": 120,
+        "saved": 1,
+        "boundary": 1,
+        "stress": 1,
+        "connected_subset_independent": 200,
+        "negative_star_stress": 1
+      },
+      "seconds": 1.484955416,
+      "compile_stderr": ""
+    },
+    "ubsan": {
+      "total": 324,
+      "counts": {
+        "retained_independent": 120,
+        "saved": 1,
+        "boundary": 1,
+        "stress": 1,
+        "connected_subset_independent": 200,
+        "negative_star_stress": 1
+      },
+      "seconds": 2.273187334,
+      "compile_stderr": ""
+    }
+  }
+}

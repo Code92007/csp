@@ -1,180 +1,182 @@
-#include <algorithm>
-#include <array>
-#include <iostream>
-#include <set>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-const ll NEG = -(1LL << 60);
-struct Summary {
-    ll sum = 0, first = NEG, last = NEG, best = NEG;
+typedef long long ll;
+const int N=1e5+10,M=2;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+int n,m,root=1;
+struct info{
+    ll sum=0,l=-INF,r=-INF,ans=-INF;
 };
-Summary join(Summary a, Summary b) {
-    return {a.sum + b.sum, max(a.first, a.sum + b.first), max(b.last, b.sum + a.last),
-            max({a.best, b.best, a.last + b.first})};
+info merge(info a,info b){
+    info c;
+    c.sum=a.sum+b.sum;
+    c.l=max(a.l,a.sum+b.l);
+    c.r=max(b.r,b.sum+a.r);
+    c.ans=max({a.ans,b.ans,a.r+b.l});
+    return c;
 }
-struct DynamicTree {
-    struct Node {
-        int child[2]{}, parent = 0;
-        bool reverse = false;
-        ll weight = 0, sideSum = 0;
-        multiset<ll> sideBest;
-        Summary data;
-    };
-    vector<Node> t;
-    vector<int> path;
-    explicit DynamicTree(int n) : t(n + 1) {
-        path.reserve(n);
+struct LinkCutTree{
+    bool rev[N];
+    int fa[N],ch[N][M],st[N];
+    ll val[N],sum[N];
+    info mx[N];
+    multiset<ll>g[N];
+    #define ls(x) (ch[x][0])
+    #define rs(x) (ch[x][1])
+    #define dir(x) (rs(fa[x])==(x))
+    #define isRoot(x) (ls(fa[x])!=(x) && rs(fa[x])!=(x))
+    info local(int x){
+        ll w=val[x]+sum[x];
+        ll best=g[x].empty()?-INF:*g[x].rbegin();
+        return {w,w,w,max(w,best)};
     }
-    bool auxiliaryRoot(int u) {
-        int p = t[u].parent;
-        return t[p].child[0] != u && t[p].child[1] != u;
+    void pushup(int x){
+        mx[x]=merge(merge(mx[ls(x)],local(x)),mx[rs(x)]);
     }
-    Summary local(int u) {
-        ll x = t[u].weight + t[u].sideSum;
-        ll y = t[u].sideBest.empty() ? NEG : *t[u].sideBest.rbegin();
-        return {x, x, x, max(x, y)};
+    void flip(int x){
+        if(!x)return;
+        swap(ls(x),rs(x));
+        swap(mx[x].l,mx[x].r);
+        rev[x]^=1;
     }
-    void pull(int u) {
-        t[u].data = join(join(t[t[u].child[0]].data, local(u)), t[t[u].child[1]].data);
+    void pushdown(int x){
+        if(!rev[x])return;
+        flip(ls(x));flip(rs(x));
+        rev[x]=0;
     }
-    void flip(int u) {
-        if (!u)
-            return;
-        swap(t[u].child[0], t[u].child[1]);
-        swap(t[u].data.first, t[u].data.last);
-        t[u].reverse ^= 1;
-    }
-    void push(int u) {
-        if (t[u].reverse) {
-            flip(t[u].child[0]);
-            flip(t[u].child[1]);
-            t[u].reverse = false;
+    void update(int x){
+        int cnt=0,y=x;
+        st[++cnt]=y;
+        while(!isRoot(y)){
+            y=fa[y];
+            st[++cnt]=y;
+        }
+        while(cnt){
+            pushdown(st[cnt--]);
         }
     }
-    void rotate(int u) {
-        int p = t[u].parent, g = t[p].parent, d = t[p].child[1] == u, v = t[u].child[d ^ 1];
-        if (!auxiliaryRoot(p))
-            t[g].child[t[g].child[1] == p] = u;
-        t[u].parent = g;
-        t[u].child[d ^ 1] = p;
-        t[p].parent = u;
-        t[p].child[d] = v;
-        if (v)
-            t[v].parent = p;
-        pull(p);
-        pull(u);
+    void rotate(int x){
+        int y=fa[x],z=fa[y],d=dir(x);
+        int w=ch[x][d^1];
+        if(!isRoot(y))ch[z][dir(y)]=x;
+        fa[x]=z;
+        ch[x][d^1]=y;fa[y]=x;
+        ch[y][d]=w;
+        if(w)fa[w]=y;
+        pushup(y);pushup(x);
     }
-    void splay(int u) {
-        path.clear();
-        int v = u;
-        path.push_back(v);
-        while (!auxiliaryRoot(v)) {
-            v = t[v].parent;
-            path.push_back(v);
-        }
-        for (auto it = path.rbegin(); it != path.rend(); ++it)
-            push(*it);
-        while (!auxiliaryRoot(u)) {
-            int p = t[u].parent, g = t[p].parent;
-            if (!auxiliaryRoot(p))
-                rotate((t[p].child[1] == u) == (t[g].child[1] == p) ? p : u);
-            rotate(u);
+    void splay(int x){
+        update(x);
+        while(!isRoot(x)){
+            int y=fa[x];
+            if(!isRoot(y))rotate(dir(x)==dir(y)?y:x);
+            rotate(x);
         }
     }
-    void virtualAdd(int u, int v) {
-        if (!v)
-            return;
-        t[u].sideSum += max(0LL, t[v].data.first);
-        t[u].sideBest.insert(t[v].data.best);
+    void add(int x,int y){
+        if(!y)return;
+        sum[x]+=max(0ll,mx[y].l);
+        g[x].insert(mx[y].ans);
     }
-    void virtualRemove(int u, int v) {
-        if (!v)
-            return;
-        t[u].sideSum -= max(0LL, t[v].data.first);
-        auto it = t[u].sideBest.find(t[v].data.best);
-        t[u].sideBest.erase(it);
+    void del(int x,int y){
+        if(!y)return;
+        sum[x]-=max(0ll,mx[y].l);
+        auto it=g[x].find(mx[y].ans);
+        g[x].erase(it);
     }
-    void access(int u) {
-        for (int v = 0, x = u; x; v = x, x = t[x].parent) {
-            splay(x);
-            virtualAdd(x, t[x].child[1]);
-            virtualRemove(x, v);
-            t[x].child[1] = v;
-            pull(x);
+    void access(int x){
+        int y=0,u=x;
+        while(u){
+            splay(u);
+            add(u,rs(u));
+            del(u,y);
+            rs(u)=y;
+            pushup(u);
+            y=u;u=fa[u];
         }
-        splay(u);
+        splay(x);
     }
-    void makeRoot(int u) {
-        access(u);
-        flip(u);
+    void makeroot(int x){
+        access(x);
+        flip(x);
     }
-    void link(int u, int v) {
-        makeRoot(u);
-        access(v);
-        t[u].parent = v;
-        virtualAdd(v, u);
-        pull(v);
+    int findroot(int x){
+        access(x);
+        pushdown(x);
+        while(ls(x)){
+            x=ls(x);
+            pushdown(x);
+        }
+        splay(x);
+        return x;
     }
-    void cut(int u, int v) {
-        makeRoot(u);
-        access(v);
-        t[v].child[0] = 0;
-        t[u].parent = 0;
-        pull(v);
+    void split(int x,int y){
+        makeroot(x);
+        access(y);
     }
-    void setWeight(int u, ll w) {
-        access(u);
-        t[u].weight = w;
-        pull(u);
+    void link(int x,int y){
+        makeroot(x);
+        if(findroot(y)==x)return;
+        access(y);
+        fa[x]=y;
+        add(y,x);
+        pushup(y);
     }
-    ll rootedValue(int root) {
-        makeRoot(root);
-        access(root);
-        return local(root).first;
+    void cut(int x,int y){
+        split(x,y);
+        if(ls(y)==x && !rs(x)){
+            ls(y)=0;fa[x]=0;
+            pushup(y);
+        }
     }
-    ll subtreeBest(int root, int u) {
-        makeRoot(root);
-        access(u);
-        return local(u).best;
+    void setval(int x,ll w){
+        access(x);
+        val[x]=w;
+        pushup(x);
     }
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    DynamicTree dt(n);
-    for (int i = 1; i <= n; ++i) {
-        cin >> dt.t[i].weight;
-        dt.pull(i);
+    ll best(int x){
+        makeroot(x);
+        access(x);
+        return local(x).l;
     }
-    for (int i = 1, u, v; i < n; ++i) {
-        cin >> u >> v;
-        dt.link(u, v);
+    ll query(int x){
+        makeroot(root);
+        access(x);
+        return local(x).ans;
     }
-    int root = 1;
-    cout << dt.rootedValue(root) << '\n';
-    while (m--) {
-        int op, u;
-        cin >> op >> u;
-        if (op == 1) {
-            cout << dt.subtreeBest(root, u) << '\n';
+}tr;
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&tr.val[i]);
+        tr.pushup(i);
+    }
+    for(int i=1;i<n;++i){
+        int u,v;
+        scanf("%d%d",&u,&v);
+        tr.link(u,v);
+    }
+    printf("%lld\n",tr.best(root));
+    while(m--){
+        int op,u;
+        scanf("%d%d",&op,&u);
+        if(op==1){
+            printf("%lld\n",tr.query(u));
             continue;
         }
-        if (op == 2) {
+        if(op==2){
             ll x;
-            cin >> x;
-            dt.setWeight(u, x);
+            scanf("%lld",&x);
+            tr.setval(u,x);
         }
-        if (op == 3)
-            root = u;
-        if (op == 4) {
-            int v, c, d;
-            cin >> v >> c >> d;
-            dt.cut(u, v);
-            dt.link(c, d);
+        if(op==3)root=u;
+        if(op==4){
+            int v,c,d;
+            scanf("%d%d%d",&v,&c,&d);
+            tr.cut(u,v);
+            tr.link(c,d);
         }
-        cout << dt.rootedValue(root) << '\n';
+        printf("%lld\n",tr.best(root));
     }
+    return 0;
 }

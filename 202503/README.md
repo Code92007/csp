@@ -3,17 +3,15 @@ title: "CSP 202503 五题题解"
 contest: "202503"
 contest_month: "2025-03"
 date: "2026-10-23"
-updated: "2026-10-25"
+updated: "2026-11-24"
 tags: ["CSP", "枚举", "求和", "动态规划", "完全背包", "表达式解析", "记忆化搜索", "依赖图", "数论", "gcd", "状态压缩", "动态树", "Link-Cut Tree", "树形动态规划"]
 status: "published"
-problems: [{"id": "A", "title": "数值积分", "tags": ["枚举", "求和"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b9a67df0b81749b958"}}, {"id": "B", "title": "机器人饲养指南", "tags": ["动态规划", "完全背包"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bba67df0b81749b972"}}, {"id": "C", "title": "模板展开", "tags": ["表达式解析", "记忆化搜索", "依赖图"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bda67df0b81749b97b"}}, {"id": "D", "title": "集体锻炼", "tags": ["数论", "gcd", "状态压缩"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；130 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bea67df0b81749b983"}}, {"id": "E", "title": "收费标准评估", "tags": ["动态树", "Link-Cut Tree", "树形动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c0a67df0b81749b987"}}]
+problems: [{"id": "A", "title": "数值积分", "tags": ["枚举", "求和"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，2 个保存用例、60 组独立对拍及 4 组边界/压力通过；UBSan 共 66 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b9a67df0b81749b958"}}, {"id": "B", "title": "机器人饲养指南", "tags": ["动态规划", "完全背包"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 2 组边界/压力通过；UBSan 共 104 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bba67df0b81749b972"}}, {"id": "C", "title": "模板展开", "tags": ["表达式解析", "记忆化搜索", "依赖图"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 103 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bda67df0b81749b97b"}}, {"id": "D", "title": "集体锻炼", "tags": ["数论", "gcd", "状态压缩"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，2 个保存用例、130 组独立对拍及 1 组边界/压力通过；UBSan 共 133 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7bea67df0b81749b983"}}, {"id": "E", "title": "收费标准评估", "tags": ["动态树", "Link-Cut Tree", "树形动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：LinkCutTree 模板整理后，C++17 O2 与 UBSan 各324组通过（320独立对拍、1保存、1边界、2压力），无编译警告；尚未重新提交在线评测，oj字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202503E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202503E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c0a67df0b81749b987"}}]
 ---
 
 # CSP 202503 五题题解
 
-[返回总目录](../README.md)
-
-本场已实现 **5/5** 题。每题依次给出题意、题解、代码。源码使用 C++17。
+[原页面](https://code92007.github.io/csp/#/contest/202503) · [验证记录](../tests/202503/VALIDATION.md) · [返回总目录](../README.md)
 
 <a id="problem-a"></a>
 
@@ -21,37 +19,51 @@ problems: [{"id": "A", "title": "数值积分", "tags": ["枚举", "求和"], "s
 
 标签：`枚举` · `求和`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+本地：66 组优化版、66 组 UBSan 验证通过，详见 [验证记录](../tests/202503/VALIDATION.md)。
 
 ### 题意
 
-在闭区间[l,r]中取所有偶数x，计算二次函数x²+bx+c的值之和再乘2。l、r≤1000，b、c可为负。
+给定二次函数 $f(x)=x^2+bx+c$，将闭区间 $[l,r]$ 内所有偶数处的函数值相加，再乘以 2。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503A/)。
+输入一行 `b c l r`。保证 $0\le l<l+2\le r\le1000$、$-20\le b,c\le20$。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503A)。
+输出按上述规则计算的整数结果。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503A)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503A/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adce7b9a67df0b81749b958)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-若l为奇数，先加一得到第一个偶数；之后每次加2，直到超过r，将2*(x*x+b*x+c)累加。
+**枚举偶数坐标**
 
-该枚举恰好包含闭区间内全部偶数且不重复，按题目公式逐项加和即可。注意端点r若为偶数也要计入，不能擅自改成真正的解析积分。时间 $O(r-l+1)$，额外空间 $O(1)$，使用64位整数。
+若 $l$ 为奇数，先将它加一。之后每次加 2，累加 $2(x^2+bx+c)$，直到超过 $r$。右端点若为偶数也应计入。
+
+**正确性**
+
+枚举恰好覆盖闭区间内的全部偶数，且每个坐标只出现一次，逐项累加正好得到题目要求的和。
+
+**复杂度**
+
+时间复杂度 $O(r-l+1)$，额外空间复杂度 $O(1)$。代码使用 `ll` 保存结果。
 
 ### 代码
 
 独立源码：[A.cpp](A.cpp)
 
 ```cpp
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    long long b, c, l, r, answer = 0;
-    cin >> b >> c >> l >> r;
-    if (l % 2)
-        ++l;
-    for (long long x = l; x <= r; x += 2)
-        answer += 2 * (x * x + b * x + c);
-    cout << answer << '\n';
+typedef long long ll;
+ll b,c,l,r,ans;
+int main(){
+    scanf("%lld%lld%lld%lld",&b,&c,&l,&r);
+    if(l%2)++l;
+    for(ll x=l;x<=r;x+=2){
+        ans+=2*(x*x+b*x+c);
+    }
+    printf("%lld\n",ans);
+    return 0;
 }
 ```
 
@@ -61,45 +73,61 @@ int main() {
 
 标签：`动态规划` · `完全背包`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+本地：104 组优化版、104 组 UBSan 验证通过，详见 [验证记录](../tests/202503/VALIDATION.md)。
 
 ### 题意
 
-共有 n 个苹果，每天可喂 1 到 m 个，喂 i 个产生快乐 A[i]。天数不限，A 不保证单调。求把全部苹果喂完的最大总快乐，n≤10000、m≤100。
+有 $n$ 个苹果，每天可以投喂 1 到 $m$ 个，投喂 $i$ 个获得快乐值 $A_i$。天数不限，求喂完全部苹果的最大总快乐值。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503B/)。
+输入 `n m` 和 $A_1,\ldots,A_m$。保证 $1\le n\le10^4$、$1\le m\le100$、$0\le A_i\le10^5$，收益不保证单调。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503B)。
+输出最大总快乐值。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503B)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503B/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adce7bba67df0b81749b972)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-设 dp[x] 为恰好喂掉 x 个苹果的最大快乐，dp[0]=0。  
-枚举最后一天喂 i 个，有 `dp[x]=max(dp[x-i]+A[i])`，其中 1≤i≤min(m,x)。  
-按 x 从小到大计算。
+**枚举最后一天**
 
-任意方案删去最后一天都得到一个更小规模方案；若该前缀不是最优，可替换为更优前缀。  
-因此转移覆盖所有方案并保持最优。不要按 A[i]/i 贪心，剩余苹果可能使比例最高的组合不合适。  
-时间 $O(nm)$，空间 $O(n+m)$，使用 64 位收益。
+设 $dp[x]$ 为恰好喂掉 $x$ 个苹果的最大快乐值，初态为 $dp[0]=0$。若最后一天喂 $i$ 个，则
+
+$$dp[x]=\max_{1\le i\le\min(m,x)}\{dp[x-i]+A_i\}.$$
+
+按 $x$ 从小到大计算，答案就是 $dp[n]$。不能只按 $A_i/i$ 贪心，剩余苹果可能使最高比例的组合不合适。
+
+**正确性**
+
+任意方案删去最后一天后，都得到一个规模更小的合法方案；该前缀若不是最优，可以替换成最优前缀。转移枚举了最后一天的所有投喂量，因此覆盖全部方案并保持最优。
+
+**复杂度**
+
+时间复杂度 $O(nm)$，空间复杂度 $O(n+m)$。收益使用 `ll`。
 
 ### 代码
 
 独立源码：[B.cpp](B.cpp)
 
 ```cpp
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<long long> a(m + 1), dp(n + 1);
-    for (int i = 1; i <= m; i++)
-        cin >> a[i];
-    for (int used = 1; used <= n; used++)
-        for (int today = 1; today <= m && today <= used; today++)
-            dp[used] = max(dp[used], dp[used - today] + a[today]);
-    cout << dp[n] << '\n';
+typedef long long ll;
+const int N=10010,M=110;
+int n,m;
+ll a[M],dp[N];
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=m;++i){
+        scanf("%lld",&a[i]);
+    }
+    for(int i=1;i<=n;++i){
+        for(int j=1;j<=m && j<=i;++j){
+            dp[i]=max(dp[i],dp[i-j]+a[j]);
+        }
+    }
+    printf("%lld\n",dp[n]);
+    return 0;
 }
 ```
 
@@ -109,118 +137,127 @@ int main() {
 
 标签：`表达式解析` · `记忆化搜索` · `依赖图`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+本地：103 组优化版、103 组 UBSan 验证通过，详见 [验证记录](../tests/202503/VALIDATION.md)。
 
 ### 题意
 
-变量初始为空串。  
-语句 `1 var expr` 立即求表达式并保存结果，`2 var expr` 保存动态表达式、每次使用时重新按当前变量求值，`3 var` 输出当前值长度模 $10^9+7$。  
-表达式由字面量及 `$变量名` 拼接，动态依赖保证无环。  
-语句至多 2000，变量至多 1000，每个表达式至多 100 项。
+变量初始都是空串，表达式由字面量和 `$变量名` 拼接而成。直接赋值保存当时的结果，间接赋值保存表达式，后续使用时随当前变量值重新计算。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503C/)。
+输入语句数 $n$，随后每行一条语句。保证 $n\le2000$、变量至多 1000 个，每个表达式至多 100 项，变量名和字面量长度不超过 50，动态依赖始终无环。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503C)。
+- `1 var expr`：立即计算 `expr`，将结果赋给 `var`。
+- `2 var expr`：将 `var` 与动态表达式 `expr` 关联。
+- `3 var`：查询 `var` 当前值的长度。
+
+对每条查询输出长度模 $10^9+7$ 的结果。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503C)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503C/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adce7bda67df0b81749b97b)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-只需输出长度，字符串拼接可改成长度相加并取模，避免构造指数增长的字符串。每个变量保存“固定长度”或“表达式操作数列表”；字面量操作数只记录长度，引用记录变量编号。
+**把字符串拼接改成长度相加**
 
-计算动态变量时递归计算依赖，再累加。用语句编号作为缓存时间戳：同一语句内变量值不变，可以记忆化；执行下一语句后缓存自动失效，使动态变量能反映新的赋值。  
-直接赋值要先算完整右侧，再覆盖左侧，这样 `1 a $a $a` 使用的是 a 的旧值。
+题目只询问长度，不必构造可能指数增长的字符串。字面量记录长度，变量引用记录编号；每个变量保存固定长度，或一组动态操作数。
 
-无环保证递归终止，按依赖顺序计算所得长度与真实拼接长度一致。  
-直接赋值冻结计算结果，间接赋值保留引用，分别符合两种语义。  
-设 V 为变量数，E 为当前表达式引用与字面量总数，单次求值 $O(V+E)$，总时间 $O(q(V+E))$，空间 $O(V+E)$。
+直接赋值时先计算完整右侧，再覆盖左侧。例如 `1 a $a $a` 应使用 `a` 的旧值，不能提前清空它。
+
+**按语句编号记忆化**
+
+动态变量递归计算依赖，再将各项长度相加取模。同一条语句执行期间，依赖变量不会变化，可以缓存结果。
+
+用 `now` 表示当前语句编号，`ed[u]` 记录变量 $u$ 的缓存所属语句。执行下一条语句后，旧缓存自动失效，动态变量便能反映新的赋值。
+
+**正确性**
+
+依赖无环，递归一定终止。按依赖顺序计算时，长度之和与真实字符串拼接长度一致；取模与加法兼容。
+
+直接赋值冻结当时的结果，间接赋值保留引用，分别符合两种赋值语义。同语句缓存只复用未变化的值，不影响结果。
+
+**复杂度**
+
+设变量数为 $V$，当前全部表达式的项数为 $E$。单次求值至多处理每个变量及其表达式一次，总时间 $O(n(V+E))$，空间 $O(V+E)$，另计输入文本的读取长度。
 
 ### 代码
 
 独立源码：[C.cpp](C.cpp)
 
 ```cpp
-#include <functional>
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <unordered_map>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr long long MOD = 1000000007;
-struct Operand {
-    bool variable;
-    int value;
-};
-struct Variable {
-    bool indirect = false;
-    long long value = 0;
-    vector<Operand> expression;
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    string line;
-    getline(cin, line);
-    unordered_map<string, int> ids;
-    vector<Variable> vars(1001);
-    vector<int> stamp(1001, -1);
-    vector<long long> memo(1001);
-    int epoch = 0;
-    auto id = [&](const string &name) {
-        auto it = ids.find(name);
-        if (it != ids.end())
-            return it->second;
-        int index = ids.size();
-        ids[name] = index;
-        return index;
-    };
-    function<long long(int)> evaluate = [&](int u) {
-        if (stamp[u] == epoch)
-            return memo[u];
-        long long value = vars[u].value;
-        if (vars[u].indirect) {
-            value = 0;
-            for (auto operand : vars[u].expression)
-                value =
-                    (value + (operand.variable ? evaluate(operand.value) : operand.value)) % MOD;
-        }
-        stamp[u] = epoch;
-        return memo[u] = value;
-    };
-    while (n--) {
-        ++epoch;
-        getline(cin, line);
-        istringstream input(line);
-        int op;
-        string name;
-        input >> op >> name;
-        int target = id(name);
-        if (op == 3) {
-            cout << evaluate(target) << '\n';
-            continue;
-        }
-        vector<Operand> expr;
-        string token;
-        while (input >> token) {
-            if (token[0] == '$')
-                expr.push_back({true, id(token.substr(1))});
-            else
-                expr.push_back({false, int(token.size())});
-        }
-        if (op == 1) {
-            long long value = 0;
-            for (auto operand : expr)
-                value =
-                    (value + (operand.variable ? evaluate(operand.value) : operand.value)) % MOD;
-            vars[target].indirect = false;
-            vars[target].value = value;
-            vars[target].expression.clear();
-        } else {
-            vars[target].indirect = true;
-            vars[target].expression = std::move(expr);
+typedef long long ll;
+typedef pair<int,int> P;
+const int N=1005,mod=1e9+7;
+int n,tot,now,ed[N];
+ll dp[N];
+struct node{
+    bool op;
+    ll val;
+    vector<P>g;
+}a[N];
+unordered_map<string,int>mp;
+string read(){
+    string s;
+    int c;
+    while((c=getchar())!='\n' && c!=EOF){
+        s+=(char)c;
+    }
+    return s;
+}
+int id(const string &s){
+    auto it=mp.find(s);
+    if(it!=mp.end())return it->second;
+    return mp[s]=++tot;
+}
+ll eval(int u){
+    if(ed[u]==now)return dp[u];
+    ll val=a[u].val;
+    if(a[u].op){
+        val=0;
+        for(P &x:a[u].g){
+            ll v=x.first?eval(x.second):x.second;
+            val=(val+v)%mod;
         }
     }
+    ed[u]=now;
+    return dp[u]=val;
+}
+int main(){
+    scanf("%d",&n);
+    read();
+    while(n--){
+        ++now;
+        istringstream in(read());
+        int op;
+        string s;
+        in>>op>>s;
+        int u=id(s);
+        if(op==3){
+            printf("%lld\n",eval(u));
+            continue;
+        }
+        vector<P>g;
+        while(in>>s){
+            if(s[0]=='$')g.push_back(P(1,id(s.substr(1))));
+            else g.push_back(P(0,s.size()));
+        }
+        if(op==1){
+            ll val=0;
+            for(P &x:g){
+                ll v=x.first?eval(x.second):x.second;
+                val=(val+v)%mod;
+            }
+            a[u].op=0;
+            a[u].val=val;
+            a[u].g.clear();
+        }
+        else{
+            a[u].op=1;
+            a[u].g.swap(g);
+        }
+    }
+    return 0;
 }
 ```
 
@@ -230,63 +267,77 @@ int main() {
 
 标签：`数论` · `gcd` · `状态压缩`
 
-状态：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；130 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+本地：133 组优化版、133 组 UBSan 验证通过，详见 [验证记录](../tests/202503/VALIDATION.md)。
 
 ### 题意
 
-输入长度为 $n$ 的正整数数组，求所有非空连续区间的 $l\times r\times\gcd(a_l,\ldots,a_r)$ 之和，结果模 $998244353$。下标从 1 开始，$n,a_i\le10^6$。
+给定正整数数组，求所有非空连续区间的 $l\times r\times\gcd(a_l,\ldots,a_r)$ 之和。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503D/)。
+输入 $n$ 和 $n$ 个数组元素，下标从 1 开始。保证 $1\le n,a_i\le10^6$。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503D)。
+输出答案模 $998244353$ 的结果。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503D)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503D/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adce7bea67df0b81749b983)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-**固定右端点，并把相同 gcd 的区间合并。** 处理到位置 $r$ 时，一组状态 $(g,s)$ 表示若干以 $r$ 结尾、gcd 都为 $g$ 的区间，$s$ 是它们的左端点下标之和。  
-新加入 $a_r$ 时，先产生单点状态 $(a_r,r)$；旧状态 $(g,s)$ 延伸后变成 $(\gcd(g,a_r),s)$。  
-相邻状态若 gcd 相同，就把 $s$ 相加。
+**固定右端点，合并相同 gcd**
 
-从短区间向长区间观察，gcd 只能变为原数的约数。每次严格变小，至少减半，所以至多有 $1+\lfloor\log_2\max a_i\rfloor$ 组。旧状态中相邻分组变换后仍然有这个整除顺序，只合并相邻项就足够。
+处理右端点 $r$ 时，用状态 $(g,s)$ 表示若干以 $r$ 结尾、gcd 均为 $g$ 的区间，其中 $s$ 为这些区间左端点下标之和。
 
-每一组对答案的贡献为 $rgs$。所有以 $r$ 结尾的区间，要么是单点区间，要么唯一地来自以 $r-1$ 结尾的区间；因此转移无重无漏。按右端点累加便得到全体区间的答案。
+加入 $a_r$ 后，先产生单点状态 $(a_r,r)$。旧状态 $(g,s)$ 延伸后变成 $(\gcd(g,a_r),s)$；相邻状态的 gcd 相同，就将下标之和相加。每组对答案的贡献为 $rgs$。
 
-状态转移次数为 $O(n\log A)$、空间 $O(\log A)$，其中 $A=\max a_i$；计入欧几里得算法的单次复杂度，可给出 $O(n\log^2 A)$ 的保守时间上界。下标之和与乘积须使用 64 位，连续乘法之间取模。
+**为什么状态数很少**
+
+从短区间向长区间看，gcd 只能变为原数的约数；每次严格减小至少减半，所以不同 gcd 至多有 $O(\log A)$ 个，其中 $A=\max a_i$。
+
+相邻分组延伸后仍保持整除顺序，相同 gcd 会连续出现，只合并相邻项就足够。
+
+**正确性**
+
+以 $r$ 结尾的区间，要么是单点区间，要么唯一地由以 $r-1$ 结尾的区间延伸得到。转移无重无漏，合并只把相同 gcd 的贡献相加，不改变总和。再按右端点累加，即得到全部区间的答案。
+
+**复杂度**
+
+状态转移次数为 $O(n\log A)$，空间复杂度 $O(\log A)$。若计入欧几里得算法的复杂度，保守时间上界为 $O(n\log^2 A)$。下标之和及乘积用 `ll`，连续乘法之间取模。
 
 ### 代码
 
 独立源码：[D.cpp](D.cpp)
 
 ```cpp
-#include <iostream>
-#include <numeric>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr long long MOD = 998244353;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    vector<pair<int, long long>> groups, next;
-    long long answer = 0;
-    for (int r = 1; r <= n; ++r) {
+typedef long long ll;
+typedef pair<int,ll> P;
+const int mod=998244353;
+int n;
+ll ans;
+vector<P>g,h;
+int main(){
+    scanf("%d",&n);
+    for(int i=1;i<=n;++i){
         int x;
-        cin >> x;
-        next.clear();
-        next.push_back({x, r});
-        for (auto [g, sum] : groups) {
-            int value = gcd(g, x);
-            if (next.back().first == value)
-                next.back().second = (next.back().second + sum) % MOD;
-            else
-                next.push_back({value, sum});
+        scanf("%d",&x);
+        h.clear();
+        h.push_back(P(x,i));
+        for(auto &[v,sum]:g){
+            int d=gcd(v,x);
+            P &w=h.back();
+            if(w.first==d){
+                w.second=(w.second+sum)%mod;
+            }
+            else h.push_back(P(d,sum));
         }
-        groups.swap(next);
-        for (auto [g, sum] : groups)
-            answer = (answer + sum * r % MOD * g) % MOD;
+        g.swap(h);
+        for(auto &[v,sum]:g){
+            ans=(ans+sum*i%mod*v)%mod;
+        }
     }
-    cout << answer << '\n';
+    printf("%lld\n",ans);
+    return 0;
 }
 ```
 
@@ -296,227 +347,273 @@ int main() {
 
 标签：`动态树` · `Link-Cut Tree` · `树形动态规划`
 
-状态：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；120 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+本地：324 组优化版、324 组 UBSan 验证通过，详见 [验证记录](../tests/202503/VALIDATION.md)。
 
 ### 题意
 
-带正负点权的树，初始根为 1。基本费用是包含当前根的非空连通子图的最大权和。  
-操作 `1 u` 查询当前根意义下 $u$ 子树中的任意非空连通子图最大权和；`2 u x` 改点权；`3 u` 换根；`4 a b c d` 删边 $a-b$、加边 $c-d$，保证仍为树。  
-先输出一次基本费用，之后每次输出该操作的答案；操作 1 输出子树答案，其他操作输出基本费用。  
-$n,m\le10^5$，权值绝对值不超过 $10^9$。
+有一棵带正负点权的树，初始根为 1。基本费用是包含当前根的非空连通子图最大权和；还需要查询指定子树内任意非空连通子图的最大权和。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503E/)
+输入 `n m`、各点权值、$n-1$ 条边和 $m$ 次操作。保证 $n,m\le10^5$，点权绝对值不超过 $10^9$。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503E)。
+- `1 u`：查询当前根意义下，$u$ 子树内的最大权和。
+- `2 u x`：将 $u$ 的点权改为 $x$。
+- `3 u`：将当前根改为 $u$。
+- `4 a b c d`：删去边 $a-b$，加入边 $c-d$，保证操作后仍为树。
+
+先输出初始基本费用。此后每次操作输出一行：操作 1 输出子树查询结果，其他操作输出更新后的基本费用。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202503E)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202503E/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6adce7c0a67df0b81749b987)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-**静态 DP 是所有结构的依据。** 令 $F_u$ 为子树内必须包含 $u$ 的最优权和，$G_u$ 为子树内任意非空连通子图的最优权和：$F_u=a_u+\sum_v\max(0,F_v)$，$G_u=\max(F_u,\max_vG_v)$。  
-负贡献的孩子可以不接入，但所选子图至少包含一个点，不能把全部答案初始化为零。
+**先写出静态树形 DP**
 
-**把一条实链压成可合并信息。** Link-Cut Tree 把孩子分为实孩子和虚孩子。  
-设虚孩子对 $F$ 的正贡献之和为 $s$，虚孩子的最大 $G$ 为 $b$。  
-当前点作为链上的一个位置，其有效权值为 $a_u+s$，但链内最优还可能完全落在某个虚子树中，因此至少为 $b$。  
-每段实链维护四项：整段权和 `sum`、必须接触左端的最优 `first`、必须接触右端的最优 `last`、内部任意最优 `best`。
+令 $F_u$ 表示子树内必须包含 $u$ 的最大权和，$G_u$ 表示子树内任意非空连通子图的最大权和，则
 
-合并相邻链段 $A,B$：`sum=A.sum+B.sum`；  
-`first=max(A.first,A.sum+B.first)`；  
-`last` 对称；`best=max(A.best,B.best,A.last+B.first)`。  
-最后一项对应连通子图跨过两段交界。这个公式也解释了为什么只维护链上最大值不够。
+$$F_u=a_u+\sum_v\max(0,F_v),\qquad G_u=\max(F_u,\max_vG_v).$$
 
-**实虚切换不可漏更新。** `access` 把旧实孩子改为虚孩子，加入其 `max(0,first)` 和 `best`；把新实孩子从虚集合中删除。  
-正贡献用总和维护，最大值用可删除的 multiset 维护。  
-链翻转时交换 `first,last`。修改前先 `access`，保证旧贡献已正确移出祖先的虚集合。
+负贡献的孩子可以不接入，但子图必须非空，不能将所有答案初始化为零。
 
-换根到当前根后再 `access(u)`，$u$ 的左实链是祖先；$u$ 自身和虚子树恰好是题目要求的子树，因此查询 `local(u).best`。  
-基本费用对根查询 `local(root).first`。  
-断边和连边分别用标准 LCT 操作，并同步虚贡献。
+**用四项信息合并实链**
 
-**复杂度。** 每次均摊 $O(\log^2 n)$，空间 $O(n)$；权和使用 `long long`。正确性由静态 DP、链段合并和实虚贡献守恒三条不变式共同保证。
+Link-Cut Tree 将孩子分为实孩子和虚孩子。虚孩子的 $\max(0,F_v)$ 用总和维护，$G_v$ 用可删除的 `multiset` 维护。
+
+设虚孩子的正贡献和为 $s$、最大 $G$ 为 $b$。当前点的有效权值为 $a_u+s$，局部最优还可能完全落在某个虚子树中，因此要同时考虑 $b$。
+
+每段实链维护 `sum,l,r,ans`：整段有效权和、必须接触左端的最优值、必须接触右端的最优值，以及内部任意最优值。相邻链段 $A,B$ 合并为
+
+$$\begin{aligned}
+C.sum&=A.sum+B.sum,\\
+C.l&=\max(A.l,A.sum+B.l),\\
+C.r&=\max(B.r,B.sum+A.r),\\
+C.ans&=\max(A.ans,B.ans,A.r+B.l).
+\end{aligned}$$
+
+最后一项对应连通子图跨过两段交界。链翻转时交换左右最优值即可。
+
+**维护实虚切换与查询**
+
+`access` 将旧实孩子改为虚孩子时，加入它的正贡献和最优值；将新实孩子从虚集合中移除时，做相反操作。修改点权前先 `access`，保证祖先记录的旧贡献已正确调整。
+
+先换根到当前根，再 `access(u)`，此时 $u$ 左侧的实链是祖先，$u$ 自身及虚子树正好对应所需子树。于是子树答案为 `local(u).ans`，基本费用为 `local(root).l`。断边、连边沿用标准动态树操作，并同步虚贡献。
+
+**正确性**
+
+静态 DP 正确描述了选取连通子图的两种情况。链段合并枚举最优子图位于左段、右段或跨越交界的所有可能，实虚切换保持每个孩子的贡献恰好记录一次。
+
+因此所有节点信息始终对应当前树。查询时剥离祖先实链，只读取本点及虚子树信息，得到题目要求的结果。
+
+**复杂度**
+
+建立动态树耗时 $O(n\log^2 n)$，每次操作均摊 $O(\log^2 n)$，空间复杂度 $O(n)$。权和使用 `ll`。
 
 ### 代码
 
 独立源码：[E.cpp](E.cpp)
 
 ```cpp
-#include <algorithm>
-#include <array>
-#include <iostream>
-#include <set>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-const ll NEG = -(1LL << 60);
-struct Summary {
-    ll sum = 0, first = NEG, last = NEG, best = NEG;
+typedef long long ll;
+const int N=1e5+10,M=2;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+int n,m,root=1;
+struct info{
+    ll sum=0,l=-INF,r=-INF,ans=-INF;
 };
-Summary join(Summary a, Summary b) {
-    return {a.sum + b.sum, max(a.first, a.sum + b.first), max(b.last, b.sum + a.last),
-            max({a.best, b.best, a.last + b.first})};
+info merge(info a,info b){
+    info c;
+    c.sum=a.sum+b.sum;
+    c.l=max(a.l,a.sum+b.l);
+    c.r=max(b.r,b.sum+a.r);
+    c.ans=max({a.ans,b.ans,a.r+b.l});
+    return c;
 }
-struct DynamicTree {
-    struct Node {
-        int child[2]{}, parent = 0;
-        bool reverse = false;
-        ll weight = 0, sideSum = 0;
-        multiset<ll> sideBest;
-        Summary data;
-    };
-    vector<Node> t;
-    vector<int> path;
-    explicit DynamicTree(int n) : t(n + 1) {
-        path.reserve(n);
+struct LinkCutTree{
+    bool rev[N];
+    int fa[N],ch[N][M],st[N];
+    ll val[N],sum[N];
+    info mx[N];
+    multiset<ll>g[N];
+    #define ls(x) (ch[x][0])
+    #define rs(x) (ch[x][1])
+    #define dir(x) (rs(fa[x])==(x))
+    #define isRoot(x) (ls(fa[x])!=(x) && rs(fa[x])!=(x))
+    info local(int x){
+        ll w=val[x]+sum[x];
+        ll best=g[x].empty()?-INF:*g[x].rbegin();
+        return {w,w,w,max(w,best)};
     }
-    bool auxiliaryRoot(int u) {
-        int p = t[u].parent;
-        return t[p].child[0] != u && t[p].child[1] != u;
+    void pushup(int x){
+        mx[x]=merge(merge(mx[ls(x)],local(x)),mx[rs(x)]);
     }
-    Summary local(int u) {
-        ll x = t[u].weight + t[u].sideSum;
-        ll y = t[u].sideBest.empty() ? NEG : *t[u].sideBest.rbegin();
-        return {x, x, x, max(x, y)};
+    void flip(int x){
+        if(!x)return;
+        swap(ls(x),rs(x));
+        swap(mx[x].l,mx[x].r);
+        rev[x]^=1;
     }
-    void pull(int u) {
-        t[u].data = join(join(t[t[u].child[0]].data, local(u)), t[t[u].child[1]].data);
+    void pushdown(int x){
+        if(!rev[x])return;
+        flip(ls(x));flip(rs(x));
+        rev[x]=0;
     }
-    void flip(int u) {
-        if (!u)
-            return;
-        swap(t[u].child[0], t[u].child[1]);
-        swap(t[u].data.first, t[u].data.last);
-        t[u].reverse ^= 1;
-    }
-    void push(int u) {
-        if (t[u].reverse) {
-            flip(t[u].child[0]);
-            flip(t[u].child[1]);
-            t[u].reverse = false;
+    void update(int x){
+        int cnt=0,y=x;
+        st[++cnt]=y;
+        while(!isRoot(y)){
+            y=fa[y];
+            st[++cnt]=y;
+        }
+        while(cnt){
+            pushdown(st[cnt--]);
         }
     }
-    void rotate(int u) {
-        int p = t[u].parent, g = t[p].parent, d = t[p].child[1] == u, v = t[u].child[d ^ 1];
-        if (!auxiliaryRoot(p))
-            t[g].child[t[g].child[1] == p] = u;
-        t[u].parent = g;
-        t[u].child[d ^ 1] = p;
-        t[p].parent = u;
-        t[p].child[d] = v;
-        if (v)
-            t[v].parent = p;
-        pull(p);
-        pull(u);
+    void rotate(int x){
+        int y=fa[x],z=fa[y],d=dir(x);
+        int w=ch[x][d^1];
+        if(!isRoot(y))ch[z][dir(y)]=x;
+        fa[x]=z;
+        ch[x][d^1]=y;fa[y]=x;
+        ch[y][d]=w;
+        if(w)fa[w]=y;
+        pushup(y);pushup(x);
     }
-    void splay(int u) {
-        path.clear();
-        int v = u;
-        path.push_back(v);
-        while (!auxiliaryRoot(v)) {
-            v = t[v].parent;
-            path.push_back(v);
-        }
-        for (auto it = path.rbegin(); it != path.rend(); ++it)
-            push(*it);
-        while (!auxiliaryRoot(u)) {
-            int p = t[u].parent, g = t[p].parent;
-            if (!auxiliaryRoot(p))
-                rotate((t[p].child[1] == u) == (t[g].child[1] == p) ? p : u);
-            rotate(u);
+    void splay(int x){
+        update(x);
+        while(!isRoot(x)){
+            int y=fa[x];
+            if(!isRoot(y))rotate(dir(x)==dir(y)?y:x);
+            rotate(x);
         }
     }
-    void virtualAdd(int u, int v) {
-        if (!v)
-            return;
-        t[u].sideSum += max(0LL, t[v].data.first);
-        t[u].sideBest.insert(t[v].data.best);
+    void add(int x,int y){
+        if(!y)return;
+        sum[x]+=max(0ll,mx[y].l);
+        g[x].insert(mx[y].ans);
     }
-    void virtualRemove(int u, int v) {
-        if (!v)
-            return;
-        t[u].sideSum -= max(0LL, t[v].data.first);
-        auto it = t[u].sideBest.find(t[v].data.best);
-        t[u].sideBest.erase(it);
+    void del(int x,int y){
+        if(!y)return;
+        sum[x]-=max(0ll,mx[y].l);
+        auto it=g[x].find(mx[y].ans);
+        g[x].erase(it);
     }
-    void access(int u) {
-        for (int v = 0, x = u; x; v = x, x = t[x].parent) {
-            splay(x);
-            virtualAdd(x, t[x].child[1]);
-            virtualRemove(x, v);
-            t[x].child[1] = v;
-            pull(x);
+    void access(int x){
+        int y=0,u=x;
+        while(u){
+            splay(u);
+            add(u,rs(u));
+            del(u,y);
+            rs(u)=y;
+            pushup(u);
+            y=u;u=fa[u];
         }
-        splay(u);
+        splay(x);
     }
-    void makeRoot(int u) {
-        access(u);
-        flip(u);
+    void makeroot(int x){
+        access(x);
+        flip(x);
     }
-    void link(int u, int v) {
-        makeRoot(u);
-        access(v);
-        t[u].parent = v;
-        virtualAdd(v, u);
-        pull(v);
+    int findroot(int x){
+        access(x);
+        pushdown(x);
+        while(ls(x)){
+            x=ls(x);
+            pushdown(x);
+        }
+        splay(x);
+        return x;
     }
-    void cut(int u, int v) {
-        makeRoot(u);
-        access(v);
-        t[v].child[0] = 0;
-        t[u].parent = 0;
-        pull(v);
+    void split(int x,int y){
+        makeroot(x);
+        access(y);
     }
-    void setWeight(int u, ll w) {
-        access(u);
-        t[u].weight = w;
-        pull(u);
+    void link(int x,int y){
+        makeroot(x);
+        if(findroot(y)==x)return;
+        access(y);
+        fa[x]=y;
+        add(y,x);
+        pushup(y);
     }
-    ll rootedValue(int root) {
-        makeRoot(root);
-        access(root);
-        return local(root).first;
+    void cut(int x,int y){
+        split(x,y);
+        if(ls(y)==x && !rs(x)){
+            ls(y)=0;fa[x]=0;
+            pushup(y);
+        }
     }
-    ll subtreeBest(int root, int u) {
-        makeRoot(root);
-        access(u);
-        return local(u).best;
+    void setval(int x,ll w){
+        access(x);
+        val[x]=w;
+        pushup(x);
     }
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    DynamicTree dt(n);
-    for (int i = 1; i <= n; ++i) {
-        cin >> dt.t[i].weight;
-        dt.pull(i);
+    ll best(int x){
+        makeroot(x);
+        access(x);
+        return local(x).l;
     }
-    for (int i = 1, u, v; i < n; ++i) {
-        cin >> u >> v;
-        dt.link(u, v);
+    ll query(int x){
+        makeroot(root);
+        access(x);
+        return local(x).ans;
     }
-    int root = 1;
-    cout << dt.rootedValue(root) << '\n';
-    while (m--) {
-        int op, u;
-        cin >> op >> u;
-        if (op == 1) {
-            cout << dt.subtreeBest(root, u) << '\n';
+}tr;
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&tr.val[i]);
+        tr.pushup(i);
+    }
+    for(int i=1;i<n;++i){
+        int u,v;
+        scanf("%d%d",&u,&v);
+        tr.link(u,v);
+    }
+    printf("%lld\n",tr.best(root));
+    while(m--){
+        int op,u;
+        scanf("%d%d",&op,&u);
+        if(op==1){
+            printf("%lld\n",tr.query(u));
             continue;
         }
-        if (op == 2) {
+        if(op==2){
             ll x;
-            cin >> x;
-            dt.setWeight(u, x);
+            scanf("%lld",&x);
+            tr.setval(u,x);
         }
-        if (op == 3)
-            root = u;
-        if (op == 4) {
-            int v, c, d;
-            cin >> v >> c >> d;
-            dt.cut(u, v);
-            dt.link(c, d);
+        if(op==3)root=u;
+        if(op==4){
+            int v,c,d;
+            scanf("%d%d%d",&v,&c,&d);
+            tr.cut(u,v);
+            tr.link(c,d);
         }
-        cout << dt.rootedValue(root) << '\n';
+        printf("%lld\n",tr.best(root));
     }
+    return 0;
 }
 ```
+
+<!-- local-validation-attachments:start -->
+
+### 验证附件
+
+- [VALIDATION.md](../tests/202503/VALIDATION.md)
+- [cases.json](../tests/202503/cases.json)
+- [compile.json](../tests/202503/compile.json)
+- [constants-followup.json](../tests/202503/constants-followup.json)
+- [current-sources.json](../tests/202503/current-sources.json)
+- [extra.py](../tests/202503/extra.py)
+- [lct-cases.json](../tests/202503/lct-cases.json)
+- [lct-followup.json](../tests/202503/lct-followup.json)
+- [lct-followup.py](../tests/202503/lct-followup.py)
+- [naming-followup.json](../tests/202503/naming-followup.json)
+- [style-followup.json](../tests/202503/style-followup.json)
+- [style-followup.py](../tests/202503/style-followup.py)
+- [summary.json](../tests/202503/summary.json)
+
+<!-- local-validation-attachments:end -->

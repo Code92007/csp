@@ -1,84 +1,75 @@
-#include <functional>
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <unordered_map>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr long long MOD = 1000000007;
-struct Operand {
-    bool variable;
-    int value;
-};
-struct Variable {
-    bool indirect = false;
-    long long value = 0;
-    vector<Operand> expression;
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    string line;
-    getline(cin, line);
-    unordered_map<string, int> ids;
-    vector<Variable> vars(1001);
-    vector<int> stamp(1001, -1);
-    vector<long long> memo(1001);
-    int epoch = 0;
-    auto id = [&](const string &name) {
-        auto it = ids.find(name);
-        if (it != ids.end())
-            return it->second;
-        int index = ids.size();
-        ids[name] = index;
-        return index;
-    };
-    function<long long(int)> evaluate = [&](int u) {
-        if (stamp[u] == epoch)
-            return memo[u];
-        long long value = vars[u].value;
-        if (vars[u].indirect) {
-            value = 0;
-            for (auto operand : vars[u].expression)
-                value =
-                    (value + (operand.variable ? evaluate(operand.value) : operand.value)) % MOD;
-        }
-        stamp[u] = epoch;
-        return memo[u] = value;
-    };
-    while (n--) {
-        ++epoch;
-        getline(cin, line);
-        istringstream input(line);
-        int op;
-        string name;
-        input >> op >> name;
-        int target = id(name);
-        if (op == 3) {
-            cout << evaluate(target) << '\n';
-            continue;
-        }
-        vector<Operand> expr;
-        string token;
-        while (input >> token) {
-            if (token[0] == '$')
-                expr.push_back({true, id(token.substr(1))});
-            else
-                expr.push_back({false, int(token.size())});
-        }
-        if (op == 1) {
-            long long value = 0;
-            for (auto operand : expr)
-                value =
-                    (value + (operand.variable ? evaluate(operand.value) : operand.value)) % MOD;
-            vars[target].indirect = false;
-            vars[target].value = value;
-            vars[target].expression.clear();
-        } else {
-            vars[target].indirect = true;
-            vars[target].expression = std::move(expr);
+typedef long long ll;
+typedef pair<int,int> P;
+const int N=1005,mod=1e9+7;
+int n,tot,now,ed[N];
+ll dp[N];
+struct node{
+    bool op;
+    ll val;
+    vector<P>g;
+}a[N];
+unordered_map<string,int>mp;
+string read(){
+    string s;
+    int c;
+    while((c=getchar())!='\n' && c!=EOF){
+        s+=(char)c;
+    }
+    return s;
+}
+int id(const string &s){
+    auto it=mp.find(s);
+    if(it!=mp.end())return it->second;
+    return mp[s]=++tot;
+}
+ll eval(int u){
+    if(ed[u]==now)return dp[u];
+    ll val=a[u].val;
+    if(a[u].op){
+        val=0;
+        for(P &x:a[u].g){
+            ll v=x.first?eval(x.second):x.second;
+            val=(val+v)%mod;
         }
     }
+    ed[u]=now;
+    return dp[u]=val;
+}
+int main(){
+    scanf("%d",&n);
+    read();
+    while(n--){
+        ++now;
+        istringstream in(read());
+        int op;
+        string s;
+        in>>op>>s;
+        int u=id(s);
+        if(op==3){
+            printf("%lld\n",eval(u));
+            continue;
+        }
+        vector<P>g;
+        while(in>>s){
+            if(s[0]=='$')g.push_back(P(1,id(s.substr(1))));
+            else g.push_back(P(0,s.size()));
+        }
+        if(op==1){
+            ll val=0;
+            for(P &x:g){
+                ll v=x.first?eval(x.second):x.second;
+                val=(val+v)%mod;
+            }
+            a[u].op=0;
+            a[u].val=val;
+            a[u].g.clear();
+        }
+        else{
+            a[u].op=1;
+            a[u].g.swap(g);
+        }
+    }
+    return 0;
 }

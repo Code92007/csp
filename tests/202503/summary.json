@@ -1,0 +1,134 @@
+{
+  "contest": "202503",
+  "distinct_cases": 529,
+  "results": {
+    "opt": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 130,
+        "E:retained_independent": 120,
+        "A:saved": 2,
+        "B:saved": 2,
+        "C:saved": 2,
+        "D:saved": 2,
+        "E:saved": 1,
+        "A:boundary": 4,
+        "B:boundary": 1,
+        "B:stress": 1,
+        "C:stress": 1,
+        "D:stress": 1,
+        "E:boundary": 1,
+        "E:stress": 1
+      },
+      "total": 529,
+      "seconds": 3.874,
+      "stresses": [
+        {
+          "problem": "B",
+          "label": "max_n_m_unit_optimum",
+          "seconds": 0.0028
+        },
+        {
+          "problem": "C",
+          "label": "1000_variable_dynamic_chain_and_self_assignment",
+          "seconds": 0.0033
+        },
+        {
+          "problem": "D",
+          "label": "max_constant_gcd",
+          "seconds": 0.0453
+        },
+        {
+          "problem": "E",
+          "label": "100000_node_chain_updates",
+          "seconds": 0.0536
+        }
+      ]
+    },
+    "ubsan": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 130,
+        "E:retained_independent": 120,
+        "A:saved": 2,
+        "B:saved": 2,
+        "C:saved": 2,
+        "D:saved": 2,
+        "E:saved": 1,
+        "A:boundary": 4,
+        "B:boundary": 1,
+        "B:stress": 1,
+        "C:stress": 1,
+        "D:stress": 1,
+        "E:boundary": 1,
+        "E:stress": 1
+      },
+      "total": 529,
+      "seconds": 5.107,
+      "stresses": [
+        {
+          "problem": "B",
+          "label": "max_n_m_unit_optimum",
+          "seconds": 0.0058
+        },
+        {
+          "problem": "C",
+          "label": "1000_variable_dynamic_chain_and_self_assignment",
+          "seconds": 0.0058
+        },
+        {
+          "problem": "D",
+          "label": "max_constant_gcd",
+          "seconds": 0.0489
+        },
+        {
+          "problem": "E",
+          "label": "100000_node_chain_updates",
+          "seconds": 0.0899
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "A": "3e293a7ec5fe6d38007fd0cc7230d655815952acb7c1a6ca9dee5dfb31d0c3da",
+    "B": "da94a68667084ea21a10ddea3e186c3a330b5c1233dc0e9d82305247b9430644",
+    "C": "10d3a7dfa66a364c96200f9d0c73ad17a24cce62a90abe49f2cc5b148818ec5b",
+    "D": "2127ac386d73df8484c32debc90e741aeb4449841cb1c1e5e2f0c59210e445ed",
+    "E": "ad526608c5f718b5f898ecc2e6f58a572f62a75c2babe6f263c0e0973a3e85ed"
+  },
+  "cases_sha256": "af32fc6a605220b8162f0f832e7851a52727940cd0797d534c984f5e23ced294",
+  "original_evaluations": {
+    "A": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce7b9a67df0b81749b958"
+    },
+    "B": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce7bba67df0b81749b972"
+    },
+    "C": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce7bda67df0b81749b97b"
+    },
+    "D": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce7bea67df0b81749b983"
+    },
+    "E": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce7c0a67df0b81749b987"
+    }
+  },
+  "refactored_online_submission": false,
+  "oracle": "Repository independent Python generators captured by tools/nightly/retained_oracles.py; saved cases and independently generated boundary/stress expectations are also replayed. No output is taken from the original executable.",
+  "platform_note": "Apple Clang C++17 uses a local standard-header shim for bits/stdc++.h. Timings are local, not official judge results."
+}

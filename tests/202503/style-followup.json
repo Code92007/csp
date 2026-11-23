@@ -1,0 +1,29 @@
+{
+  "original_report": "summary.json",
+  "source_sha256": {
+    "C": "7774d73681bcf39b3e9abdec3b76641a9439f64d1898f97384138ded902ef4a9",
+    "D": "7f5c39643cc9e95e5da36a975d67314e14c489282c85bcec5f3c4218ca06953c"
+  },
+  "changes": {
+    "C": "Repeated conditional expression stored in ll v before accumulation",
+    "D": "Short reference to nonempty h.back(), used only before possible push_back"
+  },
+  "results": {
+    "C:opt": {
+      "passed": 103,
+      "compile_stderr": ""
+    },
+    "C:ubsan": {
+      "passed": 103,
+      "compile_stderr": ""
+    },
+    "D:opt": {
+      "passed": 133,
+      "compile_stderr": ""
+    },
+    "D:ubsan": {
+      "passed": 133,
+      "compile_stderr": ""
+    }
+  }
+}
