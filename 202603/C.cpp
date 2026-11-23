@@ -1,83 +1,78 @@
-#include <iostream>
-#include <map>
-#include <set>
-#include <string>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using i64 = long long;
-struct Queue {
-    i64 start, length, next = 0;
+typedef long long ll;
+typedef pair<ll,ll> P;
+const int N=105,M=10;
+int n,q,p;
+char op[M];
+struct node{
+    ll l,len,pos;
 };
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, q;
-    cin >> n >> q;
-    vector<vector<Queue>> processes(n + 1);
-    map<i64, i64> free_by_start;
-    set<pair<i64, i64>> free_by_size;
-    i64 tail = 0;
-    auto erase = [&](map<i64, i64>::iterator it) {
-        free_by_size.erase({it->second, it->first});
-        free_by_start.erase(it);
-    };
-    auto insert = [&](i64 l, i64 length) {
-        if (length) {
-            free_by_start[l] = length;
-            free_by_size.insert({length, l});
+vector<node>g[N];
+map<ll,ll>mp;
+set<P>st;
+void erase(map<ll,ll>::iterator it){
+    st.erase(P(it->second,it->first));
+    mp.erase(it);
+}
+void add(ll l,ll len){
+    if(!len)return;
+    mp[l]=len;
+    st.insert(P(len,l));
+}
+int main(){
+    scanf("%d%d",&n,&q);
+    ll tail=0;
+    while(q--){
+        scanf("%s%d",op,&p);
+        if(op[0]=='n'){
+            ll len,l;
+            scanf("%lld",&len);
+            auto it=st.lower_bound(P(len,-1));
+            if(it==st.end()){
+                l=tail;
+                tail+=len;
+            }
+            else{
+                ll rem=it->first;
+                l=it->second;
+                erase(mp.find(l));
+                add(l+len,rem-len);
+            }
+            g[p].push_back({l,len,0});
+            printf("%lld\n",l);
         }
-    };
-    while (q--) {
-        string op;
-        int p;
-        cin >> op >> p;
-        if (op == "new") {
-            i64 length, start;
-            cin >> length;
-            auto it = free_by_size.lower_bound({length, -1});
-            if (it == free_by_size.end()) {
-                start = tail;
-                tail += length;
-            } else {
-                auto [available, l] = *it;
-                start = l;
-                erase(free_by_start.find(l));
-                insert(l + length, available - length);
+        else if(op[0]=='s'){
+            ll ans=0;
+            for(auto &x:g[p]){
+                ans+=x.l+x.pos;
+                x.pos=(x.pos+1)%x.len;
             }
-            processes[p].push_back({start, length, 0});
-            cout << start << '\n';
-        } else if (op == "send") {
-            i64 sum = 0;
-            for (auto &queue : processes[p]) {
-                sum += queue.start + queue.next;
-                queue.next = (queue.next + 1) % queue.length;
-            }
-            cout << sum << '\n';
-        } else {
-            int index;
-            cin >> index;
-            --index;
-            auto queue = processes[p][index];
-            processes[p].erase(processes[p].begin() + index);
-            i64 l = queue.start, r = l + queue.length;
-            auto after = free_by_start.lower_bound(l);
-            if (after != free_by_start.begin()) {
-                auto before = prev(after);
-                if (before->first + before->second == l) {
-                    l = before->first;
-                    erase(before);
+            printf("%lld\n",ans);
+        }
+        else{
+            int id;
+            scanf("%d",&id);
+            --id;
+            node x=g[p][id];
+            g[p].erase(g[p].begin()+id);
+            ll l=x.l,r=l+x.len;
+            auto it=mp.lower_bound(l);
+            if(it!=mp.begin()){
+                auto pre=prev(it);
+                if(pre->first+pre->second==l){
+                    l=pre->first;
+                    erase(pre);
                 }
             }
-            after = free_by_start.lower_bound(r);
-            if (after != free_by_start.end() && after->first == r) {
-                r += after->second;
-                erase(after);
+            it=mp.lower_bound(r);
+            if(it!=mp.end() && it->first==r){
+                r+=it->second;
+                erase(it);
             }
-            if (r == tail)
-                tail = l;
-            else
-                insert(l, r - l);
+            if(r==tail)tail=l;
+            else add(l,r-l);
         }
     }
+    return 0;
 }

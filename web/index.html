@@ -43,6 +43,14 @@
           <span class="theme-swatch swatch-zhihu" aria-hidden="true"><i></i><i></i><i></i></span>
           <span class="theme-description"><strong>知乎</strong><small>浅灰底 · 蓝红高亮</small></span><span class="theme-check" aria-hidden="true">✓</span>
         </button>
+        <button type="button" class="code-theme-option" role="option" data-code-theme="nowcoder" aria-selected="false" tabindex="-1">
+          <span class="theme-swatch swatch-nowcoder" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="theme-description"><strong>牛客</strong><small>白底 · 蓝绿高亮</small></span><span class="theme-check" aria-hidden="true">✓</span>
+        </button>
+        <button type="button" class="code-theme-option" role="option" data-code-theme="luogu" aria-selected="false" tabindex="-1">
+          <span class="theme-swatch swatch-luogu" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="theme-description"><strong>洛谷</strong><small>随页面外观切换明暗</small></span><span class="theme-check" aria-hidden="true">✓</span>
+        </button>
       </div>
     </div>
   </div>
@@ -51,7 +59,14 @@
     <a href="#/problems" data-nav="problems">按题目</a>
     <a href="#/tags" data-nav="tags">标签地图</a>
   </nav>
-  <button id="theme" class="icon-button" title="切换页面明暗主题" aria-label="切换页面明暗主题">◐</button>
+  <div class="appearance-picker">
+    <button id="theme" class="icon-button" type="button" title="外观：跟随系统" aria-label="外观：跟随系统" aria-haspopup="menu" aria-controls="appearance-menu" aria-expanded="false">◐</button>
+    <div id="appearance-menu" class="appearance-menu" role="menu" aria-label="页面外观" hidden>
+      <button type="button" role="menuitemradio" data-appearance="system" aria-checked="true"><span>◐</span>跟随系统<i>✓</i></button>
+      <button type="button" role="menuitemradio" data-appearance="light" aria-checked="false"><span>☀</span>浅色<i>✓</i></button>
+      <button type="button" role="menuitemradio" data-appearance="dark" aria-checked="false"><span>☾</span>深色<i>✓</i></button>
+    </div>
+  </div>
 </header>
 <main id="main" tabindex="-1"><div class="loading">正在读取 Markdown 题解索引…</div></main>
 <footer class="footer"><span>CSP 手记 / Markdown 驱动</span><span>题意为自行概述；本地验证记录与正式评测分开标注。</span></footer>

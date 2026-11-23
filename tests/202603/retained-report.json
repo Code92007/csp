@@ -1,0 +1,33 @@
+{
+  "cases": {
+    "A/independent": 60,
+    "B/independent": 100,
+    "C/independent": 100,
+    "D/independent": 100,
+    "E/independent": 60,
+    "A/saved_sample": 2,
+    "B/saved_sample": 3,
+    "C/saved_sample": 2,
+    "D/saved_sample": 2,
+    "E/saved_sample": 1
+  },
+  "total": 430,
+  "seconds": 0.929,
+  "source_sha256": {
+    "A": "de29a053c8345ce35e59e77553b7d5ff176c6306317cbd5ec0be3da0348b35cb",
+    "B": "126affaa1c48033d3ea928d4e2fed4405d0fc46df267613fd8f9ad5a95a4a8c0",
+    "C": "1dd893b262b746a8cdfa612ef0c5db16aae39f52bfaddc60cdddfa41163ea65d",
+    "D": "a5f31a574a1152c95fe64b38033f2200e205ee5990300c2c613c515b121352d2",
+    "E": "377bb7588db67ae5074d3055d808050e2f03803d28ac5e56abeda676f00e990c"
+  },
+  "case_sha256": "dee4cd37273ae23700e04a20ddf8fddcb37478b6586b2e05a4bc09ca8e91b488",
+  "oracle_sources": {
+    "A": "tests/first_all.py",
+    "B": "tests/second_first.py",
+    "C": "tests/third_first.py",
+    "D": "tests/fourth_first.py",
+    "E": "tests/fifth_extra.py"
+  },
+  "repository": "https://github.com/Code92007/csp/tree/4097b5ae124c402ce6b5c6f0804c4a6477c9560c",
+  "note": "Current refactored sources; independent expected answers and saved samples. No online submission."
+}

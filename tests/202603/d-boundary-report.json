@@ -1,0 +1,59 @@
+{
+  "problem": "202603D",
+  "seed": 92007202604,
+  "source_sha256": "d873137a36bc1dcceef5c27cdabb4adc3ae9ced8090a79ee1c99fd8f2cc096fe",
+  "case_sha256": "62ecc2696635efc1d8f9ef6efd7c85276cd3814771366cb5cebb43abb90abfea",
+  "literal_oracle_checks": 6000,
+  "bases": [
+    11,
+    13,
+    15,
+    21,
+    25,
+    27,
+    81,
+    99,
+    999,
+    1001,
+    9999,
+    10001,
+    99999,
+    999999,
+    1000001,
+    999999937,
+    999999999
+  ],
+  "results": [
+    {
+      "binary": "D",
+      "cases": {
+        "independent": 100,
+        "saved_sample": 2,
+        "digit_boundary": 136,
+        "overlap_random": 200,
+        "max_size_uniform": 2
+      },
+      "total": 440,
+      "seconds": 2.056
+    },
+    {
+      "binary": "D-ubsan",
+      "cases": {
+        "independent": 100,
+        "saved_sample": 2,
+        "digit_boundary": 136,
+        "overlap_random": 200,
+        "max_size_uniform": 2
+      },
+      "total": 440,
+      "seconds": 3.126
+    }
+  ],
+  "oracle": "Small cases simulate every element and count each f digit over 0..x by digit cycles; large uniform cases independently use repeated digit addition.",
+  "note": "Local validation only. The refactored source has not been submitted to an online judge.",
+  "latest_followup": {
+    "report": "d-template-followup-report.json",
+    "source_sha256": "a5f31a574a1152c95fe64b38033f2200e205ee5990300c2c613c515b121352d2",
+    "validation": "O2/UBSan compilation and two saved samples each; original 440-input results above were not rerun."
+  }
+}

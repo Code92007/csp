@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-24",
+  "status": "passed_local_approved_for_publication",
+  "source_sha256": {
+    "A": "de29a053c8345ce35e59e77553b7d5ff176c6306317cbd5ec0be3da0348b35cb",
+    "B": "126affaa1c48033d3ea928d4e2fed4405d0fc46df267613fd8f9ad5a95a4a8c0",
+    "C": "1dd893b262b746a8cdfa612ef0c5db16aae39f52bfaddc60cdddfa41163ea65d",
+    "D": "a5f31a574a1152c95fe64b38033f2200e205ee5990300c2c613c515b121352d2",
+    "E": "377bb7588db67ae5074d3055d808050e2f03803d28ac5e56abeda676f00e990c"
+  },
+  "tests": {
+    "A": 924,
+    "B": 473,
+    "C": 328,
+    "D": 440,
+    "E": 364
+  },
+  "total": 2529,
+  "note": "Review revisions included. Repeated validations counted once. Latest base430, A924 and E303 passed; D440 historical algorithm tests plus current base102/template sample checks. No new online submission.",
+  "followup_reports": [
+    "a-global-report.json",
+    "d-template-followup-report.json",
+    "e-report.json",
+    "retained-report.json"
+  ]
+}

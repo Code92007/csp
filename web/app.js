@@ -4,10 +4,48 @@ const esc = value => String(value).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt
 const tagColours=[['#e5eddf','#405e43'],['#eee4d5','#765d39'],['#e0e9ed','#42616d'],['#ede3e9','#765368'],['#e9e6f1','#66567d'],['#f4e2d6','#8a553a']];
 let data, route, debounce, renderToken=0;
 $('.skip').addEventListener('click',event=>{event.preventDefault();$('#main').focus();$('#main').scrollIntoView();});
-try { const theme=localStorage.getItem('csp-theme'); if(theme)document.documentElement.dataset.theme=theme; } catch (_) {}
-$('#theme').addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;try{localStorage.setItem('csp-theme',theme);}catch(_) {}});
-const codeThemes=new Set(['sublime','vscode','devcpp','zhihu']);
-const codeThemeNames={zhihu:'知乎',vscode:'VS Code',sublime:'Sublime',devcpp:'Dev-C++'};
+const systemAppearance=matchMedia('(prefers-color-scheme: dark)');
+const appearanceButton=$('#theme'),appearanceMenu=$('#appearance-menu');
+const appearanceOptions=[...appearanceMenu.querySelectorAll('[role=menuitemradio]')];
+const appearanceNames={system:'跟随系统',light:'浅色',dark:'深色'};
+let appearance='system';
+try{const saved=localStorage.getItem('csp-theme');if(saved in appearanceNames)appearance=saved;}catch(_){}
+function applyAppearance(){
+  document.documentElement.dataset.theme=appearance==='system'?(systemAppearance.matches?'dark':'light'):appearance;
+  appearanceButton.textContent={system:'◐',light:'☀',dark:'☾'}[appearance];
+  appearanceButton.setAttribute('aria-label','外观：'+appearanceNames[appearance]);
+  appearanceButton.title='外观：'+appearanceNames[appearance];
+  for(const option of appearanceOptions)option.setAttribute('aria-checked',String(option.dataset.appearance===appearance));
+}
+function closeAppearance(focus=false){
+  appearanceMenu.hidden=true;appearanceButton.setAttribute('aria-expanded','false');
+  if(focus)appearanceButton.focus();
+}
+appearanceButton.addEventListener('click',()=>{
+  const open=appearanceMenu.hidden;appearanceMenu.hidden=!open;
+  appearanceButton.setAttribute('aria-expanded',String(open));
+  if(open)appearanceOptions.find(option=>option.getAttribute('aria-checked')==='true').focus();
+});
+for(const option of appearanceOptions)option.addEventListener('click',()=>{
+  appearance=option.dataset.appearance;applyAppearance();
+  try{localStorage.setItem('csp-theme',appearance);}catch(_){}
+  closeAppearance(true);
+});
+appearanceMenu.addEventListener('keydown',event=>{
+  if(event.key==='Escape'){event.preventDefault();closeAppearance(true);}
+  else if(['ArrowDown','ArrowUp','Home','End'].includes(event.key)){
+    event.preventDefault();
+    const index=appearanceOptions.indexOf(document.activeElement),count=appearanceOptions.length;
+    const next=event.key==='Home'?0:event.key==='End'?count-1:(index+(event.key==='ArrowDown'?1:count-1))%count;
+    appearanceOptions[next].focus();
+  }
+});
+document.addEventListener('pointerdown',event=>{if(!event.target.closest('.appearance-picker'))closeAppearance();});
+$('.appearance-picker').addEventListener('focusout',event=>{if(!event.currentTarget.contains(event.relatedTarget))closeAppearance();});
+systemAppearance.addEventListener('change',()=>{if(appearance==='system')applyAppearance();});
+applyAppearance();
+const codeThemes=new Set(['sublime','vscode','devcpp','zhihu','nowcoder','luogu']);
+const codeThemeNames={zhihu:'知乎',vscode:'VS Code',sublime:'Sublime',devcpp:'Dev-C++',nowcoder:'牛客',luogu:'洛谷'};
 const codeThemeButton=$('#code-theme'),codeThemeMenu=$('#code-theme-menu');
 const codeThemeOptions=[...codeThemeMenu.querySelectorAll('[role=option]')];
 function setCodeTheme(theme){
@@ -46,7 +84,8 @@ codeThemeMenu.addEventListener('keydown',event=>{
   if(event.key==='Escape'){event.preventDefault();closeCodeThemes(true);}
   else if(['ArrowDown','ArrowUp','Home','End'].includes(event.key)){
     event.preventDefault();
-    const next=event.key==='Home'?0:event.key==='End'?3:(index+(event.key==='ArrowDown'?1:3))%4;
+    const count=codeThemeOptions.length;
+    const next=event.key==='Home'?0:event.key==='End'?count-1:(index+(event.key==='ArrowDown'?1:count-1))%count;
     codeThemeOptions[next].focus();
   }
 });
@@ -122,6 +161,35 @@ function markdown(source){
   html=html.replace(/CSPMATHTOKEN(\d+)END/g,(_,index)=>math[Number(index)]);
   return DOMPurify.sanitize(html,{USE_PROFILES:{html:true,mathMl:true,svg:true}});
 }
+function numberCodeLines(code){
+  const lines=[document.createElement('span')];
+  function append(node,ancestors=[]){
+    if(node.nodeType===Node.TEXT_NODE){
+      const parts=node.textContent.split('\n');
+      parts.forEach((part,index)=>{
+        if(index)lines.push(document.createElement('span'));
+        if(!part)return;
+        let parent=lines.at(-1);
+        for(const ancestor of ancestors){
+          const span=ancestor.cloneNode(false);parent.append(span);parent=span;
+        }
+        parent.append(document.createTextNode(part));
+      });
+    }else{
+      for(const child of node.childNodes)append(child,[...ancestors,node]);
+    }
+  }
+  for(const child of [...code.childNodes])append(child);
+  const trailing=code.textContent.endsWith('\n');
+  if(trailing)lines.pop();
+  code.replaceChildren();
+  lines.forEach((line,index)=>{
+    line.className='code-line';line.dataset.line=index+1;
+    code.append(line);
+    if(index<lines.length-1 || trailing)code.append(document.createTextNode('\n'));
+  });
+  code.classList.add('numbered-code');
+}
 function enhanceArticle(container,contest){
   for(const a of container.querySelectorAll('a[href]')){
     const href=a.getAttribute('href');
@@ -134,8 +202,10 @@ function enhanceArticle(container,contest){
   }
   for(const pre of container.querySelectorAll('pre')){
     const code=pre.querySelector('code');if(!code)continue;
+    const source=code.textContent;
     if(code.classList.contains('language-cpp'))hljs.highlightElement(code);
-    const button=document.createElement('button');button.className='copy-code';button.textContent='复制代码';button.type='button';button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(code.textContent);button.textContent='已复制';setTimeout(()=>button.textContent='复制代码',1500);}catch(_){toast('自动复制不可用，请手动选择代码。');}});pre.append(button);
+    numberCodeLines(code);
+    const button=document.createElement('button');button.className='copy-code';button.textContent='复制代码';button.type='button';button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(source);button.textContent='已复制';setTimeout(()=>button.textContent='复制代码',1500);}catch(_){toast('自动复制不可用，请手动选择代码。');}});pre.append(button);
   }
 }
 function showArticle(contest){

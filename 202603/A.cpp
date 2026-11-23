@@ -1,17 +1,18 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n, answer = 0;
-    cin >> n;
-    while (n--) {
-        int x, ones = 0, bits = 0;
-        cin >> x;
-        while (x) {
-            ones += x & 1;
-            ++bits;
-            x >>= 1;
+int n,ans,x,cnt,len;
+int main(){
+    scanf("%d",&n);
+    while(n--){
+        cnt=len=0;
+        scanf("%d",&x);
+        while(x){
+            cnt+=x&1;
+            ++len;
+            x>>=1;
         }
-        answer += 2 * ones == bits;
+        ans+=(cnt*2==len);
     }
-    cout << answer << '\n';
+    printf("%d\n",ans);
+    return 0;
 }

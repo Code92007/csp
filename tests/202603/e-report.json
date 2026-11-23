@@ -1,0 +1,28 @@
+{
+  "problem": "202603E",
+  "seed": 92007202603,
+  "source_sha256": "377bb7588db67ae5074d3055d808050e2f03803d28ac5e56abeda676f00e990c",
+  "case_sha256": "9d9e38c1a2b48b1ec8d5a16a9924ee5f1d773226f580c929a5b734a1ad2ab4a0",
+  "distinct_inputs": 303,
+  "results": [
+    {
+      "binary": "E",
+      "cases": {
+        "small_bfs": 300,
+        "max_chain_0_stations": 1,
+        "max_chain_20_stations": 1,
+        "max_star": 1
+      },
+      "seconds": 2.334
+    },
+    {
+      "binary": "E-ubsan",
+      "cases": {
+        "small_bfs": 300
+      },
+      "seconds": 2.233
+    }
+  ],
+  "oracle": "BFS literal paths for small trees; activation thresholds for prefix-repaired chains; incident-plan counting for stars.",
+  "note": "Local validation; randomized witnesses affect runtime, not answer correctness. No online submission."
+}

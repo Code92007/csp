@@ -1,113 +1,119 @@
-#include <array>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using i64 = long long;
-constexpr int DIGITS = 12;
-struct Node {
-    array<i64, DIGITS> sum{}, product{}, lazy{};
-};
-int n, q, digits, base;
-i64 mod;
-vector<Node> tree;
-array<i64, DIGITS> split(i64 x) {
-    array<i64, DIGITS> a{};
-    for (int j = 0; j < digits; ++j) {
-        a[j] = x % mod;
-        x /= mod;
-    }
-    return a;
-}
-void pull(int u) {
-    for (int j = 0; j < digits; ++j) {
-        tree[u].sum[j] = (tree[u * 2].sum[j] + tree[u * 2 + 1].sum[j]) % mod;
-        tree[u].product[j] = (tree[u * 2].product[j] + tree[u * 2 + 1].product[j]) % mod;
+typedef long long ll;
+const int N=1<<19,M=12;
+int n,m,d,op,l,r;
+ll k,a[M],ans[M];
+void split(ll x,ll *v){
+    for(int j=0;j<d;++j){
+        v[j]=x%k;
+        x/=k;
     }
 }
-void apply(int u, int len, const array<i64, DIGITS> &shift) {
-    Node &t = tree[u];
-    // product[0] is the sum of squares. Preserve all old sums until products are updated.
-    for (int j = 0; j < digits; ++j) {
-        t.product[j] = (t.product[j] + shift[0] * t.sum[j] + shift[j] * t.sum[0] +
-                        (shift[0] * shift[j] % mod) * len) %
-                       mod;
-    }
-    for (int j = 0; j < digits; ++j) {
-        t.sum[j] = (t.sum[j] + shift[j] * len) % mod;
-        t.lazy[j] = (t.lazy[j] + shift[j]) % mod;
-    }
-}
-void push(int u, int len) {
-    bool any = false;
-    for (int j = 0; j < digits; ++j)
-        any |= tree[u].lazy[j] != 0;
-    if (!any)
-        return;
-    apply(u * 2, len / 2, tree[u].lazy);
-    apply(u * 2 + 1, len / 2, tree[u].lazy);
-    tree[u].lazy.fill(0);
-}
-void update(int u, int l, int r, int a, int b, const array<i64, DIGITS> &shift) {
-    if (a <= l && r <= b) {
-        apply(u, r - l + 1, shift);
-        return;
-    }
-    push(u, r - l + 1);
-    int mid = (l + r) / 2;
-    if (a <= mid)
-        update(u * 2, l, mid, a, b, shift);
-    if (b > mid)
-        update(u * 2 + 1, mid + 1, r, a, b, shift);
-    pull(u);
-}
-void query(int u, int l, int r, int a, int b, array<i64, DIGITS> &result) {
-    if (a <= l && r <= b) {
-        for (int j = 0; j < digits; ++j)
-            result[j] = (result[j] + tree[u].sum[j] + tree[u].product[j]) % mod;
-        return;
-    }
-    push(u, r - l + 1);
-    int mid = (l + r) / 2;
-    if (a <= mid)
-        query(u * 2, l, mid, a, b, result);
-    if (b > mid)
-        query(u * 2 + 1, mid + 1, r, a, b, result);
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cin >> n >> q >> mod;
-    for (i64 x = 1000000000000LL; x; x /= mod)
-        ++digits;
-    base = 1;
-    while (base < n)
-        base *= 2;
-    tree.resize(base * 2);
-    for (int i = 0; i < n; ++i) {
-        i64 x;
-        cin >> x;
-        auto a = split(x);
-        tree[base + i].sum = a;
-        for (int j = 0; j < digits; ++j)
-            tree[base + i].product[j] = a[0] * a[j] % mod;
-    }
-    for (int u = base - 1; u; --u)
-        pull(u);
-    while (q--) {
-        int op, l, r;
-        cin >> op >> l >> r;
-        if (op == 1) {
-            i64 v;
-            cin >> v;
-            update(1, 1, base, l, r, split(v));
-        } else {
-            array<i64, DIGITS> ans{};
-            query(1, 1, base, l, r, ans);
-            ans[0] = ans[0] * ((mod + 1) / 2) % mod;
-            i64 value = 0;
-            for (int j = digits - 1; j >= 0; --j)
-                value = value * mod + ans[j];
-            cout << value << '\n';
+struct segtree{
+    int n;
+    struct node{
+        int l,r;
+        ll s[M],p[M],tag[M];
+    }e[N<<1];
+    #define l(p) e[p].l
+    #define r(p) e[p].r
+    void pushup(int p){
+        for(int j=0;j<d;++j){
+            e[p].s[j]=(e[p<<1].s[j]+e[p<<1|1].s[j])%k;
+            e[p].p[j]=(e[p<<1].p[j]+e[p<<1|1].p[j])%k;
         }
     }
+    void apply(int p,ll *v){
+        node &t=e[p];
+        int len=r(p)-l(p)+1;
+        for(int j=0;j<d;++j){
+            ll w=v[0]*v[j]%k;
+            t.p[j]=(t.p[j]+v[0]*t.s[j]+v[j]*t.s[0]+w*len)%k;
+        }
+        for(int j=0;j<d;++j){
+            t.s[j]=(t.s[j]+v[j]*len)%k;
+            t.tag[j]=(t.tag[j]+v[j])%k;
+        }
+    }
+    void pushdown(int p){
+        bool ok=0;
+        for(int j=0;j<d;++j){
+            ok|=e[p].tag[j]!=0;
+        }
+        if(!ok)return;
+        apply(p<<1,e[p].tag);
+        apply(p<<1|1,e[p].tag);
+        memset(e[p].tag,0,sizeof e[p].tag);
+    }
+    void build(int p,int x,int y){
+        l(p)=x;r(p)=y;
+        if(x==y){
+            ll v;
+            scanf("%lld",&v);
+            split(v,e[p].s);
+            for(int j=0;j<d;++j){
+                e[p].p[j]=e[p].s[0]*e[p].s[j]%k;
+            }
+            return;
+        }
+        int mid=(x+y)>>1;
+        build(p<<1,x,mid);
+        build(p<<1|1,mid+1,y);
+        pushup(p);
+    }
+    void init(int x){
+        n=x;
+        build(1,1,n);
+    }
+    void update(int p,int x,int y){
+        if(x<=l(p) && r(p)<=y){
+            apply(p,a);
+            return;
+        }
+        pushdown(p);
+        int mid=(l(p)+r(p))>>1;
+        if(x<=mid)update(p<<1,x,y);
+        if(y>mid)update(p<<1|1,x,y);
+        pushup(p);
+    }
+    void query(int p,int x,int y){
+        if(x<=l(p) && r(p)<=y){
+            for(int j=0;j<d;++j){
+                ans[j]=(ans[j]+e[p].s[j]+e[p].p[j])%k;
+            }
+            return;
+        }
+        pushdown(p);
+        int mid=(l(p)+r(p))>>1;
+        if(x<=mid)query(p<<1,x,y);
+        if(y>mid)query(p<<1|1,x,y);
+    }
+}tr;
+int main(){
+    scanf("%d%d%lld",&n,&m,&k);
+    for(ll x=1e12;x;x/=k){
+        ++d;
+    }
+    tr.init(n);
+    while(m--){
+        scanf("%d%d%d",&op,&l,&r);
+        if(op==1){
+            ll x;
+            scanf("%lld",&x);
+            split(x,a);
+            tr.update(1,l,r);
+        }
+        else{
+            memset(ans,0,sizeof ans);
+            tr.query(1,l,r);
+            ans[0]=ans[0]*((k+1)/2)%k;
+            ll val=0;
+            for(int j=d-1;j>=0;--j){
+                val=val*k+ans[j];
+            }
+            printf("%lld\n",val);
+        }
+    }
+    return 0;
 }

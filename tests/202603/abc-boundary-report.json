@@ -1,0 +1,79 @@
+{
+  "problems": "202603ABC",
+  "seed": 92007202603,
+  "distinct_additional_inputs": 1458,
+  "source_sha256": {
+    "A.cpp": "e04924091c263ed5d84c7f6a0991c45a1b24ef4e77c482f27a9d540d483187de",
+    "B.cpp": "126affaa1c48033d3ea928d4e2fed4405d0fc46df267613fd8f9ad5a95a4a8c0",
+    "C.cpp": "1dd893b262b746a8cdfa612ef0c5db16aae39f52bfaddc60cdddfa41163ea65d"
+  },
+  "oracle_sha256": "a7a52b262569ee7be665ec285bdb40dc5df63617aa10546b92f7f0eb2026ece0",
+  "case_sha256": "6f7bce36cbbcf7e6ae0e5e2ed767cbad302a436fb5fe985dda62113ce94ca77f",
+  "results": [
+    {
+      "binary_suffix": "(optimized)",
+      "distinct_inputs": 1458,
+      "cases": {
+        "A/binary_boundary": 205,
+        "A/exhaustive_16bit": 656,
+        "A/upper_bound_repeated": 1,
+        "B/all_flexible": 16,
+        "B/close_ratio_fraction": 50,
+        "B/coprime_fraction": 1,
+        "B/equal_ratio": 16,
+        "B/fraction_vertex_random": 240,
+        "B/indivisible_threshold": 25,
+        "B/max_item_time": 4,
+        "B/max_n_budget": 2,
+        "B/mixed_boundary": 16,
+        "C/bitmap_random": 220,
+        "C/directed_best_fit": 1,
+        "C/directed_merge": 1,
+        "C/directed_send": 1,
+        "C/directed_tail": 1,
+        "C/fragmented_address64": 1,
+        "C/max_q_address64": 1
+      },
+      "max_B_absolute_error": "3/606250000",
+      "seconds": 5.094
+    },
+    {
+      "binary_suffix": "-ubsan",
+      "distinct_inputs": 181,
+      "cases": {
+        "A/binary_boundary": 30,
+        "A/exhaustive_16bit": 51,
+        "A/upper_bound_repeated": 1,
+        "B/all_flexible": 5,
+        "B/close_ratio_fraction": 6,
+        "B/coprime_fraction": 1,
+        "B/equal_ratio": 5,
+        "B/fraction_vertex_random": 22,
+        "B/indivisible_threshold": 25,
+        "B/max_item_time": 4,
+        "B/max_n_budget": 2,
+        "B/mixed_boundary": 6,
+        "C/bitmap_random": 17,
+        "C/directed_best_fit": 1,
+        "C/directed_merge": 1,
+        "C/directed_send": 1,
+        "C/directed_tail": 1,
+        "C/fragmented_address64": 1,
+        "C/max_q_address64": 1
+      },
+      "max_B_absolute_error": "3/606250000",
+      "seconds": 2.342
+    }
+  ],
+  "scope": {
+    "A": "Every positive value below 2^16, powers of two and balanced layouts through 10^9.",
+    "B": "Exact Fraction enumeration of 0/1 choices and fractional polytope vertices; integer budgets, ties, prime denominators, close efficiencies, n=200,m=1000,a<=100,b<t<=10000.",
+    "C": "Rebuild holes from occupied intervals, cross-checked by a byte bitmap on small cases; best-fit ties, merge, tail shrink, renumbering, send wrap; q=8000,L=500000, addresses/sums beyond signed 32-bit."
+  },
+  "note": "These inputs are additional to the retained 420 independent cases and 10 saved samples. UBSan repeats a subset and is not counted as new inputs. Local validation only; no new online-judge submission.",
+  "subsequent_A_validation": {
+    "report": "a-global-report.json",
+    "source_sha256": "de29a053c8345ce35e59e77553b7d5ff176c6306317cbd5ec0be3da0348b35cb",
+    "note": "The global-variable revision of A was separately rebuilt and rechecked; original A/B/C results above are retained unchanged."
+  }
+}

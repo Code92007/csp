@@ -1,0 +1,104 @@
+{
+  "problem": "202603D",
+  "checked_at": "2026-11-23T19:24:07.188556+00:00",
+  "before_sha256": "d873137a36bc1dcceef5c27cdabb4adc3ae9ced8090a79ee1c99fd8f2cc096fe",
+  "after_sha256": "a5f31a574a1152c95fe64b38033f2200e205ee5990300c2c613c515b121352d2",
+  "changes": [
+    "Moved l(p)/r(p) macro definitions after node/e inside segtree.",
+    "Removed trailing undef directives.",
+    "Joined build endpoint assignments as l(p)=x;r(p)=y;.",
+    "Changed the digit-count loop initializer to ll x=1e12 (exactly representable).",
+    "Moved op,l,r to the global declaration."
+  ],
+  "compilation": [
+    {
+      "binary": "D",
+      "command": "clang++ -std=c++17 -O2 -Wall -Wextra -Wshadow -I/tmp/csp202609-check/include 202603/D.cpp -o .build/202603-prep/refactored/D",
+      "chunk_id": "d8e07e",
+      "wall_time_seconds": 0.259161666,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "binary": "D-ubsan",
+      "command": "clang++ -std=c++17 -O1 -g -Wall -Wextra -Wshadow -fsanitize=undefined -fno-sanitize-recover=all -I/tmp/csp202609-check/include 202603/D.cpp -o .build/202603-prep/refactored/D-ubsan",
+      "chunk_id": "4d7565",
+      "wall_time_seconds": 0.274548791,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  ],
+  "results": [
+    {
+      "binary": "D",
+      "saved_samples": 2,
+      "passed": 2,
+      "results": [
+        {
+          "sample": 1,
+          "input_sha256": "c342d80285511c62281dcf47d342508c60b942c894097e7d04aa326a7df641e9",
+          "passed": true,
+          "returncode": 0,
+          "stdout": "76\n50\n",
+          "stderr": ""
+        },
+        {
+          "sample": 2,
+          "input_sha256": "d16e9f3ee0a00186d41f2174e286a9fc2cdb17a53c9b1d15d31b5dfcf1754f9f",
+          "passed": true,
+          "returncode": 0,
+          "stdout": "34\n12\n22\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "binary": "D-ubsan",
+      "saved_samples": 2,
+      "passed": 2,
+      "results": [
+        {
+          "sample": 1,
+          "input_sha256": "c342d80285511c62281dcf47d342508c60b942c894097e7d04aa326a7df641e9",
+          "passed": true,
+          "returncode": 0,
+          "stdout": "76\n50\n",
+          "stderr": ""
+        },
+        {
+          "sample": 2,
+          "input_sha256": "d16e9f3ee0a00186d41f2174e286a9fc2cdb17a53c9b1d15d31b5dfcf1754f9f",
+          "passed": true,
+          "returncode": 0,
+          "stdout": "34\n12\n22\n",
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "historical_algorithm_validation": {
+    "report": "d-boundary-report.json",
+    "source_sha256": "d873137a36bc1dcceef5c27cdabb4adc3ae9ced8090a79ee1c99fd8f2cc096fe",
+    "distinct_inputs": 440,
+    "builds": [
+      "O2",
+      "UBSan"
+    ],
+    "rerun_for_this_followup": false
+  },
+  "markdown_checks": {
+    "paths": [
+      "202603/README.md",
+      "202603题解.md"
+    ],
+    "D_code_matches_source": true,
+    "only_other_edit": "E statement input overview, separate event bullets and following constraints",
+    "A_B_C_cpp_blocks_unchanged": true,
+    "E_code_matches_source": true,
+    "E_source_sha256": "d32dff7c04fe50f44499d8e74fa3f1970dd74f61fcb7c40d637ec0d478116c31",
+    "E_cpp_change": "Synchronized parent agent HLD namespace indentation change; compared lines ignoring leading whitespace. E verification is handled by parent agent."
+  },
+  "note": "This follow-up checked compilation and the two saved D samples only. The prior 440-input algorithm validation remains a historical result for its recorded source hash; no new online submission was made."
+}
