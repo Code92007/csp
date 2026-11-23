@@ -1,0 +1,44 @@
+{
+  "ascending_path": {
+    "n": 100000,
+    "seconds": 0.05,
+    "permutation_checked": true,
+    "sorted_answer_checked": true
+  },
+  "descending_path": {
+    "n": 100000,
+    "seconds": 0.049,
+    "permutation_checked": true,
+    "sorted_answer_checked": true
+  },
+  "shuffled_path": {
+    "n": 100000,
+    "seconds": 0.073,
+    "permutation_checked": true,
+    "sorted_answer_checked": false
+  },
+  "star_center_1": {
+    "n": 100000,
+    "seconds": 0.027,
+    "permutation_checked": true,
+    "sorted_answer_checked": true
+  },
+  "star_center_n": {
+    "n": 100000,
+    "seconds": 0.028,
+    "permutation_checked": true,
+    "sorted_answer_checked": true
+  },
+  "random_tree": {
+    "n": 100000,
+    "seconds": 0.06,
+    "permutation_checked": true,
+    "sorted_answer_checked": false
+  },
+  "broom": {
+    "n": 100000,
+    "seconds": 0.047,
+    "permutation_checked": true,
+    "sorted_answer_checked": false
+  }
+}

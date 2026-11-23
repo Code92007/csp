@@ -1,21 +1,20 @@
-#include <iostream>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    if (!(cin >> n)) return 0;
-    vector<int> ordinary(n), even(n);
-    for (int i = 0; i < n; ++i) {
-        string s; cin >> s;
-        size_t point = s.find('.');
-        int a = stoi(s.substr(0, point)), b = s[point + 1] - '0';
-        ordinary[i] = a + (b >= 5);
-        even[i] = a + (b > 5 || (b == 5 && a % 2 == 1));
+const int N=105;
+int n,a[N],b[N];
+int main(){
+    scanf("%d",&n);
+    for(int i=1;i<=n;++i){
+        int x,y;
+        scanf("%d.%d",&x,&y);
+        a[i]=x+(y>=5);
+        b[i]=x+(y>5 || (y==5 && x%2));
     }
-    for (int i = 0; i < n; ++i) cout << ordinary[i] << (i + 1 == n ? '\n' : ' ');
-    for (int i = 0; i < n; ++i) cout << even[i] << (i + 1 == n ? '\n' : ' ');
+    for(int i=1;i<=n;++i){
+        printf("%d%c",a[i]," \n"[i==n]);
+    }
+    for(int i=1;i<=n;++i){
+        printf("%d%c",b[i]," \n"[i==n]);
+    }
+    return 0;
 }
