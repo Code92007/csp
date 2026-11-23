@@ -3,17 +3,15 @@ title: "CSP 201403 五题题解"
 contest: "201403"
 contest_month: "2014-03"
 date: "2026-10-23"
-updated: "2026-10-25"
+updated: "2026-11-24"
 tags: ["CSP", "集合", "相反数", "层次顺序", "模拟", "字符串解析", "状态机", "有序映射", "分层BFS", "最短路", "几何判定", "动态规划", "资源调度", "状态压缩"]
 status: "published"
-problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281236"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305650472"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70", "source_sha256": "269740413c10bf630470510697040ed0b65d7b69454f456b2806f8942455b030"}}, {"id": "B", "title": "窗口", "tags": ["层次顺序", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc14d74ace1cba9a2189b"}}, {"id": "C", "title": "命令行选项", "tags": ["字符串解析", "状态机", "有序映射"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281238"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305653686"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8", "source_sha256": "441729975e87fcc5b4706c6cb63d0c5a202463d9b7f382dfe7e30f7290ea793b"}}, {"id": "D", "title": "无线网络", "tags": ["分层BFS", "最短路", "几何判定"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；50 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281240"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403D/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305643544"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addf9b174ace1cba9a22fa2", "source_sha256": "aba51d8d53cc594a3a946db1144c35d9a239d50198a9b9186efb87c8c058b8ac"}}, {"id": "E", "title": "任务调度", "tags": ["动态规划", "资源调度", "状态压缩"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc1d874ace1cba9a218be"}}]
+problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，2 个保存用例、60 组独立对拍及 1 组边界/压力通过；UBSan 共 63 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281236"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305650472"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70", "source_sha256": "269740413c10bf630470510697040ed0b65d7b69454f456b2806f8942455b030"}}, {"id": "B", "title": "窗口", "tags": ["层次顺序", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 0 组边界/压力通过；UBSan 共 102 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc14d74ace1cba9a2189b"}}, {"id": "C", "title": "命令行选项", "tags": ["字符串解析", "状态机", "有序映射"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 103 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281238"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305653686"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8", "source_sha256": "441729975e87fcc5b4706c6cb63d0c5a202463d9b7f382dfe7e30f7290ea793b"}}, {"id": "D", "title": "无线网络", "tags": ["分层BFS", "最短路", "几何判定"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，2 个保存用例、109 组独立对拍及 2 组边界/压力通过；UBSan 共 113 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281240"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403D/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305643544"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addf9b174ace1cba9a22fa2", "source_sha256": "aba51d8d53cc594a3a946db1144c35d9a239d50198a9b9186efb87c8c058b8ac"}}, {"id": "E", "title": "任务调度", "tags": ["动态规划", "资源调度", "状态压缩"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：C++17 编译通过，2 个保存用例、150 组独立对拍及 6 组边界/压力通过；UBSan 共 158 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201403E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201403E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc1d874ace1cba9a218be"}}]
 ---
 
 # CSP 201403 五题题解
 
-[返回总目录](../README.md)
-
-本场已实现 **5/5** 题。每题依次给出题意、题解、代码。源码使用 C++17。
+[原页面](https://code92007.github.io/csp/#/contest/201403) · [验证记录](../tests/201403/VALIDATION.md) · [返回总目录](../README.md)
 
 <a id="problem-a"></a>
 
@@ -21,47 +19,52 @@ problems: [{"id": "A", "title": "相反数", "tags": ["集合", "相反数"], "s
 
 标签：`集合` · `相反数`
 
-状态：**完整实现，已验证满分**。  
-C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305650472)（民间复刻评测）。
+本地：63 组优化版、63 组 UBSan 验证通过，详见 [验证记录](../tests/201403/VALIDATION.md)。
 
 ### 题意
 
-给若干非零、互不相同的整数，统计同时存在a和-a的无序数对个数。
+给定若干非零且互不相同的整数，统计其中互为相反数的无序数对个数。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/)。
+输入整数个数 $1\le n\le500$，再输入这 $n$ 个数。每个数都非零，绝对值不超过 $1000$，且任意两个数不同。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403A)。
+输出相反数对的数量。
 
-洛谷练习：[同题民间复刻](https://www.luogu.com.cn/problem/U281236)。
+来源：[洛谷民间题面（可提交）](https://www.luogu.com.cn/problem/U281236)；[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403A)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403A/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70)（accepted，100 分；复刻评测）。
+
+原版洛谷民间评测：[记录](https://www.luogu.com.cn/record/305650472)（accepted，100 分）。
 
 ### 题解
 
-全部放入集合，仅枚举正数x并检查-x是否存在。每对非零相反数有且只有一个正数，故每个合法数对被计数一次。
+将所有数放入集合，只枚举正数 $x$，检查集合中是否存在 $-x$，存在就计数。
 
-时间 $O(n\log n)$，空间 $O(n)$。非零和互异是题目保证，不能把它泛化成含重复值时的组合数计数。
+每对非零相反数恰好有一个正数，因此每个合法数对恰好统计一次。题目保证非零且互异，不能把此计数直接用作含重复值时的组合数答案。
+
+**复杂度**
+
+时间 $O(n\log n)$，空间 $O(n)$。
 
 ### 代码
 
 独立源码：[A.cpp](A.cpp)
 
 ```cpp
-#include <iostream>
-#include <set>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    set<int> a;
-    while (n--) {
-        int x;
-        cin >> x;
+int n,ans;
+set<int> a;
+int main(){
+    scanf("%d",&n);
+    for(int i=0,x;i<n;++i){
+        scanf("%d",&x);
         a.insert(x);
     }
-    int answer = 0;
-    for (int x : a)
-        if (x > 0 && a.count(-x))
-            ++answer;
-    cout << answer << '\n';
+    for(const int &x:a){
+        if(x>0 && a.count(-x))++ans;
+    }
+    printf("%d\n",ans);
+    return 0;
 }
 ```
 
@@ -71,61 +74,72 @@ int main() {
 
 标签：`层次顺序` · `模拟`
 
-状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc14d74ace1cba9a2189b)（复刻评测）。
+本地：102 组优化版、102 组 UBSan 验证通过，详见 [验证记录](../tests/201403/VALIDATION.md)。
 
 ### 题意
 
-窗口按从底到顶给出。每次点击选中包含该点的最顶层窗口并把它移到顶层，其他窗口相对顺序不变；边界也算窗口内，无窗口则输出IGNORED。
+窗口按从底到顶的顺序给出。每次点击选中包含该点的最顶层窗口，并将它移到顶层，其他窗口的相对顺序不变。窗口边界也算内部，没有命中时忽略此次点击。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403B/)。
+输入窗口数 $n$ 和点击数 $m$，接着输入每个矩形的左下、右上坐标，再输入各次点击坐标。$1\le n,m\le10$，横、纵坐标分别在 $[0,2559]$、$[0,1439]$ 内，窗口按输入顺序从 $1$ 编号。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403B)。
+每次点击输出选中的原始窗口编号；未命中则输出 `IGNORED`。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403B)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403B/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6addc14d74ace1cba9a2189b)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-vector始终按底到顶排列，窗口记录独立的原始编号。每次从尾向前查找第一个包含点的矩形，找到后输出编号、删除该项、追加到末尾；未找到时不改变顺序。
+用数组按从底到顶保存窗口，窗口始终携带原始编号。每次从后向前查找第一个包含点击点的矩形：找到后输出编号，将其后的窗口依次前移，再把选中窗口放到末尾；没找到则不改变数组。
 
-逆序查找保证选中最顶层，删除后追加既置顶又保留其他相对顺序，因此每次操作后顺序不变量继续成立。时间 $O(NM)$，空间 $O(N)$，N、M≤10。
+**正确性**
+
+逆序查找保证选择最顶层的命中窗口。删除该项并放到末尾，既实现置顶，也保持其他窗口的相对顺序，因此数组顺序始终与实际层次一致。
+
+**复杂度**
+
+每次查询与移动均为 $O(n)$，总时间 $O(nm)$，空间 $O(n)$。
 
 ### 代码
 
 独立源码：[B.cpp](B.cpp)
 
 ```cpp
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Window {
-    int x1, y1, x2, y2, id;
-};
-int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<Window> w(n);
-    for (int i = 0; i < n; i++) {
-        auto &v = w[i];
-        cin >> v.x1 >> v.y1 >> v.x2 >> v.y2;
-        v.id = i + 1;
+const int N=15;
+struct node{
+    int l,b,r,t,id;
+}a[N];
+int n,m,x,y;
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=0;i<n;++i){
+        node &v=a[i];
+        scanf("%d%d%d%d",&v.l,&v.b,&v.r,&v.t);
+        v.id=i+1;
     }
-    while (m--) {
-        int x, y, found = -1;
-        cin >> x >> y;
-        for (int i = n - 1; i >= 0; i--) {
-            auto v = w[i];
-            if (v.x1 <= x && x <= v.x2 && v.y1 <= y && y <= v.y2) {
-                found = i;
+    while(m--){
+        scanf("%d%d",&x,&y);
+        int p=-1;
+        for(int i=n-1;i>=0;--i){
+            node &v=a[i];
+            if(v.l<=x && x<=v.r && v.b<=y && y<=v.t){
+                p=i;
                 break;
             }
         }
-        if (found < 0)
-            cout << "IGNORED\n";
-        else {
-            auto v = w[found];
-            cout << v.id << '\n';
-            w.erase(w.begin() + found);
-            w.push_back(v);
+        if(p<0)puts("IGNORED");
+        else{
+            node v=a[p];
+            printf("%d\n",v.id);
+            for(int i=p;i<n-1;++i){
+                a[i]=a[i+1];
+            }
+            a[n-1]=v;
         }
     }
+    return 0;
 }
 ```
 
@@ -135,72 +149,79 @@ int main() {
 
 标签：`字符串解析` · `状态机` · `有序映射`
 
-状态：**完整实现，已验证满分**。  
-C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305653686)（民间复刻评测）。
+本地：103 组优化版、103 组 UBSan 验证通过，详见 [验证记录](../tests/201403/VALIDATION.md)。
 
 ### 题意
 
-依据格式字符串解析命令行选项。字母后有冒号表示该选项必须带下一个词作为参数；否则无参数。  
-遇到非法选项或无法取得必需参数时停止。重复无参选项只输出一次，带参选项保留最后一次完整出现的参数，按字母排序输出。
+根据格式字符串解析命令行选项。字母后紧跟冒号，表示该选项必须消费下一个词作为参数，否则为无参选项。遇到非法选项或缺少必需参数时，停止解析，忽略剩余词。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/)。
+输入格式字符串、命令行数量 $n$，再输入各行命令。格式串长度不超过 $52$，$1\le n\le20$，单行长度不超过 $256$。命令的第一个词为工具名；后续词由小写字母、数字、减号组成，以单个空格分隔。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403C)。
+第 $i$ 行以 `Case i:` 开头，按字母递增输出已识别选项及参数。重复无参选项只输出一次，带参选项保留最后一次完整出现的参数。
 
-洛谷练习：[同题民间复刻](https://www.luogu.com.cn/problem/U281238)。
+来源：[洛谷民间题面（可提交）](https://www.luogu.com.cn/problem/U281238)；[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403C)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403C/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8)（accepted，100 分；复刻评测）。
+
+原版洛谷民间评测：[记录](https://www.luogu.com.cn/record/305653686)（accepted，100 分）。
 
 ### 题解
 
-预处理 26 个字母的类型：不支持、无参数、有参数。逐行分词，跳过工具名；每次读取一个词，要求恰好是减号加一个支持的小写字母。  
-带参选项无条件消费紧随的下一个词，即使它以减号开头；若没有下一个词，直接停止且不覆盖之前的有效记录。
+预处理每个字母的类型：不支持、无参数、有参数。逐行分词并跳过工具名；之后每次读取一个词，要求它恰好是减号加一个受支持的小写字母。
 
-用 map 保存已确认的选项，更新前已完成语法和参数检查，因此其中始终是已解析合法前缀的最终结果。停止后不再扫描剩余词，输出 map 自动按字母排序。时间 $O(L+26\log26)$，空间 $O(L)$。
+带参选项无条件消费紧随的下一个词，即使它以减号开头。若没有下一个词，就停止，且不覆盖之前已经记录的有效参数。通过全部检查后，再标记该选项并更新参数。
+
+**正确性**
+
+数组中始终保存已解析合法前缀的最终结果。非法词之后不再扫描，重复选项仅覆盖同一位置，缺少参数的末次出现不会覆盖旧值。按字母顺序扫描数组，输出顺序自然满足要求。
+
+**复杂度**
+
+设单行长度为 $L$，每行时间 $O(L+26)$，空间 $O(L+26)$。
 
 ### 代码
 
 独立源码：[C.cpp](C.cpp)
 
 ```cpp
-#include <iostream>
-#include <map>
-#include <sstream>
-#include <string>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    string format, line;
-    int n;
-    cin >> format >> n;
-    int kind[26] = {};
-    for (size_t i = 0; i < format.size(); i++)
-        if (format[i] != ':')
-            kind[format[i] - 'a'] = i + 1 < format.size() && format[i + 1] == ':' ? 2 : 1;
-    getline(cin, line);
-    for (int test = 1; test <= n; test++) {
-        getline(cin, line);
-        istringstream in(line);
-        string word;
-        in >> word;
-        map<char, string> found;
-        while (in >> word) {
-            if (word.size() != 2 || word[0] != '-' || word[1] < 'a' || word[1] > 'z' ||
-                !kind[word[1] - 'a'])
-                break;
-            char c = word[1];
-            string value;
-            if (kind[c - 'a'] == 2 && !(in >> value))
-                break;
-            found[c] = value;
-        }
-        cout << "Case " << test << ':';
-        for (auto [c, value] : found) {
-            cout << " -" << c;
-            if (kind[c - 'a'] == 2)
-                cout << ' ' << value;
-        }
-        cout << '\n';
+const int N=1010,M=60,K=26;
+int n,kind[K];
+bool ok[K];
+char fmt[M],s[N];
+string val[K];
+int main(){
+    scanf("%s%d",fmt,&n);
+    for(int i=0;fmt[i];++i){
+        if(fmt[i]==':')continue;
+        kind[fmt[i]-'a']=fmt[i+1]==':'?2:1;
     }
+    fgets(s,N,stdin);
+    for(int t=1;t<=n;++t){
+        fgets(s,N,stdin);
+        memset(ok,0,sizeof ok);
+        istringstream in(s);
+        string w;
+        in>>w;
+        while(in>>w){
+            if(w.size()!=2 || w[0]!='-')break;
+            if(w[1]<'a' || w[1]>'z')break;
+            int c=w[1]-'a';
+            if(!kind[c])break;
+            string v;
+            if(kind[c]==2 && !(in>>v))break;
+            ok[c]=1;val[c]=v;
+        }
+        printf("Case %d:",t);
+        for(int c=0;c<K;++c){
+            if(!ok[c])continue;
+            printf(" -%c",'a'+c);
+            if(kind[c]==2)printf(" %s",val[c].c_str());
+        }
+        puts("");
+    }
+    return 0;
 }
 ```
 
@@ -210,80 +231,79 @@ int main() {
 
 标签：`分层BFS` · `最短路` · `几何判定`
 
-状态：**完整实现，已验证满分**。  
-C++17 编译通过；2 个保存样例/回归用例通过；50 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addf9b174ace1cba9a22fa2)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305643544)（民间复刻评测）。
+本地：113 组优化版、113 组 UBSan 验证通过，详见 [验证记录](../tests/201403/VALIDATION.md)。
 
 ### 题意
 
-已有 n 个路由器，另有 m 个候选安装位置，最多新增 k 个。  
-两位置欧氏距离不超过 r 时可以通讯。求已有路由器 1 到 2 最少经过多少个中转路由器，原网络保证连通。  
-$n,m\le100$，坐标绝对值不超过 $10^8$。
+已有 $n$ 个无线路由器，另有 $m$ 个候选安装位置，最多新增 $k$ 个。两点距离不超过 $r$ 即可通信，求路由器 $1$ 到 $2$ 最少经过多少个中转路由器。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403D/)。
+输入 `n m k r`，先给出已有路由器坐标，再给出候选位置。$2\le n\le100$，$1\le k\le m\le100$，$1\le r\le10^8$，坐标绝对值不超过 $10^8$。位置互异，且原网络中 $1$ 到 $2$ 已经连通。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403D)。
+输出最少中转路由器数。
 
-洛谷练习：[同题民间复刻](https://www.luogu.com.cn/problem/U281240)。
+来源：[洛谷民间题面（可提交）](https://www.luogu.com.cn/problem/U281240)；[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403D)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403D/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6addf9b174ace1cba9a22fa2)（accepted，100 分；复刻评测）。
+
+原版洛谷民间评测：[记录](https://www.luogu.com.cn/record/305643544)（accepted，100 分）。
 
 ### 题解
 
-先对所有已有与候选位置两两检查，用距离平方与 $r^2$ 比较建无向边，避免浮点误差；坐标差平方必须用 64 位。
+两两检查全部已有与候选位置，使用距离平方与 $r^2$ 比较建图，避免浮点误差；坐标差和平方使用 64 位整数。
 
-只记到某个点的最短路不够，因为它可能消耗更多新路由器名额。  
-BFS 状态设为 `(位置 u，已使用新增数 c)`。走到已有点不增加 c，走到候选点则加 1，超过 k 的状态不入队。  
-所有边消耗一步，所以第一次弹出路由器 2 时即得到最少边数；中转点数比边数少 1。
+只记录到达某点的最短路还不够，因为该路径可能消耗了更多新增名额。BFS 状态设为“位置 $u$、已使用新增数 $c$”：走到已有路由器不增加 $c$，走到候选点则加一，超过 $k$ 的状态不入队。
 
-最优路线可以取简单路径：若重复经过某点，删除中间环路只会减少长度与新增需求。  
-因此按路径经过候选点次数计数足够，不必另外记录已安装的集合。  
-所有合法简单路径都能在分层图中表达，故 BFS 最优值与原题相同。
+**正确性**
 
-设 $V=n+m$，建图 $O(V^2)$，BFS $O(kV^2)$，空间 $O(V^2+kV)$。
+最优路线可以取简单路径。若某点重复出现，删去中间环路只会减少长度及新增需求，因此按路径经过候选点的次数计数即可，无需记录已经安装的完整集合。
+
+所有合法简单路径都能在分层图中表达，各边步数均为一，故 BFS 首次取出路由器 $2$ 时得到最少边数。中转点数比边数少一。
+
+**复杂度**
+
+设 $V=n+m$，建图时间 $O(V^2)$，BFS 时间 $O(kV^2)$，空间 $O(V^2+kV)$。
 
 ### 代码
 
 独立源码：[D.cpp](D.cpp)
 
 ```cpp
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, k;
-    long long radius;
-    cin >> n >> m >> k >> radius;
-    int total = n + m;
-    vector<long long> x(total), y(total);
-    for (int i = 0; i < total; ++i)
-        cin >> x[i] >> y[i];
-    vector<vector<int>> graph(total);
-    for (int i = 0; i < total; ++i)
-        for (int j = 0; j < i; ++j) {
-            long long dx = x[i] - x[j], dy = y[i] - y[j];
-            if (dx * dx + dy * dy <= radius * radius) {
-                graph[i].push_back(j);
-                graph[j].push_back(i);
-            }
-        }
-    vector<vector<int>> distance(total, vector<int>(k + 1, -1));
-    vector<pair<int, int>> queue{{0, 0}};
-    distance[0][0] = 0;
-    for (size_t head = 0; head < queue.size(); ++head) {
-        auto [u, used] = queue[head];
-        if (u == 1) {
-            cout << distance[u][used] - 1 << '\n';
-            return 0;
-        }
-        for (int v : graph[u]) {
-            int next = used + (v >= n);
-            if (next <= k && distance[v][next] < 0) {
-                distance[v][next] = distance[u][used] + 1;
-                queue.push_back({v, next});
-            }
+typedef long long ll;
+typedef pair<int,int> P;
+const int N=210,M=110;
+int n,m,k,tot,d[N][M],head,tail;
+ll r,x[N],y[N];
+bool g[N][N];
+P q[N*M];
+int main(){
+    scanf("%d%d%d%lld",&n,&m,&k,&r);
+    tot=n+m;
+    for(int i=0;i<tot;++i){
+        scanf("%lld%lld",&x[i],&y[i]);
+        for(int j=0;j<i;++j){
+            ll dx=x[i]-x[j],dy=y[i]-y[j];
+            if(dx*dx+dy*dy<=r*r)g[i][j]=g[j][i]=1;
         }
     }
+    memset(d,-1,sizeof d);
+    d[0][0]=0;q[tail++]=P(0,0);
+    while(head<tail){
+        auto [u,c]=q[head++];
+        if(u==1){
+            printf("%d\n",d[u][c]-1);
+            return 0;
+        }
+        for(int v=0;v<tot;++v){
+            if(!g[u][v])continue;
+            int t=c+(v>=n);
+            if(t>k || d[v][t]>=0)continue;
+            d[v][t]=d[u][c]+1;
+            q[tail++]=P(v,t);
+        }
+    }
+    return 0;
 }
 ```
 
@@ -293,106 +313,139 @@ int main() {
 
 标签：`动态规划` · `资源调度` · `状态压缩`
 
-状态：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc1d874ace1cba9a218be)（复刻评测）。
+本地：158 组优化版、158 组 UBSan 验证通过，详见 [验证记录](../tests/201403/VALIDATION.md)。
 
 ### 题意
 
-有两个 CPU 和一个 GPU，$n\le40$ 个互不依赖的任务。  
-任务 $i$ 可选单 CPU、双 CPU、单 CPU 加 GPU、双 CPU 加 GPU，耗时分别为 $a_i,b_i,c_i,d_i$，均在 1 至 10 之间。  
-执行期间独占使用的设备，不能中断。求最短总完成时间。输入任务数及各任务四种耗时。
+有两个 CPU 和一个 GPU，任务之间没有依赖。每个任务可选择单 CPU、双 CPU、单 CPU 加 GPU、双 CPU 加 GPU，期间独占所用设备且不能中断。求全部任务完成所需的最短时间。
 
-来源：[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403E/)
+输入任务数 $1\le n\le40$，再输入每个任务四种模式的耗时 $a_i,b_i,c_i,d_i$，均为 $1$ 到 $10$ 的整数。
 
-原站练习：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403E)。
+输出最短总完成时间。
+
+来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201403E)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201403E/)。
+
+原版评测：[记录](https://oj.shumeng.tech/record/6addc1d874ace1cba9a218be)（accepted，100 分；复刻评测）。
 
 ### 题解
 
-**先把调度顺序化为资源负载。** 同时使用双 CPU 的任务无法与任何其他任务并行，它们可以统一挪到一个串行时段，耗时选 $\min(b_i,d_i)$。剩下的任务分别分配到两个 CPU，部分任务还占 GPU。
+**将调度转化为资源负载**
 
-设两 CPU 负载为 $x,y$，GPU 负载为 $z$，双 CPU 串行耗时为 $s$。  
-完成时间的下界是 $s+\max(x,y,z)$，而这个下界能达到：将 CPU1 上占 GPU 的任务排在最前，将 CPU2 上占 GPU 的任务排在最后；  
-两段 GPU 任务总长度不超过 $\max(x,y,z)$，不会冲突，其余 CPU 任务放在各自剩余位置即可。
+使用双 CPU 的任务无法与其他任务并行，可以统一挪到一个串行时段，耗时选择 $\min(b_i,d_i)$。其余任务分别分配到两个 CPU，其中部分还占用 GPU。
 
-因此 DP 只需记 `dp[x][y][z]` 为处理若干任务后达到这三个负载所需的最小 $s$。  
-每题有五个转移：单 CPU 放到 1 或 2，CPU+GPU 放到 1 或 2，或者用双 CPU 串行执行。  
-交换两个 CPU 不改变答案，统一令 $x\le y$ 合并对称状态。
+设两 CPU 的负载为 $x,y$，GPU 负载为 $z$，双 CPU 任务的串行时间为 $s$。完成时间至少为
 
-**把状态范围收紧。** 先计算仅用单 CPU 分配时的最优最大负载（普通背包），再与全部双 CPU 串行执行比较，得到已知上界 $U$。  
-只需保存 $s+\max(x,y,z)<U$ 的状态，最后也保留答案 $U$；被剪掉的状态以后负载只增，不可能改进上界。  
-$a_i\le10,n\le40$ 保证 $U\le200$。若 $c_i\ge a_i$，CPU+GPU 方式被单 CPU 支配；若 $\min(b_i,d_i)\ge a_i$，双 CPU 方式也被单 CPU 支配，可省略。
+$$s+\max(x,y,z).$$
 
-代码用两个扁平数组滚动，并只枚举实际到达的状态。**复杂度：** 最坏 $O(nU^3)$ 时间、$O(U^3)$ 空间，实际受支配删除和可达状态限制。关键证明是上述调度构造；只写资源总量下界而不证明可排程，不能构成完整题解。
+该下界可以达到：记 $T=\max(x,y,z)$，将 CPU1 上占 GPU 的任务排在最前，将 CPU2 上占 GPU 的任务排在最后。两段 GPU 任务的总长度为 $z\le T$，因此不重叠；其他任务放在各 CPU 剩余位置中，能在 $T$ 内结束。最后再加入双 CPU 的串行时段。
+
+**对三种负载做 DP**
+
+定义 `dp[x][y][z]` 为处理若干任务、达到三个负载时的最小串行时间 $s$。每个任务有五种转移：单 CPU 分配给 CPU1 或 CPU2，CPU 加 GPU 分配给 CPU1 或 CPU2，以及双 CPU 串行执行。
+
+交换两个 CPU 不改变答案，统一令 $x\le y$ 合并对称状态。DP 枚举全部模式分配，而上述构造说明每个负载状态都能实现，因此最小目标值就是最优调度时间。
+
+**收紧状态范围**
+
+先用普通子集背包求出仅使用单 CPU 时的最优最大负载，再与全部任务双 CPU 串行执行比较，得到可行上界 $U$。只保存 $s+\max(x,y,z)<U$ 的状态，答案初值保留 $U$。
+
+各负载以后只增不减，被剪掉的状态不可能再改进上界。把最多四十个任务分为各不超过二十个的两组，每组总时长不超过 $200$，因此 $U\le200$。
+
+若 $c_i\ge a_i$，CPU 加 GPU 被单 CPU 支配；若 $\min(b_i,d_i)\ge a_i$，双 CPU 方式也被单 CPU 支配，可跳过这些转移。
+
+**实现与复杂度**
+
+用两个扁平数组滚动，只枚举实际到达的状态，并在交换前清掉旧状态。串行耗时最多 $400$，以 16 位无符号数保存，使用对应的重复字节无穷大 $\mathtt{0x3f3f}$，仍保留初态 `dp[0]=0`。
+
+最坏时间 $O(nU^3)$，空间 $O(U^3)$。负载下界可排程的构造是关键，不能只写资源总量下界而省略可行性证明。
 
 ### 代码
 
 独立源码：[E.cpp](E.cpp)
 
 ```cpp
-#include <algorithm>
-#include <array>
-#include <iostream>
-#include <numeric>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    cin >> n;
-    vector<array<int, 4>> jobs(n);
-    int sum = 0, serial = 0;
-    for (auto &job : jobs) {
-        for (int &x : job)
-            cin >> x;
-        sum += job[0];
-        serial += min(job[1], job[3]);
+typedef unsigned short us;
+const int N=45,M=410,K=200,V=K*K*K;
+const us INF=0x3f3f;
+struct job{
+    int a,b,c,d;
+}a[N];
+int n,sum,tot,lim,bs,vol,cnt;
+bool ok[M];
+us f[V],g[V],*dp=f,*ndp=g;
+int x[V],y[V],*cur=x,*nxt=y;
+void put(int x,int y,int z,int cost){
+    if(cost+max({x,y,z})>=lim)return;
+    if(x>y)swap(x,y);
+    int id=(x*bs+y)*bs+z;
+    if(ndp[id]==INF)nxt[cnt++]=id;
+    ndp[id]=min<int>(ndp[id],cost);
+}
+int main(){
+    scanf("%d",&n);
+    for(int i=0;i<n;++i){
+        job &v=a[i];
+        scanf("%d%d%d%d",&v.a,&v.b,&v.c,&v.d);
+        sum+=v.a;tot+=min(v.b,v.d);
     }
-    vector<bool> possible(sum + 1);
-    possible[0] = true;
-    for (auto job : jobs)
-        for (int s = sum; s >= job[0]; --s)
-            possible[s] = possible[s] || possible[s - job[0]];
-    int bound = serial;
-    for (int s = 0; s <= sum; ++s)
-        if (possible[s])
-            bound = min(bound, max(s, sum - s));
-    int base = bound, volume = base * base * base;
-    const unsigned short INF = 1000;
-    vector<unsigned short> dp(volume, INF), next(volume, INF);
-    vector<int> active{0}, following;
-    dp[0] = 0;
-    for (auto job : jobs) {
-        int a = job[0], c = job[2], both = min(job[1], job[3]);
-        following.clear();
-        auto put = [&](int x, int y, int z, int cost) {
-            if (cost + max({x, y, z}) >= bound)
-                return;
-            if (x > y)
-                swap(x, y);
-            int id = (x * base + y) * base + z;
-            if (next[id] == INF)
-                following.push_back(id);
-            next[id] = min<int>(next[id], cost);
-        };
-        for (int id : active) {
-            int z = id % base, y = id / base % base, x = id / base / base, cost = dp[id];
-            put(x + a, y, z, cost);
-            put(x, y + a, z, cost);
-            if (c < a) {
-                put(x + c, y, z + c, cost);
-                put(x, y + c, z + c, cost);
-            }
-            if (both < a)
-                put(x, y, z, cost + both);
+    ok[0]=1;
+    for(int i=0;i<n;++i){
+        for(int s=sum;s>=a[i].a;--s){
+            ok[s]=(ok[s] || ok[s-a[i].a]);
         }
-        for (int id : active)
-            dp[id] = INF;
-        dp.swap(next);
-        active.swap(following);
     }
-    int answer = bound;
-    for (int id : active)
-        answer = min(answer, int(dp[id]) + max({id % base, id / base % base, id / base / base}));
-    cout << answer << '\n';
+    lim=tot;
+    for(int s=0;s<=sum;++s){
+        if(ok[s])lim=min(lim,max(s,sum-s));
+    }
+    bs=lim;vol=bs*bs*bs;
+    memset(dp,INF,vol*sizeof *dp);
+    memset(ndp,INF,vol*sizeof *ndp);
+    dp[0]=0;cur[0]=0;
+    int len=1;
+    for(int i=0;i<n;++i){
+        job &v=a[i];
+        int both=min(v.b,v.d);
+        cnt=0;
+        for(int j=0;j<len;++j){
+            int id=cur[j],z=id%bs;
+            int y=id/bs%bs,x=id/bs/bs,cost=dp[id];
+            put(x+v.a,y,z,cost);put(x,y+v.a,z,cost);
+            if(v.c<v.a){
+                put(x+v.c,y,z+v.c,cost);
+                put(x,y+v.c,z+v.c,cost);
+            }
+            if(both<v.a)put(x,y,z,cost+both);
+        }
+        for(int j=0;j<len;++j){
+            dp[cur[j]]=INF;
+        }
+        swap(dp,ndp);swap(cur,nxt);
+        len=cnt;
+    }
+    int ans=lim;
+    for(int j=0;j<len;++j){
+        int id=cur[j],z=id%bs;
+        int y=id/bs%bs,x=id/bs/bs;
+        ans=min(ans,dp[id]+max({x,y,z}));
+    }
+    printf("%d\n",ans);
+    return 0;
 }
 ```
+
+<!-- local-validation-attachments:start -->
+
+### 验证附件
+
+- [VALIDATION.md](../tests/201403/VALIDATION.md)
+- [cases.json](../tests/201403/cases.json)
+- [compile.json](../tests/201403/compile.json)
+- [current-sources.json](../tests/201403/current-sources.json)
+- [extra.py](../tests/201403/extra.py)
+- [names-followup.json](../tests/201403/names-followup.json)
+- [summary.json](../tests/201403/summary.json)
+
+<!-- local-validation-attachments:end -->

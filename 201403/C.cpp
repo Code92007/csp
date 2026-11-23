@@ -1,41 +1,39 @@
-#include <iostream>
-#include <map>
-#include <sstream>
-#include <string>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    string format, line;
-    int n;
-    cin >> format >> n;
-    int kind[26] = {};
-    for (size_t i = 0; i < format.size(); i++)
-        if (format[i] != ':')
-            kind[format[i] - 'a'] = i + 1 < format.size() && format[i + 1] == ':' ? 2 : 1;
-    getline(cin, line);
-    for (int test = 1; test <= n; test++) {
-        getline(cin, line);
-        istringstream in(line);
-        string word;
-        in >> word;
-        map<char, string> found;
-        while (in >> word) {
-            if (word.size() != 2 || word[0] != '-' || word[1] < 'a' || word[1] > 'z' ||
-                !kind[word[1] - 'a'])
-                break;
-            char c = word[1];
-            string value;
-            if (kind[c - 'a'] == 2 && !(in >> value))
-                break;
-            found[c] = value;
-        }
-        cout << "Case " << test << ':';
-        for (auto [c, value] : found) {
-            cout << " -" << c;
-            if (kind[c - 'a'] == 2)
-                cout << ' ' << value;
-        }
-        cout << '\n';
+const int N=1010,M=60,K=26;
+int n,kind[K];
+bool ok[K];
+char fmt[M],s[N];
+string val[K];
+int main(){
+    scanf("%s%d",fmt,&n);
+    for(int i=0;fmt[i];++i){
+        if(fmt[i]==':')continue;
+        kind[fmt[i]-'a']=fmt[i+1]==':'?2:1;
     }
+    fgets(s,N,stdin);
+    for(int t=1;t<=n;++t){
+        fgets(s,N,stdin);
+        memset(ok,0,sizeof ok);
+        istringstream in(s);
+        string w;
+        in>>w;
+        while(in>>w){
+            if(w.size()!=2 || w[0]!='-')break;
+            if(w[1]<'a' || w[1]>'z')break;
+            int c=w[1]-'a';
+            if(!kind[c])break;
+            string v;
+            if(kind[c]==2 && !(in>>v))break;
+            ok[c]=1;val[c]=v;
+        }
+        printf("Case %d:",t);
+        for(int c=0;c<K;++c){
+            if(!ok[c])continue;
+            printf(" -%c",'a'+c);
+            if(kind[c]==2)printf(" %s",val[c].c_str());
+        }
+        puts("");
+    }
+    return 0;
 }

@@ -1,0 +1,178 @@
+{
+  "contest": "201403",
+  "distinct_cases": 539,
+  "results": {
+    "opt": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 109,
+        "E:retained_independent": 150,
+        "A:saved": 2,
+        "B:saved": 2,
+        "C:saved": 2,
+        "D:saved": 2,
+        "E:saved": 2,
+        "A:stress": 1,
+        "C:boundary": 1,
+        "D:boundary": 1,
+        "D:stress": 1,
+        "E:stress": 6
+      },
+      "total": 539,
+      "seconds": 3.407,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "500 values; 250 opposite pairs",
+          "seconds": 0.0022
+        },
+        {
+          "problem": "D",
+          "label": "200 positions; all 100 candidate layers",
+          "seconds": 0.0042
+        },
+        {
+          "problem": "E",
+          "label": "two equal CPU loads; U=200",
+          "seconds": 0.0046
+        },
+        {
+          "problem": "E",
+          "label": "GPU and CPU overlap",
+          "seconds": 0.0057
+        },
+        {
+          "problem": "E",
+          "label": "dual CPU serial",
+          "seconds": 0.0028
+        },
+        {
+          "problem": "E",
+          "label": "single CPU dominates",
+          "seconds": 0.0023
+        },
+        {
+          "problem": "E",
+          "label": "40 mixed-resource jobs; independent count allocation",
+          "seconds": 0.0065
+        },
+        {
+          "problem": "E",
+          "label": "40 mixed-resource jobs; independent count allocation",
+          "seconds": 0.0044
+        }
+      ]
+    },
+    "ubsan": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 100,
+        "C:retained_independent": 100,
+        "D:retained_independent": 109,
+        "E:retained_independent": 150,
+        "A:saved": 2,
+        "B:saved": 2,
+        "C:saved": 2,
+        "D:saved": 2,
+        "E:saved": 2,
+        "A:stress": 1,
+        "C:boundary": 1,
+        "D:boundary": 1,
+        "D:stress": 1,
+        "E:stress": 6
+      },
+      "total": 539,
+      "seconds": 4.942,
+      "stresses": [
+        {
+          "problem": "A",
+          "label": "500 values; 250 opposite pairs",
+          "seconds": 0.0049
+        },
+        {
+          "problem": "D",
+          "label": "200 positions; all 100 candidate layers",
+          "seconds": 0.0071
+        },
+        {
+          "problem": "E",
+          "label": "two equal CPU loads; U=200",
+          "seconds": 0.0065
+        },
+        {
+          "problem": "E",
+          "label": "GPU and CPU overlap",
+          "seconds": 0.009
+        },
+        {
+          "problem": "E",
+          "label": "dual CPU serial",
+          "seconds": 0.0048
+        },
+        {
+          "problem": "E",
+          "label": "single CPU dominates",
+          "seconds": 0.0042
+        },
+        {
+          "problem": "E",
+          "label": "40 mixed-resource jobs; independent count allocation",
+          "seconds": 0.0149
+        },
+        {
+          "problem": "E",
+          "label": "40 mixed-resource jobs; independent count allocation",
+          "seconds": 0.0078
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "A": "54d1cb07286ac63df531463a356f83997e19851dda626c9adca41c78e0186586",
+    "B": "0681f45fd8d972c9a42b87d8f64bdbc4c18b88568301990c6ec3f41f938b9470",
+    "C": "0867e0bab71f1a6634739d9386dcfc735358afc700fb873120d0efafc4a2243a",
+    "D": "eadefb37c29f5073a705550d0b81140ea299cf0caf31d3f2cf59157e413864d8",
+    "E": "dee6811f8e0bd6ce17c970a5ce793eda2f3bce7c483bd94c1b3886ab3f361f72"
+  },
+  "cases_sha256": "f6d43e03f5404ea9b2f6ec5595f40f2e24139a520a499cdd411a9852210d8e51",
+  "original_evaluations": {
+    "A": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addcd3974ace1cba9a21f70",
+      "source_sha256": "269740413c10bf630470510697040ed0b65d7b69454f456b2806f8942455b030"
+    },
+    "B": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addc14d74ace1cba9a2189b"
+    },
+    "C": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addf69574ace1cba9a22df8",
+      "source_sha256": "441729975e87fcc5b4706c6cb63d0c5a202463d9b7f382dfe7e30f7290ea793b"
+    },
+    "D": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addf9b174ace1cba9a22fa2",
+      "source_sha256": "aba51d8d53cc594a3a946db1144c35d9a239d50198a9b9186efb87c8c058b8ac"
+    },
+    "E": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addc1d874ace1cba9a218be"
+    }
+  },
+  "refactored_online_submission": false,
+  "oracle": "Repository independent Python generators captured by tools/nightly/retained_oracles.py; saved cases and independently generated boundary/stress expectations are also replayed. No output is taken from the original executable.",
+  "platform_note": "Apple Clang C++17 uses a local standard-header shim for bits/stdc++.h. Timings are local, not official judge results."
+}

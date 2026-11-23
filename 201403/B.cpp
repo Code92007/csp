@@ -1,35 +1,36 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Window {
-    int x1, y1, x2, y2, id;
-};
-int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<Window> w(n);
-    for (int i = 0; i < n; i++) {
-        auto &v = w[i];
-        cin >> v.x1 >> v.y1 >> v.x2 >> v.y2;
-        v.id = i + 1;
+const int N=15;
+struct node{
+    int l,b,r,t,id;
+}a[N];
+int n,m,x,y;
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=0;i<n;++i){
+        node &v=a[i];
+        scanf("%d%d%d%d",&v.l,&v.b,&v.r,&v.t);
+        v.id=i+1;
     }
-    while (m--) {
-        int x, y, found = -1;
-        cin >> x >> y;
-        for (int i = n - 1; i >= 0; i--) {
-            auto v = w[i];
-            if (v.x1 <= x && x <= v.x2 && v.y1 <= y && y <= v.y2) {
-                found = i;
+    while(m--){
+        scanf("%d%d",&x,&y);
+        int p=-1;
+        for(int i=n-1;i>=0;--i){
+            node &v=a[i];
+            if(v.l<=x && x<=v.r && v.b<=y && y<=v.t){
+                p=i;
                 break;
             }
         }
-        if (found < 0)
-            cout << "IGNORED\n";
-        else {
-            auto v = w[found];
-            cout << v.id << '\n';
-            w.erase(w.begin() + found);
-            w.push_back(v);
+        if(p<0)puts("IGNORED");
+        else{
+            node v=a[p];
+            printf("%d\n",v.id);
+            for(int i=p;i<n-1;++i){
+                a[i]=a[i+1];
+            }
+            a[n-1]=v;
         }
     }
+    return 0;
 }

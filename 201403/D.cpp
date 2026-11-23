@@ -1,41 +1,37 @@
-#include <iostream>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, k;
-    long long radius;
-    cin >> n >> m >> k >> radius;
-    int total = n + m;
-    vector<long long> x(total), y(total);
-    for (int i = 0; i < total; ++i)
-        cin >> x[i] >> y[i];
-    vector<vector<int>> graph(total);
-    for (int i = 0; i < total; ++i)
-        for (int j = 0; j < i; ++j) {
-            long long dx = x[i] - x[j], dy = y[i] - y[j];
-            if (dx * dx + dy * dy <= radius * radius) {
-                graph[i].push_back(j);
-                graph[j].push_back(i);
-            }
-        }
-    vector<vector<int>> distance(total, vector<int>(k + 1, -1));
-    vector<pair<int, int>> queue{{0, 0}};
-    distance[0][0] = 0;
-    for (size_t head = 0; head < queue.size(); ++head) {
-        auto [u, used] = queue[head];
-        if (u == 1) {
-            cout << distance[u][used] - 1 << '\n';
-            return 0;
-        }
-        for (int v : graph[u]) {
-            int next = used + (v >= n);
-            if (next <= k && distance[v][next] < 0) {
-                distance[v][next] = distance[u][used] + 1;
-                queue.push_back({v, next});
-            }
+typedef long long ll;
+typedef pair<int,int> P;
+const int N=210,M=110;
+int n,m,k,tot,d[N][M],head,tail;
+ll r,x[N],y[N];
+bool g[N][N];
+P q[N*M];
+int main(){
+    scanf("%d%d%d%lld",&n,&m,&k,&r);
+    tot=n+m;
+    for(int i=0;i<tot;++i){
+        scanf("%lld%lld",&x[i],&y[i]);
+        for(int j=0;j<i;++j){
+            ll dx=x[i]-x[j],dy=y[i]-y[j];
+            if(dx*dx+dy*dy<=r*r)g[i][j]=g[j][i]=1;
         }
     }
+    memset(d,-1,sizeof d);
+    d[0][0]=0;q[tail++]=P(0,0);
+    while(head<tail){
+        auto [u,c]=q[head++];
+        if(u==1){
+            printf("%d\n",d[u][c]-1);
+            return 0;
+        }
+        for(int v=0;v<tot;++v){
+            if(!g[u][v])continue;
+            int t=c+(v>=n);
+            if(t>k || d[v][t]>=0)continue;
+            d[v][t]=d[u][c]+1;
+            q[tail++]=P(v,t);
+        }
+    }
+    return 0;
 }
