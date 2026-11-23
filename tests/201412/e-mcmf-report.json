@@ -1,0 +1,166 @@
+{
+  "contest": "201412",
+  "problem": "E",
+  "source_sha256": "2e79fb9fc9a3ad92ec794ce610a4396df0bcf0670ba5c48cbc5a7b47db55bf6f",
+  "different_inputs": 354,
+  "categories": {
+    "saved_sample": 1,
+    "additional_independent": 221,
+    "constructive_stress": 1,
+    "balanced_inventory_dp": 120,
+    "statement_sample": 1,
+    "boundary_zero_need": 1,
+    "robustness_infeasible_outside_promise": 1,
+    "full_size_assignment_oracle": 4,
+    "full_size_shortest_path_oracle": 1,
+    "full_size_storage_oracle": 2,
+    "full_size_local_balance_oracle": 1
+  },
+  "runs": [
+    {
+      "mode": "O2",
+      "cases": 354,
+      "counts": {
+        "saved_sample": 1,
+        "additional_independent": 221,
+        "constructive_stress": 1,
+        "balanced_inventory_dp": 120,
+        "statement_sample": 1,
+        "boundary_zero_need": 1,
+        "robustness_infeasible_outside_promise": 1,
+        "full_size_assignment_oracle": 4,
+        "full_size_shortest_path_oracle": 1,
+        "full_size_storage_oracle": 2,
+        "full_size_local_balance_oracle": 1
+      },
+      "seconds": 1.5106054170000003,
+      "stress": [
+        {
+          "kind": "constructive_stress",
+          "seconds": 0.02903754199999975,
+          "expected": "0"
+        },
+        {
+          "kind": "full_size_assignment_oracle",
+          "seconds": 0.034252791999999754,
+          "expected": "1025500"
+        },
+        {
+          "kind": "full_size_assignment_oracle",
+          "seconds": 0.03245445900000021,
+          "expected": "983500"
+        },
+        {
+          "kind": "full_size_assignment_oracle",
+          "seconds": 0.03240937499999985,
+          "expected": "868700"
+        },
+        {
+          "kind": "full_size_assignment_oracle",
+          "seconds": 0.03304499999999999,
+          "expected": "867300"
+        },
+        {
+          "kind": "full_size_shortest_path_oracle",
+          "seconds": 0.004076709000000012,
+          "expected": "35000"
+        },
+        {
+          "kind": "full_size_storage_oracle",
+          "seconds": 0.00902779099999984,
+          "expected": "10000"
+        },
+        {
+          "kind": "full_size_storage_oracle",
+          "seconds": 0.010415708000000024,
+          "expected": "20000"
+        },
+        {
+          "kind": "full_size_local_balance_oracle",
+          "seconds": 0.02843487499999986,
+          "expected": "0"
+        }
+      ]
+    },
+    {
+      "mode": "UBSan",
+      "cases": 354,
+      "counts": {
+        "saved_sample": 1,
+        "additional_independent": 221,
+        "constructive_stress": 1,
+        "balanced_inventory_dp": 120,
+        "statement_sample": 1,
+        "boundary_zero_need": 1,
+        "robustness_infeasible_outside_promise": 1,
+        "full_size_assignment_oracle": 4,
+        "full_size_shortest_path_oracle": 1,
+        "full_size_storage_oracle": 2,
+        "full_size_local_balance_oracle": 1
+      },
+      "seconds": 2.1741730420000005,
+      "stress": [
+        {
+          "kind": "constructive_stress",
+          "seconds": 0.041210291999999704,
+          "expected": "0"
+        },
+        {
+          "kind": "full_size_assignment_oracle",
+          "seconds": 0.04398824999999995,
+          "expected": "1025500"
+        },
+        {
+          "kind": "full_size_assignment_oracle",
+          "seconds": 0.04262691700000065,
+          "expected": "983500"
+        },
+        {
+          "kind": "full_size_assignment_oracle",
+          "seconds": 0.04104500000000044,
+          "expected": "868700"
+        },
+        {
+          "kind": "full_size_assignment_oracle",
+          "seconds": 0.04279654099999952,
+          "expected": "867300"
+        },
+        {
+          "kind": "full_size_shortest_path_oracle",
+          "seconds": 0.007425750000000342,
+          "expected": "35000"
+        },
+        {
+          "kind": "full_size_storage_oracle",
+          "seconds": 0.011228208999999545,
+          "expected": "10000"
+        },
+        {
+          "kind": "full_size_storage_oracle",
+          "seconds": 0.011869292000000087,
+          "expected": "20000"
+        },
+        {
+          "kind": "full_size_local_balance_oracle",
+          "seconds": 0.0372830000000004,
+          "expected": "0"
+        }
+      ]
+    }
+  ],
+  "compilation": {
+    "O2": "passed without diagnostics",
+    "UBSan": "passed without diagnostics"
+  },
+  "capacity": {
+    "vertices_max": 702,
+    "residual_arcs_max": 18200,
+    "first_edge_index": 0,
+    "last_edge_index_max": 18199,
+    "N": 710,
+    "M": 18210
+  },
+  "oracle": "Prior exhaustive cyclic inventory/production DP plus 120 legally balanced instances; Floyd shortest distances and Hungarian weekly transportation assignment; analytic max-size storage/local-balance cases.",
+  "algorithm": "Successive shortest augmenting paths by SPFA, augmenting the complete bottleneck; int capacities, ll costs/distances/answer, circular N-slot queue, i^1 residual pairs.",
+  "note": "No online resubmission. This report concerns only E; original C 90 Wrong Answer remains unresolved. One infeasible robustness case intentionally lies outside the promised feasible domain."
+}

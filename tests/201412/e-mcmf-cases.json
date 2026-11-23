@@ -1,0 +1,2348 @@
+[
+  {
+    "problem": "E",
+    "kind": "saved_sample",
+    "input": "2 1\n0 0 0 0 0 0 4 0 0 0 0 0 0 0 4 3\n0 0 0 0 0 0 0 4 0 0 0 0 0 0 4 1\n1 2 2\n",
+    "output": "12\n"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 3\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5\n1 2 10\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 2 2 0 0 1 0 1 1 0 0 1 1 2\n0 0 2 2 1 2 0 0 0 1 0 0 1 0 2 3\n1 2 3\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 0 0 0 0 1 1 1 1 0 0 1 2 2\n2 0 2 1 2 2 1 1 0 1 0 1 1 1 1 2\n1 2 1\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 0 0 0 1 1 0 1 1 0 1 1 2 5\n0 2 0 0 0 0 2 1 0 1 0 0 0 1 1 3\n1 2 4\n",
+    "output": "31",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 2 1 0 1 0 1 0 1 0 1 1 1 2 1\n2 1 1 0 0 1 2 1 1 1 0 0 0 1 1 5\n1 2 3\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 0 1 2 2 1 1 0 0 1 0 0 1 3\n0 2 0 0 2 2 0 0 1 0 0 1 0 1 2 1\n1 2 3\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 0 2 1 2 1 0 0 0 0 1 1 1 2\n0 2 0 2 2 0 1 1 1 1 0 1 0 1 1 5\n1 2 5\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 2 2 2 1 1 1 1 0 1 0 0 1 2 1\n2 1 1 0 0 0 1 1 0 0 1 1 0 1 2 2\n1 2 3\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 2 2 1 2 0 0 1 0 1 1 0 2 2\n2 0 0 2 2 2 2 0 1 1 1 1 1 1 1 5\n1 2 2\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 2 1 1 0 0 0 1 1 1 1 1 1 1\n1 1 1 0 0 0 1 0 0 1 0 0 1 0 2 4\n1 2 1\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 0 0 2 1 0 1 0 0 1 0 0 2 5\n1 0 1 0 1 0 2 0 0 0 0 0 0 0 1 5\n1 2 3\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 2 1 1 0 0 1 0 1 0 0 0 1 2\n1 1 1 1 2 2 2 0 1 0 1 0 0 0 0 4\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 1 1 0 0 1 0 0 0 1 0 1 0 0 5\n2 2 2 2 0 2 1 1 1 1 0 0 1 1 0 3\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 2 1 1 1 1 0 0 1 1 0 1 2 1\n1 1 1 1 1 2 2 0 1 0 0 0 0 0 2 5\n1 2 5\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 2 2 2 0 1 0 0 0 1 0 0 2 3\n0 2 2 2 2 2 0 0 1 0 0 1 1 1 0 4\n1 2 4\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 0 2 0 0 0 1 1 0 0 1 1 2 1\n1 2 2 0 0 0 0 1 0 0 0 0 0 1 1 3\n1 2 4\n",
+    "output": "16",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 0 1 1 0 1 0 0 1 1 0 1 1 5\n1 1 1 0 1 0 1 1 1 1 0 0 1 1 2 2\n1 2 2\n",
+    "output": "17",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 0 0 2 1 0 0 1 0 0 1 1 2 3\n2 1 2 2 0 0 2 0 1 1 1 1 0 1 0 3\n1 2 1\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 0 1 2 0 1 0 0 1 0 0 0 2 3\n2 1 1 0 1 1 2 0 1 1 0 0 0 0 0 4\n1 2 5\n",
+    "output": "8",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 2 2 1 1 0 0 0 0 0 0 1 0 3\n0 2 2 2 1 1 1 1 1 0 1 1 1 1 0 5\n1 2 3\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 2 1 2 0 1 0 1 0 0 0 0 1 3\n2 0 0 2 1 1 2 1 0 0 0 0 1 0 2 1\n1 2 5\n",
+    "output": "8",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 2 0 2 1 0 1 0 1 1 1 0 0 4\n1 0 2 0 0 2 0 0 0 0 0 0 1 0 2 3\n1 2 2\n",
+    "output": "12",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 0 2 2 2 1 0 0 0 1 1 0 2 2\n2 0 0 2 0 1 0 0 0 1 1 0 1 1 2 3\n1 2 1\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 2 0 2 2 0 0 0 1 0 1 0 0 2\n2 0 0 0 2 0 0 1 0 1 0 1 0 1 1 1\n1 2 5\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 0 0 2 1 0 1 0 0 0 1 1 5\n0 0 2 0 1 0 1 0 1 0 0 0 1 0 2 3\n1 2 5\n",
+    "output": "8",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 2 1 0 1 0 1 0 0 0 0 1 2 2\n1 0 1 2 1 2 1 1 1 1 0 0 0 0 1 4\n1 2 2\n",
+    "output": "16",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 1 1 0 0 0 1 0 1 1 0 1 2 3\n1 2 2 0 0 1 1 1 0 1 0 1 0 0 2 5\n1 2 5\n",
+    "output": "18",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 2 1 2 1 0 0 1 0 0 0 0 2 5\n0 2 2 0 1 1 1 0 1 0 1 0 0 0 0 4\n1 2 3\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 1 0 1 0 0 0 0 1 0 1 0 1 2 1\n0 2 1 0 1 1 1 0 1 0 1 0 0 0 0 3\n1 2 4\n",
+    "output": "13",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 0 2 1 1 0 0 0 0 0 0 1 2 4\n0 0 2 2 0 2 0 1 0 0 1 0 1 1 2 4\n1 2 4\n",
+    "output": "16",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 0 0 1 2 1 0 0 0 1 0 1 0 2\n0 0 2 1 0 0 0 1 0 1 0 0 1 0 2 2\n1 2 5\n",
+    "output": "19",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 1 2 0 2 0 0 1 1 0 1 1 2 1\n0 1 1 1 2 2 1 0 0 0 1 1 0 1 2 1\n1 2 3\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 0 1 2 0 1 1 0 0 0 0 0 2 4\n2 1 2 1 1 0 0 1 0 0 0 0 1 0 2 5\n1 2 4\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 2 0 1 0 1 1 0 1 0 1 1 2 2\n0 1 2 2 1 1 0 0 0 0 0 1 1 1 2 1\n1 2 2\n",
+    "output": "8",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 0 0 0 2 1 1 1 0 0 0 0 2 5\n0 2 1 2 2 2 0 1 0 1 0 1 0 1 2 2\n1 2 2\n",
+    "output": "11",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 0 1 2 2 0 1 0 1 0 1 1 0 3\n1 0 1 0 2 2 1 0 0 0 1 1 1 0 2 4\n1 2 1\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 1 1 1 0 0 0 1 1 0 0 1 1 4\n0 0 0 0 0 0 0 0 1 1 1 0 0 1 2 3\n1 2 4\n",
+    "output": "45",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 2 2 0 2 2 0 0 0 1 1 0 0 0 1\n0 1 0 0 2 2 1 0 1 0 0 1 0 0 1 3\n1 2 3\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 0 1 0 2 1 0 0 0 0 1 1 2 5\n2 2 0 1 0 2 0 1 1 0 1 0 1 0 2 1\n1 2 3\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 1 2 0 0 1 1 0 0 0 1 0 0 2 1\n2 2 1 1 1 0 1 0 0 1 1 0 1 1 2 5\n1 2 5\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 2 0 0 0 0 0 0 0 1 0 0 2 2\n2 1 0 0 2 1 0 0 1 0 1 1 1 1 2 3\n1 2 2\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 0 2 0 1 1 1 0 0 1 1 1 0 5\n0 1 1 0 2 2 1 0 1 0 0 0 0 0 2 2\n1 2 4\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 1 1 0 2 0 0 1 1 0 0 1 1 3\n1 2 2 0 0 1 0 0 1 1 0 1 1 0 2 2\n1 2 2\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 1 0 0 0 1 0 0 1 0 0 0 0 2\n1 0 1 1 1 2 1 1 0 0 1 0 1 0 1 3\n1 2 4\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 2 2 2 0 1 0 1 0 1 0 1 2 4\n1 2 2 0 2 2 2 1 1 0 1 0 1 0 2 4\n1 2 2\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 0 0 2 2 0 0 0 0 0 1 0 0 5\n0 1 1 1 0 1 0 0 0 1 1 0 0 1 2 4\n1 2 1\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 2 0 2 1 0 0 1 0 1 1 0 1 5\n2 0 2 0 1 1 0 1 1 0 0 1 1 0 2 1\n1 2 5\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 1 0 0 2 0 1 0 1 1 1 1 1 3\n1 2 0 1 1 0 1 1 1 0 1 0 1 1 1 3\n1 2 1\n",
+    "output": "20",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 1 1 1 2 1 0 1 0 1 1 1 1 1 1\n0 1 1 1 1 2 0 1 0 1 0 1 0 1 0 1\n1 2 3\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 2 2 1 2 1 0 1 1 0 0 1 2 2\n1 0 1 2 0 1 1 0 1 0 0 0 0 1 2 4\n1 2 5\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 0 1 2 0 1 1 0 1 0 0 1 1 5\n1 1 1 2 1 0 2 1 1 0 0 1 0 0 2 1\n1 2 4\n",
+    "output": "20",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 2 2 2 2 0 0 1 1 1 1 0 1 1\n1 1 1 0 1 2 0 1 1 1 1 1 0 1 2 1\n1 2 4\n",
+    "output": "8",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 1 0 0 0 0 0 1 0 0 1 0 1 3\n0 1 2 2 2 0 1 0 0 0 0 1 1 0 2 4\n1 2 4\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 1 1 0 0 1 0 0 0 1 0 0 1 4\n1 0 2 2 1 1 1 1 0 0 0 0 0 0 0 5\n1 2 5\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 2 0 1 1 0 1 0 0 0 1 0 1 4\n2 2 2 2 2 1 2 1 1 1 0 1 0 0 2 1\n1 2 2\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 1 1 0 1 0 0 1 0 0 0 0 1 1 1\n0 2 0 2 1 1 1 0 0 0 1 0 0 0 2 1\n1 2 3\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 2 0 2 0 2 1 1 1 1 0 1 1 1 2\n2 0 2 0 0 1 1 0 0 0 1 0 1 1 1 2\n1 2 3\n",
+    "output": "13",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 1 2 2 0 1 1 0 1 0 0 1 2 4\n0 1 2 1 2 1 1 1 0 1 1 0 0 0 1 5\n1 2 3\n",
+    "output": "17",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 2 0 0 0 1 0 0 1 1 0 1 1 1\n2 1 0 0 2 1 1 0 0 1 1 1 0 1 1 2\n1 2 4\n",
+    "output": "15",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 1 0 2 2 1 0 0 0 1 1 0 0 2 5\n1 2 1 2 2 2 0 0 0 1 0 1 1 0 1 2\n1 2 3\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 1 2 2 2 2 1 0 0 0 0 1 1 1 5\n2 2 0 0 0 0 2 1 0 0 0 1 1 1 0 2\n1 2 5\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 2 0 1 0 2 1 0 0 1 1 1 0 2 1\n1 2 0 0 2 2 0 1 1 0 1 1 0 1 2 4\n1 2 1\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 2 2 2 2 1 1 0 1 1 0 1 1 2\n0 1 0 0 1 1 2 1 0 1 1 1 0 1 2 2\n1 2 5\n",
+    "output": "11",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 1 0 0 1 0 1 0 0 1 1 1 1 2\n2 2 2 2 2 2 0 1 0 0 1 1 0 0 1 4\n1 2 3\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 0 2 0 2 0 1 0 0 0 0 1 2 5\n1 0 0 0 1 0 2 1 1 1 0 0 0 0 2 1\n1 2 3\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 2 2 1 1 1 1 0 1 0 1 0 0 5\n1 0 2 1 0 0 2 1 0 1 1 1 1 1 2 3\n1 2 2\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 0 2 0 0 0 1 1 1 0 0 1 0 3\n2 1 0 0 2 1 1 0 0 0 1 0 0 1 2 4\n1 2 1\n",
+    "output": "19",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 1 0 0 1 1 0 1 1 0 1 0 0 3\n1 1 1 1 1 2 1 1 0 1 1 0 0 0 2 1\n1 2 1\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 2 0 0 2 1 0 1 1 0 1 1 2 3\n1 1 0 2 1 2 1 0 0 0 1 1 0 0 0 1\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 1 2 1 2 1 1 0 1 1 1 1 2 4\n1 2 2 2 0 2 1 0 1 0 1 1 1 0 2 2\n1 2 2\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 1 2 0 1 1 1 0 0 0 1 1 2 3\n2 2 2 2 0 1 0 0 1 1 1 1 0 1 1 5\n1 2 1\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 2 1 1 1 1 0 0 1 0 1 0 2 4\n0 0 1 1 2 2 0 0 0 0 1 0 1 1 1 2\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 1 0 2 0 0 1 0 0 0 0 1 1 2\n2 1 0 1 2 2 1 0 1 1 1 1 0 0 1 1\n1 2 2\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 1 0 2 1 0 1 0 1 0 1 0 0 5\n0 0 2 2 0 0 1 0 0 1 0 0 0 0 2 1\n1 2 5\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 0 0 2 1 1 0 0 0 0 1 1 2 4\n1 2 0 0 2 1 0 1 1 0 1 0 0 0 2 1\n1 2 3\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 0 1 0 1 0 0 1 1 1 1 1 1 4\n2 2 0 1 2 1 1 0 1 0 0 0 0 0 2 2\n1 2 1\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 2 2 1 1 1 1 0 0 0 0 1 0 5\n0 1 1 0 2 1 2 0 1 1 0 1 0 1 2 2\n1 2 1\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 1 0 2 1 2 1 1 1 1 1 1 0 1 2\n0 1 0 1 1 0 0 0 0 1 0 1 1 0 2 2\n1 2 2\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 2 2 0 2 0 0 0 1 1 0 1 0 4\n0 2 0 1 2 2 0 1 0 1 0 1 0 1 1 2\n1 2 5\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 2 2 1 2 0 0 1 1 1 0 1 1 1\n2 2 2 1 0 0 2 1 0 1 1 1 1 0 0 5\n1 2 4\n",
+    "output": "8",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 1 1 2 1 1 1 0 0 0 1 1 2 1\n0 2 0 0 1 0 2 0 0 1 0 0 0 1 0 4\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 0 1 0 1 1 1 1 0 1 1 1 1 2 4\n2 1 2 0 2 1 1 0 1 0 0 1 0 0 0 3\n1 2 3\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 0 0 2 1 1 0 0 0 0 0 0 1 3\n0 2 2 1 0 2 2 1 1 1 1 1 1 0 2 2\n1 2 5\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 0 2 2 0 0 0 0 0 1 0 0 0 4\n0 0 2 1 1 0 0 0 0 1 1 1 0 0 2 5\n1 2 3\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 1 1 0 1 0 0 1 1 0 1 0 2 3\n1 1 1 2 2 0 2 0 0 1 0 0 0 0 1 5\n1 2 3\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 0 0 2 2 0 0 0 1 1 1 1 2 2\n2 2 0 0 1 1 0 0 0 0 1 1 0 0 1 4\n1 2 3\n",
+    "output": "14",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 2 2 2 0 0 1 1 1 0 1 1 0 2\n1 1 2 2 1 1 2 1 0 0 0 0 1 0 2 5\n1 2 3\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 2 1 2 0 1 1 1 0 0 0 1 1 1\n1 0 2 0 2 1 1 0 0 0 1 1 1 1 2 2\n1 2 3\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 1 2 2 0 0 1 0 0 1 0 0 2 2\n2 1 2 0 1 0 1 1 0 1 1 0 1 0 2 2\n1 2 1\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 1 2 2 1 1 0 1 1 0 0 0 1 5\n1 0 2 0 1 0 0 0 1 1 1 1 0 0 0 3\n1 2 4\n",
+    "output": "26",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 1 1 0 1 0 0 1 0 0 0 0 2 5\n2 1 0 1 0 0 2 0 0 1 0 1 1 0 2 5\n1 2 5\n",
+    "output": "25",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 2 2 2 0 1 1 1 1 1 0 0 0 5\n2 1 1 0 0 0 0 0 1 1 1 1 0 0 2 4\n1 2 4\n",
+    "output": "28",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 1 1 2 1 0 0 1 0 0 1 0 1 1 1\n0 0 0 1 2 1 0 1 0 1 1 0 0 1 2 4\n1 2 5\n",
+    "output": "22",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 1 1 2 2 0 1 0 0 0 0 1 0 5\n0 0 2 2 2 1 1 0 0 0 1 1 0 1 1 4\n1 2 5\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 1 0 0 2 1 0 0 0 1 1 1 0 1 5\n2 0 1 2 1 0 2 0 1 0 1 0 0 0 2 2\n1 2 4\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 0 0 0 2 0 1 0 1 0 1 0 1 2\n2 2 2 2 0 1 0 1 1 1 0 1 0 0 0 5\n1 2 2\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 2 0 1 2 1 0 0 0 1 1 1 1 5\n0 2 1 0 1 1 1 1 0 1 0 0 1 0 2 2\n1 2 5\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 1 1 2 0 1 0 1 0 1 1 0 1 0 2\n2 0 2 0 2 1 0 0 0 0 0 0 1 1 1 3\n1 2 2\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 2 2 2 1 1 0 0 1 0 0 1 0 3\n2 0 1 2 2 1 0 0 0 1 0 1 1 0 2 2\n1 2 4\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 2 2 2 2 0 0 0 0 0 1 0 2 2\n2 0 1 1 2 0 2 0 0 1 0 1 1 0 0 2\n1 2 5\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 2 1 0 1 1 0 0 1 1 1 1 2 2\n0 2 1 2 2 1 2 0 1 1 1 0 0 0 2 1\n1 2 1\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 2 2 0 0 1 0 0 1 1 0 0 0 4\n2 1 1 2 2 2 2 1 1 0 0 1 0 1 2 3\n1 2 5\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 0 0 2 1 1 1 0 0 1 0 0 0 3\n2 2 2 2 0 2 0 0 0 0 1 0 0 0 1 4\n1 2 5\n",
+    "output": "14",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 1 1 1 1 1 0 1 1 0 0 1 1 5\n1 0 1 2 0 0 1 1 1 0 0 0 1 1 1 4\n1 2 5\n",
+    "output": "19",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 2 0 1 0 0 1 1 1 0 0 0 0 4\n2 2 1 0 1 1 0 0 0 0 0 1 1 0 0 2\n1 2 3\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 1 2 0 1 2 0 0 1 1 1 1 1 1 5\n0 0 1 0 1 2 2 0 1 1 0 0 1 0 2 1\n1 2 2\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 0 2 2 0 1 0 1 0 1 0 2 1\n2 0 1 0 1 2 1 1 1 1 1 0 1 1 2 5\n1 2 5\n",
+    "output": "11",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 1 1 0 0 1 0 1 1 1 1 1 2 2\n0 2 2 0 2 2 0 1 1 1 0 0 1 0 2 2\n1 2 4\n",
+    "output": "18",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 1 2 2 0 0 1 1 0 1 1 0 0 2\n0 2 2 2 1 0 0 0 1 0 1 0 0 0 2 4\n1 2 5\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 1 0 2 1 0 1 0 1 1 1 1 1 1\n2 1 0 2 2 1 2 0 1 0 0 0 1 1 1 3\n1 2 1\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 2 1 2 2 0 0 0 1 1 1 1 1 2\n2 0 1 0 0 2 1 0 1 0 0 1 0 1 0 5\n1 2 3\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 0 0 0 1 1 1 0 0 0 0 0 1 5\n1 1 0 0 2 0 1 1 1 0 1 0 1 1 2 2\n1 2 3\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 1 2 2 2 0 0 1 1 1 0 0 2 4\n2 2 1 2 1 2 0 0 0 0 0 1 0 0 0 3\n1 2 5\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 2 0 2 2 0 0 0 1 0 1 1 1 3\n0 2 1 2 1 1 2 0 0 1 1 1 0 1 2 1\n1 2 4\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 2 1 1 0 0 0 0 0 1 0 1 1 2\n2 2 1 0 1 1 1 1 1 0 0 1 0 0 0 5\n1 2 4\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 0 2 1 1 1 1 0 1 0 1 0 1 3\n0 2 2 1 0 2 2 0 0 0 1 1 0 0 1 4\n1 2 5\n",
+    "output": "11",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 0 2 2 2 1 0 0 1 0 0 1 2 3\n2 1 2 1 2 0 1 1 1 1 1 1 1 1 0 4\n1 2 3\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 0 0 1 2 0 0 1 1 0 0 0 1 2\n1 1 0 2 1 2 0 1 0 0 0 1 0 0 2 5\n1 2 5\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 0 2 1 1 0 1 1 1 1 0 1 1 1\n1 1 0 2 1 0 2 0 0 0 0 0 0 0 0 4\n1 2 1\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 0 1 1 0 2 1 0 1 1 1 1 0 2 2\n2 1 2 2 0 1 1 0 0 1 0 0 1 1 0 2\n1 2 2\n",
+    "output": "8",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 1 1 1 2 1 0 0 0 0 0 1 0 1\n1 1 2 0 2 0 0 0 0 0 0 0 1 0 2 4\n1 2 3\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 2 0 1 1 1 0 1 0 1 0 0 2 2\n2 1 0 0 2 2 1 0 1 0 1 0 1 1 0 5\n1 2 5\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 0 1 0 1 0 0 1 0 1 0 1 0 5\n1 0 2 0 2 0 2 0 1 0 0 1 1 1 2 1\n1 2 3\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 0 2 2 1 2 0 1 0 1 0 0 0 1 2\n2 0 2 1 2 2 2 0 1 0 0 1 1 0 1 1\n1 2 2\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 0 1 1 0 0 1 0 0 0 0 1 0 2\n0 0 2 2 1 1 1 0 1 0 0 0 1 0 1 4\n1 2 4\n",
+    "output": "12",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 0 2 1 2 0 0 0 1 0 0 0 0 4\n0 2 1 1 0 1 0 0 1 1 0 0 0 0 0 4\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 1 0 2 1 1 0 0 0 0 1 1 2 4\n2 0 0 0 0 0 0 1 1 1 0 0 0 1 2 1\n1 2 3\n",
+    "output": "13",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 1 2 1 1 1 0 0 1 0 1 0 2 4\n2 1 1 0 2 2 0 1 1 1 0 0 0 1 2 5\n1 2 3\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 0 2 2 2 2 1 0 1 1 1 1 0 1 5\n1 0 0 0 2 0 2 1 0 1 1 0 1 0 2 2\n1 2 1\n",
+    "output": "11",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 0 1 2 0 0 0 1 1 1 0 0 2 4\n1 0 2 1 1 0 2 0 1 0 0 1 1 1 1 5\n1 2 4\n",
+    "output": "16",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 0 0 2 0 1 1 0 1 1 1 0 2 3\n2 1 1 0 2 0 1 1 0 1 0 0 1 0 2 3\n1 2 3\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 2 0 2 1 1 0 0 1 1 0 0 1 5\n2 2 1 2 1 2 0 1 1 0 0 0 0 0 2 3\n1 2 5\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 0 2 0 0 0 1 1 1 0 1 0 1 2\n1 0 0 2 0 2 0 1 1 0 1 1 1 0 2 3\n1 2 3\n",
+    "output": "12",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 0 1 1 1 0 0 0 1 1 1 0 0 4\n0 1 1 2 2 2 2 0 1 0 0 0 0 1 2 1\n1 2 3\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 0 2 1 1 1 1 1 1 1 0 0 0 3\n1 0 2 2 1 1 1 1 1 0 1 0 1 1 2 4\n1 2 1\n",
+    "output": "25",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 2 1 1 1 1 0 1 1 1 0 0 2 3\n2 0 0 1 1 2 2 0 0 0 1 1 1 1 1 4\n1 2 4\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 1 2 2 0 1 0 1 0 1 0 0 1 2\n1 2 1 0 2 1 2 0 0 1 0 0 0 0 0 1\n1 2 3\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 1 2 0 1 1 0 1 0 0 0 1 1 2\n0 1 1 1 0 1 2 0 1 0 0 1 0 1 0 4\n1 2 4\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 0 2 0 2 0 1 0 1 0 0 1 2 2\n2 1 2 1 2 2 1 0 0 1 1 1 0 1 0 2\n1 2 5\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 0 1 1 1 0 0 1 0 0 0 1 2 2\n1 1 1 1 0 2 0 1 1 0 0 0 1 0 0 4\n1 2 1\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 1 2 0 1 0 1 1 1 0 1 0 2 1\n1 2 1 0 0 0 0 1 1 0 1 0 0 1 2 4\n1 2 1\n",
+    "output": "8",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 1 0 0 0 0 1 0 1 1 0 1 2 1\n1 1 2 1 1 2 2 1 0 0 0 0 1 0 1 1\n1 2 2\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 0 0 1 2 1 0 0 0 0 0 1 2 3\n0 2 2 1 2 0 1 0 0 1 0 1 1 1 1 3\n1 2 4\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 0 1 0 0 0 1 0 0 1 1 1 2 3\n0 2 0 2 1 0 0 1 1 0 1 0 0 0 0 1\n1 2 5\n",
+    "output": "28",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 0 0 0 0 1 1 1 0 1 0 1 0 1\n2 2 2 1 2 0 0 1 1 1 1 1 0 1 2 4\n1 2 2\n",
+    "output": "48",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 2 0 0 0 2 1 1 1 1 1 1 1 0 2\n2 1 2 0 2 1 2 0 1 0 1 0 1 0 2 2\n1 2 4\n",
+    "output": "18",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 2 2 2 2 0 0 0 1 0 0 0 2 1\n1 0 1 2 1 2 1 0 0 0 0 0 1 1 0 4\n1 2 3\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 2 1 1 1 0 0 1 0 0 0 0 0 2\n0 2 2 1 1 0 2 1 1 0 1 0 1 0 1 5\n1 2 4\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 1 2 0 1 0 1 1 0 0 0 2 2\n0 0 0 2 1 0 0 0 0 1 1 1 0 0 1 4\n1 2 4\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 1 2 0 1 1 1 0 1 0 1 0 1 2\n0 0 2 1 2 1 2 0 0 0 0 1 0 0 1 5\n1 2 3\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 0 0 0 1 1 0 0 1 0 1 1 0 2\n1 2 1 1 1 1 1 1 1 1 0 0 1 0 1 2\n1 2 5\n",
+    "output": "12",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 0 0 0 2 1 1 1 1 1 1 1 2 4\n0 2 1 2 1 1 0 1 0 0 1 1 1 0 1 3\n1 2 1\n",
+    "output": "28",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 2 2 2 2 1 0 0 0 1 1 1 0 1\n1 1 0 1 1 2 2 0 0 1 1 1 0 0 1 5\n1 2 1\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 2 0 1 2 0 0 1 1 1 0 1 1 5\n0 0 1 1 0 1 2 0 0 0 0 0 0 1 1 5\n1 2 2\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 2 0 2 0 1 0 0 0 1 0 1 1 1\n1 2 1 0 2 1 1 0 1 0 0 0 1 1 0 1\n1 2 5\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 0 2 1 2 1 0 1 0 1 1 1 2 5\n2 2 0 2 2 0 1 0 0 1 1 0 1 0 0 5\n1 2 4\n",
+    "output": "27",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 2 2 1 1 0 0 1 0 1 1 0 2 2\n2 0 1 0 1 1 2 0 1 1 0 1 0 0 0 5\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 0 2 1 0 0 1 0 1 0 1 0 2 1\n1 0 0 0 0 1 2 0 1 1 0 1 0 1 0 2\n1 2 3\n",
+    "output": "13",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 0 0 2 2 2 0 1 0 0 0 0 0 2 3\n2 0 1 1 1 1 2 0 1 1 1 1 0 1 1 1\n1 2 4\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 1 1 1 1 1 0 0 0 0 1 1 0 2 1\n1 2 2 1 0 0 1 0 1 1 0 1 1 1 0 3\n1 2 3\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 0 0 1 0 0 1 0 1 1 1 0 1 4\n1 1 2 2 2 0 1 0 1 0 0 0 1 1 0 4\n1 2 4\n",
+    "output": "20",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 1 0 1 1 0 1 1 0 0 0 0 1 2 4\n2 2 0 0 1 0 1 0 1 1 1 1 0 0 0 4\n1 2 4\n",
+    "output": "20",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 1 2 1 0 1 0 0 0 0 1 0 2 4\n2 0 1 0 2 0 1 1 1 0 0 1 1 1 2 5\n1 2 2\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 1 1 2 2 1 1 1 0 0 1 1 0 5\n1 2 1 1 0 1 2 1 0 0 1 0 0 1 2 4\n1 2 4\n",
+    "output": "16",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 2 2 2 1 0 1 0 0 1 1 0 1 1\n2 0 1 2 2 2 1 1 0 0 1 0 1 0 0 2\n1 2 1\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 1 0 0 2 1 0 0 0 0 0 0 2 2\n2 2 0 2 2 0 1 0 1 1 0 0 0 0 0 1\n1 2 3\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 1 0 0 2 0 0 0 1 0 0 0 0 4\n2 2 1 1 2 1 1 1 0 0 0 0 0 1 0 1\n1 2 4\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 2 1 1 0 0 0 1 1 1 1 1 0 1\n1 2 0 1 2 1 2 0 0 0 0 1 1 1 2 1\n1 2 1\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 2 1 2 1 0 1 1 0 1 0 1 2 5\n0 0 1 0 1 0 2 1 1 0 1 0 1 0 1 5\n1 2 5\n",
+    "output": "40",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 2 0 1 0 1 0 1 1 0 1 1 2 1\n1 1 1 0 1 1 1 1 1 1 1 0 1 1 1 2\n1 2 2\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 2 0 1 2 0 1 0 1 1 0 1 0 0 1\n1 0 2 2 1 2 1 0 1 0 0 0 0 1 1 3\n1 2 4\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 1 0 2 1 1 0 1 0 1 0 0 3\n1 0 0 1 0 2 1 1 0 0 1 0 0 0 0 3\n1 2 3\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 1 0 2 0 0 0 1 1 0 1 1 2 3\n2 2 1 1 2 1 1 0 0 1 0 1 0 0 2 1\n1 2 2\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 1 2 2 0 0 0 0 1 1 0 0 2 2\n1 0 0 0 2 2 0 0 0 1 1 1 0 0 0 1\n1 2 2\n",
+    "output": "12",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 1 0 1 2 0 1 0 0 1 1 1 0 3\n0 0 1 0 0 0 0 0 0 0 1 0 0 0 2 1\n1 2 5\n",
+    "output": "12",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 0 0 0 0 1 0 0 0 1 0 2 2\n0 2 1 0 0 0 2 0 1 1 0 1 0 0 0 4\n1 2 3\n",
+    "output": "11",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 0 0 1 0 1 0 0 1 1 0 0 2 3\n1 2 2 1 2 1 2 1 0 0 0 0 0 1 1 2\n1 2 4\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 2 0 2 1 1 1 1 1 1 1 1 2 4\n0 0 2 1 2 1 1 0 0 1 0 0 1 1 1 1\n1 2 3\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 2 0 2 2 0 0 1 0 0 0 1 2 4\n1 2 1 0 1 2 0 0 0 1 0 0 1 0 1 3\n1 2 1\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 1 0 1 1 1 1 1 1 0 0 0 2 3\n0 1 1 1 2 1 1 1 1 0 1 0 1 0 2 1\n1 2 1\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 1 2 0 1 0 0 1 1 1 0 1 1 1 1\n0 1 2 2 1 1 2 0 1 0 0 0 0 0 1 4\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 0 0 2 0 0 1 0 1 0 0 0 0 1\n0 2 2 2 1 0 1 1 0 0 1 1 1 0 0 1\n1 2 5\n",
+    "output": "20",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 2 2 2 2 0 1 1 0 1 0 1 1 1 3\n1 2 2 2 1 1 0 0 0 1 1 1 0 1 1 1\n1 2 3\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 1 1 0 2 1 1 1 1 0 1 0 1 2\n0 1 1 0 0 0 0 0 0 1 0 1 1 0 1 1\n1 2 1\n",
+    "output": "17",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 0 1 0 1 1 1 0 0 0 0 0 0 1 3\n2 0 1 0 2 1 2 1 1 1 1 1 1 1 0 3\n1 2 3\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 2 1 0 0 0 1 1 1 1 1 1 2 4\n2 1 2 1 0 1 1 1 1 1 0 0 0 1 2 5\n1 2 2\n",
+    "output": "14",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 1 1 0 2 0 0 0 1 0 1 0 1 1 1\n2 2 0 0 1 1 2 1 1 0 0 1 1 1 0 1\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 2 1 2 0 1 1 0 1 0 1 1 2 4\n0 2 1 2 0 0 0 0 0 0 1 1 1 1 2 5\n1 2 5\n",
+    "output": "35",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 2 0 1 1 1 0 1 0 0 0 1 1 1\n0 0 1 2 2 1 1 1 0 0 0 1 0 1 2 1\n1 2 5\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 1 1 2 0 0 0 1 1 1 0 1 2 2\n0 2 0 1 2 0 2 0 0 0 1 1 1 0 2 3\n1 2 1\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 2 2 0 2 2 1 1 1 0 1 0 0 2 4\n1 2 1 1 0 0 1 1 1 0 1 0 0 1 2 5\n1 2 5\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 0 0 0 1 0 0 0 0 1 0 0 2 3\n1 1 0 0 1 0 0 0 1 1 0 1 1 1 1 2\n1 2 3\n",
+    "output": "25",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 2 0 0 0 2 1 1 0 0 1 0 0 1 1\n1 0 2 2 0 0 0 1 1 0 0 0 0 1 0 1\n1 2 4\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 2 2 2 0 2 0 1 0 0 1 0 0 2 5\n0 0 1 2 0 1 0 1 0 1 0 1 0 0 0 3\n1 2 1\n",
+    "output": "7",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 2 0 0 2 0 0 0 0 1 1 0 0 3\n0 0 2 1 2 0 1 1 0 0 0 1 0 1 1 1\n1 2 5\n",
+    "output": "17",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 0 1 1 1 0 1 0 0 0 0 0 2 5\n1 1 0 0 1 2 1 0 1 1 1 0 1 0 0 3\n1 2 5\n",
+    "output": "35",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 2 1 1 1 1 0 1 1 0 0 0 1 1 2\n1 2 2 0 2 2 2 0 0 0 1 1 0 1 1 2\n1 2 3\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 0 0 1 2 1 0 1 1 0 1 1 2 4\n1 1 0 2 2 0 2 0 0 1 1 1 1 0 2 2\n1 2 1\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 0 2 2 2 0 0 0 1 0 0 1 1 4\n0 2 1 0 2 0 0 1 0 1 1 0 0 1 1 2\n1 2 4\n",
+    "output": "16",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 2 0 2 1 1 1 0 1 0 1 0 0 1 1\n1 0 0 0 1 2 1 0 0 0 1 0 0 1 0 2\n1 2 3\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 0 0 0 2 1 0 1 1 0 1 0 2 4\n2 0 0 2 0 2 2 0 1 1 1 1 0 1 0 5\n1 2 1\n",
+    "output": "25",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 2 1 1 1 0 1 0 0 0 1 0 0 4\n0 1 1 1 1 2 0 1 1 0 1 0 0 1 1 5\n1 2 2\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 0 2 0 0 1 1 1 0 1 1 0 0 5\n0 1 1 2 0 2 2 0 1 1 0 1 0 1 0 4\n1 2 5\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 2 0 1 0 1 0 1 1 0 0 0 2 4\n0 0 0 1 1 1 2 0 0 0 1 0 1 0 0 5\n1 2 3\n",
+    "output": "4",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 0 2 2 1 1 0 1 1 0 0 0 2 2\n1 2 0 2 2 0 2 0 1 1 0 0 0 1 1 5\n1 2 4\n",
+    "output": "11",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 1 1 1 1 0 0 0 0 1 0 1 0 1\n0 2 2 1 2 0 1 1 0 1 1 0 1 0 2 1\n1 2 4\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 1 2 2 0 1 1 0 0 0 0 0 5\n2 0 1 2 1 0 1 1 1 0 1 0 0 1 0 3\n1 2 1\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 2 0 1 2 1 1 1 0 0 1 1 1 5\n2 2 1 0 0 0 2 1 1 0 0 1 0 1 1 5\n1 2 5\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 2 2 1 0 0 1 1 1 1 1 0 2 1\n0 2 0 2 0 1 1 0 0 1 0 0 0 0 1 3\n1 2 2\n",
+    "output": "6",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 0 2 1 2 1 1 1 1 0 1 0 2 5\n0 0 1 1 0 1 1 1 0 0 0 1 0 1 1 4\n1 2 2\n",
+    "output": "20",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 2 1 0 1 1 1 1 1 1 1 0 0 3\n2 2 1 0 1 1 2 1 0 1 0 1 0 0 2 1\n1 2 2\n",
+    "output": "2",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 1 2 0 0 0 1 0 0 1 1 1 2 5\n2 2 2 0 1 1 1 0 0 1 1 0 1 1 0 4\n1 2 2\n",
+    "output": "19",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 1 2 2 0 0 0 0 1 1 1 0 1 3\n1 1 2 0 1 2 0 1 0 1 1 1 0 1 1 5\n1 2 1\n",
+    "output": "9",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 2 2 2 1 2 0 0 0 0 0 1 1 2 2\n0 0 1 1 1 2 1 0 0 1 0 1 1 1 0 4\n1 2 2\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 2 0 1 2 0 0 1 1 0 1 1 0 1 2\n2 0 2 1 1 0 2 1 0 1 1 1 0 0 1 3\n1 2 1\n",
+    "output": "3",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 0 1 2 1 0 1 0 0 0 0 0 2 5\n1 1 0 2 2 1 1 0 1 0 0 1 0 1 2 1\n1 2 1\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 0 2 1 2 0 1 1 1 1 1 0 0 4\n1 0 0 2 1 1 2 0 1 0 0 1 1 1 2 2\n1 2 3\n",
+    "output": "5",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 0 1 0 2 0 0 1 1 1 0 0 0 2\n0 1 1 2 1 2 1 0 1 0 0 1 1 0 1 5\n1 2 1\n",
+    "output": "1",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 1 0 0 2 1 0 0 0 0 1 0 0 5\n2 2 1 2 1 0 2 0 0 0 1 1 0 1 2 4\n1 2 2\n",
+    "output": "10",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 0 1 0 1 0 0 0 0 0 0 0 2 3\n2 0 2 2 1 1 0 0 0 1 0 0 1 0 0 4\n1 2 4\n",
+    "output": "0",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 0 0 0 1 1 0 0 0 1 0 2 4\n1 0 1 1 1 0 2 0 1 0 0 1 1 0 0 3\n1 2 3\n",
+    "output": "25",
+    "kind": "additional_independent",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "100 500\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3\n21 46 2\n15 58 2\n75 100 2\n30 74 2\n18 60 2\n43 62 2\n9 24 2\n35 91 2\n27 68 2\n23 61 2\n22 27 2\n38 58 2\n41 75 2\n27 41 2\n68 72 2\n92 93 2\n23 38 2\n19 20 2\n15 82 2\n65 92 2\n5 96 2\n16 40 2\n61 83 2\n36 92 2\n56 70 2\n64 86 2\n44 89 2\n43 59 2\n13 71 2\n43 68 2\n19 66 2\n51 81 2\n69 88 2\n60 84 2\n9 46 2\n9 18 2\n22 66 2\n15 42 2\n34 91 2\n75 93 2\n31 53 2\n50 73 2\n39 54 2\n1 43 2\n42 75 2\n62 87 2\n70 73 2\n63 77 2\n80 94 2\n6 83 2\n5 69 2\n2 58 2\n41 89 2\n32 76 2\n13 16 2\n58 97 2\n53 64 2\n35 68 2\n75 89 2\n21 34 2\n9 54 2\n48 83 2\n32 91 2\n26 77 2\n74 93 2\n42 68 2\n40 77 2\n57 91 2\n28 89 2\n20 47 2\n8 100 2\n55 97 2\n30 94 2\n66 83 2\n37 81 2\n4 40 2\n43 95 2\n68 90 2\n48 99 2\n47 52 2\n2 88 2\n4 55 2\n32 78 2\n28 45 2\n23 26 2\n37 78 2\n6 63 2\n29 55 2\n11 74 2\n15 80 2\n53 57 2\n27 76 2\n50 71 2\n27 58 2\n4 37 2\n4 29 2\n2 95 2\n26 45 2\n33 34 2\n13 61 2\n28 88 2\n9 17 2\n21 23 2\n4 17 2\n2 50 2\n82 83 2\n33 83 2\n66 85 2\n33 38 2\n20 75 2\n26 73 2\n77 81 2\n79 99 2\n58 78 2\n70 100 2\n45 94 2\n11 73 2\n43 57 2\n50 54 2\n11 44 2\n27 99 2\n48 91 2\n34 45 2\n16 100 2\n17 88 2\n56 93 2\n78 90 2\n42 70 2\n35 46 2\n39 84 2\n69 81 2\n54 75 2\n21 41 2\n45 68 2\n26 40 2\n64 77 2\n10 98 2\n4 21 2\n30 58 2\n38 49 2\n7 9 2\n44 79 2\n74 79 2\n35 95 2\n28 34 2\n42 60 2\n44 72 2\n46 80 2\n43 70 2\n59 95 2\n40 94 2\n44 96 2\n20 44 2\n47 93 2\n38 63 2\n53 56 2\n38 80 2\n28 83 2\n33 85 2\n67 74 2\n36 59 2\n77 83 2\n14 82 2\n77 91 2\n55 86 2\n38 94 2\n29 77 2\n51 88 2\n75 79 2\n2 9 2\n53 63 2\n29 44 2\n17 63 2\n31 63 2\n32 53 2\n23 46 2\n78 87 2\n84 98 2\n4 38 2\n25 90 2\n29 33 2\n12 37 2\n39 86 2\n34 71 2\n15 87 2\n17 87 2\n75 84 2\n10 51 2\n16 83 2\n41 44 2\n1 15 2\n14 78 2\n5 20 2\n42 44 2\n17 48 2\n23 29 2\n29 60 2\n10 42 2\n15 99 2\n65 71 2\n43 64 2\n16 27 2\n30 33 2\n22 68 2\n17 95 2\n46 58 2\n59 86 2\n34 81 2\n9 30 2\n71 92 2\n52 65 2\n8 9 2\n50 85 2\n41 88 2\n2 11 2\n2 73 2\n39 72 2\n17 67 2\n11 79 2\n40 81 2\n52 60 2\n20 71 2\n26 56 2\n36 51 2\n62 91 2\n51 58 2\n10 96 2\n7 62 2\n55 62 2\n58 62 2\n14 27 2\n67 84 2\n11 36 2\n81 97 2\n39 55 2\n8 98 2\n16 62 2\n64 68 2\n16 30 2\n9 88 2\n62 80 2\n16 99 2\n20 93 2\n36 44 2\n73 94 2\n67 100 2\n13 83 2\n2 78 2\n54 72 2\n23 48 2\n11 55 2\n2 5 2\n68 96 2\n31 64 2\n67 82 2\n53 60 2\n37 89 2\n32 37 2\n61 67 2\n14 21 2\n23 56 2\n10 92 2\n59 62 2\n9 37 2\n8 48 2\n30 42 2\n16 61 2\n26 36 2\n45 80 2\n14 55 2\n6 38 2\n42 46 2\n23 25 2\n58 87 2\n40 89 2\n8 94 2\n4 33 2\n14 66 2\n19 85 2\n33 55 2\n23 98 2\n51 85 2\n31 57 2\n77 78 2\n82 86 2\n38 66 2\n16 97 2\n12 56 2\n7 12 2\n15 48 2\n47 81 2\n38 89 2\n28 99 2\n3 5 2\n33 94 2\n59 82 2\n46 77 2\n51 89 2\n49 66 2\n11 15 2\n55 100 2\n35 72 2\n3 62 2\n32 59 2\n34 68 2\n31 71 2\n89 93 2\n23 69 2\n41 91 2\n71 76 2\n31 87 2\n15 60 2\n65 80 2\n35 75 2\n11 24 2\n41 95 2\n70 87 2\n26 58 2\n14 67 2\n6 45 2\n51 86 2\n24 90 2\n64 95 2\n74 84 2\n54 59 2\n43 75 2\n17 69 2\n7 96 2\n24 78 2\n53 75 2\n73 91 2\n8 70 2\n36 76 2\n20 26 2\n12 60 2\n25 52 2\n13 65 2\n31 95 2\n37 100 2\n32 90 2\n61 63 2\n75 97 2\n70 72 2\n11 33 2\n49 76 2\n22 51 2\n60 76 2\n22 85 2\n13 24 2\n5 42 2\n26 98 2\n40 97 2\n28 60 2\n60 64 2\n14 64 2\n13 26 2\n37 44 2\n68 79 2\n18 65 2\n78 97 2\n65 69 2\n18 41 2\n74 90 2\n40 74 2\n79 87 2\n30 89 2\n1 89 2\n49 82 2\n45 90 2\n20 74 2\n53 97 2\n31 74 2\n42 63 2\n26 82 2\n5 64 2\n34 52 2\n27 93 2\n7 37 2\n14 94 2\n3 88 2\n6 77 2\n28 42 2\n60 72 2\n5 80 2\n2 34 2\n12 43 2\n62 71 2\n55 76 2\n90 95 2\n19 40 2\n20 81 2\n48 80 2\n36 60 2\n37 84 2\n22 41 2\n6 21 2\n62 88 2\n69 86 2\n36 45 2\n48 73 2\n27 37 2\n6 85 2\n79 86 2\n22 62 2\n71 86 2\n69 99 2\n6 31 2\n53 54 2\n51 82 2\n28 31 2\n17 78 2\n38 88 2\n11 63 2\n29 81 2\n20 77 2\n11 77 2\n11 46 2\n9 47 2\n35 56 2\n21 54 2\n66 70 2\n3 57 2\n46 64 2\n70 86 2\n49 54 2\n41 73 2\n62 98 2\n16 29 2\n53 80 2\n41 46 2\n2 10 2\n66 87 2\n41 71 2\n14 56 2\n4 12 2\n40 51 2\n8 57 2\n9 67 2\n19 94 2\n7 76 2\n21 93 2\n29 65 2\n60 61 2\n26 95 2\n9 16 2\n19 32 2\n75 83 2\n24 94 2\n46 61 2\n19 49 2\n3 60 2\n7 70 2\n60 91 2\n15 38 2\n13 30 2\n85 93 2\n72 96 2\n11 67 2\n48 79 2\n46 76 2\n69 71 2\n4 59 2\n5 49 2\n16 23 2\n35 78 2\n9 10 2\n16 68 2\n1 9 2\n82 89 2\n29 82 2\n37 56 2\n8 83 2\n56 67 2\n29 72 2\n38 72 2\n32 61 2\n41 82 2\n89 95 2\n26 29 2\n1 24 2\n57 89 2\n24 30 2\n57 84 2\n16 20 2\n12 48 2\n1 7 2\n22 100 2\n73 79 2\n6 89 2\n41 52 2\n49 59 2\n9 45 2\n31 49 2\n61 69 2\n17 62 2\n6 53 2\n13 54 2\n83 88 2\n2 68 2\n3 96 2\n",
+    "output": "0",
+    "kind": "constructive_stress",
+    "abs_tol": null
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 1 0 2 0 1 2 1 0 0 2 0 2 1\n0 1 2 2 1 1 0 2 2 2 0 1 2 0 2 5\n1 2 5\n",
+    "output": "39",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 1 0 2 0 2 2 0 0 0 1 0 2 3\n2 1 0 1 2 0 1 3 0 1 0 3 0 1 1 1\n1 2 4\n",
+    "output": "18",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 1 0 2 1 2 0 0 2 0 1 0 0 1\n1 2 2 0 0 1 1 2 3 1 0 1 1 1 2 4\n1 2 4\n",
+    "output": "48",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 0 2 0 0 2 0 0 0 0 1 0 1 5\n1 0 0 0 2 1 1 2 1 0 2 1 0 1 2 3\n1 2 3\n",
+    "output": "60",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 2 0 0 2 1 1 2 0 0 0 1 2 3\n1 2 1 1 2 2 0 1 1 2 2 4 2 0 1 1\n1 2 3\n",
+    "output": "24",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 0 0 0 0 1 0 1 0 0 1 0 1 3\n0 2 1 0 1 1 1 0 1 1 1 0 1 1 2 4\n1 2 1\n",
+    "output": "15",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 0 0 0 2 0 0 1 0 0 0 2 0 3\n2 0 1 2 0 1 0 1 0 0 3 0 0 1 1 5\n1 2 2\n",
+    "output": "22",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 1 2 2 0 0 2 0 1 2 2 0 1 5\n0 0 1 2 2 1 0 0 0 1 3 2 0 0 0 5\n1 2 4\n",
+    "output": "33",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 2 0 1 1 2 1 0 1 0 1 2 2 1\n0 1 2 2 2 2 0 0 1 1 2 2 2 0 0 5\n1 2 4\n",
+    "output": "13",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 2 0 2 2 0 1 1 1 0 2 3 1 5\n0 1 0 0 2 0 1 0 1 0 0 2 0 1 2 4\n1 2 1\n",
+    "output": "14",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 2 0 0 0 0 2 2 3 0 0 0 0 2\n1 1 2 2 2 1 1 1 0 1 2 2 1 2 2 5\n1 2 5\n",
+    "output": "35",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 0 0 2 1 0 1 0 2 0 4 0 2 5\n0 2 0 1 2 0 2 0 1 0 1 1 0 2 1 5\n1 2 2\n",
+    "output": "59",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 0 0 1 2 2 0 0 0 0 0 1 1 2\n2 0 2 1 1 1 1 3 0 2 0 3 1 1 2 2\n1 2 1\n",
+    "output": "18",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 2 1 2 1 2 2 2 2 1 0 2 1 4\n2 1 0 0 0 2 1 1 1 1 0 0 2 0 2 4\n1 2 2\n",
+    "output": "34",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 0 0 2 1 0 0 2 0 1 2 0 1 1\n1 1 2 1 1 1 1 0 2 2 1 1 1 2 1 4\n1 2 5\n",
+    "output": "12",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 0 2 0 1 1 1 2 1 1 1 0 2 5\n0 0 0 1 0 2 0 0 0 2 0 0 1 1 1 3\n1 2 5\n",
+    "output": "37",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 0 2 2 0 1 0 1 0 2 2 0 1 4\n2 0 0 0 0 0 1 1 0 0 0 0 0 2 0 5\n1 2 2\n",
+    "output": "28",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 1 0 0 2 0 1 0 1 0 1 2 2 3\n0 0 0 1 2 2 2 0 1 0 0 2 2 2 2 5\n1 2 5\n",
+    "output": "34",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 0 0 0 0 1 0 2 0 0 0 0 1 5\n1 0 1 0 1 0 1 0 1 0 0 2 0 1 2 4\n1 2 3\n",
+    "output": "12",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 2 0 0 2 1 0 2 2 0 0 1 1 4\n2 2 0 2 0 2 1 2 2 1 2 1 2 0 2 5\n1 2 3\n",
+    "output": "50",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 1 2 0 1 1 0 0 0 1 0 1 2 1\n0 1 0 0 0 0 2 1 2 0 0 0 0 3 1 3\n1 2 2\n",
+    "output": "22",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 0 0 0 1 0 0 0 0 0 1 2 0 3\n0 1 1 1 2 1 2 0 1 1 0 2 0 2 1 5\n1 2 4\n",
+    "output": "23",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 0 1 2 2 1 2 1 0 0 4 2 0 2 4\n0 0 2 1 2 2 1 0 0 2 1 2 3 0 2 1\n1 2 5\n",
+    "output": "25",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 0 1 2 2 0 2 2 2 1 0 2 0 2 2\n2 1 1 0 0 2 1 2 0 1 0 0 2 1 2 4\n1 2 5\n",
+    "output": "25",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 0 1 0 1 2 2 1 0 1 0 1 2 1\n1 0 0 2 1 1 0 1 0 1 2 0 1 0 2 2\n1 2 2\n",
+    "output": "9",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 0 2 1 1 0 2 2 0 2 1 1 0 1\n1 1 1 0 0 2 1 2 0 0 0 0 2 2 2 5\n1 2 1\n",
+    "output": "50",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 1 0 0 2 3 1 1 1 0 0 1 0 2\n0 2 2 2 1 1 0 0 1 1 3 1 1 0 1 5\n1 2 1\n",
+    "output": "13",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 2 1 1 1 0 0 0 3 0 0 1 2 5\n0 1 1 2 2 2 2 1 1 1 0 4 2 2 1 2\n1 2 1\n",
+    "output": "9",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 1 1 0 2 0 0 0 1 1 1 2 2 4\n0 1 2 2 1 0 2 1 0 2 2 1 0 2 1 5\n1 2 3\n",
+    "output": "46",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 0 2 1 2 1 0 2 0 3 1 2 1 1\n2 0 2 1 0 0 0 2 1 2 1 0 0 0 1 3\n1 2 2\n",
+    "output": "6",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 0 2 0 1 1 0 0 0 2 0 0 1 1\n1 2 0 1 1 0 1 0 3 0 1 0 1 2 2 4\n1 2 5\n",
+    "output": "13",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 1 0 2 0 2 2 1 0 0 3 0 2 2 4\n1 0 1 0 1 2 0 0 0 2 0 0 2 1 1 3\n1 2 5\n",
+    "output": "27",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 2 0 0 2 2 0 0 3 0 0 3 1 1\n1 1 2 2 2 1 0 2 0 0 2 2 0 1 2 4\n1 2 5\n",
+    "output": "43",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 2 0 2 1 2 0 2 3 1 1 0 2 2\n1 2 0 0 1 0 0 1 2 1 0 1 0 0 1 4\n1 2 1\n",
+    "output": "25",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 0 2 1 1 2 0 2 0 2 2 0 2 3\n0 0 0 1 1 2 1 0 0 0 1 2 0 0 2 5\n1 2 2\n",
+    "output": "40",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 1 1 0 2 0 0 0 1 1 0 2 0 2 5\n2 0 0 0 1 0 1 2 0 1 0 1 0 0 2 1\n1 2 2\n",
+    "output": "3",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 1 0 2 2 0 2 0 0 0 2 3 2 4\n0 0 2 2 0 0 1 2 0 2 2 0 0 0 1 3\n1 2 1\n",
+    "output": "62",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 2 0 2 0 0 1 2 2 0 2 2 2 5\n0 0 0 2 2 0 2 0 1 0 2 1 0 1 2 4\n1 2 4\n",
+    "output": "20",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 0 2 2 2 0 2 3 1 1 2 2 1 5\n0 1 2 1 2 0 2 0 0 2 0 2 0 2 1 2\n1 2 4\n",
+    "output": "26",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 2 1 2 0 0 1 1 1 1 3 0 2 3\n2 1 2 2 0 1 1 1 1 2 3 0 1 2 1 1\n1 2 3\n",
+    "output": "24",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 2 2 1 1 2 1 0 1 3 1 2 2 5\n0 0 0 1 0 0 0 0 1 0 1 0 0 0 2 3\n1 2 3\n",
+    "output": "26",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 0 2 1 0 1 2 0 0 1 2 0 2 4\n1 0 0 1 1 1 0 1 0 0 1 0 2 0 1 1\n1 2 5\n",
+    "output": "5",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 1 0 2 0 2 0 0 1 0 3 1 2 1\n0 0 0 0 1 1 0 0 1 0 0 0 2 0 1 5\n1 2 1\n",
+    "output": "14",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 2 1 1 2 3 1 2 1 1 1 2 1 1\n2 2 1 1 2 2 1 2 2 0 2 2 1 1 1 4\n1 2 3\n",
+    "output": "11",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 2 2 1 0 0 0 0 1 2 1 2 0 2 1\n2 2 1 1 1 1 1 2 2 1 2 0 1 0 1 1\n1 2 3\n",
+    "output": "11",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 0 2 1 2 1 1 2 1 3 0 1 1 2 1\n0 2 2 2 0 0 1 1 1 2 2 0 0 1 2 3\n1 2 2\n",
+    "output": "14",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 2 1 0 2 1 1 0 3 1 0 1 2 5\n0 0 2 2 0 1 1 0 0 2 1 2 0 1 1 5\n1 2 3\n",
+    "output": "61",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 0 1 1 0 0 2 0 0 0 2 0 0 2 1\n1 0 2 1 1 0 1 1 0 2 0 1 0 2 2 2\n1 2 5\n",
+    "output": "7",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 2 1 0 2 0 2 1 2 1 0 1 2 1\n1 0 0 0 2 1 2 2 0 0 0 0 2 1 1 3\n1 2 3\n",
+    "output": "16",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 0 1 2 1 0 0 1 0 1 1 2 1 2\n2 2 2 0 1 1 2 1 3 3 0 2 0 2 1 2\n1 2 1\n",
+    "output": "21",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 0 2 0 0 0 0 0 0 2 0 0 0 2\n1 1 0 2 0 1 2 0 2 0 2 0 1 2 2 2\n1 2 3\n",
+    "output": "2",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 2 2 0 0 1 1 0 2 1 1 0 2 4\n1 1 1 0 1 2 1 1 0 1 0 1 3 2 2 3\n1 2 1\n",
+    "output": "32",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 0 0 0 2 0 3 0 0 0 0 0 2 1\n2 0 0 1 1 1 0 3 0 1 1 0 2 0 0 3\n1 2 1\n",
+    "output": "10",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 1 0 2 0 0 1 0 2 0 2 0 0 3\n1 0 2 0 0 2 0 1 0 2 0 0 1 0 1 1\n1 2 5\n",
+    "output": "10",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 2 0 1 0 1 0 3 1 0 2 0 2 1\n2 2 2 2 0 2 2 1 2 1 1 1 3 2 1 2\n1 2 2\n",
+    "output": "14",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 2 0 0 0 1 2 2 1 0 0 1 1 1 2\n2 1 2 0 2 1 0 2 0 3 0 2 1 0 1 5\n1 2 1\n",
+    "output": "10",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 1 0 2 2 1 0 0 1 0 1 2 0 2\n0 0 1 2 0 0 0 1 0 2 2 0 0 0 2 4\n1 2 5\n",
+    "output": "22",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 1 0 0 0 2 2 0 0 0 0 0 1 2\n2 1 0 1 0 1 0 1 0 2 1 0 0 0 1 5\n1 2 4\n",
+    "output": "44",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 1 2 2 2 1 0 2 1 2 0 2 2 1\n1 2 0 0 2 0 1 1 1 0 0 3 1 2 2 3\n1 2 4\n",
+    "output": "24",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 2 1 0 2 1 0 0 1 1 0 1 2 2 4\n2 1 0 1 1 2 0 3 1 0 1 1 2 0 2 3\n1 2 4\n",
+    "output": "23",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 1 2 0 1 0 0 0 1 2 0 0 2 5\n0 0 0 0 2 2 2 1 0 0 0 2 2 2 0 5\n1 2 4\n",
+    "output": "9",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 2 1 0 0 0 2 0 2 1 1 0 0 2\n2 2 2 1 1 2 2 1 2 2 1 1 1 3 2 3\n1 2 3\n",
+    "output": "21",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 0 2 0 1 1 0 2 0 3 0 1 2 3\n2 2 1 2 1 0 2 2 2 0 2 2 0 2 2 3\n1 2 3\n",
+    "output": "15",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 1 2 0 0 1 4 0 1 2 0 0 2 5\n2 0 2 2 1 0 1 3 0 1 2 1 0 1 1 2\n1 2 2\n",
+    "output": "45",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 2 2 2 1 1 1 0 5 2 3 0 1 3\n2 2 1 1 2 1 0 1 2 0 1 0 1 0 2 1\n1 2 1\n",
+    "output": "20",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 0 0 0 1 2 0 0 1 0 0 2 0 2\n1 1 2 1 1 2 2 0 2 3 0 1 1 1 1 3\n1 2 3\n",
+    "output": "24",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 1 2 2 1 0 1 1 1 3 2 0 1 2 1\n2 1 0 0 0 1 0 0 0 1 0 0 1 0 1 4\n1 2 2\n",
+    "output": "12",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 1 1 2 0 2 0 0 0 2 2 1 0 5\n0 2 1 2 1 0 2 0 3 1 2 0 0 2 2 5\n1 2 1\n",
+    "output": "49",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 2 2 2 0 1 1 0 1 2 2 1 2 4\n0 0 1 0 1 0 0 0 0 1 0 2 1 0 1 5\n1 2 3\n",
+    "output": "51",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 2 2 0 1 3 2 0 2 2 0 0 0 5\n1 1 2 0 1 2 0 1 0 4 0 0 3 0 2 4\n1 2 4\n",
+    "output": "28",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 1 0 2 2 0 1 1 1 0 3 1 2 5\n1 0 1 0 1 1 0 0 1 1 0 1 0 1 2 3\n1 2 3\n",
+    "output": "14",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 1 1 1 2 2 4 0 1 0 0 1 3 2 4\n1 1 0 2 1 0 1 2 1 0 0 2 1 0 2 5\n1 2 4\n",
+    "output": "61",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 1 2 2 0 0 2 1 1 0 3 0 0 1 5\n0 2 0 0 1 2 0 0 3 0 0 1 3 0 2 3\n1 2 4\n",
+    "output": "19",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 2 2 1 1 2 3 0 3 3 1 0 1 2 5\n2 0 2 1 0 1 1 0 1 3 0 0 0 2 2 3\n1 2 1\n",
+    "output": "36",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 1 1 0 2 0 4 2 1 1 1 1 2 3\n1 0 2 2 2 2 0 0 0 2 1 2 2 0 2 3\n1 2 1\n",
+    "output": "17",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 0 0 1 0 2 1 1 0 0 1 1 2 1\n1 2 2 0 0 0 2 1 1 2 2 0 0 0 2 4\n1 2 4\n",
+    "output": "24",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 2 2 0 0 1 1 1 3 1 0 0 1 4\n0 0 1 1 1 0 0 0 0 1 0 1 0 0 1 4\n1 2 4\n",
+    "output": "24",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 2 2 1 2 2 1 0 2 1 0 0 4\n1 1 1 1 0 0 0 1 1 1 1 1 2 0 2 3\n1 2 5\n",
+    "output": "40",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 1 1 0 1 1 1 1 2 0 0 1 2 2\n0 1 2 0 2 2 1 2 0 2 0 1 2 0 1 2\n1 2 2\n",
+    "output": "28",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 2 1 0 2 1 1 0 1 1 0 2 1 0 2\n0 1 1 1 1 0 1 1 1 0 3 1 0 1 2 2\n1 2 1\n",
+    "output": "6",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 1 0 2 2 2 3 1 1 0 1 1 4\n1 2 2 0 0 0 2 0 1 2 0 0 0 3 2 3\n1 2 4\n",
+    "output": "15",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 2 2 1 0 3 2 0 2 0 0 2 5\n2 1 2 0 1 0 0 3 1 2 0 1 2 1 0 3\n1 2 1\n",
+    "output": "29",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 0 1 2 2 2 0 2 1 0 2 2 2 2\n0 1 2 0 2 0 2 0 0 3 0 3 0 2 1 4\n1 2 4\n",
+    "output": "24",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 0 0 1 1 0 2 1 0 0 0 1 2 5\n2 0 2 2 2 1 1 2 0 1 2 2 0 3 0 1\n1 2 2\n",
+    "output": "18",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 2 1 2 0 2 1 3 1 0 3 0 3 2 3\n2 0 1 0 1 0 1 1 1 1 0 0 0 1 0 2\n1 2 5\n",
+    "output": "45",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 1 1 1 2 1 0 0 1 0 1 2 2 2 3\n1 1 1 0 2 2 0 1 0 1 2 2 1 0 0 3\n1 2 2\n",
+    "output": "17",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 2 2 0 2 1 1 3 2 2 0 2 1 2 2\n0 2 1 2 0 2 1 1 1 0 2 0 3 1 1 1\n1 2 2\n",
+    "output": "7",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 0 1 0 1 1 2 0 0 0 1 1 1 4\n0 0 1 2 1 0 0 0 0 2 2 1 0 0 1 1\n1 2 3\n",
+    "output": "9",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 1 2 1 2 2 0 2 2 1 1 2 1 5\n0 1 2 2 0 1 2 0 0 1 1 1 2 0 2 3\n1 2 2\n",
+    "output": "34",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 0 2 2 0 1 1 2 1 2 0 1 0 1 0 1\n0 2 0 1 2 0 1 0 2 0 2 2 0 1 2 3\n1 2 3\n",
+    "output": "27",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 1 1 1 2 0 1 1 1 0 1 3 2 1\n0 0 1 0 2 1 0 1 1 1 0 1 1 0 0 3\n1 2 3\n",
+    "output": "15",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 1 0 0 2 2 1 0 0 0 0 1 3 1 5\n0 0 0 2 0 2 1 1 0 0 2 0 2 0 2 5\n1 2 4\n",
+    "output": "43",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 2 2 0 2 2 2 1 1 2 0 2 2 2\n1 1 0 1 0 0 0 0 1 0 1 1 0 0 0 2\n1 2 2\n",
+    "output": "10",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 1 0 1 1 1 1 1 1 1 2 1 1 2 2\n2 1 0 2 1 2 1 2 0 0 2 1 2 0 0 1\n1 2 4\n",
+    "output": "20",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 2 1 2 0 0 0 0 3 0 1 1 0 2 3\n0 2 2 0 2 0 0 0 1 2 0 3 0 0 1 2\n1 2 2\n",
+    "output": "11",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 0 2 0 1 2 0 0 0 2 0 1 1 2 2\n2 0 2 2 2 1 2 3 1 1 1 3 2 2 2 4\n1 2 2\n",
+    "output": "20",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 2 1 1 0 0 1 0 2 1 1 0 1 5\n2 0 2 0 1 2 0 2 0 1 0 4 1 0 2 1\n1 2 3\n",
+    "output": "29",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 2 2 2 0 2 3 0 2 3 2 0 2 1\n1 1 2 2 1 1 0 0 0 2 2 0 1 1 2 2\n1 2 5\n",
+    "output": "22",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 0 1 1 2 1 1 3 0 0 1 2 2 3\n0 0 0 2 0 0 1 0 0 0 2 0 0 1 2 1\n1 2 5\n",
+    "output": "15",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 2 2 0 2 1 0 0 2 1 0 2 2 3\n1 2 1 0 1 1 0 2 2 1 0 1 1 0 1 3\n1 2 5\n",
+    "output": "14",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 2 0 1 1 2 1 0 3 1 2 1 1 1 2\n1 1 0 1 1 2 0 0 0 0 1 0 3 0 2 1\n1 2 5\n",
+    "output": "23",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 2 2 1 1 3 1 1 2 0 2 1 2 2\n0 2 1 1 1 0 1 0 2 1 0 2 0 1 1 3\n1 2 4\n",
+    "output": "11",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 1 0 2 2 2 1 0 0 0 0 2 1 1 3\n0 1 2 0 1 2 1 0 1 2 1 1 2 3 2 2\n1 2 5\n",
+    "output": "28",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 1 2 2 2 0 0 0 0 2 2 2 0 0 1\n0 2 0 0 0 0 2 0 2 1 1 0 0 1 1 3\n1 2 2\n",
+    "output": "14",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 0 2 0 1 0 3 0 0 1 0 0 0 5\n0 0 2 0 1 2 1 0 0 2 0 1 3 1 2 3\n1 2 2\n",
+    "output": "15",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 2 2 0 1 1 2 2 2 3 0 2 0 0 5\n0 2 2 2 1 1 2 0 1 1 2 2 0 1 2 2\n1 2 1\n",
+    "output": "19",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 0 0 1 0 0 0 0 1 0 1 0 0 0 3\n2 2 0 2 0 1 1 1 2 0 1 1 2 1 2 3\n1 2 2\n",
+    "output": "28",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 2 1 1 1 0 1 2 2 2 2 0 2 5\n1 0 0 0 2 2 0 0 0 0 0 2 2 0 0 4\n1 2 5\n",
+    "output": "55",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 0 1 0 2 0 0 1 0 1 2 2 0 0 0 5\n1 1 2 1 2 0 1 1 2 1 1 1 0 0 2 4\n1 2 5\n",
+    "output": "46",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 2 0 0 2 0 2 1 4 0 1 2 0 1 2 5\n2 2 1 2 0 1 2 2 2 1 0 0 1 2 1 4\n1 2 3\n",
+    "output": "36",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 1 0 0 1 0 0 1 0 1 0 1 0 2 4\n0 1 1 1 2 1 2 0 0 3 1 2 1 2 1 3\n1 2 4\n",
+    "output": "19",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 1 0 2 0 0 2 0 2 1 1 0 0 0 5\n0 0 0 1 1 2 1 0 1 0 1 0 2 1 2 1\n1 2 1\n",
+    "output": "15",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 0 0 0 0 1 1 1 0 0 1 0 0 2 4\n1 2 0 0 0 2 0 2 2 0 0 1 2 0 0 5\n1 2 5\n",
+    "output": "42",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 1 2 2 1 1 2 2 0 1 2 0 1 3 2 3\n0 2 1 0 0 0 1 0 3 1 0 1 0 1 2 3\n1 2 3\n",
+    "output": "18",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 0 0 1 0 0 0 1 0 1 1 0 1 2 4\n1 1 2 2 1 1 0 0 1 2 2 1 1 0 1 5\n1 2 4\n",
+    "output": "36",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 1 2 1 2 1 0 1 2 2 0 0 0 2 1\n0 0 2 2 0 2 0 0 2 1 2 1 2 0 2 5\n1 2 1\n",
+    "output": "20",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 2 2 2 2 0 0 0 0 2 3 2 0 1 2 3\n1 1 1 1 1 1 1 1 1 1 1 2 0 1 1 4\n1 2 2\n",
+    "output": "22",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n2 2 2 0 0 1 1 1 4 2 0 1 2 1 2 3\n2 0 2 1 2 2 2 2 0 1 0 1 2 2 2 3\n1 2 1\n",
+    "output": "30",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 1 2 1 0 1 1 0 1 1 0 0 1 2 2 5\n2 0 1 1 2 1 2 3 0 1 1 2 1 2 2 2\n1 2 1\n",
+    "output": "19",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n1 1 0 0 0 0 0 0 0 0 0 0 0 0 2 1\n0 2 2 0 0 1 2 1 2 2 0 0 1 3 1 2\n1 2 5\n",
+    "output": "15",
+    "kind": "balanced_inventory_dp"
+  },
+  {
+    "problem": "E",
+    "input": "3 3\n0 0 0 0 5 0 0 0 0 0 0 0 0 0 2 4\n0 0 0 0 0 0 0 2 0 0 0 0 0 0 2 1\n0 0 0 0 0 0 0 0 0 3 0 0 0 0 2 5\n1 2 1\n1 3 5\n2 3 1\n",
+    "output": "67",
+    "kind": "statement_sample"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1\n1 2 1\n",
+    "output": "0",
+    "kind": "boundary_zero_need"
+  },
+  {
+    "problem": "E",
+    "input": "2 1\n0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1\n1 2 1\n",
+    "output": "-1",
+    "kind": "robustness_infeasible_outside_promise"
+  },
+  {
+    "problem": "E",
+    "input": "100 500\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n1 2 35\n1 11 93\n1 12 41\n1 17 2\n1 48 24\n1 52 34\n1 75 15\n1 81 39\n1 82 53\n1 91 32\n1 96 81\n2 3 17\n2 11 2\n2 23 2\n2 29 54\n2 40 57\n2 65 93\n2 91 30\n2 94 100\n2 95 36\n3 4 33\n3 14 32\n3 17 4\n3 32 35\n3 42 59\n3 52 16\n3 59 29\n3 81 77\n3 86 72\n4 5 91\n4 13 97\n4 26 69\n4 31 32\n4 39 27\n5 6 56\n5 10 2\n5 19 46\n5 21 9\n5 34 75\n5 38 59\n5 42 40\n5 60 3\n5 83 50\n5 86 47\n5 87 21\n6 7 52\n6 12 25\n6 24 2\n6 41 75\n6 52 39\n6 53 91\n6 78 73\n6 80 19\n7 8 66\n7 9 73\n7 13 39\n7 34 11\n7 38 89\n7 62 45\n7 99 92\n8 9 63\n8 31 10\n8 36 54\n8 69 32\n8 81 24\n8 88 61\n8 94 69\n8 98 14\n9 10 63\n9 16 18\n9 30 30\n9 37 39\n9 58 91\n9 71 4\n10 11 60\n10 20 99\n10 64 98\n10 65 41\n10 90 93\n10 97 54\n10 99 67\n11 12 32\n11 14 57\n11 22 27\n11 29 90\n11 33 39\n11 44 66\n11 64 13\n11 72 100\n11 84 24\n11 95 79\n11 96 53\n12 13 81\n12 14 58\n12 26 90\n12 31 28\n12 68 8\n12 71 79\n12 77 61\n12 81 45\n12 92 40\n13 14 6\n13 18 75\n13 22 35\n13 46 10\n13 60 10\n13 70 92\n13 77 35\n13 80 53\n13 98 94\n14 15 69\n14 18 72\n14 60 67\n14 66 42\n14 79 17\n14 95 58\n15 16 10\n15 23 100\n15 41 62\n15 42 85\n15 43 92\n15 46 7\n15 47 96\n15 48 42\n15 69 71\n15 73 19\n15 75 67\n15 78 18\n15 94 76\n16 17 7\n16 22 87\n16 23 45\n17 18 75\n17 35 100\n17 40 72\n17 52 1\n17 59 53\n17 88 85\n18 19 100\n18 52 9\n18 62 56\n18 70 28\n18 73 58\n18 86 71\n18 87 91\n19 20 9\n19 56 94\n19 73 20\n19 89 92\n20 21 29\n20 27 14\n20 34 27\n20 38 73\n20 39 83\n20 41 45\n20 64 89\n20 74 66\n20 75 65\n20 81 99\n20 97 18\n21 22 16\n21 31 27\n21 33 54\n21 35 82\n21 43 47\n21 54 17\n21 74 22\n21 99 28\n22 23 55\n22 36 97\n22 40 19\n22 43 23\n22 55 10\n22 78 45\n22 83 41\n22 87 85\n22 91 95\n22 94 74\n23 24 75\n23 42 73\n23 46 93\n23 61 53\n23 69 31\n23 88 52\n23 90 58\n23 92 65\n24 25 80\n24 29 28\n24 33 30\n24 38 25\n24 53 16\n24 59 51\n24 87 55\n24 97 68\n25 26 51\n25 46 45\n25 49 38\n25 60 35\n25 66 53\n25 70 80\n25 75 86\n25 78 62\n25 79 46\n25 83 16\n25 88 47\n25 100 85\n26 27 77\n26 30 38\n26 32 97\n26 41 92\n26 52 96\n26 54 46\n26 76 24\n26 97 9\n27 28 33\n27 35 64\n27 44 63\n27 54 20\n27 58 7\n27 66 68\n27 92 30\n27 94 65\n27 96 52\n28 29 83\n29 30 56\n29 34 69\n29 36 32\n29 46 46\n29 52 48\n29 63 84\n29 85 9\n29 86 32\n29 91 53\n30 31 9\n30 44 76\n30 49 24\n30 51 89\n30 56 28\n30 57 47\n30 68 4\n30 73 89\n30 93 92\n31 32 7\n31 39 62\n31 48 54\n31 53 17\n31 69 55\n32 33 66\n32 41 20\n32 62 37\n32 69 22\n32 70 42\n32 77 70\n32 83 42\n33 34 3\n33 42 90\n33 44 46\n33 57 86\n33 71 70\n33 83 29\n34 35 45\n34 44 25\n34 59 48\n34 87 4\n35 36 24\n35 45 22\n35 60 99\n35 63 65\n35 85 24\n35 95 49\n35 100 5\n36 37 74\n36 46 94\n36 53 40\n36 56 56\n36 73 31\n36 82 27\n37 38 1\n37 56 55\n37 71 30\n37 72 68\n38 39 72\n38 77 42\n38 87 54\n39 40 70\n39 57 24\n39 97 94\n40 41 6\n40 44 3\n40 50 62\n40 66 31\n41 42 63\n41 58 67\n41 77 24\n41 91 8\n41 96 59\n42 43 75\n42 62 10\n42 67 95\n42 82 51\n42 89 71\n43 44 63\n43 50 77\n43 53 70\n43 65 57\n43 69 5\n43 70 93\n43 72 97\n43 78 93\n43 87 57\n43 89 70\n44 45 86\n44 49 86\n44 85 44\n44 91 57\n45 46 1\n45 71 51\n45 74 77\n46 47 46\n46 59 38\n46 61 70\n46 65 31\n46 74 42\n46 100 95\n47 48 17\n47 75 97\n47 81 71\n47 99 24\n48 49 99\n48 55 39\n48 79 79\n48 80 81\n48 90 57\n49 50 47\n49 64 78\n49 86 78\n49 99 60\n50 51 78\n50 52 92\n50 60 91\n51 52 83\n51 54 74\n51 61 19\n51 64 99\n51 70 33\n51 90 82\n51 95 26\n51 97 7\n51 100 87\n52 53 94\n52 71 90\n52 88 71\n53 54 21\n53 60 90\n53 62 8\n53 72 29\n53 85 3\n53 90 56\n53 98 95\n54 55 49\n54 66 37\n54 78 61\n54 85 54\n55 56 65\n55 62 86\n55 65 77\n55 66 3\n55 75 66\n55 79 68\n55 85 80\n55 91 73\n55 92 6\n56 57 83\n56 64 62\n56 71 46\n56 82 92\n56 96 88\n57 58 25\n58 59 60\n58 70 35\n58 71 26\n58 72 87\n58 78 25\n58 83 16\n58 94 97\n59 60 33\n59 78 56\n59 81 48\n59 82 91\n60 61 92\n60 74 38\n60 76 44\n60 85 98\n60 86 84\n60 92 92\n61 62 11\n61 65 74\n61 85 92\n61 90 71\n62 63 89\n62 69 63\n62 73 24\n62 92 95\n63 64 4\n63 81 25\n63 88 69\n63 100 8\n64 65 57\n64 75 69\n64 92 16\n65 66 60\n65 71 29\n65 80 78\n66 67 61\n66 68 96\n66 98 5\n67 68 57\n67 72 37\n67 83 37\n67 93 16\n67 98 18\n68 69 100\n68 79 98\n68 80 93\n68 86 69\n69 70 97\n69 72 72\n69 85 56\n69 87 60\n69 93 32\n69 97 34\n70 71 68\n70 74 64\n70 76 36\n70 90 89\n70 93 35\n71 72 29\n71 81 20\n72 73 85\n72 90 32\n72 95 81\n73 74 79\n73 76 68\n73 79 73\n73 85 100\n74 75 67\n74 79 59\n74 80 61\n74 88 3\n74 96 32\n75 76 56\n75 98 42\n76 77 65\n76 82 61\n76 90 56\n77 78 65\n78 79 100\n78 90 52\n79 80 28\n79 87 54\n79 91 51\n80 81 36\n80 91 9\n80 98 70\n81 82 36\n81 91 51\n81 93 97\n82 83 17\n82 84 92\n83 84 68\n83 92 14\n83 100 69\n84 85 64\n84 91 50\n85 86 89\n85 88 75\n85 90 72\n85 91 33\n85 94 81\n86 87 100\n87 88 97\n87 89 51\n88 89 14\n88 95 58\n88 99 71\n89 90 48\n90 91 88\n90 97 99\n91 92 60\n91 99 61\n91 100 56\n92 93 91\n93 94 26\n94 95 20\n94 100 47\n95 96 11\n96 97 40\n97 98 16\n98 99 96\n99 100 14\n",
+    "output": "1025500",
+    "kind": "full_size_assignment_oracle"
+  },
+  {
+    "problem": "E",
+    "input": "100 500\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n1 2 20\n1 12 66\n1 24 49\n1 32 6\n1 72 78\n1 77 72\n1 78 87\n1 80 19\n1 97 90\n2 3 46\n2 24 30\n2 25 73\n2 28 40\n2 66 42\n2 82 37\n3 4 67\n3 55 35\n3 58 88\n3 66 29\n3 77 71\n3 93 63\n3 98 53\n3 99 37\n4 5 28\n4 10 60\n4 11 97\n4 13 72\n4 16 52\n4 42 25\n4 64 68\n4 74 9\n4 83 73\n5 6 8\n5 15 4\n5 16 70\n5 29 31\n5 38 84\n5 91 21\n6 7 64\n6 11 34\n6 30 89\n6 33 12\n6 36 86\n6 41 88\n6 47 12\n6 49 65\n6 57 47\n6 68 59\n6 78 90\n6 95 18\n7 8 17\n7 10 3\n7 14 46\n7 16 98\n7 19 4\n7 23 37\n7 26 39\n7 38 84\n7 46 77\n7 68 6\n7 89 21\n7 93 48\n7 96 49\n7 97 17\n8 9 90\n8 30 75\n8 31 48\n8 36 7\n8 41 94\n8 44 5\n8 65 79\n8 76 36\n9 10 33\n9 16 17\n9 17 28\n9 51 72\n9 58 8\n9 71 17\n9 76 93\n10 11 72\n10 13 30\n10 29 4\n10 36 65\n10 46 17\n10 59 55\n10 63 48\n10 74 39\n10 77 53\n10 89 8\n10 98 83\n11 12 12\n11 17 35\n11 23 70\n11 38 63\n11 39 100\n11 40 63\n11 64 49\n11 66 98\n11 93 20\n11 96 26\n12 13 23\n12 19 9\n12 22 32\n12 25 1\n12 50 81\n12 74 17\n12 75 57\n12 88 56\n12 99 34\n13 14 82\n13 59 33\n13 71 29\n13 73 15\n13 79 97\n13 87 50\n13 99 90\n14 15 66\n14 32 100\n14 42 46\n14 73 100\n14 91 16\n15 16 9\n15 20 82\n15 34 34\n15 36 15\n15 38 7\n15 42 8\n15 68 25\n15 71 20\n15 73 22\n15 75 93\n15 87 28\n15 93 55\n15 96 73\n16 17 83\n16 26 45\n16 34 73\n16 35 27\n16 44 74\n16 58 82\n16 74 85\n16 75 85\n16 98 57\n17 18 10\n17 37 18\n17 49 96\n17 72 68\n17 83 19\n17 84 48\n17 88 99\n18 19 75\n18 26 10\n18 29 57\n18 31 74\n18 45 83\n18 54 18\n18 65 95\n18 82 38\n18 93 52\n19 20 37\n19 25 32\n19 34 72\n19 48 17\n19 60 2\n19 62 93\n19 66 21\n19 70 65\n19 73 88\n20 21 26\n20 23 70\n20 28 92\n20 38 48\n20 44 26\n20 60 97\n20 62 95\n20 83 6\n21 22 44\n21 26 27\n21 29 31\n21 38 97\n21 42 89\n21 56 74\n21 91 95\n22 23 97\n22 30 57\n22 36 6\n22 48 78\n22 59 42\n22 60 15\n22 67 80\n22 76 75\n22 94 93\n22 100 46\n23 24 53\n23 63 56\n23 76 72\n23 80 18\n23 82 13\n23 90 40\n23 91 86\n24 25 8\n24 27 23\n24 28 19\n24 39 65\n24 45 96\n24 53 95\n24 59 14\n24 62 100\n24 65 49\n24 68 20\n24 75 2\n24 81 4\n24 84 15\n24 86 55\n24 97 51\n25 26 95\n25 28 65\n25 32 91\n25 36 41\n25 38 23\n25 44 33\n25 47 46\n25 50 22\n25 73 83\n25 98 59\n26 27 62\n26 31 78\n26 54 15\n26 67 32\n26 71 41\n26 94 92\n26 97 4\n27 28 13\n27 67 56\n27 80 27\n27 82 48\n28 29 9\n28 32 84\n28 44 31\n28 63 39\n28 77 49\n29 30 64\n29 32 77\n29 33 87\n29 41 84\n29 47 27\n29 56 62\n29 66 40\n29 77 70\n30 31 18\n30 35 84\n30 39 13\n30 44 7\n30 49 29\n30 59 66\n30 86 39\n30 89 10\n30 91 41\n31 32 38\n31 49 97\n31 52 39\n31 74 61\n31 76 52\n31 98 5\n31 99 6\n32 33 88\n32 52 76\n32 73 12\n32 80 40\n32 83 7\n32 92 50\n33 34 25\n33 43 2\n33 54 22\n33 57 97\n33 81 35\n33 82 11\n34 35 3\n34 44 44\n34 56 31\n34 74 10\n34 99 31\n35 36 87\n35 44 43\n35 55 65\n35 65 46\n35 71 57\n36 37 40\n36 38 39\n36 58 29\n36 75 32\n36 93 96\n36 100 61\n37 38 75\n37 39 99\n37 44 19\n37 53 13\n37 58 76\n37 76 13\n37 91 36\n38 39 66\n39 40 73\n40 41 41\n40 45 93\n40 51 79\n40 56 91\n40 59 41\n40 71 88\n40 74 35\n40 84 54\n40 92 82\n40 97 88\n41 42 82\n41 45 88\n41 81 17\n41 96 20\n41 98 70\n42 43 95\n42 79 16\n43 44 16\n43 49 94\n43 65 100\n43 98 12\n44 45 66\n44 57 96\n44 79 87\n44 81 70\n45 46 56\n45 52 42\n45 57 8\n45 59 6\n45 62 69\n45 68 32\n46 47 41\n46 48 6\n46 56 49\n46 58 97\n46 80 22\n46 81 4\n46 90 77\n46 91 56\n46 92 69\n47 48 3\n47 54 84\n47 57 27\n47 78 52\n47 98 45\n48 49 29\n48 56 74\n48 66 100\n48 68 61\n48 75 35\n48 96 73\n49 50 24\n49 82 50\n49 92 93\n50 51 30\n50 53 17\n50 56 60\n50 64 99\n50 69 91\n50 96 57\n51 52 57\n51 59 64\n51 98 20\n52 53 41\n52 77 50\n52 98 53\n53 54 76\n53 60 99\n53 68 76\n53 98 15\n54 55 20\n54 61 96\n54 63 27\n54 67 100\n54 96 98\n55 56 18\n55 74 88\n55 75 30\n55 79 20\n56 57 68\n56 72 81\n56 78 94\n56 83 53\n56 97 96\n57 58 29\n57 76 99\n57 82 82\n58 59 38\n58 74 72\n58 98 35\n58 100 21\n59 60 48\n59 72 37\n59 93 86\n60 61 88\n60 72 95\n60 78 97\n61 62 7\n61 75 91\n61 89 68\n61 97 33\n62 63 31\n62 67 12\n62 70 14\n62 89 58\n63 64 96\n63 68 47\n64 65 2\n64 72 12\n64 96 2\n65 66 28\n65 94 13\n65 96 99\n65 97 41\n66 67 97\n66 80 68\n66 81 44\n66 89 87\n66 93 88\n66 100 64\n67 68 82\n67 71 94\n67 72 32\n67 89 22\n68 69 53\n68 75 33\n68 92 46\n69 70 49\n69 77 55\n69 81 45\n70 71 57\n70 93 58\n70 98 22\n71 72 77\n71 75 84\n71 82 98\n71 87 27\n72 73 38\n72 82 7\n72 89 32\n72 92 19\n73 74 27\n73 90 30\n73 92 44\n74 75 42\n74 81 25\n74 94 80\n74 98 80\n75 76 72\n75 82 65\n75 95 93\n76 77 40\n76 79 90\n76 88 38\n76 94 100\n77 78 63\n78 79 14\n78 92 75\n79 80 82\n79 89 44\n80 81 30\n80 83 95\n81 82 85\n82 83 4\n82 89 98\n83 84 50\n83 86 49\n83 88 20\n83 96 72\n83 98 86\n83 99 38\n84 85 46\n84 88 29\n84 95 26\n84 96 23\n85 86 31\n86 87 78\n86 88 80\n87 88 94\n87 94 21\n88 89 16\n89 90 12\n89 96 76\n90 91 63\n90 95 13\n91 92 35\n92 93 89\n93 94 2\n94 95 28\n94 97 1\n95 96 78\n95 99 25\n96 97 14\n97 98 33\n97 100 19\n98 99 29\n98 100 9\n99 100 12\n",
+    "output": "983500",
+    "kind": "full_size_assignment_oracle"
+  },
+  {
+    "problem": "E",
+    "input": "100 500\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n1 2 18\n1 8 89\n1 10 79\n1 21 62\n1 23 22\n1 24 32\n1 35 78\n1 38 33\n1 41 21\n1 45 37\n1 75 32\n1 83 88\n1 88 12\n2 3 59\n2 6 49\n2 21 24\n2 25 80\n2 35 70\n2 59 43\n2 62 8\n2 75 38\n2 85 100\n3 4 98\n3 20 91\n3 64 57\n3 66 45\n3 69 90\n3 72 82\n3 90 48\n4 5 94\n4 7 11\n4 17 70\n4 53 13\n4 82 64\n4 83 77\n4 84 27\n4 86 26\n4 91 54\n5 6 40\n5 17 80\n5 25 73\n5 36 75\n5 41 41\n5 47 81\n5 52 85\n5 54 16\n5 67 19\n5 91 14\n5 94 65\n6 7 69\n6 19 83\n6 20 11\n6 47 39\n6 48 70\n6 58 29\n6 59 95\n6 69 69\n6 79 64\n6 81 19\n7 8 64\n7 12 97\n7 15 54\n7 18 45\n7 19 92\n8 9 4\n8 14 59\n8 34 31\n8 39 77\n8 54 67\n8 60 28\n8 69 3\n9 10 74\n9 12 15\n9 13 99\n9 36 31\n9 39 68\n9 51 58\n9 52 29\n9 53 47\n9 73 20\n9 78 39\n9 82 14\n10 11 20\n10 37 9\n10 42 64\n10 49 52\n10 60 96\n10 65 66\n10 66 20\n10 86 6\n10 88 10\n10 98 23\n11 12 25\n11 21 10\n11 39 67\n11 40 63\n11 45 14\n11 64 56\n11 70 99\n11 77 82\n11 84 90\n12 13 70\n12 19 42\n12 22 47\n12 25 28\n12 36 85\n12 53 91\n12 54 38\n12 85 84\n12 86 24\n12 92 55\n12 99 21\n12 100 4\n13 14 66\n13 23 45\n13 34 16\n13 37 45\n13 38 29\n13 48 47\n13 49 61\n13 66 68\n13 80 38\n13 98 40\n14 15 23\n14 22 76\n14 71 4\n14 87 50\n14 95 50\n14 99 91\n14 100 47\n15 16 68\n15 20 17\n15 27 89\n15 49 13\n16 17 100\n16 28 1\n16 30 67\n16 49 86\n16 96 94\n17 18 3\n17 25 26\n17 31 93\n17 73 96\n17 83 2\n17 87 83\n18 19 72\n18 42 23\n18 75 72\n19 20 75\n19 48 58\n19 62 15\n20 21 92\n20 22 3\n20 47 33\n20 61 84\n20 82 40\n21 22 6\n21 48 12\n21 61 93\n21 74 19\n21 79 40\n22 23 72\n22 32 71\n22 36 29\n22 39 11\n22 43 91\n22 58 11\n22 72 15\n22 91 39\n22 93 62\n23 24 19\n23 27 85\n23 42 54\n23 47 83\n23 50 45\n23 61 20\n23 81 77\n23 88 65\n24 25 35\n24 46 93\n24 53 36\n24 56 93\n24 62 32\n24 63 9\n24 71 92\n24 79 25\n24 83 35\n25 26 45\n25 46 14\n25 47 56\n25 51 33\n25 57 23\n26 27 98\n26 28 66\n26 34 18\n26 42 78\n26 51 12\n26 61 84\n26 64 93\n26 65 48\n26 84 89\n26 85 17\n26 90 94\n26 95 13\n26 98 37\n26 99 50\n27 28 9\n27 34 86\n27 51 62\n27 52 72\n27 53 27\n27 83 68\n27 90 64\n27 91 51\n28 29 23\n28 35 5\n28 41 44\n28 46 96\n28 48 91\n28 49 52\n28 53 60\n28 79 59\n28 88 8\n28 93 52\n29 30 56\n29 42 94\n29 54 82\n29 55 76\n29 58 59\n29 80 13\n29 99 16\n30 31 30\n30 34 56\n30 42 38\n30 51 24\n30 52 1\n30 57 64\n30 64 20\n30 70 72\n30 82 19\n30 87 54\n31 32 30\n31 34 28\n31 52 37\n31 63 72\n31 79 45\n31 90 12\n32 33 59\n32 45 89\n32 58 37\n32 77 98\n33 34 20\n33 38 28\n33 54 6\n33 56 82\n34 35 34\n34 82 64\n34 90 43\n35 36 5\n35 39 64\n35 55 8\n35 71 50\n36 37 63\n36 48 10\n36 98 24\n37 38 57\n37 43 53\n37 58 61\n37 61 98\n37 78 87\n37 88 94\n37 91 72\n37 94 73\n38 39 69\n38 60 85\n38 71 17\n38 73 25\n38 96 49\n38 99 56\n39 40 11\n39 45 15\n39 52 12\n39 64 28\n39 65 18\n39 92 16\n39 94 15\n40 41 86\n40 49 89\n40 57 8\n40 60 39\n40 68 24\n40 87 24\n40 92 86\n40 97 93\n40 99 40\n41 42 83\n41 44 57\n41 76 76\n41 77 55\n42 43 51\n42 49 51\n42 72 19\n42 81 32\n42 91 21\n43 44 62\n43 49 64\n43 74 11\n43 76 81\n43 98 69\n44 45 30\n44 47 57\n44 50 46\n44 57 82\n44 67 80\n44 68 80\n44 69 76\n44 83 99\n44 87 43\n44 90 42\n45 46 78\n45 50 77\n45 57 71\n45 59 99\n45 68 90\n45 72 73\n45 78 61\n46 47 77\n46 48 29\n46 76 87\n46 78 88\n46 86 48\n46 91 19\n46 96 51\n47 48 51\n47 49 74\n47 55 11\n47 65 80\n47 66 14\n47 86 89\n47 89 65\n47 91 32\n48 49 34\n48 53 4\n48 61 92\n48 63 69\n48 94 87\n49 50 36\n49 52 67\n49 75 35\n49 87 2\n49 88 73\n49 90 47\n50 51 21\n50 74 7\n50 87 93\n50 93 6\n51 52 15\n51 53 88\n51 77 46\n51 78 75\n52 53 97\n52 55 17\n52 87 25\n53 54 27\n53 56 46\n53 60 69\n53 65 35\n53 73 21\n53 81 81\n53 94 46\n53 98 42\n53 100 27\n54 55 39\n54 58 26\n54 61 82\n54 63 36\n54 71 90\n54 79 87\n55 56 26\n55 92 94\n55 93 74\n55 100 56\n56 57 4\n56 62 88\n56 64 76\n56 74 94\n56 97 4\n56 98 74\n57 58 87\n57 63 85\n57 72 61\n57 74 66\n57 99 81\n58 59 31\n58 63 54\n58 86 62\n58 94 41\n58 96 45\n59 60 62\n59 82 32\n60 61 100\n60 68 21\n60 70 25\n60 71 7\n60 87 2\n60 95 26\n60 100 15\n61 62 10\n61 63 50\n61 69 25\n61 70 7\n61 81 36\n61 84 39\n61 93 20\n61 100 78\n62 63 48\n62 72 74\n62 84 31\n63 64 96\n63 88 36\n64 65 49\n64 67 80\n64 86 35\n64 93 33\n64 99 73\n65 66 99\n65 72 90\n65 76 38\n65 97 93\n66 67 75\n66 69 2\n66 70 38\n66 98 99\n67 68 97\n68 69 20\n68 79 92\n68 84 59\n68 96 13\n69 70 40\n69 80 41\n69 85 93\n69 93 32\n70 71 16\n71 72 54\n71 81 1\n71 90 36\n71 95 25\n72 73 57\n72 85 28\n72 86 96\n72 88 6\n72 97 59\n73 74 40\n74 75 78\n74 90 27\n74 92 20\n75 76 85\n75 82 25\n75 100 32\n76 77 77\n77 78 55\n77 97 45\n77 99 55\n78 79 31\n78 83 78\n79 80 4\n79 99 80\n80 81 94\n80 82 73\n81 82 59\n82 83 63\n82 92 58\n83 84 1\n83 97 37\n84 85 17\n84 88 70\n85 86 14\n85 88 34\n85 96 13\n86 87 17\n86 90 74\n87 88 85\n87 100 83\n88 89 98\n89 90 59\n89 94 64\n90 91 52\n91 92 27\n92 93 4\n92 99 48\n93 94 35\n93 96 35\n94 95 23\n94 99 56\n95 96 59\n95 99 58\n96 97 98\n97 98 92\n98 99 76\n99 100 88\n",
+    "output": "868700",
+    "kind": "full_size_assignment_oracle"
+  },
+  {
+    "problem": "E",
+    "input": "100 500\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n1 2 77\n1 4 78\n1 7 66\n1 8 36\n1 22 81\n1 25 73\n1 58 79\n1 59 100\n1 64 89\n1 70 89\n1 71 20\n1 72 26\n1 95 81\n1 96 82\n2 3 8\n2 18 20\n2 28 33\n2 34 70\n2 41 61\n2 59 28\n2 92 86\n2 98 44\n3 4 57\n3 16 41\n3 24 42\n3 54 75\n3 60 65\n3 76 71\n3 81 53\n3 89 59\n3 92 24\n4 5 90\n4 6 38\n4 9 94\n4 18 55\n4 29 16\n4 31 43\n4 34 70\n4 52 37\n4 98 33\n5 6 97\n5 8 100\n5 15 5\n5 29 10\n5 50 1\n5 71 80\n5 73 96\n5 94 79\n5 96 43\n5 99 95\n6 7 84\n6 9 30\n6 16 51\n6 20 22\n6 22 35\n6 34 10\n6 35 87\n6 38 62\n6 47 96\n6 55 48\n6 75 29\n7 8 67\n7 9 12\n7 23 62\n7 51 87\n7 52 3\n7 60 87\n7 76 75\n7 80 89\n8 9 42\n8 33 97\n8 43 76\n8 49 66\n8 52 10\n8 56 44\n8 75 93\n8 83 64\n8 84 93\n8 88 96\n8 95 91\n8 100 87\n9 10 46\n9 29 92\n9 30 77\n9 43 13\n9 55 3\n9 61 13\n9 75 60\n9 86 85\n10 11 97\n10 13 13\n10 15 89\n10 18 16\n10 27 85\n10 29 70\n10 50 93\n10 52 60\n10 80 60\n10 81 48\n11 12 54\n11 20 91\n11 24 20\n11 36 21\n11 47 31\n11 55 95\n11 64 74\n11 78 98\n11 79 92\n11 90 19\n11 91 68\n12 13 45\n12 18 13\n12 52 99\n12 75 16\n12 89 10\n13 14 94\n13 32 25\n13 41 75\n13 53 28\n13 54 33\n13 63 33\n13 85 90\n13 96 27\n14 15 2\n14 18 96\n14 26 65\n14 31 77\n14 32 89\n14 59 92\n14 64 32\n14 76 16\n14 78 71\n14 84 74\n14 94 72\n15 16 62\n15 23 17\n15 32 54\n15 47 19\n15 61 51\n15 62 33\n15 71 87\n15 72 84\n15 79 100\n16 17 8\n16 29 91\n16 55 28\n16 74 100\n17 18 78\n17 26 4\n17 44 63\n17 47 93\n17 54 32\n17 64 36\n17 80 93\n18 19 81\n18 28 38\n18 38 23\n18 66 63\n18 70 24\n18 82 19\n18 91 65\n18 99 30\n19 20 61\n19 38 44\n19 50 99\n19 55 5\n19 64 30\n19 65 41\n19 74 21\n19 76 99\n19 78 28\n19 91 59\n20 21 76\n20 81 83\n20 83 100\n20 85 20\n20 98 57\n20 100 14\n21 22 28\n21 28 82\n21 35 54\n21 41 57\n21 54 43\n21 67 97\n21 70 91\n21 86 49\n21 88 7\n22 23 35\n22 35 74\n22 50 97\n22 61 89\n22 71 18\n22 78 31\n22 83 100\n23 24 99\n23 55 10\n23 68 93\n23 79 51\n23 83 44\n23 96 76\n23 97 24\n24 25 15\n24 41 30\n24 50 9\n24 61 95\n24 82 32\n25 26 54\n25 30 22\n25 42 92\n25 74 97\n25 90 84\n25 94 61\n26 27 60\n26 51 14\n26 57 89\n26 75 22\n26 78 92\n26 81 52\n26 82 53\n26 91 87\n26 95 77\n27 28 66\n27 29 68\n27 54 9\n27 59 30\n27 60 83\n27 66 14\n27 96 51\n28 29 1\n28 39 5\n28 52 68\n28 57 91\n28 64 25\n28 70 74\n28 78 87\n28 81 38\n28 90 87\n28 97 15\n29 30 18\n29 38 43\n29 49 37\n29 63 33\n29 86 75\n29 95 43\n30 31 28\n30 33 41\n30 47 7\n30 56 12\n30 64 46\n30 79 8\n30 92 91\n31 32 58\n31 49 41\n31 57 100\n31 66 66\n31 80 93\n31 84 34\n31 91 76\n31 96 44\n31 99 79\n32 33 10\n32 42 32\n33 34 93\n34 35 88\n34 36 73\n34 51 84\n34 53 78\n34 54 100\n34 59 23\n34 73 78\n34 91 50\n35 36 89\n35 42 86\n35 55 78\n35 58 44\n35 63 53\n36 37 41\n36 41 95\n36 50 87\n36 59 63\n36 78 57\n36 82 40\n37 38 69\n37 41 72\n37 46 1\n37 47 78\n37 51 74\n37 72 11\n37 74 86\n37 79 83\n37 82 1\n37 86 10\n37 88 7\n38 39 4\n38 46 59\n38 53 5\n38 59 12\n38 60 14\n38 69 11\n38 70 24\n38 75 45\n39 40 1\n39 51 2\n39 66 28\n39 73 40\n39 82 52\n40 41 81\n40 44 71\n40 51 73\n40 66 35\n40 80 53\n40 98 3\n40 99 67\n41 42 90\n41 50 44\n41 71 97\n41 85 14\n41 100 93\n42 43 43\n42 52 77\n42 55 72\n42 58 2\n42 71 69\n42 73 84\n43 44 48\n43 50 44\n43 54 48\n43 62 43\n43 84 75\n43 85 80\n44 45 55\n44 46 30\n44 51 45\n44 88 58\n44 92 22\n44 100 43\n45 46 34\n45 47 74\n45 48 14\n45 68 5\n45 87 48\n46 47 67\n46 65 36\n46 70 61\n46 89 59\n47 48 64\n47 60 25\n47 65 37\n47 84 29\n47 86 3\n47 92 91\n48 49 90\n48 56 39\n48 92 1\n49 50 64\n49 55 87\n49 65 63\n49 78 53\n49 83 36\n50 51 45\n50 65 7\n50 83 4\n50 89 67\n50 91 12\n51 52 8\n52 53 99\n52 63 96\n52 93 3\n52 96 22\n53 54 13\n53 66 46\n54 55 43\n54 62 24\n54 67 82\n54 80 24\n55 56 93\n55 62 9\n55 76 35\n55 82 95\n55 88 33\n55 89 25\n55 95 95\n55 100 47\n56 57 83\n56 64 97\n56 77 52\n56 85 32\n56 100 14\n57 58 27\n57 65 82\n57 79 100\n57 91 36\n57 100 65\n58 59 95\n58 74 66\n59 60 93\n59 92 96\n60 61 34\n60 73 61\n60 96 52\n61 62 53\n61 67 50\n61 74 15\n61 92 52\n61 93 2\n61 100 26\n62 63 78\n62 66 80\n62 76 88\n62 85 51\n62 90 81\n62 96 59\n63 64 64\n63 70 22\n63 77 15\n63 82 59\n64 65 69\n64 73 78\n64 75 13\n64 87 77\n64 92 96\n65 66 12\n65 88 67\n65 91 5\n65 97 86\n66 67 49\n66 75 71\n66 83 90\n66 85 10\n67 68 82\n67 86 67\n67 96 97\n68 69 43\n68 85 3\n68 96 50\n68 98 31\n69 70 6\n69 73 51\n69 80 58\n69 84 82\n69 99 90\n70 71 46\n70 72 100\n70 76 8\n70 80 31\n70 90 38\n70 96 89\n71 72 32\n71 76 42\n71 91 57\n71 95 21\n72 73 86\n72 96 93\n73 74 64\n74 75 25\n75 76 53\n75 89 41\n75 90 60\n76 77 70\n76 92 16\n77 78 46\n78 79 71\n78 90 15\n79 80 11\n79 95 26\n80 81 83\n81 82 91\n81 92 49\n82 83 18\n82 99 62\n82 100 8\n83 84 33\n83 90 27\n83 99 98\n84 85 12\n85 86 25\n86 87 43\n86 91 6\n86 100 80\n87 88 23\n87 92 4\n88 89 49\n89 90 14\n89 91 87\n89 98 74\n89 100 58\n90 91 49\n90 96 36\n91 92 78\n92 93 72\n92 98 12\n93 94 15\n93 96 85\n93 97 20\n94 95 26\n95 96 43\n96 97 32\n97 98 8\n98 99 19\n99 100 66\n",
+    "output": "867300",
+    "kind": "full_size_assignment_oracle"
+  },
+  {
+    "problem": "E",
+    "input": "100 500\n100 100 100 100 100 100 100 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 0 0 0 0 0 0 0 100 100\n0 0 0 0 0 0 0 100 100 100 100 100 100 100 100 100\n1 2 35\n1 11 93\n1 12 41\n1 17 2\n1 48 24\n1 52 34\n1 75 15\n1 81 39\n1 82 53\n1 91 32\n1 96 81\n2 3 17\n2 11 2\n2 23 2\n2 29 54\n2 40 57\n2 65 93\n2 91 30\n2 94 100\n2 95 36\n3 4 33\n3 14 32\n3 17 4\n3 32 35\n3 42 59\n3 52 16\n3 59 29\n3 81 77\n3 86 72\n4 5 91\n4 13 97\n4 26 69\n4 31 32\n4 39 27\n5 6 56\n5 10 2\n5 19 46\n5 21 9\n5 34 75\n5 38 59\n5 42 40\n5 60 3\n5 83 50\n5 86 47\n5 87 21\n6 7 52\n6 12 25\n6 24 2\n6 41 75\n6 52 39\n6 53 91\n6 78 73\n6 80 19\n7 8 66\n7 9 73\n7 13 39\n7 34 11\n7 38 89\n7 62 45\n7 99 92\n8 9 63\n8 31 10\n8 36 54\n8 69 32\n8 81 24\n8 88 61\n8 94 69\n8 98 14\n9 10 63\n9 16 18\n9 30 30\n9 37 39\n9 58 91\n9 71 4\n10 11 60\n10 20 99\n10 64 98\n10 65 41\n10 90 93\n10 97 54\n10 99 67\n11 12 32\n11 14 57\n11 22 27\n11 29 90\n11 33 39\n11 44 66\n11 64 13\n11 72 100\n11 84 24\n11 95 79\n11 96 53\n12 13 81\n12 14 58\n12 26 90\n12 31 28\n12 68 8\n12 71 79\n12 77 61\n12 81 45\n12 92 40\n13 14 6\n13 18 75\n13 22 35\n13 46 10\n13 60 10\n13 70 92\n13 77 35\n13 80 53\n13 98 94\n14 15 69\n14 18 72\n14 60 67\n14 66 42\n14 79 17\n14 95 58\n15 16 10\n15 23 100\n15 41 62\n15 42 85\n15 43 92\n15 46 7\n15 47 96\n15 48 42\n15 69 71\n15 73 19\n15 75 67\n15 78 18\n15 94 76\n16 17 7\n16 22 87\n16 23 45\n17 18 75\n17 35 100\n17 40 72\n17 52 1\n17 59 53\n17 88 85\n18 19 100\n18 52 9\n18 62 56\n18 70 28\n18 73 58\n18 86 71\n18 87 91\n19 20 9\n19 56 94\n19 73 20\n19 89 92\n20 21 29\n20 27 14\n20 34 27\n20 38 73\n20 39 83\n20 41 45\n20 64 89\n20 74 66\n20 75 65\n20 81 99\n20 97 18\n21 22 16\n21 31 27\n21 33 54\n21 35 82\n21 43 47\n21 54 17\n21 74 22\n21 99 28\n22 23 55\n22 36 97\n22 40 19\n22 43 23\n22 55 10\n22 78 45\n22 83 41\n22 87 85\n22 91 95\n22 94 74\n23 24 75\n23 42 73\n23 46 93\n23 61 53\n23 69 31\n23 88 52\n23 90 58\n23 92 65\n24 25 80\n24 29 28\n24 33 30\n24 38 25\n24 53 16\n24 59 51\n24 87 55\n24 97 68\n25 26 51\n25 46 45\n25 49 38\n25 60 35\n25 66 53\n25 70 80\n25 75 86\n25 78 62\n25 79 46\n25 83 16\n25 88 47\n25 100 85\n26 27 77\n26 30 38\n26 32 97\n26 41 92\n26 52 96\n26 54 46\n26 76 24\n26 97 9\n27 28 33\n27 35 64\n27 44 63\n27 54 20\n27 58 7\n27 66 68\n27 92 30\n27 94 65\n27 96 52\n28 29 83\n29 30 56\n29 34 69\n29 36 32\n29 46 46\n29 52 48\n29 63 84\n29 85 9\n29 86 32\n29 91 53\n30 31 9\n30 44 76\n30 49 24\n30 51 89\n30 56 28\n30 57 47\n30 68 4\n30 73 89\n30 93 92\n31 32 7\n31 39 62\n31 48 54\n31 53 17\n31 69 55\n32 33 66\n32 41 20\n32 62 37\n32 69 22\n32 70 42\n32 77 70\n32 83 42\n33 34 3\n33 42 90\n33 44 46\n33 57 86\n33 71 70\n33 83 29\n34 35 45\n34 44 25\n34 59 48\n34 87 4\n35 36 24\n35 45 22\n35 60 99\n35 63 65\n35 85 24\n35 95 49\n35 100 5\n36 37 74\n36 46 94\n36 53 40\n36 56 56\n36 73 31\n36 82 27\n37 38 1\n37 56 55\n37 71 30\n37 72 68\n38 39 72\n38 77 42\n38 87 54\n39 40 70\n39 57 24\n39 97 94\n40 41 6\n40 44 3\n40 50 62\n40 66 31\n41 42 63\n41 58 67\n41 77 24\n41 91 8\n41 96 59\n42 43 75\n42 62 10\n42 67 95\n42 82 51\n42 89 71\n43 44 63\n43 50 77\n43 53 70\n43 65 57\n43 69 5\n43 70 93\n43 72 97\n43 78 93\n43 87 57\n43 89 70\n44 45 86\n44 49 86\n44 85 44\n44 91 57\n45 46 1\n45 71 51\n45 74 77\n46 47 46\n46 59 38\n46 61 70\n46 65 31\n46 74 42\n46 100 95\n47 48 17\n47 75 97\n47 81 71\n47 99 24\n48 49 99\n48 55 39\n48 79 79\n48 80 81\n48 90 57\n49 50 47\n49 64 78\n49 86 78\n49 99 60\n50 51 78\n50 52 92\n50 60 91\n51 52 83\n51 54 74\n51 61 19\n51 64 99\n51 70 33\n51 90 82\n51 95 26\n51 97 7\n51 100 87\n52 53 94\n52 71 90\n52 88 71\n53 54 21\n53 60 90\n53 62 8\n53 72 29\n53 85 3\n53 90 56\n53 98 95\n54 55 49\n54 66 37\n54 78 61\n54 85 54\n55 56 65\n55 62 86\n55 65 77\n55 66 3\n55 75 66\n55 79 68\n55 85 80\n55 91 73\n55 92 6\n56 57 83\n56 64 62\n56 71 46\n56 82 92\n56 96 88\n57 58 25\n58 59 60\n58 70 35\n58 71 26\n58 72 87\n58 78 25\n58 83 16\n58 94 97\n59 60 33\n59 78 56\n59 81 48\n59 82 91\n60 61 92\n60 74 38\n60 76 44\n60 85 98\n60 86 84\n60 92 92\n61 62 11\n61 65 74\n61 85 92\n61 90 71\n62 63 89\n62 69 63\n62 73 24\n62 92 95\n63 64 4\n63 81 25\n63 88 69\n63 100 8\n64 65 57\n64 75 69\n64 92 16\n65 66 60\n65 71 29\n65 80 78\n66 67 61\n66 68 96\n66 98 5\n67 68 57\n67 72 37\n67 83 37\n67 93 16\n67 98 18\n68 69 100\n68 79 98\n68 80 93\n68 86 69\n69 70 97\n69 72 72\n69 85 56\n69 87 60\n69 93 32\n69 97 34\n70 71 68\n70 74 64\n70 76 36\n70 90 89\n70 93 35\n71 72 29\n71 81 20\n72 73 85\n72 90 32\n72 95 81\n73 74 79\n73 76 68\n73 79 73\n73 85 100\n74 75 67\n74 79 59\n74 80 61\n74 88 3\n74 96 32\n75 76 56\n75 98 42\n76 77 65\n76 82 61\n76 90 56\n77 78 65\n78 79 100\n78 90 52\n79 80 28\n79 87 54\n79 91 51\n80 81 36\n80 91 9\n80 98 70\n81 82 36\n81 91 51\n81 93 97\n82 83 17\n82 84 92\n83 84 68\n83 92 14\n83 100 69\n84 85 64\n84 91 50\n85 86 89\n85 88 75\n85 90 72\n85 91 33\n85 94 81\n86 87 100\n87 88 97\n87 89 51\n88 89 14\n88 95 58\n88 99 71\n89 90 48\n90 91 88\n90 97 99\n91 92 60\n91 99 61\n91 100 56\n92 93 91\n93 94 26\n94 95 20\n94 100 47\n95 96 11\n96 97 40\n97 98 16\n98 99 96\n99 100 14\n",
+    "output": "35000",
+    "kind": "full_size_shortest_path_oracle"
+  },
+  {
+    "problem": "E",
+    "input": "100 500\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 100 0 0 0 0 0 0 100 1\n1 2 35\n1 11 93\n1 12 41\n1 17 2\n1 48 24\n1 52 34\n1 75 15\n1 81 39\n1 82 53\n1 91 32\n1 96 81\n2 3 17\n2 11 2\n2 23 2\n2 29 54\n2 40 57\n2 65 93\n2 91 30\n2 94 100\n2 95 36\n3 4 33\n3 14 32\n3 17 4\n3 32 35\n3 42 59\n3 52 16\n3 59 29\n3 81 77\n3 86 72\n4 5 91\n4 13 97\n4 26 69\n4 31 32\n4 39 27\n5 6 56\n5 10 2\n5 19 46\n5 21 9\n5 34 75\n5 38 59\n5 42 40\n5 60 3\n5 83 50\n5 86 47\n5 87 21\n6 7 52\n6 12 25\n6 24 2\n6 41 75\n6 52 39\n6 53 91\n6 78 73\n6 80 19\n7 8 66\n7 9 73\n7 13 39\n7 34 11\n7 38 89\n7 62 45\n7 99 92\n8 9 63\n8 31 10\n8 36 54\n8 69 32\n8 81 24\n8 88 61\n8 94 69\n8 98 14\n9 10 63\n9 16 18\n9 30 30\n9 37 39\n9 58 91\n9 71 4\n10 11 60\n10 20 99\n10 64 98\n10 65 41\n10 90 93\n10 97 54\n10 99 67\n11 12 32\n11 14 57\n11 22 27\n11 29 90\n11 33 39\n11 44 66\n11 64 13\n11 72 100\n11 84 24\n11 95 79\n11 96 53\n12 13 81\n12 14 58\n12 26 90\n12 31 28\n12 68 8\n12 71 79\n12 77 61\n12 81 45\n12 92 40\n13 14 6\n13 18 75\n13 22 35\n13 46 10\n13 60 10\n13 70 92\n13 77 35\n13 80 53\n13 98 94\n14 15 69\n14 18 72\n14 60 67\n14 66 42\n14 79 17\n14 95 58\n15 16 10\n15 23 100\n15 41 62\n15 42 85\n15 43 92\n15 46 7\n15 47 96\n15 48 42\n15 69 71\n15 73 19\n15 75 67\n15 78 18\n15 94 76\n16 17 7\n16 22 87\n16 23 45\n17 18 75\n17 35 100\n17 40 72\n17 52 1\n17 59 53\n17 88 85\n18 19 100\n18 52 9\n18 62 56\n18 70 28\n18 73 58\n18 86 71\n18 87 91\n19 20 9\n19 56 94\n19 73 20\n19 89 92\n20 21 29\n20 27 14\n20 34 27\n20 38 73\n20 39 83\n20 41 45\n20 64 89\n20 74 66\n20 75 65\n20 81 99\n20 97 18\n21 22 16\n21 31 27\n21 33 54\n21 35 82\n21 43 47\n21 54 17\n21 74 22\n21 99 28\n22 23 55\n22 36 97\n22 40 19\n22 43 23\n22 55 10\n22 78 45\n22 83 41\n22 87 85\n22 91 95\n22 94 74\n23 24 75\n23 42 73\n23 46 93\n23 61 53\n23 69 31\n23 88 52\n23 90 58\n23 92 65\n24 25 80\n24 29 28\n24 33 30\n24 38 25\n24 53 16\n24 59 51\n24 87 55\n24 97 68\n25 26 51\n25 46 45\n25 49 38\n25 60 35\n25 66 53\n25 70 80\n25 75 86\n25 78 62\n25 79 46\n25 83 16\n25 88 47\n25 100 85\n26 27 77\n26 30 38\n26 32 97\n26 41 92\n26 52 96\n26 54 46\n26 76 24\n26 97 9\n27 28 33\n27 35 64\n27 44 63\n27 54 20\n27 58 7\n27 66 68\n27 92 30\n27 94 65\n27 96 52\n28 29 83\n29 30 56\n29 34 69\n29 36 32\n29 46 46\n29 52 48\n29 63 84\n29 85 9\n29 86 32\n29 91 53\n30 31 9\n30 44 76\n30 49 24\n30 51 89\n30 56 28\n30 57 47\n30 68 4\n30 73 89\n30 93 92\n31 32 7\n31 39 62\n31 48 54\n31 53 17\n31 69 55\n32 33 66\n32 41 20\n32 62 37\n32 69 22\n32 70 42\n32 77 70\n32 83 42\n33 34 3\n33 42 90\n33 44 46\n33 57 86\n33 71 70\n33 83 29\n34 35 45\n34 44 25\n34 59 48\n34 87 4\n35 36 24\n35 45 22\n35 60 99\n35 63 65\n35 85 24\n35 95 49\n35 100 5\n36 37 74\n36 46 94\n36 53 40\n36 56 56\n36 73 31\n36 82 27\n37 38 1\n37 56 55\n37 71 30\n37 72 68\n38 39 72\n38 77 42\n38 87 54\n39 40 70\n39 57 24\n39 97 94\n40 41 6\n40 44 3\n40 50 62\n40 66 31\n41 42 63\n41 58 67\n41 77 24\n41 91 8\n41 96 59\n42 43 75\n42 62 10\n42 67 95\n42 82 51\n42 89 71\n43 44 63\n43 50 77\n43 53 70\n43 65 57\n43 69 5\n43 70 93\n43 72 97\n43 78 93\n43 87 57\n43 89 70\n44 45 86\n44 49 86\n44 85 44\n44 91 57\n45 46 1\n45 71 51\n45 74 77\n46 47 46\n46 59 38\n46 61 70\n46 65 31\n46 74 42\n46 100 95\n47 48 17\n47 75 97\n47 81 71\n47 99 24\n48 49 99\n48 55 39\n48 79 79\n48 80 81\n48 90 57\n49 50 47\n49 64 78\n49 86 78\n49 99 60\n50 51 78\n50 52 92\n50 60 91\n51 52 83\n51 54 74\n51 61 19\n51 64 99\n51 70 33\n51 90 82\n51 95 26\n51 97 7\n51 100 87\n52 53 94\n52 71 90\n52 88 71\n53 54 21\n53 60 90\n53 62 8\n53 72 29\n53 85 3\n53 90 56\n53 98 95\n54 55 49\n54 66 37\n54 78 61\n54 85 54\n55 56 65\n55 62 86\n55 65 77\n55 66 3\n55 75 66\n55 79 68\n55 85 80\n55 91 73\n55 92 6\n56 57 83\n56 64 62\n56 71 46\n56 82 92\n56 96 88\n57 58 25\n58 59 60\n58 70 35\n58 71 26\n58 72 87\n58 78 25\n58 83 16\n58 94 97\n59 60 33\n59 78 56\n59 81 48\n59 82 91\n60 61 92\n60 74 38\n60 76 44\n60 85 98\n60 86 84\n60 92 92\n61 62 11\n61 65 74\n61 85 92\n61 90 71\n62 63 89\n62 69 63\n62 73 24\n62 92 95\n63 64 4\n63 81 25\n63 88 69\n63 100 8\n64 65 57\n64 75 69\n64 92 16\n65 66 60\n65 71 29\n65 80 78\n66 67 61\n66 68 96\n66 98 5\n67 68 57\n67 72 37\n67 83 37\n67 93 16\n67 98 18\n68 69 100\n68 79 98\n68 80 93\n68 86 69\n69 70 97\n69 72 72\n69 85 56\n69 87 60\n69 93 32\n69 97 34\n70 71 68\n70 74 64\n70 76 36\n70 90 89\n70 93 35\n71 72 29\n71 81 20\n72 73 85\n72 90 32\n72 95 81\n73 74 79\n73 76 68\n73 79 73\n73 85 100\n74 75 67\n74 79 59\n74 80 61\n74 88 3\n74 96 32\n75 76 56\n75 98 42\n76 77 65\n76 82 61\n76 90 56\n77 78 65\n78 79 100\n78 90 52\n79 80 28\n79 87 54\n79 91 51\n80 81 36\n80 91 9\n80 98 70\n81 82 36\n81 91 51\n81 93 97\n82 83 17\n82 84 92\n83 84 68\n83 92 14\n83 100 69\n84 85 64\n84 91 50\n85 86 89\n85 88 75\n85 90 72\n85 91 33\n85 94 81\n86 87 100\n87 88 97\n87 89 51\n88 89 14\n88 95 58\n88 99 71\n89 90 48\n90 91 88\n90 97 99\n91 92 60\n91 99 61\n91 100 56\n92 93 91\n93 94 26\n94 95 20\n94 100 47\n95 96 11\n96 97 40\n97 98 16\n98 99 96\n99 100 14\n",
+    "output": "10000",
+    "kind": "full_size_storage_oracle"
+  },
+  {
+    "problem": "E",
+    "input": "100 500\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n0 0 0 0 0 0 100 0 100 0 0 0 0 0 100 1\n1 2 35\n1 11 93\n1 12 41\n1 17 2\n1 48 24\n1 52 34\n1 75 15\n1 81 39\n1 82 53\n1 91 32\n1 96 81\n2 3 17\n2 11 2\n2 23 2\n2 29 54\n2 40 57\n2 65 93\n2 91 30\n2 94 100\n2 95 36\n3 4 33\n3 14 32\n3 17 4\n3 32 35\n3 42 59\n3 52 16\n3 59 29\n3 81 77\n3 86 72\n4 5 91\n4 13 97\n4 26 69\n4 31 32\n4 39 27\n5 6 56\n5 10 2\n5 19 46\n5 21 9\n5 34 75\n5 38 59\n5 42 40\n5 60 3\n5 83 50\n5 86 47\n5 87 21\n6 7 52\n6 12 25\n6 24 2\n6 41 75\n6 52 39\n6 53 91\n6 78 73\n6 80 19\n7 8 66\n7 9 73\n7 13 39\n7 34 11\n7 38 89\n7 62 45\n7 99 92\n8 9 63\n8 31 10\n8 36 54\n8 69 32\n8 81 24\n8 88 61\n8 94 69\n8 98 14\n9 10 63\n9 16 18\n9 30 30\n9 37 39\n9 58 91\n9 71 4\n10 11 60\n10 20 99\n10 64 98\n10 65 41\n10 90 93\n10 97 54\n10 99 67\n11 12 32\n11 14 57\n11 22 27\n11 29 90\n11 33 39\n11 44 66\n11 64 13\n11 72 100\n11 84 24\n11 95 79\n11 96 53\n12 13 81\n12 14 58\n12 26 90\n12 31 28\n12 68 8\n12 71 79\n12 77 61\n12 81 45\n12 92 40\n13 14 6\n13 18 75\n13 22 35\n13 46 10\n13 60 10\n13 70 92\n13 77 35\n13 80 53\n13 98 94\n14 15 69\n14 18 72\n14 60 67\n14 66 42\n14 79 17\n14 95 58\n15 16 10\n15 23 100\n15 41 62\n15 42 85\n15 43 92\n15 46 7\n15 47 96\n15 48 42\n15 69 71\n15 73 19\n15 75 67\n15 78 18\n15 94 76\n16 17 7\n16 22 87\n16 23 45\n17 18 75\n17 35 100\n17 40 72\n17 52 1\n17 59 53\n17 88 85\n18 19 100\n18 52 9\n18 62 56\n18 70 28\n18 73 58\n18 86 71\n18 87 91\n19 20 9\n19 56 94\n19 73 20\n19 89 92\n20 21 29\n20 27 14\n20 34 27\n20 38 73\n20 39 83\n20 41 45\n20 64 89\n20 74 66\n20 75 65\n20 81 99\n20 97 18\n21 22 16\n21 31 27\n21 33 54\n21 35 82\n21 43 47\n21 54 17\n21 74 22\n21 99 28\n22 23 55\n22 36 97\n22 40 19\n22 43 23\n22 55 10\n22 78 45\n22 83 41\n22 87 85\n22 91 95\n22 94 74\n23 24 75\n23 42 73\n23 46 93\n23 61 53\n23 69 31\n23 88 52\n23 90 58\n23 92 65\n24 25 80\n24 29 28\n24 33 30\n24 38 25\n24 53 16\n24 59 51\n24 87 55\n24 97 68\n25 26 51\n25 46 45\n25 49 38\n25 60 35\n25 66 53\n25 70 80\n25 75 86\n25 78 62\n25 79 46\n25 83 16\n25 88 47\n25 100 85\n26 27 77\n26 30 38\n26 32 97\n26 41 92\n26 52 96\n26 54 46\n26 76 24\n26 97 9\n27 28 33\n27 35 64\n27 44 63\n27 54 20\n27 58 7\n27 66 68\n27 92 30\n27 94 65\n27 96 52\n28 29 83\n29 30 56\n29 34 69\n29 36 32\n29 46 46\n29 52 48\n29 63 84\n29 85 9\n29 86 32\n29 91 53\n30 31 9\n30 44 76\n30 49 24\n30 51 89\n30 56 28\n30 57 47\n30 68 4\n30 73 89\n30 93 92\n31 32 7\n31 39 62\n31 48 54\n31 53 17\n31 69 55\n32 33 66\n32 41 20\n32 62 37\n32 69 22\n32 70 42\n32 77 70\n32 83 42\n33 34 3\n33 42 90\n33 44 46\n33 57 86\n33 71 70\n33 83 29\n34 35 45\n34 44 25\n34 59 48\n34 87 4\n35 36 24\n35 45 22\n35 60 99\n35 63 65\n35 85 24\n35 95 49\n35 100 5\n36 37 74\n36 46 94\n36 53 40\n36 56 56\n36 73 31\n36 82 27\n37 38 1\n37 56 55\n37 71 30\n37 72 68\n38 39 72\n38 77 42\n38 87 54\n39 40 70\n39 57 24\n39 97 94\n40 41 6\n40 44 3\n40 50 62\n40 66 31\n41 42 63\n41 58 67\n41 77 24\n41 91 8\n41 96 59\n42 43 75\n42 62 10\n42 67 95\n42 82 51\n42 89 71\n43 44 63\n43 50 77\n43 53 70\n43 65 57\n43 69 5\n43 70 93\n43 72 97\n43 78 93\n43 87 57\n43 89 70\n44 45 86\n44 49 86\n44 85 44\n44 91 57\n45 46 1\n45 71 51\n45 74 77\n46 47 46\n46 59 38\n46 61 70\n46 65 31\n46 74 42\n46 100 95\n47 48 17\n47 75 97\n47 81 71\n47 99 24\n48 49 99\n48 55 39\n48 79 79\n48 80 81\n48 90 57\n49 50 47\n49 64 78\n49 86 78\n49 99 60\n50 51 78\n50 52 92\n50 60 91\n51 52 83\n51 54 74\n51 61 19\n51 64 99\n51 70 33\n51 90 82\n51 95 26\n51 97 7\n51 100 87\n52 53 94\n52 71 90\n52 88 71\n53 54 21\n53 60 90\n53 62 8\n53 72 29\n53 85 3\n53 90 56\n53 98 95\n54 55 49\n54 66 37\n54 78 61\n54 85 54\n55 56 65\n55 62 86\n55 65 77\n55 66 3\n55 75 66\n55 79 68\n55 85 80\n55 91 73\n55 92 6\n56 57 83\n56 64 62\n56 71 46\n56 82 92\n56 96 88\n57 58 25\n58 59 60\n58 70 35\n58 71 26\n58 72 87\n58 78 25\n58 83 16\n58 94 97\n59 60 33\n59 78 56\n59 81 48\n59 82 91\n60 61 92\n60 74 38\n60 76 44\n60 85 98\n60 86 84\n60 92 92\n61 62 11\n61 65 74\n61 85 92\n61 90 71\n62 63 89\n62 69 63\n62 73 24\n62 92 95\n63 64 4\n63 81 25\n63 88 69\n63 100 8\n64 65 57\n64 75 69\n64 92 16\n65 66 60\n65 71 29\n65 80 78\n66 67 61\n66 68 96\n66 98 5\n67 68 57\n67 72 37\n67 83 37\n67 93 16\n67 98 18\n68 69 100\n68 79 98\n68 80 93\n68 86 69\n69 70 97\n69 72 72\n69 85 56\n69 87 60\n69 93 32\n69 97 34\n70 71 68\n70 74 64\n70 76 36\n70 90 89\n70 93 35\n71 72 29\n71 81 20\n72 73 85\n72 90 32\n72 95 81\n73 74 79\n73 76 68\n73 79 73\n73 85 100\n74 75 67\n74 79 59\n74 80 61\n74 88 3\n74 96 32\n75 76 56\n75 98 42\n76 77 65\n76 82 61\n76 90 56\n77 78 65\n78 79 100\n78 90 52\n79 80 28\n79 87 54\n79 91 51\n80 81 36\n80 91 9\n80 98 70\n81 82 36\n81 91 51\n81 93 97\n82 83 17\n82 84 92\n83 84 68\n83 92 14\n83 100 69\n84 85 64\n84 91 50\n85 86 89\n85 88 75\n85 90 72\n85 91 33\n85 94 81\n86 87 100\n87 88 97\n87 89 51\n88 89 14\n88 95 58\n88 99 71\n89 90 48\n90 91 88\n90 97 99\n91 92 60\n91 99 61\n91 100 56\n92 93 91\n93 94 26\n94 95 20\n94 100 47\n95 96 11\n96 97 40\n97 98 16\n98 99 96\n99 100 14\n",
+    "output": "20000",
+    "kind": "full_size_storage_oracle"
+  },
+  {
+    "problem": "E",
+    "input": "100 500\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100\n1 2 35\n1 11 93\n1 12 41\n1 17 2\n1 48 24\n1 52 34\n1 75 15\n1 81 39\n1 82 53\n1 91 32\n1 96 81\n2 3 17\n2 11 2\n2 23 2\n2 29 54\n2 40 57\n2 65 93\n2 91 30\n2 94 100\n2 95 36\n3 4 33\n3 14 32\n3 17 4\n3 32 35\n3 42 59\n3 52 16\n3 59 29\n3 81 77\n3 86 72\n4 5 91\n4 13 97\n4 26 69\n4 31 32\n4 39 27\n5 6 56\n5 10 2\n5 19 46\n5 21 9\n5 34 75\n5 38 59\n5 42 40\n5 60 3\n5 83 50\n5 86 47\n5 87 21\n6 7 52\n6 12 25\n6 24 2\n6 41 75\n6 52 39\n6 53 91\n6 78 73\n6 80 19\n7 8 66\n7 9 73\n7 13 39\n7 34 11\n7 38 89\n7 62 45\n7 99 92\n8 9 63\n8 31 10\n8 36 54\n8 69 32\n8 81 24\n8 88 61\n8 94 69\n8 98 14\n9 10 63\n9 16 18\n9 30 30\n9 37 39\n9 58 91\n9 71 4\n10 11 60\n10 20 99\n10 64 98\n10 65 41\n10 90 93\n10 97 54\n10 99 67\n11 12 32\n11 14 57\n11 22 27\n11 29 90\n11 33 39\n11 44 66\n11 64 13\n11 72 100\n11 84 24\n11 95 79\n11 96 53\n12 13 81\n12 14 58\n12 26 90\n12 31 28\n12 68 8\n12 71 79\n12 77 61\n12 81 45\n12 92 40\n13 14 6\n13 18 75\n13 22 35\n13 46 10\n13 60 10\n13 70 92\n13 77 35\n13 80 53\n13 98 94\n14 15 69\n14 18 72\n14 60 67\n14 66 42\n14 79 17\n14 95 58\n15 16 10\n15 23 100\n15 41 62\n15 42 85\n15 43 92\n15 46 7\n15 47 96\n15 48 42\n15 69 71\n15 73 19\n15 75 67\n15 78 18\n15 94 76\n16 17 7\n16 22 87\n16 23 45\n17 18 75\n17 35 100\n17 40 72\n17 52 1\n17 59 53\n17 88 85\n18 19 100\n18 52 9\n18 62 56\n18 70 28\n18 73 58\n18 86 71\n18 87 91\n19 20 9\n19 56 94\n19 73 20\n19 89 92\n20 21 29\n20 27 14\n20 34 27\n20 38 73\n20 39 83\n20 41 45\n20 64 89\n20 74 66\n20 75 65\n20 81 99\n20 97 18\n21 22 16\n21 31 27\n21 33 54\n21 35 82\n21 43 47\n21 54 17\n21 74 22\n21 99 28\n22 23 55\n22 36 97\n22 40 19\n22 43 23\n22 55 10\n22 78 45\n22 83 41\n22 87 85\n22 91 95\n22 94 74\n23 24 75\n23 42 73\n23 46 93\n23 61 53\n23 69 31\n23 88 52\n23 90 58\n23 92 65\n24 25 80\n24 29 28\n24 33 30\n24 38 25\n24 53 16\n24 59 51\n24 87 55\n24 97 68\n25 26 51\n25 46 45\n25 49 38\n25 60 35\n25 66 53\n25 70 80\n25 75 86\n25 78 62\n25 79 46\n25 83 16\n25 88 47\n25 100 85\n26 27 77\n26 30 38\n26 32 97\n26 41 92\n26 52 96\n26 54 46\n26 76 24\n26 97 9\n27 28 33\n27 35 64\n27 44 63\n27 54 20\n27 58 7\n27 66 68\n27 92 30\n27 94 65\n27 96 52\n28 29 83\n29 30 56\n29 34 69\n29 36 32\n29 46 46\n29 52 48\n29 63 84\n29 85 9\n29 86 32\n29 91 53\n30 31 9\n30 44 76\n30 49 24\n30 51 89\n30 56 28\n30 57 47\n30 68 4\n30 73 89\n30 93 92\n31 32 7\n31 39 62\n31 48 54\n31 53 17\n31 69 55\n32 33 66\n32 41 20\n32 62 37\n32 69 22\n32 70 42\n32 77 70\n32 83 42\n33 34 3\n33 42 90\n33 44 46\n33 57 86\n33 71 70\n33 83 29\n34 35 45\n34 44 25\n34 59 48\n34 87 4\n35 36 24\n35 45 22\n35 60 99\n35 63 65\n35 85 24\n35 95 49\n35 100 5\n36 37 74\n36 46 94\n36 53 40\n36 56 56\n36 73 31\n36 82 27\n37 38 1\n37 56 55\n37 71 30\n37 72 68\n38 39 72\n38 77 42\n38 87 54\n39 40 70\n39 57 24\n39 97 94\n40 41 6\n40 44 3\n40 50 62\n40 66 31\n41 42 63\n41 58 67\n41 77 24\n41 91 8\n41 96 59\n42 43 75\n42 62 10\n42 67 95\n42 82 51\n42 89 71\n43 44 63\n43 50 77\n43 53 70\n43 65 57\n43 69 5\n43 70 93\n43 72 97\n43 78 93\n43 87 57\n43 89 70\n44 45 86\n44 49 86\n44 85 44\n44 91 57\n45 46 1\n45 71 51\n45 74 77\n46 47 46\n46 59 38\n46 61 70\n46 65 31\n46 74 42\n46 100 95\n47 48 17\n47 75 97\n47 81 71\n47 99 24\n48 49 99\n48 55 39\n48 79 79\n48 80 81\n48 90 57\n49 50 47\n49 64 78\n49 86 78\n49 99 60\n50 51 78\n50 52 92\n50 60 91\n51 52 83\n51 54 74\n51 61 19\n51 64 99\n51 70 33\n51 90 82\n51 95 26\n51 97 7\n51 100 87\n52 53 94\n52 71 90\n52 88 71\n53 54 21\n53 60 90\n53 62 8\n53 72 29\n53 85 3\n53 90 56\n53 98 95\n54 55 49\n54 66 37\n54 78 61\n54 85 54\n55 56 65\n55 62 86\n55 65 77\n55 66 3\n55 75 66\n55 79 68\n55 85 80\n55 91 73\n55 92 6\n56 57 83\n56 64 62\n56 71 46\n56 82 92\n56 96 88\n57 58 25\n58 59 60\n58 70 35\n58 71 26\n58 72 87\n58 78 25\n58 83 16\n58 94 97\n59 60 33\n59 78 56\n59 81 48\n59 82 91\n60 61 92\n60 74 38\n60 76 44\n60 85 98\n60 86 84\n60 92 92\n61 62 11\n61 65 74\n61 85 92\n61 90 71\n62 63 89\n62 69 63\n62 73 24\n62 92 95\n63 64 4\n63 81 25\n63 88 69\n63 100 8\n64 65 57\n64 75 69\n64 92 16\n65 66 60\n65 71 29\n65 80 78\n66 67 61\n66 68 96\n66 98 5\n67 68 57\n67 72 37\n67 83 37\n67 93 16\n67 98 18\n68 69 100\n68 79 98\n68 80 93\n68 86 69\n69 70 97\n69 72 72\n69 85 56\n69 87 60\n69 93 32\n69 97 34\n70 71 68\n70 74 64\n70 76 36\n70 90 89\n70 93 35\n71 72 29\n71 81 20\n72 73 85\n72 90 32\n72 95 81\n73 74 79\n73 76 68\n73 79 73\n73 85 100\n74 75 67\n74 79 59\n74 80 61\n74 88 3\n74 96 32\n75 76 56\n75 98 42\n76 77 65\n76 82 61\n76 90 56\n77 78 65\n78 79 100\n78 90 52\n79 80 28\n79 87 54\n79 91 51\n80 81 36\n80 91 9\n80 98 70\n81 82 36\n81 91 51\n81 93 97\n82 83 17\n82 84 92\n83 84 68\n83 92 14\n83 100 69\n84 85 64\n84 91 50\n85 86 89\n85 88 75\n85 90 72\n85 91 33\n85 94 81\n86 87 100\n87 88 97\n87 89 51\n88 89 14\n88 95 58\n88 99 71\n89 90 48\n90 91 88\n90 97 99\n91 92 60\n91 99 61\n91 100 56\n92 93 91\n93 94 26\n94 95 20\n94 100 47\n95 96 11\n96 97 40\n97 98 16\n98 99 96\n99 100 14\n",
+    "output": "0",
+    "kind": "full_size_local_balance_oracle"
+  }
+]

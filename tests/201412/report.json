@@ -1,0 +1,82 @@
+{
+  "contest": "201412",
+  "source_sha256": {
+    "A": "0d3c6bff615e0b424d56378fe2a9bdb76fa557bafadc1d24c7379e3c0a509ab7",
+    "B": "f1ac108f70335eac6e2634659bcb92e877f0a5672614b4c9bf521d3b808858df",
+    "C": "61cde8c0dc2cb7f794980bc29258c927c4247eb451a5b0117ad9e43efe4f0b7d",
+    "D": "5083d4e22952af2df30fe21fbff24385c3058d4bfd3f46a7c2907a4152641bbc",
+    "E": "a957f8de16d46fd9dee32d030800df5133b098fb4e90744a7dafa20e8843351e"
+  },
+  "different_inputs": 856,
+  "categories": {
+    "retained_independent": 268,
+    "saved_sample": 9,
+    "constructive_stress": 5,
+    "additional_independent": 574
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "A",
+      "kind": "constructive_stress",
+      "seconds": 0.004321082999999781
+    },
+    {
+      "problem": "B",
+      "kind": "constructive_stress",
+      "seconds": 0.03566779099999984
+    },
+    {
+      "problem": "C",
+      "kind": "constructive_stress",
+      "seconds": 0.0024104160000000263
+    },
+    {
+      "problem": "D",
+      "kind": "constructive_stress",
+      "seconds": 0.008795207999999555
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.0375654170000006
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 63,
+        "B": 32,
+        "C": 322,
+        "D": 216,
+        "E": 223
+      },
+      "total": 856,
+      "seconds": 4.305210959
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 62,
+        "B": 31,
+        "C": 321,
+        "D": 215,
+        "E": 222
+      },
+      "total": 851,
+      "seconds": 6.3295639999999995
+    }
+  ],
+  "independent_oracles": "Visit-prefix counts, literal Z-walk retained oracle, direct candidate-price order summation (current zero-volume convention only), exhaustive spanning-tree subsets, exhaustive cyclic end-of-day inventory DP with literal production choices (independent of min-cost flow).",
+  "note": "No online submission was made. Original C remains 90 Wrong Answer, unresolved; local oracle agreement is not a full-score claim. Other original accepted records are historical."
+}

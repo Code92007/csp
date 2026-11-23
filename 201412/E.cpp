@@ -1,101 +1,103 @@
-#include <algorithm>
-#include <array>
-#include <functional>
-#include <iostream>
-#include <limits>
-#include <queue>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-struct MinCostFlow {
-    struct Edge {
-        int to, reverse, capacity, cost;
-    };
-    vector<vector<Edge>> g;
-    explicit MinCostFlow(int n) : g(n) {}
-    void add(int u, int v, int cap, int cost) {
-        Edge a{v, int(g[v].size()), cap, cost}, b{u, int(g[u].size()), 0, -cost};
-        g[u].push_back(a);
-        g[v].push_back(b);
+typedef long long ll;
+const int N=710,M=18210,K=7;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+struct MCMF{
+    struct edge{
+        int v,nxt,w;
+        ll cost;
+    }e[M];
+    int head[N],pre[N],q[N],cnt;
+    ll dis[N],ans;
+    bool vis[N];
+    void init(){
+        cnt=0;
+        memset(head,-1,sizeof head);
     }
-    ll solve(int source, int sink, int required) {
-        int n = g.size();
-        vector<ll> potential(n), dist(n);
-        vector<int> parent(n), index(n);
-        ll answer = 0;
-        const ll INF = 1LL << 60;
-        while (required) {
-            fill(dist.begin(), dist.end(), INF);
-            dist[source] = 0;
-            priority_queue<pair<ll, int>, vector<pair<ll, int>>, greater<pair<ll, int>>> q;
-            q.push({0, source});
-            while (!q.empty()) {
-                auto [d, u] = q.top();
-                q.pop();
-                if (d != dist[u])
-                    continue;
-                for (int j = 0; j < int(g[u].size()); ++j) {
-                    auto e = g[u][j];
-                    ll nd = d + e.cost + potential[u] - potential[e.to];
-                    if (e.capacity && nd < dist[e.to]) {
-                        dist[e.to] = nd;
-                        parent[e.to] = u;
-                        index[e.to] = j;
-                        q.push({nd, e.to});
-                    }
+    void add(int x,int y,int z,int w){
+        e[cnt]={y,head[x],z,w};
+        head[x]=cnt++;
+    }
+    void add2(int x,int y,int z,int w){
+        add(x,y,z,w);
+        add(y,x,0,-w);
+    }
+    bool spfa(int s,int t){
+        memset(dis,(int)INF,sizeof dis);
+        memset(vis,0,sizeof vis);
+        int l=0,r=1;
+        q[0]=s;
+        dis[s]=0;
+        vis[s]=1;
+        while(l!=r){
+            int u=q[l];
+            l=(l+1)%N;
+            vis[u]=0;
+            for(int i=head[u];i!=-1;i=e[i].nxt){
+                int v=e[i].v;
+                if(!e[i].w || dis[v]<=dis[u]+e[i].cost)continue;
+                dis[v]=dis[u]+e[i].cost;
+                pre[v]=i;
+                if(!vis[v]){
+                    vis[v]=1;
+                    q[r]=v;
+                    r=(r+1)%N;
                 }
             }
-            if (dist[sink] == INF)
-                return -1;
-            for (int u = 0; u < n; ++u)
-                if (dist[u] != INF)
-                    potential[u] += dist[u];
-            int flow = required;
-            for (int v = sink; v != source; v = parent[v])
-                flow = min(flow, g[parent[v]][index[v]].capacity);
-            for (int v = sink; v != source; v = parent[v]) {
-                auto &e = g[parent[v]][index[v]];
-                answer += ll(flow) * e.cost;
-                e.capacity -= flow;
-                g[v][e.reverse].capacity += flow;
-            }
-            required -= flow;
         }
-        return answer;
+        return dis[t]!=INF;
     }
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    int source = 7 * n, sink = source + 1, total = 0;
-    MinCostFlow flow(sink + 1);
-    for (int i = 0; i < n; ++i) {
-        array<int, 7> a{}, b{};
-        for (int &v : a)
-            cin >> v;
-        for (int &v : b)
-            cin >> v;
-        int cap, cost;
-        cin >> cap >> cost;
-        for (int j = 0; j < 7; ++j) {
-            flow.add(source, 7 * i + j, a[j], 0);
-            flow.add(7 * i + j, sink, b[j], 0);
-            flow.add(7 * i + j, 7 * i + (j + 1) % 7, cap, cost);
-            total += b[j];
+    int augment(int s,int t,int num){
+        for(int v=t;v!=s;v=e[pre[v]^1].v){
+            num=min(num,e[pre[v]].w);
         }
+        for(int v=t;v!=s;v=e[pre[v]^1].v){
+            int i=pre[v];
+            e[i].w-=num;
+            e[i^1].w+=num;
+            ans+=(ll)num*e[i].cost;
+        }
+        return num;
     }
-    while (m--) {
-        int u, v, c;
-        cin >> u >> v >> c;
-        --u;
-        --v;
-        for (int j = 0; j < 7; ++j) {
-            flow.add(7 * u + j, 7 * v + j, 1000000000, c);
-            flow.add(7 * v + j, 7 * u + j, 1000000000, c);
+    ll mcmf(int s,int t,int need){
+        ans=0;
+        while(need && spfa(s,t)){
+            need-=augment(s,t,need);
+        }
+        return need?-1:ans;
+    }
+}f;
+int n,m,s,t,sum,a[K],b[K];
+int main(){
+    scanf("%d%d",&n,&m);
+    s=K*n,t=s+1;
+    f.init();
+    for(int i=0;i<n;++i){
+        for(int &x:a){
+            scanf("%d",&x);
+        }
+        for(int &x:b){
+            scanf("%d",&x);
+        }
+        int c,w;
+        scanf("%d%d",&c,&w);
+        for(int j=0;j<K;++j){
+            f.add2(s,K*i+j,a[j],0);
+            f.add2(K*i+j,t,b[j],0);
+            f.add2(K*i+j,K*i+(j+1)%K,c,w);
+            sum+=b[j];
         }
     }
-    cout << flow.solve(source, sink, total) << '\n';
+    while(m--){
+        int u,v,w;
+        scanf("%d%d%d",&u,&v,&w);
+        --u,--v;
+        for(int j=0;j<K;++j){
+            f.add2(K*u+j,K*v+j,1e9,w);
+            f.add2(K*v+j,K*u+j,1e9,w);
+        }
+    }
+    printf("%lld\n",f.mcmf(s,t,sum));
+    return 0;
 }

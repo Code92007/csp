@@ -1,0 +1,51 @@
+{
+  "contest": "201412",
+  "source_sha256": {
+    "C": "da9a660760de1b35e3ac5bd1bbdb3564bea4419d3d694e26f8d18b4fede45504"
+  },
+  "different_inputs": 322,
+  "categories": {
+    "retained_independent": 100,
+    "saved_sample": 2,
+    "additional_independent": 219,
+    "constructive_stress": 1
+  },
+  "compilation": {
+    "refactored/C": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "C",
+      "kind": "constructive_stress",
+      "seconds": 0.0026031250000002615
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "C": 322
+      },
+      "total": 322,
+      "seconds": 1.1079611249999999
+    },
+    {
+      "problem": "C",
+      "kind": "constructive_stress",
+      "seconds": 0.005100792000000354
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "C": 322
+      },
+      "total": 322,
+      "seconds": 2.053414542
+    }
+  ],
+  "independent_oracles": "Direct candidate-price order summation; zero-volume cases verify only the historical convention. Original online 90 Wrong Answer remains unresolved.",
+  "note": "No online submission was made. Original C remains 90 Wrong Answer, unresolved; local oracle agreement is not a full-score claim. Other original accepted records are historical.",
+  "before_sha256": {
+    "C": "61cde8c0dc2cb7f794980bc29258c927c4247eb451a5b0117ad9e43efe4f0b7d"
+  },
+  "changes": "Compute ans=max(0ll,ans) before printf; output values and current candidate-price convention unchanged."
+}

@@ -1,59 +1,54 @@
-#include <algorithm>
-#include <iomanip>
-#include <iostream>
-#include <map>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Order {
-    string type;
-    int price = 0;
-    long long quantity = 0;
-    bool active = true;
+typedef long long ll;
+typedef pair<ll,ll> P;
+const int M=10;
+struct order{
+    int op,p;
+    ll num;
+    bool ok;
 };
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    vector<Order> orders(1);
-    string type;
-    while (cin >> type) {
-        Order o;
-        o.type = type;
-        if (type == "cancel") {
-            int i;
-            cin >> i;
-            orders[i].active = false;
-            o.active = false;
-        } else {
-            string p;
-            cin >> p >> o.quantity;
-            size_t dot = p.find('.');
-            o.price = stoi(p.substr(0, dot)) * 100 + stoi(p.substr(dot + 1));
+vector<order> a(1);
+map<int,P> g;
+char s[M];
+ll buy,sell,ans=-1;
+int price;
+int main(){
+    while(scanf("%s",s)==1){
+        order e{0,0,0,true};
+        if(s[0]=='c'){
+            int x;
+            scanf("%d",&x);
+            a[x].ok=false;
+            e.ok=false;
         }
-        orders.push_back(o);
+        else{
+            int x,y;
+            scanf("%d.%d%lld",&x,&y,&e.num);
+            e.op=s[0]=='b';
+            e.p=x*100+y;
+        }
+        a.push_back(e);
     }
-    map<int, pair<long long, long long>> levels;
-    long long buyers = 0;
-    for (auto o : orders)
-        if (o.active && o.quantity) {
-            auto &b = levels[o.price];
-            if (o.type == "buy") {
-                b.first += o.quantity;
-                buyers += o.quantity;
-            } else
-                b.second += o.quantity;
+    for(auto &e:a){
+        if(!e.ok || !e.num)continue;
+        P &v=g[e.p];
+        if(e.op){
+            v.first+=e.num;
+            buy+=e.num;
         }
-    long long sellers = 0, best = -1;
-    int price = 0;
-    for (auto [p, v] : levels) {
-        sellers += v.second;
-        long long volume = min(buyers, sellers);
-        if (volume >= best) {
-            best = volume;
-            price = p;
-        }
-        buyers -= v.first;
+        else v.second+=e.num;
     }
-    cout << price / 100 << '.' << setfill('0') << setw(2) << price % 100 << ' ' << max(0LL, best)
-         << '\n';
+    for(auto &[p,v]:g){
+        sell+=v.second;
+        ll num=min(buy,sell);
+        if(num>=ans){
+            ans=num;
+            price=p;
+        }
+        buy-=v.first;
+    }
+    ans=max(0ll,ans);
+    printf("%d.%02d %lld\n",price/100,price%100,ans);
+    return 0;
 }

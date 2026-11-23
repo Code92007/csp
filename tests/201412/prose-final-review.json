@@ -1,0 +1,47 @@
+{
+  "contest": "201412",
+  "scope": "Final prose review: semantic paragraphs, separate headings/operation lists, current code names, full formulas/proofs/complexities and source attribution. Source code unchanged.",
+  "current_source_sha256": {
+    "A": "6c7e91b84554d18fc0c9ff20faeebe5621cdde0cfb39e72114d1624efd30f80e",
+    "B": "f1ac108f70335eac6e2634659bcb92e877f0a5672614b4c9bf521d3b808858df",
+    "C": "da9a660760de1b35e3ac5bd1bbdb3564bea4419d3d694e26f8d18b4fede45504",
+    "D": "25fd3e17b3e6c1964c0eff41c751c6656f70a3b7e062ce3eef3024e2fcb0b825",
+    "E": "2e79fb9fc9a3ad92ec794ce610a4396df0bcf0670ba5c48cbc5a7b47db55bf6f"
+  },
+  "changes": [
+    {
+      "before": "处理前i条后",
+      "after": "处理前 i 条后"
+    },
+    {
+      "before": "满足`i+j=s`，依次枚举`s=0…2n-2`。",
+      "after": "满足 `i+j=s`，依次枚举 `s=0…2n-2`。"
+    },
+    {
+      "before": "列号由`j=s-i`确定。",
+      "after": "列号由 `j=s-i` 确定。"
+    },
+    {
+      "before": "交替方向符合Z字形。",
+      "after": "交替方向符合 Z 字形。"
+    },
+    {
+      "before": "原版曙梦 OJ 第 2、20 点失败，实际为\n\n**90 分 Wrong Answer**\n\n。历史审计",
+      "after": "原版曙梦 OJ 第 2、20 点失败，成绩为 **90 分 Wrong Answer**。历史审计"
+    }
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged_or_mask_to_S": true,
+  "markdown": [
+    {
+      "file": "201412/README.md",
+      "before_sha256": "e8bc3ead5056bb8539685e8dcda727cf05e242276d9688a24dee74db7ccd052b",
+      "after_sha256": "313aa6504fa8f63921fa83b639dbeee9659860cde15bd625fc3a52a46481ee21"
+    },
+    {
+      "file": "201412题解.md",
+      "before_sha256": "e31c82d18b4bd9078ee77490b3f7389ea17169607b6aee847caf8d7e32291d25",
+      "after_sha256": "80dcc3b4635e0bac9f4e437684c5ae933522d7d9758a3b12332dc14ae6942940"
+    }
+  ]
+}

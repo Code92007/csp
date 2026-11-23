@@ -1,0 +1,59 @@
+{
+  "contest": "201412",
+  "changes": {
+    "A": {
+      "before_sha256": "0d3c6bff615e0b424d56378fe2a9bdb76fa557bafadc1d24c7379e3c0a509ab7",
+      "renames": {},
+      "numeric_literals": {
+        "1e3": "1000"
+      },
+      "token_equivalence": true,
+      "after_sha256": "6c7e91b84554d18fc0c9ff20faeebe5621cdde0cfb39e72114d1624efd30f80e",
+      "runs": [
+        {
+          "mode": "o2",
+          "compilation": "passed without diagnostics",
+          "saved_samples": 2,
+          "all_passed": true
+        },
+        {
+          "mode": "ubsan",
+          "compilation": "passed without diagnostics",
+          "saved_samples": 2,
+          "all_passed": true
+        }
+      ]
+    },
+    "D": {
+      "before_sha256": "5083d4e22952af2df30fe21fbff24385c3058d4bfd3f46a7c2907a4152641bbc",
+      "renames": {},
+      "numeric_literals": {
+        "1e3": "1000"
+      },
+      "token_equivalence": true,
+      "after_sha256": "25fd3e17b3e6c1964c0eff41c751c6656f70a3b7e062ce3eef3024e2fcb0b825",
+      "runs": [
+        {
+          "mode": "o2",
+          "compilation": "passed without diagnostics",
+          "saved_samples": 2,
+          "all_passed": true
+        },
+        {
+          "mode": "ubsan",
+          "compilation": "passed without diagnostics",
+          "saved_samples": 2,
+          "all_passed": true
+        }
+      ]
+    }
+  },
+  "current_source_sha256": {
+    "A": "6c7e91b84554d18fc0c9ff20faeebe5621cdde0cfb39e72114d1624efd30f80e",
+    "B": "f1ac108f70335eac6e2634659bcb92e877f0a5672614b4c9bf521d3b808858df",
+    "C": "61cde8c0dc2cb7f794980bc29258c927c4247eb451a5b0117ad9e43efe4f0b7d",
+    "D": "25fd3e17b3e6c1964c0eff41c751c6656f70a3b7e062ce3eef3024e2fcb0b825",
+    "E": "a957f8de16d46fd9dee32d030800df5133b098fb4e90744a7dafa20e8843351e"
+  },
+  "note": "Identifier-only and exactly equal integer-literal style changes; no algorithm or input contract change. Original full independent verification reports remain historical. No online submission."
+}

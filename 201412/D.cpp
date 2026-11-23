@@ -1,39 +1,36 @@
-#include <algorithm>
-#include <iostream>
-#include <numeric>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-struct Edge {
-    int u, v, w;
-};
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<Edge> edges(m);
-    for (auto &e : edges)
-        cin >> e.u >> e.v >> e.w;
-    sort(edges.begin(), edges.end(), [](Edge a, Edge b) { return a.w < b.w; });
-    vector<int> parent(n + 1), size(n + 1, 1);
-    iota(parent.begin(), parent.end(), 0);
-    auto find = [&](int x) {
-        while (parent[x] != x) {
-            parent[x] = parent[parent[x]];
-            x = parent[x];
-        }
-        return x;
-    };
-    long long answer = 0;
-    for (auto e : edges) {
-        int u = find(e.u), v = find(e.v);
-        if (u == v)
-            continue;
-        if (size[u] < size[v])
-            swap(u, v);
-        parent[v] = u;
-        size[u] += size[v];
-        answer += e.w;
+typedef long long ll;
+const int N=1000+10,M=1e5+10;
+struct edge{
+    int u,v,w;
+    bool operator<(const edge &e)const{
+        return w<e.w;
     }
-    cout << answer << '\n';
+}e[M];
+int n,m,fa[N],sz[N];
+ll ans;
+int find(int x){
+    if(fa[x]==x)return x;
+    return fa[x]=find(fa[x]);
+}
+int main(){
+    scanf("%d%d",&n,&m);
+    for(int i=1;i<=n;++i){
+        fa[i]=i,sz[i]=1;
+    }
+    for(int i=0;i<m;++i){
+        scanf("%d%d%d",&e[i].u,&e[i].v,&e[i].w);
+    }
+    sort(e,e+m);
+    for(int i=0;i<m;++i){
+        int u=find(e[i].u),v=find(e[i].v);
+        if(u==v)continue;
+        if(sz[u]<sz[v])swap(u,v);
+        fa[v]=u;
+        sz[u]+=sz[v];
+        ans+=e[i].w;
+    }
+    printf("%lld\n",ans);
+    return 0;
 }
