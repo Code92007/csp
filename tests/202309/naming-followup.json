@@ -1,0 +1,40 @@
+{
+  "prior_report": "summary.json",
+  "source_sha256": {
+    "A": "e0e1026922b26c7a030358b3cf15b0130c67af36cf22171d01e2390d43cf1953",
+    "B": "9892d789c821e38057d82f9427f61f2133b793936a35faacaa04213d9d5b9cab",
+    "C": "1a0ba9299db2bd5147bb7e2a03dd5b18f0d877a519fc3fe100903b7d71009939"
+  },
+  "results": {
+    "A:opt": {
+      "passed": 61,
+      "seconds": 0.32791941699999994,
+      "compile_stderr": ""
+    },
+    "A:ubsan": {
+      "passed": 61,
+      "seconds": 0.557843541,
+      "compile_stderr": ""
+    },
+    "B:opt": {
+      "passed": 612,
+      "seconds": 3.0786449589999996,
+      "compile_stderr": ""
+    },
+    "B:ubsan": {
+      "passed": 612,
+      "seconds": 3.5921754580000007,
+      "compile_stderr": ""
+    },
+    "C:opt": {
+      "passed": 102,
+      "seconds": 0.7157018330000007,
+      "compile_stderr": ""
+    },
+    "C:ubsan": {
+      "passed": 102,
+      "seconds": 0.9631375000000002,
+      "compile_stderr": ""
+    }
+  }
+}

@@ -1,55 +1,44 @@
-#include <cmath>
-#include <iomanip>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-
-struct AngleSum {
-    long double high = 0, low = 0;
-    void add(long double value) {
-        long double next = high + value;
-        // Retain the rounding error instead of rounding the compensated total
-        // back to a single floating-point value at every prefix.
-        low += fabsl(high) >= fabsl(value) ? (high - next) + value : (value - next) + high;
-        high = next;
+typedef long double ld;
+const int N=1e5+10;
+int n,m;
+ld k[N];
+struct angle{
+    ld hi=0,lo=0;
+    void add(ld x){
+        ld y=hi+x;
+        if(fabsl(hi)>=fabsl(x))lo+=(hi-y)+x;
+        else lo+=(x-y)+hi;
+        hi=y;
     }
-};
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<long double> scale(n + 1, 1);
-    vector<AngleSum> angle(n + 1);
-    for (int i = 1; i <= n; ++i) {
-        int type;
-        long double value;
-        cin >> type >> value;
-        scale[i] = scale[i - 1];
-        angle[i] = angle[i - 1];
-        if (type == 1)
-            scale[i] *= value;
-        else
-            angle[i].add(value);
+}a[N];
+int main(){
+    scanf("%d%d",&n,&m);
+    k[0]=1;
+    for(int i=1;i<=n;++i){
+        int op;
+        ld x;
+        scanf("%d%Lf",&op,&x);
+        k[i]=k[i-1];
+        a[i]=a[i-1];
+        if(op==1)k[i]*=x;
+        else a[i].add(x);
     }
-    cout << fixed << setprecision(10);
-    while (m--) {
-        int i, j;
-        long double x, y;
-        cin >> i >> j >> x >> y;
-        long double a = angle[j].high, b = angle[i - 1].high;
-        long double difference = a - b;
-        long double virtualB = a - difference;
-        long double residual = (a - (difference + virtualB)) + (virtualB - b);
-        residual += angle[j].low - angle[i - 1].low;
-        // Evaluate the high/low parts separately. Do not reduce a large angle
-        // with a rounded 2*pi constant, or add the small residual back too early.
-        long double c = cosl(difference), s = sinl(difference);
-        long double dc = cosl(residual), ds = sinl(residual);
-        long double cosine = c * dc - s * ds, sine = s * dc + c * ds;
-        long double factor = scale[j] / scale[i - 1];
-        cout << factor * (x * cosine - y * sine) << ' '
-             << factor * (x * sine + y * cosine) << '\n';
+    while(m--){
+        int l,r;
+        ld x,y;
+        scanf("%d%d%Lf%Lf",&l,&r,&x,&y);
+        ld u=a[r].hi,v=a[l-1].hi;
+        ld d=u-v,b=u-d;
+        ld e=(u-(d+b))+(b-v);
+        e+=a[r].lo-a[l-1].lo;
+        ld c=cosl(d),s=sinl(d);
+        ld p=cosl(e),q=sinl(e);
+        ld co=c*p-s*q,si=s*p+c*q;
+        ld w=k[r]/k[l-1];
+        ld rx=w*(x*co-y*si),ry=w*(x*si+y*co);
+        printf("%.10Lf %.10Lf\n",rx,ry);
     }
+    return 0;
 }

@@ -1,121 +1,108 @@
-#include <algorithm>
-#include <array>
-#include <cstdint>
-#include <cstdio>
-#include <iterator>
-#include <iostream>
-#include <set>
-#include <utility>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-
-using i64 = long long;
-using Point = pair<i64, i64>;
-struct Entry {
-    Point key;
-    int slot;
-    bool operator<(const Entry &other) const { return key < other.key; }
+typedef long long ll;
+typedef pair<ll,ll> P;
+const int N=1e5+10,M=4,K=8;
+const int dx[K]={1,1,0,-1,-1,-1,0,1};
+const int dy[K]={0,1,1,1,0,-1,-1,-1};
+const int to[M]={0,2,1,7};
+ll n,m;
+int p,q;
+struct entry{
+    P k;
+    int id;
+    bool operator<(const entry &x)const{
+        return k<x.k;
+    }
 };
-using Tree = set<Entry>;
-struct Slot {
-    i64 x, y;
-    int employee;
-    array<Tree::iterator, 4> at;
-};
-array<Point, 4> keys(i64 x, i64 y) {
-    return {Point{y, x}, Point{x, y}, Point{x - y, x}, Point{x + y, x}};
+typedef set<entry> S;
+struct slot{
+    ll x,y;
+    int id;
+    S::iterator at[M];
+}a[N];
+S g[M];
+array<P,M> keys(ll x,ll y){
+    return {P(y,x),P(x,y),P(x-y,x),P(x+y,x)};
 }
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    i64 n, m;
-    int p, q;
-    cin >> n >> m >> p >> q;
-    vector<Slot> slots(p + 1);
-    array<Tree, 4> lines;
-    for (int i = 1; i <= p; ++i) {
-        Slot &slot = slots[i];
-        cin >> slot.x >> slot.y;
-        slot.employee = i;
-        auto key = keys(slot.x, slot.y);
-        for (int j = 0; j < 4; ++j)
-            slot.at[j] = lines[j].insert({key[j], i}).first;
+int main(){
+    scanf("%lld%lld%d%d",&n,&m,&p,&q);
+    for(int i=1;i<=p;++i){
+        scanf("%lld%lld",&a[i].x,&a[i].y);
+        a[i].id=i;
+        auto k=keys(a[i].x,a[i].y);
+        for(int j=0;j<M;++j){
+            a[i].at[j]=g[j].insert({k[j],i}).first;
+        }
     }
-    const int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1};
-    const int dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
-    const int positiveDirection[4] = {0, 2, 1, 7};
-    while (q--) {
-        i64 u, v;
+    while(q--){
+        ll u,v;
         int t;
-        cin >> u >> v >> t;
-        i64 boundary = min({u - 1, n - u, v - 1, m - v});
-        if (!boundary) continue;
-        i64 distance = boundary + 1;
-        int nearest[8] = {};
-        i64 distances[8] = {};
-        auto key = keys(u, v);
-        for (int j = 0; j < 4; ++j) {
-            auto after = lines[j].upper_bound({key[j], 0});
-            auto accept = [&](Tree::iterator it, int direction) {
-                if (it->key.first != key[j].first) return;
-                i64 delta = it->key.second - key[j].second;
-                if (delta < 0) delta = -delta;
-                nearest[direction] = it->slot;
-                distances[direction] = delta;
-                distance = min(distance, delta);
+        scanf("%lld%lld%d",&u,&v,&t);
+        ll b=min({u-1,n-u,v-1,m-v});
+        if(!b)continue;
+        ll len=b+1,d[K];
+        int near[K];
+        memset(d,0,sizeof d);
+        memset(near,0,sizeof near);
+        auto k=keys(u,v);
+        for(int j=0;j<M;++j){
+            auto it=g[j].upper_bound({k[j],0});
+            auto check=[&](S::iterator it,int dir){
+                if(it->k.first!=k[j].first)return;
+                ll dis=abs(it->k.second-k[j].second);
+                near[dir]=it->id;
+                d[dir]=dis;
+                len=min(len,dis);
             };
-            if (after != lines[j].end()) accept(after, positiveDirection[j]);
-            if (after != lines[j].begin()) {
-                auto before = prev(after);
-                if (before->key == key[j]) {
-                    if (before == lines[j].begin()) continue;
-                    --before;
+            if(it!=g[j].end())check(it,to[j]);
+            if(it!=g[j].begin()){
+                auto pre=prev(it);
+                if(pre->k==k[j]){
+                    if(pre==g[j].begin())continue;
+                    --pre;
                 }
-                accept(before, (positiveDirection[j] + 4) & 7);
+                check(pre,(to[j]+4)&7);
             }
         }
-        if (distance > boundary) continue;
-
-        int occupied[8] = {}, destinationEmployee[8] = {};
-        for (int d = 0; d < 8; ++d) {
-            if (nearest[d] && distances[d] == distance) {
-                occupied[d] = nearest[d];
-                destinationEmployee[(d + t) & 7] = slots[nearest[d]].employee;
+        if(len>b)continue;
+        int old[K],nxt[K];
+        memset(old,0,sizeof old);
+        memset(nxt,0,sizeof nxt);
+        for(int i=0;i<K;++i){
+            if(near[i] && d[i]==len){
+                old[i]=near[i];
+                nxt[(i+t)&7]=a[near[i]].id;
             }
         }
-        int vacated[4], targets[4], count = 0, targetCount = 0;
-        for (int d = 0; d < 8; ++d) {
-            if (occupied[d] && destinationEmployee[d]) {
-                // The position stays occupied: only its employee label changes.
-                slots[occupied[d]].employee = destinationEmployee[d];
-            } else if (occupied[d]) {
-                vacated[count++] = occupied[d];
-            } else if (destinationEmployee[d]) {
-                targets[targetCount++] = d;
+        int src[M],dst[M],cnt=0,tot=0;
+        for(int i=0;i<K;++i){
+            if(old[i] && nxt[i])a[old[i]].id=nxt[i];
+            else if(old[i])src[cnt++]=old[i];
+            else if(nxt[i])dst[tot++]=i;
+        }
+        S::node_type h[M][M];
+        for(int i=0;i<cnt;++i){
+            for(int j=0;j<M;++j){
+                h[i][j]=g[j].extract(a[src[i]].at[j]);
             }
         }
-        // Two subsets of an 8-element set with equal cardinality differ in
-        // at most 4 positions on each side. Reuse the vacated position slots.
-        array<array<Tree::node_type, 4>, 4> detached;
-        for (int i = 0; i < count; ++i)
-            for (int j = 0; j < 4; ++j)
-                detached[i][j] = lines[j].extract(slots[vacated[i]].at[j]);
-        for (int i = 0; i < count; ++i) {
-            int id = vacated[i], d = targets[i];
-            Slot &slot = slots[id];
-            slot.x = u + distance * dx[d];
-            slot.y = v + distance * dy[d];
-            slot.employee = destinationEmployee[d];
-            auto newKey = keys(slot.x, slot.y);
-            for (int j = 0; j < 4; ++j) {
-                detached[i][j].value().key = newKey[j];
-                slot.at[j] = lines[j].insert(std::move(detached[i][j])).position;
+        for(int i=0;i<cnt;++i){
+            int id=src[i],d=dst[i];
+            a[id].x=u+len*dx[d];
+            a[id].y=v+len*dy[d];
+            a[id].id=nxt[d];
+            auto k=keys(a[id].x,a[id].y);
+            for(int j=0;j<M;++j){
+                h[i][j].value().k=k[j];
+                a[id].at[j]=g[j].insert(std::move(h[i][j])).position;
             }
         }
     }
-    long long answer = 0;
-    for (int i = 1; i <= p; ++i)
-        answer ^= 1LL * slots[i].employee * slots[i].x + slots[i].y;
-    cout << answer << '\n';
+    ll ans=0;
+    for(int i=1;i<=p;++i){
+        ans^=a[i].id*a[i].x+a[i].y;
+    }
+    printf("%lld\n",ans);
+    return 0;
 }

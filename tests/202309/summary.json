@@ -1,0 +1,183 @@
+{
+  "contest": "202309",
+  "distinct_cases": 1940,
+  "results": {
+    "opt": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 601,
+        "C:retained_independent": 100,
+        "D:retained_independent": 820,
+        "E:retained_independent": 80,
+        "A:saved": 1,
+        "B:saved": 2,
+        "C:saved": 2,
+        "D:saved": 1,
+        "E:saved": 1,
+        "B:boundary": 8,
+        "B:stress": 1,
+        "D:boundary": 255,
+        "D:stress": 6,
+        "E:stress": 2
+      },
+      "total": 1940,
+      "seconds": 8.607,
+      "stresses": [
+        {
+          "problem": "B",
+          "label": "100000 operations and queries",
+          "seconds": 0.0876
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events dense_full",
+          "seconds": 0.1685
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events checkerboard",
+          "seconds": 0.3816
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events four_ring",
+          "seconds": 0.4107
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events one_ring",
+          "seconds": 0.2144
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events sparse_static",
+          "seconds": 0.3079
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events boundary",
+          "seconds": 0.1264
+        },
+        {
+          "problem": "E",
+          "label": "100000-city positive chain",
+          "seconds": 0.0618
+        },
+        {
+          "problem": "E",
+          "label": "100000-city nonpositive star",
+          "seconds": 0.1003
+        }
+      ]
+    },
+    "ubsan": {
+      "counts": {
+        "A:retained_independent": 60,
+        "B:retained_independent": 601,
+        "C:retained_independent": 100,
+        "D:retained_independent": 820,
+        "E:retained_independent": 80,
+        "A:saved": 1,
+        "B:saved": 2,
+        "C:saved": 2,
+        "D:saved": 1,
+        "E:saved": 1,
+        "B:boundary": 8,
+        "B:stress": 1,
+        "D:boundary": 255,
+        "D:stress": 6,
+        "E:stress": 2
+      },
+      "total": 1940,
+      "seconds": 15.067,
+      "stresses": [
+        {
+          "problem": "B",
+          "label": "100000 operations and queries",
+          "seconds": 0.0916
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events dense_full",
+          "seconds": 0.2109
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events checkerboard",
+          "seconds": 0.4483
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events four_ring",
+          "seconds": 0.3597
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events one_ring",
+          "seconds": 0.2594
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events sparse_static",
+          "seconds": 0.2919
+        },
+        {
+          "problem": "D",
+          "label": "100000 points/events boundary",
+          "seconds": 0.1286
+        },
+        {
+          "problem": "E",
+          "label": "100000-city positive chain",
+          "seconds": 0.0994
+        },
+        {
+          "problem": "E",
+          "label": "100000-city nonpositive star",
+          "seconds": 0.1363
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "A": "b4635bb82d9d1729ee8509fad8286d138da07c4c0735bcc3d2317c42a03ee0c7",
+    "B": "ad7569f24bddf14531d58d6a90fa0499733cd40c4c444124b90c8c98d5bab261",
+    "C": "0c1e83c4438e1a660dbe2c52b7164dc6e244cac6dd39b4232924dd583cdb37fc",
+    "D": "ab83002cedddbfbdb3f37dcaf4ff25caa17c8398a75ef169eb4b2434f1d35b85",
+    "E": "f354d1795cf5471e77d4553bf89a2aa7bce5c9e125399be5ee5539321d6bd40e"
+  },
+  "cases_sha256": "f8ffb964d4ad25e8cf8fef40a38dce476e9cbd8276924a5d30918665cbb725a1",
+  "original_evaluations": {
+    "A": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"
+    },
+    "B": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52"
+    },
+    "C": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"
+    },
+    "D": {
+      "status": "accepted",
+      "score": 100,
+      "verdict": "Accepted",
+      "record": "https://oj.shumeng.tech/record/6ade253b74ace1cba9a24563",
+      "source_sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815"
+    },
+    "E": {
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"
+    }
+  },
+  "refactored_online_submission": false,
+  "oracle": "Repository independent Python generators captured by tools/nightly/retained_oracles.py; saved cases and independently generated boundary/stress expectations are also replayed. No output is taken from the original executable.",
+  "platform_note": "Apple Clang C++17 uses a local standard-header shim for bits/stdc++.h. Timings are local, not official judge results."
+}

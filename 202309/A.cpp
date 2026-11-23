@@ -1,18 +1,17 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n, m;
-    cin >> n >> m;
-    long long dx = 0, dy = 0;
-    while (n--) {
-        long long x, y;
-        cin >> x >> y;
-        dx += x;
-        dy += y;
+typedef long long ll;
+int n,m;
+ll dx,dy,x,y;
+int main(){
+    scanf("%d%d",&n,&m);
+    while(n--){
+        scanf("%lld%lld",&x,&y);
+        dx+=x,dy+=y;
     }
-    while (m--) {
-        long long x, y;
-        cin >> x >> y;
-        cout << x + dx << ' ' << y + dy << '\n';
+    while(m--){
+        scanf("%lld%lld",&x,&y);
+        printf("%lld %lld\n",x+dx,y+dy);
     }
+    return 0;
 }

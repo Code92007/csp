@@ -1,0 +1,32 @@
+{
+  "A": {
+    "sha256": "e0e1026922b26c7a030358b3cf15b0130c67af36cf22171d01e2390d43cf1953",
+    "validation_reports": [
+      "naming-followup.json"
+    ]
+  },
+  "B": {
+    "sha256": "9892d789c821e38057d82f9427f61f2133b793936a35faacaa04213d9d5b9cab",
+    "validation_reports": [
+      "naming-followup.json"
+    ]
+  },
+  "C": {
+    "sha256": "12d1b3aa35786a9ab6557c570f472a8a8bb804071caf1d60dadc6a5f96590e3c",
+    "validation_reports": [
+      "constants-followup.json"
+    ]
+  },
+  "D": {
+    "sha256": "ab83002cedddbfbdb3f37dcaf4ff25caa17c8398a75ef169eb4b2434f1d35b85",
+    "validation_reports": [
+      "summary.json"
+    ]
+  },
+  "E": {
+    "sha256": "f354d1795cf5471e77d4553bf89a2aa7bce5c9e125399be5ee5539321d6bd40e",
+    "validation_reports": [
+      "summary.json"
+    ]
+  }
+}
