@@ -1,0 +1,27 @@
+{
+  "problem": "202109D",
+  "previous_sha256": "663a2c9fa71ad8102decca238829daadca0d01ac6f1fbb9979847336b9ea10b3",
+  "source_sha256": "3a8c7d9f84fb8b9d91f1567ed36a0f36d35070f9261811c33a7765604f522b6e",
+  "distinct_inputs": 77,
+  "per_binary_results": {
+    "O2": {
+      "passed": 77,
+      "seconds": 0.667
+    },
+    "UBSan": {
+      "passed": 77,
+      "seconds": 0.797
+    }
+  },
+  "case_kinds": {
+    "saved_sample": 2,
+    "retained_independent": 73,
+    "boundary": 2
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "printf double output %.12f changed to equivalent %.12lf; scanf remains %lf."
+  ],
+  "historical_report": "refactor-report.json",
+  "note": "77 existing saved/independent/boundary cases replayed; current hash is separate from historical evidence. No online resubmission."
+}

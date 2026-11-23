@@ -1,16 +1,16 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    long long previous = 0, low = 0, high = 0;
-    while (n--) {
-        long long b;
-        cin >> b;
-        high += b;
-        if (b > previous)
-            low += b;
-        previous = b;
+typedef long long ll;
+int n;
+ll pre,mn,mx,x;
+int main(){
+    scanf("%d",&n);
+    while(n--){
+        scanf("%lld",&x);
+        mx+=x;
+        if(x>pre)mn+=x;
+        pre=x;
     }
-    cout << high << '\n' << low << '\n';
+    printf("%lld\n%lld\n",mx,mn);
+    return 0;
 }

@@ -1,0 +1,28 @@
+{
+  "problem": "202109B",
+  "previous_sha256": "d154f6805e3f5b696cde21e2da957bd103fa1f817812976aee6cd7002f65b1a8",
+  "source_sha256": "ebd926e838ef6bf5ce5dbd0389057e68d9ac29a15e6c8a8a1967de4668bf27e9",
+  "distinct_inputs": 155,
+  "case_kinds": {
+    "saved_sample": 4,
+    "retained_independent": 150,
+    "boundary": 1
+  },
+  "case_sha256": "6fa8f6ac36e32e883992c094557556facfb6b7a97b4a43cba820f0c09de9b1dc",
+  "per_binary_results": {
+    "O2": {
+      "passed": 155,
+      "seconds": 0.937
+    },
+    "UBSan": {
+      "passed": 155,
+      "seconds": 1.234
+    }
+  },
+  "compilation": "C++17 -Wall -Wextra -Wshadow clean; O2 and UBSan",
+  "changes": [
+    "Capacity 1e4+10 written as exact decimal 10010."
+  ],
+  "historical_report": "refactor-report.json",
+  "note": "Replay of saved samples, independent oracle cases and existing boundaries; no new online submission."
+}
