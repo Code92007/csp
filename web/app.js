@@ -6,19 +6,53 @@ let data, route, debounce, renderToken=0;
 $('.skip').addEventListener('click',event=>{event.preventDefault();$('#main').focus();$('#main').scrollIntoView();});
 try { const theme=localStorage.getItem('csp-theme'); if(theme)document.documentElement.dataset.theme=theme; } catch (_) {}
 $('#theme').addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;try{localStorage.setItem('csp-theme',theme);}catch(_) {}});
-const codeThemes=new Set(['zhihu','vscode','sublime','devcpp']);
+const codeThemes=new Set(['sublime','vscode','devcpp','zhihu']);
+const codeThemeNames={zhihu:'知乎',vscode:'VS Code',sublime:'Sublime',devcpp:'Dev-C++'};
+const codeThemeButton=$('#code-theme'),codeThemeMenu=$('#code-theme-menu');
+const codeThemeOptions=[...codeThemeMenu.querySelectorAll('[role=option]')];
 function setCodeTheme(theme){
-  if(!codeThemes.has(theme))theme='zhihu';
+  if(!codeThemes.has(theme))theme='sublime';
   document.documentElement.dataset.codeTheme=theme;
-  $('#code-theme').value=theme;
+  $('#code-theme-name').textContent=codeThemeNames[theme];
+  codeThemeButton.setAttribute('aria-label','代码配色：'+codeThemeNames[theme]);
+  for(const option of codeThemeOptions)option.setAttribute('aria-selected',String(option.dataset.codeTheme===theme));
 }
-let savedCodeTheme='zhihu';
+function closeCodeThemes(restoreFocus=false){
+  codeThemeMenu.hidden=true;
+  codeThemeButton.setAttribute('aria-expanded','false');
+  if(restoreFocus)codeThemeButton.focus();
+}
+function openCodeThemes(last=false){
+  codeThemeMenu.hidden=false;
+  codeThemeButton.setAttribute('aria-expanded','true');
+  const active=last?codeThemeOptions.at(-1):codeThemeOptions.find(option=>option.getAttribute('aria-selected')==='true');
+  active.focus();
+}
+let savedCodeTheme='sublime';
 try{savedCodeTheme=localStorage.getItem('csp-code-theme');}catch(_){}
 setCodeTheme(savedCodeTheme);
-$('#code-theme').addEventListener('change',event=>{
-  const theme=event.target.value;
+codeThemeButton.addEventListener('click',()=>{if(codeThemeMenu.hidden)openCodeThemes();else closeCodeThemes();});
+codeThemeButton.addEventListener('keydown',event=>{
+  if(event.key==='ArrowDown' || event.key==='ArrowUp'){event.preventDefault();openCodeThemes(event.key==='ArrowUp');}
+});
+for(const option of codeThemeOptions)option.addEventListener('click',()=>{
+  const theme=option.dataset.codeTheme;
   setCodeTheme(theme);
   try{localStorage.setItem('csp-code-theme',theme);}catch(_){}
+  closeCodeThemes(true);
+});
+codeThemeMenu.addEventListener('keydown',event=>{
+  const index=codeThemeOptions.indexOf(document.activeElement);
+  if(event.key==='Escape'){event.preventDefault();closeCodeThemes(true);}
+  else if(['ArrowDown','ArrowUp','Home','End'].includes(event.key)){
+    event.preventDefault();
+    const next=event.key==='Home'?0:event.key==='End'?3:(index+(event.key==='ArrowDown'?1:3))%4;
+    codeThemeOptions[next].focus();
+  }
+});
+document.addEventListener('pointerdown',event=>{if(!event.target.closest('.code-theme-picker'))closeCodeThemes();});
+$('.code-theme-picker').addEventListener('focusout',event=>{
+  if(!event.currentTarget.contains(event.relatedTarget))closeCodeThemes();
 });
 function url(path, params={}) {const q=new URLSearchParams(Object.entries(params).filter(([,v])=>v!==''&&v!==null&&v!==undefined));return '#'+path+(q.size?'?'+q:'');}
 function tag(tag, path='/problems', active=false, count) {

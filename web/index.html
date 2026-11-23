@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-code-theme="sublime">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,22 +18,40 @@
 <a class="skip" href="#main">跳到正文</a>
 <header class="topbar">
   <a class="brand" href="#/contests"><span class="brand-symbol">{ }</span><span>CSP 手记<small>读懂一道，再写一道。</small></span></a>
+  <div class="reading-controls">
+    <div class="code-theme-picker">
+      <span class="code-theme-label">代码配色</span>
+      <button id="code-theme" class="code-theme-trigger" type="button" aria-label="代码配色：Sublime" aria-haspopup="listbox" aria-expanded="false" aria-controls="code-theme-menu">
+        <span class="theme-dot" aria-hidden="true"></span><span id="code-theme-name">Sublime</span>
+        <svg class="theme-chevron" width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div id="code-theme-menu" class="code-theme-menu" role="listbox" aria-label="代码配色" hidden>
+        <div class="theme-menu-caption" aria-hidden="true">代码配色</div>
+        <button type="button" class="code-theme-option" role="option" data-code-theme="sublime" aria-selected="true" tabindex="-1">
+          <span class="theme-swatch swatch-sublime" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="theme-description"><strong>Sublime</strong><small>深色 · Monokai</small></span><span class="theme-check" aria-hidden="true">✓</span>
+        </button>
+        <button type="button" class="code-theme-option" role="option" data-code-theme="vscode" aria-selected="false" tabindex="-1">
+          <span class="theme-swatch swatch-vscode" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="theme-description"><strong>VS Code</strong><small>深色 · Dark+</small></span><span class="theme-check" aria-hidden="true">✓</span>
+        </button>
+        <button type="button" class="code-theme-option" role="option" data-code-theme="devcpp" aria-selected="false" tabindex="-1">
+          <span class="theme-swatch swatch-devcpp" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="theme-description"><strong>Dev-C++</strong><small>浅色 · 经典</small></span><span class="theme-check" aria-hidden="true">✓</span>
+        </button>
+        <button type="button" class="code-theme-option" role="option" data-code-theme="zhihu" aria-selected="false" tabindex="-1">
+          <span class="theme-swatch swatch-zhihu" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="theme-description"><strong>知乎</strong><small>浅灰底 · 蓝红高亮</small></span><span class="theme-check" aria-hidden="true">✓</span>
+        </button>
+      </div>
+    </div>
+  </div>
   <nav aria-label="主导航">
     <a href="#/contests" data-nav="contests">按场次</a>
     <a href="#/problems" data-nav="problems">按题目</a>
     <a href="#/tags" data-nav="tags">标签地图</a>
   </nav>
-  <div class="reading-controls">
-    <label class="code-theme" for="code-theme"><span>代码配色</span>
-      <select id="code-theme" aria-label="代码配色">
-        <option value="zhihu">知乎</option>
-        <option value="vscode">VS Code · 深色</option>
-        <option value="sublime">Sublime · Monokai</option>
-        <option value="devcpp">Dev-C++ · 经典</option>
-      </select>
-    </label>
-    <button id="theme" class="icon-button" title="切换页面明暗主题" aria-label="切换页面明暗主题">◐</button>
-  </div>
+  <button id="theme" class="icon-button" title="切换页面明暗主题" aria-label="切换页面明暗主题">◐</button>
 </header>
 <main id="main" tabindex="-1"><div class="loading">正在读取 Markdown 题解索引…</div></main>
 <footer class="footer"><span>CSP 手记 / Markdown 驱动</span><span>题意为自行概述；本地验证记录与正式评测分开标注。</span></footer>
