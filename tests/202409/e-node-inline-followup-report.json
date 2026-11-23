@@ -1,0 +1,36 @@
+{
+  "problem": "202409E",
+  "previous_sha256": "8484bffd01a1f4342e5cab4fb7ea08cb85366d2c9c26dadbdc84d5f32f583b16",
+  "source_sha256": "220a98f7c4a7d492ac4641b2e87d9dea4740f18306507330834eba8e55325a81",
+  "distinct_inputs": 62,
+  "per_kind": {
+    "saved_sample": 1,
+    "retained_independent": 60,
+    "boundary": 1
+  },
+  "per_binary": {
+    "O2": {
+      "passed": 62,
+      "seconds": 1.217,
+      "largest_input_seconds": 0.0432
+    },
+    "UBSan": {
+      "passed": 62,
+      "seconds": 0.805,
+      "largest_input_seconds": 0.0426
+    }
+  },
+  "compilation": {
+    "O2": "GNU GCC 16.2.0 C++17 -O2 -Wall -Wextra -Wshadow; no warnings",
+    "UBSan": "Apple Clang C++17 -O1 -g -Wall -Wextra -Wshadow -fsanitize=undefined -fno-sanitize-recover=all; no warnings"
+  },
+  "changes": [
+    "size, read, pushup are fully defined within struct node",
+    "forward declaration of node and extern e permits child-node access in class body",
+    "rng declaration moved before inline read without changing its seed or call order"
+  ],
+  "sentinel_check": "e[0] has static zero initialization; read runs only for 1..n, split/merge guard zero before pushup, so e[0].size() remains zero for empty roots and children. No null-this access.",
+  "historical_report": "e-style-followup-report.json",
+  "original_report": "refactor-report.json",
+  "case_reuse_note": "Retained independent oracle outputs and saved sample are replayed; boundary includes 100000 segments and near-100000 cuts. No new distinct inputs claimed."
+}

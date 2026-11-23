@@ -27,3 +27,5 @@ A 按 review 将嵌套三目改为 if/else 分支后，重新编译并复验同�
 E 按 review 将 pushup 移为 node 成员后，重新编译并复验同一批 62 个不同输入，含十万段／近十万次切割，两版均通过。[当前 E 源码哈希](e-style-followup-report.json)。原批次报告中的 E 哈希保留为历史版本。
 
 E 继续把读入与初始化封装进 node::read 后，同样重新编译并复验 62 个不同输入，优化版及 UBSan 版均通过；[最新报告](e-style-followup-report.json)保留前版指针。
+
+E 按最新 review 将 size、read、pushup 三个成员函数全部在 node 内定义，并保留 0 号静态哨兵。重新以 GNU GCC 优化版和 Clang UBSan 版复验同一批 62 个不同输入，含十万段切割边界，均通过且无警告或 sanitizer 诊断。[本轮源码哈希及结果](e-node-inline-followup-report.json)。历史报告保留原版本哈希，不重复累计输入数。

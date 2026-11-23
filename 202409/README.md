@@ -481,32 +481,32 @@ int main(){
 #include<bits/stdc++.h>
 using namespace std;
 const int N=1e5+10;
+struct node;
+extern node e[N];
+mt19937 rng(94127);
 struct node{
     int l,r,sz,c,first,last,cnt;
     unsigned pri;
-    void read();
-    void pushup();
+    int size(){
+        return sz;
+    }
+    void read(){
+        scanf("%d",&c);
+        first=last=c;
+        sz=cnt=1;
+        pri=rng();
+    }
+    void pushup(){
+        sz=1+e[l].size()+e[r].size();
+        first=l?e[l].first:c;
+        last=r?e[r].last:c;
+        cnt=1;
+        if(l)cnt+=e[l].cnt-(e[l].last==c);
+        if(r)cnt+=e[r].cnt-(e[r].first==c);
+    }
 }e[N];
 int n,m,k,x,l,r,root[N];
 unordered_map<int,int> mp[N];
-mt19937 rng(94127);
-void node::read(){
-    scanf("%d",&c);
-    first=last=c;
-    sz=cnt=1;
-    pri=rng();
-}
-int size(int u){
-    return u?e[u].sz:0;
-}
-void node::pushup(){
-    sz=1+size(l)+size(r);
-    first=l?e[l].first:c;
-    last=r?e[r].last:c;
-    cnt=1;
-    if(l)cnt+=e[l].cnt-(e[l].last==c);
-    if(r)cnt+=e[r].cnt-(e[r].first==c);
-}
 void split(int u,int key,int &a,int &b){
     if(!u){
         a=b=0;
@@ -549,7 +549,7 @@ int main(){
         root[x]=merge(a,c);
         root[id]=b;
         int u=id,v=x;
-        if(size(root[x])<size(root[id])){
+        if(e[root[x]].size()<e[root[id]].size()){
             mp[x].swap(mp[id]);
             u=x;
             v=id;
@@ -581,6 +581,7 @@ int main(){
 - [a-style-followup-report.json](../tests/202409/a-style-followup-report.json)
 - [boundaries.py](../tests/202409/boundaries.py)
 - [e-member-pushup-report.json](../tests/202409/e-member-pushup-report.json)
+- [e-node-inline-followup-report.json](../tests/202409/e-node-inline-followup-report.json)
 - [e-style-followup-report.json](../tests/202409/e-style-followup-report.json)
 - [refactor-report.json](../tests/202409/refactor-report.json)
 - [statements.json](../tests/202409/statements.json)
