@@ -1,0 +1,63 @@
+{
+  "contest": "202112",
+  "scope": "Final prose review: semantic paragraphs, separate headings/operation lists, current code names, full formulas/proofs/complexities and source attribution. Source code unchanged.",
+  "current_source_sha256": {
+    "A": "a14fca2b4fef02c62a318bd095b890086e374181af1173cba480221517c1df64",
+    "B": "df03115fd864f57e5ea881a48baa56ab4d01395ba3897fda4795869c12b4857a",
+    "C": "ae8c78fb105bfb0112312c2e9052528d87a04e6a6a43a2cfeba6f0f493e1e920",
+    "D": "bb1a1e84c7a4339da29af7d64f102125d4bb97e829478501e6d6073f3f377d96",
+    "E": "29b11094b69fc9d3165ab9c39c61d5b4fd7d2d765730d78e25cf6b41cbec1e85"
+  },
+  "changes": [
+    {
+      "before": "因为序列严格递增，f(x)也等于A[1]…A[n]中≤x的元素个数。换一个统计方向：每个A[i]恰好给x=A[i]…N-1这N-A[i]个查询贡献1，因此答案为Σ(N-A[i])。",
+      "after": "因为序列严格递增，`f(x)` 也等于 `A[1]…A[n]` 中不超过 `x` 的元素个数。换一个统计方向：每个 `A[i]` 恰好给 `x=A[i]…N-1` 这 `N-A[i]` 个查询贡献 1，因此答案为 `Σ(N-A[i])`。"
+    },
+    {
+      "before": "符合A[i]≤x的组合",
+      "after": "符合 `A[i]≤x` 的组合"
+    },
+    {
+      "before": "无需二分或遍历N个值",
+      "after": "无需二分或遍历 N 个值"
+    },
+    {
+      "before": "时间、空间均 $O(n)$，乘积和总误差用64位。",
+      "after": "时间、空间均 $O(n)$，乘积和总误差用 64 位整数。"
+    },
+    {
+      "before": "收集字符数值后两两配对。注意补 29",
+      "after": "收集字符数值后两两配对。\n\n注意补 29"
+    },
+    {
+      "before": "再整段赋 -id；恢复反之。 写入时",
+      "after": "再整段赋 -id；恢复反之。\n\n写入时"
+    },
+    {
+      "before": "最大值就是两个 `high` 的最大值。",
+      "after": "最大值就是两个 `high` 的最大值。"
+    },
+    {
+      "before": "大数组的排序键都在 `1..500000`，可以用两趟 10 位基数排序；小数组使用普通排序。 相邻查询",
+      "after": "大数组的排序键都在 `1..500000`，可以用两趟 10 位基数排序；小数组使用普通排序。\n\n相邻查询"
+    },
+    {
+      "before": "静态前缀统计、低度重心的直接跨组计数和整块判定都不会增加这个复杂度。 每条路径",
+      "after": "静态前缀统计、低度重心的直接跨组计数和整块判定都不会增加这个复杂度。\n\n每条路径"
+    }
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged_or_mask_to_S": true,
+  "markdown": [
+    {
+      "file": "202112/README.md",
+      "before_sha256": "78361bf98081ae5c3c5349f5b092339c954dde89fae6a477fac9e55351b2e0c4",
+      "after_sha256": "3974985e7fbebd98e44ae36756f64bae388197f155bb1f1488acc1b200a97321"
+    },
+    {
+      "file": "202112题解.md",
+      "before_sha256": "a2926101d0ce799cd04e02ed652630ed417c547fcba7a7eb530abe4e643e4612",
+      "after_sha256": "adf0122f4507769bb97e7926b086b1bceb3618ebd9938f517f07be32590dc0f0"
+    }
+  ]
+}

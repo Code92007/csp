@@ -1,0 +1,74 @@
+{
+  "contest": "202112",
+  "source_sha256": {
+    "A": "a14fca2b4fef02c62a318bd095b890086e374181af1173cba480221517c1df64",
+    "B": "df03115fd864f57e5ea881a48baa56ab4d01395ba3897fda4795869c12b4857a",
+    "C": "dd596c795524a03c4b7cba19033769deb0aaedf75479d7c67a9a9eabb3d23074",
+    "D": "e44f7d7a98a1d4e5c3b5cf2504668c2b2cb9539434a8bdb89c537b0761b97c76",
+    "E": "f199ef82a6377fd37ecf8b04ab1072c9982792942953d656638d391cdf448e69"
+  },
+  "different_inputs": 1560,
+  "categories": {
+    "retained_independent": 407,
+    "additional_independent": 999,
+    "saved_sample": 9,
+    "constructive_stress": 3,
+    "compatibility_stress": 2,
+    "additional_independent_checker": 140
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.18218416699999906
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.04306554199999901
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.04868062499999937
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 167,
+        "B": 258,
+        "D": 322,
+        "E": 671,
+        "C": 142
+      },
+      "total": 1560,
+      "seconds": 5.550647125000001
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 167,
+        "B": 258,
+        "D": 322,
+        "E": 666,
+        "C": 142
+      },
+      "total": 1555,
+      "seconds": 10.478005333999999
+    }
+  ],
+  "independent_oracles": "Direct point-by-point sequence queries; independently constructed barcode polynomial checks; cell-by-cell disk owner/value/history; exhaustive actual tree paths. Maximum random trees additionally compare the historical accepted source, classified separately.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

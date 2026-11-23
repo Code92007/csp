@@ -1,26 +1,26 @@
-#include <algorithm>
-#include <cstdlib>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    long long N;
-    cin >> n >> N;
-    vector<long long> a(n + 2);
-    for (int i = 1; i <= n; i++)
-        cin >> a[i];
-    a[n + 1] = N;
-    long long r = N / (n + 1), x = 0, ans = 0;
-    int f = 0;
-    while (x < N) {
-        while (f < n && a[f + 1] <= x)
-            ++f;
-        long long g = x / r, next = min(a[f + 1], (g + 1) * r);
-        ans += (next - x) * llabs(g - f);
-        x = next;
+typedef long long ll;
+int n;
+ll m,r,x,ans;
+vector<ll> a;
+int main(){
+    scanf("%d%lld",&n,&m);
+    a.resize(n+2);
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&a[i]);
     }
-    cout << ans << '\n';
+    a[n+1]=m;
+    r=m/(n+1);
+    int i=0;
+    while(x<m){
+        while(i<n && a[i+1]<=x){
+            ++i;
+        }
+        ll j=x/r,y=min(a[i+1],(j+1)*r);
+        ans+=(y-x)*llabs(j-i);
+        x=y;
+    }
+    printf("%lld\n",ans);
+    return 0;
 }

@@ -1,0 +1,66 @@
+{
+  "contest": "202112",
+  "source_sha256": {
+    "D": "bb1a1e84c7a4339da29af7d64f102125d4bb97e829478501e6d6073f3f377d96",
+    "E": "29b11094b69fc9d3165ab9c39c61d5b4fd7d2d765730d78e25cf6b41cbec1e85"
+  },
+  "different_inputs": 993,
+  "categories": {
+    "retained_independent": 197,
+    "additional_independent": 789,
+    "saved_sample": 2,
+    "constructive_stress": 3,
+    "compatibility_stress": 2
+  },
+  "compilation": {
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.1786867910000005
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.04139299999999935
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.05067408299999965
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "D": 322,
+        "E": 671
+      },
+      "total": 993,
+      "seconds": 3.5989402089999993
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "D": 322,
+        "E": 666
+      },
+      "total": 988,
+      "seconds": 5.708034124999999
+    }
+  ],
+  "independent_oracles": "Cell-by-cell disk owner/value/history; exhaustive actual paths in small trees; analytical maximum chain/star constructions. Two maximum random-tree checks compare historical source separately as compatibility_stress.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor.",
+  "before_sha256": {
+    "D": "e44f7d7a98a1d4e5c3b5cf2504668c2b2cb9539434a8bdb89c537b0761b97c76",
+    "E": "230d1274c7769486ac2f389fd2283885575238c9699e475bf3f69ceb0f17317b"
+  },
+  "changes": {
+    "D": "value method renamed op; query.op is a field in a distinct struct and does not conflict.",
+    "E": "radix local frequency array calc renamed cnt; radix loop shift renamed b; actual calc member function retained. Loop b shadows the enclosing object field but radix accesses that vector only through v, so bindings and operations are unchanged."
+  }
+}

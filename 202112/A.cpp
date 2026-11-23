@@ -1,13 +1,14 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    long long N, answer = 0;
-    cin >> n >> N;
-    for (int i = 1; i <= n; i++) {
-        long long a;
-        cin >> a;
-        answer += N - a;
+typedef long long ll;
+int n;
+ll m,x,ans;
+int main(){
+    scanf("%d%lld",&n,&m);
+    for(int i=1;i<=n;++i){
+        scanf("%lld",&x);
+        ans+=m-x;
     }
-    cout << answer << '\n';
+    printf("%lld\n",ans);
+    return 0;
 }

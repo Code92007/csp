@@ -1,141 +1,146 @@
-#include <algorithm>
-#include <iostream>
-#include <limits>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-constexpr int NONE = numeric_limits<int>::max();
-struct Info {
-    int low = 0, high = 0, min_positive = NONE, max_positive = 0;
+typedef pair<int,int> P;
+const int INF=0x3f3f3f3f;
+struct info{
+    int mn,mx,lo,hi;
 };
-Info combine(Info a, Info b) {
-    return {min(a.low, b.low), max(a.high, b.high), min(a.min_positive, b.min_positive),
-            max(a.max_positive, b.max_positive)};
+info merge(info a,info b){
+    return {min(a.mn,b.mn),max(a.mx,b.mx),
+            min(a.lo,b.lo),max(a.hi,b.hi)};
 }
-struct Node {
-    Info info;
-    int owner_tag = NONE, value = 0;
-    bool value_tag = false;
+struct query{
+    int op,id,l,r,x;
 };
-struct Operation {
-    int type, id = 0, l, r, value = 0;
-};
-vector<Node> tree;
-void set_owner(int u, int id) {
-    tree[u].info = {id, id, id > 0 ? id : NONE, id > 0 ? id : 0};
-    tree[u].owner_tag = id;
-}
-void set_value(int u, int value) {
-    tree[u].value = value;
-    tree[u].value_tag = true;
-}
-void push(int u) {
-    if (tree[u].owner_tag != NONE) {
-        set_owner(u * 2, tree[u].owner_tag);
-        set_owner(u * 2 + 1, tree[u].owner_tag);
-        tree[u].owner_tag = NONE;
+int n,m,k;
+vector<query> q;
+vector<int> v;
+struct segtree{
+    struct node{
+        int l,r,tag,val;
+        info s;
+        bool own,mark;
+    };
+    vector<node> e;
+    #define l(p) e[p].l
+    #define r(p) e[p].r
+    void build(int p,int x,int y){
+        l(p)=x;r(p)=y;
+        e[p].s={0,0,INF,0};
+        if(x==y)return;
+        int mid=(x+y)/2;
+        build(p*2,x,mid);
+        build(p*2+1,mid+1,y);
     }
-    if (tree[u].value_tag) {
-        set_value(u * 2, tree[u].value);
-        set_value(u * 2 + 1, tree[u].value);
-        tree[u].value_tag = false;
+    void owner(int p,int id){
+        e[p].s={id,id,id>0?id:INF,id>0?id:0};
+        e[p].tag=id;
+        e[p].own=true;
     }
-}
-Info query(int u, int l, int r, int a, int b) {
-    if (a <= l && r <= b)
-        return tree[u].info;
-    push(u);
-    int mid = (l + r) / 2;
-    if (b <= mid)
-        return query(u * 2, l, mid, a, b);
-    if (a > mid)
-        return query(u * 2 + 1, mid + 1, r, a, b);
-    return combine(query(u * 2, l, mid, a, b), query(u * 2 + 1, mid + 1, r, a, b));
-}
-int first_foreign(int u, int l, int r, int a, int b, int id) {
-    const auto &s = tree[u].info;
-    if (r < a || l > b || s.max_positive == 0 || (s.min_positive == id && s.max_positive == id))
-        return -1;
-    if (l == r)
-        return l;
-    push(u);
-    int mid = (l + r) / 2;
-    int left = first_foreign(u * 2, l, mid, a, b, id);
-    return left != -1 ? left : first_foreign(u * 2 + 1, mid + 1, r, a, b, id);
-}
-void update(int u, int l, int r, int a, int b, int id, bool write, int value) {
-    if (a <= l && r <= b) {
-        set_owner(u, id);
-        if (write)
-            set_value(u, value);
-        return;
+    void op(int p,int x){
+        e[p].val=x;
+        e[p].mark=true;
     }
-    push(u);
-    int mid = (l + r) / 2;
-    if (a <= mid)
-        update(u * 2, l, mid, a, b, id, write, value);
-    if (b > mid)
-        update(u * 2 + 1, mid + 1, r, a, b, id, write, value);
-    tree[u].info = combine(tree[u * 2].info, tree[u * 2 + 1].info);
-}
-pair<int, int> read(int u, int l, int r, int position) {
-    if (l == r) {
-        int id = tree[u].info.low;
-        return id > 0 ? pair<int, int>{id, tree[u].value} : pair<int, int>{0, 0};
+    void pushup(int p){
+        e[p].s=merge(e[p*2].s,e[p*2+1].s);
     }
-    push(u);
-    int mid = (l + r) / 2;
-    return position <= mid ? read(u * 2, l, mid, position) : read(u * 2 + 1, mid + 1, r, position);
-}
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int programs, disk, k;
-    cin >> programs >> disk >> k;
-    vector<Operation> ops(k);
-    vector<int> coordinates{1, disk + 1};
-    for (auto &op : ops) {
-        cin >> op.type;
-        if (op.type == 3) {
-            cin >> op.l;
-            op.r = op.l;
-        } else {
-            cin >> op.id >> op.l >> op.r;
-            if (op.type == 0)
-                cin >> op.value;
+    void pushdown(int p){
+        if(e[p].own){
+            owner(p*2,e[p].tag);
+            owner(p*2+1,e[p].tag);
+            e[p].own=false;
         }
-        coordinates.push_back(op.l);
-        coordinates.push_back(op.r + 1);
-    }
-    sort(coordinates.begin(), coordinates.end());
-    coordinates.erase(unique(coordinates.begin(), coordinates.end()), coordinates.end());
-    int n = int(coordinates.size()) - 1;
-    tree.resize(4 * n + 4);
-    for (auto op : ops) {
-        int l = lower_bound(coordinates.begin(), coordinates.end(), op.l) - coordinates.begin();
-        int r = int(lower_bound(coordinates.begin(), coordinates.end(), op.r + 1) -
-                    coordinates.begin()) -
-                1;
-        if (op.type == 3) {
-            auto [owner, value] = read(1, 0, n - 1, l);
-            cout << owner << ' ' << value << '\n';
-            continue;
+        if(e[p].mark){
+            op(p*2,e[p].val);
+            op(p*2+1,e[p].val);
+            e[p].mark=false;
         }
-        if (op.type == 0) {
-            int blocked = first_foreign(1, 0, n - 1, l, r, op.id),
-                end = blocked == -1 ? r : blocked - 1;
-            if (end < l)
-                cout << -1 << '\n';
-            else {
-                update(1, 0, n - 1, l, end, op.id, true, op.value);
-                cout << coordinates[end + 1] - 1 << '\n';
+    }
+    info query(int p,int x,int y){
+        if(x<=l(p) && r(p)<=y)return e[p].s;
+        pushdown(p);
+        int mid=(l(p)+r(p))/2;
+        if(y<=mid)return query(p*2,x,y);
+        if(x>mid)return query(p*2+1,x,y);
+        return merge(query(p*2,x,y),query(p*2+1,x,y));
+    }
+    int find(int p,int x,int y,int id){
+        auto &s=e[p].s;
+        if(r(p)<x || l(p)>y || !s.hi)return -1;
+        if(s.lo==id && s.hi==id)return -1;
+        if(l(p)==r(p))return l(p);
+        pushdown(p);
+        int u=find(p*2,x,y,id);
+        return u!=-1?u:find(p*2+1,x,y,id);
+    }
+    void update(int p,int x,int y,int id,bool write,int val){
+        if(x<=l(p) && r(p)<=y){
+            owner(p,id);
+            if(write)op(p,val);
+            return;
+        }
+        pushdown(p);
+        int mid=(l(p)+r(p))/2;
+        if(x<=mid)update(p*2,x,y,id,write,val);
+        if(y>mid)update(p*2+1,x,y,id,write,val);
+        pushup(p);
+    }
+    P read(int p,int x){
+        if(l(p)==r(p)){
+            int id=e[p].s.mn;
+            return id>0?P(id,e[p].val):P(0,0);
+        }
+        pushdown(p);
+        int mid=(l(p)+r(p))/2;
+        return x<=mid?read(p*2,x):read(p*2+1,x);
+    }
+}tr;
+int main(){
+    scanf("%d%d%d",&n,&m,&k);
+    q.resize(k);
+    v.push_back(1);
+    v.push_back(m+1);
+    for(auto &e:q){
+        scanf("%d",&e.op);
+        if(e.op==3){
+            scanf("%d",&e.l);
+            e.r=e.l;
+        }
+        else{
+            scanf("%d%d%d",&e.id,&e.l,&e.r);
+            if(!e.op)scanf("%d",&e.x);
+        }
+        v.push_back(e.l);
+        v.push_back(e.r+1);
+    }
+    sort(v.begin(),v.end());
+    v.erase(unique(v.begin(),v.end()),v.end());
+    int len=v.size()-1;
+    tr.e.resize(len*4+4);
+    tr.build(1,0,len-1);
+    for(auto &e:q){
+        int l=lower_bound(v.begin(),v.end(),e.l)-v.begin();
+        int r=lower_bound(v.begin(),v.end(),e.r+1)-v.begin()-1;
+        if(e.op==3){
+            auto [id,val]=tr.read(1,l);
+            printf("%d %d\n",id,val);
+        }
+        else if(!e.op){
+            int pos=tr.find(1,l,r,e.id);
+            int end=pos==-1?r:pos-1;
+            if(end<l)puts("-1");
+            else{
+                tr.update(1,l,end,e.id,true,e.x);
+                printf("%d\n",v[end+1]-1);
             }
-        } else {
-            Info s = query(1, 0, n - 1, l, r);
-            int required = op.type == 1 ? op.id : -op.id;
-            bool ok = s.low == required && s.high == required;
-            cout << (ok ? "OK" : "FAIL") << '\n';
-            if (ok)
-                update(1, 0, n - 1, l, r, -required, false, 0);
+        }
+        else{
+            info s=tr.query(1,l,r);
+            int id=e.op==1?e.id:-e.id;
+            bool ok=(s.mn==id && s.mx==id);
+            puts(ok?"OK":"FAIL");
+            if(ok)tr.update(1,l,r,-id,false,0);
         }
     }
+    return 0;
 }
