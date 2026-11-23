@@ -1,17 +1,20 @@
-#include <algorithm>
-#include <iostream>
-#include <limits>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin >> n;
-    vector<long long> a(n);
-    for (auto &x : a)
-        cin >> x;
-    sort(a.begin(), a.end());
-    long long answer = numeric_limits<long long>::max();
-    for (int i = 1; i < n; i++)
-        answer = min(answer, a[i] - a[i - 1]);
-    cout << answer << '\n';
+typedef long long ll;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+int n;
+ll ans=INF;
+vector<ll> a;
+int main(){
+    scanf("%d",&n);
+    a.resize(n);
+    for(ll &x:a){
+        scanf("%lld",&x);
+    }
+    sort(a.begin(),a.end());
+    for(int i=1;i<n;++i){
+        ans=min(ans,a[i]-a[i-1]);
+    }
+    printf("%lld\n",ans);
+    return 0;
 }

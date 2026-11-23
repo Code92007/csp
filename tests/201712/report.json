@@ -1,0 +1,72 @@
+{
+  "contest": "201712",
+  "source_sha256": {
+    "A": "6fc42e40bb1d9761bd65bb5da357b51978d7e76ca806bb63365c92b6121446a6",
+    "B": "b489c509ec3ae7efd90cb1b410ead15985a5359796ca5324c6710e735898b43d",
+    "C": "5fc6ca3c588cafe593063d09f8f9eb76dfc14510241b400f94f441ffee588c66",
+    "D": "8e72a9eff1ee30609be8961b85325834bf88a123f67562c260ad2fc62486f2f7",
+    "E": "9bcc8d2346a125766fcc25a371cde44cc6d64f03d68b12f13ce015beecbee07b"
+  },
+  "different_inputs": 1216,
+  "categories": {
+    "retained_independent": 576,
+    "saved_sample": 7,
+    "additional_independent": 630,
+    "constructive_stress": 3
+  },
+  "compilation": {
+    "refactored/A": "passed without diagnostics",
+    "refactored/B": "passed without diagnostics",
+    "refactored/C": "passed without diagnostics",
+    "refactored/D": "passed without diagnostics",
+    "refactored/E": "passed without diagnostics",
+    "ubsan/A": "passed without diagnostics",
+    "ubsan/B": "passed without diagnostics",
+    "ubsan/C": "passed without diagnostics",
+    "ubsan/D": "passed without diagnostics",
+    "ubsan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "problem": "D",
+      "kind": "constructive_stress",
+      "seconds": 0.022552208000000462
+    },
+    {
+      "problem": "D",
+      "kind": "constructive_stress",
+      "seconds": 0.003979417000000041
+    },
+    {
+      "problem": "E",
+      "kind": "constructive_stress",
+      "seconds": 0.02711641600000192
+    },
+    {
+      "mode": "refactored",
+      "cases": {
+        "A": 63,
+        "B": 540,
+        "C": 162,
+        "D": 219,
+        "E": 232
+      },
+      "total": 1216,
+      "seconds": 5.501024750000001
+    },
+    {
+      "mode": "ubsan",
+      "cases": {
+        "A": 63,
+        "B": 540,
+        "C": 162,
+        "D": 217,
+        "E": 231
+      },
+      "total": 1213,
+      "seconds": 8.248844875
+    }
+  ],
+  "independent_oracles": "All-pair differences, live-circle deletion, Python datetime minute enumeration, direct road-state Dijkstra with current consecutive-small-road length, ancestor/descendant DP with exact Python integers.",
+  "note": "Historical accepted records belong to the original version; no online submission was made for this refactor."
+}

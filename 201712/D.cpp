@@ -1,51 +1,52 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using i64 = long long;
-constexpr i64 INF = 4000000000000000000LL;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m;
-    cin >> n >> m;
-    vector<vector<i64>> small(n, vector<i64>(n, INF)), large = small;
-    for (int i = 0; i < n; ++i)
-        small[i][i] = 0;
-    for (int i = 0; i < m; ++i) {
-        int type, u, v;
-        i64 w;
-        cin >> type >> u >> v >> w;
+typedef long long ll;
+const ll INF=0x3f3f3f3f3f3f3f3fll;
+int n,m;
+vector<vector<ll>> a,b;
+int main(){
+    scanf("%d%d",&n,&m);
+    a.assign(n,vector<ll>(n,INF));
+    b=a;
+    for(int i=0;i<n;++i){
+        a[i][i]=0;
+    }
+    for(int i=0;i<m;++i){
+        int op,u,v;
+        ll w;
+        scanf("%d%d%d%lld",&op,&u,&v,&w);
         --u;
         --v;
-        auto &a = type ? small : large;
-        a[u][v] = a[v][u] = min(a[u][v], w);
+        auto &g=op?a:b;
+        g[u][v]=g[v][u]=min(g[u][v],w);
     }
-    for (int k = 0; k < n; ++k)
-        for (int i = 0; i < n; ++i)
-            if (small[i][k] < INF)
-                for (int j = 0; j < n; ++j)
-                    if (small[k][j] < INF)
-                        small[i][j] = min(small[i][j], small[i][k] + small[k][j]);
-    vector<i64> distance(2 * n, INF);
-    vector<bool> done(2 * n);
-    distance[0] = 0;
-    for (int step = 0; step < 2 * n; ++step) {
-        int state = -1;
-        for (int i = 0; i < 2 * n; ++i)
-            if (!done[i] && (state == -1 || distance[i] < distance[state]))
-                state = i;
-        if (state == -1 || distance[state] == INF)
-            break;
-        done[state] = true;
-        int u = state / 2, previous = state % 2;
-        for (int v = 0; v < n; ++v) {
-            if (large[u][v] < INF)
-                distance[v * 2] = min(distance[v * 2], distance[state] + large[u][v]);
-            if (previous == 0 && v != u && small[u][v] < INF)
-                distance[v * 2 + 1] =
-                    min(distance[v * 2 + 1], distance[state] + small[u][v] * small[u][v]);
+    for(int k=0;k<n;++k){
+        for(int i=0;i<n;++i){
+            if(a[i][k]==INF)continue;
+            for(int j=0;j<n;++j){
+                if(a[k][j]<INF)a[i][j]=min(a[i][j],a[i][k]+a[k][j]);
+            }
         }
     }
-    cout << min(distance[2 * n - 2], distance[2 * n - 1]) << '\n';
+    vector<ll> dis(n*2,INF);
+    vector<bool> vis(n*2);
+    dis[0]=0;
+    for(int i=0;i<n*2;++i){
+        int x=-1;
+        for(int j=0;j<n*2;++j){
+            if(!vis[j] && (x==-1 || dis[j]<dis[x]))x=j;
+        }
+        if(x==-1 || dis[x]==INF)break;
+        vis[x]=true;
+        int u=x/2,op=x%2;
+        for(int v=0;v<n;++v){
+            if(b[u][v]<INF)dis[v*2]=min(dis[v*2],dis[x]+b[u][v]);
+            if(!op && v!=u && a[u][v]<INF){
+                ll w=a[u][v];
+                dis[v*2+1]=min(dis[v*2+1],dis[x]+w*w);
+            }
+        }
+    }
+    printf("%lld\n",min(dis[n*2-2],dis[n*2-1]));
+    return 0;
 }

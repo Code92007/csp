@@ -1,94 +1,101 @@
-#include <algorithm>
-#include <functional>
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using ll = long long;
-using Int = __int128_t;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int tests;
-    cin >> tests;
-    while (tests--) {
-        int n;
-        cin >> n;
-        vector<int> parent(n + 1), root(n + 1);
-        vector<ll> depth(n + 1), value(n + 1), ideal(n + 1), xs;
-        vector<Int> dp(n + 1);
-        vector<vector<int>> lines(n + 1);
-        for (int i = 1; i <= n; ++i) {
-            ll length;
-            cin >> parent[i] >> length >> value[i] >> ideal[i];
-            depth[i] = depth[parent[i]] + length;
-            xs.push_back(depth[i] + ideal[i]);
-        }
-        sort(xs.begin(), xs.end());
-        xs.erase(unique(xs.begin(), xs.end()), xs.end());
-        struct Node {
-            int line = 0, left = 0, right = 0;
-        };
-        vector<Node> tree(1);
-        auto eval = [&](int i, ll x) {
-            return Int(2) * depth[i] * x + dp[i] - Int(depth[i]) * depth[i];
-        };
-        function<int(int, int, int, int)> insert = [&](int u, int line, int lo, int hi) {
-            if (!u) {
-                tree.push_back({line, 0, 0});
-                return int(tree.size()) - 1;
-            }
-            int mid = (lo + hi) / 2;
-            if (eval(line, xs[mid]) > eval(tree[u].line, xs[mid]))
-                swap(line, tree[u].line);
-            if (lo == hi)
-                return u;
-            if (eval(line, xs[lo]) > eval(tree[u].line, xs[lo])) {
-                int child = insert(tree[u].left, line, lo, mid);
-                tree[u].left = child;
-            } else if (eval(line, xs[hi]) > eval(tree[u].line, xs[hi])) {
-                int child = insert(tree[u].right, line, mid + 1, hi);
-                tree[u].right = child;
-            }
-            return u;
-        };
-        auto query = [&](int u, ll x) {
-            int lo = 0, hi = xs.size() - 1;
-            Int best = -(Int(1) << 120);
-            while (u) {
-                best = max(best, eval(tree[u].line, x));
-                int mid = (lo + hi) / 2;
-                if (x <= xs[mid]) {
-                    hi = mid;
-                    u = tree[u].left;
-                } else {
-                    lo = mid + 1;
-                    u = tree[u].right;
-                }
-            }
-            return best;
-        };
-        ll answer = 0;
-        const ll MOD = 1000000000000000000LL;
-        for (int u = n; u >= 1; --u) {
-            ll x = depth[u] + ideal[u];
-            if (root[u])
-                dp[u] = max(Int(0), query(root[u], x) - Int(x) * x + value[u]);
-            answer = (answer + ll(dp[u] % MOD)) % MOD;
-            root[u] = insert(root[u], u, 0, xs.size() - 1);
-            lines[u].push_back(u);
-            int p = parent[u];
-            if (!p)
-                continue;
-            if (lines[p].size() < lines[u].size()) {
-                swap(lines[p], lines[u]);
-                swap(root[p], root[u]);
-            }
-            for (int line : lines[u]) {
-                root[p] = insert(root[p], line, 0, xs.size() - 1);
-                lines[p].push_back(line);
-            }
-            vector<int>().swap(lines[u]);
-        }
-        cout << answer << '\n';
+typedef long long ll;
+typedef __int128_t i128;
+const ll mod=1e18;
+const i128 INF=(i128)1<<120;
+int t,n;
+vector<int> fa,rt;
+vector<ll> dep,val,f,xs;
+vector<i128> dp;
+vector<vector<int>> g;
+i128 calc(int i,ll x){
+    return (i128)2*dep[i]*x+dp[i]-(i128)dep[i]*dep[i];
+}
+struct segtree{
+    struct node{
+        int l,r,id,ls,rs;
+    };
+    vector<node> e;
+    #define l(p) e[p].l
+    #define r(p) e[p].r
+    int make(int x,int y,int id){
+        e.push_back({x,y,id,0,0});
+        return e.size()-1;
     }
+    int update(int p,int id){
+        int mid=(l(p)+r(p))/2;
+        if(calc(id,xs[mid])>calc(e[p].id,xs[mid]))swap(id,e[p].id);
+        if(l(p)==r(p))return p;
+        if(calc(id,xs[l(p)])>calc(e[p].id,xs[l(p)])){
+            int u=e[p].ls;
+            if(!u)u=make(l(p),mid,id);
+            else u=update(u,id);
+            e[p].ls=u;
+        }
+        else if(calc(id,xs[r(p)])>calc(e[p].id,xs[r(p)])){
+            int u=e[p].rs;
+            if(!u)u=make(mid+1,r(p),id);
+            else u=update(u,id);
+            e[p].rs=u;
+        }
+        return p;
+    }
+    int insert(int p,int id){
+        return p?update(p,id):make(0,xs.size()-1,id);
+    }
+    i128 query(int p,ll x){
+        i128 ans=-INF;
+        while(p){
+            ans=max(ans,calc(e[p].id,x));
+            int mid=(l(p)+r(p))/2;
+            p=x<=xs[mid]?e[p].ls:e[p].rs;
+        }
+        return ans;
+    }
+}tr;
+int main(){
+    scanf("%d",&t);
+    while(t--){
+        scanf("%d",&n);
+        fa.assign(n+1,0);
+        rt.assign(n+1,0);
+        dep.assign(n+1,0);
+        val.assign(n+1,0);
+        f.assign(n+1,0);
+        dp.assign(n+1,0);
+        g.assign(n+1,vector<int>());
+        xs.clear();
+        for(int i=1;i<=n;++i){
+            ll len;
+            scanf("%d%lld%lld%lld",&fa[i],&len,&val[i],&f[i]);
+            dep[i]=dep[fa[i]]+len;
+            xs.push_back(dep[i]+f[i]);
+        }
+        sort(xs.begin(),xs.end());
+        xs.erase(unique(xs.begin(),xs.end()),xs.end());
+        tr.e.clear();
+        tr.e.push_back({0,0,0,0,0});
+        ll ans=0;
+        for(int u=n;u>=1;--u){
+            ll x=dep[u]+f[u];
+            if(rt[u])dp[u]=max((i128)0,tr.query(rt[u],x)-(i128)x*x+val[u]);
+            ans=(ans+(ll)(dp[u]%mod))%mod;
+            rt[u]=tr.insert(rt[u],u);
+            g[u].push_back(u);
+            int p=fa[u];
+            if(!p)continue;
+            if(g[p].size()<g[u].size()){
+                swap(g[p],g[u]);
+                swap(rt[p],rt[u]);
+            }
+            for(int &id:g[u]){
+                rt[p]=tr.insert(rt[p],id);
+                g[p].push_back(id);
+            }
+            vector<int>().swap(g[u]);
+        }
+        printf("%lld\n",ans);
+    }
+    return 0;
 }

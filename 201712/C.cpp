@@ -1,91 +1,107 @@
-#include <algorithm>
-#include <array>
-#include <cctype>
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
-using Field = array<bool, 60>;
-int value(string s, int kind) {
-    for (char &c : s)
-        c = tolower(static_cast<unsigned char>(c));
-    if (isdigit(s[0]))
-        return stoi(s);
-    string names = kind == 3 ? "janfebmaraprmayjunjulaugsepoctnovdec" : "sunmontuewedthufrisat";
-    return int(names.find(s) / 3) + (kind == 3);
+typedef long long ll;
+const int N=60,M=5,K=13;
+typedef array<bool,N> F;
+const int lo[M]={0,0,1,1,0},hi[M]={59,23,31,12,6};
+const int days[K]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+struct rule{
+    array<F,M> f;
+    vector<int> min,hour;
+    string cmd;
+};
+int n;
+ll s,t;
+vector<rule> a;
+string read(){
+    string s;
+    int c=getchar();
+    while(isspace(c)){
+        c=getchar();
+    }
+    while(c!=EOF && !isspace(c)){
+        s+=char(c);
+        c=getchar();
+    }
+    return s;
 }
-Field parse(string s, int kind) {
-    const int lo[] = {0, 0, 1, 1, 0}, hi[] = {59, 23, 31, 12, 6};
-    Field a{};
-    if (s == "*") {
-        for (int i = lo[kind]; i <= hi[kind]; i++)
-            a[i] = true;
+int value(string s,int kind){
+    for(char &c:s){
+        c=tolower(c);
+    }
+    if(isdigit(s[0]))return stoi(s);
+    string names=kind==3?"janfebmaraprmayjunjulaugsepoctnovdec":
+                         "sunmontuewedthufrisat";
+    return names.find(s)/3+(kind==3);
+}
+F parse(string s,int kind){
+    F a;
+    a.fill(false);
+    if(s=="*"){
+        for(int i=lo[kind];i<=hi[kind];++i){
+            a[i]=true;
+        }
         return a;
     }
-    istringstream in(s);
-    string part;
-    while (getline(in, part, ',')) {
-        size_t p = part.find('-');
-        int l = value(part.substr(0, p), kind),
-            r = p == string::npos ? l : value(part.substr(p + 1), kind);
-        for (int i = l; i <= r; i++)
-            a[i] = true;
+    int p=0,len=s.size();
+    while(p<len){
+        int end=s.find(',',p);
+        if(end==-1)end=len;
+        string t=s.substr(p,end-p);
+        int pos=t.find('-');
+        int l=value(t.substr(0,pos),kind);
+        int r=pos==-1?l:value(t.substr(pos+1),kind);
+        for(int i=l;i<=r;++i){
+            a[i]=true;
+        }
+        p=end+1;
     }
     return a;
 }
-struct Rule {
-    array<Field, 5> fields;
-    vector<int> minutes, hours;
-    string command;
-};
-bool leap(int y) {
-    return y % 400 == 0 || (y % 4 == 0 && y % 100 != 0);
+bool leap(int y){
+    return y%400==0 || (y%4==0 && y%100!=0);
 }
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n;
-    long long start, finish;
-    cin >> n >> start >> finish;
-    vector<Rule> rules(n);
-    for (auto &r : rules) {
-        for (int j = 0; j < 5; j++) {
-            string s;
-            cin >> s;
-            r.fields[j] = parse(s, j);
+int main(){
+    scanf("%d%lld%lld",&n,&s,&t);
+    a.resize(n);
+    for(auto &r:a){
+        for(int j=0;j<M;++j){
+            r.f[j]=parse(read(),j);
         }
-        cin >> r.command;
-        for (int i = 0; i < 60; i++)
-            if (r.fields[0][i])
-                r.minutes.push_back(i);
-        for (int i = 0; i < 24; i++)
-            if (r.fields[1][i])
-                r.hours.push_back(i);
+        r.cmd=read();
+        for(int i=0;i<60;++i){
+            if(r.f[0][i])r.min.push_back(i);
+        }
+        for(int i=0;i<24;++i){
+            if(r.f[1][i])r.hour.push_back(i);
+        }
     }
-    int weekday = 4;
-    int lengths[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    for (int y = 1970; y <= finish / 100000000; y++)
-        for (int mo = 1; mo <= 12; mo++)
-            for (int d = 1; d <= lengths[mo] + (mo == 2 && leap(y));
-                 d++, weekday = (weekday + 1) % 7) {
-                long long date = (y * 10000 + mo * 100 + d) * 10000LL;
-                if (date + 2359 < start || date >= finish)
-                    continue;
-                vector<pair<long long, int>> events;
-                for (int i = 0; i < n; i++) {
-                    auto &r = rules[i];
-                    if (!r.fields[2][d] || !r.fields[3][mo] || !r.fields[4][weekday])
+    int week=4;
+    for(int y=1970;y<=t/100000000;++y){
+        for(int mo=1;mo<=12;++mo){
+            int last=days[mo]+(mo==2 && leap(y));
+            for(int d=1;d<=last;++d,week=(week+1)%7){
+                ll date=(y*10000+mo*100+d)*10000ll;
+                if(date+2359<s || date>=t)continue;
+                vector<pair<ll,int>> q;
+                for(int i=0;i<n;++i){
+                    auto &r=a[i];
+                    if(!r.f[2][d] || !r.f[3][mo] || !r.f[4][week]){
                         continue;
-                    for (int h : r.hours)
-                        for (int m : r.minutes) {
-                            long long t = date + h * 100 + m;
-                            if (start <= t && t < finish)
-                                events.push_back({t, i});
+                    }
+                    for(int &h:r.hour){
+                        for(int &m:r.min){
+                            ll time=date+h*100+m;
+                            if(s<=time && time<t)q.push_back({time,i});
                         }
+                    }
                 }
-                sort(events.begin(), events.end());
-                for (auto [t, i] : events)
-                    cout << t << ' ' << rules[i].command << '\n';
+                sort(q.begin(),q.end());
+                for(auto &[time,i]:q){
+                    printf("%lld %s\n",time,a[i].cmd.c_str());
+                }
             }
+        }
+    }
+    return 0;
 }

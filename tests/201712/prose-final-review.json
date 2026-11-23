@@ -1,0 +1,47 @@
+{
+  "contest": "201712",
+  "scope": "Final prose review: semantic paragraphs, separate headings/operation lists, current code names, full formulas/proofs/complexities and source attribution. Source code unchanged.",
+  "current_source_sha256": {
+    "A": "6fc42e40bb1d9761bd65bb5da357b51978d7e76ca806bb63365c92b6121446a6",
+    "B": "b489c509ec3ae7efd90cb1b410ead15985a5359796ca5324c6710e735898b43d",
+    "C": "5fc6ca3c588cafe593063d09f8f9eb76dfc14510241b400f94f441ffee588c66",
+    "D": "8e72a9eff1ee30609be8961b85325834bf88a123f67562c260ad2fc62486f2f7",
+    "E": "6c7b2c04e8a6bc12a5b80fd955a15b5ace8b6f5adf2379971789221a7e0ae3db"
+  },
+  "changes": [
+    {
+      "before": "重复数排序后相邻并产生0",
+      "after": "重复数排序后相邻并产生 0"
+    },
+    {
+      "before": "至少每k次报数淘汰一人，总报数次数不超过k(n-1)",
+      "after": "至少每 k 次报数淘汰一人，总报数次数不超过 k(n-1)"
+    },
+    {
+      "before": "；n=1直接输出1。",
+      "after": "；n=1 时直接输出 1。"
+    },
+    {
+      "before": "禁止 1 直接接另一条合成小道，否则会把本应 $(a+b)^2$ 的连续费用错误拆成 $a^2+b^2$。 在这张非负权分层图",
+      "after": "禁止 1 直接接另一条合成小道，否则会把本应 $(a+b)^2$ 的连续费用错误拆成 $a^2+b^2$。\n\n在这张非负权分层图"
+    },
+    {
+      "before": "父亲编号小于孩子，可以按编号从大到小处理，省去递归遍历。 线段树节点",
+      "after": "父亲编号小于孩子，可以按编号从大到小处理，省去递归遍历。\n\n线段树节点"
+    }
+  ],
+  "cpp_blocks_unchanged": true,
+  "math_tokens_unchanged_or_mask_to_S": true,
+  "markdown": [
+    {
+      "file": "201712/README.md",
+      "before_sha256": "ece6b0c54a901702845671e61f2d37f90edc77e6c954dd62bbebad6d511edbd8",
+      "after_sha256": "775b2c28e55d0ad19c2e668dbaa82ea89ab0c48d54b3bed1baa3dcf36ed57a00"
+    },
+    {
+      "file": "201712题解.md",
+      "before_sha256": "601f1ba7d844e5bb8c6d221f6e22e8e84d6de6f559321cb97699690876f06438",
+      "after_sha256": "1af1ba7d151930c70327e250cef514624833e5090c649727eced9706c91c581b"
+    }
+  ]
+}
