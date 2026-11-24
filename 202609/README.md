@@ -509,7 +509,7 @@ int main(){
 
 <!-- candidate-attempt:E:start -->
 
-查询优化候选另获 [50 分 Time Exceeded](https://oj.shumeng.tech/record/6b05aa50e5d1fced2e45bc4d)。本页继续展示首轮源码；该候选的源码与判题归属单独保存在 [复测记录](../tests/202609/performance-attempt/202609E/attempt.json) 中。
+查询优化候选另获 [50 分 Time Exceeded](https://oj.shumeng.tech/record/6b05aa50e5d1fced2e45bc4d)。该次查询优化未采用，其源码与判题归属单独保存在 [复测记录](../tests/202609/performance-attempt/202609E/attempt.json) 中。
 
 <!-- candidate-attempt:E:end -->
 
