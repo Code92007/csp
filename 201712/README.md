@@ -316,7 +316,9 @@ int main(){
         for(int i=0;i<n;++i){
             if(a[i][k]==INF)continue;
             for(int j=0;j<n;++j){
-                if(a[k][j]<INF)a[i][j]=min(a[i][j],a[i][k]+a[k][j]);
+                if(a[k][j]<INF){
+                    a[i][j]=min(a[i][j],a[i][k]+a[k][j]);
+                }
             }
         }
     }
@@ -332,7 +334,9 @@ int main(){
         vis[x]=true;
         int u=x/2,op=x%2;
         for(int v=0;v<n;++v){
-            if(b[u][v]<INF)dis[v*2]=min(dis[v*2],dis[x]+b[u][v]);
+            if(b[u][v]<INF){
+                dis[v*2]=min(dis[v*2],dis[x]+b[u][v]);
+            }
             if(!op && v!=u && a[u][v]<INF){
                 ll w=a[u][v];
                 dis[v*2+1]=min(dis[v*2+1],dis[x]+w*w);
@@ -356,7 +360,7 @@ int main(){
 
 每座城市除根外都有一个编号更小的父亲，连边长度为 $s_i$。商路从城市 $u$ 出发，每一步可以跳到任意真后代 $v$，该段收益为 $v_u-(f_u-\operatorname{dist}(u,v))^2$，再从 $v$ 继续；也可以立即停止，收益为 0。
 
-输入测试组数，每组输入城市数 $n$，再按编号输入各城市的 `父亲 s v f`。根的父亲和连边长度均为 0，父亲编号严格小于孩子编号。
+输入测试组数，每组输入城市数 $n$，再按编号输入各城市的 `父亲 s v f`。规模为 $n\le10^5$，$0\le v_i\le10^{13}$、$0\le f_i\le10^9$，非根边长满足 $1\le s_i\le10^4$。根的父亲和连边长度均为 0，父亲编号严格小于孩子编号。
 
 每组输出所有城市最优收益之和，对 $10^{18}$ 取模。本题题名为《商路》。
 
@@ -376,11 +380,11 @@ $$dp[u]=\max(0,v_u-x^2+\max_v\{2D_vx+dp[v]-D_v^2\}).$$
 
 **李超树加启发式合并**
 
-所有查询横坐标预先离散化；李超线段树在每个区间保存中点处更优的直线，剩下一条只可能在一侧胜出，递归插入那一侧。 每个子树同时保存直线编号列表；合并时把小列表中的线逐条插入大列表对应的李超树。 每条线所在集合的大小每次至少翻倍，所以最多被搬动 $O(\log n)$ 次。
+所有查询横坐标预先离散化；李超线段树在每个区间保存中点处更优的直线，剩下一条只可能在一侧胜出，递归插入那一侧。每个子树同时用数组链表保存直线编号；合并时把小集合中的线逐条插入大集合对应的李超树，再拼接两条链表。每条线所在集合的大小每次至少翻倍，所以最多被搬动 $O(\log n)$ 次。
 
 父亲编号小于孩子，可以按编号从大到小处理，省去递归遍历。
 
-线段树节点采用下标引用，递归插入可能扩容 `vector`，因此不能跨递归保留其元素引用。 平方和比较使用 128 位整数，最终累加再按 $10^{18}$ 取模。
+城市信息、离散坐标、编号链表和李超树节点池均使用全局数组，每组重置根、链表、DP 和节点计数。一次插线至多新建一个节点；结合启发式合并的搬动次数，节点池按 $O(n\log n)$ 预留容量。平方和比较使用 128 位整数，最终累加再按 $10^{18}$ 取模。
 
 **正确性**
 
@@ -399,30 +403,31 @@ $O(n\log^2 n)$ 时间，代码保留历次合并产生的李超节点，空间�
 using namespace std;
 typedef long long ll;
 typedef __int128_t i128;
+const int N=1e5+10,M=N*18;
 const ll mod=1e18;
 const i128 INF=(i128)1<<120;
-int t,n;
-vector<int> fa,rt;
-vector<ll> dep,val,f,xs;
-vector<i128> dp;
-vector<vector<int>> g;
+int t,n,k,fa[N],rt[N],head[N],tail[N],nxt[N],sz[N];
+ll dep[N],val[N],f[N],xs[N];
+i128 dp[N];
 i128 calc(int i,ll x){
     return (i128)2*dep[i]*x+dp[i]-(i128)dep[i]*dep[i];
 }
 struct segtree{
+    int tot;
     struct node{
         int l,r,id,ls,rs;
-    };
-    vector<node> e;
+    }e[M];
     #define l(p) e[p].l
     #define r(p) e[p].r
     int make(int x,int y,int id){
-        e.push_back({x,y,id,0,0});
-        return e.size()-1;
+        e[++tot]={x,y,id,0,0};
+        return tot;
     }
     int update(int p,int id){
         int mid=(l(p)+r(p))/2;
-        if(calc(id,xs[mid])>calc(e[p].id,xs[mid]))swap(id,e[p].id);
+        if(calc(id,xs[mid])>calc(e[p].id,xs[mid])){
+            swap(id,e[p].id);
+        }
         if(l(p)==r(p))return p;
         if(calc(id,xs[l(p)])>calc(e[p].id,xs[l(p)])){
             int u=e[p].ls;
@@ -439,7 +444,7 @@ struct segtree{
         return p;
     }
     int insert(int p,int id){
-        return p?update(p,id):make(0,xs.size()-1,id);
+        return p?update(p,id):make(0,k-1,id);
     }
     i128 query(int p,ll x){
         i128 ans=-INF;
@@ -455,42 +460,50 @@ int main(){
     scanf("%d",&t);
     while(t--){
         scanf("%d",&n);
-        fa.assign(n+1,0);
-        rt.assign(n+1,0);
-        dep.assign(n+1,0);
-        val.assign(n+1,0);
-        f.assign(n+1,0);
-        dp.assign(n+1,0);
-        g.assign(n+1,vector<int>());
-        xs.clear();
+        memset(rt,0,sizeof rt);
+        memset(head,0,sizeof head);
+        memset(tail,0,sizeof tail);
+        memset(nxt,0,sizeof nxt);
+        memset(sz,0,sizeof sz);
+        memset(dp,0,sizeof dp);
         for(int i=1;i<=n;++i){
             ll len;
             scanf("%d%lld%lld%lld",&fa[i],&len,&val[i],&f[i]);
             dep[i]=dep[fa[i]]+len;
-            xs.push_back(dep[i]+f[i]);
+            xs[i-1]=dep[i]+f[i];
         }
-        sort(xs.begin(),xs.end());
-        xs.erase(unique(xs.begin(),xs.end()),xs.end());
-        tr.e.clear();
-        tr.e.push_back({0,0,0,0,0});
+        sort(xs,xs+n);
+        k=unique(xs,xs+n)-xs;
+        tr.tot=0;
         ll ans=0;
         for(int u=n;u>=1;--u){
             ll x=dep[u]+f[u];
-            if(rt[u])dp[u]=max((i128)0,tr.query(rt[u],x)-(i128)x*x+val[u]);
+            if(rt[u]){
+                dp[u]=max((i128)0,tr.query(rt[u],x)-(i128)x*x+val[u]);
+            }
             ans=(ans+(ll)(dp[u]%mod))%mod;
             rt[u]=tr.insert(rt[u],u);
-            g[u].push_back(u);
+            if(head[u])nxt[tail[u]]=u;
+            else head[u]=u;
+            tail[u]=u;
+            ++sz[u];
             int p=fa[u];
             if(!p)continue;
-            if(g[p].size()<g[u].size()){
-                swap(g[p],g[u]);
+            if(sz[p]<sz[u]){
+                swap(head[p],head[u]);
+                swap(tail[p],tail[u]);
+                swap(sz[p],sz[u]);
                 swap(rt[p],rt[u]);
             }
-            for(int &id:g[u]){
+            for(int id=head[u];id;id=nxt[id]){
                 rt[p]=tr.insert(rt[p],id);
-                g[p].push_back(id);
             }
-            vector<int>().swap(g[u]);
+            if(head[u]){
+                nxt[tail[p]]=head[u];
+                tail[p]=tail[u];
+            }
+            sz[p]+=sz[u];
+            head[u]=tail[u]=sz[u]=rt[u]=0;
         }
         printf("%lld\n",ans);
     }
@@ -503,11 +516,13 @@ int main(){
 ### 验证附件
 
 - [VALIDATION.md](../tests/201712/VALIDATION.md)
+- [de-array-followup-report.json](../tests/201712/de-array-followup-report.json)
 - [details.txt](../tests/201712/details.txt)
 - [nightly-review-followup.json](../tests/201712/nightly-review-followup.json)
 - [prose-final-review.json](../tests/201712/prose-final-review.json)
 - [report.json](../tests/201712/report.json)
 - [retained_oracles.py](../tests/201712/retained_oracles.py)
+- [verify-de-followup.py](../tests/201712/verify-de-followup.py)
 - [verify.py](../tests/201712/verify.py)
 
 <!-- local-validation-attachments:end -->

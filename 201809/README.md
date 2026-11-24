@@ -398,7 +398,9 @@ $m=1$ 时直接求等比数列；实现也兼容 $l=0$ 和全零系数。
 
 平方只变换一个因子；固定除式及其逆多项式缓存频域结果。牛顿迭代扩展到 $2t$ 项时，仅计算误差的高半段：循环卷积回卷只影响将被舍弃的低半段，因此每步用五次长度 $2t$ 的变换。
 
-正变换采用 DIF、逆变换采用 DIT，共享倒位序的频率排列，并缓存各层单位根。多项式及变换长度随阶段变化，使用动态存储保留实际长度。
+NTT 采用分层单位根表，倒位序拷贝后从小到大合并，每轮展开四组蝶形。逆变换先反转除常数项外的系数，再做正变换并乘长度的逆元；用 `ull` 暂存未完全取模的结果，避免频繁取模。
+
+本题最大变换长度为 $2^{19}$，根表和缓冲区据此设置；该范围内延迟取模的乘法不会溢出。多项式长度随阶段变化，仍用动态存储保留实际长度，平方、截断和固定多项式的频域缓存不变。
 
 **正确性**
 
@@ -406,7 +408,7 @@ $m=1$ 时直接求等比数列；实现也兼容 $l=0$ 和全零系数。
 
 **复杂度**
 
-时间 $O(m\log m\log(l+1)+(m+d)\log(m+d))$，空间 $O(m+d)$。这里的小规模直接乘法、平方优化、频域缓存及逆多项式优化均予以保留。
+根表预处理耗时 $O(N)$，其中 $N=2^{19}$。其余计算耗时 $O(m\log m\log(l+1)+(m+d)\log(m+d))$，总空间 $O(N+m+d)$。小规模直接乘法、平方优化、频域缓存及逆多项式优化均予以保留。
 
 ### 代码
 
@@ -416,8 +418,9 @@ $m=1$ 时直接求等比数列；实现也兼容 $l=0$ 和全零系数。
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
+typedef unsigned long long ull;
 typedef vector<int> poly;
-const int mod=998244353;
+const int N=1<<19,mod=998244353;
 int m,d;
 ll l,r;
 int qpow(int a,ll n){
@@ -434,51 +437,82 @@ int size(int x){
     }
     return n;
 }
-void ntt(poly &a,bool op){
-    static poly w{0,1},iw{0,1};
-    int n=a.size();
-    while((int)w.size()<n){
-        int h=w.size();
-        w.resize(h*2);iw.resize(h*2);
-        int x=qpow(3,(mod-1)/(h*2)),y=qpow(x,mod-2);
-        w[h]=iw[h]=1;
-        for(int j=1;j<h;++j){
-            w[h+j]=(ll)w[h+j-1]*x%mod;
-            iw[h+j]=(ll)iw[h+j-1]*y%mod;
-        }
-    }
-    if(!op){
-        for(int h=n/2;h;h>>=1){
-            for(int p=0;p<n;p+=h*2){
-                for(int j=0;j<h;++j){
-                    int u=a[p+j],v=a[p+j+h];
-                    int x=u+v,y=u-v;
-                    if(x>=mod)x-=mod;
-                    if(y<0)y+=mod;
-                    a[p+j]=x;
-                    a[p+j+h]=(ll)y*w[h+j]%mod;
-                }
+namespace Poly{
+    int w[N];
+    ull F[N];
+    void Init(){
+        for(int i=1;i<N;i<<=1){
+            w[i]=1;
+            int t=qpow(3,(mod-1)/i/2);
+            for(int j=1;j<i;++j){
+                w[i+j]=(ll)w[i+j-1]*t%mod;
             }
         }
     }
-    else{
-        for(int h=1;h<n;h<<=1){
-            for(int p=0;p<n;p+=h*2){
-                for(int j=0;j<h;++j){
-                    int u=a[p+j],v=(ll)a[p+j+h]*iw[h+j]%mod;
-                    int x=u+v,y=u-v;
-                    if(x>=mod)x-=mod;
-                    if(y<0)y+=mod;
-                    a[p+j]=x,a[p+j+h]=y;
+    int Mod(int x){
+        return x<mod?x:x-mod;
+    }
+    void DFT(poly &f,int n){
+        f.resize(n);
+        for(int i=0,j=0;i<n;++i){
+            F[i]=f[j];
+            for(int k=n>>1;(j^=k)<k;k>>=1){
+            }
+        }
+        if(n<=4){
+            for(int i=1;i<n;i<<=1){
+                for(int j=0;j<n;j+=i<<1){
+                    for(int k=0;k<i;++k){
+                        ull t=F[j+k+i]*w[i+k]%mod;
+                        F[j+k+i]=F[j+k]+mod-t;
+                        F[j+k]+=t;
+                    }
                 }
             }
         }
+        else{
+            for(int j=0;j<n;j+=2){
+                int t=F[j+1];
+                F[j+1]=Mod(F[j]+mod-t);
+                F[j]=Mod(F[j]+t);
+            }
+            for(int j=0;j<n;j+=4){
+                int x=F[j+2],y=F[j+3]*w[3]%mod;
+                F[j+2]=F[j]+mod-x;F[j]+=x;
+                F[j+3]=F[j+1]+mod-y;F[j+1]+=y;
+            }
+            for(int i=4;i<n;i<<=1){
+                for(int j=0;j<n;j+=i<<1){
+                    int *W=w+i;
+                    ull *a=F+j,*b=F+j+i;
+                    for(int k=0;k<i;k+=4,W+=4,a+=4,b+=4){
+                        int t0=(ull)W[0]*b[0]%mod;
+                        int t1=(ull)W[1]*b[1]%mod;
+                        int t2=(ull)W[2]*b[2]%mod;
+                        int t3=(ull)W[3]*b[3]%mod;
+                        b[0]=a[0]+mod-t0;a[0]+=t0;
+                        b[1]=a[1]+mod-t1;a[1]+=t1;
+                        b[2]=a[2]+mod-t2;a[2]+=t2;
+                        b[3]=a[3]+mod-t3;a[3]+=t3;
+                    }
+                }
+            }
+        }
+        for(int i=0;i<n;++i){
+            f[i]=F[i]%mod;
+        }
+    }
+    void IDFT(poly &f,int n){
+        f.resize(n);
+        reverse(f.begin()+1,f.end());
+        DFT(f,n);
         int v=qpow(n,mod-2);
-        for(int &x:a){
+        for(int &x:f){
             x=(ll)x*v%mod;
         }
     }
 }
+using namespace Poly;
 poly mul(poly a,poly b){
     if(a.empty() || b.empty())return {};
     int len=a.size()+b.size()-1;
@@ -493,11 +527,11 @@ poly mul(poly a,poly b){
     }
     int n=size(len);
     a.resize(n);b.resize(n);
-    ntt(a,0);ntt(b,0);
+    DFT(a,a.size());DFT(b,b.size());
     for(int i=0;i<n;++i){
         a[i]=(ll)a[i]*b[i]%mod;
     }
-    ntt(a,1);
+    IDFT(a,a.size());
     a.resize(len);
     return a;
 }
@@ -508,17 +542,17 @@ poly inv(const poly &a,int len){
         poly f=b,g(n);
         f.resize(n);
         copy_n(a.begin(),min(n,(int)a.size()),g.begin());
-        ntt(f,0);ntt(g,0);
+        DFT(f,f.size());DFT(g,g.size());
         for(int i=0;i<n;++i){
             g[i]=(ll)g[i]*f[i]%mod;
         }
-        ntt(g,1);
+        IDFT(g,g.size());
         fill(g.begin(),g.begin()+h,0);
-        ntt(g,0);
+        DFT(g,g.size());
         for(int i=0;i<n;++i){
             g[i]=(ll)g[i]*f[i]%mod;
         }
-        ntt(g,1);
+        IDFT(g,g.size());
         b.resize(n);
         for(int i=h;i<n;++i){
             b[i]=g[i]?mod-g[i]:0;
@@ -539,11 +573,11 @@ struct rem{
         else{
             v=a;
             v.resize(size(len));
-            ntt(v,0);
+            DFT(v,v.size());
             for(int &x:v){
                 x=(ll)x*x%mod;
             }
-            ntt(v,1);
+            IDFT(v,v.size());
             v.resize(len);
         }
         if(len<=m)return v;
@@ -565,22 +599,22 @@ struct rem{
             if(f.empty()){
                 f=c;g=b;
                 f.resize(n);g.resize(n);
-                ntt(f,0);ntt(g,0);
+                DFT(f,f.size());DFT(g,g.size());
             }
             q.resize(n);
-            ntt(q,0);
+            DFT(q,q.size());
             for(int i=0;i<n;++i){
                 q[i]=(ll)q[i]*g[i]%mod;
             }
-            ntt(q,1);
+            IDFT(q,q.size());
             q.resize(k);
             reverse(q.begin(),q.end());
             q.resize(n);
-            ntt(q,0);
+            DFT(q,q.size());
             for(int i=0;i<n;++i){
                 q[i]=(ll)q[i]*f[i]%mod;
             }
-            ntt(q,1);
+            IDFT(q,q.size());
             v.resize(m);
             for(int i=0;i<m;++i){
                 v[i]-=q[i];
@@ -604,6 +638,7 @@ struct rem{
     }
 };
 int main(){
+    Init();
     scanf("%d%lld%lld",&m,&l,&r);
     d=r-l+1;
     poly c(m+1);
@@ -651,8 +686,10 @@ int main(){
 - [cases.json](../tests/201809/cases.json)
 - [compile.json](../tests/201809/compile.json)
 - [current-sources.json](../tests/201809/current-sources.json)
+- [e-ntt-report.json](../tests/201809/e-ntt-report.json)
 - [extra.py](../tests/201809/extra.py)
 - [naming-followup.json](../tests/201809/naming-followup.json)
 - [summary.json](../tests/201809/summary.json)
+- [verify-e-ntt.py](../tests/201809/verify-e-ntt.py)
 
 <!-- local-validation-attachments:end -->

@@ -24,7 +24,9 @@ int main(){
         for(int i=0;i<n;++i){
             if(a[i][k]==INF)continue;
             for(int j=0;j<n;++j){
-                if(a[k][j]<INF)a[i][j]=min(a[i][j],a[i][k]+a[k][j]);
+                if(a[k][j]<INF){
+                    a[i][j]=min(a[i][j],a[i][k]+a[k][j]);
+                }
             }
         }
     }
@@ -40,7 +42,9 @@ int main(){
         vis[x]=true;
         int u=x/2,op=x%2;
         for(int v=0;v<n;++v){
-            if(b[u][v]<INF)dis[v*2]=min(dis[v*2],dis[x]+b[u][v]);
+            if(b[u][v]<INF){
+                dis[v*2]=min(dis[v*2],dis[x]+b[u][v]);
+            }
             if(!op && v!=u && a[u][v]<INF){
                 ll w=a[u][v];
                 dis[v*2+1]=min(dis[v*2+1],dis[x]+w*w);

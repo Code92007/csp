@@ -24,9 +24,9 @@
     ]
   },
   "E": {
-    "sha256": "b577e649d8c7560395e89aaf1485af98b5c9db4b31807e3b62dad51ffcfc144b",
+    "sha256": "857a65556a45f3bd2f793d83b888cc8c3d9915fba6f8cf957c0b991e7b411482",
     "validation_reports": [
-      "naming-followup.json"
+      "e-ntt-report.json"
     ]
   }
 }

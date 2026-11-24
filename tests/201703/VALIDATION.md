@@ -33,3 +33,11 @@ python3 tools/nightly/site_style_verify.py --contest 201703 --repo /path/to/orig
 find改为递归路径压缩，保留按集合大小合并；深度增加要求集合大小至少翻倍，所以n≤100000时递归深度至多约17层。原92个输入和额外10万点等大小分层合并构造全部通过。 当前O2、UBSan（含-Wshadow）编译无诊断，各通过93个定向输入；历史完整对拍不重复计数。[本轮结果](d-find-followup-report.json)，复现 `python3 tools/nightly/verify_four_style.py --repo /path/to/repository`。
 
 - `D.cpp` 当前 SHA-256：`b7c62ee770bba184db3451f9a337e889b0ee3850ae0de05382761696b94c3b9f`
+
+## D 局部 lambda 捕获复验
+
+排序比较器按用户偏好从 `[]` 改为 `[&]`，比较表达式不变。比较器仅在当前 `sort` 调用中使用，且函数体未引用外部自动变量。当前源码以 GNU g++ 16、C++17 编译，O2、UBSan 均无诊断，并各通过 93 个已有输入：90 组独立 minimax 对拍、1 个保存样例、10 万点链和等大小合并构造。
+
+报告：[d-lambda-report.json](d-lambda-report.json)；复现：[verify-d-lambda.py](verify-d-lambda.py)。本轮复验不增加此前不同输入数，未重新提交在线评测。
+
+- `D.cpp` 当前 SHA-256：`a1fd8e40139d11a16065ca49338b4679025d2de78b880287046a968b4032535c`

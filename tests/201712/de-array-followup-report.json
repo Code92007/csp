@@ -1,0 +1,170 @@
+{
+  "contest": "201712",
+  "previous_sha256": {
+    "D": "8e72a9eff1ee30609be8961b85325834bf88a123f67562c260ad2fc62486f2f7",
+    "E": "6c7b2c04e8a6bc12a5b80fd955a15b5ace8b6f5adf2379971789221a7e0ae3db"
+  },
+  "current_source_sha256": {
+    "D": "9ca9b5a00588b6aa332bb68faf6a9e6cc0ba4a7dac011a4026a0e0616b719a0d",
+    "E": "ba6f4bb1d05f855acbc23500ed70be702497d6203fe6da7f1e65f31838000a10"
+  },
+  "changes": {
+    "D": "Expanded both long shortest-path relaxation if bodies with braces.",
+    "E": "Global ordinary arrays for vertex data, query coordinates, linked small-to-large line lists, and the Li Chao node pool; all required per-test resets retained."
+  },
+  "source_limits": {
+    "n_max": 100000,
+    "value_max": 10000000000000,
+    "ideal_max": 1000000000,
+    "edge_max": 10000,
+    "verified_against": "https://oj.shumeng.tech/p/CSP201712E"
+  },
+  "capacity_proof": "Each insertion allocates at most one Li Chao node. A line moves only from the smaller set into a set at least twice as large, at most floor(log2 n) times. Initial insertions plus moves are at most 17*n for n<=100000. M=18*N, N=100010, includes the unused zero node. Linked lists store every line exactly once in the current partition; appending only changes the old tail next pointer after traversal.",
+  "reset_proof": "rt/head/tail/nxt/sz/dp are memset before each group; fa/dep/val/f/xs active entries are overwritten in parent-before-child order, dep[0] stays zero; tot resets to zero and every allocated pool node overwrites both children.",
+  "original_input_counts": {
+    "D": 219,
+    "E": 232
+  },
+  "distinct_inputs": {
+    "D": 219,
+    "E": 356
+  },
+  "categories": {
+    "retained_independent": 168,
+    "additional_independent": 278,
+    "saved_sample": 2,
+    "constructive_stress": 3,
+    "array_reset_independent": 120,
+    "array_capacity_stress": 3,
+    "array_capacity_reset_stress": 1
+  },
+  "independent_oracles": "Original direct road-state Dijkstra (D); exact Python ancestor/descendant DP (E), extended to 120 ten-group inputs with range extremes. Max chain/balanced/stars have independent closed-form or zero-reward answers.",
+  "input_set_sha256": "77f9692462e45ce8ed3df86d986f244f11c0cc590f242ab4da31785c747a0118",
+  "compilation": {
+    "O2/D": "passed without diagnostics",
+    "O2/E": "passed without diagnostics",
+    "UBSan/D": "passed without diagnostics",
+    "UBSan/E": "passed without diagnostics"
+  },
+  "runs": [
+    {
+      "mode": "O2",
+      "passed": {
+        "D": 219,
+        "E": 356
+      },
+      "total": 575,
+      "seconds": 7.01,
+      "stress": [
+        {
+          "problem": "D",
+          "kind": "constructive_stress",
+          "input_sha256": "5b12269cac1b3bb5500d04a933017997236ddec65323546f03aaf74f35919c4a",
+          "seconds": 0.0364
+        },
+        {
+          "problem": "D",
+          "kind": "constructive_stress",
+          "input_sha256": "0fdddfcca9e6e4605bb107e317eac5bb484e334f2ac2bb0abcf3c4abcaac8d08",
+          "seconds": 0.0124
+        },
+        {
+          "problem": "E",
+          "kind": "constructive_stress",
+          "input_sha256": "dee420e5f62ad04198651a181c236d796a9fb40b09e7de3b31670a8f85198345",
+          "seconds": 0.0341
+        },
+        {
+          "problem": "E",
+          "kind": "array_capacity_stress",
+          "input_sha256": "e254614bb481dcb474e83758ba9b893d6dab43d5f98aed9dbabd81f5748a9d3c",
+          "seconds": 0.0297
+        },
+        {
+          "problem": "E",
+          "kind": "array_capacity_stress",
+          "input_sha256": "902e69bb3a1b07210a58504a0ab777c3085b6ace09bd098e87b021aa282410bd",
+          "seconds": 0.0267
+        },
+        {
+          "problem": "E",
+          "kind": "array_capacity_stress",
+          "input_sha256": "6c87dded7ca01e531c0b0883eb3d4502c9f758d9f0ae94f265f5dd63f38aa28f",
+          "seconds": 0.1001
+        },
+        {
+          "problem": "E",
+          "kind": "array_capacity_reset_stress",
+          "input_sha256": "0d65510e1db89307fa4729336c75a12c84bf538eec2bd37f67342eb892b314af",
+          "seconds": 0.0596
+        }
+      ]
+    },
+    {
+      "mode": "UBSan",
+      "passed": {
+        "D": 219,
+        "E": 356
+      },
+      "total": 575,
+      "seconds": 4.273,
+      "stress": [
+        {
+          "problem": "D",
+          "kind": "constructive_stress",
+          "input_sha256": "5b12269cac1b3bb5500d04a933017997236ddec65323546f03aaf74f35919c4a",
+          "seconds": 0.1386
+        },
+        {
+          "problem": "D",
+          "kind": "constructive_stress",
+          "input_sha256": "0fdddfcca9e6e4605bb107e317eac5bb484e334f2ac2bb0abcf3c4abcaac8d08",
+          "seconds": 0.0091
+        },
+        {
+          "problem": "E",
+          "kind": "constructive_stress",
+          "input_sha256": "dee420e5f62ad04198651a181c236d796a9fb40b09e7de3b31670a8f85198345",
+          "seconds": 0.0407
+        },
+        {
+          "problem": "E",
+          "kind": "array_capacity_stress",
+          "input_sha256": "e254614bb481dcb474e83758ba9b893d6dab43d5f98aed9dbabd81f5748a9d3c",
+          "seconds": 0.0304
+        },
+        {
+          "problem": "E",
+          "kind": "array_capacity_stress",
+          "input_sha256": "902e69bb3a1b07210a58504a0ab777c3085b6ace09bd098e87b021aa282410bd",
+          "seconds": 0.0292
+        },
+        {
+          "problem": "E",
+          "kind": "array_capacity_stress",
+          "input_sha256": "6c87dded7ca01e531c0b0883eb3d4502c9f758d9f0ae94f265f5dd63f38aa28f",
+          "seconds": 0.1515
+        },
+        {
+          "problem": "E",
+          "kind": "array_capacity_reset_stress",
+          "input_sha256": "0d65510e1db89307fa4729336c75a12c84bf538eec2bd37f67342eb892b314af",
+          "seconds": 0.0689
+        }
+      ]
+    }
+  ],
+  "historical_reports": [
+    "report.json",
+    "nightly-review-followup.json"
+  ],
+  "no_online_submission": true,
+  "static_storage": {
+    "sizeof_node": 20,
+    "sizeof_segtree": 36003604,
+    "total_user_static_data_bytes": 43204336,
+    "total_user_static_data_mib": 41.203,
+    "evaluation_memory_limit_mib": 512,
+    "method": "Compiled GNU C++17 sizeof probe including the actual final source; excludes runtime/standard-library overhead."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "problem": "201703D",
+  "previous_source_sha256": "b7c62ee770bba184db3451f9a337e889b0ee3850ae0de05382761696b94c3b9f",
+  "source_sha256": "a1fd8e40139d11a16065ca49338b4679025d2de78b880287046a968b4032535c",
+  "change": "sort comparator [] changed to user-preferred [&]; no actual variable capture is required by this body.",
+  "different_inputs": 93,
+  "case_kinds": {
+    "retained_independent": 90,
+    "saved_sample": 1,
+    "boundary": 1,
+    "recursion_boundary": 1
+  },
+  "case_input_output_sha256": "3fc3cb9fe135329736a54ef12e7c59608ddf46cf5e0c6df0000ce122ddf9298d",
+  "compilation": {
+    "O2": {
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "/Users/yzm007/Documents/CSP45/201703/D.cpp",
+        "-o",
+        "/tmp/csp-201703D-lambda/O2"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "UBSan": {
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "-Wall",
+        "-Wextra",
+        "/Users/yzm007/Documents/CSP45/201703/D.cpp",
+        "-o",
+        "/tmp/csp-201703D-lambda/UBSan"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "passed": true
+    }
+  },
+  "runs": [
+    {
+      "mode": "O2",
+      "passed": 93,
+      "seconds": 1.4562626670000003,
+      "saved_samples": [
+        {
+          "passed": true,
+          "returncode": 0,
+          "stdout": "6\n",
+          "expected_output": "6\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "mode": "UBSan",
+      "passed": 93,
+      "seconds": 1.8695562500000005,
+      "saved_samples": [
+        {
+          "passed": true,
+          "returncode": 0,
+          "stdout": "6\n",
+          "expected_output": "6\n",
+          "stderr": ""
+        }
+      ]
+    }
+  ],
+  "note": "Original evaluation records remain historical. Only local comparator spelling changed; no online resubmission."
+}

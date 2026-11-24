@@ -289,7 +289,7 @@ int main(){
     for(edge &v:e){
         scanf("%d%d%d",&v.u,&v.v,&v.w);
     }
-    sort(e.begin(),e.end(),[](const edge &a,const edge &b){
+    sort(e.begin(),e.end(),[&](const edge &a,const edge &b){
         return a.w<b.w;
     });
     fa.resize(n+1);
@@ -419,7 +419,9 @@ int main(){
 - [b-newline-followup-report.json](../tests/201703/b-newline-followup-report.json)
 - [boundaries.py](../tests/201703/boundaries.py)
 - [d-find-followup-report.json](../tests/201703/d-find-followup-report.json)
+- [d-lambda-report.json](../tests/201703/d-lambda-report.json)
 - [refactor-report.json](../tests/201703/refactor-report.json)
 - [statements.json](../tests/201703/statements.json)
+- [verify-d-lambda.py](../tests/201703/verify-d-lambda.py)
 
 <!-- local-validation-attachments:end -->

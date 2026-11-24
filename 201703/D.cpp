@@ -15,7 +15,7 @@ int main(){
     for(edge &v:e){
         scanf("%d%d%d",&v.u,&v.v,&v.w);
     }
-    sort(e.begin(),e.end(),[](const edge &a,const edge &b){
+    sort(e.begin(),e.end(),[&](const edge &a,const edge &b){
         return a.w<b.w;
     });
     fa.resize(n+1);
