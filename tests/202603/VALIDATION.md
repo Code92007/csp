@@ -1,5 +1,23 @@
 # 202603 重构版验证记录
 
+<!-- refactor-online-validation:start -->
+
+## 当前重构版在线评测
+
+本节来自冻结提交计划与真实判题账本；下方本地验证记录保留其历史归属。
+
+| 题目 | 结果 | 当前源码 SHA-256 |
+|---|---|---|
+| A | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b054042e5d1fced2e44daec)。 | `de29a053c8345ce35e59e77553b7d5ff176c6306317cbd5ec0be3da0348b35cb` |
+| B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0540bde5d1fced2e44db7b)。 | `126affaa1c48033d3ea928d4e2fed4405d0fc46df267613fd8f9ad5a95a4a8c0` |
+| C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05412ee5d1fced2e44dc62)。 | `1dd893b262b746a8cdfa612ef0c5db16aae39f52bfaddc60cdddfa41163ea65d` |
+| D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05419ee5d1fced2e44dd46)。 | `a5f31a574a1152c95fe64b38033f2200e205ee5990300c2c613c515b121352d2` |
+| E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05420ee5d1fced2e44de3f)。 | `377bb7588db67ae5074d3055d808050e2f03803d28ac5e56abeda676f00e990c` |
+
+[逐题在线结果与原版记录](online-verdicts.json)。
+
+<!-- refactor-online-validation:end -->
+
 验证日期：2026-11-24。
 
 五题均已按当前代码风格编译、独立对拍，并核对 Markdown 代码块与独立源码一致。

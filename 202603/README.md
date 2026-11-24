@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "位运算", "计数", "0/1背包", "分数背包", "贪心", "模拟", "内存分配", "有序集合", "数位", "线段树", "懒标记", "树链剖分", "树状数组", "随机化", "在线查询"]
 status: "published"
-problems: [{"id": "A", "title": "平衡数", "tags": ["位运算", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 924 组验证；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce724a67df0b81749b544"}}, {"id": "B", "title": "机器人项目管理", "tags": ["0/1背包", "分数背包", "贪心"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 473 组验证；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce726a67df0b81749b54b"}}, {"id": "C", "title": "进程通信", "tags": ["模拟", "内存分配", "有序集合"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 328 组验证；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce727a67df0b81749b550"}}, {"id": "D", "title": "异或", "tags": ["数位", "线段树", "懒标记"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 440 组验证（D 含同算法模板微调前记录，详见验证报告）；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce729a67df0b81749b56b"}}, {"id": "E", "title": "旅游计划 - Easy Ver.", "tags": ["树链剖分", "树状数组", "随机化", "在线查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版 C++17 编译通过；本地独立、边界及保存样例共 364 组验证；未重新提交。保留原版曙梦 OJ 100 分记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72ba67df0b81749b59e"}}]
+problems: [{"id": "A", "title": "平衡数", "tags": ["位运算", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b054042e5d1fced2e44daec", "source_sha256": "de29a053c8345ce35e59e77553b7d5ff176c6306317cbd5ec0be3da0348b35cb", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:45:09.284812+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce724a67df0b81749b544"}}, {"id": "B", "title": "机器人项目管理", "tags": ["0/1背包", "分数背包", "贪心"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0540bde5d1fced2e44db7b", "source_sha256": "126affaa1c48033d3ea928d4e2fed4405d0fc46df267613fd8f9ad5a95a4a8c0", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:46:42.002130+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce726a67df0b81749b54b"}}, {"id": "C", "title": "进程通信", "tags": ["模拟", "内存分配", "有序集合"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05412ee5d1fced2e44dc62", "source_sha256": "1dd893b262b746a8cdfa612ef0c5db16aae39f52bfaddc60cdddfa41163ea65d", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:48:47.555210+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce727a67df0b81749b550"}}, {"id": "D", "title": "异或", "tags": ["数位", "线段树", "懒标记"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05419ee5d1fced2e44dd46", "source_sha256": "a5f31a574a1152c95fe64b38033f2200e205ee5990300c2c613c515b121352d2", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:51:02.377312+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce729a67df0b81749b56b"}}, {"id": "E", "title": "旅游计划 - Easy Ver.", "tags": ["树链剖分", "树状数组", "随机化", "在线查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202603E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202603E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05420ee5d1fced2e44de3f", "source_sha256": "377bb7588db67ae5074d3055d808050e2f03803d28ac5e56abeda676f00e990c", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:53:18.304832+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72ba67df0b81749b59e"}}]
 ---
 # CSP 202603 五题题解
 
@@ -18,7 +18,13 @@ problems: [{"id": "A", "title": "平衡数", "tags": ["位运算", "计数"], "s
 
 标签：`位运算` · `计数`
 
-本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b054042e5d1fced2e44daec)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -75,7 +81,13 @@ int main(){
 
 标签：`0/1背包` · `分数背包` · `贪心`
 
-本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0540bde5d1fced2e44db7b)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -179,7 +191,13 @@ int main(){
 
 标签：`模拟` · `内存分配` · `有序集合`
 
-本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05412ee5d1fced2e44dc62)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -316,7 +334,13 @@ int main(){
 
 标签：`数位` · `线段树` · `懒标记`
 
-本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05419ee5d1fced2e44dd46)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -517,7 +541,13 @@ int main(){
 
 标签：`树链剖分` · `树状数组` · `随机化` · `在线查询`
 
-本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202603/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05420ee5d1fced2e44de3f)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -832,6 +862,8 @@ int main(){
 - [d-boundary-report.json](../tests/202603/d-boundary-report.json)
 - [d-template-followup-report.json](../tests/202603/d-template-followup-report.json)
 - [e-report.json](../tests/202603/e-report.json)
+- [online-update-report.json](../tests/202603/online-update-report.json)
+- [online-verdicts.json](../tests/202603/online-verdicts.json)
 - [retained-cases.json](../tests/202603/retained-cases.json)
 - [retained-report.json](../tests/202603/retained-report.json)
 - [summary.json](../tests/202603/summary.json)
