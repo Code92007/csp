@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "contest": "201712",
+  "plan_sha256": "cc6c06b57baef6e00ef92a3aa61b5463151d451d93d7634f57f6981089e24c4f",
+  "input_signature": "7a4f83cab95857bbb8b90ff8d8059b0c528eda901c0ef4cbfffa7e2d6242dfa9",
+  "source_sha256": {
+    "A": "6fc42e40bb1d9761bd65bb5da357b51978d7e76ca806bb63365c92b6121446a6",
+    "B": "b489c509ec3ae7efd90cb1b410ead15985a5359796ca5324c6710e735898b43d",
+    "C": "5fc6ca3c588cafe593063d09f8f9eb76dfc14510241b400f94f441ffee588c66",
+    "D": "9ca9b5a00588b6aa332bb68faf6a9e6cc0ba4a7dac011a4026a0e0616b719a0d",
+    "E": "ba6f4bb1d05f855acbc23500ed70be702497d6203fe6da7f1e65f31838000a10"
+  },
+  "source_files_unchanged": true,
+  "cpp_fences_unchanged": 10,
+  "all_original_record_links_preserved": true,
+  "article_checks": [
+    {
+      "file": "201712/README.md",
+      "before_sha256": "05d9d3659f95911e349df59d95a01f083d6ffebeac5f07e6f348cb5aa80a7e0e",
+      "after_sha256": "a3ba70fe04245f4fcbeef63731b9b178f794a1ddbc0859c7fd3894c4abdf7792",
+      "cpp_fences_unchanged": 5,
+      "original_record_urls_preserved": [
+        "https://oj.shumeng.tech/record/6adda75c74ace1cba9a1fccc"
+      ],
+      "frozen_original_record_urls_present": [
+        "https://oj.shumeng.tech/record/6adda75c74ace1cba9a1fccc"
+      ]
+    },
+    {
+      "file": "201712题解.md",
+      "before_sha256": "2cd8655326b483197e2c8e09ba192625298da5498758bd873ed6a0d1d1ec11e3",
+      "after_sha256": "a027460b4d8e69d63dfc13517af270496c15bc3402051d445c80eff4504cbed6",
+      "cpp_fences_unchanged": 5,
+      "original_record_urls_preserved": [
+        "https://oj.shumeng.tech/record/6adda75c74ace1cba9a1fccc"
+      ],
+      "frozen_original_record_urls_present": [
+        "https://oj.shumeng.tech/record/6adda75c74ace1cba9a1fccc"
+      ]
+    }
+  ],
+  "judged": 5,
+  "access_required": 0,
+  "historical_json_reports_modified": false,
+  "git_or_deploy_executed": false
+}

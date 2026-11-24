@@ -1,6 +1,24 @@
 # 201712 本地验证
 
-本次重构未重新提交在线评测。题解保留的在线评测记录属于原版代码。
+<!-- refactor-online-validation:start -->
+
+## 当前重构版在线评测
+
+本节来自冻结提交计划与真实判题账本；下方本地验证记录保留其历史归属。
+
+| 题目 | 结果 | 当前源码 SHA-256 |
+|---|---|---|
+| A | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058f03e5d1fced2e457dd4)。 | `6fc42e40bb1d9761bd65bb5da357b51978d7e76ca806bb63365c92b6121446a6` |
+| B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058f85e5d1fced2e457e64)。 | `b489c509ec3ae7efd90cb1b410ead15985a5359796ca5324c6710e735898b43d` |
+| C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058fcfe5d1fced2e457f62)。 | `5fc6ca3c588cafe593063d09f8f9eb76dfc14510241b400f94f441ffee588c66` |
+| D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059027e5d1fced2e458041)。 | `9ca9b5a00588b6aa332bb68faf6a9e6cc0ba4a7dac011a4026a0e0616b719a0d` |
+| E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059079e5d1fced2e4581c6)。 | `ba6f4bb1d05f855acbc23500ed70be702497d6203fe6da7f1e65f31838000a10` |
+
+[逐题在线结果与原版记录](online-verdicts.json)。
+
+<!-- refactor-online-validation:end -->
+
+该本地验证阶段未进行本轮在线提交。题解保留的在线评测记录属于原版代码。
 
 五题均通过 C++17 O2 与 UBSan 编译，无编译警告；O2 通过 **1216 个不同输入**，UBSan 通过 **1213 个小规模及边界输入**。
 
@@ -20,7 +38,7 @@ A 直接枚举数对差值，并补一千个重复元素。B 用存活编号数�
 
 E 独立枚举每个真后代的 DP，使用 Python 任意精度整数；新增 150 个三组数据输入检验全局状态重置。李超树比较保留 128 位整数，节点存区间端点并以下标访问。
 
-构造包括 n=500 的全小道链（答案 499^2）、大道小道交替链（答案 499），以及 E 十万节点零收益长链（答案 0），O2 本次约 0.023、0.004、0.027 秒。原版 A/C/D/E 无在线 Accepted 记录，本次也未在线提交；只有 B 保留原版的已有 Accepted 链接。
+构造包括 n=500 的全小道链（答案 499^2）、大道小道交替链（答案 499），以及 E 十万节点零收益长链（答案 0），O2 本次约 0.023、0.004、0.027 秒。原版 A/C/D/E 无在线 Accepted 记录，本次该本地验证阶段未进行本轮在线提交；只有 B 保留原版的已有 Accepted 链接。
 
 复现：`python3 201712/reports/verify.py --repo /path/to/repository`。脚本使用仓库保存样例与独立 oracle，不执行在线提交。
 
@@ -52,7 +70,7 @@ D 将两处较长的最短路松弛分支加上大括号、展开换行。E 将�
 
 本轮保留并重放 D 原有 219 个输入、E 原有 232 个输入；E 另补 120 个十组独立暴力输入及 4 个大规模／复位压力输入，覆盖 n=1、十万节点长链与平衡树、星形、极值 v/f/s，以及大小测试组交替。GNU G++ 16 优化版与 Clang UBSan 版均通过 D 219、E 356，共 575 个不同输入；此次也包含原先未跑 UBSan 的最大构造，无编译警告或 sanitizer 诊断。历史批次报告与输入计数保留，不将重复重放累计成新增输入。
 
-数据上界和 512 MiB 限制核对：[当前 OJ 题面](https://oj.shumeng.tech/p/CSP201712E)。本地复验：[源码哈希、容量证明及结果](de-array-followup-report.json)；[复现脚本](verify-de-followup.py)。仍未提交在线评测。
+数据上界和 512 MiB 限制核对：[当前 OJ 题面](https://oj.shumeng.tech/p/CSP201712E)。本地复验：[源码哈希、容量证明及结果](de-array-followup-report.json)；[复现脚本](verify-de-followup.py)。仍该本地验证阶段未进行本轮在线提交。
 
 - `D.cpp` 最新 SHA-256：`9ca9b5a00588b6aa332bb68faf6a9e6cc0ba4a7dac011a4026a0e0616b719a0d`
 - `E.cpp` 最新 SHA-256：`ba6f4bb1d05f855acbc23500ed70be702497d6203fe6da7f1e65f31838000a10`

@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "排序", "相邻元素", "队列", "循环模拟", "日期计算", "字符串解析", "枚举", "最短路", "Floyd", "分层图", "Dijkstra", "树形DP", "李超线段树", "启发式合并", "斜率优化"]
 status: "published"
-problems: [{"id": "A", "title": "最小差值", "tags": ["排序", "相邻元素"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "公开题面存档", "url": "https://www.cnblogs.com/wydxry/p/10730131.html"}], "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}}, {"id": "B", "title": "游戏", "tags": ["队列", "循环模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201712B"}, {"label": "公开题面存档", "url": "https://blog.51cto.com/u_15346485/3677111"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda75c74ace1cba9a1fccc"}}, {"id": "C", "title": "Crontab", "tags": ["日期计算", "字符串解析", "枚举", "排序"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "公开题面存档", "url": "https://www.cnblogs.com/imane/p/15095778.html"}], "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}}, {"id": "D", "title": "行车路线", "tags": ["最短路", "Floyd", "分层图", "Dijkstra"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "公开题面存档", "url": "https://www.dreamwings.cn/ccf201712-4/5213.html"}], "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}}, {"id": "E", "title": "商路", "tags": ["树形DP", "李超线段树", "启发式合并", "斜率优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "题面转录与转移式核对", "url": "https://bigrandall.io/u/randall/blog/20-chun-xiao-xue-qi-cheng-xu-she-ji-shi-yan-bao-gao#2-ccf-201712-5-商路"}], "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}}]
+problems: [{"id": "A", "title": "最小差值", "tags": ["排序", "相邻元素"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "公开题面存档", "url": "https://www.cnblogs.com/wydxry/p/10730131.html"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058f03e5d1fced2e457dd4", "source_sha256": "6fc42e40bb1d9761bd65bb5da357b51978d7e76ca806bb63365c92b6121446a6", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:22:11.800697+00:00"}, "oj_before_refactor": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}}, {"id": "B", "title": "游戏", "tags": ["队列", "循环模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201712B"}, {"label": "公开题面存档", "url": "https://blog.51cto.com/u_15346485/3677111"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058f85e5d1fced2e457e64", "source_sha256": "b489c509ec3ae7efd90cb1b410ead15985a5359796ca5324c6710e735898b43d", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:23:25.904264+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda75c74ace1cba9a1fccc"}}, {"id": "C", "title": "Crontab", "tags": ["日期计算", "字符串解析", "枚举", "排序"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "公开题面存档", "url": "https://www.cnblogs.com/imane/p/15095778.html"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058fcfe5d1fced2e457f62", "source_sha256": "5fc6ca3c588cafe593063d09f8f9eb76dfc14510241b400f94f441ffee588c66", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:24:53.885797+00:00"}, "oj_before_refactor": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}}, {"id": "D", "title": "行车路线", "tags": ["最短路", "Floyd", "分层图", "Dijkstra"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "公开题面存档", "url": "https://www.dreamwings.cn/ccf201712-4/5213.html"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b059027e5d1fced2e458041", "source_sha256": "9ca9b5a00588b6aa332bb68faf6a9e6cc0ba4a7dac011a4026a0e0616b719a0d", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:26:15.943564+00:00"}, "oj_before_refactor": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}}, {"id": "E", "title": "商路", "tags": ["树形DP", "李超线段树", "启发式合并", "斜率优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "题面转录与转移式核对", "url": "https://bigrandall.io/u/randall/blog/20-chun-xiao-xue-qi-cheng-xu-she-ji-shi-yan-bao-gao#2-ccf-201712-5-商路"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b059079e5d1fced2e4581c6", "source_sha256": "ba6f4bb1d05f855acbc23500ed70be702497d6203fe6da7f1e65f31838000a10", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:27:28.899712+00:00"}, "oj_before_refactor": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}}]
 ---
 
 # CSP 201712 五题题解
@@ -19,7 +19,13 @@ problems: [{"id": "A", "title": "最小差值", "tags": ["排序", "相邻元素
 
 标签：`排序` · `相邻元素`
 
-原版未提供在线 Accepted 记录。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)，未重新提交在线评测。
+原版未提供在线 Accepted 记录。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058f03e5d1fced2e457dd4)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -70,7 +76,13 @@ int main(){
 
 标签：`队列` · `循环模拟`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda75c74ace1cba9a1fccc)。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda75c74ace1cba9a1fccc)。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058f85e5d1fced2e457e64)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -119,7 +131,13 @@ int main(){
 
 标签：`日期计算` · `字符串解析` · `枚举` · `排序`
 
-原版未提供在线 Accepted 记录。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)，未重新提交在线评测。
+原版未提供在线 Accepted 记录。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058fcfe5d1fced2e457f62)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -259,7 +277,13 @@ int main(){
 
 标签：`最短路` · `Floyd` · `分层图` · `Dijkstra`
 
-原版未提供在线 Accepted 记录。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)，未重新提交在线评测。
+原版未提供在线 Accepted 记录。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059027e5d1fced2e458041)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -354,7 +378,13 @@ int main(){
 
 标签：`树形DP` · `李超线段树` · `启发式合并` · `斜率优化`
 
-原版未提供在线 Accepted 记录。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)，未重新提交在线评测。
+原版未提供在线 Accepted 记录。重构版本地验证见 [VALIDATION.md](../tests/201712/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059079e5d1fced2e4581c6)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -519,6 +549,8 @@ int main(){
 - [de-array-followup-report.json](../tests/201712/de-array-followup-report.json)
 - [details.txt](../tests/201712/details.txt)
 - [nightly-review-followup.json](../tests/201712/nightly-review-followup.json)
+- [online-update-report.json](../tests/201712/online-update-report.json)
+- [online-verdicts.json](../tests/201712/online-verdicts.json)
 - [prose-final-review.json](../tests/201712/prose-final-review.json)
 - [report.json](../tests/201712/report.json)
 - [retained_oracles.py](../tests/201712/retained_oracles.py)
