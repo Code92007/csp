@@ -1,6 +1,24 @@
 # 201412 本地验证
 
-本次重构未重新提交在线评测。题解保留的在线评测记录属于原版代码。**C 原版仍为 90 分 Wrong Answer，本地对拍未解决该问题。**
+<!-- refactor-online-validation:start -->
+
+## 当前重构版在线评测
+
+本节来自冻结提交计划与真实判题账本；下方本地验证记录保留其历史归属。
+
+| 题目 | 结果 | 当前源码 SHA-256 |
+|---|---|---|
+| A | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a2b3e5d1fced2e45ab01)。 | `6c7e91b84554d18fc0c9ff20faeebe5621cdde0cfb39e72114d1624efd30f80e` |
+| B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a2f0e5d1fced2e45aba2)。 | `f1ac108f70335eac6e2634659bcb92e877f0a5672614b4c9bf521d3b808858df` |
+| C | 重构版评测：90 分 Wrong Answer（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f)。 | `da9a660760de1b35e3ac5bd1bbdb3564bea4419d3d694e26f8d18b4fede45504` |
+| D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a37ee5d1fced2e45adb3)。 | `25fd3e17b3e6c1964c0eff41c751c6656f70a3b7e062ce3eef3024e2fcb0b825` |
+| E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a3bce5d1fced2e45ae6f)。 | `2e79fb9fc9a3ad92ec794ce610a4396df0bcf0670ba5c48cbc5a7b47db55bf6f` |
+
+[逐题在线结果与原版记录](online-verdicts.json)。
+
+<!-- refactor-online-validation:end -->
+
+该本地验证阶段未进行本轮在线提交。题解保留的在线评测记录属于原版代码。**C 原版仍为 90 分 Wrong Answer，本地对拍未解决该问题。**
 
 五题均通过 C++17 O2 与 UBSan 编译，无编译警告；O2 通过 **856 个不同输入**，UBSan 通过 **851 个小规模及边界输入**。
 
@@ -54,6 +72,6 @@ E 改为 `struct MCMF`，使用 `head/cnt/e[].v,nxt,w,cost` 的链式前向星�
 
 当前 E 源码的 O2、UBSan 均无诊断，并各通过 354 个不同输入。包括原先 221 组独立库存 DP、120 组额外满足周总产需平衡的库存 DP、两份样例、零需求，以及 100 城 500 边的最短路、Hungarian 运输分配、跨周仓储和就地平衡构造。另保留一组超出“保证可行”前提的无解鲁棒性输入，预期为 -1。最大规模构造的 O2 单例用时不超过 0.034 秒；这只是本机测例结果，不是所有输入的性能保证。
 
-报告：[e-mcmf-report.json](e-mcmf-report.json)；用例：[e-mcmf-cases.json](e-mcmf-cases.json)；复现：[verify-e-mcmf.py](verify-e-mcmf.py)。未重新提交在线评测，C 的原版 90 分 Wrong Answer 状态保持不变。
+报告：[e-mcmf-report.json](e-mcmf-report.json)；用例：[e-mcmf-cases.json](e-mcmf-cases.json)；复现：[verify-e-mcmf.py](verify-e-mcmf.py)。该本地验证阶段未进行本轮在线提交，C 的原版 90 分 Wrong Answer 状态保持不变。
 
 - `E.cpp` 当前 SHA-256：`2e79fb9fc9a3ad92ec794ce610a4396df0bcf0670ba5c48cbc5a7b47db55bf6f`
