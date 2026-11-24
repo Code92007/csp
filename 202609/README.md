@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "数学", "精度", "查表", "模拟", "动态规划", "01背包", "队列", "调度", "状态机", "图论", "二分图", "带权并查集", "区间", "构造", "树", "点分治", "动态查询", "位运算", "哈希表"]
 status: "published"
-problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "精度", "查表", "模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版通过 C++17 编译、292 组本地对拍、13 个现有样例与测试点；原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609A"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6c2a67df0b81749b341"}}, {"id": "B", "title": "流程规划（其二）", "tags": ["动态规划", "01背包", "精度"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版通过 C++17 编译、250 组本地对拍、21 个现有样例与测试点；原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609B"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e0a67df0b81749b3d9"}}, {"id": "C", "title": "轮转调度", "tags": ["模拟", "队列", "调度", "状态机"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版通过 C++17 编译、400 组本地对拍、21 个现有样例与测试点；原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609C"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e2a67df0b81749b3e7"}}, {"id": "D", "title": "数字分组", "tags": ["图论", "二分图", "带权并查集", "区间", "构造"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版通过 C++17 编译、600 组本地对拍、22 个现有样例与测试点；原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609D"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e4a67df0b81749b40a"}}, {"id": "E", "title": "奇", "tags": ["树", "点分治", "动态查询", "位运算", "哈希表"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版通过 C++17 编译、300 组本地对拍、21 个现有样例与测试点；原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609E"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce90ea67df0b81749bfe2"}}]
+problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "精度", "查表", "模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609A"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b053aaee5d1fced2e44d256", "source_sha256": "dd814f4d41176bf7e0954ae14c1a672c74a0aacd048054526d93459dd2009af7", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:21:26.555732+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6c2a67df0b81749b341"}}, {"id": "B", "title": "流程规划（其二）", "tags": ["动态规划", "01背包", "精度"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609B"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b053b70e5d1fced2e44d372", "source_sha256": "4103c0cd5c428919f97be1c656c9c02c8137e0ecbbdf8b3db172df611d1c530e", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:25:08.363809+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e0a67df0b81749b3d9"}}, {"id": "C", "title": "轮转调度", "tags": ["模拟", "队列", "调度", "状态机"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609C"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b053bfae5d1fced2e44d470", "source_sha256": "022f313e6279caf09fa08cc7963adc8e67ef5ab39475f0efe7835a1dc5bffd59", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:28:21.431850+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e2a67df0b81749b3e7"}}, {"id": "D", "title": "数字分组", "tags": ["图论", "二分图", "带权并查集", "区间", "构造"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609D"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b053ca3e5d1fced2e44d560", "source_sha256": "b66586cebc5f4c41bdf7c1fc3614ca36cce5df9b07ea676104ae58cad1e30a35", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:30:40.051820+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e4a67df0b81749b40a"}}, {"id": "E", "title": "奇", "tags": ["树", "点分治", "动态查询", "位运算", "哈希表"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：50 分 Time Exceeded（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202609E"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202609/statements.json"}], "oj": {"score": 50.0, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6b053d35e5d1fced2e44d671", "source_sha256": "0d3ca8a7b3c3aece6ae414592803001d2cf9e4a96af421933b0608f9fec3999f", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "failed", "observed_at": "2026-11-24T07:33:07.900743+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce90ea67df0b81749bfe2"}}]
 ---
 # CSP 202609 五题题解
 
@@ -20,6 +20,14 @@ problems: [{"id": "A", "title": "流程规划（其一）", "tags": ["数学", "
 标签：`数学` · `精度` · `查表` · `模拟`
 
 本版验证：已通过 C++17 编译、292 组精确比较对拍、13 个现有样例与测试点。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053aaee5d1fced2e44d256)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce6c2a67df0b81749b341)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -115,6 +123,14 @@ int main(){
 
 本版验证：已通过 C++17 编译、250 组子集枚举对拍、21 个现有样例与测试点。
 
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053b70e5d1fced2e44d372)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce6e0a67df0b81749b3d9)。
+
+<!-- refactor-online:B:end -->
+
 ### 题意
 
 从 $n$ 个可选环节中各选或不选一次，求最大收益。选中集合 $S$ 的收益是 $\sum\mu_i$，总标准差是 $\sqrt{\sum\sigma_i^2}$。非空集合需满足 $m/\sqrt{\sum\sigma_i^2}\ge q$；也允许选择空集合，收益为 0。
@@ -201,6 +217,14 @@ int main(){
 标签：`模拟` · `队列` · `调度` · `状态机`
 
 本版验证：已通过 C++17 编译、400 组逐毫秒模拟对拍、21 个现有样例与测试点。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053bfae5d1fced2e44d470)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce6e2a67df0b81749b3e7)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -315,6 +339,14 @@ int main(){
 标签：`图论` · `二分图` · `带权并查集` · `区间` · `构造`
 
 本版验证：已通过 C++17 编译、600 组暴力染色对拍、22 个现有样例与测试点，均检查最优组数和划分合法性。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053ca3e5d1fced2e44d560)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce6e4a67df0b81749b40a)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -471,6 +503,14 @@ int main(){
 标签：`树` · `点分治` · `动态查询` · `位运算` · `哈希表`
 
 本版验证：已通过 C++17 编译、300 组无序点对枚举对拍、21 个现有样例与测试点。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：50 分 Time Exceeded（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053d35e5d1fced2e44d671)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce90ea67df0b81749bfe2)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -722,6 +762,8 @@ int main(){
 - [bd-final-report.json](../tests/202609/bd-final-report.json)
 - [current-hash-gnu-revalidation.json](../tests/202609/current-hash-gnu-revalidation.json)
 - [e-mask-followup-report.json](../tests/202609/e-mask-followup-report.json)
+- [online-update-report.json](../tests/202609/online-update-report.json)
+- [online-verdicts.json](../tests/202609/online-verdicts.json)
 - [verify-bd-final.py](../tests/202609/verify-bd-final.py)
 
 <!-- local-validation-attachments:end -->
