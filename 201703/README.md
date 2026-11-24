@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "顺序模拟", "分组", "数组", "模拟", "Markdown", "字符串解析", "递归", "并查集", "排序", "最小瓶颈路径", "最小割", "网格图", "动态规划"]
 status: "published"
-problems: [{"id": "A", "title": "分蛋糕", "tags": ["顺序模拟", "分组"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版 C++17 编译通过；62 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda7e474ace1cba9a1fd43"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "B", "title": "学生排队", "tags": ["数组", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版 C++17 编译通过；101 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaaf074ace1cba9a20058"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "C", "title": "Markdown", "tags": ["Markdown", "字符串解析", "递归"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版 C++17 编译通过；103 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addab8d74ace1cba9a2018a"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "D", "title": "地铁修建", "tags": ["并查集", "排序", "最小瓶颈路径"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版 C++17 编译通过；92 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addac2c74ace1cba9a20350"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "E", "title": "引水入城", "tags": ["最小割", "网格图", "动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版 C++17 编译通过；87 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addacc574ace1cba9a203ca"}, "original_validation": "C++17 编译通过；4 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}]
+problems: [{"id": "A", "title": "分蛋糕", "tags": ["顺序模拟", "分组"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0590c2e5d1fced2e45825c", "source_sha256": "e5a6d59c7ebece9853da31b346bc28411b02a481dff0e89d14bde85669c615e2", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:29:52.463697+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda7e474ace1cba9a1fd43"}}, {"id": "B", "title": "学生排队", "tags": ["数组", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b059151e5d1fced2e4583e7", "source_sha256": "29092b495277b75adc72c28a4b82105772a8a5c026bb80e58368fa34d8eb778b", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:31:14.627390+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaaf074ace1cba9a20058"}}, {"id": "C", "title": "Markdown", "tags": ["Markdown", "字符串解析", "递归"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0591a3e5d1fced2e45843c", "source_sha256": "5da1a28e4415820a747867320b761de28d3dce4f6ff3a1f791e7a1aed5d30b16", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:32:31.534558+00:00"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addab8d74ace1cba9a2018a"}}, {"id": "D", "title": "地铁修建", "tags": ["并查集", "排序", "最小瓶颈路径"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0591f2e5d1fced2e458494", "source_sha256": "a1fd8e40139d11a16065ca49338b4679025d2de78b880287046a968b4032535c", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:33:54.707526+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addac2c74ace1cba9a20350"}}, {"id": "E", "title": "引水入城", "tags": ["最小割", "网格图", "动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201703E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201703E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b059244e5d1fced2e45852e", "source_sha256": "07ab64d1159ffd1dd1846e132f02bb15310f1ecd10f93e0304c3f30b3cd2b0e1", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:35:14.406884+00:00"}, "original_validation": "C++17 编译通过；4 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addacc574ace1cba9a203ca"}}]
 ---
 
 # CSP 201703 五题题解
@@ -20,11 +20,17 @@ problems: [{"id": "A", "title": "分蛋糕", "tags": ["顺序模拟", "分组"],
 
 标签：`顺序模拟` · `分组`
 
-本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adda7e474ace1cba9a1fd43)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adda7e474ace1cba9a1fd43)（复刻评测）。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0590c2e5d1fced2e45825c)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -74,11 +80,17 @@ int main(){
 
 标签：`数组` · `模拟`
 
-本地验证：101 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：101 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addaaf074ace1cba9a20058)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addaaf074ace1cba9a20058)（复刻评测）。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059151e5d1fced2e4583e7)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -132,11 +144,17 @@ int main(){
 
 标签：`Markdown` · `字符串解析` · `递归`
 
-本地验证：103 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：103 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addab8d74ace1cba9a2018a)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addab8d74ace1cba9a2018a)（复刻评测）。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0591a3e5d1fced2e45843c)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -241,11 +259,17 @@ int main(){
 
 标签：`并查集` · `排序` · `最小瓶颈路径`
 
-本地验证：92 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：92 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addac2c74ace1cba9a20350)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addac2c74ace1cba9a20350)（复刻评测）。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0591f2e5d1fced2e458494)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -321,11 +345,17 @@ int main(){
 
 标签：`最小割` · `网格图` · `动态规划`
 
-本地验证：87 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：87 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201703/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addacc574ace1cba9a203ca)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；4 个保存样例/回归用例通过；80 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addacc574ace1cba9a203ca)（复刻评测）。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059244e5d1fced2e45852e)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -420,6 +450,8 @@ int main(){
 - [boundaries.py](../tests/201703/boundaries.py)
 - [d-find-followup-report.json](../tests/201703/d-find-followup-report.json)
 - [d-lambda-report.json](../tests/201703/d-lambda-report.json)
+- [online-update-report.json](../tests/201703/online-update-report.json)
+- [online-verdicts.json](../tests/201703/online-verdicts.json)
 - [refactor-report.json](../tests/201703/refactor-report.json)
 - [statements.json](../tests/201703/statements.json)
 - [verify-d-lambda.py](../tests/201703/verify-d-lambda.py)
