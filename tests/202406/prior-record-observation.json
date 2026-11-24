@@ -1,0 +1,9 @@
+{
+  "heading": "70 Time Exceeded",
+  "record_url": "https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b",
+  "observed_at": "2026-11-24T10:07:12.007Z",
+  "method": "Read-only normal Chrome record page using CUA; no rejudge or POST",
+  "observed_status": "Time Exceeded",
+  "observed_score": 70,
+  "visible_source_available": false
+}

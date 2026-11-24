@@ -453,6 +453,8 @@ int main(){
 
 <!-- refactor-online:E:end -->
 
+旧记录于 2026-11-24 复核，同样为 **70 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](../tests/202406/prior-record-observation.json)。
+
 ### 题意
 
 二维网格初始全为 $0$。先进行 $n$ 次学习，每次将一个闭矩形内的所有值更新为原值与 $v$ 的较大者；学习全部结束后，回答 $m$ 个闭矩形内的最大值。
@@ -787,6 +789,7 @@ int main(){
 - [extra.py](../tests/202406/extra.py)
 - [online-update-report.json](../tests/202406/online-update-report.json)
 - [online-verdicts.json](../tests/202406/online-verdicts.json)
+- [prior-record-observation.json](../tests/202406/prior-record-observation.json)
 - [style-followup-c.json](../tests/202406/style-followup-c.json)
 - [style-followup-e.json](../tests/202406/style-followup-e.json)
 - [style-followup.json](../tests/202406/style-followup.json)

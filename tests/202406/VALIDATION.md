@@ -53,3 +53,7 @@ E 的矩形、排序索引、计数表、并查集和包络坐标/值缓冲使�
 E 通过648组独立矩形扫描、2个保存用例和3组50万规模解析构造，共653组，O2与UBSan均通过。三组压力实测的最大RSS约176.4 MiB；这只是所测构造的内存记录，不是所有输入的峰值证明。见 [内存报告](array-memory.json)，复现当前版本可运行 [array-memory.py](array-memory.py)。较早的风格复核报告保留历史哈希，当前全部源码哈希以 `summary.json` 为准；最初汇总另存 `summary-initial.json`。
 
 最新命名及容量书写复核：[constants-followup.json](constants-followup.json)。报告保留各轮源码哈希，当前源码与对应通过记录的匹配索引见 [current-sources.json](current-sources.json)。
+
+## 旧版在线记录复核
+
+旧记录于 2026-11-24 复核，同样为 **70 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](prior-record-observation.json)。
