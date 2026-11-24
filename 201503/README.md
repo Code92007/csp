@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "矩阵旋转", "坐标映射", "频率统计", "自定义排序", "日期计算", "枚举", "树的直径", "BFS", "点分治", "倍增", "贪心", "树上查询"]
 status: "published"
-problems: [{"id": "A", "title": "图像旋转", "tags": ["矩阵旋转", "坐标映射"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，1 个保存用例、60 组独立对拍及 1 组边界/压力通过；UBSan 共 62 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb6f774ace1cba9a20ceb"}}, {"id": "B", "title": "数字排序", "tags": ["频率统计", "自定义排序"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 102 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb77c74ace1cba9a20d2d"}}, {"id": "C", "title": "节日", "tags": ["日期计算", "枚举"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 7 组边界/压力通过；UBSan 共 108 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb88c74ace1cba9a20dc5"}}, {"id": "D", "title": "网络延时", "tags": ["树的直径", "BFS"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，2 个保存用例、79 组独立对拍及 1 组边界/压力通过；UBSan 共 82 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb91774ace1cba9a20e42"}}, {"id": "E", "title": "最小花费", "tags": ["点分治", "倍增", "贪心", "树上查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：C++17 编译通过，1 个保存用例、257 组独立对拍及 4 组边界/压力通过；UBSan 共 262 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb9a174ace1cba9a20ea0"}}]
+problems: [{"id": "A", "title": "图像旋转", "tags": ["矩阵旋转", "坐标映射"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a174e5d1fced2e45a8a8", "source_sha256": "eb172ff1edc4b6f7e8372f1438f28e64d002bba4447ee3630a7dee323b1c56cf", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:39:56.100742+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb6f774ace1cba9a20ceb"}}, {"id": "B", "title": "数字排序", "tags": ["频率统计", "自定义排序"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a1bde5d1fced2e45a934", "source_sha256": "4c1b99eca36b4960a21f631f6d76dfa73bb0c1b038f1ae8d93cbcc51d5b21777", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:41:33.832008+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb77c74ace1cba9a20d2d"}}, {"id": "C", "title": "节日", "tags": ["日期计算", "枚举"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a1fae5d1fced2e45a978", "source_sha256": "4f8c6fb2c746626a41873acc6cc643c1aba0cf47a384fd749f1d510adebab959", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:41:35.555079+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb88c74ace1cba9a20dc5"}}, {"id": "D", "title": "网络延时", "tags": ["树的直径", "BFS"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a238e5d1fced2e45aa04", "source_sha256": "9292f658455c5ecb0e9e27f93a5f74f248aa6ea73775202ee860f00f1cfe1f9a", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:43:39.772003+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb91774ace1cba9a20e42"}}, {"id": "E", "title": "最小花费", "tags": ["点分治", "倍增", "贪心", "树上查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201503E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201503E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a275e5d1fced2e45aa5d", "source_sha256": "eb886831bb320184de9bc4d4911588ebe81beb9af93da842cc5fecaf8ec6a489", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:43:41.867398+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb9a174ace1cba9a20ea0"}}]
 ---
 
 # CSP 201503 五题题解
@@ -20,6 +20,12 @@ problems: [{"id": "A", "title": "图像旋转", "tags": ["矩阵旋转", "坐标
 标签：`矩阵旋转` · `坐标映射`
 
 本地：62 组优化版、62 组 UBSan 验证通过，详见 [验证记录](../tests/201503/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a174e5d1fced2e45a8a8)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -77,6 +83,12 @@ int main(){
 标签：`频率统计` · `自定义排序`
 
 本地：102 组优化版、102 组 UBSan 验证通过，详见 [验证记录](../tests/201503/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a1bde5d1fced2e45a934)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -137,6 +149,12 @@ int main(){
 标签：`日期计算` · `枚举`
 
 本地：108 组优化版、108 组 UBSan 验证通过，详见 [验证记录](../tests/201503/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a1fae5d1fced2e45a978)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -202,6 +220,12 @@ int main(){
 标签：`树的直径` · `BFS`
 
 本地：82 组优化版、82 组 UBSan 验证通过，详见 [验证记录](../tests/201503/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a238e5d1fced2e45aa04)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -279,6 +303,12 @@ int main(){
 标签：`点分治` · `倍增` · `贪心` · `树上查询`
 
 本地：262 组优化版、262 组 UBSan 验证通过，详见 [验证记录](../tests/201503/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a275e5d1fced2e45aa5d)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -476,6 +506,8 @@ int main(){
 - [compile.json](../tests/201503/compile.json)
 - [current-sources.json](../tests/201503/current-sources.json)
 - [extra.py](../tests/201503/extra.py)
+- [online-update-report.json](../tests/201503/online-update-report.json)
+- [online-verdicts.json](../tests/201503/online-verdicts.json)
 - [summary.json](../tests/201503/summary.json)
 
 <!-- local-validation-attachments:end -->
