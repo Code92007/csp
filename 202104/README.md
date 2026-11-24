@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "计数数组", "直方图", "二维前缀和", "矩形查询", "状态机", "优先队列", "有序集合", "模拟", "动态规划", "因数", "计数", "最短路", "中国剩余定理", "扩展欧几里得", "周期"]
 status: "published"
-problems: [{"id": "A", "title": "灰度直方图", "tags": ["计数数组", "直方图"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，2 个保存用例、60 组独立对拍及 1 组边界/压力通过；UBSan 共 63 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16036"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce971a67df0b81749c1a2"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305946069", "source_sha256": "cb04b1e64425e465d51f4d3e823af05735f5c3f8dd0928971918d527e62604c8"}}, {"id": "B", "title": "邻域均值", "tags": ["二维前缀和", "矩形查询"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 103 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16037"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce972a67df0b81749c1b8"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305946624", "source_sha256": "d7e2bd6ce9f7665c2fc211365c95c7a3e09dcdac58a3a2944cdec0c56ef00672"}}, {"id": "C", "title": "DHCP 服务器", "tags": ["状态机", "优先队列", "有序集合", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 103 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16038"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1074ace1cba9a1bca0"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305947294", "source_sha256": "c7cdcf35a856adecb28fca6057aff11acc7d1aba5196d514c012d1c46d2b025f"}}, {"id": "D", "title": "校门外的树", "tags": ["动态规划", "因数", "计数"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，2 个保存用例、95 组独立对拍及 4 组边界/压力通过；UBSan 共 101 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16039"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1274ace1cba9a1bca8"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305948508", "source_sha256": "45455ae0cfa0766b11ba60e26ec3f73e3b374a4e5d2c2b9e8dab4d61fdca2c84"}}, {"id": "E", "title": "疫苗运输", "tags": ["最短路", "中国剩余定理", "扩展欧几里得", "周期"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：C++17 编译通过，3 个保存用例、60 组独立对拍及 2 组边界/压力通过；UBSan 共 65 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104E/"}, {"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16040"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add984074ace1cba9a1f29d"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305949490", "source_sha256": "294e801f8822119af5dd27d341ae76ab81ee536e48d6d1ae979435541b27c072"}, "previous_luogu": {"status": "failed", "score": 95, "verdict": "Time Exceeded", "record": "https://www.luogu.com.cn/record/305496224", "note": "历史提交记录，未用于当前源码的验证；当前优化版已另行提交并逐字核对。"}}]
+problems: [{"id": "A", "title": "灰度直方图", "tags": ["计数数组", "直方图"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16036"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058876e5d1fced2e4569cb", "source_sha256": "0cea71d189ecc28e23389f465bff3bf19f6faf8a935ce005c53f337d89d336fb", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:54:03.214109+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305946069", "source_sha256": "cb04b1e64425e465d51f4d3e823af05735f5c3f8dd0928971918d527e62604c8"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce971a67df0b81749c1a2"}}, {"id": "B", "title": "邻域均值", "tags": ["二维前缀和", "矩形查询"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16037"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0588ece5d1fced2e456ab5", "source_sha256": "b883d2fa5500bcf25b39daf59fb21e422cd9589dc794454624881e62473d3275", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:55:15.878811+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305946624", "source_sha256": "d7e2bd6ce9f7665c2fc211365c95c7a3e09dcdac58a3a2944cdec0c56ef00672"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce972a67df0b81749c1b8"}}, {"id": "C", "title": "DHCP 服务器", "tags": ["状态机", "优先队列", "有序集合", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16038"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058935e5d1fced2e456b66", "source_sha256": "bf9a37f2370976f00a99437a7b09f06bac6199e4ba7bed2a7ef8b506b234f357", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:56:35.417175+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305947294", "source_sha256": "c7cdcf35a856adecb28fca6057aff11acc7d1aba5196d514c012d1c46d2b025f"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1074ace1cba9a1bca0"}}, {"id": "D", "title": "校门外的树", "tags": ["动态规划", "因数", "计数"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16039"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058984e5d1fced2e456c46", "source_sha256": "4d335ff4ddafc454697d4a9ce8453a37d56d0637a5d49c22c253f74097f7b4bb", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:57:40.005221+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305948508", "source_sha256": "45455ae0cfa0766b11ba60e26ec3f73e3b374a4e5d2c2b9e8dab4d61fdca2c84"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1274ace1cba9a1bca8"}}, {"id": "E", "title": "疫苗运输", "tags": ["最短路", "中国剩余定理", "扩展欧几里得", "周期"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202104E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202104E/"}, {"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16040"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0589c5e5d1fced2e456d1e", "source_sha256": "9c0d36402afe1f772f3622f837f6ea1e05c2b9ed92c6e3ac9cd7f85b61d17d14", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:58:54.844280+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305949490", "source_sha256": "294e801f8822119af5dd27d341ae76ab81ee536e48d6d1ae979435541b27c072"}, "previous_luogu": {"status": "failed", "score": 95, "verdict": "Time Exceeded", "record": "https://www.luogu.com.cn/record/305496224", "note": "历史提交记录，未用于当前源码的验证；当前优化版已另行提交并逐字核对。"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add984074ace1cba9a1f29d"}}]
 ---
 
 # CSP 202104 五题题解
@@ -20,6 +20,12 @@ problems: [{"id": "A", "title": "灰度直方图", "tags": ["计数数组", "直
 标签：`计数数组` · `直方图`
 
 本地：63 组优化版、63 组 UBSan 验证通过，详见 [验证记录](../tests/202104/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058876e5d1fced2e4569cb)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -72,6 +78,12 @@ int main(){
 标签：`二维前缀和` · `矩形查询`
 
 本地：103 组优化版、103 组 UBSan 验证通过，详见 [验证记录](../tests/202104/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0588ece5d1fced2e456ab5)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -141,6 +153,12 @@ int main(){
 标签：`状态机` · `优先队列` · `有序集合` · `模拟`
 
 本地：103 组优化版、103 组 UBSan 验证通过，详见 [验证记录](../tests/202104/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058935e5d1fced2e456b66)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -278,6 +296,12 @@ int main(){
 
 本地：101 组优化版、101 组 UBSan 验证通过，详见 [验证记录](../tests/202104/VALIDATION.md)。
 
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058984e5d1fced2e456c46)。
+
+<!-- refactor-online:D:end -->
+
 ### 题意
 
 数轴上有递增排列的障碍物。可选择部分障碍物作为分段端点，每段至少种一棵树，树与两端点构成整数公差的等差数列，且树不能落在障碍物上。按最终种树坐标集合区分方案，求不同方案数。
@@ -363,6 +387,12 @@ int main(){
 标签：`最短路` · `中国剩余定理` · `扩展欧几里得` · `周期`
 
 本地：65 组优化版、65 组 UBSan 验证通过，详见 [验证记录](../tests/202104/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0589c5e5d1fced2e456d1e)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -512,6 +542,8 @@ int main(){
 - [extra.py](../tests/202104/extra.py)
 - [naming-followup.json](../tests/202104/naming-followup.json)
 - [newline-followup.json](../tests/202104/newline-followup.json)
+- [online-update-report.json](../tests/202104/online-update-report.json)
+- [online-verdicts.json](../tests/202104/online-verdicts.json)
 - [summary.json](../tests/202104/summary.json)
 
 <!-- local-validation-attachments:end -->
