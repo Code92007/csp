@@ -57,3 +57,13 @@ E 通过648组独立矩形扫描、2个保存用例和3组50万规模解析构�
 ## 旧版在线记录复核
 
 旧记录于 2026-11-24 复核，同样为 **70 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](prior-record-observation.json)。
+
+<!-- candidate-attempt:E:start -->
+
+## E 查询优化尝试（未采用）
+
+候选真实结果为 [70 分 Time Exceeded](https://oj.shumeng.tech/record/6b05ab73e5d1fced2e45be79)，未提高首轮得分。正式源码和当前评测表保留原版本，候选以独立哈希归档，不作为当前源码的判题。
+
+[候选源码](performance-attempt/202406E/E.cpp) · [复测详情](performance-attempt/202406E/attempt.json)
+
+<!-- candidate-attempt:E:end -->

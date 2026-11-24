@@ -453,6 +453,12 @@ int main(){
 
 <!-- refactor-online:E:end -->
 
+<!-- candidate-attempt:E:start -->
+
+查询优化候选另获 [70 分 Time Exceeded](https://oj.shumeng.tech/record/6b05ab73e5d1fced2e45be79)。本页继续展示首轮源码；该候选的源码与判题归属单独保存在 [复测记录](../tests/202406/performance-attempt/202406E/attempt.json) 中。
+
+<!-- candidate-attempt:E:end -->
+
 旧记录于 2026-11-24 复核，同样为 **70 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](../tests/202406/prior-record-observation.json)。
 
 ### 题意
@@ -789,6 +795,8 @@ int main(){
 - [extra.py](../tests/202406/extra.py)
 - [online-update-report.json](../tests/202406/online-update-report.json)
 - [online-verdicts.json](../tests/202406/online-verdicts.json)
+- [performance-attempt/202406E/E.cpp](../tests/202406/performance-attempt/202406E/E.cpp)
+- [performance-attempt/202406E/attempt.json](../tests/202406/performance-attempt/202406E/attempt.json)
 - [prior-record-observation.json](../tests/202406/prior-record-observation.json)
 - [style-followup-c.json](../tests/202406/style-followup-c.json)
 - [style-followup-e.json](../tests/202406/style-followup-e.json)
