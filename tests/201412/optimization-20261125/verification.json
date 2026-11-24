@@ -1,0 +1,74 @@
+{
+  "source_sha256": "38fc56230c8c14912879cf00d876c9922f955d70cb1b3f4dddd3b83dd203b96c",
+  "checked_at": "2026-11-24T18:39:27.349122+00:00",
+  "compilation": {
+    "base": {
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "/Users/yzm007/Documents/CSP45/201412/C.cpp",
+        "-o",
+        "/tmp/csp-c-base"
+      ],
+      "diagnostics": ""
+    },
+    "decimal": {
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "/Users/yzm007/Documents/CSP45/reports/201412C-round3/decimal.cpp",
+        "-o",
+        "/tmp/csp-c-decimal"
+      ],
+      "diagnostics": ""
+    },
+    "decimal-ubsan": {
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-O1",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "/Users/yzm007/Documents/CSP45/reports/201412C-round3/decimal.cpp",
+        "-o",
+        "/tmp/csp-c-decimal-ubsan"
+      ],
+      "diagnostics": ""
+    }
+  },
+  "tests": {
+    "legal_inputs_identical_to_formal": 720,
+    "alternate_decimal_spellings": 720,
+    "all_allowed_cent_values_roundtrip": 1000000
+  },
+  "limitation": "The OJ statement promises exactly two fractional digits; tolerant parsing is a diagnostic hypothesis, not a verified cause of the remaining WA. Zero-volume semantics unchanged.",
+  "online_result": {
+    "problem": "C",
+    "key": "201412C",
+    "state": "judged",
+    "source_sha256": "38fc56230c8c14912879cf00d876c9922f955d70cb1b3f4dddd3b83dd203b96c",
+    "prior_oj_records": [
+      {
+        "metadata_field": "oj",
+        "status": "failed",
+        "score": 90,
+        "verdict": "Wrong Answer",
+        "record": "https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8"
+      }
+    ],
+    "record": "https://oj.shumeng.tech/record/6b05db38e5d1fced2e45d776",
+    "verdict": "Accepted",
+    "score": 100,
+    "observed_at": "2026-11-24T18:46:17.803054+00:00",
+    "language_id": "cc.cc20o2",
+    "language": "C++20/O2"
+  }
+}

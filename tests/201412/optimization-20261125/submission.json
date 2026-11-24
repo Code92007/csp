@@ -1,0 +1,39 @@
+{
+  "candidate_id": "201412C-decimal-v1",
+  "problem_key": "201412C",
+  "release_file": "reports/optimization-20261125/approvals/201412C-decimal-v1.json",
+  "release_sha256": "7546e2da0ad8c8fa38909b23a033cdf5f75d50cf19a8ae00ff1cee801044b60d",
+  "release": {
+    "schema_version": 1,
+    "draft": false,
+    "released_by": "root",
+    "submission_controller": "review_202605",
+    "authorization": "verified-candidate-online-check",
+    "approved_at": "2026-11-24T18:43:41.334958+00:00",
+    "candidate_id": "201412C-decimal-v1",
+    "problem_key": "201412C",
+    "source_file": "reports/201412C-round3/decimal.cpp",
+    "source_sha256": "38fc56230c8c14912879cf00d876c9922f955d70cb1b3f4dddd3b83dd203b96c",
+    "validation_evidence": [
+      {
+        "file": "reports/201412C-round3/decimal-verification.json",
+        "sha256": "4e7b79fd4feb43cda852cf7057d48060ffe8737f37827b77b831efeab19e93e9"
+      }
+    ],
+    "review": "Only price parsing uses scanf double and nearest-cent conversion; preserves formal zero-volume policy.720 legal-case equivalences and720 alternate decimal formats O2/UBSan, exhaustive1000000 validcent roundtrips. Statement promises fixed2 digits; broader input formatting remains diagnostic hypothesis, not verified rootcause. User authorizes optimization+online validation. One controlled test."
+  },
+  "source_file": "reports/201412C-round3/decimal.cpp",
+  "source_sha256": "38fc56230c8c14912879cf00d876c9922f955d70cb1b3f4dddd3b83dd203b96c",
+  "state": "judged",
+  "submit_url": "https://oj.shumeng.tech/p/CSP201412C/submit",
+  "language_id": "cc.cc20o2",
+  "new_record": "https://oj.shumeng.tech/record/6b05db38e5d1fced2e45d776",
+  "verdict": {
+    "status": "Accepted",
+    "score": 100.0,
+    "note": "",
+    "observed_at": "2026-11-24T18:46:17.803054+00:00"
+  },
+  "intent_at": "2026-11-24T18:45:12.103957+00:00",
+  "post_observed_at": 1795545912.9721909
+}

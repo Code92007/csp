@@ -23,10 +23,10 @@ int main(){
             e.ok=false;
         }
         else{
-            int x,y;
-            scanf("%d.%d%lld",&x,&y,&e.num);
+            double p;
+            scanf("%lf%lld",&p,&e.num);
             e.op=s[0]=='b';
-            e.p=x*100+y;
+            e.p=(int)(p*100+0.5);
         }
         a.push_back(e);
     }

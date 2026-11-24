@@ -10,7 +10,7 @@
 |---|---|---|
 | A | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a2b3e5d1fced2e45ab01)。 | `6c7e91b84554d18fc0c9ff20faeebe5621cdde0cfb39e72114d1624efd30f80e` |
 | B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a2f0e5d1fced2e45aba2)。 | `f1ac108f70335eac6e2634659bcb92e877f0a5672614b4c9bf521d3b808858df` |
-| C | 重构版评测：90 分 Wrong Answer（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f)。 | `da9a660760de1b35e3ac5bd1bbdb3564bea4419d3d694e26f8d18b4fede45504` |
+| C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05db38e5d1fced2e45d776)。 | `38fc56230c8c14912879cf00d876c9922f955d70cb1b3f4dddd3b83dd203b96c` |
 | D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a37ee5d1fced2e45adb3)。 | `25fd3e17b3e6c1964c0eff41c751c6656f70a3b7e062ce3eef3024e2fcb0b825` |
 | E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a3bce5d1fced2e45ae6f)。 | `2e79fb9fc9a3ad92ec794ce610a4396df0bcf0670ba5c48cbc5a7b47db55bf6f` |
 
@@ -62,7 +62,7 @@ E 新增 220 组两城七日实例，以全枚举初末库存、每日生产量�
 
 ## C 输出表达式复验
 
-先计算ans=max(0ll,ans)，再输出价格与成交量，保持原值和零成交候选价约定。O2、UBSan均无诊断，各通过322个不同输入，含5000笔委托与2.5×10¹¹成交量构造；**原版90分Wrong Answer仍未解决**。[本轮当前哈希与结果](c-output-followup-report.json) · [复现脚本](verify-c-output-followup.py)。
+先计算ans=max(0ll,ans)，再输出价格与成交量，保持原值和零成交候选价约定。O2、UBSan均无诊断，各通过322个不同输入，含5000笔委托与2.5×10¹¹成交量构造；**该次仅改输出的验证尚未解决原版 90 分 Wrong Answer；后续读入修复见文末**。[本轮当前哈希与结果](c-output-followup-report.json) · [复现脚本](verify-c-output-followup.py)。
 
 - `C.cpp`：`da9a660760de1b35e3ac5bd1bbdb3564bea4419d3d694e26f8d18b4fede45504`
 
@@ -72,6 +72,16 @@ E 改为 `struct MCMF`，使用 `head/cnt/e[].v,nxt,w,cost` 的链式前向星�
 
 当前 E 源码的 O2、UBSan 均无诊断，并各通过 354 个不同输入。包括原先 221 组独立库存 DP、120 组额外满足周总产需平衡的库存 DP、两份样例、零需求，以及 100 城 500 边的最短路、Hungarian 运输分配、跨周仓储和就地平衡构造。另保留一组超出“保证可行”前提的无解鲁棒性输入，预期为 -1。最大规模构造的 O2 单例用时不超过 0.034 秒；这只是本机测例结果，不是所有输入的性能保证。
 
-报告：[e-mcmf-report.json](e-mcmf-report.json)；用例：[e-mcmf-cases.json](e-mcmf-cases.json)；复现：[verify-e-mcmf.py](verify-e-mcmf.py)。该本地验证阶段未进行本轮在线提交，C 的原版 90 分 Wrong Answer 状态保持不变。
+报告：[e-mcmf-report.json](e-mcmf-report.json)；用例：[e-mcmf-cases.json](e-mcmf-cases.json)；复现：[verify-e-mcmf.py](verify-e-mcmf.py)。该本地验证阶段未进行在线提交，C 当时为 90 分 Wrong Answer；后续读入修复见文末。
 
 - `E.cpp` 当前 SHA-256：`2e79fb9fc9a3ad92ec794ce610a4396df0bcf0670ba5c48cbc5a7b47db55bf6f`
+
+
+先前重构版：[历史记录](https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f)。
+
+
+## C 本轮修复验证
+
+当前源码 `38fc56230c8c14912879cf00d876c9922f955d70cb1b3f4dddd3b83dd203b96c` 对应 [100 分 Accepted](https://oj.shumeng.tech/record/6b05db38e5d1fced2e45d776)。[本地验证及源码绑定](optimization-20261125/verification.json) · [本轮提交详情](optimization-20261125/submission.json)。
+
+C 仅改变价格读入方式，720 组标准格式与原程序等价，720 组扩展格式通过 O2/UBSan；100 万个合法整数分全部通过转换检查。题面仍按两位小数描述，隐藏测试输入未公开，不将诊断假设写成已知数据事实。

@@ -3,10 +3,10 @@ title: "CSP 201412 五题题解"
 contest: "201412"
 contest_month: "2014-12"
 date: "2026-10-23"
-updated: "2026-11-24"
+updated: "2026-11-25"
 tags: ["CSP", "在线计数", "矩阵遍历", "对角线", "前缀和", "排序", "整数精度", "模拟", "最小生成树", "Kruskal", "并查集", "费用流", "时间展开图", "周期调度"]
 status: "published"
-problems: [{"id": "A", "title": "门禁系统", "tags": ["在线计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a2b3e5d1fced2e45ab01", "source_sha256": "6c7e91b84554d18fc0c9ff20faeebe5621cdde0cfb39e72114d1624efd30f80e", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:44:55.262105+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addba3174ace1cba9a20ee1"}}, {"id": "B", "title": "Z 字形扫描", "tags": ["矩阵遍历", "对角线"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a2f0e5d1fced2e45aba2", "source_sha256": "f1ac108f70335eac6e2634659bcb92e877f0a5672614b4c9bf521d3b808858df", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:46:41.941464+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addbabd74ace1cba9a20f29"}}, {"id": "C", "title": "集合竞价", "tags": ["前缀和", "排序", "整数精度", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：90 分 Wrong Answer（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412C/"}], "oj": {"score": 90.0, "verdict": "Wrong Answer", "record": "https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f", "source_sha256": "da9a660760de1b35e3ac5bd1bbdb3564bea4419d3d694e26f8d18b4fede45504", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "failed", "observed_at": "2026-11-24T14:46:43.474320+00:00"}, "oj_before_refactor": {"status": "failed", "score": 90, "verdict": "Wrong Answer", "record": "https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8"}}, {"id": "D", "title": "最优灌溉", "tags": ["最小生成树", "Kruskal", "并查集"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a37ee5d1fced2e45adb3", "source_sha256": "25fd3e17b3e6c1964c0eff41c751c6656f70a3b7e062ce3eef3024e2fcb0b825", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:48:58.004783+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addbbd074ace1cba9a21026"}}, {"id": "E", "title": "货物调度", "tags": ["费用流", "时间展开图", "周期调度"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a3bce5d1fced2e45ae6f", "source_sha256": "2e79fb9fc9a3ad92ec794ce610a4396df0bcf0670ba5c48cbc5a7b47db55bf6f", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:48:59.573935+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124"}}]
+problems: [{"id": "A", "title": "门禁系统", "tags": ["在线计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a2b3e5d1fced2e45ab01", "source_sha256": "6c7e91b84554d18fc0c9ff20faeebe5621cdde0cfb39e72114d1624efd30f80e", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:44:55.262105+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addba3174ace1cba9a20ee1"}}, {"id": "B", "title": "Z 字形扫描", "tags": ["矩阵遍历", "对角线"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a2f0e5d1fced2e45aba2", "source_sha256": "f1ac108f70335eac6e2634659bcb92e877f0a5672614b4c9bf521d3b808858df", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:46:41.941464+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addbabd74ace1cba9a20f29"}}, {"id": "C", "title": "集合竞价", "tags": ["前缀和", "排序", "整数精度", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412C/"}], "oj": {"score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05db38e5d1fced2e45d776", "source_sha256": "38fc56230c8c14912879cf00d876c9922f955d70cb1b3f4dddd3b83dd203b96c", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T18:46:17.803054+00:00"}, "oj_before_refactor": {"status": "failed", "score": 90, "verdict": "Wrong Answer", "record": "https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8"}, "oj_revisions": [{"score": 90.0, "verdict": "Wrong Answer", "record": "https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f", "source_sha256": "da9a660760de1b35e3ac5bd1bbdb3564bea4419d3d694e26f8d18b4fede45504", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "failed", "observed_at": "2026-11-24T14:46:43.474320+00:00"}]}, {"id": "D", "title": "最优灌溉", "tags": ["最小生成树", "Kruskal", "并查集"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a37ee5d1fced2e45adb3", "source_sha256": "25fd3e17b3e6c1964c0eff41c751c6656f70a3b7e062ce3eef3024e2fcb0b825", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:48:58.004783+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addbbd074ace1cba9a21026"}}, {"id": "E", "title": "货物调度", "tags": ["费用流", "时间展开图", "周期调度"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201412E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201412E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a3bce5d1fced2e45ae6f", "source_sha256": "2e79fb9fc9a3ad92ec794ce610a4396df0bcf0670ba5c48cbc5a7b47db55bf6f", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:48:59.573935+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addbcce74ace1cba9a21124"}}]
 ---
 
 # CSP 201412 五题题解
@@ -127,9 +127,11 @@ int main(){
 
 原版评测：[曙梦 OJ 90 分 Wrong Answer](https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8)。重构版本地验证见 [VALIDATION.md](../tests/201412/VALIDATION.md)。
 
+先前重构版记录：[保留当时的 90 分 Wrong Answer](https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f)。
+
 <!-- refactor-online:C:start -->
 
-重构版评测：90 分 Wrong Answer（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f)。
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05db38e5d1fced2e45d776)。
 
 <!-- refactor-online:C:end -->
 
@@ -143,23 +145,25 @@ int main(){
 - `sell p s`：以价格 `p` 委托卖出 `s` 股。
 - `cancel i`：撤销第 `i` 行的委托。
 
-输出成交价格和最大成交量，价格保留两位小数。此题原版在线评测仍为 90 分，未解决的边界问题见下文说明。
+输出成交价格和最大成交量，价格保留两位小数。
 
 来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP201412C) · [公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP201412C/)。
 
 ### 题解
 
-先读完全部记录并标记撤销，行号包括 `cancel` 行，不能只给买卖单编号。价格固定两位小数，用 `scanf` 分别读取整数、小数部分并换算成整数“分”，避免浮点比较误差；按价格聚合买量和卖量。
+先读完全部记录并标记撤销，行号包括 `cancel` 行，不能只给买卖单编号。价格用 `%lf` 读取，乘 100 后加 0.5 再转为整数“分”，按价格聚合买量和卖量。读入后只用整数比较和计算，不依赖浮点数相等判断。
 
 价格从低到高扫描。初始 `buy` 是全部买量，`sell=0`；到价格 `p` 时先把该价卖量加入 `sell`，此时两者分别准确等于报价不低于 `p` 的买量、报价不高于 `p` 的卖量。计算较小值，若不小于当前最优便更新，以保留较高价格；最后再扣掉该价买量。
 
 买卖量只在委托价处变化，常规集合竞价枚举这些候选价即可；存在正成交量时，最高最优价格必落在某个有效买单报价处。前后缀不变量保证每个候选价的成交量正确。时间 $O(n\log n)$，空间 $O(n)$，总股数用 64 位。
 
-**保留的未满分状态**
+**价格读入与验证**
 
-原版曙梦 OJ 第 2、20 点失败，成绩为 **90 分 Wrong Answer**。历史审计的 2000 组独立对拍和 5 组上界检查尚未定位原因；2026-10-25 的单位股票子集 oracle 又检查了 192759 个正成交量样例，仍无差异。
+价格不超过 10000.00，对全部 100 万个合法整数分逐一转换，均可恢复原值。新的读法也兼容省略小数末尾零的写法；例如 `3.5` 会得到 350 分，而拆成两个整数直接拼接会得到 305 分。
 
-零成交量案例仅核对当前候选价格约定，不能据此排除题面边界差异。本次只重构代码风格，保留原候选价格与零成交约定；本地通过不能视为已修复在线 WA 或取得满分。
+本次只调整读入，保留原来的撤单、成交量和同分取最高价逻辑。720 组标准格式用例与原程序输出一致，另通过 720 组扩展格式检查；O2 和 UBSan 均通过。当前源码已获曙梦 OJ 100 分 Accepted。隐藏测试输入不可见，不能据此断言原来两个错误点的具体格式。
+
+另试过零成交时将价格归零，仍为 [90 分 Wrong Answer](https://oj.shumeng.tech/record/6b05d88ee5d1fced2e45d6a5)，未采用该修改。
 
 历史审计：[本地审计结果](../tests/auction-report.json) · [独立验证器](../tests/auction_regressions.py) · [后续审计统计](../tests/auction-review-v2-report.json)。
 
@@ -193,10 +197,10 @@ int main(){
             e.ok=false;
         }
         else{
-            int x,y;
-            scanf("%d.%d%lld",&x,&y,&e.num);
+            double p;
+            scanf("%lf%lld",&p,&e.num);
             e.op=s[0]=='b';
-            e.p=x*100+y;
+            e.p=(int)(p*100+0.5);
         }
         a.push_back(e);
     }
@@ -459,12 +463,15 @@ int main(){
 
 - [VALIDATION.md](../tests/201412/VALIDATION.md)
 - [c-output-followup-report.json](../tests/201412/c-output-followup-report.json)
+- [decimal-input-validation.json](../tests/201412/decimal-input-validation.json)
 - [details.txt](../tests/201412/details.txt)
 - [e-mcmf-cases.json](../tests/201412/e-mcmf-cases.json)
 - [e-mcmf-report.json](../tests/201412/e-mcmf-report.json)
 - [nightly-review-followup.json](../tests/201412/nightly-review-followup.json)
 - [online-update-report.json](../tests/201412/online-update-report.json)
 - [online-verdicts.json](../tests/201412/online-verdicts.json)
+- [optimization-20261125/submission.json](../tests/201412/optimization-20261125/submission.json)
+- [optimization-20261125/verification.json](../tests/201412/optimization-20261125/verification.json)
 - [prose-final-review.json](../tests/201412/prose-final-review.json)
 - [report.json](../tests/201412/report.json)
 - [retained_oracles.py](../tests/201412/retained_oracles.py)

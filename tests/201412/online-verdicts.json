@@ -50,7 +50,7 @@
       "problem": "C",
       "key": "201412C",
       "state": "judged",
-      "source_sha256": "da9a660760de1b35e3ac5bd1bbdb3564bea4419d3d694e26f8d18b4fede45504",
+      "source_sha256": "38fc56230c8c14912879cf00d876c9922f955d70cb1b3f4dddd3b83dd203b96c",
       "prior_oj_records": [
         {
           "metadata_field": "oj",
@@ -60,10 +60,10 @@
           "record": "https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8"
         }
       ],
-      "record": "https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f",
-      "verdict": "Wrong Answer",
-      "score": 90.0,
-      "observed_at": "2026-11-24T14:46:43.474320+00:00",
+      "record": "https://oj.shumeng.tech/record/6b05db38e5d1fced2e45d776",
+      "verdict": "Accepted",
+      "score": 100,
+      "observed_at": "2026-11-24T18:46:17.803054+00:00",
       "language_id": "cc.cc20o2",
       "language": "C++20/O2"
     },
@@ -109,5 +109,29 @@
       "language_id": "cc.cc20o2",
       "language": "C++20/O2"
     }
-  ]
+  ],
+  "previous_refactored_results": [
+    {
+      "problem": "C",
+      "key": "201412C",
+      "state": "judged",
+      "source_sha256": "da9a660760de1b35e3ac5bd1bbdb3564bea4419d3d694e26f8d18b4fede45504",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "failed",
+          "score": 90,
+          "verdict": "Wrong Answer",
+          "record": "https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f",
+      "verdict": "Wrong Answer",
+      "score": 90.0,
+      "observed_at": "2026-11-24T14:46:43.474320+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    }
+  ],
+  "optimization_candidate_id": "201412C-decimal-v1"
 }
