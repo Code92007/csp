@@ -1,0 +1,60 @@
+{
+  "source_sha256": "8e41f632e8516a57e9eb5c663c7936cfbdc9ea058a053c3a8f28708c6f99bd87",
+  "input_sha256": "ccf74e5ab44697d97ad18f41435a0ca310860c9db51531d3ff91abfbf9e37eed",
+  "construction": {
+    "n": 100000,
+    "q": 100000,
+    "capacity": 262144,
+    "bucket_low": 229376,
+    "bucket_width": 32768,
+    "unique_keys": 100000,
+    "centroid": 1
+  },
+  "independent_checks": [
+    "connected tree, n distinct cumulative masks",
+    "root 1 is unique centroid",
+    "all fixed-hash keys in stated 1/8 bucket interval",
+    "all lamps off and only root toggled: all q+1 answers are parity of toggle count"
+  ],
+  "runs": [
+    {
+      "name": "frozen",
+      "seconds": 8.005369250000001,
+      "state": "timed_out",
+      "timeout_seconds": 8,
+      "output_lines_before_timeout": 32768
+    },
+    {
+      "name": "round3",
+      "seconds": 0.08440241599999965,
+      "state": "all_outputs_passed",
+      "answers": 100001
+    },
+    {
+      "name": "round3",
+      "seconds": 0.07991208299999997,
+      "state": "all_outputs_passed",
+      "answers": 100001
+    },
+    {
+      "name": "round3",
+      "seconds": 0.08295487500000043,
+      "state": "all_outputs_passed",
+      "answers": 100001
+    },
+    {
+      "name": "round3-ubsan",
+      "seconds": 0.12656004100000118,
+      "state": "all_outputs_passed",
+      "answers": 100001
+    }
+  ],
+  "instrumented_process_seeds": [
+    "seed=1795544695976486000",
+    "seed=1795544695994156000",
+    "seed=1795544696010276000",
+    "seed=1795544696024870000",
+    "seed=1795544696038426000"
+  ],
+  "instrumentation_note": "Separate derived binary only prints process seed on stderr; E.cpp has no diagnostic output."
+}

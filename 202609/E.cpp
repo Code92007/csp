@@ -4,6 +4,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int,int> P;
 const int N=1e5+10;
+const ull seed=chrono::steady_clock::now().time_since_epoch().count();
 int n,m,k,q,tot,fa[N],sz[N],ord[N],dis[N];
 ll bit[N],S[N],ans;
 bool vis[N];
@@ -28,7 +29,7 @@ struct Hash{
         val.assign(s,0);
     }
     int pos(ll x){
-        ull h=x+0x9e3779b97f4a7c15ull;
+        ull h=x+seed+0x9e3779b97f4a7c15ull;
         h=(h^(h>>30))*0xbf58476d1ce4e5b9ull;
         h=(h^(h>>27))*0x94d049bb133111ebull;
         int p=(h^(h>>31))&S;

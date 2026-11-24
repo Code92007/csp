@@ -12,7 +12,7 @@
 | B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053b70e5d1fced2e44d372)。 | `4103c0cd5c428919f97be1c656c9c02c8137e0ecbbdf8b3db172df611d1c530e` |
 | C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053bfae5d1fced2e44d470)。 | `022f313e6279caf09fa08cc7963adc8e67ef5ab39475f0efe7835a1dc5bffd59` |
 | D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053ca3e5d1fced2e44d560)。 | `b66586cebc5f4c41bdf7c1fc3614ca36cce5df9b07ea676104ae58cad1e30a35` |
-| E | 重构版评测：50 分 Time Exceeded（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053d35e5d1fced2e44d671)。 | `0d3ca8a7b3c3aece6ae414592803001d2cf9e4a96af421933b0608f9fec3999f` |
+| E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05d79ce5d1fced2e45d666)。 | `8e41f632e8516a57e9eb5c663c7936cfbdc9ea058a053c3a8f28708c6f99bd87` |
 
 [逐题在线结果与原版记录](online-verdicts.json)。
 
@@ -89,3 +89,11 @@ B 的界改为 `(ll)1e8*m*m`，明确从整数类型开始计算；D 的组数�
 [候选源码](performance-attempt/202609E/E.cpp) · [复测详情](performance-attempt/202609E/attempt.json)
 
 <!-- candidate-attempt:E:end -->
+
+
+先前重构版：[历史记录](https://oj.shumeng.tech/record/6b053d35e5d1fced2e44d671)。
+
+
+## E 本轮修复验证
+
+当前源码 `8e41f632e8516a57e9eb5c663c7936cfbdc9ea058a053c3a8f28708c6f99bd87` 对应 [100 分 Accepted](https://oj.shumeng.tech/record/6b05d79ce5d1fced2e45d666)。[本地验证及源码绑定](optimization-20261125/verification.json) · [本轮提交详情](optimization-20261125/submission.json)。
