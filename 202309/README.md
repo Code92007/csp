@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "累加", "平移变换", "前缀积", "前缀和", "旋转变换", "自动微分", "表达式", "栈", "有序集合", "几何", "模拟", "动态树", "树的直径", "动态规划"]
 status: "published"
-problems: [{"id": "A", "title": "坐标变换（其一）", "tags": ["累加", "平移变换"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，1 个保存用例、60 组独立对拍及 0 组边界/压力通过；UBSan 共 61 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16054"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305812891", "source_sha256": "0279d6eff2d720df137c232c32f82dd060f4a83ca77eda7cd91d28fbf406eef0"}}, {"id": "B", "title": "坐标变换（其二）", "tags": ["前缀积", "前缀和", "旋转变换"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，2 个保存用例、601 组独立对拍及 9 组边界/压力通过；UBSan 共 612 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16055"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490746", "code_git_blob": "20776d0627c78f6c02502fc311a5648a5f01a3cb", "note": "上一版代码记录；本版新增高低角度前缀精度修复，以曙梦复验为准"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305835741", "source_sha256": "6a128e8d781e9fde0cb77ad2fa22862e21d8b03b9afeb979f5fad8c2c84f0bfc"}}, {"id": "C", "title": "梯度求解", "tags": ["自动微分", "表达式", "栈"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 0 组边界/压力通过；UBSan 共 102 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16056"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305836471", "source_sha256": "4f46c6f4886a14d0390fc781dfbf15d9ce6abc98426c177a272efd4e7ec99fb2"}}, {"id": "D", "title": "阴阳龙", "tags": ["有序集合", "几何", "模拟"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，1 个保存用例、820 组独立对拍及 261 组边界/压力通过；UBSan 共 1082 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16057"}], "previous_oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b", "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a", "note": "上一版快版的评测记录；当前宽坐标源码已单独在两平台复验。"}, "previous_luogu": {"status": "failed", "score": 30, "verdict": "Unaccepted (Wrong Answer on 14/20 tests)", "record": "https://www.luogu.com.cn/record/305837114", "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a", "note": "上一版快版的评测记录；当前宽坐标源码已单独在两平台复验。"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6ade253b74ace1cba9a24563", "source_sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305916165", "source_sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815"}, "validation_history": [{"source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a", "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b", "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a"}, "luogu": {"status": "failed", "score": 30, "verdict": "Unaccepted (Wrong Answer on 14/20 tests)", "record": "https://www.luogu.com.cn/record/305837114", "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a"}, "note": "旧快版：曙梦100分、洛谷30分。失败的具体根因尚未定位。"}, {"source_sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553", "oj": {"status": "failed", "score": 15, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addca8774ace1cba9a21e22", "source_sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490899", "source_sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}}]}, {"id": "E", "title": "阻击", "tags": ["动态树", "树的直径", "动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：C++17 编译通过，1 个保存用例、80 组独立对拍及 2 组边界/压力通过；UBSan 共 83 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16058"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305838452", "source_sha256": "390e1e27f14b0e1b2b7b4a87d6d843c5179d50d32ff03fdf9fa9608b41359b8a"}}]
+problems: [{"id": "A", "title": "坐标变换（其一）", "tags": ["累加", "平移变换"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16054"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0560b9e5d1fced2e45143c", "source_sha256": "e0e1026922b26c7a030358b3cf15b0130c67af36cf22171d01e2390d43cf1953", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T10:03:04.039086+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305812891", "source_sha256": "0279d6eff2d720df137c232c32f82dd060f4a83ca77eda7cd91d28fbf406eef0"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"}}, {"id": "B", "title": "坐标变换（其二）", "tags": ["前缀积", "前缀和", "旋转变换"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16055"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05612de5d1fced2e4514dc", "source_sha256": "9892d789c821e38057d82f9427f61f2133b793936a35faacaa04213d9d5b9cab", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T10:05:05.776847+00:00"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490746", "code_git_blob": "20776d0627c78f6c02502fc311a5648a5f01a3cb", "note": "上一版代码记录；本版新增高低角度前缀精度修复，以曙梦复验为准"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305835741", "source_sha256": "6a128e8d781e9fde0cb77ad2fa22862e21d8b03b9afeb979f5fad8c2c84f0bfc"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52"}}, {"id": "C", "title": "梯度求解", "tags": ["自动微分", "表达式", "栈"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16056"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b056192e5d1fced2e451598", "source_sha256": "12d1b3aa35786a9ab6557c570f472a8a8bb804071caf1d60dadc6a5f96590e3c", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T10:06:37.944298+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305836471", "source_sha256": "4f46c6f4886a14d0390fc781dfbf15d9ce6abc98426c177a272efd4e7ec99fb2"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"}}, {"id": "D", "title": "阴阳龙", "tags": ["有序集合", "几何", "模拟"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16057"}], "previous_oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b", "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a", "note": "上一版快版的评测记录；当前宽坐标源码已单独在两平台复验。"}, "previous_luogu": {"status": "failed", "score": 30, "verdict": "Unaccepted (Wrong Answer on 14/20 tests)", "record": "https://www.luogu.com.cn/record/305837114", "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a", "note": "上一版快版的评测记录；当前宽坐标源码已单独在两平台复验。"}, "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0561ffe5d1fced2e4515db", "source_sha256": "ab83002cedddbfbdb3f37dcaf4ff25caa17c8398a75ef169eb4b2434f1d35b85", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T10:08:23.080094+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305916165", "source_sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815"}, "validation_history": [{"source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a", "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b", "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a"}, "luogu": {"status": "failed", "score": 30, "verdict": "Unaccepted (Wrong Answer on 14/20 tests)", "record": "https://www.luogu.com.cn/record/305837114", "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a"}, "note": "旧快版：曙梦100分、洛谷30分。失败的具体根因尚未定位。"}, {"source_sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553", "oj": {"status": "failed", "score": 15, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addca8774ace1cba9a21e22", "source_sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490899", "source_sha256": "cf65f5b624668a7c99fc6d7e9412abbd41af73b15b9ba405bf15aad1eb59f553", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}}], "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6ade253b74ace1cba9a24563", "source_sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815"}}, {"id": "E", "title": "阻击", "tags": ["动态树", "树的直径", "动态规划"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202309E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16058"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b056263e5d1fced2e4516b8", "source_sha256": "f354d1795cf5471e77d4553bf89a2aa7bce5c9e125399be5ee5539321d6bd40e", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T10:10:06.441488+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305838452", "source_sha256": "390e1e27f14b0e1b2b7b4a87d6d843c5179d50d32ff03fdf9fa9608b41359b8a"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"}}]
 ---
 
 # CSP 202309 五题题解
@@ -20,6 +20,12 @@ problems: [{"id": "A", "title": "坐标变换（其一）", "tags": ["累加", "
 标签：`累加` · `平移变换`
 
 本地：61 组优化版、61 组 UBSan 验证通过，详见 [验证记录](../tests/202309/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0560b9e5d1fced2e45143c)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -78,6 +84,12 @@ int main(){
 标签：`前缀积` · `前缀和` · `旋转变换`
 
 本地：612 组优化版、612 组 UBSan 验证通过，详见 [验证记录](../tests/202309/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05612de5d1fced2e4514dc)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -185,6 +197,12 @@ int main(){
 
 本地：102 组优化版、102 组 UBSan 验证通过，详见 [验证记录](../tests/202309/VALIDATION.md)。
 
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b056192e5d1fced2e451598)。
+
+<!-- refactor-online:C:end -->
+
 ### 题意
 
 给出由整数、变量 $x_1,\ldots,x_n$ 和加减乘组成的后缀表达式。每次查询指定一个变量和一组赋值，求表达式对该变量在该点的偏导数。
@@ -282,6 +300,14 @@ int main(){
 标签：`有序集合` · `几何` · `模拟`
 
 本地：1082 组优化版、1082 组 UBSan 验证通过，详见 [验证记录](../tests/202309/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0561ffe5d1fced2e4515db)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -460,6 +486,12 @@ int main(){
 标签：`动态树` · `树的直径` · `动态规划`
 
 本地：83 组优化版、83 组 UBSan 验证通过，详见 [验证记录](../tests/202309/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b056263e5d1fced2e4516b8)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -690,6 +722,8 @@ int main(){
 - [current-sources.json](../tests/202309/current-sources.json)
 - [extra.py](../tests/202309/extra.py)
 - [naming-followup.json](../tests/202309/naming-followup.json)
+- [online-update-report.json](../tests/202309/online-update-report.json)
+- [online-verdicts.json](../tests/202309/online-verdicts.json)
 - [summary.json](../tests/202309/summary.json)
 
 <!-- local-validation-attachments:end -->

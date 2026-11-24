@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "kind": "refactored-source-online-results",
+  "contest": "202309",
+  "plan_sha256": "cc6c06b57baef6e00ef92a3aa61b5463151d451d93d7634f57f6981089e24c4f",
+  "problems": [
+    {
+      "problem": "A",
+      "key": "202309A",
+      "state": "judged",
+      "source_sha256": "e0e1026922b26c7a030358b3cf15b0130c67af36cf22171d01e2390d43cf1953",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce8c8a67df0b81749bdf6"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b0560b9e5d1fced2e45143c",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T10:03:04.039086+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "B",
+      "key": "202309B",
+      "state": "judged",
+      "source_sha256": "9892d789c821e38057d82f9427f61f2133b793936a35faacaa04213d9d5b9cab",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "verdict": "Accepted",
+          "record": "https://oj.shumeng.tech/record/6addb80574ace1cba9a20d52"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b05612de5d1fced2e4514dc",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T10:05:05.776847+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "C",
+      "key": "202309C",
+      "state": "judged",
+      "source_sha256": "12d1b3aa35786a9ab6557c570f472a8a8bb804071caf1d60dadc6a5f96590e3c",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce8cca67df0b81749be25"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b056192e5d1fced2e451598",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T10:06:37.944298+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "D",
+      "key": "202309D",
+      "state": "judged",
+      "source_sha256": "ab83002cedddbfbdb3f37dcaf4ff25caa17c8398a75ef169eb4b2434f1d35b85",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "verdict": "Accepted",
+          "record": "https://oj.shumeng.tech/record/6ade253b74ace1cba9a24563",
+          "source_sha256": "7582da8d38df5972c56e08c065b30d2add892ced43ea695e431a262a65f8b815"
+        },
+        {
+          "metadata_field": "previous_oj",
+          "status": "accepted",
+          "score": 100,
+          "verdict": "Accepted",
+          "record": "https://oj.shumeng.tech/record/6addfd5374ace1cba9a2324b",
+          "source_sha256": "746784b9f38218ef1ad4b9f61f94c36aa4d8fa809310df1fee29028a4b61e83a",
+          "note": "上一版快版的评测记录；当前宽坐标源码已单独在两平台复验。"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b0561ffe5d1fced2e4515db",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T10:08:23.080094+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "E",
+      "key": "202309E",
+      "state": "judged",
+      "source_sha256": "f354d1795cf5471e77d4553bf89a2aa7bce5c9e125399be5ee5539321d6bd40e",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce8cfa67df0b81749be4d"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b056263e5d1fced2e4516b8",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T10:10:06.441488+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    }
+  ]
+}
