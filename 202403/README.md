@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "计数", "时间戳", "集合", "哈希", "大小写转换", "字符串解析", "线性代数", "高斯消元", "模运算", "模拟", "双向链表", "优先队列", "树", "链表", "DFS序", "树状数组"]
 status: "published"
-problems: [{"id": "A", "title": "词频统计", "tags": ["计数", "时间戳"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16031"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce824a67df0b81749bba4"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305704089", "source_sha256": "996c2338843e673e4a1ec169e06de90b2bee6c94607b6958dafe8ac6d1c72584"}}, {"id": "B", "title": "相似度计算", "tags": ["集合", "哈希", "大小写转换"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16032"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce826a67df0b81749bbbe"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305705069", "source_sha256": "30ce8de0093ddd70c25bb3cfb9525bc861dcb791c7c378067b3c45fb00a699e4"}}, {"id": "C", "title": "化学方程式配平", "tags": ["字符串解析", "线性代数", "高斯消元", "模运算"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16033"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce828a67df0b81749bbd1"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305706100", "source_sha256": "8e62d557e567c2b940d63ef864f210972ee802194bbb6648a542f6aa636361b9"}}, {"id": "D", "title": "十滴水", "tags": ["模拟", "双向链表", "优先队列"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16034"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce829a67df0b81749bbe8"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305707098", "source_sha256": "56cd351dad5356979e24157a51d0d926a323500db0a838858d44d98dfbdac5c5"}}, {"id": "E", "title": "文件夹合并", "tags": ["树", "链表", "DFS序", "树状数组"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16035"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce82ba67df0b81749bbfa"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305803314", "source_sha256": "dee2d9ee55c9b370bc2d6cec4977d220e26fea9b9af6d77d03d10625d712a469"}}]
+problems: [{"id": "A", "title": "词频统计", "tags": ["计数", "时间戳"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16031"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055caae5d1fced2e450bcb", "source_sha256": "46dcec9c7c37722118b60ae8b644e4e48b983b7852424db54862772aa5ce6845", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:45:35.183256+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305704089", "source_sha256": "996c2338843e673e4a1ec169e06de90b2bee6c94607b6958dafe8ac6d1c72584"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce824a67df0b81749bba4"}}, {"id": "B", "title": "相似度计算", "tags": ["集合", "哈希", "大小写转换"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16032"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055d18e5d1fced2e450c43", "source_sha256": "f4af6528d2b1e5ee7cc980c2793f4e4523d1f09d4fe81ec584a7ac06300b80bb", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:47:32.609625+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305705069", "source_sha256": "30ce8de0093ddd70c25bb3cfb9525bc861dcb791c7c378067b3c45fb00a699e4"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce826a67df0b81749bbbe"}}, {"id": "C", "title": "化学方程式配平", "tags": ["字符串解析", "线性代数", "高斯消元", "模运算"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16033"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055d7be5d1fced2e450c99", "source_sha256": "0bf263fdafe6f1cc25241d3dcac911f22deadf7e83bbd9f4454af39e6c7e8add", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:49:04.043780+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305706100", "source_sha256": "8e62d557e567c2b940d63ef864f210972ee802194bbb6648a542f6aa636361b9"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce828a67df0b81749bbd1"}}, {"id": "D", "title": "十滴水", "tags": ["模拟", "双向链表", "优先队列"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16034"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055dd5e5d1fced2e450da5", "source_sha256": "6e3a2ecf632d0c96f9168e73c5961d9c57a6f36c6a9c2e8c6b6bcfe31888c3e8", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:51:21.460166+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305707098", "source_sha256": "56cd351dad5356979e24157a51d0d926a323500db0a838858d44d98dfbdac5c5"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce829a67df0b81749bbe8"}}, {"id": "E", "title": "文件夹合并", "tags": ["树", "链表", "DFS序", "树状数组"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P16035"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202403E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055e2ce5d1fced2e450e1f", "source_sha256": "bd8198461f1d1aea7e989e516d124e7996419cfbf83fba1627762d0c795df149", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:53:37.973412+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305803314", "source_sha256": "dee2d9ee55c9b370bc2d6cec4977d220e26fea9b9af6d77d03d10625d712a469"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce82ba67df0b81749bbfa"}}]
 ---
 
 # CSP 202403 五题题解
@@ -19,7 +19,13 @@ problems: [{"id": "A", "title": "词频统计", "tags": ["计数", "时间戳"],
 
 标签：`计数` · `时间戳`
 
-原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce824a67df0b81749bba4)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305704089)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce824a67df0b81749bba4)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305704089)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055caae5d1fced2e450bcb)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -77,7 +83,13 @@ int main(){
 
 标签：`集合` · `哈希` · `大小写转换`
 
-原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce826a67df0b81749bbbe)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305705069)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce826a67df0b81749bbbe)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305705069)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055d18e5d1fced2e450c43)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -138,7 +150,13 @@ int main(){
 
 标签：`字符串解析` · `线性代数` · `高斯消元` · `模运算`
 
-原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce828a67df0b81749bbd1)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305706100)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce828a67df0b81749bbd1)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305706100)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055d7be5d1fced2e450c99)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -274,7 +292,13 @@ int main(){
 
 标签：`模拟` · `双向链表` · `优先队列`
 
-原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce829a67df0b81749bbe8)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305707098)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce829a67df0b81749bbe8)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305707098)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055dd5e5d1fced2e450da5)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -357,7 +381,13 @@ int main(){
 
 标签：`树` · `链表` · `DFS序` · `树状数组`
 
-原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce82ba67df0b81749bbfa)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305803314)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce82ba67df0b81749bbfa)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305803314)。重构版本地验证见 [VALIDATION.md](../tests/202403/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055e2ce5d1fced2e450e1f)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -493,6 +523,8 @@ int main(){
 
 - [VALIDATION.md](../tests/202403/VALIDATION.md)
 - [details.txt](../tests/202403/details.txt)
+- [online-update-report.json](../tests/202403/online-update-report.json)
+- [online-verdicts.json](../tests/202403/online-verdicts.json)
 - [prose-final-review.json](../tests/202403/prose-final-review.json)
 - [report.json](../tests/202403/report.json)
 - [retained_oracles.py](../tests/202403/retained_oracles.py)
