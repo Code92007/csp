@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "模拟", "边界判断", "前缀和", "前后缀最大值", "LRU", "链表", "哈希表", "BFS", "并查集", "区间遍历", "贪心", "单调栈"]
 status: "published"
-problems: [{"id": "A", "title": "移动", "tags": ["模拟", "边界判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c2a67df0b81749b98e"}}, {"id": "B", "title": "梦境巡查", "tags": ["前缀和", "前后缀最大值"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c3a67df0b81749b994"}}, {"id": "C", "title": "缓存模拟", "tags": ["LRU", "链表", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c5a67df0b81749b99a"}}, {"id": "D", "title": "跳房子", "tags": ["BFS", "并查集", "区间遍历"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c6a67df0b81749b99e"}}, {"id": "E", "title": "梦魔", "tags": ["贪心", "单调栈", "前缀和"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c9a67df0b81749b9c2"}}]
+problems: [{"id": "A", "title": "移动", "tags": ["模拟", "边界判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0556cbe5d1fced2e450069", "source_sha256": "fe39fd7880e10e9da3d6b833b2cc868b2f8f72189564cae735d7ee95c325fd67", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:20:43.265050+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c2a67df0b81749b98e"}}, {"id": "B", "title": "梦境巡查", "tags": ["前缀和", "前后缀最大值"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055731e5d1fced2e450128", "source_sha256": "c2319119bc4d46c845be647885b597f61bc21db2e0e2c24f1ad6fdd51a1b7455", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:22:19.484503+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c3a67df0b81749b994"}}, {"id": "C", "title": "缓存模拟", "tags": ["LRU", "链表", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0557a0e5d1fced2e4501c3", "source_sha256": "b2de022babdf4bf41269f23bbe1219cfbacc356b98d1e7fd9a68a19eeb107c53", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:24:04.884139+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c5a67df0b81749b99a"}}, {"id": "D", "title": "跳房子", "tags": ["BFS", "并查集", "区间遍历"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055804e5d1fced2e450296", "source_sha256": "3a25bb512f48002f27b21559bc763469cfe6a0e9dc64d27c5f925bbf4a11751b", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:25:47.381323+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c6a67df0b81749b99e"}}, {"id": "E", "title": "梦魔", "tags": ["贪心", "单调栈", "前缀和"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202412E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202412E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055866e5d1fced2e450371", "source_sha256": "7ae5e5f1e5eed6aa0bd9083b1c74bc0619a098ade17b779b4c8d52bce0f93511", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:27:30.935888+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7c9a67df0b81749b9c2"}}]
 ---
 
 # CSP 202412 五题题解
@@ -19,7 +19,13 @@ problems: [{"id": "A", "title": "移动", "tags": ["模拟", "边界判断"], "s
 
 标签：`模拟` · `边界判断`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c2a67df0b81749b98e)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c2a67df0b81749b98e)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0556cbe5d1fced2e450069)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -80,7 +86,13 @@ int main(){
 
 标签：`前缀和` · `前后缀最大值`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c3a67df0b81749b994)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c3a67df0b81749b994)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055731e5d1fced2e450128)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -160,7 +172,13 @@ int main(){
 
 标签：`LRU` · `链表` · `哈希表` · `模拟`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c5a67df0b81749b99a)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c5a67df0b81749b99a)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0557a0e5d1fced2e4501c3)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -236,7 +254,13 @@ int main(){
 
 标签：`BFS` · `并查集` · `区间遍历`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c6a67df0b81749b99e)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c6a67df0b81749b99e)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055804e5d1fced2e450296)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -326,7 +350,13 @@ int main(){
 
 标签：`贪心` · `单调栈` · `前缀和`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c9a67df0b81749b9c2)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce7c9a67df0b81749b9c2)。重构版本地验证见 [VALIDATION.md](../tests/202412/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055866e5d1fced2e450371)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -457,6 +487,8 @@ int main(){
 - [details.txt](../tests/202412/details.txt)
 - [e-sizeof-before.json](../tests/202412/e-sizeof-before.json)
 - [e-sizeof-followup-report.json](../tests/202412/e-sizeof-followup-report.json)
+- [online-update-report.json](../tests/202412/online-update-report.json)
+- [online-verdicts.json](../tests/202412/online-verdicts.json)
 - [prose-final-review.json](../tests/202412/prose-final-review.json)
 - [report.json](../tests/202412/report.json)
 - [retained_oracles.py](../tests/202412/retained_oracles.py)
