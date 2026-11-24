@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "数位分解", "网格扫描", "同时更新", "BFS", "连通块", "网格模拟", "欧拉路径", "Hierholzer", "字典序", "线性代数", "GF(2)", "线性基", "多项式", "bitset"]
 status: "published"
-problems: [{"id": "A", "title": "数位之和", "tags": ["数位分解"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb0ce74ace1cba9a20733"}}, {"id": "B", "title": "消除类游戏", "tags": ["网格扫描", "同时更新"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb15174ace1cba9a207cc"}}, {"id": "C", "title": "画图", "tags": ["BFS", "连通块", "网格模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb24a74ace1cba9a2083e"}}, {"id": "D", "title": "送货", "tags": ["欧拉路径", "Hierholzer", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb32d74ace1cba9a20871"}}, {"id": "E", "title": "矩阵", "tags": ["线性代数", "GF(2)", "线性基", "多项式", "bitset"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb3b974ace1cba9a2089c"}}]
+problems: [{"id": "A", "title": "数位之和", "tags": ["数位分解"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05941de5d1fced2e458b4e", "source_sha256": "5e60cd1085007422b523f3d09bfb3f5bd2fc57566df6204f6f6947d6dd3e869a", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:43:41.919752+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb0ce74ace1cba9a20733"}}, {"id": "B", "title": "消除类游戏", "tags": ["网格扫描", "同时更新"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05948fe5d1fced2e458c9d", "source_sha256": "5ada26eb6c299b8d9a4d7b216b8c34dd794f01723bc8058e110dd16f74b0b5ac", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:44:44.064226+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb15174ace1cba9a207cc"}}, {"id": "C", "title": "画图", "tags": ["BFS", "连通块", "网格模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0594cde5d1fced2e458d64", "source_sha256": "5759c34089bab4c9928854999b052a174e339b4c6aa8e79bb489b6791a6da8e0", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:46:00.173201+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb24a74ace1cba9a2083e"}}, {"id": "D", "title": "送货", "tags": ["欧拉路径", "Hierholzer", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b059519e5d1fced2e458e37", "source_sha256": "90a4c0063b35f9fb8011a7fb8464938a8b09af724602e6e176fc317bb4defa79", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:47:15.109763+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb32d74ace1cba9a20871"}}, {"id": "E", "title": "矩阵", "tags": ["线性代数", "GF(2)", "线性基", "多项式", "bitset"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201512E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201512E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b059564e5d1fced2e458f17", "source_sha256": "2379b70633a90f2df0d66ee0a465c94838e2afcfc565c42205f28619dac07431", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:48:15.220263+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb3b974ace1cba9a2089c"}}]
 ---
 
 # CSP 201512 五题题解
@@ -19,7 +19,13 @@ problems: [{"id": "A", "title": "数位之和", "tags": ["数位分解"], "statu
 
 标签：`数位分解`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb0ce74ace1cba9a20733)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb0ce74ace1cba9a20733)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05941de5d1fced2e458b4e)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -62,7 +68,13 @@ int main(){
 
 标签：`网格扫描` · `同时更新`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb15174ace1cba9a207cc)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb15174ace1cba9a207cc)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05948fe5d1fced2e458c9d)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -126,7 +138,13 @@ int main(){
 
 标签：`BFS` · `连通块` · `网格模拟`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb24a74ace1cba9a2083e)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb24a74ace1cba9a2083e)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0594cde5d1fced2e458d64)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -223,7 +241,13 @@ int main(){
 
 标签：`欧拉路径` · `Hierholzer` · `字典序`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb32d74ace1cba9a20871)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb32d74ace1cba9a20871)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059519e5d1fced2e458e37)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -315,7 +339,13 @@ int main(){
 
 标签：`线性代数` · `GF(2)` · `线性基` · `多项式` · `bitset`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb3b974ace1cba9a2089c)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb3b974ace1cba9a2089c)。重构版本地验证见 [VALIDATION.md](../tests/201512/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059564e5d1fced2e458f17)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -460,6 +490,8 @@ int main(){
 - [array-name-followup-report.json](../tests/201512/array-name-followup-report.json)
 - [details.txt](../tests/201512/details.txt)
 - [nightly-review-followup.json](../tests/201512/nightly-review-followup.json)
+- [online-update-report.json](../tests/201512/online-update-report.json)
+- [online-verdicts.json](../tests/201512/online-verdicts.json)
 - [prose-final-review.json](../tests/201512/prose-final-review.json)
 - [report.json](../tests/201512/report.json)
 - [retained_oracles.py](../tests/201512/retained_oracles.py)
