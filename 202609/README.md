@@ -512,6 +512,12 @@ int main(){
 
 <!-- refactor-online:E:end -->
 
+<!-- candidate-attempt:E:start -->
+
+查询优化候选另获 [50 分 Time Exceeded](https://oj.shumeng.tech/record/6b05aa50e5d1fced2e45bc4d)。本页继续展示首轮源码；该候选的源码与判题归属单独保存在 [复测记录](../tests/202609/performance-attempt/202609E/attempt.json) 中。
+
+<!-- candidate-attempt:E:end -->
+
 旧记录于 2026-11-24 复核，同样为 **50 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](../tests/202609/prior-record-observation.json)。
 
 ### 题意
@@ -766,6 +772,8 @@ int main(){
 - [e-mask-followup-report.json](../tests/202609/e-mask-followup-report.json)
 - [online-update-report.json](../tests/202609/online-update-report.json)
 - [online-verdicts.json](../tests/202609/online-verdicts.json)
+- [performance-attempt/202609E/E.cpp](../tests/202609/performance-attempt/202609E/E.cpp)
+- [performance-attempt/202609E/attempt.json](../tests/202609/performance-attempt/202609E/attempt.json)
 - [prior-record-observation.json](../tests/202609/prior-record-observation.json)
 - [verify-bd-final.py](../tests/202609/verify-bd-final.py)
 

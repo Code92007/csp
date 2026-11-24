@@ -79,3 +79,13 @@ B 的界改为 `(ll)1e8*m*m`，明确从整数类型开始计算；D 的组数�
 ## 旧版在线记录复核
 
 旧记录于 2026-11-24 复核，同样为 **50 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](prior-record-observation.json)。
+
+<!-- candidate-attempt:E:start -->
+
+## E 查询优化尝试（未采用）
+
+候选真实结果为 [50 分 Time Exceeded](https://oj.shumeng.tech/record/6b05aa50e5d1fced2e45bc4d)，未提高首轮得分。正式源码和当前评测表保留原版本，候选以独立哈希归档，不作为当前源码的判题。
+
+[候选源码](performance-attempt/202609E/E.cpp) · [复测详情](performance-attempt/202609E/attempt.json)
+
+<!-- candidate-attempt:E:end -->

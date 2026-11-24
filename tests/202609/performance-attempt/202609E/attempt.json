@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "kind": "independent-candidate-attempt-not-adopted",
+  "key": "202609E",
+  "current_source_sha256": "0d3ca8a7b3c3aece6ae414592803001d2cf9e4a96af421933b0608f9fec3999f",
+  "candidate_source_sha256": "14b59ce21190a3194248a0d21f457eb1061aabb3883605a22fcdd821ddfbdb15",
+  "candidate_source": "E.cpp",
+  "candidate_adopted": false,
+  "reason": "Online score did not improve; preserve the reviewed current source and keep the attempted candidate as separate evidence.",
+  "record": "https://oj.shumeng.tech/record/6b05aa50e5d1fced2e45bc4d",
+  "verdict": {
+    "status": "Time Exceeded",
+    "score": 50.0,
+    "observed_at": "2026-11-24T15:18:50.623131+00:00",
+    "note": ""
+  },
+  "before_records": [
+    {
+      "metadata_field": "oj",
+      "status": "accepted",
+      "score": 100,
+      "record": "https://oj.shumeng.tech/record/6adce90ea67df0b81749bfe2"
+    },
+    {
+      "record": "https://oj.shumeng.tech/record/6b053d35e5d1fced2e44d671",
+      "kind": "first-refactor-online-pass",
+      "source_sha256": "0d3ca8a7b3c3aece6ae414592803001d2cf9e4a96af421933b0608f9fec3999f",
+      "status": "Time Exceeded",
+      "score": 50.0,
+      "observed_at": "2026-11-24T07:33:07.900743+00:00",
+      "note": ""
+    }
+  ],
+  "validation_evidence": [
+    {
+      "file": "reports/202609E-performance/combined/review.json",
+      "sha256": "d55eb6af9c7fc4b718bbcba8ff3006f9937c8fc13a505ef0384b93fa7080a6c1"
+    },
+    {
+      "file": "reports/revision-submissions/cpp17-compilation.json",
+      "sha256": "6f769980769166091164dbadbdac39ecfee65e1eae4ccf6802d4b8c5cb983cbf"
+    }
+  ]
+}
