@@ -4,9 +4,9 @@ contest: "202509"
 contest_month: "2025-09"
 date: "2026-10-23"
 updated: "2026-11-24"
-tags: ["CSP", "几何判断", "定点数", "计数", "矩阵枚举", "差分", "区间并集", "字符串解析", "Huffman", "双端队列", "模拟", "树", "LCA", "可持久化线段树", "mex", "动态规划", "离散凸性", "优先队列", "拉格朗日优化"]
+tags: ["CSP", "几何判断", "定点数", "计数", "矩阵枚举", "差分", "区间并集", "字符串解析", "Huffman", "双端队列", "模拟", "树", "mex", "动态规划", "离散凸性", "优先队列", "拉格朗日优化", "排列", "线性预处理"]
 status: "published"
-problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点数", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b054563e5d1fced2e44e250", "source_sha256": "ebec3287fd4999bc4e9b986691e1526e7b58bc3e2651034abfb9c2f4d83fada7", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:07:09.705867+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce736a67df0b81749b65c"}}, {"id": "B", "title": "水印检查", "tags": ["矩阵枚举", "差分", "区间并集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0545cfe5d1fced2e44e2f0", "source_sha256": "0b3b127e87de2706f8c194544025e02b807687714d7f0d380b4512344bd0a2d8", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:08:38.008971+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce738a67df0b81749b678"}}, {"id": "C", "title": "HTTP 头信息", "tags": ["字符串解析", "Huffman", "双端队列", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05464fe5d1fced2e44e407", "source_sha256": "e9d6976a5a6a902e5cfa1f3f6320acead297ab8fff6b12b84f709036476ca2a9", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:10:43.189587+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce739a67df0b81749b685"}}, {"id": "D", "title": "造题计划（上）", "tags": ["树", "LCA", "可持久化线段树", "mex"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：70 分 Time Exceeded（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/"}], "oj": {"score": 70.0, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5", "source_sha256": "9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "failed", "observed_at": "2026-11-24T08:13:58.489531+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a"}}, {"id": "E", "title": "造题计划（下）", "tags": ["动态规划", "离散凸性", "优先队列", "拉格朗日优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05477ce5d1fced2e44e5ea", "source_sha256": "f30997019754ecdbad11e1e9a94bec8515d9360f4681cd3deeaded7e9d073288", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:15:49.681826+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1"}}]
+problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点数", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b054563e5d1fced2e44e250", "source_sha256": "ebec3287fd4999bc4e9b986691e1526e7b58bc3e2651034abfb9c2f4d83fada7", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:07:09.705867+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce736a67df0b81749b65c"}}, {"id": "B", "title": "水印检查", "tags": ["矩阵枚举", "差分", "区间并集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0545cfe5d1fced2e44e2f0", "source_sha256": "0b3b127e87de2706f8c194544025e02b807687714d7f0d380b4512344bd0a2d8", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:08:38.008971+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce738a67df0b81749b678"}}, {"id": "C", "title": "HTTP 头信息", "tags": ["字符串解析", "Huffman", "双端队列", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05464fe5d1fced2e44e407", "source_sha256": "e9d6976a5a6a902e5cfa1f3f6320acead297ab8fff6b12b84f709036476ca2a9", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:10:43.189587+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce739a67df0b81749b685"}}, {"id": "D", "title": "造题计划（上）", "tags": ["树", "排列", "mex", "线性预处理"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05ab06e5d1fced2e45bdac", "source_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T15:20:33.765126+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a"}, "oj_revisions": [{"score": 70.0, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5", "source_sha256": "9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "failed", "observed_at": "2026-11-24T08:13:58.489531+00:00"}]}, {"id": "E", "title": "造题计划（下）", "tags": ["动态规划", "离散凸性", "优先队列", "拉格朗日优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05477ce5d1fced2e44e5ea", "source_sha256": "f30997019754ecdbad11e1e9a94bec8515d9360f4681cd3deeaded7e9d073288", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:15:49.681826+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1"}}]
 ---
 
 # CSP 202509 五题题解
@@ -331,13 +331,15 @@ int main(){
 
 ## D. 造题计划（上）
 
-标签：`树` · `LCA` · `可持久化线段树` · `mex`
+标签：`树` · `排列` · `mex` · `线性预处理`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)。
+原版历史记录为 [100 分 Accepted](https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a)；首轮重构版为 [70 分 Time Exceeded](https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5)。下方为本次线性版本，两个已有记录分别保留原版与首轮版本的归属。
+
+本地已通过独立路径枚举对拍及最大规模链、星形树检查；详见 [本地结果](../tests/202509/performance-revision/202509D/initial-linear-report.json)和[独立复核](../tests/202509/performance-revision/202509D/independent-review-review.md)。
 
 <!-- refactor-online:D:start -->
 
-重构版评测：70 分 Time Exceeded（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5)。
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05ab06e5d1fced2e45bdac)。
 
 <!-- refactor-online:D:end -->
 
@@ -353,128 +355,134 @@ int main(){
 
 ### 题解
 
-**把路径拆成四条根路径**
+**把 mex 转成路径外的最小值**
 
-以 1 为根，建立每个点 $u$ 对应的可持久化线段树版本，记录根到 $u$ 的点权出现次数。若 $w=\operatorname{LCA}(u,v)$，则查询路径的计数为：
+所有点权恰好组成 $0,1,\ldots,n-1$ 的排列，因此一个数没有出现在路径上，当且仅当它对应的点在路径外。于是答案就是路径外的最小点权；若路径经过所有点，答案为 $n$。
 
-$$\operatorname{root}(u)+\operatorname{root}(v)-\operatorname{root}(w)-\operatorname{root}(\operatorname{parent}(w)).$$
+设权值为 $0$ 的点是 $z$，以它为根。用 $\operatorname{bel}[u]$ 表示 $u$ 所在的根子分支，即根到 $u$ 的路径经过的第一个儿子；根自身的标记为 $0$。
 
-公共祖先恰好保留一次。点 0 的版本全为零；代码先建一棵空树，每次插入只复制根到叶的一条链，其余节点共享。树的遍历使用队列式数组，避免链状树导致 DFS 栈溢出，LCA 使用倍增。
+若两个端点位于同一个根子分支，路径不经过 $z$，答案直接为 $0$。其余情况下，路径经过根，可以拆成从根到两个端点的两条链。
 
-**在线段树上找第一个空缺**
+**预处理一条根链之外的最小值**
 
-值域取 $[0,n]$，因为 $n$ 一定没有出现。若当前左半区间的权值个数等于其长度，说明每个数都已出现，mex 必在右侧；否则向左侧继续找。
+对于非根节点 $u$，设 $b[u]$ 为它所在根子分支中，不在根到 $u$ 这条链上的最小点权；若不存在这样的点，就记为无穷大。根不属于任何子分支，令 $b[z]=\mathrm{INF}$。
 
-这个判定依赖全局权值互不相同。若允许重复，计数等于区间长度就不能代表每个数都出现。
+先自底向上求每个子树的最小点权 $\operatorname{sub}[u]$。同时记录 $u$ 的儿子子树中最小、次小的 $\operatorname{sub}$，分别为 $\operatorname{mn}[u]$、$\operatorname{sn}[u]$，并用 $\operatorname{id}[u]$ 记录最小值来自哪个儿子。
+
+再自顶向下计算 $\operatorname{out}[u]$：它表示同一根子分支内，挂在 $u$ 的严格祖先旁边、没有进入通向 $u$ 的儿子子树的最小点权。根的儿子没有这种旁支，初值都是无穷大。
+
+对于非根节点 $u$ 的儿子 $v$，原有旁支和 $v$ 的兄弟子树共同构成新的旁支，因此
+
+$$
+\operatorname{out}[v]
+=\min\left(\operatorname{out}[u],\min_{\substack{w\text{ 是 }u\text{ 的儿子}\\w\ne v}}\operatorname{sub}[w]\right).
+$$
+
+排除 $v$ 后的儿子最小值，可以由 $\operatorname{mn}[u]$、$\operatorname{sn}[u]$ 在常数时间内得到。链外剩余的点还包括 $u$ 的所有严格后代，所以
+
+$$b[u]=\min\bigl(\operatorname{out}[u],\operatorname{mn}[u]\bigr).$$
+
+代码用队列式数组记录遍历顺序，逆序处理子树信息，再顺序处理旁支信息，避免长链递归。
+
+**常数时间回答查询**
+
+对于经过根的路径，路径外的点分成三部分：端点 $u$ 所在分支的链外部分、端点 $v$ 所在分支的链外部分，以及其他完整的根子分支。前两部分的最小值就是 $b[u]$ 和 $b[v]$。
+
+最后一部分只需在根子分支中排除至多两个。预先保存根的儿子子树中最小的三个 $\operatorname{sub}$ 及其分支编号，查询时检查这三个候选即可。若还有未被排除的分支，其中最小者一定在这三个候选内。
+
+将上述最小值合并即可得到答案；如果结果仍为无穷大，说明没有路径外的点，输出 $n$。
 
 **正确性**
 
-四个版本相减准确得到查询路径上的权值集合。每次下降都保留包含最小缺失值的半区间，最终叶子就是 mex。
+当两端点处于同一个非空根子分支时，路径不含唯一权值为 $0$ 的点，故答案为 $0$。否则路径恰好是两条根链的并集。
+
+对于一条根链，它所在分支的链外点，要么是终点的严格后代，要么位于某个严格祖先的其他儿子子树。两类分别由 $\operatorname{mn}$ 和 $\operatorname{out}$ 完整覆盖，递推不会纳入链上的点，因此 $b$ 恰好是所需最小值。
+
+查询再加入两端分支之外的所有根子分支，就覆盖了全部路径外的点。根分支至多排除两个，前三小候选足以保留剩余最小值。由点权是排列，最终得到的路径外最小值就是 mex；路径外为空时答案为 $n$。
 
 **复杂度**
 
-时间 $O((n+m)\log n)$，空间 $O(n\log n)$。
+两次遍历预处理共 $O(n)$，每次询问 $O(1)$，总时间 $O(n+m)$，空间 $O(n)$。
 
 ### 代码
 
-独立源码：[D.cpp](D.cpp)
+独立源码：[linear.cpp](D.cpp)
 
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
-const int N=2e5+10,M=20,K=N*22;
-int n,m,a[N],rt[N],dep[N],fa[N][M];
-vector<int> g[N],ord;
-struct segtree{
-    struct node{
-        int l,r,ls,rs,cnt;
-    }e[K];
-    #define l(p) e[p].l
-    #define r(p) e[p].r
-    int tot;
-    int build(int x,int y){
-        int p=++tot;
-        l(p)=x;r(p)=y;
-        if(x==y)return p;
-        int mid=(x+y)/2;
-        e[p].ls=build(x,mid);
-        e[p].rs=build(mid+1,y);
-        return p;
-    }
-    int update(int old,int x){
-        int p=++tot;
-        e[p]=e[old];
-        ++e[p].cnt;
-        if(l(p)==r(p))return p;
-        int mid=(l(p)+r(p))/2;
-        if(x<=mid)e[p].ls=update(e[old].ls,x);
-        else e[p].rs=update(e[old].rs,x);
-        return p;
-    }
-    int query(int x,int y,int z,int w){
-        while(l(x)<r(x)){
-            int mid=(l(x)+r(x))/2;
-            int u=e[x].ls,v=e[y].ls;
-            int s=e[z].ls,t=e[w].ls;
-            int cnt=e[u].cnt+e[v].cnt-e[s].cnt-e[t].cnt;
-            if(cnt==mid-l(x)+1){
-                x=e[x].rs,y=e[y].rs;
-                z=e[z].rs,w=e[w].rs;
-            }
-            else{
-                x=u,y=v,z=s,w=t;
-            }
-        }
-        return l(x);
-    }
-}tr;
-int lca(int u,int v){
-    if(dep[u]<dep[v])swap(u,v);
-    int d=dep[u]-dep[v];
-    for(int i=0;i<M;++i){
-        if(d>>i&1)u=fa[u][i];
-    }
-    if(u==v)return u;
-    for(int i=M-1;i>=0;--i){
-        if(fa[u][i]!=fa[v][i]){
-            u=fa[u][i];
-            v=fa[v][i];
-        }
-    }
-    return fa[u][0];
-}
+typedef pair<int,int> P;
+const int N=2e5+10,M=3,INF=0x3f3f3f3f;
+int n,m,z,a[N],fa[N],bel[N],ord[N],sub[N];
+int mn[N],sn[N],id[N],out[N],b[N];
+vector<int>g[N];
+P best[M];
 int main(){
     scanf("%d%d",&n,&m);
     for(int i=1;i<=n;++i){
         scanf("%d",&a[i]);
+        sub[i]=a[i];
+        if(!a[i])z=i;
     }
     for(int i=1;i<n;++i){
         int u,v;
         scanf("%d%d",&u,&v);
-        g[u].push_back(v);
-        g[v].push_back(u);
+        g[u].push_back(v);g[v].push_back(u);
     }
-    rt[0]=tr.build(0,n);
-    ord.push_back(1);
-    for(int i=0;i<(int)ord.size();++i){
+    int cnt=1;
+    ord[1]=z;
+    for(int i=1;i<=cnt;++i){
         int u=ord[i];
-        rt[u]=tr.update(rt[fa[u][0]],a[u]);
-        for(int j=1;j<M;++j){
-            fa[u][j]=fa[fa[u][j-1]][j-1];
-        }
         for(int &v:g[u]){
-            if(v==fa[u][0])continue;
-            fa[v][0]=u;
-            dep[v]=dep[u]+1;
-            ord.push_back(v);
+            if(v==fa[u])continue;
+            fa[v]=u;
+            bel[v]=u==z?v:bel[u];
+            ord[++cnt]=v;
+        }
+    }
+    memset(mn,INF,sizeof mn);
+    memset(sn,INF,sizeof sn);
+    for(int i=n;i;--i){
+        int u=ord[i],p=fa[u];
+        if(!p)continue;
+        sub[p]=min(sub[p],sub[u]);
+        if(sub[u]<mn[p]){
+            sn[p]=mn[p];mn[p]=sub[u];
+            id[p]=u;
+        }
+        else sn[p]=min(sn[p],sub[u]);
+    }
+    fill(best,best+M,P(INF,0));
+    for(int &v:g[z]){
+        P p=P(sub[v],v);
+        for(P &q:best){
+            if(p<q)swap(p,q);
+        }
+    }
+    out[z]=INF;
+    for(int i=1;i<=n;++i){
+        int u=ord[i];
+        b[u]=u==z?INF:min(out[u],mn[u]);
+        for(int &v:g[u]){
+            if(v==fa[u])continue;
+            if(u==z)out[v]=INF;
+            else out[v]=min(out[u],id[u]==v?sn[u]:mn[u]);
         }
     }
     while(m--){
         int u,v;
         scanf("%d%d",&u,&v);
-        int w=lca(u,v);
-        int ans=tr.query(rt[u],rt[v],rt[w],rt[fa[w][0]]);
-        printf("%d\n",ans);
+        if(bel[u] && bel[u]==bel[v]){
+            puts("0");
+            continue;
+        }
+        int ans=min(b[u],b[v]);
+        for(P &p:best){
+            if(p.second!=bel[u] && p.second!=bel[v]){
+                ans=min(ans,p.first);
+            }
+        }
+        printf("%d\n",ans==INF?n:ans);
     }
     return 0;
 }
@@ -604,6 +612,11 @@ int main(){
 - [VALIDATION.md](../tests/202509/VALIDATION.md)
 - [online-update-report.json](../tests/202509/online-update-report.json)
 - [online-verdicts.json](../tests/202509/online-verdicts.json)
+- [performance-revision/202509D/cpp17-compilation.json](../tests/202509/performance-revision/202509D/cpp17-compilation.json)
+- [performance-revision/202509D/independent-review-review.json](../tests/202509/performance-revision/202509D/independent-review-review.json)
+- [performance-revision/202509D/independent-review-review.md](../tests/202509/performance-revision/202509D/independent-review-review.md)
+- [performance-revision/202509D/initial-linear-report.json](../tests/202509/performance-revision/202509D/initial-linear-report.json)
+- [performance-revision-D.json](../tests/202509/performance-revision-D.json)
 - [prose-final-review.json](../tests/202509/prose-final-review.json)
 - [report.json](../tests/202509/report.json)
 - [retained_oracles.py](../tests/202509/retained_oracles.py)

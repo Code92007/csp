@@ -1,98 +1,77 @@
 #include<bits/stdc++.h>
 using namespace std;
-const int N=2e5+10,M=20,K=N*22;
-int n,m,a[N],rt[N],dep[N],fa[N][M];
-vector<int> g[N],ord;
-struct segtree{
-    struct node{
-        int l,r,ls,rs,cnt;
-    }e[K];
-    #define l(p) e[p].l
-    #define r(p) e[p].r
-    int tot;
-    int build(int x,int y){
-        int p=++tot;
-        l(p)=x;r(p)=y;
-        if(x==y)return p;
-        int mid=(x+y)/2;
-        e[p].ls=build(x,mid);
-        e[p].rs=build(mid+1,y);
-        return p;
-    }
-    int update(int old,int x){
-        int p=++tot;
-        e[p]=e[old];
-        ++e[p].cnt;
-        if(l(p)==r(p))return p;
-        int mid=(l(p)+r(p))/2;
-        if(x<=mid)e[p].ls=update(e[old].ls,x);
-        else e[p].rs=update(e[old].rs,x);
-        return p;
-    }
-    int query(int x,int y,int z,int w){
-        while(l(x)<r(x)){
-            int mid=(l(x)+r(x))/2;
-            int u=e[x].ls,v=e[y].ls;
-            int s=e[z].ls,t=e[w].ls;
-            int cnt=e[u].cnt+e[v].cnt-e[s].cnt-e[t].cnt;
-            if(cnt==mid-l(x)+1){
-                x=e[x].rs,y=e[y].rs;
-                z=e[z].rs,w=e[w].rs;
-            }
-            else{
-                x=u,y=v,z=s,w=t;
-            }
-        }
-        return l(x);
-    }
-}tr;
-int lca(int u,int v){
-    if(dep[u]<dep[v])swap(u,v);
-    int d=dep[u]-dep[v];
-    for(int i=0;i<M;++i){
-        if(d>>i&1)u=fa[u][i];
-    }
-    if(u==v)return u;
-    for(int i=M-1;i>=0;--i){
-        if(fa[u][i]!=fa[v][i]){
-            u=fa[u][i];
-            v=fa[v][i];
-        }
-    }
-    return fa[u][0];
-}
+typedef pair<int,int> P;
+const int N=2e5+10,M=3,INF=0x3f3f3f3f;
+int n,m,z,a[N],fa[N],bel[N],ord[N],sub[N];
+int mn[N],sn[N],id[N],out[N],b[N];
+vector<int>g[N];
+P best[M];
 int main(){
     scanf("%d%d",&n,&m);
     for(int i=1;i<=n;++i){
         scanf("%d",&a[i]);
+        sub[i]=a[i];
+        if(!a[i])z=i;
     }
     for(int i=1;i<n;++i){
         int u,v;
         scanf("%d%d",&u,&v);
-        g[u].push_back(v);
-        g[v].push_back(u);
+        g[u].push_back(v);g[v].push_back(u);
     }
-    rt[0]=tr.build(0,n);
-    ord.push_back(1);
-    for(int i=0;i<(int)ord.size();++i){
+    int cnt=1;
+    ord[1]=z;
+    for(int i=1;i<=cnt;++i){
         int u=ord[i];
-        rt[u]=tr.update(rt[fa[u][0]],a[u]);
-        for(int j=1;j<M;++j){
-            fa[u][j]=fa[fa[u][j-1]][j-1];
-        }
         for(int &v:g[u]){
-            if(v==fa[u][0])continue;
-            fa[v][0]=u;
-            dep[v]=dep[u]+1;
-            ord.push_back(v);
+            if(v==fa[u])continue;
+            fa[v]=u;
+            bel[v]=u==z?v:bel[u];
+            ord[++cnt]=v;
+        }
+    }
+    memset(mn,INF,sizeof mn);
+    memset(sn,INF,sizeof sn);
+    for(int i=n;i;--i){
+        int u=ord[i],p=fa[u];
+        if(!p)continue;
+        sub[p]=min(sub[p],sub[u]);
+        if(sub[u]<mn[p]){
+            sn[p]=mn[p];mn[p]=sub[u];
+            id[p]=u;
+        }
+        else sn[p]=min(sn[p],sub[u]);
+    }
+    fill(best,best+M,P(INF,0));
+    for(int &v:g[z]){
+        P p=P(sub[v],v);
+        for(P &q:best){
+            if(p<q)swap(p,q);
+        }
+    }
+    out[z]=INF;
+    for(int i=1;i<=n;++i){
+        int u=ord[i];
+        b[u]=u==z?INF:min(out[u],mn[u]);
+        for(int &v:g[u]){
+            if(v==fa[u])continue;
+            if(u==z)out[v]=INF;
+            else out[v]=min(out[u],id[u]==v?sn[u]:mn[u]);
         }
     }
     while(m--){
         int u,v;
         scanf("%d%d",&u,&v);
-        int w=lca(u,v);
-        int ans=tr.query(rt[u],rt[v],rt[w],rt[fa[w][0]]);
-        printf("%d\n",ans);
+        if(bel[u] && bel[u]==bel[v]){
+            puts("0");
+            continue;
+        }
+        int ans=min(b[u],b[v]);
+        for(P &p:best){
+            if(p.second!=bel[u] && p.second!=bel[v]){
+                ans=min(ans,p.first);
+            }
+        }
+        printf("%d\n",ans==INF?n:ans);
     }
     return 0;
 }

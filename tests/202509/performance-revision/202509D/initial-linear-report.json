@@ -1,0 +1,223 @@
+{
+  "source_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+  "compiler": "/opt/homebrew/bin/g++-16",
+  "compilation": {
+    "o2": {
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "/tmp/csp-202509-D-investigation-uytd3jlo/linear.cpp",
+        "-o",
+        "/tmp/csp-202509-D-investigation-uytd3jlo/linear"
+      ],
+      "diagnostics": ""
+    },
+    "ubsan": {
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-O1",
+        "-fsanitize=undefined",
+        "-fno-sanitize-recover=all",
+        "/tmp/csp-202509-D-investigation-uytd3jlo/linear.cpp",
+        "-o",
+        "/tmp/csp-202509-D-investigation-uytd3jlo/linear-ubsan"
+      ],
+      "diagnostics": ""
+    }
+  },
+  "small_results": {
+    "o2": {
+      "passed": 461
+    },
+    "ubsan": {
+      "passed": 461
+    }
+  },
+  "large": [
+    {
+      "label": "balanced-cross",
+      "input_sha256": "e261f09bb1697755b52d3774cebe21a75eff96ae4cba5fb6fa590ceeeb87d50b",
+      "runs": [
+        {
+          "wall_seconds": 0.060487542000000616,
+          "cpu_seconds": 0.05782799999999999,
+          "rss_bytes": 17973248,
+          "correct": true,
+          "output_sha256": "822b8c585efd86bbe89548edea86556dbacd28bb8681ad1cab163812df11a9a2"
+        },
+        {
+          "wall_seconds": 0.06025712499999969,
+          "cpu_seconds": 0.058818,
+          "rss_bytes": 17973248,
+          "correct": true,
+          "output_sha256": "822b8c585efd86bbe89548edea86556dbacd28bb8681ad1cab163812df11a9a2"
+        }
+      ],
+      "ubsan_passed": true,
+      "median_seconds": 0.06037233350000015
+    },
+    {
+      "label": "balanced-permuted-200000",
+      "input_sha256": "9ed231ca370556178db3955129bd1ef499c510b7031c129e38314e9e750a9a52",
+      "runs": [
+        {
+          "wall_seconds": 0.05781304099999929,
+          "cpu_seconds": 0.056147999999999997,
+          "rss_bytes": 17989632,
+          "correct": true,
+          "output_sha256": "4959a4c89fd5bf4566643af13bf1c252f91db594fa84f692d70122748f4e77c2"
+        },
+        {
+          "wall_seconds": 0.057186667000001634,
+          "cpu_seconds": 0.055557999999999996,
+          "rss_bytes": 17989632,
+          "correct": true,
+          "output_sha256": "4959a4c89fd5bf4566643af13bf1c252f91db594fa84f692d70122748f4e77c2"
+        }
+      ],
+      "ubsan_passed": true,
+      "median_seconds": 0.05749985400000046
+    },
+    {
+      "label": "chain-identity-200000",
+      "input_sha256": "5f1ae0b9b97e0694dc2cfb6d61d91288cfb8a98fec8b80011a5efe5975f05a0c",
+      "runs": [
+        {
+          "wall_seconds": 0.0590120419999991,
+          "cpu_seconds": 0.056549999999999996,
+          "rss_bytes": 18399232,
+          "correct": true,
+          "output_sha256": "af64d737d5291785305b87feebdf6f537b135e9b8bd156117a65365454df9645"
+        },
+        {
+          "wall_seconds": 0.05846858399999988,
+          "cpu_seconds": 0.057130999999999994,
+          "rss_bytes": 18366464,
+          "correct": true,
+          "output_sha256": "af64d737d5291785305b87feebdf6f537b135e9b8bd156117a65365454df9645"
+        }
+      ],
+      "ubsan_passed": true,
+      "median_seconds": 0.05874031299999949
+    },
+    {
+      "label": "chain-identity-4",
+      "input_sha256": "4eb0d26a134086cf26ec5d36d1cfb0d25a124ce368e7ed38a9d72984d8382095",
+      "runs": [
+        {
+          "wall_seconds": 0.03758816699999912,
+          "cpu_seconds": 0.035202,
+          "rss_bytes": 18366464,
+          "correct": true,
+          "output_sha256": "7966679e2ad98ee635164cddaf447f5d2490c0df25a06cdb3cabd6896c104718"
+        },
+        {
+          "wall_seconds": 0.0381024589999992,
+          "cpu_seconds": 0.035885,
+          "rss_bytes": 18382848,
+          "correct": true,
+          "output_sha256": "7966679e2ad98ee635164cddaf447f5d2490c0df25a06cdb3cabd6896c104718"
+        }
+      ],
+      "ubsan_passed": true,
+      "median_seconds": 0.03784531299999916
+    },
+    {
+      "label": "chain-permuted-200000",
+      "input_sha256": "ba80651aefa229d4d88cdf0d71d5e7541f49dfed1ab29484770d4a68702b83b1",
+      "runs": [
+        {
+          "wall_seconds": 0.06316558299999997,
+          "cpu_seconds": 0.061286999999999994,
+          "rss_bytes": 18350080,
+          "correct": true,
+          "output_sha256": "ed0272e9d2e2dc91ac90d3fc39773c5db32e123b76d493afe6d473b44248e13c"
+        },
+        {
+          "wall_seconds": 0.0639810830000016,
+          "cpu_seconds": 0.062139999999999994,
+          "rss_bytes": 18350080,
+          "correct": true,
+          "output_sha256": "ed0272e9d2e2dc91ac90d3fc39773c5db32e123b76d493afe6d473b44248e13c"
+        }
+      ],
+      "ubsan_passed": true,
+      "median_seconds": 0.06357333300000079
+    },
+    {
+      "label": "chain-prefixes",
+      "input_sha256": "d1b767e90d3e797bf12b3bc00b795b0592d93197c9ba040012d7e7c80d8b7548",
+      "runs": [
+        {
+          "wall_seconds": 0.060942124999998626,
+          "cpu_seconds": 0.058818999999999996,
+          "rss_bytes": 18382848,
+          "correct": true,
+          "output_sha256": "79f12d2103f68334630e74918e54a642e52d74e35e8c679980be51bec2521b0e"
+        },
+        {
+          "wall_seconds": 0.06383041600000006,
+          "cpu_seconds": 0.061987999999999994,
+          "rss_bytes": 18366464,
+          "correct": true,
+          "output_sha256": "79f12d2103f68334630e74918e54a642e52d74e35e8c679980be51bec2521b0e"
+        }
+      ],
+      "ubsan_passed": true,
+      "median_seconds": 0.06238627049999934
+    },
+    {
+      "label": "random-permuted-200000",
+      "input_sha256": "7d9bfaff674b04a4226b0c4b264b74428c33477197d12290431dbb270d53d443",
+      "runs": [
+        {
+          "wall_seconds": 0.07809512499999904,
+          "cpu_seconds": 0.071335,
+          "rss_bytes": 18644992,
+          "correct": true,
+          "output_sha256": "8c602a7283d956c630ee5ed4bd9c268d8f9fc447f72717d12a777cb97ded8dd7"
+        },
+        {
+          "wall_seconds": 0.07499862500000098,
+          "cpu_seconds": 0.07108199999999999,
+          "rss_bytes": 18677760,
+          "correct": true,
+          "output_sha256": "8c602a7283d956c630ee5ed4bd9c268d8f9fc447f72717d12a777cb97ded8dd7"
+        }
+      ],
+      "ubsan_passed": true,
+      "median_seconds": 0.07654687500000001
+    },
+    {
+      "label": "star-identity-200000",
+      "input_sha256": "919fcc2470262067881edaa5a62ceb5deaf527c5a118c6dc6ef0acbe20149295",
+      "runs": [
+        {
+          "wall_seconds": 0.05512216700000039,
+          "cpu_seconds": 0.053297,
+          "rss_bytes": 19480576,
+          "correct": true,
+          "output_sha256": "cfe2ba4a42b2c2bfaf4ae3096a37d993f856b62137ead9aed090d31043b31b8a"
+        },
+        {
+          "wall_seconds": 0.055768041000000323,
+          "cpu_seconds": 0.053903999999999994,
+          "rss_bytes": 19496960,
+          "correct": true,
+          "output_sha256": "cfe2ba4a42b2c2bfaf4ae3096a37d993f856b62137ead9aed090d31043b31b8a"
+        }
+      ],
+      "ubsan_passed": true,
+      "median_seconds": 0.055445104000000356
+    }
+  ],
+  "algorithm": "Root at the unique zero; precompute minimum weight outside each root-chain within its root branch; each answer uses the two chain complements and the three smallest root-branch minima.",
+  "frozen_source_unchanged": true,
+  "checked_at": "2026-11-24T09:16:01.074980+00:00"
+}

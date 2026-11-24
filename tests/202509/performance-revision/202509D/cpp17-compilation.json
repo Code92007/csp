@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-11-24T15:02:43.056663+00:00",
+  "kind": "verified-candidate-cpp17-compilation",
+  "results": {
+    "202609E": {
+      "source_file": "reports/202609E-performance/combined/E.cpp",
+      "source_sha256": "14b59ce21190a3194248a0d21f457eb1061aabb3883605a22fcdd821ddfbdb15",
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "/Users/yzm007/Documents/CSP45/reports/202609E-performance/combined/E.cpp",
+        "-o",
+        "/tmp/csp-revision-cpp17/202609E"
+      ],
+      "returncode": 0,
+      "diagnostics": ""
+    },
+    "202509D": {
+      "source_file": "reports/202509D-performance/independent-review/D.cpp",
+      "source_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "/Users/yzm007/Documents/CSP45/reports/202509D-performance/independent-review/D.cpp",
+        "-o",
+        "/tmp/csp-revision-cpp17/202509D"
+      ],
+      "returncode": 0,
+      "diagnostics": ""
+    },
+    "202406E": {
+      "source_file": "reports/202406E-performance/initial/candidate.cpp",
+      "source_sha256": "23b4d6d8595b99571b1710dc36b883e49c7c36192dc3c33c52c20787b791b82f",
+      "command": [
+        "/opt/homebrew/bin/g++-16",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "/Users/yzm007/Documents/CSP45/reports/202406E-performance/initial/candidate.cpp",
+        "-o",
+        "/tmp/csp-revision-cpp17/202406E"
+      ],
+      "returncode": 0,
+      "diagnostics": ""
+    }
+  }
+}

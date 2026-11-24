@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-11-24T17:25:31.775159+08:00",
+  "candidate_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+  "candidate_matches_personal_skill": true,
+  "counterexample_found": false,
+  "complexity": {
+    "preprocess": "O(n)",
+    "query": "O(1)",
+    "total": "O(n+m)",
+    "memory": "O(n)"
+  },
+  "small_verification": {
+    "candidate_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+    "cases": 1539,
+    "all_query_pairs": 906669,
+    "oracle": "enumerate path vertex set by independent source-rooted DFS, then scan missing weights",
+    "groups": {
+      "exhaustive-n1": 1,
+      "exhaustive-n2": 2,
+      "exhaustive-n3": 18,
+      "exhaustive-n4": 384,
+      "all-labelled-n5-trees": 375,
+      "ancestor-side-branch-trap": 110,
+      "root-endpoint-root-interior-star": 43,
+      "root-endpoint-root-interior-chain": 36,
+      "random-all-endpoints": 570
+    },
+    "runs": {
+      "D": {
+        "passed": 1539,
+        "query_answers": 906669,
+        "seconds": 17.932811459,
+        "sanitizer_diagnostics": ""
+      },
+      "D-ubsan": {
+        "passed": 1539,
+        "query_answers": 906669,
+        "seconds": 18.982415791999998,
+        "sanitizer_diagnostics": ""
+      }
+    },
+    "actual_online_submissions": 0,
+    "workspace_source_modified": false
+  },
+  "large_verification": {
+    "candidate_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+    "oracle": "closed form for identity-weight chain/star after swapping zero with an interior/leaf weight",
+    "cases": [
+      {
+        "label": "chain-zero-in-middle",
+        "n": 200000,
+        "queries": 200000,
+        "input_sha256": "8b09afd3a01bf421eb2313cb2e3062d9a8749dba399673062b61a1736819f81e",
+        "runs": {
+          "D": {
+            "wall_seconds": 0.05852179200000002,
+            "rss_bytes": 18382848,
+            "all_answers_checked": 200000,
+            "sanitizer_diagnostics": ""
+          },
+          "D-ubsan": {
+            "wall_seconds": 0.063823625,
+            "rss_bytes": 18432000,
+            "all_answers_checked": 200000,
+            "sanitizer_diagnostics": ""
+          }
+        }
+      },
+      {
+        "label": "star-zero-at-leaf",
+        "n": 200000,
+        "queries": 200000,
+        "input_sha256": "ae6b534866708be5e8bc2904c06a4c53bad1bb987c620f068fe0a8f1b3782187",
+        "runs": {
+          "D": {
+            "wall_seconds": 0.04723575000000002,
+            "rss_bytes": 19447808,
+            "all_answers_checked": 200000,
+            "sanitizer_diagnostics": ""
+          },
+          "D-ubsan": {
+            "wall_seconds": 0.05337425000000007,
+            "rss_bytes": 19546112,
+            "all_answers_checked": 200000,
+            "sanitizer_diagnostics": ""
+          }
+        }
+      }
+    ]
+  },
+  "frozen_source_sha256": "9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da",
+  "frozen_source_unchanged": true,
+  "compilation": {
+    "compiler": "/opt/homebrew/bin/g++-16",
+    "common_flags": [
+      "-std=c++20",
+      "-Wall",
+      "-Wextra"
+    ],
+    "O2": [
+      "-O2"
+    ],
+    "UBSan": [
+      "-O1",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all"
+    ],
+    "diagnostics": ""
+  },
+  "files_sha256": {
+    "D.cpp": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+    "verify.py": "85eed1d761a39f686f50caf437b54c57b438f4bdb9a8cce084d1aaf55d9cfa31",
+    "large-check.py": "b6e69d5797e43fc004b4a36865083076dddc55071fb9e72de7d9f93bf02cedd0",
+    "cases.json": "916dddc58285bb9c8495a45af3afb5b19137fb6ca0ae33c0e1b2cb4366d69358"
+  },
+  "actual_online_submissions": 0,
+  "writes_confined_to_this_temporary_directory": true
+}

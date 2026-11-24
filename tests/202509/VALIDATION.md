@@ -11,7 +11,7 @@
 | A | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b054563e5d1fced2e44e250)。 | `ebec3287fd4999bc4e9b986691e1526e7b58bc3e2651034abfb9c2f4d83fada7` |
 | B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0545cfe5d1fced2e44e2f0)。 | `0b3b127e87de2706f8c194544025e02b807687714d7f0d380b4512344bd0a2d8` |
 | C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05464fe5d1fced2e44e407)。 | `e9d6976a5a6a902e5cfa1f3f6320acead297ab8fff6b12b84f709036476ca2a9` |
-| D | 重构版评测：70 分 Time Exceeded（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5)。 | `9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da` |
+| D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05ab06e5d1fced2e45bdac)。 | `6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632` |
 | E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05477ce5d1fced2e44e5ea)。 | `f30997019754ecdbad11e1e9a94bec8515d9360f4681cd3deeaded7e9d073288` |
 
 [逐题在线结果与原版记录](online-verdicts.json)。
@@ -56,3 +56,13 @@ D 额外通过 200000 点长链构造（全路径 mex 为 n、缺零路径 mex �
 - 当前 `C.cpp`：`e9d6976a5a6a902e5cfa1f3f6320acead297ab8fff6b12b84f709036476ca2a9`
 - 当前 `D.cpp`：`9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da`
 - 当前 `E.cpp`：`f30997019754ecdbad11e1e9a94bec8515d9360f4681cd3deeaded7e9d073288`
+
+<!-- performance-revision:D:start -->
+
+## D 性能复测与当前源码
+
+首轮记录 [保留原判题](https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5) 属于旧哈希 `9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da`。当前采用已独立审查的性能版本，真实结果为 100.0 分 Accepted，[复测记录](https://oj.shumeng.tech/record/6b05ab06e5d1fced2e45bdac)；当前源码 SHA-256 为 `6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632`。
+
+本次未重新运行历史测试；独立对拍、边界和压力结果来自所附原始审查，C++17 编译来自已冻结记录。下方原本地记录及“当前版本”字样均保留其历史阶段归属；现行哈希与结论以本节和顶部五题表为准。证据见 [修复验证汇总](performance-revision-D.json)及[随附审查](performance-revision/202509D/independent-review-review.md)。
+
+<!-- performance-revision:D:end -->

@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "kind": "adopted-performance-revision-evidence",
+  "problem": "D",
+  "key": "202509D",
+  "source_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+  "compilation": {
+    "source_file": "reports/202509D-performance/independent-review/D.cpp",
+    "source_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+    "command": [
+      "/opt/homebrew/bin/g++-16",
+      "-std=c++17",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "/Users/yzm007/Documents/CSP45/reports/202509D-performance/independent-review/D.cpp",
+      "-o",
+      "/tmp/csp-revision-cpp17/202509D"
+    ],
+    "returncode": 0,
+    "diagnostics": ""
+  },
+  "tests": {
+    "small_verification": {
+      "candidate_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+      "cases": 1539,
+      "all_query_pairs": 906669,
+      "oracle": "enumerate path vertex set by independent source-rooted DFS, then scan missing weights",
+      "groups": {
+        "exhaustive-n1": 1,
+        "exhaustive-n2": 2,
+        "exhaustive-n3": 18,
+        "exhaustive-n4": 384,
+        "all-labelled-n5-trees": 375,
+        "ancestor-side-branch-trap": 110,
+        "root-endpoint-root-interior-star": 43,
+        "root-endpoint-root-interior-chain": 36,
+        "random-all-endpoints": 570
+      },
+      "runs": {
+        "D": {
+          "passed": 1539,
+          "query_answers": 906669,
+          "seconds": 17.932811459,
+          "sanitizer_diagnostics": ""
+        },
+        "D-ubsan": {
+          "passed": 1539,
+          "query_answers": 906669,
+          "seconds": 18.982415791999998,
+          "sanitizer_diagnostics": ""
+        }
+      },
+      "actual_online_submissions": 0,
+      "workspace_source_modified": false
+    },
+    "large_verification": {
+      "candidate_sha256": "6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632",
+      "oracle": "closed form for identity-weight chain/star after swapping zero with an interior/leaf weight",
+      "cases": [
+        {
+          "label": "chain-zero-in-middle",
+          "n": 200000,
+          "queries": 200000,
+          "input_sha256": "8b09afd3a01bf421eb2313cb2e3062d9a8749dba399673062b61a1736819f81e",
+          "runs": {
+            "D": {
+              "wall_seconds": 0.05852179200000002,
+              "rss_bytes": 18382848,
+              "all_answers_checked": 200000,
+              "sanitizer_diagnostics": ""
+            },
+            "D-ubsan": {
+              "wall_seconds": 0.063823625,
+              "rss_bytes": 18432000,
+              "all_answers_checked": 200000,
+              "sanitizer_diagnostics": ""
+            }
+          }
+        },
+        {
+          "label": "star-zero-at-leaf",
+          "n": 200000,
+          "queries": 200000,
+          "input_sha256": "ae6b534866708be5e8bc2904c06a4c53bad1bb987c620f068fe0a8f1b3782187",
+          "runs": {
+            "D": {
+              "wall_seconds": 0.04723575000000002,
+              "rss_bytes": 19447808,
+              "all_answers_checked": 200000,
+              "sanitizer_diagnostics": ""
+            },
+            "D-ubsan": {
+              "wall_seconds": 0.05337425000000007,
+              "rss_bytes": 19546112,
+              "all_answers_checked": 200000,
+              "sanitizer_diagnostics": ""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "original_evidence": [
+    {
+      "file": "reports/202509D-performance/independent-review/review.json",
+      "sha256": "764cf74de74a79c6960bae0b93a838bc2ebc9338eaf73f8a76d74a0edd5e5b92",
+      "retained_as": "reports/performance-revision/202509D/independent-review-review.json"
+    },
+    {
+      "file": "reports/revision-submissions/cpp17-compilation.json",
+      "sha256": "6f769980769166091164dbadbdac39ecfee65e1eae4ccf6802d4b8c5cb983cbf",
+      "retained_as": "reports/performance-revision/202509D/cpp17-compilation.json"
+    },
+    {
+      "file": "reports/202509D-performance/independent-review/review.md",
+      "sha256": "7bba979e67392007d7b378720c5b8c75d04e0219ffd11bcb283bde914196fe49",
+      "retained_as": "reports/performance-revision/202509D/independent-review-review.md"
+    },
+    {
+      "file": "reports/202509D-performance/initial/linear-report.json",
+      "sha256": "28f806d150f479c1dd4f2e5a5d250553cf20abb897e0d073e146ce7d7e163073",
+      "retained_as": "reports/performance-revision/202509D/initial-linear-report.json"
+    }
+  ],
+  "record": "https://oj.shumeng.tech/record/6b05ab06e5d1fced2e45bdac",
+  "verdict": {
+    "status": "Accepted",
+    "score": 100.0,
+    "observed_at": "2026-11-24T15:20:33.765126+00:00",
+    "note": ""
+  },
+  "first_round_result": {
+    "problem": "D",
+    "key": "202509D",
+    "state": "judged",
+    "source_sha256": "9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da",
+    "prior_oj_records": [
+      {
+        "metadata_field": "oj",
+        "status": "accepted",
+        "score": 100,
+        "record": "https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a"
+      }
+    ],
+    "record": "https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5",
+    "verdict": "Time Exceeded",
+    "score": 70.0,
+    "observed_at": "2026-11-24T08:13:58.489531+00:00",
+    "language_id": "cc.cc20o2",
+    "language": "C++20/O2"
+  },
+  "evidence_note": "Compilation/tests are copied from these exact pre-existing reports; this tool performs no new compilation or testing.",
+  "revision_plan_sha256": "b9a3190c2e4be2d78132536de71e106a7a7ad59568bfe8b7b23c068bdfc146c9",
+  "cpp_fences_checked": 10,
+  "online_rows_checked": 5,
+  "original_record_links_preserved": true,
+  "git_or_online_actions": false
+}
