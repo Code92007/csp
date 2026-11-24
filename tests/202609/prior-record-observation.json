@@ -1,0 +1,18 @@
+{
+  "record_url": "https://oj.shumeng.tech/record/6adce90ea67df0b81749bfe2",
+  "observed_status": "Time Exceeded",
+  "observed_score": 50,
+  "evidence_saved_at": "2026-11-24T16:03:23.393497+08:00",
+  "method": "Normal logged-in Chrome record page and problem page, read-only CUA DOM; no rejudge or additional POST",
+  "problem_url": "https://oj.shumeng.tech/p/CSP202609E",
+  "time_limit_seconds": 8.0,
+  "memory_limit_MiB": 512,
+  "visible_source_file": "202609E-old-record.cpp",
+  "visible_source_sha256": "b9f2bfb8c569d8dc4dcddba82166d26b1a87594d4c062a41f1555e21c89cd617",
+  "visible_source_characters": 6305,
+  "note": "Observation is bounded by the preceding 202512C posted event and following C verdict event. Exact screenshot/server observation timestamp was not recorded. Historical metadata snapshot was not modified.",
+  "observed_between_utc": [
+    "2026-11-24T07:58:51.302732+00:00",
+    "2026-11-24T08:00:33.194672+00:00"
+  ]
+}

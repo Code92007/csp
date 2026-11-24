@@ -512,6 +512,8 @@ int main(){
 
 <!-- refactor-online:E:end -->
 
+旧记录于 2026-11-24 复核，同样为 **50 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](../tests/202609/prior-record-observation.json)。
+
 ### 题意
 
 树的每个点有固定颜色和可开关的灯，边有正整数权重。一个无序点对 $\{u,v\}$（允许 $u=v$）合格，需要两端灯都亮、路径边权和为 $k$ 的倍数，并且路径节点中恰有一种颜色出现奇数次。路径中间的点是否亮灯不影响颜色统计。
@@ -764,6 +766,7 @@ int main(){
 - [e-mask-followup-report.json](../tests/202609/e-mask-followup-report.json)
 - [online-update-report.json](../tests/202609/online-update-report.json)
 - [online-verdicts.json](../tests/202609/online-verdicts.json)
+- [prior-record-observation.json](../tests/202609/prior-record-observation.json)
 - [verify-bd-final.py](../tests/202609/verify-bd-final.py)
 
 <!-- local-validation-attachments:end -->

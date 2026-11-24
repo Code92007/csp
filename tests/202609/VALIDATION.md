@@ -75,3 +75,7 @@ B 的界改为 `(ll)1e8*m*m`，明确从整数类型开始计算；D 的组数�
 
 - `A.cpp` 当前 SHA-256：`dd814f4d41176bf7e0954ae14c1a672c74a0aacd048054526d93459dd2009af7`
 - `C.cpp` 当前 SHA-256：`022f313e6279caf09fa08cc7963adc8e67ef5ab39475f0efe7835a1dc5bffd59`
+
+## 旧版在线记录复核
+
+旧记录于 2026-11-24 复核，同样为 **50 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](prior-record-observation.json)。
