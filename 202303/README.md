@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "矩形相交", "几何", "二分答案", "单调性", "递归下降", "位集", "离线处理", "排序", "离散化", "线段树", "区间赋值", "分治", "树状数组", "区间计数"]
 status: "published"
-problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版 C++17 编译通过；62 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16694"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce918a67df0b81749c020"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305927066", "source_sha256": "34b442118b93a1609b689159910d0d67586cba362236d1513d8dfa5042ff4ef7"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "B", "title": "垦田计划", "tags": ["二分答案", "单调性"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版 C++17 编译通过；103 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16695"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305933793", "source_sha256": "cf5d32583c21adaa802cb829eaaddaba3128a3efc71b191734543ac88b6ab990"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "C", "title": "LDAP", "tags": ["递归下降", "位集", "离线处理", "排序"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版 C++17 编译通过；703 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16696"}], "previous_oj": {"status": "failed", "score": 70, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490926", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef", "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305934606", "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb"}, "original_validation": "C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "D", "title": "星际网络 II", "tags": ["离散化", "线段树", "区间赋值"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版 C++17 编译通过；102 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16697"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91da67df0b81749c032"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305935489", "source_sha256": "91e3edd94753f6dc16b11f6eb2612a2bd740c13e14ebeb6e1cf4a93ae2a20363"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "E", "title": "施肥", "tags": ["分治", "线段树", "树状数组", "区间计数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版 C++17 编译通过；83 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16698"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91ea67df0b81749c036"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305936519", "source_sha256": "33d8956583e622b00cecc81c91baa224e566b1a7194a1fe3258ac41d90141fd2"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}]
+problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16694"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0564bde5d1fced2e451c23", "source_sha256": "38c9ef51ee2f3a55cf4f572ac78b6b61eeaef2be618b4d6ad4e8b4c028d60b9a", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T10:19:59.698790+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305927066", "source_sha256": "34b442118b93a1609b689159910d0d67586cba362236d1513d8dfa5042ff4ef7"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce918a67df0b81749c020"}}, {"id": "B", "title": "垦田计划", "tags": ["二分答案", "单调性"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16695"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b056519e5d1fced2e451c8b", "source_sha256": "74d9999e08c6ce5a64765fd7a25a0b3e8ef0d1ca9e00762c27b5ea4f59a62b01", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T10:21:32.701451+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305933793", "source_sha256": "cf5d32583c21adaa802cb829eaaddaba3128a3efc71b191734543ac88b6ab990"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a"}}, {"id": "C", "title": "LDAP", "tags": ["递归下降", "位集", "离线处理", "排序"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16696"}], "previous_oj": {"status": "failed", "score": 70, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490926", "source_sha256": "05bb5a6be5154299b2db3bf8e7049de301197cc4aff1bf9bb7b4f3864f4e56e9", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05812fe5d1fced2e454ffc", "source_sha256": "b7ab663741efaf5e3ca6d2f7a89891453be7399151021c214a9ab3262baae0ab", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:22:46.953040+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305934606", "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb"}, "original_validation": "C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef", "source_sha256": "75f7d125f11603033f3a14745b88e080f636c946a66abd7100c836d2d7c933bb"}}, {"id": "D", "title": "星际网络 II", "tags": ["离散化", "线段树", "区间赋值"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16697"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0581bbe5d1fced2e455238", "source_sha256": "d8c261b1711c863971ed5ddef82c35fc090c4c9747cfa34eac9a95d5ee6130d2", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:24:11.917218+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305935489", "source_sha256": "91e3edd94753f6dc16b11f6eb2612a2bd740c13e14ebeb6e1cf4a93ae2a20363"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91da67df0b81749c032"}}, {"id": "E", "title": "施肥", "tags": ["分治", "线段树", "树状数组", "区间计数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202303E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16698"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058247e5d1fced2e455484", "source_sha256": "a24464b151f4e0eaee241f63faebff0c5e9ac2e90763ac3454e39cbb8abbe32b", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:26:38.922928+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305936519", "source_sha256": "33d8956583e622b00cecc81c91baa224e566b1a7194a1fe3258ac41d90141fd2"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce91ea67df0b81749c036"}}]
 ---
 
 # CSP 202303 五题题解
@@ -20,11 +20,17 @@ problems: [{"id": "A", "title": "田地丈量", "tags": ["矩形相交", "几何
 
 标签：`矩形相交` · `几何`
 
-本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce918a67df0b81749c020)。
 
 原版验证：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce918a67df0b81749c020)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305927066)（民间复刻评测）。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0564bde5d1fced2e451c23)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -73,11 +79,17 @@ int main(){
 
 标签：`二分答案` · `单调性`
 
-本地验证：103 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：103 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a)。
 
 原版验证：**完整实现，已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce91aa67df0b81749c02a)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305933793)（民间复刻评测）。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b056519e5d1fced2e451c8b)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -137,11 +149,19 @@ int main(){
 
 标签：`递归下降` · `位集` · `离线处理` · `排序`
 
-本地验证：703 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：703 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef)。
 
 原版验证：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例、600 组独立用户表达式对拍与 6 组上界测试通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addfdea74ace1cba9a232ef)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305934606)（民间复刻评测）。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05812fe5d1fced2e454ffc)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6addcb0574ace1cba9a21e46)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -346,11 +366,17 @@ int main(){
 
 标签：`离散化` · `线段树` · `区间赋值`
 
-本地验证：102 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：102 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce91da67df0b81749c032)。
 
 原版验证：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce91da67df0b81749c032)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305935489)（民间复刻评测）。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0581bbe5d1fced2e455238)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -510,11 +536,17 @@ int main(){
 
 标签：`分治` · `线段树` · `树状数组` · `区间计数`
 
-本地验证：83 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：83 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202303/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce91ea67df0b81749c036)。
 
 原版验证：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；80 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce91ea67df0b81749c036)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305936519)（民间复刻评测）。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058247e5d1fced2e455484)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -695,6 +727,8 @@ int main(){
 - [VALIDATION.md](../tests/202303/VALIDATION.md)
 - [boundaries.py](../tests/202303/boundaries.py)
 - [e-style-followup-report.json](../tests/202303/e-style-followup-report.json)
+- [online-update-report.json](../tests/202303/online-update-report.json)
+- [online-verdicts.json](../tests/202303/online-verdicts.json)
 - [refactor-report.json](../tests/202303/refactor-report.json)
 - [statements.json](../tests/202303/statements.json)
 
