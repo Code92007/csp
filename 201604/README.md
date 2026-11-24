@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "局部极值", "数组扫描", "碰撞检测", "网格模拟", "栈", "路径解析", "字符串", "BFS", "时间状态", "网格", "状态压缩", "连通性DP", "Steiner树", "轮廓线DP"]
 status: "published"
-problems: [{"id": "A", "title": "折点计数", "tags": ["局部极值", "数组扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，1 个保存用例、60 组独立对拍及 2 组边界/压力通过；UBSan 共 63 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addad4c74ace1cba9a20424"}}, {"id": "B", "title": "俄罗斯方块", "tags": ["碰撞检测", "网格模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 0 组边界/压力通过；UBSan 共 101 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaddf74ace1cba9a20472"}}, {"id": "C", "title": "路径解析", "tags": ["栈", "路径解析", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 102 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addae9574ace1cba9a2058d"}}, {"id": "D", "title": "游戏", "tags": ["BFS", "时间状态", "网格"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，1 个保存用例、94 组独立对拍及 1 组边界/压力通过；UBSan 共 96 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaf1b74ace1cba9a20648"}}, {"id": "E", "title": "网络连接", "tags": ["状态压缩", "连通性DP", "Steiner树", "轮廓线DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：C++17 编译通过，1 个保存用例、184 组独立对拍及 4 组边界/压力通过；UBSan 共 189 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb00e74ace1cba9a206db"}}]
+problems: [{"id": "A", "title": "折点计数", "tags": ["局部极值", "数组扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b059294e5d1fced2e45859f", "source_sha256": "27d88683255a5d09be05ffc2bcf1f18fe671e1dd572d1763fbc9f542f698ff65", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:37:23.562827+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addad4c74ace1cba9a20424"}}, {"id": "B", "title": "俄罗斯方块", "tags": ["碰撞检测", "网格模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b059315e5d1fced2e45874f", "source_sha256": "12fd5ff0d46471dc167332d7ed78cedc2c2b7cf0c9838a24e915832540603d96", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:38:31.895765+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaddf74ace1cba9a20472"}}, {"id": "C", "title": "路径解析", "tags": ["栈", "路径解析", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b059359e5d1fced2e458859", "source_sha256": "28f32713b74769230bb19018acabc706552366946bc4350d74c9409bb2da91eb", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:39:44.939165+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addae9574ace1cba9a2058d"}}, {"id": "D", "title": "游戏", "tags": ["BFS", "时间状态", "网格"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0593a2e5d1fced2e458989", "source_sha256": "4cfb2a6bcf223cb1e9fb3d9d58d2baa399b6c95cb6709810117d30e73e9b1191", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:40:37.441372+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaf1b74ace1cba9a20648"}}, {"id": "E", "title": "网络连接", "tags": ["状态压缩", "连通性DP", "Steiner树", "轮廓线DP"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201604E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201604E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0593dfe5d1fced2e458a3f", "source_sha256": "82f9682e208f9618d97df7b7cc755db4d8aa82121dd31fbb04fe2a27b43bfd0d", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:41:46.756219+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb00e74ace1cba9a206db"}}]
 ---
 
 # CSP 201604 五题题解
@@ -20,6 +20,12 @@ problems: [{"id": "A", "title": "折点计数", "tags": ["局部极值", "数组
 标签：`局部极值` · `数组扫描`
 
 本地：63 组优化版、63 组 UBSan 验证通过，详见 [验证记录](../tests/201604/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059294e5d1fced2e45859f)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -76,6 +82,12 @@ int main(){
 标签：`碰撞检测` · `网格模拟`
 
 本地：101 组优化版、101 组 UBSan 验证通过，详见 [验证记录](../tests/201604/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059315e5d1fced2e45874f)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -158,6 +170,12 @@ int main(){
 
 本地：102 组优化版、102 组 UBSan 验证通过，详见 [验证记录](../tests/201604/VALIDATION.md)。
 
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b059359e5d1fced2e458859)。
+
+<!-- refactor-online:C:end -->
+
 ### 题意
 
 给定正规化的当前目录，将若干绝对或相对路径转换成正规绝对路径。忽略重复斜杠和 `.`，`..` 返回父目录但不能越过根；空路径表示当前目录。结果末尾不留斜杠，根目录 `/` 除外。
@@ -238,6 +256,12 @@ int main(){
 
 本地：96 组优化版、96 组 UBSan 验证通过，详见 [验证记录](../tests/201604/VALIDATION.md)。
 
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0593a2e5d1fced2e458989)。
+
+<!-- refactor-online:D:end -->
+
 ### 题意
 
 从 $n\times m$ 网格的左上角出发，求最早到达右下角的时刻。每秒必须向上、下、左、右移动一格，不能原地等待。部分格子在指定闭区间内危险，不能在危险时刻进入。
@@ -316,6 +340,12 @@ int main(){
 标签：`状态压缩` · `连通性DP` · `Steiner树` · `轮廓线DP`
 
 本地：189 组优化版、189 组 UBSan 验证通过，详见 [验证记录](../tests/201604/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0593dfe5d1fced2e458a3f)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -484,6 +514,8 @@ int main(){
 - [current-sources.json](../tests/201604/current-sources.json)
 - [dsu-followup.json](../tests/201604/dsu-followup.json)
 - [extra.py](../tests/201604/extra.py)
+- [online-update-report.json](../tests/201604/online-update-report.json)
+- [online-verdicts.json](../tests/201604/online-verdicts.json)
 - [summary.json](../tests/201604/summary.json)
 
 <!-- local-validation-attachments:end -->
