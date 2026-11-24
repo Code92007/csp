@@ -18,6 +18,8 @@
 
 <!-- refactor-online-validation:end -->
 
+[历史版本与评测记录](previous-versions.md#problem-d)。
+
 场次：202312。该本地验证阶段未进行本轮在线提交；题解中的原版评测链接仍属于原版。
 
 | 题目 | 不同输入 | 保存样例 | 原有独立对拍 | 新增边界 |

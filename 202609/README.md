@@ -502,24 +502,11 @@ int main(){
 
 标签：`树` · `点分治` · `动态查询` · `位运算` · `哈希表`
 
-本版验证：已通过 C++17 编译、300 组无序点对枚举对拍、21 个现有样例与测试点。
-
-先前重构版记录：[保留当时的 50 分 Time Exceeded](https://oj.shumeng.tech/record/6b053d35e5d1fced2e44d671)。
-
-
-<!-- candidate-attempt:E:start -->
-
-查询优化候选另获 [50 分 Time Exceeded](https://oj.shumeng.tech/record/6b05aa50e5d1fced2e45bc4d)。该次查询优化未采用，其源码与判题归属单独保存在 [复测记录](../tests/202609/performance-attempt/202609E/attempt.json) 中。
-
-<!-- candidate-attempt:E:end -->
-
-旧记录于 2026-11-24 复核，同样为 **50 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](../tests/202609/prior-record-observation.json)。
+本版验证：O2、UBSan 各通过 300 组独立随机对拍、44 组定向用例、20 个保存输入及十万点规模构造，详见 [验证记录](../tests/202609/VALIDATION.md)。
 
 <!-- refactor-online:E:start -->
 
 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05d79ce5d1fced2e45d666)。
-
-原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce90ea67df0b81749bfe2)。
 
 <!-- refactor-online:E:end -->
 
@@ -783,6 +770,7 @@ int main(){
 - [optimization-20261125/verification.json](../tests/202609/optimization-20261125/verification.json)
 - [performance-attempt/202609E/E.cpp](../tests/202609/performance-attempt/202609E/E.cpp)
 - [performance-attempt/202609E/attempt.json](../tests/202609/performance-attempt/202609E/attempt.json)
+- [previous-versions.md](../tests/202609/previous-versions.md)
 - [prior-record-observation.json](../tests/202609/prior-record-observation.json)
 - [random-salt-validation.json](../tests/202609/random-salt-validation.json)
 - [verify-bd-final.py](../tests/202609/verify-bd-final.py)

@@ -125,9 +125,7 @@ int main(){
 
 标签：`前缀和` · `排序` · `整数精度` · `模拟`
 
-原版评测：[曙梦 OJ 90 分 Wrong Answer](https://oj.shumeng.tech/record/6addbb4574ace1cba9a20fa8)。重构版本地验证见 [VALIDATION.md](../tests/201412/VALIDATION.md)。
-
-先前重构版记录：[保留当时的 90 分 Wrong Answer](https://oj.shumeng.tech/record/6b05a32ee5d1fced2e45ac6f)。
+本版验证：O2、UBSan 均通过标准与扩展小数格式检查，并完成 100 万种整数分转换检查，详见 [验证记录](../tests/201412/VALIDATION.md)。
 
 <!-- refactor-online:C:start -->
 
@@ -156,16 +154,6 @@ int main(){
 价格从低到高扫描。初始 `buy` 是全部买量，`sell=0`；到价格 `p` 时先把该价卖量加入 `sell`，此时两者分别准确等于报价不低于 `p` 的买量、报价不高于 `p` 的卖量。计算较小值，若不小于当前最优便更新，以保留较高价格；最后再扣掉该价买量。
 
 买卖量只在委托价处变化，常规集合竞价枚举这些候选价即可；存在正成交量时，最高最优价格必落在某个有效买单报价处。前后缀不变量保证每个候选价的成交量正确。时间 $O(n\log n)$，空间 $O(n)$，总股数用 64 位。
-
-**价格读入与验证**
-
-价格不超过 10000.00，对全部 100 万个合法整数分逐一转换，均可恢复原值。新的读法也兼容省略小数末尾零的写法；例如 `3.5` 会得到 350 分，而拆成两个整数直接拼接会得到 305 分。
-
-本次只调整读入，保留原来的撤单、成交量和同分取最高价逻辑。720 组标准格式用例与原程序输出一致，另通过 720 组扩展格式检查；O2 和 UBSan 均通过。当前源码已获曙梦 OJ 100 分 Accepted。隐藏测试输入不可见，不能据此断言原来两个错误点的具体格式。
-
-另试过零成交时将价格归零，仍为 [90 分 Wrong Answer](https://oj.shumeng.tech/record/6b05d88ee5d1fced2e45d6a5)，未采用该修改。
-
-历史审计：[本地审计结果](../tests/auction-report.json) · [独立验证器](../tests/auction_regressions.py) · [后续审计统计](../tests/auction-review-v2-report.json)。
 
 ### 代码
 
@@ -472,6 +460,7 @@ int main(){
 - [online-verdicts.json](../tests/201412/online-verdicts.json)
 - [optimization-20261125/submission.json](../tests/201412/optimization-20261125/submission.json)
 - [optimization-20261125/verification.json](../tests/201412/optimization-20261125/verification.json)
+- [previous-versions.md](../tests/201412/previous-versions.md)
 - [prose-final-review.json](../tests/201412/prose-final-review.json)
 - [report.json](../tests/201412/report.json)
 - [retained_oracles.py](../tests/201412/retained_oracles.py)

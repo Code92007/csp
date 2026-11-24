@@ -18,6 +18,8 @@
 
 <!-- refactor-online-validation:end -->
 
+[历史版本与评测记录](previous-versions.md#problem-d)。
+
 该本地验证阶段未进行本轮在线提交。题解中保留的 100 分 Accepted 链接属于原版代码。
 
 五题均通过 C++17 O2 与 UBSan 编译，无编译警告；O2 通过 **1442 个不同输入**，UBSan 通过其中 **1440 个小规模及边界输入**。
@@ -61,7 +63,7 @@ D 额外通过 200000 点长链构造（全路径 mex 为 n、缺零路径 mex �
 
 ## D 性能复测与当前源码
 
-首轮记录 [保留原判题](https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5) 属于旧哈希 `9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da`。当前采用已独立审查的性能版本，真实结果为 100.0 分 Accepted，[复测记录](https://oj.shumeng.tech/record/6b05ab06e5d1fced2e45bdac)；当前源码 SHA-256 为 `6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632`。
+当前线性版本真实结果为 [100 分 Accepted](https://oj.shumeng.tech/record/6b05ab06e5d1fced2e45bdac)，源码 SHA-256 为 `6d340704052cfdf30dbaba52b2636e7ec91a72a16cdf56e81188759e3b19f632`。首轮版本的判题与哈希归属见[历史版本记录](previous-versions.md#problem-d)。
 
 本次未重新运行历史测试；独立对拍、边界和压力结果来自所附原始审查，C++17 编译来自已冻结记录。下方原本地记录及“当前版本”字样均保留其历史阶段归属；现行哈希与结论以本节和顶部五题表为准。证据见 [修复验证汇总](performance-revision-D.json)及[随附审查](performance-revision/202509D/independent-review-review.md)。
 
