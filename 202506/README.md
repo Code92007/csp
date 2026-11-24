@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "整数运算", "坐标映射", "BFS", "网格最短路", "位运算", "进制转换", "哈希表", "模拟", "字符串", "自动机", "矩阵快速幂", "计数DP", "圆方树", "虚树", "LCA", "图论"]
 status: "published"
-problems: [{"id": "A", "title": "正态分布", "tags": ["整数运算", "坐标映射"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版 C++17 编译通过；62 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b2a67df0b81749b8ec"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "B", "title": "机器人复健指南", "tags": ["BFS", "网格最短路"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版 C++17 编译通过；100 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b3a67df0b81749b902"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "C", "title": "消息解码", "tags": ["位运算", "进制转换", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版 C++17 编译通过；102 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b5a67df0b81749b914"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "D", "title": "月票发行", "tags": ["字符串", "自动机", "矩阵快速幂", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版 C++17 编译通过；78 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b6a67df0b81749b92b"}, "original_validation": "C++17 编译通过；3 个保存样例/回归用例通过；71 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "E", "title": "博物馆", "tags": ["圆方树", "虚树", "LCA", "图论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版 C++17 编译通过；97 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b8a67df0b81749b940"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}]
+problems: [{"id": "A", "title": "正态分布", "tags": ["整数运算", "坐标映射"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b054d84e5d1fced2e44efe4", "source_sha256": "3bcb74d3952c1f6de0b6b1a903d1eb920af8d67e8ddf47f25eceb91f2abe9ea4", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:03:34.664132+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b2a67df0b81749b8ec"}}, {"id": "B", "title": "机器人复健指南", "tags": ["BFS", "网格最短路"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05531de5d1fced2e44f9a7", "source_sha256": "0e69c7258195d5c5019875ce1c29b4aa3aadac5102e613d10a044b195898b673", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:05:21.671918+00:00"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b3a67df0b81749b902"}}, {"id": "C", "title": "消息解码", "tags": ["位运算", "进制转换", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055380e5d1fced2e44faa1", "source_sha256": "500837767022031d280ebcf635869a3f11505db5391f41bf85e93d5b97459521", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:06:33.335472+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b5a67df0b81749b914"}}, {"id": "D", "title": "月票发行", "tags": ["字符串", "自动机", "矩阵快速幂", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0553dce5d1fced2e44fb4f", "source_sha256": "4785fd2db7b5d58c48f3de914cf866399d1500a9577e20606ba5da3210841620", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:08:07.322119+00:00"}, "original_validation": "C++17 编译通过；3 个保存样例/回归用例通过；71 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b6a67df0b81749b92b"}}, {"id": "E", "title": "博物馆", "tags": ["圆方树", "虚树", "LCA", "图论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202506E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202506E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055437e5d1fced2e44fc3e", "source_sha256": "51d8ecd0ceb1a648be49fadf554848ef88a68921309bef255504294fcc3f660e", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:10:04.253924+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce7b8a67df0b81749b940"}}]
 ---
 
 # CSP 202506 五题题解
@@ -20,11 +20,17 @@ problems: [{"id": "A", "title": "正态分布", "tags": ["整数运算", "坐标
 
 标签：`整数运算` · `坐标映射`
 
-本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce7b2a67df0b81749b8ec)。
 
 原版验证：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b054d84e5d1fced2e44efe4)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -69,11 +75,17 @@ int main(){
 
 标签：`BFS` · `网格最短路`
 
-本地验证：100 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：100 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce7b3a67df0b81749b902)。
 
 原版验证：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05531de5d1fced2e44f9a7)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -138,11 +150,17 @@ int main(){
 
 标签：`位运算` · `进制转换` · `哈希表` · `模拟`
 
-本地验证：102 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：102 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce7b5a67df0b81749b914)。
 
 原版验证：**已实现**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055380e5d1fced2e44faa1)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -285,11 +303,17 @@ int main(){
 
 标签：`字符串` · `自动机` · `矩阵快速幂` · `计数DP`
 
-本地验证：78 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：78 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce7b6a67df0b81749b92b)。
 
 原版验证：**已实现**。C++17 编译通过；3 个保存样例/回归用例通过；71 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0553dce5d1fced2e44fb4f)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -441,11 +465,17 @@ int main(){
 
 标签：`圆方树` · `虚树` · `LCA` · `图论`
 
-本地验证：97 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：97 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202506/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce7b8a67df0b81749b940)。
 
 原版验证：**完整实现，未获正式评测确认**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055437e5d1fced2e44fc3e)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -636,6 +666,8 @@ int main(){
 - [c-style-followup-report.json](../tests/202506/c-style-followup-report.json)
 - [d-mod-followup-report.json](../tests/202506/d-mod-followup-report.json)
 - [d-style-followup-report.json](../tests/202506/d-style-followup-report.json)
+- [online-update-report.json](../tests/202506/online-update-report.json)
+- [online-verdicts.json](../tests/202506/online-verdicts.json)
 - [refactor-report.json](../tests/202506/refactor-report.json)
 - [statements.json](../tests/202506/statements.json)
 
