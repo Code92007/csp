@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "矩阵重塑", "线性下标", "数组", "矩阵变换", "模拟", "BPE", "链表", "优先队列", "字符串", "分组背包", "排序", "动态规划", "二维区间", "线段树", "扫描线", "静态查询"]
 status: "published"
-problems: [{"id": "A", "title": "矩阵重塑（其一）", "tags": ["矩阵重塑", "线性下标"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，2 个保存用例、60 组独立对拍及 1 组边界/压力通过；UBSan 共 63 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81ca67df0b81749bb2f"}}, {"id": "B", "title": "矩阵重塑（其二）", "tags": ["数组", "矩阵变换", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 103 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81da67df0b81749bb39"}}, {"id": "C", "title": "文本分词", "tags": ["BPE", "链表", "优先队列", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，1 个保存用例、130 组独立对拍及 2 组边界/压力通过；UBSan 共 133 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81fa67df0b81749bb49"}}, {"id": "D", "title": "货物调度", "tags": ["分组背包", "排序", "动态规划"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 103 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce821a67df0b81749bb75"}}, {"id": "E", "title": "哥德尔机", "tags": ["二维区间", "线段树", "扫描线", "静态查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：C++17 编译通过，2 个保存用例、648 组独立对拍及 3 组边界/压力通过；UBSan 共 653 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b"}}]
+problems: [{"id": "A", "title": "矩阵重塑（其一）", "tags": ["矩阵重塑", "线性下标"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055ac9e5d1fced2e45088a", "source_sha256": "1a95274448fbd5045de9237bb457884637288753c21344a9fcfdcf970b1d14f8", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:37:31.604711+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81ca67df0b81749bb2f"}}, {"id": "B", "title": "矩阵重塑（其二）", "tags": ["数组", "矩阵变换", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055b25e5d1fced2e450958", "source_sha256": "298cd9cb9ee229091ee7dd3b9bbfe5b9556747c201bb92f72b6948ba75f28ddf", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:39:07.693767+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81da67df0b81749bb39"}}, {"id": "C", "title": "文本分词", "tags": ["BPE", "链表", "优先队列", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055b8ce5d1fced2e450aa9", "source_sha256": "49fab441d635bcbeb4921b8ae83c43ea4b724d187909304f7c14b5db8dc3e254", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:40:45.734235+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81fa67df0b81749bb49"}}, {"id": "D", "title": "货物调度", "tags": ["分组背包", "排序", "动态规划"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055be4e5d1fced2e450ad4", "source_sha256": "30a5f8a84b5c8c7d090d291a483bf6600fdf4ce25edb02fd5714a0d07f07d461", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:42:11.017924+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce821a67df0b81749bb75"}}, {"id": "E", "title": "哥德尔机", "tags": ["二维区间", "线段树", "扫描线", "静态查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：70 分 Time Exceeded（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406E/"}], "oj": {"score": 70.0, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6b055c45e5d1fced2e450b84", "source_sha256": "efe8a23edda1c0bf3007259bc4e6cc5bc29c808918368bf6e127ac338f6e8981", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "failed", "observed_at": "2026-11-24T09:44:45.257225+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b"}}]
 ---
 
 # CSP 202406 五题题解
@@ -20,6 +20,12 @@ problems: [{"id": "A", "title": "矩阵重塑（其一）", "tags": ["矩阵重�
 标签：`矩阵重塑` · `线性下标`
 
 本地：63 组优化版、63 组 UBSan 验证通过，详见 [验证记录](../tests/202406/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055ac9e5d1fced2e45088a)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -74,6 +80,12 @@ int main(){
 标签：`数组` · `矩阵变换` · `模拟`
 
 本地：103 组优化版、103 组 UBSan 验证通过，详见 [验证记录](../tests/202406/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055b25e5d1fced2e450958)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -147,6 +159,12 @@ int main(){
 标签：`BPE` · `链表` · `优先队列` · `字符串`
 
 本地：133 组优化版、133 组 UBSan 验证通过，详见 [验证记录](../tests/202406/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055b8ce5d1fced2e450aa9)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -330,6 +348,12 @@ int main(){
 
 本地：103 组优化版、103 组 UBSan 验证通过，详见 [验证记录](../tests/202406/VALIDATION.md)。
 
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055be4e5d1fced2e450ad4)。
+
+<!-- refactor-online:D:end -->
+
 ### 题意
 
 有 $n$ 间仓库和 $m$ 件货物。调用仓库 $j$ 的任意货物需支付一次基本费 $b_j$，每调用一件还需支付 $c_j$。选择若干货物出售，使总售价减总费用至少为 $v$，求最小总费用。
@@ -422,6 +446,12 @@ int main(){
 标签：`二维区间` · `线段树` · `扫描线` · `静态查询`
 
 本地：653 组优化版、653 组 UBSan 验证通过，详见 [验证记录](../tests/202406/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：70 分 Time Exceeded（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055c45e5d1fced2e450b84)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -755,6 +785,8 @@ int main(){
 - [constants-followup.json](../tests/202406/constants-followup.json)
 - [current-sources.json](../tests/202406/current-sources.json)
 - [extra.py](../tests/202406/extra.py)
+- [online-update-report.json](../tests/202406/online-update-report.json)
+- [online-verdicts.json](../tests/202406/online-verdicts.json)
 - [style-followup-c.json](../tests/202406/style-followup-c.json)
 - [style-followup-e.json](../tests/202406/style-followup-e.json)
 - [style-followup.json](../tests/202406/style-followup.json)
