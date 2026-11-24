@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "几何判断", "定点数", "计数", "矩阵枚举", "差分", "区间并集", "字符串解析", "Huffman", "双端队列", "模拟", "树", "LCA", "可持久化线段树", "mex", "动态规划", "离散凸性", "优先队列", "拉格朗日优化"]
 status: "published"
-problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点数", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce736a67df0b81749b65c"}}, {"id": "B", "title": "水印检查", "tags": ["矩阵枚举", "差分", "区间并集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce738a67df0b81749b678"}}, {"id": "C", "title": "HTTP 头信息", "tags": ["字符串解析", "Huffman", "双端队列", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce739a67df0b81749b685"}}, {"id": "D", "title": "造题计划（上）", "tags": ["树", "LCA", "可持久化线段树", "mex"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a"}}, {"id": "E", "title": "造题计划（下）", "tags": ["动态规划", "离散凸性", "优先队列", "拉格朗日优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "原版曙梦 OJ 100 分 Accepted（复刻评测）；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1"}}]
+problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点数", "计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b054563e5d1fced2e44e250", "source_sha256": "ebec3287fd4999bc4e9b986691e1526e7b58bc3e2651034abfb9c2f4d83fada7", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:07:09.705867+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce736a67df0b81749b65c"}}, {"id": "B", "title": "水印检查", "tags": ["矩阵枚举", "差分", "区间并集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0545cfe5d1fced2e44e2f0", "source_sha256": "0b3b127e87de2706f8c194544025e02b807687714d7f0d380b4512344bd0a2d8", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:08:38.008971+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce738a67df0b81749b678"}}, {"id": "C", "title": "HTTP 头信息", "tags": ["字符串解析", "Huffman", "双端队列", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05464fe5d1fced2e44e407", "source_sha256": "e9d6976a5a6a902e5cfa1f3f6320acead297ab8fff6b12b84f709036476ca2a9", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:10:43.189587+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce739a67df0b81749b685"}}, {"id": "D", "title": "造题计划（上）", "tags": ["树", "LCA", "可持久化线段树", "mex"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：70 分 Time Exceeded（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509D/"}], "oj": {"score": 70.0, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5", "source_sha256": "9132211a9175bee8afe2165aeadf144a23c9c91edacdb0749e661f94a1bd09da", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "failed", "observed_at": "2026-11-24T08:13:58.489531+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a"}}, {"id": "E", "title": "造题计划（下）", "tags": ["动态规划", "离散凸性", "优先队列", "拉格朗日优化"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202509E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05477ce5d1fced2e44e5ea", "source_sha256": "f30997019754ecdbad11e1e9a94bec8515d9360f4681cd3deeaded7e9d073288", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:15:49.681826+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1"}}]
 ---
 
 # CSP 202509 五题题解
@@ -19,7 +19,13 @@ problems: [{"id": "A", "title": "蒙特卡洛", "tags": ["几何判断", "定点
 
 标签：`几何判断` · `定点数` · `计数`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce736a67df0b81749b65c)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce736a67df0b81749b65c)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b054563e5d1fced2e44e250)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -95,7 +101,13 @@ int main(){
 
 标签：`矩阵枚举` · `差分` · `区间并集`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce738a67df0b81749b678)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce738a67df0b81749b678)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0545cfe5d1fced2e44e2f0)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -179,7 +191,13 @@ int main(){
 
 标签：`字符串解析` · `Huffman` · `双端队列` · `模拟`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce739a67df0b81749b685)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce739a67df0b81749b685)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05464fe5d1fced2e44e407)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -315,7 +333,13 @@ int main(){
 
 标签：`树` · `LCA` · `可持久化线段树` · `mex`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce73ba67df0b81749b69a)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：70 分 Time Exceeded（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0546dee5d1fced2e44e4b5)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -462,7 +486,13 @@ int main(){
 
 标签：`动态规划` · `离散凸性` · `优先队列` · `拉格朗日优化`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce73ca67df0b81749b6b1)。本次重构的本地验证见 [VALIDATION.md](../tests/202509/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05477ce5d1fced2e44e5ea)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -572,6 +602,8 @@ int main(){
 ### 验证附件
 
 - [VALIDATION.md](../tests/202509/VALIDATION.md)
+- [online-update-report.json](../tests/202509/online-update-report.json)
+- [online-verdicts.json](../tests/202509/online-verdicts.json)
 - [prose-final-review.json](../tests/202509/prose-final-review.json)
 - [report.json](../tests/202509/report.json)
 - [retained_oracles.py](../tests/202509/retained_oracles.py)
