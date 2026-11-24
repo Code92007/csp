@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "贪心", "前缀最大值", "差分", "阈值枚举", "模拟", "循环数组", "浮点数", "事件延迟", "概率DP", "状态压缩", "期望", "动态树", "LCT", "倍增", "历史版本"]
 status: "published"
-problems: [{"id": "A", "title": "数组推导", "tags": ["贪心", "前缀最大值"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版 C++17 编译通过；45 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16026"}], "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490510"}, "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。"}, {"id": "B", "title": "非零段划分", "tags": ["差分", "阈值枚举"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版 C++17 编译通过；155 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16027"}], "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490539"}, "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}, "original_validation": "C++17 编译通过；4 个保存样例/回归用例通过；150 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。"}, {"id": "C", "title": "脉冲神经网络", "tags": ["模拟", "循环数组", "浮点数", "事件延迟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版 C++17 编译通过；83 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16028"}], "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490605"}, "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。"}, {"id": "D", "title": "收集卡牌", "tags": ["概率DP", "状态压缩", "期望"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版 C++17 编译通过；77 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202109D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16029"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce96fa67df0b81749c194"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305945496", "source_sha256": "d0054cc4dee11a8f6a87b53aa508d7c4dff26aeb6418407984f5a70260c5dbdc"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "E", "title": "箱根山岳险天下", "tags": ["动态树", "LCT", "倍增", "历史版本"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版 C++17 编译通过；83 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16030"}], "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490619"}, "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。"}]
+problems: [{"id": "A", "title": "数组推导", "tags": ["贪心", "前缀最大值"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版未提交：Normal submit page confirms PermissionError for View hidden problems; see 202109A-access.json。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16026"}], "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490510"}, "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。"}, {"id": "B", "title": "非零段划分", "tags": ["差分", "阈值枚举"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版未提交：Normal submit page confirms PermissionError for View hidden problems; see 202109B-access.json。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16027"}], "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490539"}, "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}, "original_validation": "C++17 编译通过；4 个保存样例/回归用例通过；150 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。"}, {"id": "C", "title": "脉冲神经网络", "tags": ["模拟", "循环数组", "浮点数", "事件延迟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16028"}], "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490605"}, "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058795e5d1fced2e456787", "source_sha256": "3a600da8f273ec2ba089c53b2c334a2e4d89cbd6554e49fbfa2501601bf5bc81", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:50:02.338320+00:00"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。", "oj_before_refactor": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}}, {"id": "D", "title": "收集卡牌", "tags": ["概率DP", "状态压缩", "期望"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202109D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16029"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0587fbe5d1fced2e4568c7", "source_sha256": "3a8c7d9f84fb8b9d91f1567ed36a0f36d35070f9261811c33a7765604f522b6e", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:51:19.692764+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305945496", "source_sha256": "d0054cc4dee11a8f6a87b53aa508d7c4dff26aeb6418407984f5a70260c5dbdc"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce96fa67df0b81749c194"}}, {"id": "E", "title": "箱根山岳险天下", "tags": ["动态树", "LCT", "倍增", "历史版本"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版未提交：Normal submit page confirms PermissionError for View hidden problems; see 202109E-access.json。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16030"}], "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490619"}, "oj": {"status": "unavailable", "reason": "隐藏题，当前账号无权查看"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；洛谷民间数据 100 分 Accepted。"}]
 ---
 
 # CSP 202109 五题题解
@@ -20,9 +20,15 @@ problems: [{"id": "A", "title": "数组推导", "tags": ["贪心", "前缀最大
 
 标签：`贪心` · `前缀最大值`
 
-本地验证：45 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：45 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。。
 
 原版验证：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490510)。
+
+<!-- refactor-online:A:start -->
+
+重构版未提交：Normal submit page confirms PermissionError for View hidden problems; see 202109A-access.json；未产生新提交或判题结论。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -69,9 +75,15 @@ int main(){
 
 标签：`差分` · `阈值枚举`
 
-本地验证：155 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：155 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。。
 
 原版验证：**已实现**。C++17 编译通过；4 个保存样例/回归用例通过；150 组独立随机对拍通过；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490539)。
+
+<!-- refactor-online:B:start -->
+
+重构版未提交：Normal submit page confirms PermissionError for View hidden problems; see 202109B-access.json；未产生新提交或判题结论。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -123,9 +135,15 @@ int main(){
 
 标签：`模拟` · `循环数组` · `浮点数` · `事件延迟`
 
-本地验证：83 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：83 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。。
 
 原版验证：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490605)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058795e5d1fced2e456787)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -236,11 +254,17 @@ int main(){
 
 标签：`概率DP` · `状态压缩` · `期望`
 
-本地验证：77 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：77 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6adce96fa67df0b81749c194)。
 
 原版验证：**完整实现，已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce96fa67df0b81749c194)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305945496)（民间复刻评测）。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0587fbe5d1fced2e4568c7)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -312,9 +336,15 @@ int main(){
 
 标签：`动态树` · `LCT` · `倍增` · `历史版本`
 
-本地验证：83 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：83 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/202109/VALIDATION.md)。。
 
 原版验证：**已实现**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305490619)。
+
+<!-- refactor-online:E:start -->
+
+重构版未提交：Normal submit page confirms PermissionError for View hidden problems; see 202109E-access.json；未产生新提交或判题结论。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -510,6 +540,8 @@ int main(){
 - [b-capacity-followup-report.json](../tests/202109/b-capacity-followup-report.json)
 - [boundaries.py](../tests/202109/boundaries.py)
 - [d-printf-followup-report.json](../tests/202109/d-printf-followup-report.json)
+- [online-update-report.json](../tests/202109/online-update-report.json)
+- [online-verdicts.json](../tests/202109/online-verdicts.json)
 - [refactor-report.json](../tests/202109/refactor-report.json)
 - [statements.json](../tests/202109/statements.json)
 

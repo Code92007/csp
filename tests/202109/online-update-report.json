@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "contest": "202109",
+  "plan_sha256": "cc6c06b57baef6e00ef92a3aa61b5463151d451d93d7634f57f6981089e24c4f",
+  "input_signature": "62c3fe1946caaffb3d250050aaf8b05ea00d35858870b5e5903d5833606b3205",
+  "source_sha256": {
+    "A": "0f0643fb30b01f546b5c713ef4e29746d675cca7d03c2365068f49dfbbb6616d",
+    "B": "ebd926e838ef6bf5ce5dbd0389057e68d9ac29a15e6c8a8a1967de4668bf27e9",
+    "C": "3a600da8f273ec2ba089c53b2c334a2e4d89cbd6554e49fbfa2501601bf5bc81",
+    "D": "3a8c7d9f84fb8b9d91f1567ed36a0f36d35070f9261811c33a7765604f522b6e",
+    "E": "408ece0b2576d64719dfed3593b52b4c44aa09b885db792a88e3c97b276bbbfc"
+  },
+  "source_files_unchanged": true,
+  "cpp_fences_unchanged": 10,
+  "all_original_record_links_preserved": true,
+  "article_checks": [
+    {
+      "file": "202109/README.md",
+      "before_sha256": "4f41e2004860305128ed029bda1a1d140816049e939ebe51f42d9b79a575ed96",
+      "after_sha256": "770948d82fe0b3b00a44d94b1ffef95ec994cbd1927ead0e6205581ff4765170",
+      "cpp_fences_unchanged": 5,
+      "original_record_urls_preserved": [
+        "https://oj.shumeng.tech/record/6adce96fa67df0b81749c194",
+        "https://www.luogu.com.cn/record/305490510",
+        "https://www.luogu.com.cn/record/305490539",
+        "https://www.luogu.com.cn/record/305490605",
+        "https://www.luogu.com.cn/record/305490619",
+        "https://www.luogu.com.cn/record/305945496"
+      ],
+      "frozen_original_record_urls_present": [
+        "https://oj.shumeng.tech/record/6adce96fa67df0b81749c194"
+      ]
+    },
+    {
+      "file": "202109题解.md",
+      "before_sha256": "0b095d704eb3ed4fac3c79ef35a922a77a5aba3556c6a978b481569a6407dfc4",
+      "after_sha256": "af4d5aff85ebad622bd9d0616cee5ff845eec6202b24886db0267bd8bca09a75",
+      "cpp_fences_unchanged": 5,
+      "original_record_urls_preserved": [
+        "https://oj.shumeng.tech/record/6adce96fa67df0b81749c194",
+        "https://www.luogu.com.cn/record/305490510",
+        "https://www.luogu.com.cn/record/305490539",
+        "https://www.luogu.com.cn/record/305490605",
+        "https://www.luogu.com.cn/record/305490619",
+        "https://www.luogu.com.cn/record/305945496"
+      ],
+      "frozen_original_record_urls_present": [
+        "https://oj.shumeng.tech/record/6adce96fa67df0b81749c194"
+      ]
+    }
+  ],
+  "judged": 2,
+  "access_required": 3,
+  "historical_json_reports_modified": false,
+  "git_or_deploy_executed": false
+}

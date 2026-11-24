@@ -1,6 +1,24 @@
 # 本地验证记录
 
-场次：202109。重构版未重新提交在线评测；题解中的原版评测链接仍属于原版。
+<!-- refactor-online-validation:start -->
+
+## 当前重构版在线评测
+
+本节来自冻结提交计划与真实判题账本；下方本地验证记录保留其历史归属。
+
+| 题目 | 结果 | 当前源码 SHA-256 |
+|---|---|---|
+| A | 重构版未提交：Normal submit page confirms PermissionError for View hidden problems; see 202109A-access.json；未产生新提交或判题结论。 | `0f0643fb30b01f546b5c713ef4e29746d675cca7d03c2365068f49dfbbb6616d` |
+| B | 重构版未提交：Normal submit page confirms PermissionError for View hidden problems; see 202109B-access.json；未产生新提交或判题结论。 | `ebd926e838ef6bf5ce5dbd0389057e68d9ac29a15e6c8a8a1967de4668bf27e9` |
+| C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058795e5d1fced2e456787)。 | `3a600da8f273ec2ba089c53b2c334a2e4d89cbd6554e49fbfa2501601bf5bc81` |
+| D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0587fbe5d1fced2e4568c7)。 | `3a8c7d9f84fb8b9d91f1567ed36a0f36d35070f9261811c33a7765604f522b6e` |
+| E | 重构版未提交：Normal submit page confirms PermissionError for View hidden problems; see 202109E-access.json；未产生新提交或判题结论。 | `408ece0b2576d64719dfed3593b52b4c44aa09b885db792a88e3c97b276bbbfc` |
+
+[逐题在线结果与原版记录](online-verdicts.json)。
+
+<!-- refactor-online-validation:end -->
+
+场次：202109。该本地验证阶段未进行本轮在线提交；题解中的原版评测链接仍属于原版。
 
 | 题目 | 不同输入 | 保存样例 | 原有独立对拍 | 新增边界 |
 |---|---:|---:|---:|---:|
