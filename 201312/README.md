@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "频率统计", "同分规则", "字符串", "校验码", "单调栈", "直方图", "最大矩形", "状态压缩", "计数DP", "图论", "BFS", "反向图", "网格"]
 status: "published"
-problems: [{"id": "A", "title": "出现次数最多的数", "tags": ["频率统计", "同分规则"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc26374ace1cba9a21910"}}, {"id": "B", "title": "ISBN 号码", "tags": ["字符串", "校验码"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P1055"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc2ed74ace1cba9a219a9"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/306035824", "source_sha256": "fb2dbaaa5a38e612c92b9e432e0ff9a75fc25dbbdd33a522d2084d2ea8020ec0"}}, {"id": "C", "title": "最大的矩形", "tags": ["单调栈", "直方图", "最大矩形"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281824"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312C/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305657951"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfb8f74ace1cba9a23115", "source_sha256": "a4c57208b2ba6ed54326a0002e455c660500b1319c5a4f0d3c191b6121ef19ab"}}, {"id": "D", "title": "有趣的数", "tags": ["状态压缩", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc37d74ace1cba9a21a93"}}, {"id": "E", "title": "I’m stuck!", "tags": ["图论", "BFS", "反向图", "网格"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc40e74ace1cba9a21ab6"}}]
+problems: [{"id": "A", "title": "出现次数最多的数", "tags": ["频率统计", "同分规则"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a668e5d1fced2e45b50c", "source_sha256": "1eccdb2025f426ed406db7a660c25cb024db017cbe6f803985d44905290e3513", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T15:00:44.542438+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc26374ace1cba9a21910"}}, {"id": "B", "title": "ISBN 号码", "tags": ["字符串", "校验码"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P1055"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a6a5e5d1fced2e45b641", "source_sha256": "fe3211ab6d5ca2d92327fd7077c405543541d5b39cabcafd2cf4233c46746b12", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T15:02:32.395452+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/306035824", "source_sha256": "fb2dbaaa5a38e612c92b9e432e0ff9a75fc25dbbdd33a522d2084d2ea8020ec0"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc2ed74ace1cba9a219a9"}}, {"id": "C", "title": "最大的矩形", "tags": ["单调栈", "直方图", "最大矩形"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U281824"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312C/"}], "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305657951"}, "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a6e3e5d1fced2e45b6b2", "source_sha256": "d085dc5bf3906bb95b8fad9584b206335929af9001f16ff4ea68a4a959985dbc", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T15:02:34.028383+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addfb8f74ace1cba9a23115", "source_sha256": "a4c57208b2ba6ed54326a0002e455c660500b1319c5a4f0d3c191b6121ef19ab"}}, {"id": "D", "title": "有趣的数", "tags": ["状态压缩", "计数DP"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a720e5d1fced2e45b767", "source_sha256": "888315c8f29416a93ef4a41861647fd99a890c0961eb2cfa410a54f39196d655", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T15:04:34.387292+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc37d74ace1cba9a21a93"}}, {"id": "E", "title": "I’m stuck!", "tags": ["图论", "BFS", "反向图", "网格"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201312E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201312E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a75ee5d1fced2e45b7f7", "source_sha256": "6df458c6bbf3b4908a85ba0405fcfd6c517cca44bda4008661c64449774d01d2", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T15:04:35.235224+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addc40e74ace1cba9a21ab6"}}]
 ---
 
 # CSP 201312 五题题解
@@ -21,7 +21,13 @@ problems: [{"id": "A", "title": "出现次数最多的数", "tags": ["频率统�
 
 标签：`频率统计` · `同分规则`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc26374ace1cba9a21910)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc26374ace1cba9a21910)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a668e5d1fced2e45b50c)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -71,7 +77,13 @@ int main(){
 
 标签：`字符串` · `校验码`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc2ed74ace1cba9a219a9)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/306035824)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc2ed74ace1cba9a219a9)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/306035824)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a6a5e5d1fced2e45b641)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -122,7 +134,13 @@ int main(){
 
 标签：`单调栈` · `直方图` · `最大矩形`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addfb8f74ace1cba9a23115)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305657951)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addfb8f74ace1cba9a23115)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305657951)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a6e3e5d1fced2e45b6b2)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -176,7 +194,13 @@ int main(){
 
 标签：`状态压缩` · `计数DP`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc37d74ace1cba9a21a93)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc37d74ace1cba9a21a93)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a720e5d1fced2e45b767)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -243,7 +267,13 @@ int main(){
 
 标签：`图论` · `BFS` · `反向图` · `网格`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc40e74ace1cba9a21ab6)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addc40e74ace1cba9a21ab6)。重构版本地验证见 [VALIDATION.md](../tests/201312/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a75ee5d1fced2e45b7f7)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -354,6 +384,8 @@ int main(){
 - [VALIDATION.md](../tests/201312/VALIDATION.md)
 - [details.txt](../tests/201312/details.txt)
 - [nightly-review-followup.json](../tests/201312/nightly-review-followup.json)
+- [online-update-report.json](../tests/201312/online-update-report.json)
+- [online-verdicts.json](../tests/201312/online-verdicts.json)
 - [prose-final-review.json](../tests/201312/prose-final-review.json)
 - [report.json](../tests/201312/report.json)
 - [retained_oracles.py](../tests/201312/retained_oracles.py)
