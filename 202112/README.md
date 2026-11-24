@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "贡献法", "区间计数", "双指针", "分段函数", "区间统计", "编码", "多项式", "模运算", "模拟", "线段树", "离散化", "懒标记", "点分治", "树状数组", "离线统计", "树上路径", "位运算"]
 status: "published"
-problems: [{"id": "A", "title": "序列查询", "tags": ["贡献法", "区间计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16059"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce928a67df0b81749c05d"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305940917", "source_sha256": "74c492ab0f041b54d3dec002984de837659422a21c103bd228cfdd4c1202737f"}}, {"id": "B", "title": "序列查询新解", "tags": ["双指针", "分段函数", "区间统计"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16060"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adce92aa67df0b81749c061"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490959"}}, {"id": "C", "title": "登机牌条码", "tags": ["编码", "多项式", "模运算", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16061"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adce92ba67df0b81749c065"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490983"}}, {"id": "D", "title": "磁盘文件操作", "tags": ["线段树", "离散化", "懒标记"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16062"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce92da67df0b81749c06b"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305941488", "source_sha256": "3d1c08db14005411be92eb49ebc4c741a1d335fad30d8b220b8e836136c2e1dd"}}, {"id": "E", "title": "极差路径", "tags": ["点分治", "树状数组", "离线统计", "树上路径", "位运算"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16063"}], "previous_oj": {"status": "failed", "score": 56, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addccac74ace1cba9a21f0f", "source_sha256": "fe2c351c465816e460e5a40eacc8102efc31798009081865a5b98656cff8aa70", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305494838", "source_sha256": "fe2c351c465816e460e5a40eacc8102efc31798009081865a5b98656cff8aa70", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab", "source_sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305944901", "source_sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312"}}]
+problems: [{"id": "A", "title": "序列查询", "tags": ["贡献法", "区间计数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112A"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16059"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058553e5d1fced2e455ef2", "source_sha256": "a14fca2b4fef02c62a318bd095b890086e374181af1173cba480221517c1df64", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:40:24.763380+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305940917", "source_sha256": "74c492ab0f041b54d3dec002984de837659422a21c103bd228cfdd4c1202737f"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce928a67df0b81749c05d"}}, {"id": "B", "title": "序列查询新解", "tags": ["双指针", "分段函数", "区间统计"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112B"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16060"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0585bae5d1fced2e456053", "source_sha256": "df03115fd864f57e5ea881a48baa56ab4d01395ba3897fda4795869c12b4857a", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:41:16.608377+00:00"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490959"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adce92aa67df0b81749c061"}}, {"id": "C", "title": "登机牌条码", "tags": ["编码", "多项式", "模运算", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112C"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16061"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0585f7e5d1fced2e4561db", "source_sha256": "ae8c78fb105bfb0112312c2e9052528d87a04e6a6a43a2cfeba6f0f493e1e920", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:42:34.224215+00:00"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490983"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adce92ba67df0b81749c065"}}, {"id": "D", "title": "磁盘文件操作", "tags": ["线段树", "离散化", "懒标记"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112D"}, {"label": "公开题面存档", "url": "https://www.luogu.com.cn/problem/P16062"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05863be5d1fced2e4562db", "source_sha256": "bb1a1e84c7a4339da29af7d64f102125d4bb97e829478501e6d6073f3f377d96", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:43:31.554963+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305941488", "source_sha256": "3d1c08db14005411be92eb49ebc4c741a1d335fad30d8b220b8e836136c2e1dd"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce92da67df0b81749c06b"}}, {"id": "E", "title": "极差路径", "tags": ["点分治", "树状数组", "离线统计", "树上路径", "位运算"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202112E"}, {"label": "公开题面与样例", "url": "https://www.luogu.com.cn/problem/P16063"}], "previous_oj": {"status": "failed", "score": 56, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6addccac74ace1cba9a21f0f", "source_sha256": "fe2c351c465816e460e5a40eacc8102efc31798009081865a5b98656cff8aa70", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "previous_luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305494838", "source_sha256": "fe2c351c465816e460e5a40eacc8102efc31798009081865a5b98656cff8aa70", "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"}, "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058679e5d1fced2e456373", "source_sha256": "29b11094b69fc9d3165ab9c39c61d5b4fd7d2d765730d78e25cf6b41cbec1e85", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:47:39.688166+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305944901", "source_sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab", "source_sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312"}}]
 ---
 
 # CSP 202112 五题题解
@@ -19,7 +19,13 @@ problems: [{"id": "A", "title": "序列查询", "tags": ["贡献法", "区间计
 
 标签：`贡献法` · `区间计数`
 
-原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce928a67df0b81749c05d)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305940917)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce928a67df0b81749c05d)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305940917)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058553e5d1fced2e455ef2)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -64,7 +70,13 @@ int main(){
 
 标签：`双指针` · `分段函数` · `区间统计`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce92aa67df0b81749c061)；[洛谷民间数据 100 分 accepted](https://www.luogu.com.cn/record/305490959)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce92aa67df0b81749c061)；[洛谷民间数据 100 分 accepted](https://www.luogu.com.cn/record/305490959)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0585bae5d1fced2e456053)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -121,7 +133,13 @@ int main(){
 
 标签：`编码` · `多项式` · `模运算` · `模拟`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce92ba67df0b81749c065)；[洛谷民间数据 100 分 accepted](https://www.luogu.com.cn/record/305490983)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6adce92ba67df0b81749c065)；[洛谷民间数据 100 分 accepted](https://www.luogu.com.cn/record/305490983)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0585f7e5d1fced2e4561db)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -217,7 +235,13 @@ int main(){
 
 标签：`线段树` · `离散化` · `懒标记`
 
-原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce92da67df0b81749c06b)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305941488)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adce92da67df0b81749c06b)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305941488)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05863be5d1fced2e4562db)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -407,7 +431,15 @@ int main(){
 
 标签：`点分治` · `树状数组` · `离线统计` · `树上路径` · `位运算`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305944901)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305944901)。重构版本地验证见 [VALIDATION.md](../tests/202112/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058679e5d1fced2e456373)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6addccac74ace1cba9a21f0f)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -870,6 +902,8 @@ int main(){
 - [name-followup-before.json](../tests/202112/name-followup-before.json)
 - [name-followup-report.json](../tests/202112/name-followup-report.json)
 - [nightly-review-followup.json](../tests/202112/nightly-review-followup.json)
+- [online-update-report.json](../tests/202112/online-update-report.json)
+- [online-verdicts.json](../tests/202112/online-verdicts.json)
 - [prose-final-review.json](../tests/202112/prose-final-review.json)
 - [report.json](../tests/202112/report.json)
 - [retained_oracles.py](../tests/202112/retained_oracles.py)

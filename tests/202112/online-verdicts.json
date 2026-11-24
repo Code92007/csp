@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "kind": "refactored-source-online-results",
+  "contest": "202112",
+  "plan_sha256": "cc6c06b57baef6e00ef92a3aa61b5463151d451d93d7634f57f6981089e24c4f",
+  "problems": [
+    {
+      "problem": "A",
+      "key": "202112A",
+      "state": "judged",
+      "source_sha256": "a14fca2b4fef02c62a318bd095b890086e374181af1173cba480221517c1df64",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce928a67df0b81749c05d"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b058553e5d1fced2e455ef2",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T12:40:24.763380+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "B",
+      "key": "202112B",
+      "state": "judged",
+      "source_sha256": "df03115fd864f57e5ea881a48baa56ab4d01395ba3897fda4795869c12b4857a",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "verdict": "Accepted",
+          "record": "https://oj.shumeng.tech/record/6adce92aa67df0b81749c061"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b0585bae5d1fced2e456053",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T12:41:16.608377+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "C",
+      "key": "202112C",
+      "state": "judged",
+      "source_sha256": "ae8c78fb105bfb0112312c2e9052528d87a04e6a6a43a2cfeba6f0f493e1e920",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "verdict": "Accepted",
+          "record": "https://oj.shumeng.tech/record/6adce92ba67df0b81749c065"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b0585f7e5d1fced2e4561db",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T12:42:34.224215+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "D",
+      "key": "202112D",
+      "state": "judged",
+      "source_sha256": "bb1a1e84c7a4339da29af7d64f102125d4bb97e829478501e6d6073f3f377d96",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce92da67df0b81749c06b"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b05863be5d1fced2e4562db",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T12:43:31.554963+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "E",
+      "key": "202112E",
+      "state": "judged",
+      "source_sha256": "29b11094b69fc9d3165ab9c39c61d5b4fd7d2d765730d78e25cf6b41cbec1e85",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "verdict": "Accepted",
+          "record": "https://oj.shumeng.tech/record/6ade046d74ace1cba9a237ab",
+          "source_sha256": "e7b86d3a8fe5877854bb5175dd65572766e7c8592c6c03896d4ab6741d0af312"
+        },
+        {
+          "metadata_field": "previous_oj",
+          "status": "failed",
+          "score": 56,
+          "verdict": "Time Exceeded",
+          "record": "https://oj.shumeng.tech/record/6addccac74ace1cba9a21f0f",
+          "source_sha256": "fe2c351c465816e460e5a40eacc8102efc31798009081865a5b98656cff8aa70",
+          "note": "上一版源码的评测记录；当前版本已更换实现，成绩单独核验。"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b058679e5d1fced2e456373",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T12:47:39.688166+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    }
+  ]
+}
