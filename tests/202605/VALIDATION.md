@@ -1,6 +1,24 @@
 # 202605 验证记录
 
-验证日期：2026-11-24。对应同目录的五份 C++17 源码及 [完整题解](../../202605/README.md)。本版已根据 review 修订，重构代码尚未重新提交在线评测。
+<!-- refactor-online-validation:start -->
+
+## 当前重构版在线评测
+
+本节来自冻结提交计划与真实判题账本；下方本地验证记录保留其历史归属。
+
+| 题目 | 结果 | 当前源码 SHA-256 |
+|---|---|---|
+| A | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053dfee5d1fced2e44d745)。 | `899adde38debde60ce89a2d253456a4abf46c83d6e383a941a7367ebcfebf298` |
+| B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053e6fe5d1fced2e44d7d4)。 | `a225049d5411bc120d3d68f11917e9acc1ae478104b5d4c24500b797753556f1` |
+| C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053ee9e5d1fced2e44d86b)。 | `a016407cae5e8a2071f985347e845362b43778c12ce5c00a9aa7b0e3746bdc0b` |
+| D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053f66e5d1fced2e44d927)。 | `97d112035eec221a59bed5619ffcc6ea7a7aaeac30485e425c904c184ef9b21d` |
+| E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053fc5e5d1fced2e44d98f)。 | `9fbe859bdd3062e14908a0ae245b6f0216165f1843f33309ce0814cb0667d387` |
+
+[逐题在线结果与原版记录](online-verdicts.json)。
+
+<!-- refactor-online-validation:end -->
+
+验证日期：2026-11-24。对应同目录的五份 C++17 源码及 [完整题解](../../202605/README.md)。本版已根据 review 修订，该本地验证阶段未进行本轮在线提交。
 
 首次重构验证中，五题均以 Apple Clang 21、`-std=c++17 -O2 -Wall -Wextra` 编译，无警告。本机 Clang 通过临时兼容头提供 `bits/stdc++.h`；该阶段未使用 GCC，新增 GNU 验证单独列于下方。
 
@@ -33,7 +51,7 @@ E 题的 2042 组 DP 对拍包括 `n≤6` 的全部 1442 棵有标号树和 `n=7
 
 ## C 每轮数组全局化复验
 
-将ok、drop、low、high、held改为全局数组，仍在每一轮开始时分别memset清零，event保持局部。O2、UBSan（含-Wshadow）编译均无诊断，各通过90组原独立逐时刻模拟、1个保存样例和1个n=10/m=40解析边界，共92个不同输入。[当前哈希与结果](c-global-followup-report.json) · [复现脚本](verify-c-global.py)。原本地对拍记录保持历史归属，未重新提交在线评测。
+将ok、drop、low、high、held改为全局数组，仍在每一轮开始时分别memset清零，event保持局部。O2、UBSan（含-Wshadow）编译均无诊断，各通过90组原独立逐时刻模拟、1个保存样例和1个n=10/m=40解析边界，共92个不同输入。[当前哈希与结果](c-global-followup-report.json) · [复现脚本](verify-c-global.py)。原本地对拍记录保持历史归属，该本地验证阶段未进行本轮在线提交。
 
 - `C.cpp` 当前 SHA-256：`a016407cae5e8a2071f985347e845362b43778c12ce5c00a9aa7b0e3746bdc0b`
 
@@ -43,7 +61,7 @@ E 题的 2042 组 DP 对拍包括 `n≤6` 的全部 1442 棵有标号树和 `n=7
 
 A 重跑全部小数位与整数奇偶组合构成的原独立输入，以及一个保存样例，两次运行均通过。E 重跑 24 组合法操作穷举、1442 棵 `n≤6` 的全部有标号树、600 棵 `n=7…10` 的原随机树、4 个保存输入和 7 组十万点构造，2077 次运行均通过，合并重复输入后为 2058 个不同输入。大规模随机树、乱序链和扫帚树只检查完整排列；可解析的顺序链及星形另核对升序最优答案。
 
-此次只重放原验证范围，不把重复运行增加到历史独立组数，也未重新提交在线评测。当前哈希、编译命令、独立基准哈希和逐次结果见 [GNU 复验报告](current-hash-gnu-revalidation.json)；复现命令为 `python3 tools/nightly/verify_2026_hash_gaps.py`（在仓库根目录运行，需要发布源仓库中的原验证器）。
+此次只重放原验证范围，不把重复运行增加到历史独立组数，该本地验证阶段未进行本轮在线提交。当前哈希、编译命令、独立基准哈希和逐次结果见 [GNU 复验报告](current-hash-gnu-revalidation.json)；复现命令为 `python3 tools/nightly/verify_2026_hash_gaps.py`（在仓库根目录运行，需要发布源仓库中的原验证器）。
 
 - `A.cpp` 当前 SHA-256：`899adde38debde60ce89a2d253456a4abf46c83d6e383a941a7367ebcfebf298`
 - `E.cpp` 当前 SHA-256：`9fbe859bdd3062e14908a0ae245b6f0216165f1843f33309ce0814cb0667d387`

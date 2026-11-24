@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "数学", "精度", "模拟", "二分答案", "状态机", "调度", "异或", "前缀和", "贪心", "倍增", "树", "字典序", "候选根淘汰", "并查集", "启发式合并"]
 status: "published"
-problems: [{"id": "A", "title": "银行家舍入", "tags": ["数学", "精度", "模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版已通过 C++17 编译、覆盖全部小数位和整数奇偶组合的校验、整数部分上界检查及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605A"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e8a67df0b81749b446"}}, {"id": "B", "title": "机器人宿管指南", "tags": ["二分答案", "模拟", "数学"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版已通过 C++17 编译、100 组枚举对拍、3 组大整数边界检查及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605B"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e9a67df0b81749b44f"}}, {"id": "C", "title": "死锁优化", "tags": ["模拟", "状态机", "调度"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版已通过 C++17 编译、90 组独立时间轴模拟对拍及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605C"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6eba67df0b81749b463"}}, {"id": "D", "title": "石子游戏", "tags": ["异或", "前缀和", "贪心", "倍增"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版已通过 C++17 编译、110 组区间划分 DP 对拍、两组百万规模边界检查及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605D"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6eda67df0b81749b46e"}}, {"id": "E", "title": "绝世好串", "tags": ["树", "字典序", "贪心", "候选根淘汰", "并查集", "启发式合并", "倍增"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版已通过 C++17 编译、24 组操作穷举、2042 组独立 DP 对拍、7 组十万点构造及保存样例。原版曙梦 OJ 100 分记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605E"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开题目存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605E/"}, {"label": "zlxFTH：原题非官方完整算法", "url": "https://www.zhihu.com/question/2043989350854156307/answer/2044499207764105133"}, {"label": "CYMario：Bonus Ver. 探索报告", "url": "https://zhuanlan.zhihu.com/p/2083646963501815540"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6efa67df0b81749b475"}}]
+problems: [{"id": "A", "title": "银行家舍入", "tags": ["数学", "精度", "模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605A"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b053dfee5d1fced2e44d745", "source_sha256": "899adde38debde60ce89a2d253456a4abf46c83d6e383a941a7367ebcfebf298", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:35:18.759178+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e8a67df0b81749b446"}}, {"id": "B", "title": "机器人宿管指南", "tags": ["二分答案", "模拟", "数学"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605B"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b053e6fe5d1fced2e44d7d4", "source_sha256": "a225049d5411bc120d3d68f11917e9acc1ae478104b5d4c24500b797753556f1", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:37:06.557722+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6e9a67df0b81749b44f"}}, {"id": "C", "title": "死锁优化", "tags": ["模拟", "状态机", "调度"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605C"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b053ee9e5d1fced2e44d86b", "source_sha256": "a016407cae5e8a2071f985347e845362b43778c12ce5c00a9aa7b0e3746bdc0b", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:39:00.417893+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6eba67df0b81749b463"}}, {"id": "D", "title": "石子游戏", "tags": ["异或", "前缀和", "贪心", "倍增"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605D"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开存档（目录已发现，内容待核对）", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b053f66e5d1fced2e44d927", "source_sha256": "97d112035eec221a59bed5619ffcc6ea7a7aaeac30485e425c904c184ef9b21d", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:41:39.811939+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6eda67df0b81749b46e"}}, {"id": "E", "title": "绝世好串", "tags": ["树", "字典序", "贪心", "候选根淘汰", "并查集", "启发式合并", "倍增"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202605E"}, {"label": "公开复刻题面（独立编写）", "url": "https://github.com/Dejoy1202/csp-lab/blob/main/problem-packs/202605/statements.json"}, {"label": "公开题目存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202605E/"}, {"label": "zlxFTH：原题非官方完整算法", "url": "https://www.zhihu.com/question/2043989350854156307/answer/2044499207764105133"}, {"label": "CYMario：Bonus Ver. 探索报告", "url": "https://zhuanlan.zhihu.com/p/2083646963501815540"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b053fc5e5d1fced2e44d98f", "source_sha256": "9fbe859bdd3062e14908a0ae245b6f0216165f1843f33309ce0814cb0667d387", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:42:45.356055+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce6efa67df0b81749b475"}}]
 ---
 # CSP 202605 五题题解
 
@@ -19,6 +19,14 @@ problems: [{"id": "A", "title": "银行家舍入", "tags": ["数学", "精度", 
 标签：`数学` · `精度` · `模拟`
 
 本版验证：已通过 C++17 编译、覆盖全部小数位和奇偶组合的舍入校验、整数部分上界检查及保存样例。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053dfee5d1fced2e44d745)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce6e8a67df0b81749b446)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -82,6 +90,14 @@ int main(){
 标签：`二分答案` · `模拟` · `数学`
 
 本版验证：已通过 C++17 编译、100 组枚举对拍、3 组大整数边界检查及保存样例。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053e6fe5d1fced2e44d7d4)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce6e9a67df0b81749b44f)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -157,6 +173,14 @@ int main(){
 标签：`模拟` · `状态机` · `调度`
 
 本版验证：已通过 C++17 编译、90 组独立时间轴模拟对拍及保存样例。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053ee9e5d1fced2e44d86b)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce6eba67df0b81749b463)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -357,6 +381,14 @@ int main(){
 
 本版验证：已通过 C++17 编译、110 组区间划分 DP 对拍、百万规模边界检查及保存样例。
 
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053f66e5d1fced2e44d927)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce6eda67df0b81749b46e)。
+
+<!-- refactor-online:D:end -->
+
 ### 题意
 
 给定序列 $b_1,\ldots,b_n$。一个区间 $[l,r]$ 是“后手必胜区间”，当且仅当 $b_l\oplus b_{l+2}\oplus\cdots=0$，取到不超过 $r$ 的最后位置。每次查询 $[L,R]$，要将它完整切分成连续、无重叠、无空隙的非空区间，使其中后手必胜区间数量最多。本题直接采用这一判定结论，“必胜”均指后手必胜。
@@ -481,6 +513,14 @@ int main(){
 
 本版验证：已通过 C++17 编译、24 组操作穷举、2042 组独立 DP 对拍、7 组十万点构造及保存样例。
 
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b053fc5e5d1fced2e44d98f)。
+
+原版评测记录：[历史记录 1](https://oj.shumeng.tech/record/6adce6efa67df0b81749b475)。
+
+<!-- refactor-online:E:end -->
+
 ### 题意
 
 树的点 $i$ 初始保存序列 `[i]`。一次聚拢选择中心 $u$，把 $u$ 和所有邻点上的非空序列作为完整块，任选块的顺序拼接，放在 $u$，其余参与点清空。块内部不能重排。第一次聚拢任意，之后每次必须接触至少一个长度不小于 2 的块。最终把全部整数聚成一个序列，求字典序最小的结果。
@@ -600,7 +640,7 @@ CYMario 的文章针对 Bonus 分析了多块的位置、内部顺序和联合�
 
 本版本通过保存样例、n≤6 的全部 1,442 棵有标号树以及 n=7…10 的 600 棵随机树，与保留的小规模 DP 共对拍 2,042 组；另运行 7 组十万点构造。
 
-完整排列检查与压力运行不等于大规模最优性证明；详细结果和复现入口见 [gather-report.json](../tests/202605/gather-report.json)、[gather-stress-report.json](../tests/202605/gather-stress-report.json)。本地验证报告与原版在线评测记录分别保留；本次重构代码未重新提交在线评测。
+完整排列检查与压力运行不等于大规模最优性证明；详细结果和复现入口见 [gather-report.json](../tests/202605/gather-report.json)、[gather-stress-report.json](../tests/202605/gather-stress-report.json)。本地验证报告与原版在线评测记录分别保留。
 
 全场验证与 B、C、D 整改复核见 [验证记录](../tests/202605/VALIDATION.md)、[独立校验报告](../tests/202605/randomized-202605-report.json)、[review 复核报告](../tests/202605/review-style-report.json)和[边界检查报告](../tests/202605/boundary-report.json)。
 
@@ -890,6 +930,8 @@ int main(){
 - [gather-report.json](../tests/202605/gather-report.json)
 - [gather-stress-report.json](../tests/202605/gather-stress-report.json)
 - [gnu-header-build-failure.json](../tests/202605/gnu-header-build-failure.json)
+- [online-update-report.json](../tests/202605/online-update-report.json)
+- [online-verdicts.json](../tests/202605/online-verdicts.json)
 - [oracle.cpp](../tests/202605/oracle.cpp)
 - [prose-final-review.json](../tests/202605/prose-final-review.json)
 - [randomized-202605-report.json](../tests/202605/randomized-202605-report.json)

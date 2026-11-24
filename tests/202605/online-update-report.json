@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "contest": "202605",
+  "plan_sha256": "cc6c06b57baef6e00ef92a3aa61b5463151d451d93d7634f57f6981089e24c4f",
+  "input_signature": "b0b82dbd1e5e6d7c921a207b890ee339786e9f9265147718709a891bee0101c1",
+  "source_sha256": {
+    "A": "899adde38debde60ce89a2d253456a4abf46c83d6e383a941a7367ebcfebf298",
+    "B": "a225049d5411bc120d3d68f11917e9acc1ae478104b5d4c24500b797753556f1",
+    "C": "a016407cae5e8a2071f985347e845362b43778c12ce5c00a9aa7b0e3746bdc0b",
+    "D": "97d112035eec221a59bed5619ffcc6ea7a7aaeac30485e425c904c184ef9b21d",
+    "E": "9fbe859bdd3062e14908a0ae245b6f0216165f1843f33309ce0814cb0667d387"
+  },
+  "source_files_unchanged": true,
+  "cpp_fences_unchanged": 10,
+  "all_original_record_links_preserved": true,
+  "article_checks": [
+    {
+      "file": "202605/README.md",
+      "before_sha256": "5908d54996a0331be0bbb9c54d7314a26d402e0718b6b94e42a5a52b723148e2",
+      "after_sha256": "c24939c0f895c857e8fd51966652bab287008a06b00d7cd7f655007f25ead0a1",
+      "cpp_fences_unchanged": 5,
+      "original_record_urls_preserved": [],
+      "frozen_original_record_urls_present": [
+        "https://oj.shumeng.tech/record/6adce6e8a67df0b81749b446",
+        "https://oj.shumeng.tech/record/6adce6e9a67df0b81749b44f",
+        "https://oj.shumeng.tech/record/6adce6eba67df0b81749b463",
+        "https://oj.shumeng.tech/record/6adce6eda67df0b81749b46e",
+        "https://oj.shumeng.tech/record/6adce6efa67df0b81749b475"
+      ]
+    },
+    {
+      "file": "202605题解.md",
+      "before_sha256": "5908d54996a0331be0bbb9c54d7314a26d402e0718b6b94e42a5a52b723148e2",
+      "after_sha256": "c24939c0f895c857e8fd51966652bab287008a06b00d7cd7f655007f25ead0a1",
+      "cpp_fences_unchanged": 5,
+      "original_record_urls_preserved": [],
+      "frozen_original_record_urls_present": [
+        "https://oj.shumeng.tech/record/6adce6e8a67df0b81749b446",
+        "https://oj.shumeng.tech/record/6adce6e9a67df0b81749b44f",
+        "https://oj.shumeng.tech/record/6adce6eba67df0b81749b463",
+        "https://oj.shumeng.tech/record/6adce6eda67df0b81749b46e",
+        "https://oj.shumeng.tech/record/6adce6efa67df0b81749b475"
+      ]
+    }
+  ],
+  "judged": 5,
+  "access_required": 0,
+  "historical_json_reports_modified": false,
+  "git_or_deploy_executed": false
+}
