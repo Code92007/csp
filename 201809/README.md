@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "数组", "同时更新", "双指针", "区间交集", "树", "祖先关系", "字符串", "贪心", "记忆化搜索", "动态规划", "字典序", "线性递推", "多项式", "NTT", "生成函数"]
 status: "published"
-problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，1 个保存用例、60 组独立对拍及 1 组边界/压力通过；UBSan 共 62 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7"}}, {"id": "B", "title": "买菜", "tags": ["双指针", "区间交集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 102 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946"}}, {"id": "C", "title": "元素选择器", "tags": ["树", "祖先关系", "字符串", "贪心"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 102 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972"}}, {"id": "D", "title": "再卖菜", "tags": ["记忆化搜索", "动态规划", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，1 个保存用例、90 组独立对拍及 2 组边界/压力通过；UBSan 共 93 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0"}}, {"id": "E", "title": "线性递推式", "tags": ["线性递推", "多项式", "NTT", "生成函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：C++17 编译通过，3 个保存用例、580 组独立对拍及 4 组边界/压力通过；UBSan 共 587 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91"}}]
+problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058d59e5d1fced2e45784c", "source_sha256": "0586a6c18c7af27212d0f8145c196683747db72be0457ae9f6ca3d3b674efc16", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:15:05.142857+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda03c74ace1cba9a1f8b7"}}, {"id": "B", "title": "买菜", "tags": ["双指针", "区间交集"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058ddae5d1fced2e4579d1", "source_sha256": "b412b1963ed37e9734f7518a0adf0e6da6a0884a4779a01cda2a801e8e7a74b4", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:16:21.199446+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda10674ace1cba9a1f946"}}, {"id": "C", "title": "元素选择器", "tags": ["树", "祖先关系", "字符串", "贪心"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058e26e5d1fced2e457b7d", "source_sha256": "eea2ba51da2f15f5ea5b8b18e476fd6b0cf1e3cd99fbbf49953a3bd22fe86c6b", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:17:36.021462+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda1a174ace1cba9a1f972"}}, {"id": "D", "title": "再卖菜", "tags": ["记忆化搜索", "动态规划", "字典序"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058e71e5d1fced2e457bf9", "source_sha256": "d9e4fbc5723135785a8ebe988691bec386a0c21233edeb246b8209da6627fe19", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:18:53.086125+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda24c74ace1cba9a1f9b0"}}, {"id": "E", "title": "线性递推式", "tags": ["线性递推", "多项式", "NTT", "生成函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201809E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201809E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058ebee5d1fced2e457d17", "source_sha256": "857a65556a45f3bd2f793d83b888cc8c3d9915fba6f8cf957c0b991e7b411482", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:20:01.419698+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6adda98c74ace1cba9a1fe91"}}]
 ---
 
 # CSP 201809 五题题解
@@ -20,6 +20,12 @@ problems: [{"id": "A", "title": "卖菜", "tags": ["数组", "同时更新"], "s
 标签：`数组` · `同时更新`
 
 本地：62 组优化版、62 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058d59e5d1fced2e45784c)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -77,6 +83,12 @@ int main(){
 标签：`双指针` · `区间交集`
 
 本地：102 组优化版、102 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058ddae5d1fced2e4579d1)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -144,6 +156,12 @@ int main(){
 标签：`树` · `祖先关系` · `字符串` · `贪心`
 
 本地：102 组优化版、102 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058e26e5d1fced2e457b7d)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -250,6 +268,12 @@ int main(){
 
 本地：93 组优化版、93 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
 
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058e71e5d1fced2e457bf9)。
+
+<!-- refactor-online:D:end -->
+
 ### 题意
 
 已知一排商店第二天的菜价。第二天的价格等于自己和相邻商店第一天价格的平均值，向下取整；两端只涉及两家。恢复一个全部为正整数、且字典序最小的第一天价格序列。
@@ -347,6 +371,12 @@ int main(){
 标签：`线性递推` · `多项式` · `NTT` · `生成函数`
 
 本地：587 组优化版、587 组 UBSan 验证通过，详见 [验证记录](../tests/201809/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058ebee5d1fced2e457d17)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -689,6 +719,8 @@ int main(){
 - [e-ntt-report.json](../tests/201809/e-ntt-report.json)
 - [extra.py](../tests/201809/extra.py)
 - [naming-followup.json](../tests/201809/naming-followup.json)
+- [online-update-report.json](../tests/201809/online-update-report.json)
+- [online-verdicts.json](../tests/201809/online-verdicts.json)
 - [summary.json](../tests/201809/summary.json)
 - [verify-e-ntt.py](../tests/201809/verify-e-ntt.py)
 
