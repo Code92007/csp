@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "集合比较", "异或", "哈希冲突", "位运算", "枚举", "预处理", "模拟", "逆向操作", "坐标变换", "数论", "线性筛", "积性函数", "容斥", "Trie", "图染色", "可合并数据结构"]
 status: "published"
-problems: [{"id": "A", "title": "集合", "tags": ["集合比较", "异或", "哈希冲突"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72ea67df0b81749b5e6"}}, {"id": "B", "title": "数字变换", "tags": ["位运算", "枚举", "预处理"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；30 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72fa67df0b81749b607"}}, {"id": "C", "title": "图片解码", "tags": ["模拟", "逆向操作", "坐标变换"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce731a67df0b81749b611"}}, {"id": "D", "title": "C 形阵", "tags": ["数论", "线性筛", "积性函数", "容斥"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "C++17 编译通过；3 个保存样例/回归用例通过；160 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce733a67df0b81749b625"}}, {"id": "E", "title": "数据抢修", "tags": ["Trie", "图染色", "可合并数据结构"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512E/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce734a67df0b81749b63c"}}]
+problems: [{"id": "A", "title": "集合", "tags": ["集合比较", "异或", "哈希冲突"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0542ace5d1fced2e44df85", "source_sha256": "af7667804637455410c3963f3310620cbe81a8c33cd4d0734f6822708e3221c7", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:55:13.377728+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72ea67df0b81749b5e6"}}, {"id": "B", "title": "数字变换", "tags": ["位运算", "枚举", "预处理"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05432ee5d1fced2e44dfdc", "source_sha256": "1492328dcb86414212f59ce97fc0e50fa6d5692c4018ecf879fb3dcbd6f6d559", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T07:57:58.754623+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce72fa67df0b81749b607"}}, {"id": "C", "title": "图片解码", "tags": ["模拟", "逆向操作", "坐标变换"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0543afe5d1fced2e44e05e", "source_sha256": "55c55e3daadc8fd30d011358fd4bcb28f96f1e7ae06acab9b3f7b6e36e20c725", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:00:33.194767+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce731a67df0b81749b611"}}, {"id": "D", "title": "C 形阵", "tags": ["数论", "线性筛", "积性函数", "容斥"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05443ee5d1fced2e44e0ce", "source_sha256": "606c3bb805c8e1cf5a6dd74eff3e7e077a2dfd17fefe5c598dad2c967f1656b5", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:02:19.258074+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce733a67df0b81749b625"}}, {"id": "E", "title": "数据抢修", "tags": ["Trie", "图染色", "可合并数据结构"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202512E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202512E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0544b1e5d1fced2e44e10f", "source_sha256": "b630cd0290456ab85c5509cb0ffd8e6e14980d98672bd82e250d507350cd9964", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T08:04:51.611391+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce734a67df0b81749b63c"}}]
 ---
 # CSP 202512 五题题解
 
@@ -18,7 +18,13 @@ problems: [{"id": "A", "title": "集合", "tags": ["集合比较", "异或", "�
 
 标签：`集合比较` · `异或` · `哈希冲突`
 
-本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0542ace5d1fced2e44df85)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -94,7 +100,13 @@ int main(){
 
 标签：`位运算` · `枚举` · `预处理`
 
-本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05432ee5d1fced2e44dfdc)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -171,7 +183,13 @@ int main(){
 
 标签：`模拟` · `逆向操作` · `坐标变换`
 
-本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0543afe5d1fced2e44e05e)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -304,7 +322,13 @@ int main(){
 
 标签：`数论` · `线性筛` · `积性函数` · `容斥`
 
-本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05443ee5d1fced2e44e0ce)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -487,7 +511,13 @@ int main(){
 
 标签：`Trie` · `图染色` · `可合并数据结构`
 
-本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)，重构版尚未在线重新提交。
+本地验证见 [VALIDATION.md](../tests/202512/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0544b1e5d1fced2e44e10f)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -671,6 +701,8 @@ int main(){
 - [cd-report.json](../tests/202512/cd-report.json)
 - [d-mod-followup-report.json](../tests/202512/d-mod-followup-report.json)
 - [e-report.json](../tests/202512/e-report.json)
+- [online-update-report.json](../tests/202512/online-update-report.json)
+- [online-verdicts.json](../tests/202512/online-verdicts.json)
 - [summary.json](../tests/202512/summary.json)
 - [verify-ab.py](../tests/202512/verify-ab.py)
 - [verify-ac-constants.py](../tests/202512/verify-ac-constants.py)

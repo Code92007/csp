@@ -1,5 +1,23 @@
 # CSP 202512 本地验证
 
+<!-- refactor-online-validation:start -->
+
+## 当前重构版在线评测
+
+本节来自冻结提交计划与真实判题账本；下方本地验证记录保留其历史归属。
+
+| 题目 | 结果 | 当前源码 SHA-256 |
+|---|---|---|
+| A | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0542ace5d1fced2e44df85)。 | `af7667804637455410c3963f3310620cbe81a8c33cd4d0734f6822708e3221c7` |
+| B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05432ee5d1fced2e44dfdc)。 | `1492328dcb86414212f59ce97fc0e50fa6d5692c4018ecf879fb3dcbd6f6d559` |
+| C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0543afe5d1fced2e44e05e)。 | `55c55e3daadc8fd30d011358fd4bcb28f96f1e7ae06acab9b3f7b6e36e20c725` |
+| D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05443ee5d1fced2e44e0ce)。 | `606c3bb805c8e1cf5a6dd74eff3e7e077a2dfd17fefe5c598dad2c967f1656b5` |
+| E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0544b1e5d1fced2e44e10f)。 | `b630cd0290456ab85c5509cb0ffd8e6e14980d98672bd82e250d507350cd9964` |
+
+[逐题在线结果与原版记录](online-verdicts.json)。
+
+<!-- refactor-online-validation:end -->
+
 本次重构五题均已通过 C++17 编译。合计验证 4844 个不同的题号/输入组合，包含保存样例、独立暴力、穷举边界和大规模构造；其中 3478 次 UBSan 重放无诊断。重复执行不计入不同输入数。
 
 原页面的 100 分评测记录属于原实现；重构版尚未重新在线提交。时间与内存数据来自本机，不能等同于正式评测。
