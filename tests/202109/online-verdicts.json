@@ -19,7 +19,8 @@
       "record": null,
       "verdict": null,
       "score": null,
-      "reason": "Normal submit page confirms PermissionError for View hidden problems; see 202109A-access.json",
+      "reason": "当前账号缺少隐藏题查看权限（View hidden problems）",
+      "observation_note": "Normal submit page confirms PermissionError for View hidden problems; see 202109A-access.json",
       "observed_at": "2026-11-24T12:47:37.788477+00:00"
     },
     {
@@ -37,7 +38,8 @@
       "record": null,
       "verdict": null,
       "score": null,
-      "reason": "Normal submit page confirms PermissionError for View hidden problems; see 202109B-access.json",
+      "reason": "当前账号缺少隐藏题查看权限（View hidden problems）",
+      "observation_note": "Normal submit page confirms PermissionError for View hidden problems; see 202109B-access.json",
       "observed_at": "2026-11-24T12:48:19.326523+00:00"
     },
     {
@@ -94,7 +96,8 @@
       "record": null,
       "verdict": null,
       "score": null,
-      "reason": "Normal submit page confirms PermissionError for View hidden problems; see 202109E-access.json",
+      "reason": "当前账号缺少隐藏题查看权限（View hidden problems）",
+      "observation_note": "Normal submit page confirms PermissionError for View hidden problems; see 202109E-access.json",
       "observed_at": "2026-11-24T12:52:05.509707+00:00"
     }
   ]
