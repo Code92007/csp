@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "连续段", "线性扫描", "日期计算", "模拟", "字符串扫描", "模板替换", "哈希表", "图论", "强连通分量", "Kosaraju", "AC自动机", "矩阵快速幂", "最大加代数"]
 status: "published"
-problems: [{"id": "A", "title": "数列分段", "tags": ["连续段", "线性扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版 C++17 编译通过；62 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb44174ace1cba9a20918"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "B", "title": "日期计算", "tags": ["日期计算", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版 C++17 编译通过；118 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb4db74ace1cba9a209b5"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "C", "title": "模板生成系统", "tags": ["字符串扫描", "模板替换", "哈希表"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版 C++17 编译通过；102 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb56174ace1cba9a20adf"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "D", "title": "高速公路", "tags": ["图论", "强连通分量", "Kosaraju"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版 C++17 编译通过；97 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb5e874ace1cba9a20bc7"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "E", "title": "最佳文章", "tags": ["AC自动机", "矩阵快速幂", "最大加代数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版 C++17 编译通过；62 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb67074ace1cba9a20c6f"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}]
+problems: [{"id": "A", "title": "数列分段", "tags": ["连续段", "线性扫描"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0595a1e5d1fced2e458fb2", "source_sha256": "9f8ba329e7af53e8ba768be958fe8f289a125d8c04c9a06f9544185f9a1dacce", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:50:35.478173+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb44174ace1cba9a20918"}}, {"id": "B", "title": "日期计算", "tags": ["日期计算", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05962ce5d1fced2e45919d", "source_sha256": "32b602eb95a1befeb590c4177d98978e56f3fb9186444b022ff95f6e03adbd3a", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:51:41.938982+00:00"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb4db74ace1cba9a209b5"}}, {"id": "C", "title": "模板生成系统", "tags": ["字符串扫描", "模板替换", "哈希表"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05966fe5d1fced2e45928f", "source_sha256": "19434c89a349c3355a02321aadf37909690da2e71c0445097e8a058f5e447449", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:36:01.016291+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb56174ace1cba9a20adf"}}, {"id": "D", "title": "高速公路", "tags": ["图论", "强连通分量", "Kosaraju"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a0d2e5d1fced2e45a733", "source_sha256": "42f18622e1c2e80c3951a09d35fdb88e90843accaad97c3f8d76eff31ddf27b3", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:37:12.051632+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb5e874ace1cba9a20bc7"}}, {"id": "E", "title": "最佳文章", "tags": ["AC自动机", "矩阵快速幂", "最大加代数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201509E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201509E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05a119e5d1fced2e45a801", "source_sha256": "e679621282d692f8715d9800fe0d0daed97c54a77baf8858b0258116e2227d50", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T14:38:43.704254+00:00"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addb67074ace1cba9a20c6f"}}]
 ---
 
 # CSP 201509 五题题解
@@ -20,11 +20,17 @@ problems: [{"id": "A", "title": "数列分段", "tags": ["连续段", "线性扫
 
 标签：`连续段` · `线性扫描`
 
-本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addb44174ace1cba9a20918)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb44174ace1cba9a20918)（复刻评测）。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0595a1e5d1fced2e458fb2)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -70,11 +76,17 @@ int main(){
 
 标签：`日期计算` · `模拟`
 
-本地验证：118 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：118 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addb4db74ace1cba9a209b5)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb4db74ace1cba9a209b5)（复刻评测）。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05962ce5d1fced2e45919d)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -121,11 +133,17 @@ int main(){
 
 标签：`字符串扫描` · `模板替换` · `哈希表`
 
-本地验证：102 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：102 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addb56174ace1cba9a20adf)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb56174ace1cba9a20adf)（复刻评测）。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05966fe5d1fced2e45928f)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -200,11 +218,17 @@ int main(){
 
 标签：`图论` · `强连通分量` · `Kosaraju`
 
-本地验证：97 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：97 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addb5e874ace1cba9a20bc7)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb5e874ace1cba9a20bc7)（复刻评测）。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a0d2e5d1fced2e45a733)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -297,11 +321,17 @@ int main(){
 
 标签：`AC自动机` · `矩阵快速幂` · `最大加代数`
 
-本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201509/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6addb67074ace1cba9a20c6f)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6addb67074ace1cba9a20c6f)（复刻评测）。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05a119e5d1fced2e45a801)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -447,6 +477,8 @@ int main(){
 - [VALIDATION.md](../tests/201509/VALIDATION.md)
 - [boundaries.py](../tests/201509/boundaries.py)
 - [e-ac-followup-report.json](../tests/201509/e-ac-followup-report.json)
+- [online-update-report.json](../tests/201509/online-update-report.json)
+- [online-verdicts.json](../tests/201509/online-verdicts.json)
 - [refactor-report.json](../tests/201509/refactor-report.json)
 - [statements.json](../tests/201509/statements.json)
 
