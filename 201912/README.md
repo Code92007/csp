@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "数位判断", "循环模拟", "集合", "坐标枚举", "递归下降", "哈希计数", "化学式", "图论", "BFS", "事件模拟", "有序映射", "线段树", "有限群", "状态压缩", "数论"]
 status: "published"
-problems: [{"id": "A", "title": "报数", "tags": ["数位判断", "循环模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版 C++17 编译通过；62 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912A/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9d4674ace1cba9a1f711"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "B", "title": "回收站选址", "tags": ["集合", "坐标枚举"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版 C++17 编译通过；104 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912B/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9dd274ace1cba9a1f78d"}, "original_validation": "C++17 编译通过；3 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "C", "title": "化学方程式", "tags": ["递归下降", "哈希计数", "化学式"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版 C++17 编译通过；102 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U283455"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9e5474ace1cba9a1f7d3"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305950101", "source_sha256": "189420464de9f6d303fba4f90ce0c63be59f635e2cbab8ce639ef536bb5d0c26"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。"}, {"id": "D", "title": "区块链", "tags": ["图论", "BFS", "事件模拟", "有序映射"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版 C++17 编译通过；83 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9ee174ace1cba9a1f812"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}, {"id": "E", "title": "魔数", "tags": ["线段树", "有限群", "状态压缩", "数论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版 C++17 编译通过；61 个不同输入在优化版与 UBSan 版均通过；原版在线记录保留，重构版未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9fb574ace1cba9a1f846"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。"}]
+problems: [{"id": "A", "title": "报数", "tags": ["数位判断", "循环模拟"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058baee5d1fced2e4573bf", "source_sha256": "989231469a2f9c20915cf0e7f61764841be0b7dafdc0686f5fe9d9355742e329", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:07:56.334508+00:00"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9d4674ace1cba9a1f711"}}, {"id": "B", "title": "回收站选址", "tags": ["集合", "坐标枚举"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058c2ee5d1fced2e4574f2", "source_sha256": "324cab41522e451b36bd28fb780742a6ea8c1370350a0cf9e513e0d95a007508", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:09:11.335683+00:00"}, "original_validation": "C++17 编译通过；3 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9dd274ace1cba9a1f78d"}}, {"id": "C", "title": "化学方程式", "tags": ["递归下降", "哈希计数", "化学式"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/U283455"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058c79e5d1fced2e457636", "source_sha256": "a51f06ea16a7bee371582cba56fecaacb30d80d8f0a0db11175168dafe05eed8", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:10:19.387397+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305950101", "source_sha256": "189420464de9f6d303fba4f90ce0c63be59f635e2cbab8ce639ef536bb5d0c26"}, "original_validation": "C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；曙梦 OJ 100 分 Accepted；洛谷民间数据 100 分 Accepted（民间复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9e5474ace1cba9a1f7d3"}}, {"id": "D", "title": "区块链", "tags": ["图论", "BFS", "事件模拟", "有序映射"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058cbce5d1fced2e4576cf", "source_sha256": "85e29333f344fe8e9f2226f535e0be925c60105a05850d0895508233c8d60c40", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:11:41.820321+00:00"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9ee174ace1cba9a1f812"}}, {"id": "E", "title": "魔数", "tags": ["线段树", "有限群", "状态压缩", "数论"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP201912E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP201912E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058d0fe5d1fced2e4577bc", "source_sha256": "6dc66659465e70fae3977dbe23dee8d0bee27051f2c5d23196ca0bebc5c55d64", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:12:55.449349+00:00"}, "original_validation": "C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；曙梦 OJ 100 分 Accepted（复刻评测）。", "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9fb574ace1cba9a1f846"}}]
 ---
 
 # CSP 201912 五题题解
@@ -20,11 +20,17 @@ problems: [{"id": "A", "title": "报数", "tags": ["数位判断", "循环模拟
 
 标签：`数位判断` · `循环模拟`
 
-本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：62 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6add9d4674ace1cba9a1f711)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9d4674ace1cba9a1f711)（复刻评测）。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058baee5d1fced2e4573bf)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -80,11 +86,17 @@ int main(){
 
 标签：`集合` · `坐标枚举`
 
-本地验证：104 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：104 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6add9dd274ace1cba9a1f78d)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；3 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9dd274ace1cba9a1f78d)（复刻评测）。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058c2ee5d1fced2e4574f2)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -152,11 +164,17 @@ int main(){
 
 标签：`递归下降` · `哈希计数` · `化学式`
 
-本地验证：102 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：102 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6add9e5474ace1cba9a1f7d3)。
 
 原版验证：**完整实现，已验证满分**。C++17 编译通过；1 个保存样例/回归用例通过；100 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9e5474ace1cba9a1f7d3)；[洛谷民间数据 100 分 Accepted](https://www.luogu.com.cn/record/305950101)（民间复刻评测）。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058c79e5d1fced2e457636)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -253,11 +271,17 @@ int main(){
 
 标签：`图论` · `BFS` · `事件模拟` · `有序映射`
 
-本地验证：83 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：83 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6add9ee174ace1cba9a1f812)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；80 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9ee174ace1cba9a1f812)（复刻评测）。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058cbce5d1fced2e4576cf)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -396,11 +420,17 @@ int main(){
 
 标签：`线段树` · `有限群` · `状态压缩` · `数论`
 
-本地验证：61 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。重构版未重新提交在线评测。
+本地验证：61 个不同输入在优化版与 UBSan 版均通过。[验证记录](../tests/201912/VALIDATION.md)。。
 
 原版评测：[记录](https://oj.shumeng.tech/record/6add9fb574ace1cba9a1f846)。
 
 原版验证：**完整实现，曙梦 OJ 已验证满分**。C++17 编译通过；2 个保存样例/回归用例通过；60 组独立随机对拍通过；[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9fb574ace1cba9a1f846)（复刻评测）。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058d0fe5d1fced2e4577bc)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -563,6 +593,8 @@ int main(){
 - [d-print-followup-report.json](../tests/201912/d-print-followup-report.json)
 - [e-constants-followup-report.json](../tests/201912/e-constants-followup-report.json)
 - [e-mod-followup-report.json](../tests/201912/e-mod-followup-report.json)
+- [online-update-report.json](../tests/201912/online-update-report.json)
+- [online-verdicts.json](../tests/201912/online-verdicts.json)
 - [refactor-report.json](../tests/201912/refactor-report.json)
 - [statements.json](../tests/201912/statements.json)
 
