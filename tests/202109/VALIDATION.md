@@ -8,11 +8,11 @@
 
 | 题目 | 结果 | 当前源码 SHA-256 |
 |---|---|---|
-| A | 重构版未提交：当前账号缺少隐藏题查看权限（View hidden problems）；未产生新提交或判题结论。 | `0f0643fb30b01f546b5c713ef4e29746d675cca7d03c2365068f49dfbbb6616d` |
-| B | 重构版未提交：当前账号缺少隐藏题查看权限（View hidden problems）；未产生新提交或判题结论。 | `ebd926e838ef6bf5ce5dbd0389057e68d9ac29a15e6c8a8a1967de4668bf27e9` |
+| A | 重构版洛谷评测：100 分 Accepted（C++23/O2） [真实记录](https://www.luogu.com.cn/record/311953528)。 | `0f0643fb30b01f546b5c713ef4e29746d675cca7d03c2365068f49dfbbb6616d` |
+| B | 重构版洛谷评测：100 分 Accepted（C++23/O2） [真实记录](https://www.luogu.com.cn/record/311953529)。 | `ebd926e838ef6bf5ce5dbd0389057e68d9ac29a15e6c8a8a1967de4668bf27e9` |
 | C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058795e5d1fced2e456787)。 | `3a600da8f273ec2ba089c53b2c334a2e4d89cbd6554e49fbfa2501601bf5bc81` |
 | D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0587fbe5d1fced2e4568c7)。 | `3a8c7d9f84fb8b9d91f1567ed36a0f36d35070f9261811c33a7765604f522b6e` |
-| E | 重构版未提交：当前账号缺少隐藏题查看权限（View hidden problems）；未产生新提交或判题结论。 | `408ece0b2576d64719dfed3593b52b4c44aa09b885db792a88e3c97b276bbbfc` |
+| E | 重构版洛谷评测：100 分 Accepted（C++23/O2） [真实记录](https://www.luogu.com.cn/record/311953527)。 | `408ece0b2576d64719dfed3593b52b4c44aa09b885db792a88e3c97b276bbbfc` |
 
 [逐题在线结果与原版记录](online-verdicts.json)。
 
@@ -43,3 +43,12 @@ python3 tools/nightly/site_style_verify.py --contest 202109 --repo /path/to/orig
 B 按最新 review 将万级容量 `1e4+10` 展开为 `10010`，数值不变；优化版与 UBSan 版重新通过 155 个不同输入。[当前 B 源码哈希与检查](b-capacity-followup-report.json)。原批次报告保留历史源码哈希。
 
 D 按最新 review 将 double 的 `printf` 格式改为等价的 `%.12lf`，输入仍保留 `%lf`；优化版与 UBSan 版重新通过 77 个不同输入。[当前 D 源码哈希与检查](d-printf-followup-report.json)。原报告保留历史源码哈希。
+
+
+## A、B、E 洛谷补充验证
+
+三题由用户手动提交，均为 C++23/O2、100 分 Accepted。已在正常记录页面读取完整源码，SHA-256 与当前独立源码逐字一致；洛谷使用民间数据，曙梦原权限不足记录保留在 online-verdicts.json 的 previous_platform_results 中。
+
+- A：[源码及页面核对](luogu-A-observation.json)。
+- B：[源码及页面核对](luogu-B-observation.json)。
+- E：[源码及页面核对](luogu-E-observation.json)。

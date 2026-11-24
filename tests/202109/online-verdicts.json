@@ -7,7 +7,7 @@
     {
       "problem": "A",
       "key": "202109A",
-      "state": "access_required",
+      "state": "judged",
       "source_sha256": "0f0643fb30b01f546b5c713ef4e29746d675cca7d03c2365068f49dfbbb6616d",
       "prior_oj_records": [
         {
@@ -16,17 +16,21 @@
           "reason": "隐藏题，当前账号无权查看"
         }
       ],
-      "record": null,
-      "verdict": null,
-      "score": null,
-      "reason": "当前账号缺少隐藏题查看权限（View hidden problems）",
-      "observation_note": "Normal submit page confirms PermissionError for View hidden problems; see 202109A-access.json",
-      "observed_at": "2026-11-24T12:47:37.788477+00:00"
+      "record": "https://www.luogu.com.cn/record/311953528",
+      "verdict": "Accepted",
+      "score": 100,
+      "observed_at": "2026-11-24T19:15:39.306Z",
+      "platform": "luogu",
+      "language_id": "luogu.cpp23o2",
+      "language": "C++23/O2",
+      "submission_actor": "user",
+      "source_verification": "exact visible source SHA-256 match",
+      "problem_id": "P16026"
     },
     {
       "problem": "B",
       "key": "202109B",
-      "state": "access_required",
+      "state": "judged",
       "source_sha256": "ebd926e838ef6bf5ce5dbd0389057e68d9ac29a15e6c8a8a1967de4668bf27e9",
       "prior_oj_records": [
         {
@@ -35,12 +39,16 @@
           "reason": "隐藏题，当前账号无权查看"
         }
       ],
-      "record": null,
-      "verdict": null,
-      "score": null,
-      "reason": "当前账号缺少隐藏题查看权限（View hidden problems）",
-      "observation_note": "Normal submit page confirms PermissionError for View hidden problems; see 202109B-access.json",
-      "observed_at": "2026-11-24T12:48:19.326523+00:00"
+      "record": "https://www.luogu.com.cn/record/311953529",
+      "verdict": "Accepted",
+      "score": 100,
+      "observed_at": "2026-11-24T19:14:15.945Z",
+      "platform": "luogu",
+      "language_id": "luogu.cpp23o2",
+      "language": "C++23/O2",
+      "submission_actor": "user",
+      "source_verification": "exact visible source SHA-256 match",
+      "problem_id": "P16027"
     },
     {
       "problem": "C",
@@ -80,6 +88,69 @@
       "observed_at": "2026-11-24T12:51:19.692764+00:00",
       "language_id": "cc.cc20o2",
       "language": "C++20/O2"
+    },
+    {
+      "problem": "E",
+      "key": "202109E",
+      "state": "judged",
+      "source_sha256": "408ece0b2576d64719dfed3593b52b4c44aa09b885db792a88e3c97b276bbbfc",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "unavailable",
+          "reason": "隐藏题，当前账号无权查看"
+        }
+      ],
+      "record": "https://www.luogu.com.cn/record/311953527",
+      "verdict": "Accepted",
+      "score": 100,
+      "observed_at": "2026-11-24T19:16:06.967Z",
+      "platform": "luogu",
+      "language_id": "luogu.cpp23o2",
+      "language": "C++23/O2",
+      "submission_actor": "user",
+      "source_verification": "exact visible source SHA-256 match",
+      "problem_id": "P16030"
+    }
+  ],
+  "previous_platform_results": [
+    {
+      "problem": "A",
+      "key": "202109A",
+      "state": "access_required",
+      "source_sha256": "0f0643fb30b01f546b5c713ef4e29746d675cca7d03c2365068f49dfbbb6616d",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "unavailable",
+          "reason": "隐藏题，当前账号无权查看"
+        }
+      ],
+      "record": null,
+      "verdict": null,
+      "score": null,
+      "reason": "当前账号缺少隐藏题查看权限（View hidden problems）",
+      "observation_note": "Normal submit page confirms PermissionError for View hidden problems; see 202109A-access.json",
+      "observed_at": "2026-11-24T12:47:37.788477+00:00"
+    },
+    {
+      "problem": "B",
+      "key": "202109B",
+      "state": "access_required",
+      "source_sha256": "ebd926e838ef6bf5ce5dbd0389057e68d9ac29a15e6c8a8a1967de4668bf27e9",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "unavailable",
+          "reason": "隐藏题，当前账号无权查看"
+        }
+      ],
+      "record": null,
+      "verdict": null,
+      "score": null,
+      "reason": "当前账号缺少隐藏题查看权限（View hidden problems）",
+      "observation_note": "Normal submit page confirms PermissionError for View hidden problems; see 202109B-access.json",
+      "observed_at": "2026-11-24T12:48:19.326523+00:00"
     },
     {
       "problem": "E",

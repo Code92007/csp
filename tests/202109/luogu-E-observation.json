@@ -1,0 +1,16 @@
+{
+  "record_url": "https://www.luogu.com.cn/record/311953527",
+  "observed_at": "2026-11-24T19:16:06.967Z",
+  "platform": "luogu",
+  "problem_key": "202109E",
+  "problem_id": "P16030",
+  "submission_actor": "user",
+  "status": "Accepted",
+  "score": 100,
+  "language": "C++23 O2",
+  "posted_at_visible": "2026-11-25 03:10:08",
+  "visible_source_sha256": "408ece0b2576d64719dfed3593b52b4c44aa09b885db792a88e3c97b276bbbfc",
+  "current_source_sha256": "408ece0b2576d64719dfed3593b52b4c44aa09b885db792a88e3c97b276bbbfc",
+  "method": "normal page source tab and rendered code DOM",
+  "exact_source_match": true
+}
