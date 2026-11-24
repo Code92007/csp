@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "均值", "方差", "浮点数", "稀疏坐标", "枚举", "矩阵匹配", "权限系统", "位集", "哈希表", "模拟", "有序集合", "几何", "线段树", "矩阵", "仿射变换", "计算几何"]
 status: "published"
-problems: [{"id": "A", "title": "归一化处理", "tags": ["均值", "方差", "浮点数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "当前重构版：C++17 编译通过，1 个保存用例、60 组独立对拍及 1 组边界/压力通过；UBSan 共 62 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P13910"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce920a67df0b81749c03a"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305937570", "source_sha256": "c1e2dcc4f047a86704b4cc0da88bbebfd5ed840f08d9f5cdb47d36a9b3137cc1"}}, {"id": "B", "title": "寻宝！大冒险！", "tags": ["稀疏坐标", "枚举", "矩阵匹配"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "当前重构版：C++17 编译通过，2 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 103 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P13911"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce921a67df0b81749c040"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305938226", "source_sha256": "c4bd808350d4951436fba8b59a592650e534fa773d7e8875ad4b87137feac365"}}, {"id": "C", "title": "角色授权", "tags": ["权限系统", "位集", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 1 组边界/压力通过；UBSan 共 102 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P13912"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206C/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce923a67df0b81749c046"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305939423", "source_sha256": "6a7f11b6730219655a2f7086866eed2ac34cf2a420f0d7f574b601fd945d5e55"}}, {"id": "D", "title": "光线追踪", "tags": ["模拟", "有序集合", "几何"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "当前重构版：C++17 编译通过，1 个保存用例、100 组独立对拍及 2 组边界/压力通过；UBSan 共 103 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P13913"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206D/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce925a67df0b81749c04d"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305940404", "source_sha256": "c66dd2a4555c087b797cd0757325577bf1b1e7a5d162d75d1d9a646283df5ce2"}}, {"id": "E", "title": "PS 无限版", "tags": ["线段树", "矩阵", "仿射变换", "计算几何"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "当前重构版：C++17 编译通过，2 个保存用例、260 组独立对拍及 1 组边界/压力通过；UBSan 共 263 组通过。尚未在线重新提交；oj 字段保留原版记录。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addcb9374ace1cba9a21e80", "source_sha256": "cf492760608f922b71d0100c83502a913c3365af4f0d2e666c6024dee9fee905"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490960"}}]
+problems: [{"id": "A", "title": "归一化处理", "tags": ["均值", "方差", "浮点数"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P13910"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05830ae5d1fced2e455719", "source_sha256": "be41560514213ca80e4beff5b50d2ec8585db76e2cca82355d10348b83f89892", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:29:47.247493+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305937570", "source_sha256": "c1e2dcc4f047a86704b4cc0da88bbebfd5ed840f08d9f5cdb47d36a9b3137cc1"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce920a67df0b81749c03a"}}, {"id": "B", "title": "寻宝！大冒险！", "tags": ["稀疏坐标", "枚举", "矩阵匹配"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P13911"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0583a4e5d1fced2e4558bf", "source_sha256": "736f5e3862eac6c8747b5803578afbee351c494986490822e0c6cdc9a21ec5f7", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:32:28.688569+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305938226", "source_sha256": "c4bd808350d4951436fba8b59a592650e534fa773d7e8875ad4b87137feac365"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce921a67df0b81749c040"}}, {"id": "C", "title": "角色授权", "tags": ["权限系统", "位集", "哈希表", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P13912"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058437e5d1fced2e455a13", "source_sha256": "b18f838e56e8901b5d12ee81e51d038440278b987d334e9c23d66bf2f779ba35", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:34:51.068517+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305939423", "source_sha256": "6a7f11b6730219655a2f7086866eed2ac34cf2a420f0d7f574b601fd945d5e55"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce923a67df0b81749c046"}}, {"id": "D", "title": "光线追踪", "tags": ["模拟", "有序集合", "几何"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "洛谷民间题面（可提交）", "url": "https://www.luogu.com.cn/problem/P13913"}, {"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b0584d0e5d1fced2e455c99", "source_sha256": "c4a6adfccafac181025c18c3263f54963f6fed2e7d261f772babfca324a7637d", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:37:29.758373+00:00"}, "luogu": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://www.luogu.com.cn/record/305940404", "source_sha256": "c66dd2a4555c087b797cd0757325577bf1b1e7a5d162d75d1d9a646283df5ce2"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce925a67df0b81749c04d"}}, {"id": "E", "title": "PS 无限版", "tags": ["线段树", "矩阵", "仿射变换", "计算几何"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202206E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202206E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05850ee5d1fced2e455d90", "source_sha256": "0aa0f4041561176d9d95fb2ae5323dbaed900444308329b95684c7029b04d39b", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T12:38:42.302480+00:00"}, "luogu": {"status": "accepted", "score": 100, "record": "https://www.luogu.com.cn/record/305490960"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addcb9374ace1cba9a21e80", "source_sha256": "cf492760608f922b71d0100c83502a913c3365af4f0d2e666c6024dee9fee905"}}]
 ---
 
 # CSP 202206 五题题解
@@ -20,6 +20,12 @@ problems: [{"id": "A", "title": "归一化处理", "tags": ["均值", "方差", 
 标签：`均值` · `方差` · `浮点数`
 
 本地：62 组优化版、62 组 UBSan 验证通过，详见 [验证记录](../tests/202206/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05830ae5d1fced2e455719)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -82,6 +88,12 @@ int main(){
 标签：`稀疏坐标` · `枚举` · `矩阵匹配`
 
 本地：103 组优化版、103 组 UBSan 验证通过，详见 [验证记录](../tests/202206/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0583a4e5d1fced2e4558bf)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -162,6 +174,12 @@ int main(){
 标签：`权限系统` · `位集` · `哈希表` · `模拟`
 
 本地：102 组优化版、102 组 UBSan 验证通过，详见 [验证记录](../tests/202206/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058437e5d1fced2e455a13)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -273,6 +291,12 @@ int main(){
 标签：`模拟` · `有序集合` · `几何`
 
 本地：103 组优化版、103 组 UBSan 验证通过，详见 [验证记录](../tests/202206/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0584d0e5d1fced2e455c99)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -408,6 +432,12 @@ int main(){
 标签：`线段树` · `矩阵` · `仿射变换` · `计算几何`
 
 本地：263 组优化版、263 组 UBSan 验证通过，详见 [验证记录](../tests/202206/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05850ee5d1fced2e455d90)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -655,6 +685,8 @@ int main(){
 - [compile.json](../tests/202206/compile.json)
 - [current-sources.json](../tests/202206/current-sources.json)
 - [extra.py](../tests/202206/extra.py)
+- [online-update-report.json](../tests/202206/online-update-report.json)
+- [online-verdicts.json](../tests/202206/online-verdicts.json)
 - [summary.json](../tests/202206/summary.json)
 
 <!-- local-validation-attachments:end -->

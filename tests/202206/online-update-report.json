@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "contest": "202206",
+  "plan_sha256": "cc6c06b57baef6e00ef92a3aa61b5463151d451d93d7634f57f6981089e24c4f",
+  "input_signature": "2cde6b62b56accf337e48d4458569bf8245d60fadab2e18ab2dd773500123871",
+  "source_sha256": {
+    "A": "be41560514213ca80e4beff5b50d2ec8585db76e2cca82355d10348b83f89892",
+    "B": "736f5e3862eac6c8747b5803578afbee351c494986490822e0c6cdc9a21ec5f7",
+    "C": "b18f838e56e8901b5d12ee81e51d038440278b987d334e9c23d66bf2f779ba35",
+    "D": "c4a6adfccafac181025c18c3263f54963f6fed2e7d261f772babfca324a7637d",
+    "E": "0aa0f4041561176d9d95fb2ae5323dbaed900444308329b95684c7029b04d39b"
+  },
+  "source_files_unchanged": true,
+  "cpp_fences_unchanged": 10,
+  "all_original_record_links_preserved": true,
+  "article_checks": [
+    {
+      "file": "202206/README.md",
+      "before_sha256": "2cc503f642bc8143c61f0893e6864cb763b4be5f4e35341355f0ba5d16ef63a0",
+      "after_sha256": "6c78a4c672671e5fffef14919ccd2c64cea9017f7c961863205329f326407df9",
+      "cpp_fences_unchanged": 5,
+      "original_record_urls_preserved": [
+        "https://oj.shumeng.tech/record/6adce920a67df0b81749c03a",
+        "https://oj.shumeng.tech/record/6adce921a67df0b81749c040",
+        "https://oj.shumeng.tech/record/6adce923a67df0b81749c046",
+        "https://oj.shumeng.tech/record/6adce925a67df0b81749c04d",
+        "https://oj.shumeng.tech/record/6addcb9374ace1cba9a21e80",
+        "https://www.luogu.com.cn/record/305490960",
+        "https://www.luogu.com.cn/record/305937570",
+        "https://www.luogu.com.cn/record/305938226",
+        "https://www.luogu.com.cn/record/305939423",
+        "https://www.luogu.com.cn/record/305940404"
+      ],
+      "frozen_original_record_urls_present": [
+        "https://oj.shumeng.tech/record/6adce920a67df0b81749c03a",
+        "https://oj.shumeng.tech/record/6adce921a67df0b81749c040",
+        "https://oj.shumeng.tech/record/6adce923a67df0b81749c046",
+        "https://oj.shumeng.tech/record/6adce925a67df0b81749c04d",
+        "https://oj.shumeng.tech/record/6addcb9374ace1cba9a21e80"
+      ]
+    },
+    {
+      "file": "202206题解.md",
+      "before_sha256": "3439cc92977c123779a7c547d6f4406f748d78f8ddbab6c504864efcd5fe3138",
+      "after_sha256": "5c9751afddb7ac90586c8e9f5dc01bd23283e7ca70a62929810b12d6bebddac5",
+      "cpp_fences_unchanged": 5,
+      "original_record_urls_preserved": [
+        "https://oj.shumeng.tech/record/6adce920a67df0b81749c03a",
+        "https://oj.shumeng.tech/record/6adce921a67df0b81749c040",
+        "https://oj.shumeng.tech/record/6adce923a67df0b81749c046",
+        "https://oj.shumeng.tech/record/6adce925a67df0b81749c04d",
+        "https://oj.shumeng.tech/record/6addcb9374ace1cba9a21e80"
+      ],
+      "frozen_original_record_urls_present": [
+        "https://oj.shumeng.tech/record/6adce920a67df0b81749c03a",
+        "https://oj.shumeng.tech/record/6adce921a67df0b81749c040",
+        "https://oj.shumeng.tech/record/6adce923a67df0b81749c046",
+        "https://oj.shumeng.tech/record/6adce925a67df0b81749c04d",
+        "https://oj.shumeng.tech/record/6addcb9374ace1cba9a21e80"
+      ]
+    }
+  ],
+  "judged": 5,
+  "access_required": 0,
+  "historical_json_reports_modified": false,
+  "git_or_deploy_executed": false
+}
