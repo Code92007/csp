@@ -1,6 +1,24 @@
 # 202503 本地验证
 
-当前重构版通过 C++17 编译与下列本地验证，尚未重新提交在线评测。原版的在线记录保留原有归属；本地通过不记作新的在线 Accepted。
+<!-- refactor-online-validation:start -->
+
+## 当前重构版在线评测
+
+本节来自冻结提交计划与真实判题账本；下方本地验证记录保留其历史归属。
+
+| 题目 | 结果 | 当前源码 SHA-256 |
+|---|---|---|
+| A | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05492ae5d1fced2e44e84a)。 | `3e293a7ec5fe6d38007fd0cc7230d655815952acb7c1a6ca9dee5dfb31d0c3da` |
+| B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0554a5e5d1fced2e44fcf2)。 | `9ea4d494006e7460e9496530c3c5f30554f3afa0300ae0b58d3c08973fc58370` |
+| C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0554fce5d1fced2e44fd5b)。 | `2bca419faea3099120a5d0f5aacb7241973c215267034c113afce9a007ccd5c2` |
+| D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05558ce5d1fced2e44fdfe)。 | `21afb65db59fda6d310d4efcb56768a98fd4028e9dac0fa2fc4994796db8f954` |
+| E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b0555f3e5d1fced2e44fee0)。 | `fb4c78b4e22b4ab3e9d42a0ff1e75c2ca1a9a22dd460248fd2a58c9540d669ca` |
+
+[逐题在线结果与原版记录](online-verdicts.json)。
+
+<!-- refactor-online-validation:end -->
+
+当前重构版通过 C++17 编译与下列本地验证，该本地验证阶段未进行本轮在线提交。原版的在线记录保留原有归属；本地通过不记作新的在线 Accepted。
 
 | 题目 | 保存用例 | 独立对拍 | 边界/压力 | 优化版总数 | UBSan 总数 |
 | --- | ---: | ---: | ---: | ---: | ---: |

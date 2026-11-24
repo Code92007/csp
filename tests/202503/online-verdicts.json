@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "kind": "refactored-source-online-results",
+  "contest": "202503",
+  "plan_sha256": "cc6c06b57baef6e00ef92a3aa61b5463151d451d93d7634f57f6981089e24c4f",
+  "problems": [
+    {
+      "problem": "A",
+      "key": "202503A",
+      "state": "judged",
+      "source_sha256": "3e293a7ec5fe6d38007fd0cc7230d655815952acb7c1a6ca9dee5dfb31d0c3da",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce7b9a67df0b81749b958"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b05492ae5d1fced2e44e84a",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T08:23:58.488668+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "B",
+      "key": "202503B",
+      "state": "judged",
+      "source_sha256": "9ea4d494006e7460e9496530c3c5f30554f3afa0300ae0b58d3c08973fc58370",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce7bba67df0b81749b972"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b0554a5e5d1fced2e44fcf2",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T09:11:18.325551+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "C",
+      "key": "202503C",
+      "state": "judged",
+      "source_sha256": "2bca419faea3099120a5d0f5aacb7241973c215267034c113afce9a007ccd5c2",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce7bda67df0b81749b97b"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b0554fce5d1fced2e44fd5b",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T09:12:48.525308+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "D",
+      "key": "202503D",
+      "state": "judged",
+      "source_sha256": "21afb65db59fda6d310d4efcb56768a98fd4028e9dac0fa2fc4994796db8f954",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce7bea67df0b81749b983"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b05558ce5d1fced2e44fdfe",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T09:15:24.865580+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    },
+    {
+      "problem": "E",
+      "key": "202503E",
+      "state": "judged",
+      "source_sha256": "fb4c78b4e22b4ab3e9d42a0ff1e75c2ca1a9a22dd460248fd2a58c9540d669ca",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "record": "https://oj.shumeng.tech/record/6adce7c0a67df0b81749b987"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b0555f3e5d1fced2e44fee0",
+      "verdict": "Accepted",
+      "score": 100.0,
+      "observed_at": "2026-11-24T09:18:24.040262+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    }
+  ]
+}
