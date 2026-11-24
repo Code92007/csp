@@ -88,6 +88,29 @@
       "problem": "E",
       "key": "202406E",
       "state": "judged",
+      "source_sha256": "64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976",
+      "prior_oj_records": [
+        {
+          "metadata_field": "oj",
+          "status": "accepted",
+          "score": 100,
+          "verdict": "Accepted",
+          "record": "https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b"
+        }
+      ],
+      "record": "https://oj.shumeng.tech/record/6b05e3ede5d1fced2e45f094",
+      "verdict": "Accepted",
+      "score": 100,
+      "observed_at": "2026-11-24T19:24:15.960549+00:00",
+      "language_id": "cc.cc20o2",
+      "language": "C++20/O2"
+    }
+  ],
+  "previous_refactored_results": [
+    {
+      "problem": "E",
+      "key": "202406E",
+      "state": "judged",
       "source_sha256": "efe8a23edda1c0bf3007259bc4e6cc5bc29c808918368bf6e127ac338f6e8981",
       "prior_oj_records": [
         {
@@ -105,5 +128,6 @@
       "language_id": "cc.cc20o2",
       "language": "C++20/O2"
     }
-  ]
+  ],
+  "optimization_candidate_id": "202406E-layout-io-v3"
 }

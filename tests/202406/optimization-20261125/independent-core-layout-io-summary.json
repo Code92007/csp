@@ -1,0 +1,243 @@
+{
+  "key": "202406E",
+  "source_file": "reports/202406E-round3/independent-core-layout-io.cpp",
+  "source_sha256": "64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976",
+  "created_at": "2026-11-24T19:18:48.856910+00:00",
+  "status": "locally_verified_candidate_not_submitted",
+  "baseline": {
+    "source_sha256": "fd01aa21a1e13ab0b2953aee255b2af3bd0088c8aebc94d92419249ed63833dd",
+    "actual_record": "https://oj.shumeng.tech/record/6b05dee5e5d1fced2e45efd2",
+    "actual_status": "70 Time Exceeded",
+    "failed_case": "6-15 >=5052ms",
+    "binding": "Root confirmed visible submitted code equals frozen v2 hash."
+  },
+  "changes": [
+    "Contiguous alternating rect/query buffers, removing indirect random access and copyback",
+    "64KiB fread positive-integer input; printf unchanged",
+    "Core segment tree is byte-for-byte unchanged from v2"
+  ],
+  "compilation": {
+    "compiler": "/opt/homebrew/bin/g++-16",
+    "standard": "c++17",
+    "O2": [
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Wshadow"
+    ],
+    "UBSan": [
+      "-O1",
+      "-g",
+      "-fsanitize=undefined",
+      "-fno-sanitize-recover=all",
+      "-Wall",
+      "-Wextra",
+      "-Wshadow"
+    ],
+    "diagnostics": ""
+  },
+  "tests": {
+    "O2": {
+      "independent_small_cases": 120,
+      "queries": 10200,
+      "large_cases": [
+        {
+          "label": "unique-x-random-y-boundary",
+          "input_sha256": "22880f9b07db42ad4570b154cb64e2d7ad114bbbc29fcc0225443d2e5ce2bc3f",
+          "expected_sha256": "6cc3d2509d9f69492b41fd2f9bec0f1de46a543582f8e40f369b6186cf44ee78",
+          "wall_seconds": 1.21844925,
+          "cpu_seconds": 1.204434,
+          "rss_bytes": 59883520,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        },
+        {
+          "label": "rank-independent-ten-rectangle-bands",
+          "input_sha256": "9c69c65a84bbd321c960adef790aee682911e4cab98e50bdd93a97a53fe06bd0",
+          "expected_sha256": "613b3224796ef31bc32b633a30d1ef29abce9dbc112d6730d9c422cb956abd41",
+          "wall_seconds": 0.9785264170000003,
+          "cpu_seconds": 0.969421,
+          "rss_bytes": 58671104,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        },
+        {
+          "label": "tile-local-rectangles",
+          "input_sha256": "65e882e8320a1329803e640e17c5e91235d3fe838cf78d15a359dc61e597b9e1",
+          "expected_sha256": "71f47e7d9554b388cd138e0f1da4cefed4eb1105841d8e177900a09efb2c5b45",
+          "wall_seconds": 0.8608629590000003,
+          "cpu_seconds": 0.857285,
+          "rss_bytes": 59883520,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        },
+        {
+          "label": "four-faces-tight-tiny-hole-random-point-empty",
+          "input_sha256": "68bca03770cb2bcc3704851fe88ddb81955b3d895e15443b365a7bf4b8a89e8e",
+          "expected_sha256": "5a9061de234dcdec007b25ff8fd4a4491b247fcb33d79774fe9958339ef61947",
+          "wall_seconds": 0.08309158399999994,
+          "cpu_seconds": 0.080036,
+          "rss_bytes": 50970624,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        },
+        {
+          "label": "n1-m500000",
+          "input_sha256": "8e9ec7f9aba883cba3c7359388dcae95c01cc7436f855330d9b703cbbaf188d7",
+          "expected_sha256": "7fd3251c8d6d854eda3682a0061ad8b27b1c1d72e2818254dfd40b6de3f95eef",
+          "wall_seconds": 0.04066912499999997,
+          "cpu_seconds": 0.038438,
+          "rss_bytes": 26460160,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        }
+      ],
+      "parser_units": {
+        "random_values": 200000,
+        "mixed_whitespace": true,
+        "buffer_refills": 21,
+        "no_trailing_newline": true,
+        "empty_input_and_single_value": true
+      }
+    },
+    "UBSan": {
+      "independent_small_cases": 120,
+      "queries": 10200,
+      "large_cases": [
+        {
+          "label": "unique-x-random-y-boundary",
+          "input_sha256": "22880f9b07db42ad4570b154cb64e2d7ad114bbbc29fcc0225443d2e5ce2bc3f",
+          "expected_sha256": "6cc3d2509d9f69492b41fd2f9bec0f1de46a543582f8e40f369b6186cf44ee78",
+          "wall_seconds": 2.167906125,
+          "cpu_seconds": 2.151209,
+          "rss_bytes": 59981824,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        },
+        {
+          "label": "rank-independent-ten-rectangle-bands",
+          "input_sha256": "9c69c65a84bbd321c960adef790aee682911e4cab98e50bdd93a97a53fe06bd0",
+          "expected_sha256": "613b3224796ef31bc32b633a30d1ef29abce9dbc112d6730d9c422cb956abd41",
+          "wall_seconds": 1.5488012499999986,
+          "cpu_seconds": 1.527355,
+          "rss_bytes": 58753024,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        },
+        {
+          "label": "tile-local-rectangles",
+          "input_sha256": "65e882e8320a1329803e640e17c5e91235d3fe838cf78d15a359dc61e597b9e1",
+          "expected_sha256": "71f47e7d9554b388cd138e0f1da4cefed4eb1105841d8e177900a09efb2c5b45",
+          "wall_seconds": 1.5519876249999989,
+          "cpu_seconds": 1.5052830000000001,
+          "rss_bytes": 59965440,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        },
+        {
+          "label": "four-faces-tight-tiny-hole-random-point-empty",
+          "input_sha256": "68bca03770cb2bcc3704851fe88ddb81955b3d895e15443b365a7bf4b8a89e8e",
+          "expected_sha256": "5a9061de234dcdec007b25ff8fd4a4491b247fcb33d79774fe9958339ef61947",
+          "wall_seconds": 0.18517583300000062,
+          "cpu_seconds": 0.147328,
+          "rss_bytes": 50937856,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        },
+        {
+          "label": "n1-m500000",
+          "input_sha256": "8e9ec7f9aba883cba3c7359388dcae95c01cc7436f855330d9b703cbbaf188d7",
+          "expected_sha256": "7fd3251c8d6d854eda3682a0061ad8b27b1c1d72e2818254dfd40b6de3f95eef",
+          "wall_seconds": 0.045309500000000114,
+          "cpu_seconds": 0.04273,
+          "rss_bytes": 26574848,
+          "answers_checked": 500000,
+          "state": "all_outputs_passed"
+        }
+      ],
+      "parser_units": {
+        "random_values": 200000,
+        "mixed_whitespace": true,
+        "buffer_refills": 21,
+        "no_trailing_newline": true,
+        "empty_input_and_single_value": true
+      }
+    }
+  },
+  "independent_review": {
+    "path": "layout-io-independent-review.json",
+    "sha256": "8c953589beeadd93dabdd62b74ab49cfe53e14e4ce4fb7147f08fb87e7a9dd9b",
+    "content": {
+      "candidate_file": "independent-core-layout-io.cpp",
+      "candidate_sha256": "64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976",
+      "layout_sha256": "dafca960a6dc36ca9115ea581b34a79d7dc5b6e83402e2ad91fed94f1ea6554d",
+      "original_v2_sha256": "fd01aa21a1e13ab0b2953aee255b2af3bd0088c8aebc94d92419249ed63833dd",
+      "audit_kind": "independent static review plus separately tested layout component",
+      "exact_record_tree_solve_equality_with_layout": true,
+      "exact_tree_core_equality_with_v2": true,
+      "parser_findings": [
+        "Input fields are positive integers <=500000. No sign support is required.",
+        "fread returns at most65536 bytes so int len is safe. cur==len refill occurs before any buffer access.",
+        "The digit loop continues across refills and preserves a number ending exactly at EOF. Delimiters are consumed intentionally.",
+        "Only ASCII digits and whitespace occur, so signed-char return cannot alias EOF.",
+        "Malformed or truncated input returns0, outside problem guarantee; no malformed-input behavior claimed."
+      ],
+      "layout_findings": [
+        "Stable record partition fills both destination ranges completely before either recursion.",
+        "Sibling calls use disjoint position ranges in both alternating arrays. A child may overwrite the old parent buffer, which the parent no longer reads.",
+        "Same-rank leaf sets s=p before scanning, avoiding an unwritten destination buffer. Single-record leaf also uses the current source.",
+        "Query id is copied with each record; ok is indexed by current query position and consumed before recursion.",
+        "Initial counting sorts copy from buffer0 to buffer1; rank conversion is complete before tmp is reused.",
+        "The y-tree and touched capacities, recursion bounds and no-pushdown reasoning are unchanged from reviewed v2."
+      ],
+      "own_layout_tests": {
+        "O2_screen": {
+          "cases": 100,
+          "queries": 9279
+        },
+        "UBSan_report": "layout-targeted-ubsan.json",
+        "large_O2_report": "layout-screen.json"
+      },
+      "combined_runtime_validation": "Reported separately by independent-core-layout-io testing agent; this static report does not claim those tests passed.",
+      "online_AC_claimed": false,
+      "formal_source_modified_by_reviewer": false
+    }
+  },
+  "algorithm_complexity_unchanged": {
+    "time": "O((n+m)log(n+1)log(t+1)), distinct values t<=n",
+    "space": "O(n+m)"
+  },
+  "performance_comparison": [
+    {
+      "label": "unique-x-random-y-boundary",
+      "scanf_baseline_cpu_median": 1.4734005,
+      "fread_only_cpu_median": 1.3337675,
+      "layout_fread_cpu": 1.204434,
+      "combined_reduction_fraction": 0.18254812591688407,
+      "input_sha256": "22880f9b07db42ad4570b154cb64e2d7ad114bbbc29fcc0225443d2e5ce2bc3f"
+    },
+    {
+      "label": "rank-independent-ten-rectangle-bands",
+      "scanf_baseline_cpu_median": 1.3272895,
+      "fread_only_cpu_median": 1.2603114999999998,
+      "layout_fread_cpu": 0.969421,
+      "combined_reduction_fraction": 0.269623544825752,
+      "input_sha256": "9c69c65a84bbd321c960adef790aee682911e4cab98e50bdd93a97a53fe06bd0"
+    }
+  ],
+  "peak_rss_bytes": 59981824,
+  "excluded_experiments": [
+    "Iterative boundary-path query/update: correct focused screen but no significant speedup.",
+    "mx/tag adjacent AoS: only small gain; excluded from candidate."
+  ],
+  "evidence_paths": [
+    "independent-core-io-check.json",
+    "independent-core-layout-io-check.json",
+    "layout-io-independent-review.json",
+    "layout-screen.json",
+    "layout-targeted-ubsan.json"
+  ],
+  "formal_files_changed": false,
+  "online_submissions": 0,
+  "limitation": "Local arm64 timings do not establish Linux judge acceptance. New candidate keeps scanf preference exception narrowly to this measured TLE and leaves printf unchanged."
+}

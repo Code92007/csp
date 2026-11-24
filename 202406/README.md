@@ -3,10 +3,10 @@ title: "CSP 202406 五题题解"
 contest: "202406"
 contest_month: "2024-06"
 date: "2026-10-23"
-updated: "2026-11-24"
-tags: ["CSP", "矩阵重塑", "线性下标", "数组", "矩阵变换", "模拟", "BPE", "链表", "优先队列", "字符串", "分组背包", "排序", "动态规划", "二维区间", "线段树", "扫描线", "静态查询"]
+updated: "2026-11-25"
+tags: ["矩阵重塑", "线性下标", "数组", "矩阵变换", "模拟", "BPE", "链表", "优先队列", "字符串", "分组背包", "排序", "动态规划", "矩形相交", "整体二分", "扫描线", "线段树", "离线查询"]
 status: "published"
-problems: [{"id": "A", "title": "矩阵重塑（其一）", "tags": ["矩阵重塑", "线性下标"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055ac9e5d1fced2e45088a", "source_sha256": "1a95274448fbd5045de9237bb457884637288753c21344a9fcfdcf970b1d14f8", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:37:31.604711+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81ca67df0b81749bb2f"}}, {"id": "B", "title": "矩阵重塑（其二）", "tags": ["数组", "矩阵变换", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055b25e5d1fced2e450958", "source_sha256": "298cd9cb9ee229091ee7dd3b9bbfe5b9556747c201bb92f72b6948ba75f28ddf", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:39:07.693767+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81da67df0b81749bb39"}}, {"id": "C", "title": "文本分词", "tags": ["BPE", "链表", "优先队列", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055b8ce5d1fced2e450aa9", "source_sha256": "49fab441d635bcbeb4921b8ae83c43ea4b724d187909304f7c14b5db8dc3e254", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:40:45.734235+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81fa67df0b81749bb49"}}, {"id": "D", "title": "货物调度", "tags": ["分组背包", "排序", "动态规划"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055be4e5d1fced2e450ad4", "source_sha256": "30a5f8a84b5c8c7d090d291a483bf6600fdf4ce25edb02fd5714a0d07f07d461", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:42:11.017924+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce821a67df0b81749bb75"}}, {"id": "E", "title": "哥德尔机", "tags": ["二维区间", "线段树", "扫描线", "静态查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：70 分 Time Exceeded（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406E/"}], "oj": {"score": 70.0, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6b055c45e5d1fced2e450b84", "source_sha256": "efe8a23edda1c0bf3007259bc4e6cc5bc29c808918368bf6e127ac338f6e8981", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "failed", "observed_at": "2026-11-24T09:44:45.257225+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b"}}]
+problems: [{"id": "A", "title": "矩阵重塑（其一）", "tags": ["矩阵重塑", "线性下标"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055ac9e5d1fced2e45088a", "source_sha256": "1a95274448fbd5045de9237bb457884637288753c21344a9fcfdcf970b1d14f8", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:37:31.604711+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81ca67df0b81749bb2f"}}, {"id": "B", "title": "矩阵重塑（其二）", "tags": ["数组", "矩阵变换", "模拟"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055b25e5d1fced2e450958", "source_sha256": "298cd9cb9ee229091ee7dd3b9bbfe5b9556747c201bb92f72b6948ba75f28ddf", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:39:07.693767+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81da67df0b81749bb39"}}, {"id": "C", "title": "文本分词", "tags": ["BPE", "链表", "优先队列", "字符串"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055b8ce5d1fced2e450aa9", "source_sha256": "49fab441d635bcbeb4921b8ae83c43ea4b724d187909304f7c14b5db8dc3e254", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:40:45.734235+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce81fa67df0b81749bb49"}}, {"id": "D", "title": "货物调度", "tags": ["分组背包", "排序", "动态规划"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b055be4e5d1fced2e450ad4", "source_sha256": "30a5f8a84b5c8c7d090d291a483bf6600fdf4ce25edb02fd5714a0d07f07d461", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T09:42:11.017924+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adce821a67df0b81749bb75"}}, {"id": "E", "title": "哥德尔机", "tags": ["矩形相交", "整体二分", "扫描线", "线段树", "离线查询"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202406E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202406E/"}], "oj": {"score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b05e3ede5d1fced2e45f094", "source_sha256": "64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T19:24:15.960549+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b"}, "oj_revisions": [{"score": 70.0, "verdict": "Time Exceeded", "record": "https://oj.shumeng.tech/record/6b055c45e5d1fced2e450b84", "source_sha256": "efe8a23edda1c0bf3007259bc4e6cc5bc29c808918368bf6e127ac338f6e8981", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "failed", "observed_at": "2026-11-24T09:44:45.257225+00:00"}]}]
 ---
 
 # CSP 202406 五题题解
@@ -443,23 +443,28 @@ int main(){
 
 ## E. 哥德尔机
 
-标签：`二维区间` · `线段树` · `扫描线` · `静态查询`
+标签：`矩形相交` · `整体二分` · `扫描线` · `线段树` · `离线查询`
 
-本地：653 组优化版、653 组 UBSan 验证通过，详见 [验证记录](../tests/202406/VALIDATION.md)。
+本版验证：O2、UBSan 各通过 120 组独立小例、5 组满规模构造及读取边界检查，详见 [验证记录](../tests/202406/VALIDATION.md)。此前包络版本的 653 组本地验证单独保留。
 
-<!-- refactor-online:E:start -->
+先前重构版记录：[保留当时的 70 分 Time Exceeded](https://oj.shumeng.tech/record/6b055c45e5d1fced2e450b84)。
 
-重构版评测：70 分 Time Exceeded（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055c45e5d1fced2e450b84)。
-
-<!-- refactor-online:E:end -->
 
 <!-- candidate-attempt:E:start -->
 
-查询优化候选另获 [70 分 Time Exceeded](https://oj.shumeng.tech/record/6b05ab73e5d1fced2e45be79)。本页继续展示首轮源码；该候选的源码与判题归属单独保存在 [复测记录](../tests/202406/performance-attempt/202406E/attempt.json) 中。
+查询优化候选另获 [70 分 Time Exceeded](https://oj.shumeng.tech/record/6b05ab73e5d1fced2e45be79)。该次优化未采用，其源码与判题归属单独保存在 [复测记录](../tests/202406/performance-attempt/202406E/attempt.json) 中。
 
 <!-- candidate-attempt:E:end -->
 
 旧记录于 2026-11-24 复核，同样为 **70 分 Time Exceeded**；原元数据中的 100 分 AC 与当前页面不一致，以可见判题记录为准。[复核证据](../tests/202406/prior-record-observation.json)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05e3ede5d1fced2e45f094)。
+
+用户手动提交也获 [100 分 Accepted](https://oj.shumeng.tech/record/6b05e35ee5d1fced2e45f047)。两份满分记录的程序内容相同，仅文件末尾是否有换行不同。较早的离线版本曾获 [70 分 Time Exceeded](https://oj.shumeng.tech/record/6b05dee5e5d1fced2e45efd2)，最终版进一步调整了读入与数据布局。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -471,41 +476,58 @@ int main(){
 
 来源：[曙梦 OJ 原题（可提交）](https://oj.shumeng.tech/p/CSP202406E)；[公开题面存档](https://pcs2.roj.ac.cn/problems/shumeng/CSP202406E/)。
 
-原版评测：[记录](https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b)（accepted，100 分；复刻评测）。
+原版评测：[记录](https://oj.shumeng.tech/record/6addaa6774ace1cba9a1ff5b)（当前页面复核为 70 分 Time Exceeded）。
 
 ### 题解
 
 **转为静态矩形相交查询**
 
-更新式 $v+\max(0,V-v)$ 就是 $\max(V,v)$。一个学习矩形只要与查询矩形相交，就会给查询答案贡献它的权值；因此答案等于所有相交学习矩形的最大权值，没有相交者时为 $0$。
+每次学习把矩形内的值更新为原值与 $v$ 的较大者。一个学习矩形只要与查询矩形相交，就会给查询答案贡献它的权值。因此答案等于所有相交学习矩形的最大权值，无相交者时为 $0$。
 
-**外层线段树分解横坐标**
+把不同权值从大到小记为 `v[1..t]`，每个学习矩形的 `rk` 是其权值下标。接下来对答案的权值下标分治，每次判断查询是否与较大的一半权值相交。
 
-将每个学习矩形的横区间拆成标准节点，记录在这些节点的 `cover` 中。节点的 `all` 则汇总本节点及所有后代记录。
+**怎样判断一组矩形是否与查询相交？**
 
-查询横区间时，完全包含的节点可直接查询 `all`；部分相交的节点先查询 `cover`，再递归相交的子树。这样既不会漏掉覆盖祖先区间的矩形，也能处理只覆盖局部的矩形。
+把学习矩形按左端点 $x_l$ 排序，把查询按右端点 $q_{x_r}$ 排序。扫描查询时，只插入满足 $x_l\le q_{x_r}$ 的学习矩形，剩下的条件为：
 
-**用上包络压缩纵区间**
+$$x_r\ge q_{x_l},\qquad [y_l,y_r]\cap[q_{y_l},q_{y_r}]\ne\varnothing.$$
 
-同一个节点内，只需维护每个纵坐标上能提供的最大权值。按权值递减处理纵区间，用后继并查集跳过已经覆盖的位置，每个压缩小段只赋值一次，得到分段常值的上包络。
+对已插入的矩形，令 $F(y)$ 表示覆盖纵坐标 $y$ 的矩形中最大的右端点 $x_r$，没有覆盖时为 $0$。插入一个矩形，就是对 $[y_l,y_r]$ 做区间取最大值；查询能与它们相交，当且仅当：
 
-只保存值发生变化的断点，并在这些值上建立静态区间最大值结构。查询纵区间时，二分定位两端断点，再查询覆盖的小段最大值。
+$$\max_{y\in[q_{y_l},q_{y_r}]}F(y)\ge q_{x_l}.$$
 
-**自底向上合并**
+线段树维护节点最大值 `mx` 和整段统一取最大值的标记 `tag`。查询只需判断最大值能否达到 $q_{x_l}$：`mx` 小于目标时直接失败，`tag` 达到目标时直接成功；完整覆盖的节点直接由 `mx` 判断，部分覆盖时继续查询相交的孩子。
 
-节点的 `all` 是本地 `cover` 与两个孩子 `all` 的逐点最大值。三个包络的断点均有序，用三路归并在线性时间内生成新包络，连续相同值合并；若结果与已有包络完全一致，直接共享其存储。
+这个过程不需要下传标记。祖先的统一下界由沿途的 `tag` 判断保留，局部更新时将经过节点的 `mx` 与新值取最大值即可。每次区间更新和判断都为 $O(\log n)$。
 
-实现中还会选择标准节点记录数较少的坐标轴作为外层，并优先访问可能答案较大的子树。若某节点的全局最大权值已经不超过当前答案，就可以剪枝。
+**按权值分治答案**
+
+在 `solve(l,r,...)` 中，只考虑权值下标为 $[l,r]$ 的学习矩形。取中点 `mid`，用上述扫描线判断每个查询是否与 $[l,mid]$ 中的某个矩形相交。
+
+- 若相交，较大权值已经能提供答案，继续到 $[l,mid]$。
+- 若不相交，排除这一半，继续到 $[mid+1,r]$。
+
+当只剩一种权值时，仍需判断是否相交，成功才写入对应权值，否则保留答案 $0$。只剩一个学习矩形时，直接检查两个闭矩形的四个端点条件。
+
+每次把矩形和查询稳定划分成两组，保留横坐标顺序，下一层便可直接扫描。代码用两套连续数组交替存放记录，减少通过下标数组的间接访问，也无需划分后再复制回原数组。查询随记录保存原编号 `id`，最后按原顺序输出。
+
+初始坐标与权值都在 $1..n$，用计数排序和权值映射完成分组。满规模读入约 450 万个整数，这里用简短的 `fread` 缓冲函数读取正整数，输出仍用 `printf`。
+
+**怎样清空线段树？**
+
+每轮扫描结束后，只清零实际修改过的节点。矩形右端点为正整数，节点的 `mx` 从 $0$ 第一次变为正数时，就把它记入 `st`；之后同一轮无需重复登记。清空工作量随本轮更新的访问量增加，避免在每个分治节点都清空整棵树。
 
 **正确性**
 
-标准区间分解保证每个学习矩形在横坐标上的覆盖被准确记录。完全包含的查询节点使用子树汇总，部分相交节点使用本地覆盖并继续下降，恰好收集所有横向相交的学习矩形。
+扫描到某个查询时，已插入的矩形恰好满足横向第一个相交条件 $x_l\le q_{x_r}$。区间最大右端点判定又准确检查了另一个横向条件和纵区间相交条件，因此扫描线判断与闭矩形相交等价。
 
-每份上包络保存其记录在各纵坐标上的最大贡献，因此纵区间最大值恰好筛选出纵向也相交的矩形。两维结合后得到全部相交学习矩形的最大权值，也就是原查询答案。
+若查询与较大权值半区相交，最大贡献一定来自该半区；否则这一半没有贡献，可以排除。沿分治路径反复保留正确半区，最终剩余权值就是所有相交矩形的最大权值。最后一层仍检查相交，因此没有相交矩形的查询不会被误赋值，答案保持为 $0$。
 
 **复杂度**
 
-每个矩形进入 $O(\log n)$ 个标准节点。排序、建立纵向结构及查询总计 $O((n+m)\log^2n)$ 时间，空间 $O(n\log n)$。剪枝与坐标轴选择只优化常数，不改变上述界。
+设不同权值个数为 $t\le n$。每层分治中，每个矩形和查询只属于一个子问题，每次扫描操作为 $O(\log n)$，共有 $O(\log(t+1))$ 层。
+
+总时间为 $O((n+m)\log(n+1)\log(t+1))$，不超过 $O((n+m)\log^2(n+1))$；矩形、查询、稳定划分缓冲和线段树共用 $O(n+m)$ 空间。
 
 ### 代码
 
@@ -514,266 +536,164 @@ int main(){
 ```cpp
 #include<bits/stdc++.h>
 using namespace std;
-typedef long long ll;
-const int N=1<<19,M=3,K=(N<<1)+1,INF=0x3f3f3f3f;
-int n,m,b=1,h;
-bool rev;
-struct rect{
-    int xl,xr,yl,yr,v;
-};
-rect a[N];
-int ord[N],st[K],pos[K];
-int x[N<<1],y[N<<1],fa[N<<1];
-vector<int>pool;
-struct env{
-    int off=0,n=0;
-    int x(int i)const{
-        return pool[off+i];
+const int N=5e5+10,M=1<<20,H=2,K=1<<16;
+int n,m,t,cnt,v[N],tmp[N],ans[N],st[M];
+bool ok[N];
+int cur,len;
+char str[K];
+int gc(){
+    if(cur==len){
+        len=fread(str,1,K,stdin);
+        cur=0;
+        if(!len)return EOF;
     }
-    int val(int i)const{
-        return pool[off+2*n+i];
-    }
-    int top()const{
-        return n?pool[off+n+1]:0;
-    }
-    int query(int l,int r)const{
-        if(!n || r<x(0) || l>=x(n-1))return 0;
-        auto it=pool.begin()+off;
-        int a=max(0,(int)(upper_bound(it,it+n,l)-it)-1);
-        int b=upper_bound(it,it+n,r)-it;
-        int ans=0,pos=off+n;
-        for(a+=n,b+=n;a<b;a>>=1,b>>=1){
-            if(a&1){
-                ans=max(ans,pool[pos+a]);
-                a++;
-            }
-            if(b&1){
-                b--;
-                ans=max(ans,pool[pos+b]);
-            }
-        }
-        return ans;
-    }
-};
-env save(int n){
-    int off=pool.size();
-    if(!n)return env();
-    pool.resize(off+3*n);
-    copy(x,x+n,pool.begin()+off);
-    copy(y,y+n,pool.begin()+off+2*n);
-    int p=off+n;
-    for(int i=n-1;i;--i){
-        pool[p+i]=max(pool[p+2*i],pool[p+2*i+1]);
-    }
-    return {off,n};
+    return str[cur++];
 }
-int find(int x){
-    while(fa[x]!=x){
-        fa[x]=fa[fa[x]];
-        x=fa[x];
+int read(){
+    int x=0,c=gc();
+    while(c<'0' || c>'9'){
+        if(c==EOF)return 0;
+        c=gc();
+    }
+    while(c>='0' && c<='9'){
+        x=x*10+c-'0';
+        c=gc();
     }
     return x;
 }
-env build(const vector<int> &id,int l,int r){
-    if(l==r)return env();
-    if(r-l==1){
-        rect &v=a[id[l]];
-        x[0]=v.yl;x[1]=v.yr+1;
-        y[0]=v.v;y[1]=0;
-        return save(2);
-    }
-    int cnt=0;
-    for(int i=l;i<r;++i){
-        rect &v=a[id[i]];
-        x[cnt]=v.yl;x[cnt+1]=v.yr+1;
-        cnt+=2;
-    }
-    sort(x,x+cnt);
-    cnt=unique(x,x+cnt)-x;
-    iota(fa,fa+cnt+1,0);
-    memset(y,0,cnt*sizeof *y);
-    for(int i=l;i<r;++i){
-        rect &p=a[id[i]];
-        int l=lower_bound(x,x+cnt,p.yl)-x;
-        int r=lower_bound(x,x+cnt,p.yr+1)-x;
-        for(int j=find(l);j<r;j=find(j)){
-            y[j]=p.v;
-            fa[j]=find(j+1);
-        }
-    }
-    int n=0,pre=0;
-    for(int i=0;i<cnt;++i){
-        if(y[i]!=pre){
-            pre=y[i];
-            x[n]=x[i];y[n++]=pre;
-        }
-    }
-    return save(n);
-}
-env merge(env a,env b,env c){
-    env v[M];
-    v[0]=a,v[1]=b,v[2]=c;
-    int cnt=0,id=0;
-    for(int i=0;i<M;++i){
-        if(v[i].n){
-            ++cnt;
-            id=i;
-        }
-    }
-    if(!cnt)return env();
-    if(cnt==1)return v[id];
-    int at[M],cur[M];
-    memset(at,0,sizeof at);
-    memset(cur,0,sizeof cur);
-    int pre=0;
-    int n=0;
-    while(1){
-        int p=INF;
-        for(int i=0;i<M;++i){
-            if(at[i]<v[i].n)p=min(p,v[i].x(at[i]));
-        }
-        if(p==INF)break;
-        for(int i=0;i<M;++i){
-            if(at[i]<v[i].n && v[i].x(at[i])==p){
-                cur[i]=v[i].val(at[i]++);
-            }
-        }
-        int val=max({cur[0],cur[1],cur[2]});
-        if(val!=pre){
-            x[n]=p;y[n]=val;
-            ++n;
-            pre=val;
-        }
-    }
-    for(env &old:v){
-        if(old.n!=n)continue;
-        bool ok=1;
-        for(int i=0;i<old.n && ok;++i){
-            ok=(old.x(i)==x[i] && old.val(i)==y[i]);
-        }
-        if(ok)return old;
-    }
-    return save(n);
-}
+struct rect{
+    int xl,xr,yl,yr,rk;
+}a[H][N];
+struct query{
+    int xl,xr,yl,yr,id;
+}b[H][N];
 struct segtree{
-    struct node{
-        int l,r;
-        env cover,all;
-    }e[N<<1];
-    #define l(p) e[p].l
-    #define r(p) e[p].r
-    void init(int p,int x,int y){
-        l(p)=x;r(p)=y;
-        if(x==y)return;
-        int mid=(x+y)>>1;
-        init(p<<1,x,mid);
-        init(p<<1|1,mid+1,y);
+    int mx[M],tag[M];
+    void add(int p,int l,int r,int x,int y,int w){
+        if(tag[p]>=w)return;
+        if(!mx[p])st[++cnt]=p;
+        mx[p]=max(mx[p],w);
+        if(x<=l && r<=y){
+            tag[p]=w;
+            return;
+        }
+        int mid=(l+r)>>1;
+        if(x<=mid)add(p<<1,l,mid,x,y,w);
+        if(y>mid)add(p<<1|1,mid+1,r,x,y,w);
     }
-    int query(int p,int a,int b,int c,int d,int ans){
-        if(e[p].all.top()<=ans)return ans;
-        if(a<=l(p) && r(p)<=b){
-            return max(ans,e[p].all.query(c,d));
+    bool ask(int p,int l,int r,int x,int y,int w){
+        if(mx[p]<w)return 0;
+        if(tag[p]>=w || (x<=l && r<=y))return 1;
+        int mid=(l+r)>>1;
+        if(x<=mid && ask(p<<1,l,mid,x,y,w))return 1;
+        if(y>mid && ask(p<<1|1,mid+1,r,x,y,w))return 1;
+        return 0;
+    }
+    void clear(){
+        while(cnt){
+            int p=st[cnt--];
+            mx[p]=tag[p]=0;
         }
-        if(e[p].cover.top()>ans){
-            ans=max(ans,e[p].cover.query(c,d));
-        }
-        int mid=(l(p)+r(p))>>1;
-        bool x=a<=mid,y=b>mid;
-        if(x && y){
-            if(e[p<<1].all.top()>=e[p<<1|1].all.top()){
-                ans=query(p<<1,a,b,c,d,ans);
-                ans=query(p<<1|1,a,b,c,d,ans);
-            }
-            else{
-                ans=query(p<<1|1,a,b,c,d,ans);
-                ans=query(p<<1,a,b,c,d,ans);
-            }
-        }
-        else if(x)ans=query(p<<1,a,b,c,d,ans);
-        else ans=query(p<<1|1,a,b,c,d,ans);
-        return ans;
     }
 }tr;
-int count(int x,int y){
-    int ans=0;
-    for(int l=x+b-1,r=y+b;l<r;l>>=1,r>>=1){
-        if(l&1)++ans,++l;
-        if(r&1)++ans,--r;
+void solve(int l,int r,int xl,int xr,int ql,int qr,int d){
+    if(xl==xr || ql==qr)return;
+    rect *p=a[d],*s=a[d^1];
+    query *q=b[d],*z=b[d^1];
+    if(xr-xl==1){
+        rect &x=p[xl];
+        for(int i=ql;i<qr;++i){
+            query &w=q[i];
+            if(x.xl<=w.xr && w.xl<=x.xr && x.yl<=w.yr && w.yl<=x.yr){
+                ans[w.id]=v[x.rk];
+            }
+        }
+        return;
     }
-    return ans;
+    int mid=(l+r)>>1,at=xl;
+    if(l<r){
+        for(int i=xl;i<xr;++i){
+            at+=(p[i].rk<=mid);
+        }
+        int x=xl,y=at;
+        for(int i=xl;i<xr;++i){
+            if(p[i].rk<=mid)s[x++]=p[i];
+            else s[y++]=p[i];
+        }
+    }
+    else at=xr,s=p;
+    int k=xl,qt=ql;
+    for(int i=ql;i<qr;++i){
+        query &w=q[i];
+        while(k<at && s[k].xl<=w.xr){
+            rect &x=s[k++];
+            tr.add(1,1,n,x.yl,x.yr,x.xr);
+        }
+        ok[i]=tr.ask(1,1,n,w.yl,w.yr,w.xl);
+        qt+=ok[i];
+    }
+    tr.clear();
+    if(l==r){
+        for(int i=ql;i<qr;++i){
+            if(ok[i])ans[q[i].id]=v[l];
+        }
+        return;
+    }
+    int x=ql,y=qt;
+    for(int i=ql;i<qr;++i){
+        if(ok[i])z[x++]=q[i];
+        else z[y++]=q[i];
+    }
+    solve(l,mid,xl,at,ql,qt,d^1);
+    solve(mid+1,r,at,xr,qt,qr,d^1);
 }
 int main(){
-    scanf("%d%d",&n,&m);
-    while(b<n){
-        b<<=1;
-        ++h;
+    n=read();m=read();
+    for(int i=1;i<=n;++i){
+        rect &p=a[0][i];
+        p.xl=read();p.xr=read();
+        p.yl=read();p.yr=read();
+        p.rk=read();
+        tmp[p.rk]=1;
     }
-    tr.init(1,1,b);
-    iota(ord,ord+n,0);
-    ll x=0,y=0;
-    for(int i=0;i<n;++i){
-        rect &p=a[i];
-        scanf("%d%d%d%d%d",&p.xl,&p.xr,&p.yl,&p.yr,&p.v);
-        x+=count(p.xl,p.xr);
-        y+=count(p.yl,p.yr);
-    }
-    rev=y<x;
-    for(int i=0;i<n;++i){
-        rect &p=a[i];
-        if(rev){
-            swap(p.xl,p.yl);
-            swap(p.xr,p.yr);
-        }
-        for(int l=p.xl+b-1,r=p.xr+b;l<r;l>>=1,r>>=1){
-            if(l&1){
-                ++st[l+1];
-                ++l;
-            }
-            if(r&1){
-                --r;
-                ++st[r+1];
-            }
+    for(int i=n;i;--i){
+        if(tmp[i]){
+            v[++t]=i;
+            tmp[i]=t;
         }
     }
-    for(int i=1;i<=2*b;++i){
-        st[i]+=st[i-1];
+    for(int i=1;i<=n;++i){
+        a[0][i].rk=tmp[a[0][i].rk];
     }
-    vector<int>id(st[2*b]);
-    copy(st,st+2*b+1,pos);
-    sort(ord,ord+n,[](int x,int y){
-        return a[x].v>a[y].v;
-    });
-    for(int j=0;j<n;++j){
-        int i=ord[j];
-        rect &p=a[i];
-        for(int l=p.xl+b-1,r=p.xr+b;l<r;l>>=1,r>>=1){
-            if(l&1){
-                id[pos[l]++]=i;
-                ++l;
-            }
-            if(r&1){
-                --r;
-                id[pos[r]++]=i;
-            }
-        }
+    for(int i=1;i<=m;++i){
+        query &q=b[0][i];
+        q.xl=read();q.xr=read();
+        q.yl=read();q.yr=read();
+        q.id=i;
     }
-    pool.reserve(size_t(6)*n*(h+1));
-    for(int i=2*b-1;i;--i){
-        tr.e[i].cover=build(id,st[i],st[i+1]);
-        if(i>=b)tr.e[i].all=tr.e[i].cover;
-        else{
-            tr.e[i].all=merge(tr.e[i].cover,tr.e[i<<1].all,tr.e[i<<1|1].all);
-        }
+    memset(tmp,0,sizeof tmp);
+    for(int i=1;i<=n;++i){
+        ++tmp[a[0][i].xl];
     }
-    vector<int>().swap(id);
-    while(m--){
-        int a,b,c,d;
-        scanf("%d%d%d%d",&a,&b,&c,&d);
-        if(rev){
-            swap(a,c);
-            swap(b,d);
-        }
-        printf("%d\n",tr.query(1,a,b,c,d,0));
+    for(int i=1;i<=n;++i){
+        tmp[i]+=tmp[i-1];
+    }
+    for(int i=n;i;--i){
+        a[1][tmp[a[0][i].xl]--]=a[0][i];
+    }
+    memset(tmp,0,sizeof tmp);
+    for(int i=1;i<=m;++i){
+        ++tmp[b[0][i].xr];
+    }
+    for(int i=1;i<=n;++i){
+        tmp[i]+=tmp[i-1];
+    }
+    for(int i=m;i;--i){
+        b[1][tmp[b[0][i].xr]--]=b[0][i];
+    }
+    solve(1,t,1,n+1,1,m+1,1);
+    for(int i=1;i<=m;++i){
+        printf("%d\n",ans[i]);
     }
     return 0;
 }
@@ -793,8 +713,18 @@ int main(){
 - [constants-followup.json](../tests/202406/constants-followup.json)
 - [current-sources.json](../tests/202406/current-sources.json)
 - [extra.py](../tests/202406/extra.py)
+- [offline-layout-validation.json](../tests/202406/offline-layout-validation.json)
 - [online-update-report.json](../tests/202406/online-update-report.json)
 - [online-verdicts.json](../tests/202406/online-verdicts.json)
+- [optimization-20261125/202406E-user-record-observation.json](../tests/202406/optimization-20261125/202406E-user-record-observation.json)
+- [optimization-20261125/202406E-user-record.cpp](../tests/202406/optimization-20261125/202406E-user-record.cpp)
+- [optimization-20261125/202406E-v3-user-record-observation.json](../tests/202406/optimization-20261125/202406E-v3-user-record-observation.json)
+- [optimization-20261125/202406E-v3-user-record.cpp](../tests/202406/optimization-20261125/202406E-v3-user-record.cpp)
+- [optimization-20261125/independent-core-layout-io-check.json](../tests/202406/optimization-20261125/independent-core-layout-io-check.json)
+- [optimization-20261125/independent-core-layout-io-summary.json](../tests/202406/optimization-20261125/independent-core-layout-io-summary.json)
+- [optimization-20261125/layout-io-independent-review.json](../tests/202406/optimization-20261125/layout-io-independent-review.json)
+- [optimization-20261125/submission.json](../tests/202406/optimization-20261125/submission.json)
+- [optimization-20261125/verification.json](../tests/202406/optimization-20261125/verification.json)
 - [performance-attempt/202406E/E.cpp](../tests/202406/performance-attempt/202406E/E.cpp)
 - [performance-attempt/202406E/attempt.json](../tests/202406/performance-attempt/202406E/attempt.json)
 - [prior-record-observation.json](../tests/202406/prior-record-observation.json)

@@ -1,0 +1,48 @@
+{
+  "candidate_id": "202406E-layout-io-v3",
+  "problem_key": "202406E",
+  "release_file": "reports/optimization-20261125/approvals/202406E-layout-io-v3.json",
+  "release_sha256": "19204399c544fe84efaa3e9769f8dc92e2a8d75db13838d31b6a265a040c4a68",
+  "release": {
+    "schema_version": 1,
+    "draft": false,
+    "released_by": "root",
+    "submission_controller": "review_202605",
+    "authorization": "verified-candidate-online-check",
+    "approved_at": "2026-11-24T19:20:28.762048+00:00",
+    "candidate_id": "202406E-layout-io-v3",
+    "problem_key": "202406E",
+    "source_file": "reports/202406E-round3/independent-core-layout-io.cpp",
+    "source_sha256": "64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976",
+    "validation_evidence": [
+      {
+        "file": "reports/202406E-round3/independent-core-layout-io-check.json",
+        "sha256": "4a0254a6d03b91f98b03e1643d4725814ad839ab039c12a83676f4eb542a5faa"
+      },
+      {
+        "file": "reports/202406E-round3/layout-io-independent-review.json",
+        "sha256": "8c953589beeadd93dabdd62b74ab49cfe53e14e4ce4fb7147f08fb87e7a9dd9b"
+      },
+      {
+        "file": "reports/202406E-round3/independent-core-layout-io-summary.json",
+        "sha256": "854b32163c8d7e2e3a90de89deb3977f69c31d3200886966f9b9f1dcc2482b8e"
+      }
+    ],
+    "review": "Root reviewed alternating contiguous record buffers and positive integer fread parser; core tree byte-identical to70TLEv2. Independent reviewer and targetedO2/UBSan120cases+5maxcases+cross-buffer/EOF tests passed; measured18-27%CPU improvement. Meaningful constant improvement, single normal UI submission, preserve all prior attempts."
+  },
+  "source_file": "reports/202406E-round3/independent-core-layout-io.cpp",
+  "source_sha256": "64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976",
+  "state": "judged",
+  "submit_url": "https://oj.shumeng.tech/p/CSP202406E/submit",
+  "language_id": "cc.cc20o2",
+  "new_record": "https://oj.shumeng.tech/record/6b05e3ede5d1fced2e45f094",
+  "verdict": {
+    "status": "Accepted",
+    "score": 100.0,
+    "note": "",
+    "observed_at": "2026-11-24T19:24:15.960549+00:00"
+  },
+  "intent_at": "2026-11-24T19:22:20.712271+00:00",
+  "submission_actor": "review_202605",
+  "post_observed_at": 1795548141.993779
+}

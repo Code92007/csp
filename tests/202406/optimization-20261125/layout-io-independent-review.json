@@ -1,0 +1,35 @@
+{
+  "candidate_file": "independent-core-layout-io.cpp",
+  "candidate_sha256": "64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976",
+  "layout_sha256": "dafca960a6dc36ca9115ea581b34a79d7dc5b6e83402e2ad91fed94f1ea6554d",
+  "original_v2_sha256": "fd01aa21a1e13ab0b2953aee255b2af3bd0088c8aebc94d92419249ed63833dd",
+  "audit_kind": "independent static review plus separately tested layout component",
+  "exact_record_tree_solve_equality_with_layout": true,
+  "exact_tree_core_equality_with_v2": true,
+  "parser_findings": [
+    "Input fields are positive integers <=500000. No sign support is required.",
+    "fread returns at most65536 bytes so int len is safe. cur==len refill occurs before any buffer access.",
+    "The digit loop continues across refills and preserves a number ending exactly at EOF. Delimiters are consumed intentionally.",
+    "Only ASCII digits and whitespace occur, so signed-char return cannot alias EOF.",
+    "Malformed or truncated input returns0, outside problem guarantee; no malformed-input behavior claimed."
+  ],
+  "layout_findings": [
+    "Stable record partition fills both destination ranges completely before either recursion.",
+    "Sibling calls use disjoint position ranges in both alternating arrays. A child may overwrite the old parent buffer, which the parent no longer reads.",
+    "Same-rank leaf sets s=p before scanning, avoiding an unwritten destination buffer. Single-record leaf also uses the current source.",
+    "Query id is copied with each record; ok is indexed by current query position and consumed before recursion.",
+    "Initial counting sorts copy from buffer0 to buffer1; rank conversion is complete before tmp is reused.",
+    "The y-tree and touched capacities, recursion bounds and no-pushdown reasoning are unchanged from reviewed v2."
+  ],
+  "own_layout_tests": {
+    "O2_screen": {
+      "cases": 100,
+      "queries": 9279
+    },
+    "UBSan_report": "layout-targeted-ubsan.json",
+    "large_O2_report": "layout-screen.json"
+  },
+  "combined_runtime_validation": "Reported separately by independent-core-layout-io testing agent; this static report does not claim those tests passed.",
+  "online_AC_claimed": false,
+  "formal_source_modified_by_reviewer": false
+}

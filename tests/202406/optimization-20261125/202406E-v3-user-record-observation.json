@@ -1,0 +1,387 @@
+{
+  "headings": [
+    " 100 Accepted",
+    "Code",
+    "Information",
+    "Status",
+    "Development",
+    "Support",
+    "About"
+  ],
+  "information": [
+    "Submit By\n Yzm007 LV 10\nProblem\nCSP202406E   哥德尔机\nLanguage\nC++20(O2)\nCode Length\n3.6 KiB\nSubmit At\n2026-11-25 3:19:58\nJudged At\n2026-11-25 3:21:25",
+    "Score\n100\nTotal Time\n31829ms\nPeak Time\n3765ms\nPeak Memory\n86.6 MiB"
+  ],
+  "tables": [
+    [
+      [
+        "#",
+        "Status\nScore",
+        "Time Cost",
+        "Memory Cost"
+      ]
+    ],
+    [
+      [
+        "#1",
+        "Accepted\n10",
+        "",
+        ""
+      ],
+      [
+        "#1-1",
+        "Accepted",
+        "4ms",
+        "2.4 MiB"
+      ],
+      [
+        "#1-2",
+        "Accepted",
+        "4ms",
+        "2.3 MiB"
+      ],
+      [
+        "#1-3",
+        "Accepted",
+        "4ms",
+        "2.4 MiB"
+      ],
+      [
+        "#1-4",
+        "Accepted",
+        "5ms",
+        "2.4 MiB"
+      ],
+      [
+        "#1-5",
+        "Accepted",
+        "4ms",
+        "2.4 MiB"
+      ],
+      [
+        "#1-6",
+        "Accepted",
+        "4ms",
+        "2.4 MiB"
+      ],
+      [
+        "#1-7",
+        "Accepted",
+        "5ms",
+        "2.5 MiB"
+      ],
+      [
+        "#1-8",
+        "Accepted",
+        "5ms",
+        "2.5 MiB"
+      ],
+      [
+        "#2",
+        "Accepted\n10",
+        "",
+        ""
+      ],
+      [
+        "#2-1",
+        "Accepted",
+        "5ms",
+        "2.5 MiB"
+      ],
+      [
+        "#2-2",
+        "Accepted",
+        "5ms",
+        "2.6 MiB"
+      ],
+      [
+        "#2-3",
+        "Accepted",
+        "5ms",
+        "2.6 MiB"
+      ],
+      [
+        "#2-4",
+        "Accepted",
+        "5ms",
+        "2.5 MiB"
+      ],
+      [
+        "#2-5",
+        "Accepted",
+        "5ms",
+        "2.5 MiB"
+      ],
+      [
+        "#2-6",
+        "Accepted",
+        "4ms",
+        "2.6 MiB"
+      ],
+      [
+        "#3",
+        "Accepted\n10",
+        "",
+        ""
+      ],
+      [
+        "#3-1",
+        "Accepted",
+        "207ms",
+        "33 MiB"
+      ],
+      [
+        "#3-2",
+        "Accepted",
+        "200ms",
+        "33.1 MiB"
+      ],
+      [
+        "#3-3",
+        "Accepted",
+        "286ms",
+        "33.1 MiB"
+      ],
+      [
+        "#3-4",
+        "Accepted",
+        "221ms",
+        "33.4 MiB"
+      ],
+      [
+        "#3-5",
+        "Accepted",
+        "197ms",
+        "32.9 MiB"
+      ],
+      [
+        "#4",
+        "Accepted\n20",
+        "",
+        ""
+      ],
+      [
+        "#4-1",
+        "Accepted",
+        "26ms",
+        "4 MiB"
+      ],
+      [
+        "#4-2",
+        "Accepted",
+        "17ms",
+        "4 MiB"
+      ],
+      [
+        "#4-3",
+        "Accepted",
+        "23ms",
+        "4.1 MiB"
+      ],
+      [
+        "#4-4",
+        "Accepted",
+        "18ms",
+        "4.1 MiB"
+      ],
+      [
+        "#4-5",
+        "Accepted",
+        "19ms",
+        "4.1 MiB"
+      ],
+      [
+        "#4-6",
+        "Accepted",
+        "21ms",
+        "4.1 MiB"
+      ],
+      [
+        "#5",
+        "Accepted\n20",
+        "",
+        ""
+      ],
+      [
+        "#5-1",
+        "Accepted",
+        "140ms",
+        "10.7 MiB"
+      ],
+      [
+        "#5-2",
+        "Accepted",
+        "104ms",
+        "10.7 MiB"
+      ],
+      [
+        "#5-3",
+        "Accepted",
+        "138ms",
+        "10.3 MiB"
+      ],
+      [
+        "#5-4",
+        "Accepted",
+        "95ms",
+        "10.4 MiB"
+      ],
+      [
+        "#5-5",
+        "Accepted",
+        "107ms",
+        "10.8 MiB"
+      ],
+      [
+        "#5-6",
+        "Accepted",
+        "38ms",
+        "10.4 MiB"
+      ],
+      [
+        "#5-7",
+        "Accepted",
+        "36ms",
+        "10.4 MiB"
+      ],
+      [
+        "#6",
+        "Accepted\n30",
+        "",
+        ""
+      ],
+      [
+        "#6-1",
+        "Accepted",
+        "2567ms",
+        "74.6 MiB"
+      ],
+      [
+        "#6-2",
+        "Accepted",
+        "1685ms",
+        "74.5 MiB"
+      ],
+      [
+        "#6-3",
+        "Accepted",
+        "2442ms",
+        "74.3 MiB"
+      ],
+      [
+        "#6-4",
+        "Accepted",
+        "1592ms",
+        "74.4 MiB"
+      ],
+      [
+        "#6-5",
+        "Accepted",
+        "1838ms",
+        "74.1 MiB"
+      ],
+      [
+        "#6-6",
+        "Accepted",
+        "472ms",
+        "70.6 MiB"
+      ],
+      [
+        "#6-7",
+        "Accepted",
+        "486ms",
+        "71.8 MiB"
+      ],
+      [
+        "#6-8",
+        "Accepted",
+        "2122ms",
+        "71.6 MiB"
+      ],
+      [
+        "#6-9",
+        "Accepted",
+        "475ms",
+        "68.3 MiB"
+      ],
+      [
+        "#6-10",
+        "Accepted",
+        "458ms",
+        "67 MiB"
+      ],
+      [
+        "#6-11",
+        "Accepted",
+        "1381ms",
+        "71.7 MiB"
+      ],
+      [
+        "#6-12",
+        "Accepted",
+        "700ms",
+        "66.9 MiB"
+      ],
+      [
+        "#6-13",
+        "Accepted",
+        "861ms",
+        "61.5 MiB"
+      ],
+      [
+        "#6-14",
+        "Accepted",
+        "1029ms",
+        "69.4 MiB"
+      ],
+      [
+        "#6-15",
+        "Accepted",
+        "3765ms",
+        "70 MiB"
+      ],
+      [
+        "#6-16",
+        "Accepted",
+        "1188ms",
+        "85.4 MiB"
+      ],
+      [
+        "#6-17",
+        "Accepted",
+        "3127ms",
+        "86.6 MiB"
+      ],
+      [
+        "#6-18",
+        "Accepted",
+        "988ms",
+        "85.3 MiB"
+      ],
+      [
+        "#6-19",
+        "Accepted",
+        "1145ms",
+        "85.8 MiB"
+      ],
+      [
+        "#6-20",
+        "Accepted",
+        "1036ms",
+        "85.3 MiB"
+      ],
+      [
+        "#6-21",
+        "Accepted",
+        "519ms",
+        "83.2 MiB"
+      ]
+    ]
+  ],
+  "url": "https://oj.shumeng.tech/record/6b05e35ee5d1fced2e45f047",
+  "observed_at": "2026-11-24T19:23:08.625Z",
+  "submission_actor": "user",
+  "visible_source_sha256": "1898b7b60fdad3b479e1ed5f34c0fb5c2a10b8aaa721371c21569830fbed0db4",
+  "released_candidate_sha256": "64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976",
+  "exact_candidate_match": false
+}

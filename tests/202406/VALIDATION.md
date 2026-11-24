@@ -12,7 +12,7 @@
 | B | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055b25e5d1fced2e450958)。 | `298cd9cb9ee229091ee7dd3b9bbfe5b9556747c201bb92f72b6948ba75f28ddf` |
 | C | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055b8ce5d1fced2e450aa9)。 | `49fab441d635bcbeb4921b8ae83c43ea4b724d187909304f7c14b5db8dc3e254` |
 | D | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055be4e5d1fced2e450ad4)。 | `30a5f8a84b5c8c7d090d291a483bf6600fdf4ce25edb02fd5714a0d07f07d461` |
-| E | 重构版评测：70 分 Time Exceeded（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b055c45e5d1fced2e450b84)。 | `efe8a23edda1c0bf3007259bc4e6cc5bc29c808918368bf6e127ac338f6e8981` |
+| E | 重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b05e3ede5d1fced2e45f094)。 | `64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976` |
 
 [逐题在线结果与原版记录](online-verdicts.json)。
 
@@ -67,3 +67,15 @@ E 通过648组独立矩形扫描、2个保存用例和3组50万规模解析构�
 [候选源码](performance-attempt/202406E/E.cpp) · [复测详情](performance-attempt/202406E/attempt.json)
 
 <!-- candidate-attempt:E:end -->
+
+
+先前重构版：[历史记录](https://oj.shumeng.tech/record/6b055c45e5d1fced2e450b84)。
+
+
+## E 本轮修复验证
+
+当前源码 `64f0a87d995c8e6fa388ba5775c12d764817a37e11110b3d8dfa3113acb25976` 对应 [100 分 Accepted](https://oj.shumeng.tech/record/6b05e3ede5d1fced2e45f094)。[本地验证及源码绑定](optimization-20261125/verification.json) · [本轮提交详情](optimization-20261125/submission.json)。
+
+最终版使用连续数组交替划分与 fread 正整数读入。O2、UBSan 各通过 120 组独立小例（10200 次查询）、5 组满规模构造（250 万次查询）及跨缓冲、混合空白、文件末尾检查。树核心与前版一致，新增布局和读入经独立审查。当前正式源码精确对应复测 100 分记录；[用户手动提交](https://oj.shumeng.tech/record/6b05e35ee5d1fced2e45f047)同获 100 分，其程序仅少文件末尾换行。
+
+[前一离线版本](https://oj.shumeng.tech/record/6b05dee5e5d1fced2e45efd2)在第 6 组第 15 点超时，未作为最终代码采用；旧包络实现、早期候选和各自判题记录均保留。
