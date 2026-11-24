@@ -6,7 +6,7 @@ date: "2026-10-23"
 updated: "2026-11-24"
 tags: ["CSP", "直线两侧", "符号判断", "双指针", "稀疏向量", "状态机", "字符串", "模拟", "KMP", "矩阵快速幂", "递推", "最大权闭合子图", "最小割", "二次函数"]
 status: "published"
-problems: [{"id": "A", "title": "线性分类器", "tags": ["直线两侧", "符号判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006A/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1574ace1cba9a1bce6"}}, {"id": "B", "title": "稀疏向量", "tags": ["双指针", "稀疏向量"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006B/"}], "oj": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1774ace1cba9a1bd0b"}}, {"id": "C", "title": "Markdown 渲染器", "tags": ["状态机", "字符串", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006C/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add98d374ace1cba9a1f2eb"}}, {"id": "D", "title": "1246", "tags": ["字符串", "KMP", "矩阵快速幂", "递推"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006D/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9c1c74ace1cba9a1f614"}}, {"id": "E", "title": "乔乔和牛牛逛超市", "tags": ["最大权闭合子图", "最小割", "二次函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "原版在线评测记录保留；重构版本地 C++17 编译、保存样例及独立对拍见 VALIDATION.md，未重新提交。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006E/"}], "oj": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9cb974ace1cba9a1f6a9"}}]
+problems: [{"id": "A", "title": "线性分类器", "tags": ["直线两侧", "符号判断"], "status": "implemented", "code": "A.cpp", "anchor": "problem-a", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006A"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006A/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058a10e5d1fced2e456df2", "source_sha256": "499159d30459e793344c3cde4357bd3f74d4ec0937103476fb8b231f74f6186a", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:00:55.936577+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1574ace1cba9a1bce6"}}, {"id": "B", "title": "稀疏向量", "tags": ["双指针", "稀疏向量"], "status": "implemented", "code": "B.cpp", "anchor": "problem-b", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006B"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006B/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058a8ae5d1fced2e456f49", "source_sha256": "28bc09c0fa003b727c263298127472f21b0d17004dfc29d9201861aefda3f941", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:02:04.642802+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "record": "https://oj.shumeng.tech/record/6adceb1774ace1cba9a1bd0b"}}, {"id": "C", "title": "Markdown 渲染器", "tags": ["状态机", "字符串", "模拟"], "status": "implemented", "code": "C.cpp", "anchor": "problem-c", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006C"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006C/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058acee5d1fced2e456fcf", "source_sha256": "c3cdb976a0b8511c2dc56748901abf641cccdcf39f62fcb54cf034e63be1dd9b", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:03:19.776169+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add98d374ace1cba9a1f2eb"}}, {"id": "D", "title": "1246", "tags": ["字符串", "KMP", "矩阵快速幂", "递推"], "status": "implemented", "code": "D.cpp", "anchor": "problem-d", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006D"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006D/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058b19e5d1fced2e4570fb", "source_sha256": "0167f3e95faee47f37bab8b18205ba577f9c80e37850668f40acc8e7b6791f68", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:04:36.584371+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9c1c74ace1cba9a1f614"}}, {"id": "E", "title": "乔乔和牛牛逛超市", "tags": ["最大权闭合子图", "最小割", "二次函数"], "status": "implemented", "code": "E.cpp", "anchor": "problem-e", "validation": "重构版评测：100 分 Accepted（C++20/O2）。原版记录保留；本地验证见 VALIDATION.md。", "sources": [{"label": "曙梦 OJ 原题（可提交）", "url": "https://oj.shumeng.tech/p/CSP202006E"}, {"label": "公开题面存档", "url": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202006E/"}], "oj": {"score": 100.0, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6b058b67e5d1fced2e457258", "source_sha256": "7bd7e46548bbf9b36cfb1f2b4229f2adc9f896bc375ab312ced748fab75afa27", "language_id": "cc.cc20o2", "language": "C++20/O2", "status": "accepted", "observed_at": "2026-11-24T13:05:47.681057+00:00"}, "oj_before_refactor": {"status": "accepted", "score": 100, "verdict": "Accepted", "record": "https://oj.shumeng.tech/record/6add9cb974ace1cba9a1f6a9"}}]
 ---
 
 # CSP 202006 五题题解
@@ -19,7 +19,13 @@ problems: [{"id": "A", "title": "线性分类器", "tags": ["直线两侧", "符
 
 标签：`直线两侧` · `符号判断`
 
-原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adceb1574ace1cba9a1bce6)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adceb1574ace1cba9a1bce6)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)。
+
+<!-- refactor-online:A:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058a10e5d1fced2e456df2)。
+
+<!-- refactor-online:A:end -->
 
 ### 题意
 
@@ -81,7 +87,13 @@ int main(){
 
 标签：`双指针` · `稀疏向量`
 
-原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adceb1774ace1cba9a1bd0b)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 accepted](https://oj.shumeng.tech/record/6adceb1774ace1cba9a1bd0b)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)。
+
+<!-- refactor-online:B:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058a8ae5d1fced2e456f49)。
+
+<!-- refactor-online:B:end -->
 
 ### 题意
 
@@ -141,7 +153,13 @@ int main(){
 
 标签：`状态机` · `字符串` · `模拟`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add98d374ace1cba9a1f2eb)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add98d374ace1cba9a1f2eb)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)。
+
+<!-- refactor-online:C:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058acee5d1fced2e456fcf)。
+
+<!-- refactor-online:C:end -->
 
 ### 题意
 
@@ -263,7 +281,13 @@ int main(){
 
 标签：`字符串` · `KMP` · `矩阵快速幂` · `递推`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9c1c74ace1cba9a1f614)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9c1c74ace1cba9a1f614)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)。
+
+<!-- refactor-online:D:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058b19e5d1fced2e4570fb)。
+
+<!-- refactor-online:D:end -->
 
 ### 题意
 
@@ -442,7 +466,13 @@ int main(){
 
 标签：`最大权闭合子图` · `最小割` · `二次函数`
 
-原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9cb974ace1cba9a1f6a9)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)，未重新提交在线评测。
+原版评测：[曙梦 OJ 100 分 Accepted](https://oj.shumeng.tech/record/6add9cb974ace1cba9a1f6a9)。重构版本地验证见 [VALIDATION.md](../tests/202006/VALIDATION.md)。
+
+<!-- refactor-online:E:start -->
+
+重构版评测：100 分 Accepted（C++20/O2） [真实记录](https://oj.shumeng.tech/record/6b058b67e5d1fced2e457258)。
+
+<!-- refactor-online:E:end -->
 
 ### 题意
 
@@ -596,6 +626,8 @@ int main(){
 - [b-increment-followup.json](../tests/202006/b-increment-followup.json)
 - [details.txt](../tests/202006/details.txt)
 - [nightly-review-followup.json](../tests/202006/nightly-review-followup.json)
+- [online-update-report.json](../tests/202006/online-update-report.json)
+- [online-verdicts.json](../tests/202006/online-verdicts.json)
 - [prose-final-review.json](../tests/202006/prose-final-review.json)
 - [report.json](../tests/202006/report.json)
 - [retained_oracles.py](../tests/202006/retained_oracles.py)
